@@ -12588,7 +12588,7 @@ empenho/#nm/p/
 emperrar/#vt/XYPLSM/
 empertigar/#vt/XYPL/
 empestar/#vn/XYPLM/
-empilhar/#vt/XYPLM/
+empilhar/#vt/XYPLMD/
 empinadela/#nf/p/
 empinar/#vt/XYPL/
 empinocar/#vt/XYPL/
@@ -33504,7 +33504,8 @@ tutela/#nf/p/
 tutelar/#an/p/
 tutelar/#vt/XYPL/
 tutorar/#vt/XYPL/
-tutoria/#nf//
+tutoria/#nf/p/
+tutorial/#nm/p/
 tutório/#a//
 tutor/#nm/fp/
 tutu/#nm//
@@ -34357,7 +34358,7 @@ virtual/#an/pmd/
 virtude/#nf/pS/
 virtuoso/#a/fpidS/
 virulência/#nf/p/
-virulento/#a/fp/
+virulento/#a/fpm/
 vírus/#nm//
 vir/#vi,I=3/L/
 visada/#nf//
@@ -34524,7 +34525,7 @@ voluntarismo/#nm/p/
 voluntarista/#hn//
 volúpia/#nf//
 volupto/#a/fp/
-voluptuoso/#a/dfp/
+voluptuoso/#a/dfpm/
 volúvel/#an/pd/
 volver/#vn/XYL/
 vomitar/#vt/XYPLD/
