@@ -44,7 +44,7 @@ install-jspell: port.dic port.aff
 	cd JSPELL; make install
 
 jspell-install: port.dic port.aff
-        cd JSPELL; make install
+	cd JSPELL; make install
 
 jspell.port.tgz: $(BASE)
 	rm -rf jspell.port-`./ver`
