@@ -15,7 +15,7 @@ LIB=/usr/local/lib
 ISPELLLIB=/home/jj/lib/ispell
 JSPELLLIB=/home/jj/lib/jspell
 
-PTDIC = port.geral.dic aux.all-irr.dic port.inf.dic port.np.dic
+PTDIC = port.geral.dic aux.all-irr.dic port.inf.dic port.np.dic port.siglas.dic
 
 BASE= port.aff $(PTDIC) irregulares.txt aux.verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
