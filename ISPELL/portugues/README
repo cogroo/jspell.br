@@ -29,8 +29,8 @@
 #
 #    available modes:
 #        -T lat               (latin1)
-#        -T tex
-#        -T pre               (  'a 'e ,c ...)
+#     #   -T tex
+#     #   -T pre               (  'a 'e ,c ...)
 #
 #    any comments, important new words, and errors should be mailed to
 #                 J.Joao Almeida (jj@di.uminho.pt)
