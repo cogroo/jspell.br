@@ -1,40 +1,29 @@
-DICT = portugues.aspell
+#---------------------------------------------------------------------
+# make install
 
-CONFIG = portugues.dat
-PHONET = portugues_phone.dat
+# make aspell   (very slow!!!)
+# make aspell.tgz
 
-pkgdatadir = `aspell dump config | grep '^. data-dir current' | sed 's/^.*: \(.*\)$$/\1/'`
-pkglibdir  = `aspell dump config | grep '^. dict-dir current' | sed 's/^.*: \(.*\)$$/\1/'`
-pspell_pkgdatadir = `pspell-config pkgdatadir`
+P=portugues
 
-INSTALL = /usr/bin/install -c
-INSTALL_DATA = ${INSTALL} -m 644
+LIB=/usr/local/lib
+ISPELLLIB=/home/jj/lib/aspell
 
-all: portugues pt-aspell.pwli
+aspell: ../port.dic
+	perl tt ../port.dic > $P/portugues.aspell
+	cd $P; make
 
-portugues: $(DICT) $(PHONET) $(CONFIG)
-	cp $(pkgdatadir)/iso8859-1.dat ./
-	aspell --data-dir=. --lang=portugues create master ./portugues < $(DICT)
+$P.tgz: 
+	tar -czf $P.tgz $P
 
-pt-aspell.pwli:
-	echo $(pkglibdir)/portugues > pt-aspell.pwli
+../port.dic:
+	cd ..; make port.dic
 
-install: portugues
-	${INSTALL_DATA} $(PHONET) $(pkgdatadir)/
-	echo ${INSTALL_DATA} $(CONFIG) $(pkgdatadir)/
-	echo ${INSTALL_DATA} portugues  $(pkglibdir)/
-	echo ${INSTALL_DATA} pt-aspell.pwli $(pspell_pkgdatadir)/
-	${INSTALL_DATA} $(CONFIG) $(pkgdatadir)/
-	${INSTALL_DATA} portugues  $(pkglibdir)/
-	${INSTALL_DATA} pt-aspell.pwli $(pspell_pkgdatadir)/
+install : 
+	cd $P; make install
 
-tar:
-	cd ..; \
-	echo portugues/portugues > portugues/EXCLUDE; \
-	echo portugues/pt-aspell.pwli >> portugues/EXCLUDE; \
-	echo portugues/EXCLUDE >> portugues/EXCLUDE; \
-	echo portugues/iso8859-1.dat >> portugues/EXCLUDE; \
-	tar cvzf portugues.tar.gz --exclude-from portugues/EXCLUDE  portugues
+clean : 
 
-clean:
-	rm -f *~ portugues EXCLUDE pt-aspell.pwli iso8859-1.dat
+
+realclean:
+	rm -f $P/portugues.aspell $P.tgz
