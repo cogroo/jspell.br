@@ -30,7 +30,7 @@ HISTÓRIA
 Versão 20.1.2005
 Gerada nova versão do dicionário. (Ficheiro de afixos e dicionário)
 1. O dicionário para MySpell é disponibilizado e mantido na Linguateca (http://www.linguateca.pt), e projecto Natura (http://natura.di.uminho.pt)
-2. O dicionário contem agora 168785 radicais de palavras em relação às 32082 da versão anterior
+2. O dicionário contem agora 168885 radicais de palavras em relação às 32082 da versão anterior
 3. O ficheiro de afixos inclui mais regras de sufixação, e regras de substituição para erros comuns (ss <-> c, cç <-> x, ch <-> x, cao -> ção, ... )
 
 

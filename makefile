@@ -50,7 +50,8 @@ what:
 	@ echo -e "myspell:"
 	@ echo -e "\tmyspell -- builds myspell dictionary (will make ispell if required)"
 	@ echo -e "\tmyspell-install -- installs myspell (NO INSTALL YET)"
-	@ echo -e "\tmyspell-tgz -- creates myspell distribution file"
+	@ echo -e "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
+	@ echo -e "\tmyspell-zip -- creates myspell distribution file (zip)"
 	@ echo
 #-------------------------------------------------------------------
 # Generated files
@@ -143,7 +144,11 @@ myspell: port.dic port.aff
 
 myspell-tgz: myspell
 	cd MYSPELL; make tgz
-	mv MYSPELL/$(LING)/myspell.$(ABR).$(DATE).tar.gz .
+	mv MYSPELL/myspell.$(ABR).$(DATE).tar.gz .
+
+myspell-zip: myspell
+	cd MYSPELL; make zip
+	mv MYSPELL/myspell_$(ABR)_$(DATE).zip .
 
 #-------------------------------------------------------------------
 # jspell rules

@@ -27,11 +27,13 @@ myspell:
 	rm $P/$P.dic
 	rm $P/$P.aff
 tgz: 
-	tar -czf myspell.$(ABR).$(DATE).tar.gz $P
+	tar -czf myspell.$(ABR).$(DATE).tar.gz $P/*pt*
+zip:
+	zip myspell_$(ABR)_$(DATE).zip $P/*pt*
 
 #install : # Openoffice user directory #Mozilla Mail #Thunderbird
 	#cd $P; make install
 clean : 
 	make realclean
 realclean:
-	rm -f $P/*.aff $P.tgz $P/*~ $P/*.dic *~
+	rm -f $P/*.aff *.gz $P/*~ $P/*.dic *~ *.zip
