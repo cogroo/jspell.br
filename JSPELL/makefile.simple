@@ -5,7 +5,8 @@
 
 B=jspell.port
 LIB=/usr/local/lib
-SOURCES=/home/jj/public_html/SOURCES/
+MYSOURCES=/home/jj/public_html/SOURCES/
+SOURCES=/usr/src/redhat/SOURCES/
 
 VER=$(shell ./ver)
 port.hash: port.dic port.aff
@@ -20,7 +21,7 @@ install : port.hash port.irr
 rpm: 
 	make jspell.port.tgz
 	mv jspell.port.tgz ${SOURCES} 
-	rpm -ba jspell.port.spec
+	rpmbuild -ba jspell.port.spec
 
 jspell: port.hash
 
