@@ -1,7 +1,7 @@
 ASCII/#nm//
 Assembler/CAT=np//
 backtracking/#nm//
-backup/CAT=nc,G=m/p/
+backup/CAT=nc,G=m/a/
 BASIC/CAT=np,G=m,N=s//
 bit/CAT=nc,G=m,N=s/p/
 broadcast/CAT=nc,G=m,N=s//
@@ -18,7 +18,7 @@ Cobol/CAT=np//
 deamon/CAT=nc,G=m,N=s/a/
 debug/CAT=nc,G=m,N=s//
 DOS/CAT=np,G=m,N=s//
-drive/CAT=nc,N=s//
+drive/CAT=nc,N=s/a/
 driver/CAT=nc,N=s/a/
 Ethernet/CAT=np//
 flag/CAT=nc,G=f,N=s/a/
@@ -39,7 +39,7 @@ modem/CAT=nc,G=m,N=s/a/
 Mototola/CAT=np,G=f,N=s//
 MS-DOS/CAT=np,G=m,N=s//
 output/CAT=nc,G=m,N=s/p/
-overflow/CAT=nc,G=m,N=s//
+overflow/CAT=nc,G=m,N=s/a/
 package/CAT=nc,G=f/p/
 Pascal/CAT=np,G=m//
 password/CAT=nc,G=f,N=s/a/
