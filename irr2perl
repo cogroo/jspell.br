@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+undef $/;
+open(I,shift) or die "cant open: $!\n";
+
+$_=<I>;
+close I;
+
+s!(.|\n)*?\#100!#100!;
+s!#\d\d\d/(.*)\n!\n$1=!g;
+s!/.*\n! !g;
+print;

@@ -1,0 +1,42 @@
+PTDIC=DICFILES
+LIB=`jspell-dict --dic-dir`
+
+all:
+	@ echo
+	@ echo ' Dicionário jspell (DISTDATE) '
+	@ echo '------------------------------'
+	@ echo
+	@ echo ' NOTE: to install and build jspell you need a recent'
+	@ echo '       jspell release (1.1.3 or later)'
+	@ echo
+	@ echo  make install - installs jspell dictionary
+	@ echo  make build   - creates hash files, but do not install
+	@ echo
+
+build: IRR/ge_verb port.hash port.irr
+
+install: build
+	mkdir -p $(LIB)
+	cp port.hash $(LIB)
+	cp port.irr  $(LIB)
+
+port.hash: port.dic port.aff
+	jbuild port.dic port.aff port.hash
+
+port.irr: aux.all-irr.dic
+	./irr2perl aux.all-irr.dic > port.irr
+
+IRR/ge_verb:
+	cd IRR; make ge_verb;
+
+aux.verb.dic: port.geral.dic
+	egrep "CAT=v|\#v" port.geral.dic > aux.verb.dic
+
+aux.all-irr.dic: irregulares.txt aux.verb.dic IRR/ge_verb
+	IRR/ge_verb aux.verb.dic < irregulares.txt > aux.all-irr.dic
+
+port.dic: $(PTDIC) aux.all-irr.dic
+	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
+	cat $(PTDIC) >> port.dic 
+
+

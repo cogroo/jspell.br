@@ -4,6 +4,8 @@
 
 # Version $Revision$
 
+# $ChangeLog: $
+
 #-------------------------------------------------------------------
 # Variables
 #-------------------------------------------------------------------
@@ -11,11 +13,17 @@
 LING=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
-LIB=/usr/local/lib
+DIST_DIR=jspell.$(ABR).$(DATE)
+
+LIB=`jspell-dict --dic-dir`
 ISPELLLIB=/home/jj/lib/ispell
 JSPELLLIB=/home/jj/lib/jspell
 
-PTDIC = port.geral.dic aux.all-irr.dic port.inf.dic port.np.dic port.siglas.dic
+IRRFILES=IRR/ge_verb.l IRR/ge_verb2.y IRR/makefile
+
+
+PTDIC = port.geral.dic port.inf.dic port.np.dic port.siglas.dic
+EXTRADIST = irregulares.txt irr2perl port.aff
 
 BASE= port.aff $(PTDIC) irregulares.txt aux.verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
@@ -46,9 +54,10 @@ what:
 # Generated files
 #-------------------------------------------------------------------
 
-port.dic: $(PTDIC)
+port.dic: $(PTDIC) aux.all-irr.dic 
 	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
 	cat $(PTDIC) >> port.dic 
+
 
 
 port.irr: aux.all-irr.dic
@@ -134,14 +143,6 @@ jspell: port.dic port.aff
 jspell-install: port.dic port.aff
 	cd JSPELL; make install
 
-jspell-tgz: jspell
-	mkdir -p jspell.$(ABR).$(DATE)
-	cp JSPELL/jspell.port/port.hash jspell.$(ABR).$(DATE)
-	cp JSPELL/jspell.port/port.irr  jspell.$(ABR).$(DATE)
-	cp JSPELL/jspell.mkfile.dist jspell.$(ABR).$(DATE)/makefile
-	tar zcvf jspell.$(ABR).$(DATE).tar.gz jspell.$(ABR).$(DATE)
-	rm -fr jspell.$(ABR).$(DATE)
-
 # Jspell port man
 
 install-man: jspell.pt.1
@@ -152,8 +153,15 @@ jspell.pt.1: jspell.pt.pod
 
 
 ################
-jspell-distro:
-	rm -f jspell-dist/src/*.dic
-	rm -f jspell-dist/src/*.aff
-	cp port.aff $(PTDIC) jspell-dist/src/
-	(cd jspell-dist && ./autogen.sh && make distcheck && mv jspell.pt-*.tar.gz ..)
+jspell-tgz:
+	mkdir -p $(DIST_DIR)/IRR
+	cp $(IRRFILES) $(DIST_DIR)/IRR
+
+	cp $(EXTRADIST) $(PTDIC) $(DIST_DIR)
+
+	cp dist_makefile $(DIST_DIR)/makefile
+	perl -pi -e 's/DISTDATE/chomp($$a=`date +%Y%d%m`);$$a/e;' $(DIST_DIR)/makefile
+	perl -pi -e 's/DICFILES/$(PTDIC)/'                        $(DIST_DIR)/makefile
+
+	tar -zcvf $(DIST_DIR).tar.gz $(DIST_DIR)
+	rm -fr $(DIST_DIR)
