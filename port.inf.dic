@@ -40,6 +40,7 @@ Microsoft/CAT=np,G=f,N=s//
 modem/CAT=nc,G=m,N=s/a/
 Mototola/CAT=np,G=f,N=s//
 MS-DOS/CAT=np,G=m,N=s//
+negrito/CAT=a_nc,G=m,N=s/p/
 output/CAT=nc,G=m,N=s/p/
 overflow/CAT=nc,G=m,N=s/a/
 package/CAT=nc,G=f/p/
