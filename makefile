@@ -20,7 +20,7 @@ JSPELLLIB=/home/jj/lib/jspell
 IRRFILES=IRR/ge_verb.l IRR/ge_verb2.y IRR/makefile
 
 
-PTDIC = port.geral.dic port.inf.dic port.np.dic port.siglas.dic
+PTDIC = DIC/port.geral.dic DIC/port.inf.dic DIC/port.np.dic DIC/port.siglas.dic
 EXTRADIST = irregulares.txt irr2perl port.aff jspell-pt.1
 
 BASE= port.aff $(PTDIC) irregulares.txt aux.verb.dic \
@@ -61,8 +61,8 @@ port.dic: $(PTDIC) aux.all-irr.dic
 port.irr: aux.all-irr.dic
 	./irr2perl > port.irr
 
-aux.verb.dic: port.geral.dic
-	egrep "CAT=v|\#v" port.geral.dic > aux.verb.dic
+aux.verb.dic: DIC/port.geral.dic
+	egrep "CAT=v|\#v" DIC/port.geral.dic > aux.verb.dic
 
 aux.all-irr.dic: irregulares.txt aux.verb.dic IRR/ge_verb
 	IRR/ge_verb aux.verb.dic < irregulares.txt > aux.all-irr.dic
@@ -132,14 +132,18 @@ aspell-tgz:
 # jspell rules
 #-------------------------------------------------------------------
 
-jspell-rpm: 
-	cd JSPELL; make rpm
+jspell-rpm: jspell-tgz
+	mv jspell.$(ABR).$(DATE).tar.gz
+	rpmbuild -ba jspell.port.spec
 
-jspell: port.dic port.aff
-	cd JSPELL; make
 
-jspell-install: port.dic port.aff
-	cd JSPELL; make install
+jspell: port.hash port.irr
+
+jspell-install: port.hash port.irr
+	mkdir -p $(LIB)
+	cp port.hash $(LIB)
+	cp port.irr  $(LIB)
+
 
 # Jspell port man
 
@@ -151,15 +155,25 @@ jspell-pt.1: jspell.pt.pod
 
 
 ################
-jspell-tgz:
+jspell-tgz: $(EXTRADIST)
 	mkdir -p $(DIST_DIR)/IRR
 	cp $(IRRFILES) $(DIST_DIR)/IRR
 
-	cp $(EXTRADIST) $(PTDIC) $(DIST_DIR)
+	mkdir -p $(DIST_DIR)/DIC
+	cp $(PTDIC) $(DIST_DIR)/DIC
+
+	cp $(EXTRADIST) $(DIST_DIR)
 
 	cp dist_makefile $(DIST_DIR)/makefile
 	perl -pi -e 's/DISTDATE/chomp($$a=`date +%Y%d%m`);$$a/e;' $(DIST_DIR)/makefile
-	perl -pi -e 's/DICFILES/$(PTDIC)/'                        $(DIST_DIR)/makefile
+	perl -pi -e 's!DICFILES!$(PTDIC)!'                        $(DIST_DIR)/makefile
 
 	tar -zcvf $(DIST_DIR).tar.gz $(DIST_DIR)
 	rm -fr $(DIST_DIR)
+
+
+################
+
+port.hash: port.dic port.aff
+	jbuild port.dic port.aff port.hash
+

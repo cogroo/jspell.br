@@ -22,7 +22,7 @@ jspell.port is dictionary is for Portuguese language
 
 %build
 
-make jspell
+make build
 
 %install
 

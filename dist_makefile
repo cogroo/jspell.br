@@ -29,8 +29,8 @@ port.irr: aux.all-irr.dic
 IRR/ge_verb:
 	cd IRR; make ge_verb;
 
-aux.verb.dic: port.geral.dic
-	egrep "CAT=v|\#v" port.geral.dic > aux.verb.dic
+aux.verb.dic: DIC/port.geral.dic
+	egrep "CAT=v|\#v" DIC/port.geral.dic > aux.verb.dic
 
 aux.all-irr.dic: irregulares.txt aux.verb.dic IRR/ge_verb
 	IRR/ge_verb aux.verb.dic < irregulares.txt > aux.all-irr.dic
