@@ -277,6 +277,7 @@ Auschwitz/#t/
 Austrália/#la,#tpf/
 Áustria/#la,#tpf/
 Aveiro/#tc/
+Avelar/#np/
 Aveleda/#la,#t/
 Avelino/#npm/
 Avicena/#t/
@@ -386,6 +387,7 @@ Berto/#npm/
 Bertrand/#np1/
 Bessa/#np/
 Betânia/#npf/
+Bettencourt/#np/
 Bética/#la,#t/
 Bíblia/CAT=np,G=f/
 Bielorússia/#la,#tpf/
@@ -493,6 +495,8 @@ Calcedónia/#t/
 Calcutá/#t/
 Caldelas/#t/
 Calheta/#t/
+Calheiro/#np/
+Calheiros/#np/
 Califórnia/#la,#t/
 Calígula/#npm/
 Calisto/#npm/
@@ -945,6 +949,7 @@ Filipos/CAT=np/
 Filomena/#npf/
 Finlândia/#la,#tpf/
 Fiorentina/CAT=npm/
+Firmino/#npm/
 Fischer/#np1/
 Fitzgerald/#np1/
 Flandres/#t/
@@ -1002,6 +1007,7 @@ Galileu/#npm/
 Galiza/#la,#t/
 Gal/#npf/
 Gál/#npf/
+Galvão/#np/
 Gâmbia/#tpf/
 Ganges/#la,#tr/
 Garcia/#np/
@@ -1054,6 +1060,7 @@ Gonçalo/#npm/
 Gonçalves/#np/
 Gondomar/#tc/
 Gôngora/CAT=np/
+Gonzaga/#np/
 González/#np/
 Gordon/#np1/
 Górgias/#np/
@@ -1267,6 +1274,7 @@ Jane/#np1/
 Janet/#np1/
 Jansenistas/CAT=np/
 Janus/CAT=np/
+Jamuário/#npm/
 Japão/#la,#tp/
 Jaques/#np1/
 Jargal/CAT=np/
@@ -1396,6 +1404,7 @@ Leninegrado/#tc/
 Lenine/#npm/it
 Leonard/#np1/
 Leonardo/#npm/
+Leonel/#npm/
 Leónidas/#npm/
 Leonor/#npf/
 Leopoldina/#npf/
@@ -1414,6 +1423,7 @@ Lili/#npf/
 Lima/#np/
 Limpopo/CAT=np/
 Lincoln/#np1/
+Lino/#npm/
 Lisboa/#tc/
 Lituânia/#la,#tpf/
 Liverpool/#t/
@@ -1503,6 +1513,7 @@ Malaia/#t/
 Malanje/#t/
 Malásia/#la,#tpf/
 Malawi/#tp/
+Malheiro/#np/
 Mali/#tp/
 Malta/#tp/
 Malva/CAT=np/
@@ -1757,6 +1768,7 @@ Noruega/#la,#tpf/
 Notre/CAT=np/
 Nôtre/#t/
 Nottingham/#t/
+Novais/#np/
 Novembro/#em/
 Novgorod/#tc/
 Novossibirsk/#tc/
@@ -1886,6 +1898,8 @@ Patrício/#npm/
 Patrick/#np1/
 Paula/#npf/
 Pauli/#np1/
+Paulino/#npm/
+Paulina/#npf/
 Paulista/CAT=np/
 Paul/#np1/
 Paulo/#npm/h/
@@ -1937,6 +1951,8 @@ Piemonte/#t/
 Pierre/#np1/
 Pilar/CAT=np/
 Pilatos/#npm/
+Pimenta/#np/
+Pimentel/#np/
 Pinacoteca/CAT=np/
 Pina/#np/
 Píndaro/#npm/
@@ -2259,6 +2275,7 @@ Soares/#np/
 Sobral/#t/
 Society/CAT=np/
 Sócrates/#npm/
+Soeiro/#np/
 Sofia/#npf/
 Sófocles/#npm/
 Soleimão/CAT=np/
@@ -2274,6 +2291,8 @@ Sotomaior/#np/
 Soure/#t/
 Sousa/#np/
 Sousel/#t/
+Soutelo/#t/
+Souto/#t/
 Spencer/#np1/
 Spenser/#np1/
 Sporting/CAT=np/
