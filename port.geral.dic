@@ -6,6 +6,8 @@
 #af/CAT=adj,N=s,G=f//
 #an/CAT=adj,N=s,G=_//
 #av/CAT=adv//
+#avl/CAT=adv,SUBCAT=lugar//
+#avt/CAT=adv,SUBCAT=tempo//
 #i/CAT=in//
 #hm/CAT=a_nc,G=m,N=s//
 #hm2/CAT=a_nc,G=2,N=s// Se for nc é masc. se for adj. é neutro
@@ -30,7 +32,7 @@ abafar/#vt/XYPLDn/
 abafo/#nm/p/
 abaixar/#vt/XYPLMD/
 abaixo-assinado/#nm//
-abaixo/#av//
+abaixo/#avl//
 abalada/#nf//
 abalançar/#v/XYL/
 abalar/#vt/XYPLv/
@@ -337,7 +339,7 @@ acidificar/#vt/XYPLn/
 acidófilo/#a//
 ácido/#hm/fp/
 acilação/#nf//
-acima/#av//
+acima/#avl//
 acinético/#a//
 acinzar/#vt/XYPLM/
 acinzentar/#vt/XYPL/
@@ -362,7 +364,7 @@ açoitar/#vt/XYPLMD/
 açoiteira/#nf//
 açoite/#nm/p/
 acoito/#nm//
-acolá/#av//
+acolá/#avl//
 acolchetar/#vt/XYPLMD/
 acolchoadeira/#nf//
 acolchoado/#hm//
@@ -533,7 +535,7 @@ adeus/#i//
 adiabilidade/#nf/p/
 adiamantar/#vt/XYPL/
 adiantar/#vt/XYPLM/
-adiante/#av//
+adiante/#avl//
 adiar/#vt/XYPLMnv/
 adição/#nf/p/
 adicional/#an/pm/
@@ -588,7 +590,7 @@ adoidar/#vt/XYPL/
 adolescência/#nf/p/
 adolescente/#hn/Epm/
 adolescer/#vi/XYL/
-adonde/#av//
+adonde/#avl//
 adonisar/#vt/XYPL/
 adónis/#nm//
 adopção/#nf/p/
@@ -858,9 +860,9 @@ agoniar/#vt/XYPLSn/
 agonística/#nf//
 agonizante/#hn/p/
 agonizar/#vn/XYPLn/
-agora/#av//
+agora/#avt//
 agorafobia/#nf/r/
-agorinha/#av//
+agorinha/#avt//
 agosteiro/#a//
 agostiniano/#a/fp/
 agourar/#vn/XYPL/
@@ -1126,7 +1128,7 @@ aleitar/#vt/XYPLcM/
 aleluia/#nf//
 alemânico/#a//
 alemão/#hm/eb/
-além/#av//
+além/#avl//
 além-mar/#nm//
 além-mundo/#nm//
 além/#nm//
@@ -1210,7 +1212,7 @@ algoz/#nm/p/
 alguém/CAT=pind,G=_,N=_//
 alguidar/#nm//
 algum/CAT=pind,N=s/fp/
-algures/#av,lug//
+algures/#avl,SUBCAT=lug//
 alhada/#nf//
 alheamento/#nm//
 alheável/#an//
@@ -1221,7 +1223,7 @@ alho/#nm/p/
 aliança/#nf/p/
 aliar/#vt/XYPLv/
 aliás/#av//
-ali/#av//
+ali/#avl//
 alibilidade/#nf/p/
 álibi/#nm/p/
 alicate/#nm/p/
@@ -1418,7 +1420,7 @@ amalucar/#vn/XYPL/
 amamentar/#vt/XYPLcD/
 amancebar/#vi/XYLM/
 ama/#nf/p/
-amanhã/#av//
+amanhã/#avt//
 amanhar/#vt/XYPLc/
 amanhecer/#vi/XYL/
 amanhecida/#nf//
@@ -1925,7 +1927,7 @@ anteboca/#nf//
 antebraço/#nm/p/
 antecâmara/#nf//
 antecâmbrico/#a/f/
-ante/CAT=prep/p/
+ante/CAT=prep//
 antecedência/#nf/p/
 antecedente/#an//
 anteceder/#vt/XYPLn/
@@ -1958,7 +1960,7 @@ antenupcial/#an//
 anteocular/#an//
 anteocupante/#hn/p/
 anteocupar/#vt/XYPLcn/
-anteontem/#av//
+anteontem/#avt//
 antepaga/#nf//
 antepagar/#vt/XYPL/
 antepara/#nf//
@@ -1982,7 +1984,7 @@ anteproposta/#nf//
 anterior/#an/pmd/
 anterioridade/#nf/p/
 anteriorizar/#vt/XYPL/
-antes/#av//
+antes/#avt//
 antever/#vt,I=3/PL/
 antevéspera/#nf//
 antevidência/#nf/p/
@@ -2193,7 +2195,7 @@ anzol/#nm/p/
 a/$o$CAT=art$G=f,N=s/p/
 ao/CAT=cp,Prep=a,Art=o,G=m,N=s/p/
 a/$o$CAT=ppes,G=m,N=s,P=3,C=a$G=f,N=s/p/
-aonde/#av//
+aonde/#avl//
 aorta/#nf//
 aórtico/#a/f/
 apache/#nn//
@@ -2527,7 +2529,7 @@ aquém/#av//
 aquém-fronteiras/#av//
 aquém-mar/#av//
 aquentar/#vt/XYPLM/
-aqui/#av//
+aqui/#avl//
 aqui-del-rei/#i//
 aquiescer/#vi/XYL/
 aquietador/#hm//
@@ -3471,7 +3473,7 @@ atrancar/#vt/XYPLM/
 atranco/#nm//
 atrapalhar/#vt/XYPLcD/
 atrasar/#vn/XYPLMD/
-atrás/#av//
+atrás/#avl//
 atraso/#nm/p/
 atravancar/#vt/XYPLM/
 atravanco/#nm//
@@ -3724,7 +3726,7 @@ avançada/#nf//
 avançar/#vn/XYPLMD/
 avanço/#nm/fp/
 avantajar/#vn/XYPL/
-avante/#av//
+avante/#avl//
 avaqueirado/#a//
 avarandado/#a//
 avarento/#hm/fp/
@@ -5481,7 +5483,7 @@ buzinadela/#nf/p/
 buzina/#nf//
 buzinar/#vt/XYPLc/
 búzio/#nm/p/
-cá/#av//
+cá/#avl//
 cabaçada/#nf//
 cabaçal/#nm//
 cabaceira/#nf//
@@ -6996,6 +6998,7 @@ cerâmica/#nf//
 cerâmico/#a/fp/
 ceramista/#nn/p/
 cera/#nf/p/
+cerca/#nf/p/
 cerca/#av//
 cercador/#nm//
 cercadura/#nf//
@@ -10073,7 +10076,7 @@ deambular/#vi/XYLcn/
 deambulatório/#hm//
 deambulismo/#nm/p/
 deão/#np/p/
-debaixo/#av//
+debaixo/#avl//
 debalde/#av//
 debandada/#nf//
 debandar/#vn/XYPL/
@@ -10294,7 +10297,7 @@ defraudador/#hm//
 defraudar/#vt/XYPLcMDv/
 defrontante/#an/p/
 defrontar/#vi/XYLcn/
-defronte/#av//
+defronte/#avl//
 defumadela/#nf/p/
 defumador/#hm//
 defumadouro/#nm//
@@ -10474,7 +10477,7 @@ dentífrico/#hm//
 dentista/#nn//
 dentola/#nf//
 dentre/CAT=cp,Prep=de,Prep2=entre//
-dentro/#av//
+dentro/#avl//
 dentuça/#hf2/p/
 denudar/#vt/XYPL/
 denunciador/#hm//
@@ -10506,7 +10509,7 @@ deplorativo/#a//
 deploratório/#a//
 depoente/#hn/p/
 depoimento/#nm/p/
-depois/#av//
+depois/#avt//
 deponente/#an//
 deportação/#nf//
 deportar/#vt/XYPLc/
@@ -11386,7 +11389,7 @@ detonar/#vi/XYLcDn/
 detracção/#nf//
 detractivo/#a//
 detractor/#hm/p/
-detrás/#av//
+detrás/#avl//
 detrimento/#nm//
 detrítica//p/
 detrito/#nm/p/
@@ -11483,7 +11486,7 @@ diametral/#an/m/
 diâmetro/#nm/p/
 diana/#nf//
 dia/#nm/p/
-diante/#av//
+diante/#avl//
 dianteira/#nf//
 dianteiro/#a/fp/
 diapasão/#nm//
@@ -12156,7 +12159,7 @@ durabilidade/#nf/p/
 duradoiro/#a//
 duradouro/#a/fp/
 dura/#nf//
-durante/CAT=prep/p/
+durante/CAT=prep//
 durar/#vi/XYLcv/
 dureza/#nf//
 duriense/#hn/p/
@@ -15665,7 +15668,7 @@ fontano///
 fontela/#nf/p/
 fonte/#nf/pt/
 fontista/#nn//
-fora/#av//
+fora/#avl//
 fora-da-lei/#a//
 foragido/#hn/fp/
 fora/#i//
@@ -17425,7 +17428,7 @@ histórico/#a/pfH/
 historieta/#nf//
 historiografia/#nf/pqr/
 hitita/#a/p/
-hoje/#av//
+hoje/#avt//
 holandês/#hm/fp/
 holandizar/#vt/XYPL/
 holismo/#nm/p/
@@ -21752,7 +21755,7 @@ medianismo/#nm/p/
 medianizar/#vt/XYPL/
 mediano/#a/fpmi/
 mediante/#an/p/
-mediante/CAT=prep/p/
+mediante/CAT=prep//
 mediar/#vn,I=3/YLcDn/
 mediatário/#nm//
 mediático/#a/fpH/
@@ -23860,7 +23863,6 @@ obtusidade/#nf/p/
 obtuso/#a/fpmd/
 obus/#nm/p/
 obviamente/#av//
-obviamente/#av//  # atenc,ão ao acento da raiz
 obviar/#vn/XYPLv/
 óbvio/#a/fp/
 ocasião/#nf/p/
@@ -24080,7 +24082,7 @@ oncologista/#nn/p/
 onda/#nf/p/
 ondeante/#an/p/
 ondear/#vn/ZYPLMn/
-onde/#av//
+onde/#avl//
 ondejante/#an/p/
 ondejar/#vn/XYPLn/
 ondulante/#an/p/
@@ -24099,7 +24101,7 @@ onomatologia///
 onomatopaico/#a//
 onomatopeia/#nf//
 onomatopeico/#a//
-ontem/#av//
+ontem/#avt//
 ontogénese/#nf//
 ontogenia/#nf//
 ontogénico/#a//
@@ -25513,10 +25515,10 @@ peralta/#nn/p/
 peraltear/#vi/ZYL/
 peraltice/#nf//
 pêra/#nf//
-perante/CAT=prep/p/
+perante/CAT=prep//
 percalço/#nm/p/
 perca/#nf/p/
-per/CAT=prep/Mn/
+per/CAT=prep//
 perceber/#vn/XYPLMv/
 percentagem/#nf/p/
 percentual/#a/p/
@@ -25760,7 +25762,7 @@ pertinácia/#nf//
 pertinaz/#an//
 pertinência/#nf/p/
 pertinente/#an/p/
-perto/#av//
+perto/#avl//
 perturbabilidade/#nf/p/
 perturbação/#nf//
 perturbador/#hm//
@@ -27392,6 +27394,7 @@ provanças///
 prova/#nf/p/
 provar/#vt/XYPLcDv/
 provatório/#a//
+provável/#a//
 provavelmente/#av//
 provedoral/#an//
 provedoria/#nf/p/
