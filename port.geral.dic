@@ -432,7 +432,7 @@ acrílico/#a/fp/
 acrítico/#a/fp/
 acrobacia/#nf/p/
 acrobata/#nn/i/
-acrobático/#a/fp/
+acrobático/#a/fpH/
 acrobatismo/#nm/p/
 acromático/#a/fp/
 acromatizar/#vt/XYPL/
@@ -2263,6 +2263,7 @@ apassivante/#an/p/
 apassivar/#vt/XYPLcDn/
 apassivativo/#a//
 apatia/#nf/r/
+apático/#a/fpH/
 apatifar/#vt/XYPL/
 apátrida/#nn//
 apatriota/#an//
@@ -3623,6 +3624,7 @@ autocopiar/#vt/XYPL/
 autocorrecção//p/
 autocorrector/#nm/p/
 autocracia/#nf/qr/
+autocrático/#a/fpH/
 autocratismo/#nm/p/
 autocrítica/#nf//
 autocromia/#nf//
@@ -5293,17 +5295,15 @@ breu/#nm//
 breve/#an/pmds/
 brevetar/#vt/XYPL/
 breviário/#nm/p/
-brevidade/#nf/p/
-brídege/#nm//
-brigada/#nf//
+brigada/#nf/p/
 brigadeiro/#nm/p/
 briga/#nf/p/
 brigantino/#hm/fp/
-brigão/#hm//
+brigão/#hm/p/
 brigar/#vi/XYLD/
-brigoso/#a//
-brigue/#nm//
-briguento/#a//
+brigoso/#a/fp/
+brigue/#nm/p/
+briguento/#a/fp/
 brilhante/#an/pis/
 brilhante/#nm/pm/
 brilhantina/#nf//
@@ -5454,6 +5454,7 @@ burlesco/#a/fp/
 burloso/#a//
 burocracia/#nf/qpr/
 burocracismo/#nm/p/
+burocrático/#a/fpH/
 burocratismo/#nm/p/
 burocratizar/#vt/XYPLcDS/
 burrada/#nf//
@@ -6445,11 +6446,11 @@ carreta/#nf//
 carretear/#vt/ZYPL/
 carreteiro/#nm//
 carretel/#nm//
-carrete/#nm//
-carreto/#nm//
-carriçal/#nm//
-carriça/#nf//
-carriço/#nm/f/
+carrete/#nm/p/
+carreto/#nm/p/
+carriçal/#nm/p/
+carriça/#nf/p/
+carriço/#nm/p/
 carrilar/#vt/XYPLM/
 carrilhão/#nm//
 carrilhonar/#vi/XYL/
@@ -7499,7 +7500,7 @@ cinema/#nm/p/
 cinemascópio/#nm/p/
 cinemateca/#nf/p/
 cinemática/#nf//
-cinemático/#a/fp/
+cinemático/#a/fpH/
 cinematografar/#vt/XYPL/
 cinematografia/#nf/pqr/
 cinematoscópio/#nm//
@@ -7709,7 +7710,7 @@ clientela/#nf/ip/
 cliente/#nn/p/
 clima/#nm/p/
 climatérico/#a/fp/
-climático/#a/fp/
+climático/#a/fpH/
 climatismo/#nm/p/
 climatizar/#vt/XYPLc/
 climatologia/#nf/qrt/
@@ -9789,7 +9790,7 @@ crocodilo/#nm/p/
 cromagem/#nf//
 cromar/#vt/XYPL/
 cromática/#nf/p/
-cromático/#a/fpm/
+cromático/#a/fpH/
 cromatina///
 cromatismo/#nm/p/
 cromatizar/#vt/XYPL/
@@ -12084,7 +12085,7 @@ drageia/#nf//
 dragona/#nf/p/
 drama/#nm/p/
 dramática/#nf//
-dramático/#a/fpm/
+dramático/#a/fpH/
 dramatismo/#nm/p/
 dramatizar/#vt/XYPLcSD/
 dramatologia/#nf/rt/
@@ -12472,7 +12473,7 @@ embirrativo/#a//
 embirrento/#a//
 emblema/#nm/p/
 emblemar/#vt/XYPL/
-emblemático/#a/fpm/
+emblemático/#a/fpH/
 embocadura/#nf//
 embodegar/#vt/XYPL/
 embolar/#vn/XYPLc/
@@ -12585,7 +12586,8 @@ empatador/#hm//
 empata/#nn//
 empatar/#vn/XYPLDS/
 empate/#nm/pS/
-empatia/#nf//
+empatia/#nf/p/
+empático/#a/fpH/
 empecilhar/#vt/XYPL/
 empecilho/#nm/p/
 empeçonhar/#vt/XYPLM/
@@ -12887,7 +12889,7 @@ enfarte/#nm//
 enfastiante/#an/p/
 enfastiar/#vt/XYPLMn/
 enfastioso/#a//
-enfático/#a/fpm/
+enfático/#a/fpH/
 enfatiotar/#v/XYL/
 enfatizar/#vt/XYPLcD/
 enfatuar/#vt/XYPLM/
@@ -12993,7 +12995,7 @@ enguiçar/#vt/XYPLSMD/
 enguiço/#nm//
 enigma/#nm/t/
 enigmar/#vt/XYPL/
-enigmático/#a/fpm/
+enigmático/#a/fpH/
 enjaular/#vt/XYPL/
 enjeitar/#vt/XYPLM/
 enjoadiço/#a//
@@ -14059,8 +14061,8 @@ estatal/#an/p/
 estateladamente/#av//
 estatelar/#vt/XYPL/
 estática/#nf//
-estaticista/#nn//
-estático/#a/fp/
+estaticista/#nn/p/
+estático/#a/fpH/
 estatística/#nf//
 estatístico/#hm/pfH/
 estatizar/#vt/XYPLnc/
@@ -15510,7 +15512,7 @@ flecha/#nf/p/
 flechar/#vt/XYPL/
 flectir/#vt,I=3/YPL/
 fleuma/#nf//
-fleumático/#a/fpm/
+fleumático/#a/fpH/
 flexão/#nf/p/
 flexibilidade/#nf/p/
 flexibilizar/#vt/XYPLc/
@@ -17328,7 +17330,7 @@ hiena/#nf/p/
 hierarquia/#nf/pr/
 hierarquicamente/#av//
 hierarquizar/#vt/XYPLc/
-hierático/#a/fp/
+hierático/#a/fpH/
 hierocracia/#nf/pr/
 hieroglífico/#a/fp/
 hieróglifo/#nm/p/
@@ -18782,7 +18784,7 @@ informal/#a/md/
 informante/#hn/p/
 informar/#vt/XYPLcDnS/
 informática/#nf//
-informático/#a/fp/
+informático/#a/fpH/
 informativo/#a/fp/
 informatização///
 informatizar/#vt/XYPL/
@@ -20924,7 +20926,7 @@ luminescente/#an//
 luminosidade/#nf/p/
 luminoso/#a/pfd/
 lunar/#an/pc/
-lunático/#a/fp/
+lunático/#a/fpH/
 luneta/#nf/p/
 lupa/#nf//
 lúpulo/#nm//
@@ -21151,7 +21153,7 @@ mais-valia/#nf//
 maiúscula/#nf/p/
 maiúsculo/#a/fp/
 majestade/#nf/p/
-majestático/#a/fp/
+majestático/#a/fpH/
 majestoso/#a/fpm/
 majorante//p/
 majorar/#v/c/
@@ -21648,7 +21650,7 @@ mata-ratos/#nm//
 matar/#vn/XYPLD/
 mate/#hm//
 matemática/#nf/p/
-matemático/#a/fpHm/
+matemático/#a/fpH/
 material/#an/mtid/
 materialidade/#nf/p/
 materialismo/#nm/p/
@@ -21760,7 +21762,7 @@ mediante/#an/p/
 mediante/CAT=prep/p/
 mediar/#vn,I=3/YLcDn/
 mediatário/#nm//
-mediático/#a/fpm/
+mediático/#a/fpH/
 mediativo/#a/p/
 mediatizar/#vt/XYPLc/
 mediato//pm/
@@ -21878,7 +21880,7 @@ melodioso/#a//
 melodista/#nn//
 melodizar/#vt/XYPL/
 melodrama/#nm/p/
-melodramático/#a/fp/
+melodramático/#a/fpH/
 melodramatizar/#vt/XYPL/
 meloeiro/#nm/p/
 melomania/#nf/qr/
@@ -22695,7 +22697,7 @@ monoclínico//f/
 monocórdio/#nm//
 monocórdico/#a/fp/
 monocordo/#nm//
-monocromático/#a/fp/
+monocromático/#a/fpH/
 monocromatismo/#nm/p/
 monocromia/#nf//
 monocromo/#a//
@@ -24820,7 +24822,7 @@ parada/#nf/p/
 paradeiro/#nm//
 paradigmal/#an//
 paradigma/#nm/p/
-paradigmático/#a/fp/
+paradigmático/#a/fpH/
 paradisíaco/#a/fp/
 paradísico/#a//
 paradoiro/#nm//
@@ -26694,7 +26696,7 @@ praga/#nf/p/
 pragmática/#nf//
 pragmaticismo/#nm/p/
 pragmaticista/#hn//
-pragmático/#a/fpHm/
+pragmático/#a/fpH/
 pragmatismo/#nm/p/
 pragmatista/#hn//
 praguedo/#nm//
@@ -27102,7 +27104,7 @@ probante/#an/p/
 probatório/#a//
 problema/#nm/pu/
 problemática/#nf//
-problemático/#a/fpm/
+problemático/#a/fpH/
 problematizar/#vt/XYPL/
 procedência/#nf/p/
 procedente/#an//
@@ -27203,7 +27205,7 @@ prognóstico/#hm/p/
 programador/#nm/fp/
 programa/#nm/pu/
 programar/#vt/XYPLcDvRS/
-programático/#a/fpm/
+programático/#a/fpH/
 programatizar/#vt/XYPL/
 progredir/#vi,I=3/YLM/
 progressão/#nf/p/
@@ -31036,7 +31038,7 @@ sintético/#a/pfH/
 sintetismo/#nm/p/
 sintetizar/#vt/DXYPLcn/
 sintoma/#nm/p/
-sintomático/#a/fpHm/
+sintomático/#a/fpH/
 sintomatologia/#nf/r/
 sintonia/#nf//
 sintónico/#a//
@@ -31063,7 +31065,7 @@ sismologia/#nf/qr/
 sismo/#nm/pA/
 siso/#nm//
 sistema/#nm/p/
-sistemático/#a/fpm/
+sistemático/#a/fpH/
 sistematizar/#vt/XYPLcD/
 sistémico/#a/fp/
 sístole///
@@ -31212,7 +31214,7 @@ socorrer/#vt/XYPLMD/
 socorrista/#hn/p/
 socorro/#i//
 socorro/#nm/pi/
-socrático/#a/fp/
+socrático/#a/fpH/
 soda/#nf//
 sódico/#a/f/
 sódio/#nm//
@@ -32263,7 +32265,7 @@ tele/#nf//
 telenovela/#nf/p/
 teleobjectiva/#nf//
 teleologia/#nf/r/
-telepático/#a/fpm/
+telepático/#a/fpH/
 telepatia/#nf/pqr/
 teleprojéctil/#nm//
 telequinesia/#nf//
@@ -32292,7 +32294,7 @@ telúrico/#a/fp/
 telurismo/#nm/p/
 tema/#nm/pu/
 temática/#nf/p/
-temático/#a/fpm/
+temático/#a/fpH/
 tematizável///
 temedoiro/#a//
 temedouro/#a//
@@ -33169,7 +33171,7 @@ traulitada/#nf//
 trauliteiro/#nm//
 traulito/#nm//
 trauma/#nm/p/
-traumático/#a/fpO/
+traumático/#a/fpH/
 traumatismo/#nm/p/
 traumatizar/#vt/XYPLn/
 traumatologia/#nf/r/
