@@ -2,19 +2,22 @@ README.pt_PT
 Dicionário de Português para MySpell
 Portuguese Dictionary for MySpell
 
+
 :: PORTUGUÊS ::
 Este dicionário é baseado na versão Ispell do dicionário de Português criado por José João de Almeida (jj@di.uminho.pt), Ulisses Pinto. O dicionário original está coberto pela licença versão 2 da Licença Pública Geral da Fundação para o Software Livre (FSF GPL).
 
 As versões do dicionário de Português para MySpell anteriores a 25/1/2005 são da autoria de Artur Correia (artur.correia@netvisao.pt)
 
-As versões do dicionário de Português para MySpell de 25/1/2005 e posteriores são da autoria de Rui Vilela (ruivilela@di.uminho.pt) da Linguateca(http://www.linguateca.pt). O Dicionário é também mantido por Alberto Simões (ambs@di.uminho.pt) e José João de Almeida (jj@di.uminho.pt) do projecto Natura (http://natura.di.uminho.pt).
+A versão do dicionário de Português para MySpell de 25/1/2005 é da autoria de Rui Vilela (ruivilela@di.uminho.pt) da Linguateca(http://www.linguateca.pt). O Dicionário é também mantido por Alberto Simões (ambs@di.uminho.pt) e José João de Almeida (jj@di.uminho.pt) do projecto Natura (http://natura.di.uminho.pt).
 
-Novas versões deste e outros dicionários estão disponíveis em:
+Novas versões deste e outros dicionários poderão estar disponíveis em:
 http://linguateca.di.uminho.pt/
 ou
 http://natura.di.uminho.pt/
 
 Todas as versões disponibilizadas do dicionário de Português para MySpell estão cobertas pela versão 2 da Licença Pública Geral da Fundação para o Software Livre (FSF GPL).
+
+
 
 
 :: ENGLISH ::
@@ -31,14 +34,14 @@ http://natura.di.uminho.pt/
 
 All dictionary releases are covered by the GPL version 2 license.
 
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 HISTÓRIA
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Versão 25/1/2005
 Gerada uma nova versão do dicionário. (Ficheiro de afixos e dicionário foram refeitos)
-1. O dicionário para MySpell é disponibilizado e mantido na Linguateca (http://www.linguateca.pt), e projecto Natura (http://natura.di.uminho.pt)
-2. O dicionário contém agora 168885 radicais de palavras em relação às 32082 da versão anterior
-3. O ficheiro de afixos inclui mais regras de sufixação, obtidas do dicionário Ispell, e regras de substituição para erros comuns (ss <-> c, cç <-> x, ch <-> x, cao -> ção, ... )
+1. O dicionário contém agora XXXXX radicais de palavras em relação às 32082 da versão anterior
+2. O ficheiro de afixos inclui mais regras de sufixação, obtidas do dicionário Ispell, e regras de substituição para erros comuns (ss <-> c, cç <-> x, ch <-> x, cao -> ção, ... )
 
 Versão 20/5/2002
 Esta versão é completamente diferente da anterior.
@@ -54,11 +57,11 @@ Versão 8/4/2002
 Bugfix - corrigido o bug (pt_PT.aff) que fazia algumas palavras terminadas em ção serem reconhecidas como erro e sugerida palavra terminada em rão.
 
 
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 HISTORY
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Version: 25/1/2005
 New dictionary version generated. (affix file and dictionary file were remade)
-1. The dictionary for MySpell is made available and maintained by Linguateca (http://www.linguateca.pt), and Natura project(http://natura.di.uminho.pt)
-2. The dictionary now has around 168885 word radicals. Previous version had 32082 word radicals.
-3. The affix file includes more suffix rules from the Ispell dictionary, and some replacing rules for common spelling mistakes (ss <-> c, cç <-> x, ch <-> x, cao -> ção, ... )
+1. The dictionary now has around XXXXX word radicals. Previous version had 32082 word radicals.
+2. The affix file includes more suffix rules from the Ispell dictionary, and some replacing rules for common spelling mistakes (ss <-> c, cç <-> x, ch <-> x, cao -> ção, ... )

@@ -32,7 +32,7 @@ D=portugues
 P=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
-plndir=/home/jj/public_html/pln
+#plndir=/home/jj/public_html/pln
 FR = mv $D.dic _$D.dic ; mv $D.aff _$D.aff
 #FR = perl flagsRenDel $D
 
@@ -53,15 +53,22 @@ $P/$D.hash: $P/$D.dic $P/$D.aff $P/README
 	cd $P; buildhash $D.dic $D.aff $D.hash
 
 $P/$D.aff $P/$D.dic: ../port.dic ../port.aff 
-	mkdir -p  $P
-	perl jsp2isp.pl ../port.aff > /tmp/$D.aff 
-	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > /tmp/$D.dic
-	cp flagsRenDel /tmp/
+	#mkdir -p $P
+	#perl jsp2isp.pl ../port.aff > /tmp/$D.aff 
+	#perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > /tmp/$D.dic
+	perl jsp2isp.pl ../port.aff > $P/$D.aff 
+	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/$D.dic
+	#cp flagsRenDel /tmp/
 	cp ver ispell.port.spec $P
-#	cd /tmp; perl flagsRenDel $D; munchlist -l _$D.aff _$D.dic > $D.dic ;
-	cd /tmp; ${FR} ;
-	munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic
-	cd $P; mv /tmp/$D.dic . ; mv /tmp/_$D.aff $D.aff ; 
+	#cd /tmp
+	#perl flagsRenDel $D
+	#munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic;
+	#munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic;
+
+	#cd /tmp; perl flagsRenDel $D; ${FR} ; munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic
+	#cd $P
+	#mv /tmp/$D.dic $P/
+	#mv /tmp/$D.aff $P/ 
 
 ../port.dic:
 	cd ..; make port.dic
