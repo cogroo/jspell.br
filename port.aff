@@ -337,6 +337,9 @@ F I L I A       >       -OFILIA,ÓFILAS	; "G=f,N=p"     # columbófilas
 C Í D I O	>	-ÍDIO,IDA	; "G=_,N=s"	# homicida
 C Í D I O	>	-ÍDIO,IDAS	; "G=_,N=p"	# homicidas
 
+P A T I A	>	-IA,A		; "G=_,N=s"	# telepata	
+P A T I A	>	-IA,AS		; "G=_,N=p"	# telepatas
+
 C U L T U R A   >       -URA,OR         ; "G=m,N=s"     # escultor      
 C U L T U R A   >       -URA,ORA        ; "G=m,N=s"     # escultora  
 C U L T U R A   >       -URA,ORES       ; "G=m,N=s"     # escultores
@@ -387,6 +390,11 @@ F O B I A       >       -OBIA,ÓBICA	; "G=f,N=s"     # claustrofóbica
 F O B I A       >       -OBIA,ÓBICOS	; "G=m,N=p"     # claustrofóbicos
 F O B I A       >       -OBIA,ÓBICAS	; "G=f,N=p"     # claustrofóbicas
 
+P A T I A	>	-ATIA,ÁTICO	; "G=m,N=s"	# telepático
+P A T I A       >       -ATIA,ÁTICA     ; "G=f,N=s"     # telepática
+P A T I A       >       -ATIA,ÁTICOS    ; "G=m,N=p"     # telepáticos
+P A T I A       >       -ATIA,ÁTICAS    ; "G=f,N=p"     # telepáticas
+
 M E T R I A	>	-ETRIA,ÉTRICO	; "G=m,N=s"	# isométrico
 M E T R I A     >       -ETRIA,ÉTRICA   ; "G=m,N=s"     # isométrica
 M E T R I A     >       -ETRIA,ÉTRICOS  ; "G=f,N=p"     # isométricos
@@ -396,6 +404,11 @@ M O R F I A	>	-ORFIA,ÓRFICO	; "G=m,N=s"	# isomórfico
 M O R F I A     >       -ORFIA,ÓRFICA   ; "G=f,N=s"     # isomórfica
 M O R F I A     >       -ORFIA,ÓRFICOS  ; "G=m,N=p"     # isomórficos
 M O R F I A     >       -ORFIA,ÓRFICAS  ; "G=f,N=p"     # isomórficas
+
+M O R F I S M O	>	-MORFISMO,MÓRFICO  ; "G=m,N=s"	 # isomórfico
+M O R F I S M O >       -MORFISMO,MÓRFICA  ; "G=f,N=s"   # isomórfico
+M O R F I S M O >       -MORFISMO,MÓRFICOS ; "G=m,N=p"   # isomórfico
+M O R F I S M O >       -MORFISMO,MÓRFICAS ; "G=f,N=p"   # isomórfico
 
 #----------------------------------------
 # íssimo
