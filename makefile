@@ -11,7 +11,7 @@
 LING=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
-DIST_DIR=jspell.$(ABR).$(DATE)
+DIST_DIR=jspell.$(ABR)-$(DATE)
 
 LIB=`jspell-dict --dic-dir`
 ISPELLLIB=/home/jj/lib/ispell
@@ -133,7 +133,8 @@ aspell-tgz:
 #-------------------------------------------------------------------
 
 jspell-rpm: jspell-tgz
-	mv jspell.$(ABR).$(DATE).tar.gz ~/rpms/SOURCES/jspell.$(ABR).tgz
+	mv $(DIST_DIR).tar.gz ~/rpms/SOURCES/jspell.$(ABR).tgz
+	perl -pe 's/VERSION/$(DATE)/' jspell.pt.spec.in > jspell.pt.spec
 	rpmbuild -ba jspell.pt.spec 
 
 
