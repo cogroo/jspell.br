@@ -569,6 +569,7 @@ E           >     -E,INHOS        ; "N=p,GR=dim"  # bigode->bigodinhos
 M           >     -M,NZINHOS      ; "N=p,GR=dim"  # homem->homenzinhos
 L           >        ZINHOS       ; "N=p,GR=dim"  # anel->anelzinhos
 
+[^CGÇÃI]O   >     -O,INHA         ; "G=f,GR=dim"  # beijo->beijinho
 [^ÇG]A      >     -A,INHA         ; "GR=dim"  # depressa->depressinha
 C A         >    -CA,QUINHA       ; "GR=dim"  # vaca->vaquinha
 Ç A         >    -ÇA,CINHA        ; "GR=dim"  # cabeça->cabecinha
@@ -576,6 +577,7 @@ G A         >     -A,UINHA        ; "GR=dim"  # carga->carguinha
 Á           >     -Á,AZINHA       ; "GR=dim"  # pá->pazinha
 Ã           >     -Ã,AZINHA       ; "GR=dim"  # mamã->mamazinha
 
+[^CGÇÃI]O   >     -O,INHAS        ; "G=f,N=p,GR=dim"  # beijo->beijinho
 [^ÇG]A      >     -A,INHAS        ; "N=p,GR=dim"  # depressa->depressinhas
 C A         >    -CA,QUINHAS      ; "GR=dim"      # vaca->vaquinhas
 Ç A         >    -ÇA,CINHAS       ; "N=p,GR=dim"  # cabeça->cabecinhas
