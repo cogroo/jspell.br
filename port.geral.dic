@@ -1466,6 +1466,7 @@ ambas/CAT=pind,G=f,N=p//
 ambição/#nf/p/
 ambicionar/#vt/XYPL/
 ambicioso/#a/fp/
+ambidextro/CAT=a_nc,N=s/p
 ambiência/#nf/p/
 ambiental//ptm/
 ambientar/#vt/XYPL/
@@ -2261,6 +2262,7 @@ apartar/#vt/XYPLcMD/
 aparte/#nm/p/
 aparvalhar/#vt/XYPL/
 aparvoar/#vt/XYPLM/
+apascentar/#vt/X/
 apassivador/#a//
 apassivante/#an/p/
 apassivar/#vt/XYPLcDn/
@@ -6550,7 +6552,7 @@ cascarrão/#nm//
 cascar/#vt/XYPL/
 cascata/#nf/p/
 cascatear/#vi/ZYL/
-cascavel/#hm//
+cascavel/#hm/p/
 casco/#nm/p/
 cascoso/#a//
 cascudo/#hm//
@@ -7926,7 +7928,7 @@ colaborar/#vi/XYLcDn/
 colador/#nm//
 colagem/#nf/p/
 cola/#nf/p/
-colapsar///
+colapsar/#vt/X/
 colapso/#nm/p/
 colarinho/#nm/p/
 colar/#vn/XYPLpcDR/
@@ -13498,7 +13500,7 @@ escoador/#hm//
 escoadouro/#nm//
 escoadura/#nf//
 escoante/#hn/p/
-escoar//cMDn/
+escoar/CAT=v,T=inf/XcMDn/
 escocês/#hm/fp/
 escócio/#a//
 escola/#nf/p/
@@ -13961,6 +13963,7 @@ esquentadiço/#a//
 esquentador/#nm//
 esquentar/#vt/XYPLcMD/
 esquerda/#nf//
+esquerdino/CAT=a_nc,N=s/p
 esquerdista/#hn/px/
 esquerdo/#a/fp/
 esquiador/#nm//
@@ -16664,7 +16667,7 @@ glorificar/#vt/XYPLcDn/
 glorioso/#a/fpm/
 glosados///
 glosa//p/
-glossário/#nm//
+glossário/#nm/p/
 glossematismo/#nm/p/
 glote/#nf//
 glótica/#nf//
@@ -16792,14 +16795,14 @@ grade/#nf/p/
 gradiente/#nm/p/
 graduadamente/#av//
 gradual/#an/mit/
-graduando/#nm//
+graduando/#nm/p/
 graduar/#vt/XYPLcMDO/
 grã-duquesa/#nf//
 grafia/#nf/pi/
 gráfica/#nf/p/
 gráfico/#hm/pfH/
 grafitada///
-grafite/#nf//
+grafite/#nf/p/
 grafítico/#a//
 grafitização/#nf//
 grafologia/#nf/pqr/
@@ -17772,7 +17775,7 @@ imaterialidade/#nf/p/
 imaterialismo/#nm/p/
 imaterializar/#vt/XYPL/
 imaturidade/#nf/p/
-imaturo/#a/pd/
+imaturo/#a/pdf/
 imbatível/#a/p/
 imbecil/#hn/pdm/
 imbecilidade/#nf/p/
@@ -19106,13 +19109,13 @@ integrar/#vt/XYPLcDnv/
 integridade/#nf/p/
 integrismo/#nm/p/
 integrista/#nn/p/
-íntegro/#a/f/
+íntegro/#a/fp/
 inteirar/#vt/XYPL/
 inteireza/#nf//
 inteiriço/#a//
 inteiro/#a/pfm/
 intelecção///
-intelecto/#nm//
+intelecto/#nm/p/
 intelectual/#hn/pidtm/
 intelectualidade/#nf/p/
 intelectualizar/#vt/XYPLc/
@@ -31389,11 +31392,11 @@ sortalhão/#nm//
 sortear/#vt/ZYPLMD/
 sorteio/#nm/p/
 sorte/#nf/p/
-sortilégio/#nm//
+sortilégio/#nm/p/
 sortir/#vn,I=3/YLM/
 sorvedela/#nf/p/
-sorvedoiro/#nm//
-sorvedouro/#nm//
+sorvedoiro/#nm/p/
+sorvedouro/#nm/p/
 sorvedura/#nf//
 sorver/#vt/XYPL/
 sorveteira/#nf//
@@ -31401,7 +31404,7 @@ sorveteiro/#nm/fp/
 sorvete/#nm/p/
 sorvo/#nm//
 sósia/#nn/p/
-soslaio/#nm//
+soslaio/#nm/p/
 sossegador/#hm//
 sossega/#nf//
 sossegar/#vn/XYPLDm/
@@ -31773,7 +31776,7 @@ superfino/#a/fp/
 superfluido/#nm//
 supérfluo/#hm/fp/
 superfortaleza/#nf//
-super-homem/#nm//
+super-homem/#nm/p/
 super-humano/#a/fp/
 superintendência/#nf/p/
 superintendente/#hn//
@@ -32103,7 +32106,7 @@ taquicardia///
 taquígrafos///
 taquímetro/#nm/p/
 tara/#nf//
-tarântula/#nf//
+tarântula/#nf/p/
 tarar/#vt/XYPL/
 tardar/#vn/XYPLMD/
 tarde/#av/s/
@@ -34034,6 +34037,7 @@ vénia/#nf/p/
 vê/#nm//
 venosidade/#nf/p/
 venoso/#a/pfd/
+venta/#nf/p/
 ventania/#nf/p/
 ventar/#vi,I=4/L/
 ventilante/#an/p/
@@ -34550,7 +34554,7 @@ volúmico/#a//
 volumoso/#a/fp/
 voluntariado/#nm//
 voluntariedade/#nf/p/
-voluntário/#hm/fpm/
+voluntário/#hm/fpH/
 voluntarioso/#a/d/
 voluntarismo/#nm/p/
 voluntarista/#hn//
