@@ -12,7 +12,7 @@ my $pri; my $seg; my @ter; my @qua; my @qui; my $i; my $tmp; my $tmp2;
 print "SET ISO8859-1\n";
 #print "TRY ãáéêèíõóôâàúçesianrtolcdugmphbfv\n\n";
 #linha a seguir gerada dinamicamente (lista de letras ordenadas pelo número de ocorrências
-print "TRY aecdprimstfbvlgonhqujzACMBSPTELGRFxHVJODNIáKíóUZéXWQkÁúâwYêÍÉàÓÂyÚ\n\n";
+print "TRY aerisontcdmlupvgbfzáhçqjíxãóéêâúõACMPSBTELGRIFVDkHJONôywUKXZWQÁYÍÉàÓèÂÚ";
 
 
 while(<>){
