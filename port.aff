@@ -1019,11 +1019,16 @@ A I R       >   -R,O        ; "P=1,N=s,T=p"
 [UA] I R    >   EMOS        ; "P=1,N=p,T=f"    # REG.
 [UA] I R    >   EIS         ; "P=2,N=p,T=f"    # REG.
 [UA] I R    >   ÃO          ; "P=3,N=p,T=f"    # REG.
-[UA] I R    >   -R,A        ; "P=1_3,N=s,T=pc"
-[UA] I R    >   -R,AS       ; "P=2,N=s,T=pc"
-[UA] I R    >   -R,AMOS     ; "P=1,N=p,T=pc"
-[UA] I R    >   -R,AIS      ; "P=2,N=p,T=pc"
-[UA] I R    >   -R,AM       ; "P=3,N=p,T=pc"
+U I R    >   -IR,A        ; "P=1_3,N=s,T=pc"
+U I R    >   -IR,AS       ; "P=2,N=s,T=pc"
+U I R    >   -IR,AMOS     ; "P=1,N=p,T=pc"
+U I R    >   -IR,AIS      ; "P=2,N=p,T=pc"
+U I R    >   -IR,AM       ; "P=3,N=p,T=pc"
+A I R    >   -R,A        ; "P=1_3,N=s,T=pc"
+A I R    >   -R,AS       ; "P=2,N=s,T=pc"
+A I R    >   -R,AMOS     ; "P=1,N=p,T=pc"
+A I R    >   -R,AIS      ; "P=2,N=p,T=pc"
+A I R    >   -R,AM       ; "P=3,N=p,T=pc"
 [UA] I R    >   -IR,ÍSSE    ; "P=1_3,N=s,T=pic"
 [UA] I R    >   -IR,ÍSSES   ; "P=2,N=s,T=pic"
 [UA] I R    >   -IR,ÍSSEMOS ; "P=1,N=p,T=pic"  # REG.
