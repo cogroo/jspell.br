@@ -31,8 +31,21 @@ tgz:
 zip:
 	zip myspell_$(ABR)_$(DATE).zip $P/*pt*
 
-#install : # Openoffice user directory #Mozilla Mail #Thunderbird
-	#cd $P; make install
+install : 	# Openoffice user directory #Mozilla Mail #Thunderbird
+	#Como detectar a ultima versão ?			
+	if test -w $(HOME)/.openoffice/1.1.3/user/wordbook ; then \
+		cp $P/*pt* $(HOME)/.openoffice/1.1.3/user/wordbook ; \
+		echo "OpenOffice install!"; \
+	fi;
+	if test -w /usr/lib/mozilla/components/myspell ; then \
+		cp $P/*pt* /usr/lib/mozilla/components/myspell; \
+		echo "Mozilla install!"; \
+	fi;
+	if test -w /usr/lib/MozillaThunderbird/components/myspell ; then \
+		cp $P/*pt* /usr/lib/MozillaThunderbird/components/myspell; \
+		echo "Mozilla Thunderbird install!"; \
+	fi;
+
 clean : 
 	make realclean
 realclean:

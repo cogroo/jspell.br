@@ -49,7 +49,7 @@ what:
 	@ echo
 	@ echo -e "myspell:"
 	@ echo -e "\tmyspell -- builds myspell dictionary (will make ispell if required)"
-	@ echo -e "\tmyspell-install -- installs myspell (NO INSTALL YET)"
+	@ echo -e "\tmyspell-install -- installs myspell"
 	@ echo -e "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
 	@ echo -e "\tmyspell-zip -- creates myspell distribution file (zip)"
 	@ echo
@@ -139,8 +139,8 @@ aspell-tgz:
 myspell: port.dic port.aff
 	cd MYSPELL; make
 
-#myspell-install: myspell
-	#cd MYSPELL; make install
+myspell-install: myspell
+	cd MYSPELL; make install
 
 myspell-tgz: myspell
 	cd MYSPELL; make tgz
