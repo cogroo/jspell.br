@@ -51,7 +51,7 @@ Adriano/#npm/
 Adriático/#la,#t/
 Afeganistão/#la,#tp/
 Afonso/#npm/
-África/#t/
+África/#t,SEM=cont/
 Afrodite/#npf/
 Ágata/#npf/
 Agostinho/#npm/
@@ -80,6 +80,7 @@ Albertino/#npm/
 Albert/#np1/
 Alberto/#npm/
 Albino/#npm/
+Albufeira/#tcf/
 Albuquerque/#t/
 Alcácer/#t/
 Alcanena/#t/
@@ -154,7 +155,7 @@ Amazónia/#la,#t/
 Ambrósio/#npm/
 Amélia/#npf/
 Américas/#t/
-América/#la,#t/
+América/#la,#t,SEM=cont/
 Américo/#npm/
 Amesterdão/#tc/
 Amílcar/#npm/
@@ -253,7 +254,7 @@ Arronches/#t/
 Arruda/#t/
 Artur/#npm/
 Ascenção/#npm/
-Ásia/#la,#tf/
+Ásia/#la,#tf,SEM=cont/
 Aspásia/#t/
 Assíria/#t/
 Assis/#npm/
@@ -641,6 +642,7 @@ Columbano/#np/
 Colúmbia/#t/
 Comba/#t/
 Compostela/#tc/
+Conceição/#npf//
 Condeixa-a-Nova/#t/
 Condeixa/#t/
 Condestável/#np/
@@ -883,7 +885,7 @@ Eunice/#npf/
 Eurico/#npm/
 Eurípides/#npm/
 Euroásia/CAT=np/
-Europa/CAT=np/
+Europa/CAT=np,SEM=cont/
 Eusébio/#npm/
 Evangelho/CAT=np,G=m/
 Eva/#npf/
@@ -1764,7 +1766,7 @@ Nuremberga/#tc/
 Oakland/#t/
 Obélix/#npm/
 Óbidos/#t/
-Oceania/#la,#t/
+Oceania/#la,#t,SEM=cont/
 Oceânia/#t/
 Octaviano/CAT=np/
 Octávio/#npm/
