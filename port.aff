@@ -158,13 +158,12 @@ altstringchar \\\`U Ù
 prefixes
 
 flag *A:                   # anti
-    .       >      ANTI       ; "PFSEM=anti"       # ex. venenoso -> antivenenoso
-flag *B:                   # -anti
-    .       >      ANTI\-     ; "PFSEM=anti"       # ex. semita -> anti-semita
+[^HIRS]	>	ANTI       ; "PFSEM=anti"	# antivenenoso
+[HIRS]	>	ANTI\-     ; "PFSEM=anti"	# anti-semita
 
 flag *S:                   # des
-[^H]        >      DES        ; "PFSEM=not"       # ex. amarrar -> desamarrar
-H           >    -H,DES       ; "PFSEM=not"       # ex. habitar -> desabitar
+[^H]	>	DES	; "PFSEM=not"       # amarrar -> desamarrar
+H	>    -H,DES	; "PFSEM=not"       # habitar -> desabitar
 
 flag *I:                   #in
 [^PLMR]     >      IN         ; "PFSEM=not"    # ex. finito -> infinito
@@ -176,22 +175,35 @@ flag *R:                   #re
 [^S]        >      RE         ; "PFSEM=outra"     # ex. encontrar -> reencontrar
 S           >      RES        ; "PFSEM=outra"     # ex. surgir -> ressurgir
 
-flag *E:                   #pre
+flag *E:                   #pré-
     .       >      PRÉ\-     ; "PFSEM=pre"       # ex. escolar -> pré-escolar
 
-flag *O:                   #pos
-    .       >      PÓS\-     ; "PFSEM=pos"       # ex. guerra -> p'os-guerra
+flag *O:                   #pós-
+    .       >      PÓS\-     ; "PFSEM=pos"       # ex. guerra -> pós-guerra
 
-flag *U:                   #sub
-    .       >      SUB\-      ; "PFSEM=sub"       # ex. problema -> sub-problema
+flag *u:                   #sub
+[BHR]	    >      SUB\-      ; "PFSEM=sub"	# ex. humano -> sub-humano
+[^BHR]      >      SUB        ; "PFSEM=sub"	# ex. tribo -> subtribo
+
+flag *x:		# ex-
+    .	    >	EX\-		; "PFSEM=ex"	# ex-presidente
+
+flag *V:		# vice-
+    .	   >	VICE\-		; "PFSEM=vice"	# vice-presidente
 
 flag *F:  			#ultra super        #noispell
-    .       >      ULTRA      ; "PFSEM=ultra"     #         #noispell
-    .       >      SUPER      ; "PFSEM=super"     #        #noispell
-    .       >      HIPER      ; "PFSEM=hiper"     #        #noispell
-    .       >      BI      ; "PFSEM=2"     #        #noispell
-    S       >      TRIS      ; "PFSEM=3"     #        #noispell
-    [^S]    >      TRI       ; "PFSEM=3"     #        #noispell
+    .       >	   ULTRA     ; "PFSEM=ultra"	#	#noispell
+    .       >      SUPER     ; "PFSEM=super"	#	#noispell
+    .       >      HIPER     ; "PFSEM=hiper"	#	#noispell
+
+flag * T:
+    .       >      BI        ; "PFSEM=2"	#	#noispell
+    S       >      TRIS      ; "PFSEM=3"	#	#noispell
+    [^S]    >      TRI       ; "PFSEM=3"	#	#noispell
+    .       >      TETRA     ; "PFSEM=4"	#	#noispell
+    .	    > 	   PENTA     ; "PFSEM=5"	#	#noispell
+    .       >      HEXA	     ; "PFSEM=6"        #	#noispell
+
 suffixes
 
 #-----------------------------------------
@@ -213,12 +225,12 @@ M           >    -M,NS   ; "N=p"         # m -> ns      ex. jovem, jovens
 [RNZX]      >       ES   ; "N=p"         # -> es        ex. cantor, cantores
 
 flag *a:         ; "CAT=a_nc,N=s"      #plurais
-Ã O         >       S    ; "N=p"         # ão -> ãos     ex. mão, mãos
-I L         >   -IL,EIS  ; "N=p"         # il -> eis     ex. ágil, ágeis  # deve ser posto em todos os que têm acento e acabam em il
-
+Ã O         >       S    ; "N=p"        # ex. mão, mãos
+I L         >   -IL,EIS  ; "N=p"        # ex. ágil, ágeis  # deve ser posto em todos os que têm acento e acabam em il
+E N T O S   >	-OS,AS	 ; "G=f"	# duzentos 
 
 flag *e:         ; "CAT=a_nc,N=s"      #plurais
-Ã O         >    -O,ES   ; "N=p"         # ão -> ães     ex. pão, pães
+Ã O         >    -O,ES   ; "N=p"         # ex. pão, pães
 A L         >    ES      ; "N=p"         #               ex. mal males
 
 #-----------------------------------------
@@ -238,8 +250,10 @@ E           >    -E,A    ; "G=f"         # e -> a     ex. ele -> ela
 E           >    -E,AS   ; "G=f,N=p"    # e -> a     ex. ele -> elas
 
 flag *b:         ; "CAT=a_nc,G=m,N=s"  #femininos
-Ã O         >    -O,-    ; "G=f"         # ão -> ã     ex. alemão -> alemã
-Ã O         >    -O,S    ; "G=f,N=p"    # ão -> ãs
+Ã O	>	-O,-	; "G=f"		# alemão -> alemã
+Ã O	>	-O,S	; "G=f,N=p"	# alemão -> alemãs
+E	>	SSA	; "G=f"		# condessa
+E	>	SSAS	; "G=f,N=p"	# condessas
 
 flag *g:         ; "CAT=a_nc,G=m,N=s"  #femininos
 Ã O         >   -ÃO,OA  ; "G=f"         # ão -> oa     ex. patrão -> patroa
@@ -248,50 +262,140 @@ flag *g:         ; "CAT=a_nc,G=m,N=s"  #femininos
 #----------------------------------------
 # mente
 flag +m:         ; "CAT=adj,N=s"       #mente
-O           >     -O,AMENTE    ; "CAT=adv"      # aberto->abertamente
-[^V][^N~][^O]>       MENTE     ; "CAT=adv"      # anterior->anteriormente  N~-means any char
-Á V E L     >  -ÁVEL,AVELMENTE ; "CAT=adv"      # amável->amavelmente
-Í V E L     >  -ÍVEL,IVELMENTE ; "CAT=adv"      # horrível->horrivelmente
+O		>     -O,AMENTE    ; "CAT=adv"	# abertamente
+U		>	 AMENTE    ; "CAT=adv"	# cruamente
+[^V][^Q][^UO]	>       MENTE      ; "CAT=adv"	# anteriormente Q~-means any char
+Á V E L		>  -ÁVEL,AVELMENTE ; "CAT=adv"	# amavelmente
+Í V E L		>  -ÍVEL,IVELMENTE ; "CAT=adv"	# horrivelmente
 
 #----------------------------------------
 #mente
 flag +H:         ; "CAT=adj,N=s"       #mente
 
-D O R       >  AMENTE          ; "CAT=adv"
-Ó R I O     >  -ÓRIO,ORIAMENTE ; "CAT=adv"
-Á R I O     >  -ÁRIO,ARIAMENTE ; "CAT=adv"
-Á T I C O   >  -ÁTICO,ATICAMENTE ; "CAT=adv"
-Ó N I C O   >  -ÓNiCO,ONICAMENTE ; "CAT=adv"
-Ó G I C O   >  -ÓGICO,OGICAMENTE ; "CAT=adv"
-Í F E R O   >  -ÍFERO,IFERAMENTE ; "CAT=adv"
-É T I C O   >  -ÉTICO,ETICAMENTE ; "CAT=adv"
-Í S T I C O >  -ÍSTICO,ISTICAMENTE ; "CAT=adv"
-Í S S I M O >  -ÍSSIMO,ISSIMAMENTE ; "CAT=adv"
-Í T I C O   >  -ÍTICO,ITICAMENTE ; "CAT=adv"
-Á F I C O   >  -ÁFICO,AFICAMENTE ; "CAT=adv"
-É T R I C O >  -ÉTRICO,ETRICAMENTE ; "CAT=adv"
-Ó M I C O   >  -ÓMICO,OMICAMENTE ; "CAT=adv"
-É R I C O   >  -ÉRICO,ERICAMENTE ; "CAT=adv"
-Ó T I C O   >  -ÓTICO,OTICAMENTE ; "CAT=adv"
-Á C E O     >  -ÁCEO,ACEAMENTE ; "CAT=adv"
-Á S T I C O >  -ÁSTICO,ASTICAMENTE ; "CAT=adv"
-Í C I O     >  -ÍCIO,ICIAMENTE ; "CAT=adv"
-Í F I C O   >  -ÍFICO,IFICAMENTE ; "CAT=adv"
-Í A C O     >  -ÍACO,IACAMENTE ; "CAT=adv"
-Ó L I C O   >  -ÓLICO,OLICAMENTE ; "CAT=adv"
-Ó R I C O   >  -ÓRICO,ORICAMENTE ; "CAT=adv"
-É N I C O   >  -ÉNICO,ENICAMENTE ; "CAT=adv"
-Ó D I C O   >  -ÓDICO,ODICAMENTE ; "CAT=adv"
-Ó P I C O   >  -ÓPICO,OPICAMENTE ; "CAT=adv"
-Á L I C O   >  -ÁLICO,ALICAMENTE ; "CAT=adv"
-É R M I C O >  -ÉRMICO,ERMICAMENTE ; "CAT=adv"
-Í V O R O   >  -ÍVORO,IVORAMENTE ; "CAT=adv"
-Á B I C O   >  -ÁBICO,ABICAMENTE ; "CAT=adv"
-Ó F I L O   >  -ÓFILO,OFILAMENTE ; "CAT=adv"
-É L I C O   >  -ÉLICO,ELICAMENTE ; "CAT=adv"
-É M I C O   >  -ÉMICO,EMICAMENTE ; "CAT=adv"
-Ó N I O     >  -ÓNIO,ONIAMENTE ; "CAT=adv"
-Á S I C O   >  -ÁSICO,ASICAMENTE ; "CAT=adv"
+D O R		>  AMENTE		; "CAT=adv"
+Ó R I O		>  -ÓRIO,ORIAMENT	; "CAT=adv"
+Á R I O		>  -ÁRIO,ARIAMENTE	; "CAT=adv"
+Á T I C O	>  -ÁTICO,ATICAMENTE	; "CAT=adv"
+Ó N I C O	>  -ÓNiCO,ONICAMENTE	; "CAT=adv"
+Ó G I C O	>  -ÓGICO,OGICAMENTE	; "CAT=adv"
+Í F E R O	>  -ÍFERO,IFERAMENTE	; "CAT=adv"
+É T I C O	>  -ÉTICO,ETICAMENTE	; "CAT=adv"
+Í S T I C O	>  -ÍSTICO,ISTICAMENTE	; "CAT=adv"
+Í S S I M O	>  -ÍSSIMO,ISSIMAMENTE	; "CAT=adv"
+Í T I C O	>  -ÍTICO,ITICAMENTE	; "CAT=adv"
+Á F I C O	>  -ÁFICO,AFICAMENTE	; "CAT=adv"
+É T R I C O	>  -ÉTRICO,ETRICAMENTE	; "CAT=adv"
+Ó M I C O	>  -ÓMICO,OMICAMENTE	; "CAT=adv"
+É R I C O	>  -ÉRICO,ERICAMENTE	; "CAT=adv"
+Ó T I C O	>  -ÓTICO,OTICAMENTE	; "CAT=adv"
+Á C E O		>  -ÁCEO,ACEAMENTE	; "CAT=adv"
+Á S T I C O	>  -ÁSTICO,ASTICAMENTE	; "CAT=adv"
+Í C I O		>  -ÍCIO,ICIAMENTE	; "CAT=adv"
+Í F I C O	>  -ÍFICO,IFICAMENTE	; "CAT=adv"
+Í A C O		>  -ÍACO,IACAMENTE	; "CAT=adv"
+Ó L I C O	>  -ÓLICO,OLICAMENTE	; "CAT=adv"
+Ó R I C O	>  -ÓRICO,ORICAMENTE	; "CAT=adv"
+É N I C O	>  -ÉNICO,ENICAMENTE	; "CAT=adv"
+Ó D I C O	>  -ÓDICO,ODICAMENTE	; "CAT=adv"
+Ó P I C O	>  -ÓPICO,OPICAMENTE	; "CAT=adv"
+Á L I C O	>  -ÁLICO,ALICAMENTE	; "CAT=adv"
+É R M I C O	>  -ÉRMICO,ERMICAMENTE	; "CAT=adv"
+Í V O R O	>  -ÍVORO,IVORAMENTE	; "CAT=adv"
+Á B I C O	>  -ÁBICO,ABICAMENTE	; "CAT=adv"
+Ó F I L O	>  -ÓFILO,OFILAMENTE	; "CAT=adv"
+É L I C O	>  -ÉLICO,ELICAMENTE	; "CAT=adv"
+É M I C O	>  -ÉMICO,EMICAMENTE	; "CAT=adv"
+Ó N I O		>  -ÓNIO,ONIAMENTE	; "CAT=adv"
+Á S I C O	>  -ÁSICO,ASICAMENTE	; "CAT=adv"
+
+flag *q:	; "CAT=hn"
+L O G I A	>	-OLOGIA,ÓLOGO	; "G=m,N=s"	# astrólogo
+L O G I A	>	-OLOGIA,ÓLOGA	; "G=f,N=s"     # astróloga
+L O G I A	>	-OLOGIA,ÓLOGOS	; "G=m,N=p"	# astrólogos
+L O G I A	>	-OLOGIA,ÓLOGAS	; "G=f,N=p"	# astrólogas
+
+A F I A		>       -AFIA,ÁFICO    ; "G=m,N=s"     # etnográfico
+A F I A		>	-AFIA,ÁFICA    ; "G=f,N=s"     # etnográfica
+A F I A		>       -AFIA,ÁFICOS   ; "G=m,N=p"     # etnográficos
+A F I A		>       -AFIA,ÁFICAS   ; "G=f,N=p"     # etnográficas
+
+M A N I A	>	-OMANIA,ÓMANO     ; "G=m,N=s"	# melómano
+M A N I A       >       -OMANIA,ÓMANA     ; "G=m,N=s"   # melómana
+M A N I A       >       -OMANIA,ÓMANOS    ; "G=m,N=s"   # melómanos
+M A N I A       >       -OMANIA,ÓMANAS     ; "G=m,N=s"	# melómanas
+
+F O B I A	>	-OFOBIA,ÓFOBO	; "G=m,N=s"	# xenófobo
+F O B I A       >       -OFOBIA,ÓFOBA   ; "G=f,N=s"     # xenófoba
+F O B I A       >       -OFOBIA,ÓFOBOS	; "G=m,N=p"	# xenófobos
+F O B I A       >       -OFOBIA,ÓFOBAS	; "G=f,N=p"	# xenófobas
+
+F I L I A	>	-OFILIA,ÓFILO	; "G=m,N=s"	# columbófilo
+F I L I A       >       -OFILIA,ÓFILA   ; "G=f,N=s"     # columbófila
+F I L I A       >       -OFILIA,ÓFILOS	; "G=m,N=p"     # columbófilos
+F I L I A       >       -OFILIA,ÓFILAS	; "G=f,N=p"     # columbófilas
+
+C Í D I O	>	-ÍDIO,IDA	; "G=_,N=s"	# homicida
+C Í D I O	>	-ÍDIO,IDAS	; "G=_,N=p"	# homicidas
+
+C U L T U R A   >       -URA,OR         ; "G=m,N=s"     # escultor      
+C U L T U R A   >       -URA,ORA        ; "G=m,N=s"     # escultora  
+C U L T U R A   >       -URA,ORES       ; "G=m,N=s"     # escultores
+C U L T U R A   >       -URA,ORAS       ; "G=m,N=s"     # escultoras 
+
+C R A C I A     >       -CIA,TA         ; "G=_,N=s"     # democrata
+C R A C I A     >       -CIA,TAS        ; "G=_,N=p"     # democratas
+
+E Í S M O	>	-SMO,STA	; "G=_,N=s"	# politeísta
+E Í S M O 	>	-SMO,STAS	; "G=_,N=p"	# politeístas
+
+flag *r:        ; "CAT=hn"
+L O G I A       >       -OGIA,ÓGICO    ; "G=m,N=s"     # astrólogico
+L O G I A       >       -OGIA,ÓGICA    ; "G=f,N=s"     # astrólogica
+L O G I A       >       -OGIA,ÓGICOS   ; "G=m,N=p"     # astrólogicos
+L O G I A       >       -OGIA,ÓGICAS   ; "G=f,N=p"     # astrólogicas
+
+O G R A F I A	>	-OGRAFIA,ÓGRAFO	 ; "G=m,N=s"	# geógrafo
+O G R A F I A   >       -OGRAFIA,ÓGRAFA  ; "G=f,N=s"    # geógrafa
+O G R A F I A   >       -OGRAFIA,ÓGRAFOS ; "G=m,N=p"    # geógrafo
+O G R A F I A   >       -OGRAFIA,ÓGRAFAS ; "G=f,N=p"    # geógrafas
+
+N O M I A	>	-OMIA,ÓMICO	; "G=m,N=s"	# económico
+N O M I A       >       -OMIA,ÓMICA     ; "G=f,N=s"     # económica
+N O M I A       >       -OMIA,ÓMICOS    ; "G=m,N=p"     # económicos
+N O M I A       >       -OMIA,ÓMICAS    ; "G=f,N=p"     # económicas
+
+M A N I A       >       -IA,ÍACO     ; "G=m,N=s"        # maníaco  
+M A N I A       >       -IA,ÍACA     ; "G=m,N=s"        # maníaca   
+M A N I A       >       -IA,ÍACOS    ; "G=m,N=s"        # maníacos    
+M A N I A       >       -IA,ÍACAS     ; "G=m,N=s"        # maníacas  
+
+C R A C I A	>	-ACIA,ÁTICO	; "G=m,N=s"	 # democrático
+C R A C I A     >       -ACIA,ÁTICA     ; "G=f,N=s"      # democrática
+C R A C I A     >       -ACIA,ÁTICOS     ; "G=m,N=p"     # democráticos
+C R A C I A     >       -ACIA,ÁTICAS     ; "G=f,N=p"     # democráticas
+
+C U L T U R A	>	-ICULTURA,ÍCOLA	 ; "G=_,N=s"	# piscícola
+C U L T U R A   >       -ICULTURA,ÍCOLAS ; "G=_,N=p"    # piscícolas
+
+A R Q U I A	>	-ARQUIA,ÁRQUICO	 ; "G=m,N=s"	# monárquico
+A R Q U I A     >       -ARQUIA,ÁRQUICA  ; "G=f,N=s"    # monárquica
+A R Q U I A     >       -ARQUIA,ÁRQUICOS ; "G=m,N=p"    # monárquicos
+A R Q U I A     >       -ARQUIA,ÁRQUICAS ; "G=f,N=p"    # monárquicas
+
+F O B I A	>	-OBIA,ÓBICO	; "G=m,N=s"	# claustrofóbico
+F O B I A       >       -OBIA,ÓBICA	; "G=f,N=s"     # claustrofóbica
+F O B I A       >       -OBIA,ÓBICOS	; "G=m,N=p"     # claustrofóbicos
+F O B I A       >       -OBIA,ÓBICAS	; "G=f,N=p"     # claustrofóbicas
+
+M E T R I A	>	-ETRIA,ÉTRICO	; "G=m,N=s"	# isométrico
+M E T R I A     >       -ETRIA,ÉTRICA   ; "G=m,N=s"     # isométrica
+M E T R I A     >       -ETRIA,ÉTRICOS  ; "G=f,N=p"     # isométricos
+M E T R I A     >       -ETRIA,ÉTRICAS  ; "G=f,N=p"     # isométricas
+
+M O R F I A	>	-ORFIA,ÓRFICO	; "G=m,N=s"	# isomórfico
+M O R F I A     >       -ORFIA,ÓRFICA   ; "G=f,N=s"     # isomórfica
+M O R F I A     >       -ORFIA,ÓRFICOS  ; "G=m,N=p"     # isomórficos
+M O R F I A     >       -ORFIA,ÓRFICAS  ; "G=f,N=p"     # isomórficas
 
 #----------------------------------------
 # íssimo
@@ -340,52 +444,78 @@ flag +d:         ; "CAT=adj,N=s"       #idade
 G O         >    -GO,GUIDADE   ; "CAT=nc,G=f,FSEM=dd" # antigo->antiguidade
 E           >     -E,IDADE     ; "CAT=nc,G=f,FSEM=dd" # breve->brevidade
 R           >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # angular->angularidade
-[^V][^N~] L >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # amoral->amoralidade
-[^ÁÍ] V E L >   -VEL,BILIDADE  ; "CAT=nc,G=f,FSEM=dd" #
+[^V][^Q] L  >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # amoral->amoralidade
+[^ÁÍÚ] V E L >   -VEL,BILIDADE  ; "CAT=nc,G=f,FSEM=dd" #
 Á V E L     >  -ÁVEL,ABILIDADE ; "CAT=nc,G=f,FSEM=dd" # amável->amabilidade
 Í V E L     >  -ÍVEL,IBILIDADE ; "CAT=nc,G=f,FSEM=dd" # amovível->amovibilidade
+Ú V E L	    >  -ÚVEL,UBILIDADE ; "CAR=nc,G=f,FSEM=dd" # volúvel->volubilidade
 Z           >     -Z,CIDADE    ; "CAT=nc,G=f,FSEM=dd" # feroz->ferocidade
 
-[^ÇG]O      >     -O,IDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # activo->actividades
-G O         >    -GO,GUIDADES  ; "CAT=nc,G=f,N=p,FSEM=dd" # antigo->antiguidades
-[^V][^N~] L >        IDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # funcional->funcionalidades
+[^ÇG]O      >     -O,IDADES     ; "CAT=nc,G=f,N=p,FSEM=dd" # activo->actividade 
+Ç O         >    -ÇO,CIDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # castic,o->casticidade
+G O         >    -GO,GUIDADES   ; "CAT=nc,G=f,N=p,FSEM=dd" # antigo->antiguidade
+E           >     -E,IDADES     ; "CAT=nc,G=f,N=p,FSEM=dd" # breve->brevidade
+R           >        IDADES     ; "CAT=nc,G=f,N=p,FSEM=dd" # angular->angularidade   
+[^V][^Q] L  >        IDADES	; "CAT=nc,G=f,N=p,FSEM=dd" # amoral->amoralidade
+[^ÁÍ] V E L >   -VEL,BILIDADES  ; "CAT=nc,G=f,N=p,FSEM=dd" # 
+Á V E L     >  -ÁVEL,ABILIDADES ; "CAT=nc,G=f,N=p,FSEM=dd" # amável->amabilidade
+Í V E L     >  -ÍVEL,IBILIDADES ; "CAT=nc,G=f,N=p,FSEM=dd" # amovível->amovibilidade
+Ú V E L     >  -ÚVEL,UBILIDADES ; "CAR=nc,G=f,N=p,FSEM=dd" # volúvel->volubilidade
+Z           >     -Z,CIDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # feroz->ferocidade 
 
 #-----------------------------------------
 # ismo
-flag *i:         ; "CAT=nc,N=s"   #ismo
-[^CÇÃ]O     >     -O,ISMO       ; "FSEM=ismo"   # activo->activismo
-C O         >    -CO,QUISMO     ; "FSEM=ismo"   # barroco->barroquismo
-Ç O         >    -ÇO,CISMO      ; "FSEM=ismo"   # castic,o->casticismo
-Ç Ã O       >   -ÇÃO,CIONISMO   ; "FSEM=ismo"   # abolic,ão->abolicionismo
-[^ICG]A     >     -A,ISMO       ; "FSEM=ismo"   # buda->budismo
-I A         >     -A,SMO        ; "FSEM=ismo"   # academia->academismo
-C A         >    -CA,QUISMO     ; "FSEM=ismo"   # benfica->benfiquismo
-G A         >    -GA,GUISMO     ; "FSEM=ismo"   # colega->coleguismo
-E           >     -E,ISMO       ; "FSEM=ismo"   # brilhante->brilhantismo
-[LR]        >        ISMO       ; "FSEM=ismo"   # actual->actualismo
-Ê S         >    -ÊS,ESISMO     ; "FSEM=ismo"   # chinês->chinesismo
+flag *i:         ; "CAT=nc,G=m"   #ismo
+[^CÇÃ]O     >     -O,ISMO       ; "FSEM=ismo"   # activismo
+C O         >    -CO,QUISMO     ; "FSEM=ismo"   # barroquismo
+Ç O         >    -ÇO,CISMO      ; "FSEM=ismo"   # casticismo
+Ç Ã O       >   -ÇÃO,CIONISMO   ; "FSEM=ismo"   # abolicionismo
+[^ICG]A     >     -A,ISMO       ; "FSEM=ismo"   # budismo
+I A         >     -A,SMO        ; "FSEM=ismo"   # academismo
+C A         >    -CA,QUISMO     ; "FSEM=ismo"   # benfiquismo
+G A         >    -GA,GUISMO     ; "FSEM=ismo"   # coleguismo
+E           >     -E,ISMO       ; "FSEM=ismo"   # brilhantismo
+[LR]        >        ISMO       ; "FSEM=ismo"   # actualismo
+Ê S         >    -ÊS,ESISMO     ; "FSEM=ismo"   # chinesismo
+M	>	-M,NISMO	; "FSEM=ismo"	# latinismo	
 
+[^CÇÃ]O	>     -O,ISMOS		; "FSEM=ismo"   # activismo  
+C O	>    -CO,QUISMOS	; "FSEM=ismo"   # barroquismo   
+Ç O	>    -ÇO,CISMOS		; "FSEM=ismo"   # casticismo
+Ç Ã O	>   -ÇÃO,CIONISMOS	; "FSEM=ismo"   # abolicionismo
+[^ICG]A	>     -A,ISMOS		; "FSEM=ismo"   # budismo
+I A	>     -A,SMOS		; "FSEM=ismo"   # academismo
+C A	>    -CA,QUISMOS	; "FSEM=ismo"   # benfiquismo
+G A	>    -GA,GUISMOS	; "FSEM=ismo"   # coleguismo
+E	>     -E,ISMOS		; "FSEM=ismo"   # brilhantismo
+[LR]	>        ISMOS		; "FSEM=ismo"   # actualismo 
+Ê S	>    -ÊS,ESISMOS	; "FSEM=ismo"   # chinesismo  
+M	>	-M,NISMOS	; "FSEM=ismo"	# latinismos
 #-----------------------------------------
 # ista
 flag *t:          ; "CAT=nc,N=s"      #ista
-[^CÇÃ]O     >     -O,ISTA       ; "FSEM=ista"  # porto->portista
+[^CÇÃI]O    >     -O,ISTA       ; "FSEM=ista"  # porto->portista
 C O         >    -CO,QUISTA     ; "FSEM=ista"  # bloco->bloquista
-Ç O         >    -ÇO,CISTA      ; "FSEM=ista"  # aderec,o->aderecista
-Ç Ã O       >   -ÇÃO,CIONISTA   ; "FSEM=ista"  # abolic,ão->abolicionista
+Ç O         >    -ÇO,CISTA      ; "FSEM=ista"  # adereço->aderecista
+Ç Ã O       >   -ÇÃO,CIONISTA   ; "FSEM=ista"  # abolição->abolicionista
+S Ã O	    >   -SÃO,SIONISTA	; "FSEM=ista"  # percussão->percussionista	
+I O		> -IO,ÍSTA	; "FSEM=ista"	# ensaísta
 [^IÇG] A    >     -A,ISTA       ; "FSEM=ista"  # bomba->bombista
 I A         >     -A,STA        ; "FSEM=ista"  # anarquia->anarquista
-Ç A         >    -ÇA,CISTA      ; "FSEM=ista"  # cobranc,a->cobrancista
+Ç A         >    -ÇA,CISTA      ; "FSEM=ista"  # cobrança->cobrancista
 G A         >     -A,UISTA      ; "FSEM=ista"  # borga->borguista
 E           >     -E,ISTA       ; "FSEM=ista"  # alarme->alarmista
 [LR]        >        ISTA       ; "FSEM=ista"  # flor->florista
 
 [^CÇÃ]O     >     -O,ISTAS      ; "N=p,FSEM=ista"  # porto->portistas
 C O         >    -CO,QUISTAS    ; "N=p,FSEM=ista"  # bloco->bloquistas
-Ç O         >    -ÇO,CISTAS     ; "N=p,FSEM=ista"  # aderec,o->aderecistas
-Ç Ã O       >   -ÇÃO,CIONISTAS  ; "N=p,FSEM=ista"  # abolic,ão->abolicionistas
+Ç O         >    -ÇO,CISTAS     ; "N=p,FSEM=ista"  # adereço->aderecistas
+Ç Ã O       >   -ÇÃO,CIONISTAS  ; "N=p,FSEM=ista"  # abolição->abolicionistas
+S Ã O	    >   -SÃO,SIONISTAS  ; "N=p,FSEM=ista"  # percussão->percussionistas
+I O		> -IO,ÍSTAS	; "N=p,FSEM=ista"	# ensaístas
 [^IÇG] A    >     -A,ISTAS      ; "N=p,FSEM=ista"  # bomba->bombistas
 I A         >     -A,STAS       ; "N=p,FSEM=ista"  # anarquia->anarquistas
-Ç A         >    -ÇA,CISTAS     ; "N=p,FSEM=ista"  # cobranc,a->cobrancistas
+Ç A         >    -ÇA,CISTAS     ; "N=p,FSEM=ista"  # cobrança->cobrancistas
 G A         >     -A,UISTAS     ; "N=p,FSEM=ista"  # borga->borguistas
 E           >     -E,ISTAS      ; "N=p,FSEM=ista"  # alarme->alarmistas
 [LR]        >        ISTAS      ; "N=p,FSEM=ista"  # flor->floristas
@@ -440,8 +570,8 @@ G A         >     -A,UINHAS       ; "N=p,GR=dim"  # carga->carguinhas
 Ã           >     -Ã,AZINHAS      ; "N=p,GR=dim"  # mamã->mamazinhas
 
 flag z:                               #inho
-[^Ã][EO]        >        ZINHO        ; "GR=dim"  # pobre->pobrezinho
-L           >        INHO         ; "GR=dim"  # casal->casalinho
+[^Ã][EO]	>        ZINHO        ; "GR=dim"  # pobre->pobrezinho
+L	>	INHO	; "GR=dim"	# casal->casalinho
 
 [^Ã][EO]        >        ZINHOS       ; "N=p,GR=dim"  # pobre->pobrezinhos
 L           >        INHOS        ; "N=p,GR=dim"  # casal->casalinhos
@@ -449,26 +579,26 @@ L           >        INHOS        ; "N=p,GR=dim"  # casal->casalinhos
 #---------------------------------------
 # ção
 flag *c:                 ; "CAT=v,T=inf"      # çao
-[AE] R      >   -R,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # inalar->inalac,ão
-[^ZG] I R   >   -R,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # abolir->abolic,ão
-Z I R       > -ZIR,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # seduzir->seduc,ão
-P O R       >   -R,SIÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # expor->exposic,ão
+[AE] R      >   -R,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # inalar->inalação
+[^ZG] I R   >   -R,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # abolir->abolição
+Z I R       > -ZIR,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # seduzir->sedução
+P O R       >   -R,SIÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # expor->exposição
 
-[AE] R      >   -R,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # inalar->inalac,ões
-[^ZG] I R   >   -R,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # abolir->abolic,ões
-Z I R       > -ZIR,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # seduzir->seduc,ões
-P O R       >   -R,SIÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # expor->exposic,ões
+[AE] R      >   -R,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # inalar->inalações
+[^ZG] I R   >   -R,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # abolir->abolições
+Z I R       > -ZIR,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # seduzir->seduções
+P O R       >   -R,SIÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # expor->exposições
 
 flag *C:                 ; "CAT=v,T=inf" #cao
-T A R       >   -TAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # cantar->canc,ão
-C I O N A R > -IONAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # adicionar->adic,ão
-A I R       >    -IR,CÇÃO  ; "CAT=nc,G=f,N=s,FSEM=cao"  # atrair->atracc,ão
-U I R       >    -IR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # evoluir->evoluc,ão
+T A R       >   -TAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # cantar->canção
+C I O N A R > -IONAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # adicionar->adição
+A I R       >    -IR,CÇÃO  ; "CAT=nc,G=f,N=s,FSEM=cao"  # atrair->atracção
+U I R       >    -IR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # evoluir->evolução
 
-T A R       >   -TAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # cantar->canc,ões
-C I O N A R > -IONAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # adicionar->adic,ões
-A I R       >    -IR,CÇÕES ; "CAT=nc,G=f,N=p,FSEM=cao"  # atrair->atracc,ões
-U I R       >    -IR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # evoluir->evoluc,ões
+T A R       >   -TAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # cantar->canções
+C I O N A R > -IONAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # adicionar->adições
+A I R       >    -IR,CÇÕES ; "CAT=nc,G=f,N=p,FSEM=cao"  # atrair->atracções
+U I R       >    -IR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # evoluir->evoluções
 
 #---------------------------------------
 # mento
@@ -1033,10 +1163,10 @@ F A Z E R   >   -ZER,EITO       ; "G=m,N=s,T=ppa"
 F A Z E R   >   -ZER,EITA       ; "G=f,N=s,T=ppa"
 F A Z E R   >   -ZER,EITOS      ; "G=m,N=p,T=ppa"
 F A Z E R   >   -ZER,EITAS      ; "G=f,N=p,T=ppa"
-F A Z E R   >   ES             ; "P=2,N=s,T=ip"
-F A Z E R   >   ERMOS          ; "P=1,N=p,T=ip"
-F A Z E R   >   ERDES          ; "P=2,N=p,T=ip"
-F A Z E R   >   EM             ; "P=3,N=p,T=ip"
+F A Z E R   >   ES		; "P=2,N=s,T=ip"
+F A Z E R   >   MOS		; "P=1,N=p,T=ip"
+F A Z E R   >   DES		; "P=2,N=p,T=ip"
+F A Z E R   >   EM		; "P=3,N=p,T=ip"
 
 D I Z E R   >   -ZER,GO        ; "P=1,N=s,T=p"
 D I Z E R   >   -R,S           ; "P=2,N=s,T=p"
@@ -1240,7 +1370,6 @@ O R     >  -R,\-LO\-ÍEIS  ; "P=2,N=p,T=c"          #noispell
 O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 
 #flag *A:  			# anti
-#flag *B:  			# -anti
 #flag *C:  ; "CAT=v,T=inf" 	#cao
 #flag *D:  ; "CAT=v,T=inf"     	#dor
 #flag *E:  			#pre
@@ -1253,7 +1382,8 @@ O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 #flag *O:  			#pos
 #flag +P:  ; "CAT=v"            #-o              #noispell
 #flag *R:  			#re
-#flag *S:  			# des
+#flag *S:  			#des
+#flag *T:			# bi-,tricampeão
 #flag *U:  			#sub
 #flag *X:  ; "CAT=v,T=inf" 	# deve ser posta nos verbos regulares
 #flag *Y:  ; "CAT=v,T=inf"  	# Deve ser posta nos verbos regulares
@@ -1264,22 +1394,26 @@ O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 #flag +d:  ; "CAT=adj,N=s"      #idade
 #flag *e:  ; "CAT=a_nc,N=s"     #plurais
 #flag *f:  ; "CAT=a_nc,G=m,N=s" #femininos
-#flag *g:  ; "CAT=adj_nome,G=m,N=s"  #femininos
+#flag *g:  ; "CAT=a_nc,G=m,N=s" #femininos
 #flag +h:  ; "CAT=a_nc,N=s"     #inho
 #flag *i:  ; "CAT=nc,N=s"   	#ismo
 #flag *j:  ; "CAT=adj"          #izar  ....?
 #flag +m:  ; "CAT=adj,N=s"      #mente
 #flag *n:  ; "CAT=v,T=inf"      #ente
+#flag *o: ; "CAT=v,T=inf"       # dela
 #flag *p:  ; "CAT=a_nc,N=s"     #plurais
+#flag *q:  ; "CAT=hn"		#ólogo,áfico,etc.
+#flag *r:  ; "CAT=hn"		#ológico,etc.
 #flag *s:  ; "CAT=adj,N=s"      #issimo
 #flag *t:  ; "CAT=nc,N=s"      	#ista
+#flag *u:  ; "PFSEM=u"		#sub
 #flag *v:  ; "CAT=v,T=inf"    	#ável
 #flag *w: ; "CAT=nc"            # oso
-#flag *y: ; "CAT=nc"            # eira
-#flag *x: ; "CAT=v,T=inf"       # dela
-#flag z:   			#inho
+#flag *x:	;		# ex-
+#flag *y:	; "CAT=nc"	# eira
+#flag *z: ;   			#inho
 
-flag *x: ; "CAT=v,T=inf" # dela
+flag *o: ; "CAT=v,T=inf" # dela
 [AI] R > -R,DELA  ; "CAT=nc,G=f,N=s,FSEM=dela"
 [AI] R > -R,DELAS  ; "CAT=nc,G=f,N=p,FSEM=dela"
 E R > -ER,IDELA  ; "CAT=nc,G=f,N=s,FSEM=dela"
@@ -1356,7 +1490,7 @@ C A         >    -CA,QUICE   ; "CAT=nc,G=f,FSEM=ice" # bacoco->bacoquice
 E           >     -E,ICE     ; "CAT=nc,G=f,FSEM=ice" # breve->brevice
 R           >        ICE     ; "CAT=nc,G=f,FSEM=ice" # angular->angularice
 A           >     -A,ICE     ; "CAT=nc,G=f,FSEM=ice" # palerma->palermice
-[^V][^N~] L >        ICE     ; "CAT=nc,G=f,FSEM=ice" # amoral->amoralice
+[^V][^Q] L >        ICE     ; "CAT=nc,G=f,FSEM=ice" # amoral->amoralice
 [^ÁÍ] V E L >   -VEL,BILICE  ; "CAT=nc,G=f,FSEM=ice" #
 Á V E L     >  -ÁVEL,ABILICE ; "CAT=nc,G=f,FSEM=ice" # amável->amabilice
 Í V E L     >  -ÍVEL,IBILICE ; "CAT=nc,G=f,FSEM=ice" # amovível->amovibilice
@@ -1368,5 +1502,5 @@ C O         >    -CO,QUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # bacoco->bacoquices
 [^ÇG]A      >     -A,ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # azelha->azelhices
 G A         >    -GA,GUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # antigo->antiguices
 C A         >    -CA,QUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # bacoco->bacoquices
-[^V][^N~] L >        ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # funcional->funcionalices
+[^V][^Q] L >        ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # funcional->funcionalices
 
