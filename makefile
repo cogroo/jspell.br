@@ -99,10 +99,10 @@ realclean:
 ispell: port.dic port.aff
 	cd ISPELL; make
 
-ispell-install: port.dic port.aff
+ispell-install: ispell
 	cd ISPELL; make install
 
-ispell-tgz: port.dic port.aff
+ispell-tgz: ispell
 	cd ISPELL; make tgz
 	mv ISPELL/$(LING)/ispell.$(ABR).$(DATE).tar.gz .
 
@@ -113,10 +113,10 @@ ispell-tgz: port.dic port.aff
 aspell: port.dic port.aff
 	cd ASPELL; make
 
-aspell-install: port.dic port.aff
+aspell-install: aspell
 	cd ASPELL; make install
 
-aspell-tgz: port.dic port.aff
+aspell-tgz: aspell
 	cd ASPELL; make tgz
 	mv ASPELL/aspell.$(ABR).$(DATE).tar.gz .
 

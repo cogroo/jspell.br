@@ -1281,7 +1281,7 @@ Joana/#npf/
 Joanesburgo/#tc/
 Joanina/CAT=np/
 Joan/#np1/
-João/#npm/h/	
+João/#npm/h/
 Joaquim/#npm/
 Joaquina/#npf/
 John/CAT=np,G=m,SEM=p1/
@@ -1363,7 +1363,7 @@ Lanhoso/#t/
 Laos/#la,#tp/
 Laplace/CAT=np,G=m,SEM=p1/
 Lapónia/#la,#t/
-Las/#t//ex. Las Vegas
+Las/#t// #ex. Las Vegas
 Latrão/CAT=np/
 Laura/#npf/
 Laurentino/#npm/
@@ -1953,7 +1953,7 @@ Poincaré/#np1/
 Policarpo/#npm/
 Polinésia/#la,#t/
 Polónia/#la,#tpf/
-Polo//#np///Marco Polo
+Polo//#np/ # Marco Polo
 Pombeiro/CAT=np/
 Pomerânia/#t/
 Pompeu/#npm/
@@ -2407,7 +2407,7 @@ Tristão/#npm/
 Trofa/#la,#t/
 Tróia/#t/
 Trondheim/#tc/
-Trotski/#np1/it	
+Trotski/#np1/  #it
 Tsé/#npm/
 Tucídides/CAT=np/
 Tucultininurta/CAT=np/

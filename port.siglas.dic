@@ -23,7 +23,7 @@ BCE/#tsf//#Banco Central Europeu
 BCI/#tsm//#Banco de Comércio e Indústria
 BCM/#tsm//#Banco Comercial de Macau
 BCP/#tsm//#Banco Comercial Português
-BD/#tsf//#Banda Desenhada
+BD/#tsf//#Banda Desenhada / Base de Dados
 BE/#tsm//#Bloco de Esquerda
 BESCL/#tsm//#Banco Espírito Santos e Comercial de Lisboa
 BFE/#tsm//#Banco de Fomento e Exterior
@@ -96,7 +96,7 @@ IPPAR/#tsm//#Instituto Português do Património ARquitectónico
 IPPC/#tsm//#Instituto Português do Património Cultural
 IRC/#tsm//#Imposto sobre Rendimentos Colectivos
 IRS/#tsm//#Imposto sobre Rendimentos Singulares
-IURD/#tsf//
+IURD/#tsf// #Igreja Universal do Reino de Deus
 JAE/#tsf//#Junta Autónoma das Estradas
 JS/#tsf//#Juventude Socialista
 JSD/#tsf//#Juventude Social-Democrata
@@ -114,7 +114,7 @@ OE/#tsm//#Orçamento de Estado
 OGMA/#tsfp//#Oficinas Gerais de Material Aeronáutico
 OLP/#tsf//#Organização para a Libertação da Palestina
 OMS/#tsf//#Organização Mundial de Saúde
-ONG/#tsfp//#Organizações Não-Governamentais
+ONG/#tsfp//#Organização Não-Governamental
 ONU/#tsf//#Organização das Nações Unidas
 OPA/#tsf//#Oferta Pública de Aquisição
 OPEP/#tsf//#Organização dos Países Exportadores de Petróleo
@@ -157,18 +157,18 @@ RDP/#tsf//#RadioDifusão Português
 RDTL/#tsf//#República Democrática de Timor-Leste
 RPR/#tsm//#Rassemblement Pour la République (fr)
 RS/#tsf//
-RTP/#tsf//#RadioTelevisão Português
+RTP/#tsf//#RadioTelevisão Portuguesa
 SEC/#tsf//#Secretária de Estado da Cultura
 SEF/#tsm//#Serviço de Estrangeiros e Fronteiras
 SGPS/#tsf//
 SIC/#tsf//#Sociedade Independente de Comunicação
 SMAS/#tsmp//#Serviços Municipalizados de Água e Saneamento
 SME/#tsm//#Sistema Monetário Europeu
-SOS/#tsm//
+SOS/#tsm// #Save Our Souls
 SPA/#tsf//#Sociedade Portuguesa de Autores
 SPD/#tsm//
 STCP/#tsmp//#Sociedade de Transportes Colectivos do Porto
-STJ/#tsm//#Supremo Tribunal de Justiça
+STJ/#tsm//#Supremo Tribunal de Justiça / Sociedade Tereziana de Jesus
 TAP/#tsf//#Transportes Aéreos Portugueses
 TC/#tsm//#Tribunal Constitucional
 TLP/#tsmp//#Telefones de Lisboa e Porto
