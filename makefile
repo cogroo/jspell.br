@@ -4,8 +4,6 @@
 
 # Version $Revision$
 
-# $ChangeLog: $
-
 #-------------------------------------------------------------------
 # Variables
 #-------------------------------------------------------------------
@@ -23,7 +21,7 @@ IRRFILES=IRR/ge_verb.l IRR/ge_verb2.y IRR/makefile
 
 
 PTDIC = port.geral.dic port.inf.dic port.np.dic port.siglas.dic
-EXTRADIST = irregulares.txt irr2perl port.aff
+EXTRADIST = irregulares.txt irr2perl port.aff jspell-pt.1
 
 BASE= port.aff $(PTDIC) irregulares.txt aux.verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
@@ -148,8 +146,8 @@ jspell-install: port.dic port.aff
 install-man: jspell.pt.1
 	cp jspell.pt.1  /usr/local/man/man1/
 
-jspell.pt.1: jspell.pt.pod
-	pod2man --center="jSpell Documentation" jspell.pt.pod jspell.pt.1
+jspell-pt.1: jspell.pt.pod
+	pod2man --center="jSpell Documentation" jspell.pt.pod jspell-pt.1
 
 
 ################
