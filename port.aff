@@ -55,20 +55,25 @@ stringchar        á            Á
 stringchar        à            À
 stringchar        ã            Ã
 stringchar        â            Â
+stringchar        ä            Ä
 wordchars        [bc]        [BC]
 stringchar        ç            Ç
 wordchars        [de]        [DE]
 stringchar        é            É
 stringchar        è            È
 stringchar        ê            Ê
+stringchar        ë            Ë
 wordchars        [f-i]        [F-I]
 stringchar        í            Í
 stringchar        ì            Ì
-wordchars        [j-o]        [J-O]
+wordchars        [j-n]        [J-N]
+stringchar        ñ            Ñ
+stringchar        o            O
 stringchar        ó            Ó
 stringchar        ò            Ò
 stringchar        õ            Õ
 stringchar        ô            Ô
+stringchar        ö            Ö
 wordchars        [p-u]        [P-U]
 stringchar        ú            Ú
 stringchar        ù            Ù
@@ -95,6 +100,7 @@ altstringchar \~o õ
 altstringchar \^o ô
 altstringchar \'u ú
 altstringchar \`u ù
+altstringchar \~n ñ 
 #altstringchar \^u û
 
 altstringchar \'A Á
@@ -114,6 +120,7 @@ altstringchar \^O Ô
 altstringchar \'U Ú
 altstringchar \`U Ù
 #altstringchar \^U Û
+altstringchar \~N Ñ 
 
 #
 # Plain TeX
@@ -136,6 +143,7 @@ altstringchar \\\^o ô
 altstringchar \\\'u ú
 altstringchar \\\`u ù
 #altstringchar \\\^u û
+altstringchar \\\~n ñ 
 
 altstringchar \\\'A Á
 altstringchar \\\`A À
@@ -153,6 +161,7 @@ altstringchar \\\^O Ô
 altstringchar \\\'U Ú
 altstringchar \\\`U Ù
 #altstringchar \\\^U Û
+altstringchar \\\~N Ñ 
 
 
 prefixes
