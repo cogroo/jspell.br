@@ -22,7 +22,7 @@ myspell:
 	cp ../ISPELL/$P/$P.aff $P/
 	perl gendic.pl $P/$P.aff > $P/pt_PT.aff
 	cat $P.replace >> $P/pt_PT.aff
-	wc -l $P/$P.dic | cut -c 0-7 > $P/pt_PT.dic
+	wc -l $P/$P.dic | cut -c 0-6 > $P/pt_PT.dic
 	cat $P/$P.dic >> $P/pt_PT.dic
 	rm $P/$P.dic
 	rm $P/$P.aff
@@ -33,8 +33,8 @@ zip:
 
 install : 	# Openoffice user directory #Mozilla Mail #Thunderbird
 	#Como detectar a ultima versão ?			
-	if test -w $(HOME)/.openoffice/1.1.3/user/wordbook ; then \
-		cp $P/*pt* $(HOME)/.openoffice/1.1.3/user/wordbook ; \
+	if test -w $(HOME)/.openoffice/1.1.4/user/wordbook ; then \
+		cp $P/*pt* $(HOME)/.openoffice/1.1.4/user/wordbook ; \
 		echo "OpenOffice install!"; \
 	fi;
 	if test -w /usr/lib/mozilla/components/myspell ; then \

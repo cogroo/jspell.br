@@ -59,10 +59,11 @@ $P/$D.aff $P/$D.dic: ../port.dic ../port.aff
 	perl jsp2isp.pl ../port.aff > $P/$D.aff 
 	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/$D.dic
 	#cp flagsRenDel /tmp/
+
 	cp ver ispell.port.spec $P
+
 	#cd /tmp
 	#perl flagsRenDel $D
-	#munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic;
 	#munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic;
 
 	#cd /tmp; perl flagsRenDel $D; ${FR} ; munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic

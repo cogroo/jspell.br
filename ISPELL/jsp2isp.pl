@@ -3,6 +3,7 @@
 while(<>){
   chop;
   s/;/#/;
+  next if /^\s*$/;
   next if /\#noispell/;
   s/flag +\+/flag */;
   s/^\#ispell //;

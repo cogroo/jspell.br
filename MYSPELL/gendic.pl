@@ -21,7 +21,7 @@ while(<>){
 	$tmp2=$1;
 	
 	if (defined($seg)){
-	    printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[*+]/ ? 'Y' : 'N',$#ter+1); ##number of items at the end
+	    printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items at the end
 	    for ($i=0;$i<@qui;$i++){
 		print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])."\n";
 	    }
@@ -50,7 +50,7 @@ while(<>){
 }
 
 #Copypaste from upper lines
-printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[*+]/ ? 'Y' : 'N',$#ter+1); ##number of items
+printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items
 	    for ($i=0;$i<@qui;$i++){
 		print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])."\n";
 	    }
