@@ -45,12 +45,15 @@ package/CAT=nc,G=f//
 Pascal/CAT=np,G=m//
 password/CAT=nc,G=f,N=s//
 PC/CAT=nc,G=m,N=s//
+Perl/CAT=nc,G=m,N=s//
 pipe/CAT=nc,G=f,N=s/p/
 Prolog/CAT=np//
 plotter/CAT=nc,G=f,N=s//
 plotters/CAT=nc,G=f,N=p//
+RAM/CAT=nc,G=f,N=s//
 RISC/CAT=nc,G=m,N=s//
 robot/CAT=a_nc,N=s/p/
+ROM/CAT=nc,G=m,N=s//
 scanner/CAT=nc,G=m,N=s//
 scanners/CAT=nc,G=m,N=p//
 scope/CAT=nc,G=m,N=s//
@@ -64,3 +67,4 @@ string/CAT=a_nc,N=s/p/
 Unix/CAT=np,G=m//
 VDM/CAT=np,G=m//
 Windows/CAT=nc,G=m,N=s//
+XP/CAT=nc,G=m,N=s//
