@@ -180,8 +180,8 @@ abrupto/#a/fpm/
 absentismo/#nm/p/
 absentista/#hn/p/
 abside/#nf/p/
-absinto/#nm//
 absíntio/#nm//     ; o m.q. absinto
+absinto/#nm//
 absoluto/#hm/pfmti/
 absolutório/#a//
 absolver/#vt/XYPLM/
@@ -3969,8 +3969,8 @@ badameco/#nm//
 badanal/#nm//
 badana/#nf//
 badanar/#vi/XYL/
-badminton/#nm//
 badmington/#nm//
+badminton/#nm//
 bafar/#vi/XYL/
 bafejante/#an/p/
 bafejar/#vn/XYPLDn/
@@ -6706,7 +6706,7 @@ catequista/#nn//
 catequizador/#nm//
 catequizante/#hn/p/
 catequizar/#vt/XYPLcDn/
-cateto/#nm//
+cateto/#nm/p/
 catião/#nm/p/
 catinga/#nf//
 catingar/#vi/XYL/
@@ -6980,9 +6980,9 @@ centrífuga/#hf//
 centrifugar/#vt/XYPLcD/
 centrífugo/#a/f/
 centrípeto/#a//
-centro/#nm/pt/
-centro-esquerda/#nm//
 centro-direita/#nm//
+centro-esquerda/#nm//
+centro/#nm/pft/
 centuplicadamente/#av//
 centuplicar/#vt/XYPL/
 cêntuplo/#hm/p/
@@ -7002,7 +7002,6 @@ cerâmica/#nf//
 cerâmico/#a/fp/
 ceramista/#nn/p/
 cera/#nf/p/
-cerca/#nf/p/
 cerca/#av//
 cercador/#nm//
 cercadura/#nf//
@@ -14977,8 +14976,8 @@ farofeiro/#hm/p/
 farófia/#nf/p/
 faroleiro/#nm/p/
 farolete/#nm//
-farolizar/#vt/XYPLc/
 farolim/#nm/p/
+farolizar/#vt/XYPLc/
 farol/#nm/p/
 faro/#nm/p/
 farpa/#nf/p/
@@ -16480,7 +16479,6 @@ género/#nm/up/
 generosidade/#nf/p/
 generoso/#a/fpmd/
 génese/#nf//
-gene/#nm/p/
 genesíaco/#a//
 genética/#nf//
 geneticismo/#nm/p/
@@ -17412,6 +17410,7 @@ hipotecário/#a//
 hipotecar/#vt/XYPLSv/
 hipotensão/#nf//
 hipotensivo/#a//
+hipotenusa/#nf/p/
 hipótese/#nf/p/
 hipotético/#a/fp/
 hipotrofia/#nf//
@@ -19928,9 +19927,9 @@ justo/#a/pfmIs/
 juvenil/#an/pd/
 juvenilidade/#nf/p/
 juventude/#nf/p/
-karate/#nm//
 kantiano/#a/fp/
 kantismo/#nm/p/
+karate/#nm//
 kepleriano/#a//
 kg/$quilograma$$ABR=1//
 kilojoule/#nm//
@@ -20173,10 +20172,10 @@ lanudo/#a//
 lanugem/#nf//
 lanugioso/#a//
 lanzudo/#a/fp/
-láparo/#nm/p/
 lapada/#nf//
 lapa/#nf//
 lapão/#nm//
+láparo/#nm/p/
 lapela/#nf/p/
 lapidagem/#nf//
 lapidar/#an/p/
@@ -30243,7 +30242,6 @@ santiaguês/#hm//
 santidade/#nf/p/
 santificante/#an/p/
 santificar/#vt/XYPLcDnv/
-sta/$santo$#nm$ABR=1,G=f//
 santo/#hm/pfhds/
 santola/#nf//
 santuário/#nm/p/
@@ -31452,6 +31450,7 @@ sportinguista/#nn/p/
 sr/$senhor$#nm$ABR=1//
 standard/#hm//
 stand/#nm/p/
+sta/$santo$#nm$ABR=1,G=f//
 stock/#nm/p/
 stop/#nm/p/
 sua/CAT=ppos,N=s,P=3,G=f/p/
@@ -33550,8 +33549,8 @@ tutela/#nf/p/
 tutelar/#an/p/
 tutelar/#vt/XYPL/
 tutorar/#vt/XYPL/
-tutoria/#nf/p/
 tutorial/#nm/p/
+tutoria/#nf/p/
 tutório/#a//
 tutor/#nm/fp/
 tutu/#nm//
@@ -33597,22 +33596,22 @@ ultramoderno/#a/i/
 ultrapassagem/#nf/p/
 ultrapassar/#vt/XYPL/
 ultrapassável/#a/pI/
-ultra-radical/#an//
+ultra-radical/#an/p/
 ultra-realismo/#nm//
-ultra-realista/#hn//
+ultra-realista/#hn/p/
 ultra-romântico/#a/fp/
 ultra-romantismo/#nm//
-ultra-sensível/#an//
-ultra-som/#nm//
-ultra-sónico/#a//
+ultra-sensível/#an/p/
+ultra-som/#nm/p/
+ultra-sónico/#a/fp/
 ultravioleta/#hm2/p/
 umbigo/#nm/p/
 umbilicado/#a//
-umbilical/#an//
-úmero/CAT=nc,N=s,G=m/p/
+umbilical/#an/p/
 um/CAT=art,N=s,G=m/fp/
 um/CAT=card,N=s,G=m/f/
 um/CAT=pind,G=m,N=s/fp/
+úmero/#nm/p/
 unânime/#an/p/
 unanimemente/#av//
 unanimidade/#nf/p/
