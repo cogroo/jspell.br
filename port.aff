@@ -197,12 +197,12 @@ flag *F:  			#ultra super
     .       >      HIPER     ; "PFSEM=hiper"	#
 
 flag *T:
-    .       >      BI        ; "PFSEM=2"	#
-    S       >      TRIS      ; "PFSEM=3"	#
-    [^S]    >      TRI       ; "PFSEM=3"	#
-    .       >      TETRA     ; "PFSEM=4"	#
-    .	    > 	   PENTA     ; "PFSEM=5"	#
-    .       >      HEXA	     ; "PFSEM=6"        #
+    .       >      BI        ; "PFSEM=2"	# bicampeão
+    S       >      TRIS      ; "PFSEM=3"	# tricampeão
+    [^S]    >      TRI       ; "PFSEM=3"	# 
+    .       >      TETRA     ; "PFSEM=4"	# tetracampeão
+    .	    > 	   PENTA     ; "PFSEM=5"	# pentacampeão
+    .       >      HEXA	     ; "PFSEM=6"        # hexacampeão
 
 suffixes
 
@@ -228,6 +228,7 @@ flag *a:         ; "CAT=a_nc,N=s"      #plurais
 Ã O         >       S    ; "N=p"        # ex. mão, mãos
 I L         >   -IL,EIS  ; "N=p"        # ex. ágil, ágeis  # deve ser posto em todos os que têm acento e acabam em il
 E N T O S   >	-OS,AS	 ; "G=f"	# duzentos 
+[^AEIOU]    >	S	 ; "N=p"	# buffers
 
 flag *e:         ; "CAT=a_nc,N=s"      #plurais
 Ã O         >    -O,ES   ; "N=p"         # ex. pão, pães

@@ -648,7 +648,7 @@ advir/#vi,I=3/L/
 advocacia/#nf/p/
 advocatório/#a/fp/
 advocatura/#nf//
-advogado/#nm/pf/
+advogado/#nm/fp/
 advogar/#vn/XYPL/
 aéreo/#a/fp/
 aerobalística/#nf//
@@ -2276,8 +2276,8 @@ apavorante/#an/p/
 apavorar/#vt/XYPLMDn/
 apaziguador/#hm//
 apaziguar/#vn,I=3/YLMD/
-apeadeira/#nf//
-apeadeiro/#nm/fp/
+apeadeira/#nf/p/
+apeadeiro/#nm/p/
 apear/#vt/ZYPLM/
 apeçonhar/#vt/XYPL/
 apeçonhentar/#vt/XYPL/
@@ -3356,7 +3356,7 @@ ateístico/#a//
 atelier/#nm//
 atemorizador/#hm//
 atemorizar/#vt/XYPLcMD/
-atempado/#a/fp/
+atempado/#a/fpm/
 atempar/#vn/XYPLc/
 atemporal/#an/p/
 atenção/#nf/p/
@@ -4210,7 +4210,7 @@ barbado/#nm//
 barba/#nf/p/
 barbante/#nm/p/
 barbaramente/$bárbaro$#a$#av//
-barbaresco/#a//
+barbaresco/#a/fp/
 barbaria/#nf/p/
 barbarice/#nf/p/
 barbaridade/#nf/p/
@@ -6684,7 +6684,7 @@ catatua/#nf/p/
 cata-vento/#nm//
 catecismo/#nm/p/
 catecumenado/#nm//
-catedralesco/#a//
+catedralesco/#a/fp/
 catedral/#hf2/p/
 cátedra/#nf/p/
 catedrático/#a/fp/
@@ -10029,7 +10029,7 @@ dalgures/CAT=cp,Prep=de,Adv=algures//
 dália/#nf//
 dali/CAT=cp,Prep=de,Adv=ali//
 dálmata/#hn/p/
-daltónico/#hm/p/
+daltónico/#hm/fp/
 daltonismo/#nm/p/
 dama/#nf/p/
 damasceno/#hm//
@@ -10049,7 +10049,7 @@ daninho/#a/fp/
 dano/#nm/p/
 danoso/#a//
 dantes/#av//
-dantesco/#a//
+dantesco/#a/fp/
 dântico/#a//
 danubiano/#a/f/
 daquele/CAT=cp,Prep=de,Pdem=aquele,G=m,N=s/fp/
@@ -13988,7 +13988,6 @@ essencial/#hm2/pm/
 essência/#nf/p/
 essoutro/CAT=cp,Pdem=esse,Pind=outro,G=m,N=s//
 estabelecer/#vt/XYPLMDER/
-estabilidade/#nf/p/
 estabilizar/#vn/XYPLcDS/
 estábulo/#nm/p/
 estacada/#nf//
@@ -14068,7 +14067,7 @@ estatura/#nf//
 estatutário/#a/pfH/
 estatutivo/#a//
 estatuto/#nm/p/
-estável/#a/pm/
+estável/#a/pmd/
 este/CAT=pdem,N=s,G=m/fp/
 esteio/#nm/p/
 esteira/#nf/p/
@@ -15617,7 +15616,7 @@ folheio/#nm//
 folheiro/#hm//
 folheteiro/#a//
 folhetim/#nm/p/
-folhetinesco/#a//
+folhetinesco/#a/fp/
 folhetinista/#nn//
 folhetinístico/#a//
 folhetinizar/#vt/XYPL/
@@ -16969,9 +16968,9 @@ grosseria/#nf//
 grossista/#nn/p/
 grosso/#hm/fpt/
 grossular///
-grossura/#nf//
+grossura/#nf/p/
 grotesco/#a/fpm/
-grous///
+grou/#nm/p/
 grua/#nf/p/
 grudar/#vn/XYPLD/
 grude/#nf//
@@ -16985,8 +16984,7 @@ grunhir/#vi/XYLD/
 grupelho/#nm//
 grupo/#nm/p/
 gruta/#nf/p/
-grutescos/#nm,N=p//
-guache/#nm//
+guache/#nm/p/
 guacho/#nm//
 guapo/#a/p/
 guarani/#nm//
@@ -18044,7 +18042,6 @@ impudente/#an/m/
 impudico/#a//
 impudor/#nm//
 impugnabilidade/#nf/p/
-impugnador/#hm//
 impugnar/#vt/XYPLcDv/
 impugnativo/#a//
 impulsão/#nf//
@@ -20714,7 +20711,7 @@ livreco/#nm//
 livreiro/#a/fp/
 livremente/#av//
 livre-pensador/#nm//
-livresco/#a//
+livresco/#a/fp/
 livrete/#nm//
 livro/#nm/pfh/
 lixadela/#nf//
@@ -21443,7 +21440,7 @@ maquiavelista/#hn//
 maquiavelizar/#vi/XYL/
 maquilhagem/#nm//
 maquilhar/#vt/XYPL/
-maquinabilidade//p/
+maquinabilidade/#nf/p/
 maquinagem/#nf/p/
 maquinal/#an/p/
 máquina/#nf/p/
@@ -21864,7 +21861,7 @@ melodia/#nf/p/
 melodiar/#vn/XYPL/
 melódica/#nf//
 melódico/#a/fp/
-melodioso/#a//
+melodioso/#a/fp/
 melodista/#nn//
 melodizar/#vt/XYPL/
 melodrama/#nm/p/
@@ -22616,7 +22613,7 @@ molho/#nm/ph/
 molibdénio///
 moliceiro/#hm/p/
 moliço/#nm//
-molieresco/#a//
+molieresco/#a/fp/
 molificante/#an/p/
 molificar/#vt/XYPLcnv/
 molificativo/#a//
@@ -23666,7 +23663,7 @@ novecentos/#ca/a/
 novela/#nf/p/
 novelar/#vi/XYL/
 noveleiro/#hm/p/
-novelesco/#a//
+novelesco/#a/fp/
 novelista/#nn//
 novelo/#nm/fp/
 novenal/#an//
@@ -25449,6 +25446,7 @@ pensante/#an/p/
 pensão/#nf/p/
 pensar/#vn/XYPLRMDn/
 pensativo/#a/pmf/
+pênsil/#a/p/
 pensionário/#hm//
 pensionar/#vt/XYPL/
 pensionato/#nm//
@@ -26507,7 +26505,7 @@ porretada/#nf//
 porrete/#nm//
 porta-aviões/#nm//
 porta-bandeira/#nm//
-portabilidade//p/
+portabilidade/#nf/p/
 portada/#nf/p/
 portador/#hm/fp/
 porta-estandarte/#nm//
@@ -27034,13 +27032,13 @@ principado/#nm/p/
 principal/#hm2/pmd/
 principalidade/#nf//
 príncipe/#hm/p/
-principesco/#a//
+principesco/#a/fp/
 principiador/#hm//
 principiante/#hn/p/
 principiar/#vn/XYPLDn/
 princípio/#nm/p/
 priorado/#nm/p/
-prioral/#an//
+prioral/#an/p/
 prioresa/#nf/p/
 priori///
 prioridade/#nf/p/
@@ -27442,7 +27440,7 @@ pruriginoso/#a//
 prurigo/#nm//
 prurir/#vn/XYL/
 prussiano/#hm/fp/
-pseudodebilidade//p/
+pseudodebilidade/#nf/p/
 pseudoglobulina///
 pseudomucóide///
 pseudónimo/#nm/p/
@@ -27893,7 +27891,7 @@ quitar/#vt/XYPLcMD/
 quite/#an/m/
 quitinoso/#a//
 quixotada/#nf//
-quixotesco/#a//
+quixotesco/#a/fp/
 quixotice/#nf//
 quociente/#nm/p/
 quorum/#nm//
@@ -29065,7 +29063,7 @@ repertório/#nm//
 repesar/#vt/XYPLD/
 repetência/#nf/p/
 repetente/#hn/p/
-repetibilidade//p/
+repetibilidade/#nf/p/
 repetição/#nf/p/
 repetidamente/#av//
 repetir/#vt,I=3/YPLcD/
@@ -29674,7 +29672,7 @@ robusto/#a/fp/
 roçadela/#nf//
 roçado/#hm//
 roçadura/#nf//
-rocambolesco/#a//
+rocambolesco/#a/fp/
 roca/#nf//
 roçar/#vn/XYPLD/
 rocha/#nf/p/
@@ -32002,6 +32000,7 @@ talião///
 tálio///
 talismânico/#a//
 talismã/#nm//
+talmúdico/#a/fp/
 talo//fp/
 taluda/#hf//
 taludar/#vt/XYPL/
@@ -32009,9 +32008,9 @@ talude/#nm//
 taludo/#a/f/
 talvez/#av//
 tamancada/#nf//
-tamanca/#nf//
+tamanca/#nf/p/
 tamancaria/#nf/p/
-tamanco/#hm/f/
+tamanco/#nm/p/
 tamanhão/#a//
 tamanho/#hm/pfh/
 tamanqueiro/#nm//
@@ -32027,6 +32026,7 @@ tamborileiro/#hm//
 tamboril/#nm/p/
 tamborim/#nm/p/
 tambor/#nm/p/
+tamil/#hn/p/
 tampa/#nf/p/
 tampão/#nm/p/
 tampar/#vt/XYPLS/
@@ -32035,7 +32035,6 @@ tamponizante//p/
 tampo/#nm/fp/
 tampouco/#av//
 tamquam///
-tamul///
 tamúlica///
 tanacetifolia///
 tanas/#nm//
@@ -32130,8 +32129,8 @@ táureo/#a//
 taurífero/#a//
 taurino/#a/fp/
 tauromaquia/#nf//
-tauromáquico/#a//
-tautologia/#nfp/r/
+tauromáquico/#a/fp/
+tautologia/#nf/r/
 taverna/#nf//
 taverneiro/#nm//
 taxa/#nf/p/
@@ -33403,7 +33402,7 @@ trotar/#vi/XYLMD/
 trotear/#vi/ZYL/
 trote/#nm//
 trouxa/#nf/p/
-trovadoresco/#a/f/
+trovadoresco/#a/fp/
 trovador/#nm//
 trovão/#nm/p/
 trovar/#vn/XYPLD/
@@ -34213,7 +34212,8 @@ viciar/#vt/XYPLcMD/
 vício/#nm/p/
 vicioso/#a/fp/
 vicissitude/#nf/p/
-viçoso/#a/m/
+viçoso/#a/fpm/
+vicunha/#a/p/
 vida/#nf/p/
 videira/#hf/p/
 vidência/#nf/p/
@@ -34601,6 +34601,8 @@ xerife/#nm/p/
 xerografia/#nf/pq/
 xexé/#nm//
 xícara/#nf/p/
+xiismo/#nm//
+xiita/#hn/p/
 xileno/#a/fp/
 xilofone/#nm/pt/
 xilografia/#nf/pq/
