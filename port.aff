@@ -50,6 +50,7 @@ allaffixes on
 defstringtype "lat" "nroff" ".list"
 
 boundarychars \-                       #noispell
+boundarychars \'                       #noispell
 wordchars        a            A
 wordchars        á            Á
 wordchars        à            À
@@ -286,6 +287,7 @@ D O R		>  AMENTE		; "CAT=adv"
 Ó R I O		>  -ÓRIO,ORIAMENTE	; "CAT=adv"
 Á R I O		>  -ÁRIO,ARIAMENTE	; "CAT=adv"
 Á T I C O	>  -ÁTICO,ATICAMENTE	; "CAT=adv"
+Á C T I C O	>  -ÁCTICO,ACTICAMENTE	; "CAT=adv"
 Ó N I C O	>  -ÓNiCO,ONICAMENTE	; "CAT=adv"
 Ó G I C O	>  -ÓGICO,OGICAMENTE	; "CAT=adv"
 Í F E R O	>  -ÍFERO,IFERAMENTE	; "CAT=adv"
