@@ -1442,7 +1442,7 @@ E R     >  -ER, IDAMENTE  ; "CAT=adv"              # perdidamente
 #flag *G:  ;"CAT=adj"           #ice 
 #flag +H:  ;"CAT=adj,N=s"       #mente
 #flag *I:  			#in
-#J
+#flag *J   ;                    #experimental adivinhar ómetros ódromos
 #flag *K:  ; "CAT=v,T=inf"   	# Todos Irregulares (frequente [au]ir)
 #flag +L:  ; "CAT=v"            #-lho             #noispell
 #flag *M:  ; "CAT=v,T=inf"      #mento
@@ -1582,4 +1582,19 @@ R           >        ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # angular->angularice
 [^ÁÍ] V E L >   -VEL,BILICES ; "CAT=nc,G=f,N=p,FSEM=ice" #
 Á V E L     >  -ÁVEL,ABILICES; "CAT=nc,G=f,N=p,FSEM=ice" # amável->amabilice
 Í V E L     >  -ÍVEL,IBILICES; "CAT=nc,G=f,N=p,FSEM=ice" # amovível->amovibilice
+
+#----------------------------------------
+# adivinhar...
+flag *J:    ; "" # para adivinhar
+
+[AI] R      > -R,CIONISMO    ;  "CAT=nc,FSEM=ismo"   #
+E R         > -ER,ICIONISMO  ;  "CAT=nc,FSEM=ismo"   #
+
+A R         > -AR,ÓMETRO     ;  "CAT=nc,FSEM=ometro"   #
+A R         > -AR,ÓDROMO     ;  "CAT=nc,FSEM=odromo"   #
+A           > -A,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
+O           > -O,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
+E           > -E,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
+
+
 
