@@ -1,19 +1,16 @@
-#---------------------------------------------------------------------
-# make jspell
-# make install-jspell
-# make jspell-rpm
-# make jspell.tgz
+#-------------------------------------------------------------------
+# Run 'make' to view options
+#-------------------------------------------------------------------
 
-# make ispell   (very slow!!!)
-# make install-ispell
-# make ispell.tgz
+# Version $Revision$
 
-# make aspell   (very slow!!!)
-# make install-aspell
-# make aspell.tgz
+#-------------------------------------------------------------------
+# Variables
+#-------------------------------------------------------------------
 
-# make dic.tgz
-
+LING=portugues
+ABR=pt
+DATE=`date +%Y%m%d`
 LIB=/usr/local/lib
 ISPELLLIB=/home/jj/lib/ispell
 JSPELLLIB=/home/jj/lib/jspell
@@ -24,37 +21,46 @@ BASE= port.aff $(PTDIC) irregulares.txt aux.verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
       PERL/pos2iso PERL/jsp2isp.pl README jspell.port.spec irr2perl
 
+#-------------------------------------------------------------------
+# Instructions
+#-------------------------------------------------------------------
 what:
-	@ echo "make what? (jspell ispell install-jspell install-ispell)"
+	@ echo
+	@ echo -e "jspell:"
+	@ echo -e "\tjspell -- builds jspell dictionary"
+	@ echo -e "\tjspell-install -- installs jspell"
+	@ echo
+	@ echo -e "ispell:"
+	@ echo -e "\tispell -- builds ispell dictionary (slow)"
+	@ echo -e "\tispell-install -- installs ispell"
+	@ echo -e "\tispell-tgz -- creates ispell distribution file"
+	@ echo
+	@ echo -e "aspell:"
+	@ echo -e "\taspell -- builds aspell dictionary (slow)"
+	@ echo -e "\taspell-install -- installs aspell"
+	@ echo -e "\taspell-tgz -- creates aspell distribution file"
+	@ echo
+
+#-------------------------------------------------------------------
+# Generated files
+#-------------------------------------------------------------------
 
 port.dic: $(PTDIC)
-	cat $(PTDIC) > port.dic 
+	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
+	cat $(PTDIC) >> port.dic 
 
-#--------------------------------------------------------------------- 
-jspell-rpm: 
-	cd JSPELL; make rpm
 
 port.irr: aux.all-irr.dic
 	./irr2perl > port.irr
 
-ispell: port.dic port.aff
-	cd ISPELL; make
+aux.verb.dic: port.geral.dic
+	egrep "CAT=v|\#v" port.geral.dic > aux.verb.dic
 
-install-ispell: port.dic port.aff
-	cd ISPELL; make install
+aux.all-irr.dic: irregulares.txt aux.verb.dic IRR/ge_verb
+	IRR/ge_verb aux.verb.dic < irregulares.txt > aux.all-irr.dic
 
-ispell-install: port.dic port.aff
-	cd ISPELL; make install
-
-
-jspell: port.dic port.aff
-	cd JSPELL; make
-
-install-jspell: port.dic port.aff
-	cd JSPELL; make install
-
-jspell-install: port.dic port.aff
-	cd JSPELL; make install
+IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
+	cd IRR; make
 
 tgz:
 	make clean
@@ -65,21 +71,13 @@ jspell.port.tgz: $(BASE)
 	mkdir -p jspell.port-`./ver`
 	cp $(BASE) jspell.port-`./ver`
 	tar -cvzf jspell.port.tgz jspell.port-`./ver`
-	
+
 port.tgz: $(BASE)
 	tar -czf dic.tgz $(BASE)
 
-aux.verb.dic: port.geral.dic
-	egrep "CAT=v|\#v" port.geral.dic > aux.verb.dic
-
-aux.all-irr.dic: irregulares.txt aux.verb.dic IRR/ge_verb
-	IRR/ge_verb aux.verb.dic < irregulares.txt > aux.all-irr.dic
-
-IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
-	cd IRR; make
-#---------------------------------------------------------------------
-# instalations
-
+#-------------------------------------------------------------------
+# Garbage collecting :)
+#-------------------------------------------------------------------
 clean : 
 	cd IRR;    make clean
 	cd JSPELL; make clean
@@ -93,3 +91,45 @@ realclean:
 	rm -f *.stat *.cnt 
 	rm -f aux.all-irr.dic 
 	rm -f port.dic
+
+#-------------------------------------------------------------------
+# ispell rules
+#-------------------------------------------------------------------
+
+ispell: port.dic port.aff
+	cd ISPELL; make
+
+ispell-install: port.dic port.aff
+	cd ISPELL; make install
+
+ispell-tgz: port.dic port.aff
+	cd ISPELL; make tgz
+	mv ISPELL/$(LING)/ispell.$(ABR).$(DATE).tar.gz .
+
+#-------------------------------------------------------------------
+# aspell rules
+#-------------------------------------------------------------------
+
+aspell: port.dic port.aff
+	cd ASPELL; make
+
+aspell-install: port.dic port.aff
+	cd ASPELL; make install
+
+aspell-tgz: port.dic port.aff
+	cd ASPELL; make tgz
+	mv ASPELL/aspell.$(ABR).$(DATE).tar.gz .
+
+#-------------------------------------------------------------------
+# jspell rules
+#-------------------------------------------------------------------
+
+jspell-rpm: 
+	cd JSPELL; make rpm
+
+jspell: port.dic port.aff
+	cd JSPELL; make
+
+jspell-install: port.dic port.aff
+	cd JSPELL; make install
+

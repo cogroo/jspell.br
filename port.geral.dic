@@ -177,6 +177,8 @@ abrupto/#a/fpm/
 absentismo/#nm/p/
 absentista/#hn/p/
 abside/#nf/p/
+absinto/#nm//
+absíntio/#nm//     # o m.q. absinto
 absoluto/#hm/pfmti/
 absolutório/#a//
 absolver/#vt/XYPLM/
@@ -385,7 +387,7 @@ aconchego/#nm//
 acondicionar/#vt/XYPLcM/
 acondimentar/#vt/XYPL/
 aço/#nm/p/
-aconselhador/#hm//
+aconselhador/#hm/pf/
 aconselhar/#vt/XYPLSDvM/
 aconsoantar/#vt/XYPL/
 acontecer/#vi/XYLpM/
@@ -671,7 +673,7 @@ aeroporto/#nm/p/
 aeroportuário/#a/fp/
 aeropostal/#an//
 aeroscopia/#nf//
-aeroscópio/#nm//
+aeroscópio/#nm/p/
 aerossol/#nm/p/
 aerotransportado/#a/fp/
 aestilignosa/G=f,N=s//
@@ -712,7 +714,7 @@ aferrar/#vt/XYPL/
 aferroar/#vt/XYPLD/
 aferrolhar/#vt/XYPLS/
 afiadeira/#nf//
-afiador/#hm//
+afiador/#hm/p/
 afiambrar/#vt/XYPL/
 afiançar/#vt/XYPLD/
 afiar/#vt/XYPLcD/
@@ -766,7 +768,7 @@ afolhar/#vt/XYPLM/
 afonia/#nf//
 afónico/#a//
 afono/#a//
-afonsino/#a//
+afonsino/#a/p/
 afora/#av//
 afora/CAT=prep//
 aforar/#vt/XYPLcMD/
@@ -798,11 +800,11 @@ afroixamento/#nm//
 afronhar/#vt/XYPL/
 afrontadiço/#a//
 afrontador/#hm//
-afronta/#nf//
+afronta/#nf/p/
 afrontar/#vt/XYPLcMD/
 afrontoso/#a//
 afrouxar/#vt/XYPLM/
-afta/#nf//
+afta/#nf/p/
 afugentar/#vt/XYPLMD/
 afumadura/#nf//
 afumar/#vn/XYPL/
@@ -1066,7 +1068,7 @@ alcalino-terroso/#a//
 alcançar/#vn/XYPLMv/
 alcance/#nm//
 alcanço/#nm//
-alça/#nf//
+alça/#nf/p/
 alcantilado/#a/fp/
 alcantil/#nm/p/
 alçapão/#nm/p/
@@ -1089,7 +1091,7 @@ alcoolizar/#vt/XYPLc/
 alcoolometria/#nf/p/
 alcoolómetro/#nm//
 alcorânico/#a//
-alcova/#nf//
+alcova/#nf/p/
 alcoviteirice/#nf//
 alcoviteiro/#nm/fp/
 alcunha/#nf//
@@ -2235,7 +2237,7 @@ aparadeira/#nf//
 aparador/#a//
 aparafusar/#vt/XYPLSM/
 apara-lápis/#nm,N=_//
-apara/#nf//
+apara/#nf/p/
 aparar/#vt/XYPLD/
 aparato/#nm//
 aparatoso/#a/fp/
@@ -15913,6 +15915,7 @@ frenesim/#nm//
 frenético/#a/pfH/
 frente/#nf/pi/
 frequência/#nf/p/
+frequencímetro/#nm/p
 frequentar/#vt/XYPLcD/
 frequente/#an/pm/
 fresadora/#nf//
@@ -16313,6 +16316,7 @@ gargalo/#nm//
 gargaludo/#a//
 garganta/#nf/p/
 garganteio/#nm//
+gargantilha/#nf/p/
 garimpar/#vi/XYL/
 garimpeiro/#nm/p/
 garimpo/#nm//
@@ -24219,6 +24223,7 @@ ordinante/#nm/p/
 ordinária/#hf//
 ordinário/#hm/fpH/
 ordovícicos///
+orégão/#nm/p/
 orelhada/#nf//
 orelhado/#a/f/
 orelha/#nf/p/
@@ -25885,6 +25890,7 @@ picadete/#a//
 picador/#hm//
 picadura/#nf//
 pica/#nf//
+picanha/#nf/p/
 picante/#an/p/
 pica-pau/#nm//
 picareta/#nf/p/
@@ -28197,6 +28203,7 @@ rasto/#nm/p/
 rastrear/#vn/ZYPL/
 rastreio/#a//
 rastrejar/#vn/XYPL/
+rastro/#nm/p/
 rasura/#nf//
 rasurar/#vt/XYPL/
 ratada/#nf//
@@ -30673,7 +30680,7 @@ séptico/#a/fp/
 septo//p/
 septuagenário/#hm/fp/
 septuagésimo/#o//
-séptuplo/#ca//
+séptuplo/#ca/f/
 sepulcral/#an/p/
 sepulcro/#nm/p/
 sepultante/#an/p/
@@ -30812,7 +30819,7 @@ sextante/#nm/p/
 sexteto/#nm/p/
 sexto/#o/fp/
 sextuplicar/#vt/XYPLc/
-sêxtuplo/#ca//
+sêxtuplo/#ca/f/
 sexuado/#a/fm/
 sexual/#an/ptidm/
 sexualidade/#nf/p/
@@ -34498,6 +34505,7 @@ você/CAT=ppes,P=3,N=s,C=n/p/
 vociferador/#hm//
 vociferante/#an/p/
 vociferar/#vn/XYPLcDn/
+vodka/#nm//
 voejante/#an/p/
 voejar/#vi/XYLn/
 vogal/#hn/p/

@@ -47,7 +47,7 @@ jspell.port.tgz:
 	mkdir -p jspell.port-`./ver`
 	cp $(BASE) jspell.port-`./ver`
 	tar -cvzf jspell.port.tgz jspell.port-`./ver`
-	
+
 clean : 
 	rm -f $B/*.stat $B/*.cnt 
 	rm -f $B/port.hash $B/port.dic $B/port.aff

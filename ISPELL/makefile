@@ -2,7 +2,12 @@
 # make install
 
 # make ispell   (very slow!!!)
+
+### same thing ###
+# make tgz 
 # make ispell.tgz
+
+# make publish
 
 LIB=/usr/local/lib
 ISPELLLIB=/usr/local/lib/ispell
@@ -25,14 +30,20 @@ todo: ispell
 
 D=portugues
 P=portugues
+ABR=pt
+DATE=`date +%Y%m%d`
 plndir=/home/jj/public_html/pln
 FR = mv $D.dic _$D.dic ; mv $D.aff _$D.aff
 #FR = perl flagsRenDel $D
 
-ispell.tgz: 
-	tar -czf $P/$D.tgz $P/$D.dic $P/README  $P/$D.aff $P/makefile
+ispell.tgz: tgz
+
+tgz:
+	tar -czf $P/ispell.$(ABR).$(DATE).tar.gz $P/$D.dic $P/README $P/$D.aff $P/makefile
+
+publish: tgz
 	mv $P/$D.tgz $(plndir)/UM$D.tgz
-	
+
 ispell : $P/$D.hash $P/README
 
 $P/README: ../port.aff
