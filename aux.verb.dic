@@ -132,6 +132,7 @@ acondimentar/#vt/XYPL/
 aconselhar/#vt/XYPLSDvM/
 aconsoantar/#vt/XYPL/
 acontecer/#vi/XYLpM/
+acoplar/#vt/XYPLcDR/
 acopular/#v/L/
 acordar/#vt/XYPLSn/
 acoronhar/#vt/XYPL/
@@ -822,6 +823,7 @@ assaborar/#vt/XYPL/
 assalariar/#vt/XYPLcMD/
 assaltar/#vt/XYPLn/
 assanhar/#vt/XYPLM/
+assapar/#vt/XYPL/
 assapatar/#vt/XYPL/
 assarapantar/#vt/XYPLM/
 assar/#vt/XYPLD/
@@ -1536,7 +1538,7 @@ colorir/#vt,I=3/YPLS/
 comandar/#vt/XYPLn/
 combalir/#vt/XYPL/
 combater/#vn/XYPLMnv/
-combinar/#vt/XYPLcDv/
+combinar/#vt/XYPLcDvR/
 começar/#vt/XYPLRDR/
 comedido/$comedir$#vt$#a/fp/
 comedir/#vt,I=3/PLSM/
@@ -2900,6 +2902,7 @@ enviesar/#vn/XYPL/
 envinagrar/#vn/XYPL/
 enviuvar/#vi,I=3/YL/
 envolver/#vt/XYPLMn/
+enxaguar/#vt/XYPL/
 enxaropar/#vt/XYPL/
 enxergar/#vt/XYPL/
 enxertar/#vt/XYPLD/
@@ -4095,6 +4098,7 @@ mascarar/#vt/SXYPL/
 mascar/#vn/XYPLD/
 masculinizar/#vt/XYPL/
 massacrar/#vt/XYPL/
+massajar/#vn/XYPLScMn/
 massificar/#v/c/
 mastigar/#vn/XYPLcD/
 mastrear/#vt/ZYPL/
@@ -5849,6 +5853,7 @@ trespassar/#vt/XYPLc/
 trespor/#vt/KPL/
 triangular/#vt/dcD/
 tributar/#vt/XYPLcv/
+tricotar/#vt/XYPLv/
 trilhar/#vt/XYPLMD/
 trincar/#vt/XYPL/
 trinchar/#vt/XYPLDn/
@@ -5926,6 +5931,7 @@ varar/#vn/XYPLcD/
 varejar/#vt/XYPLMD/
 variar/#vn/XYPLcnv/
 varrer/#vn/XYPLD/
+vasculhar/#vt/XYPLDv/
 vassoirar/#vn/XYPL/
 vassourar/#vn/XYPL/
 vaticinar/#vt/XYPLcDn/
@@ -6025,6 +6031,7 @@ zebrar/#vt/XYPL/
 zelar/#vt/XYPLcDn/
 ziguezaguear/#vi/ZYLn/
 zincar/#vt/XYPL/
+zoar/#vt/XYPLcD/
 zombar/#vi/XYLD/
 zonzear/#vi/ZYL/
 zumbir/#vi/XYLD/
