@@ -50,6 +50,6 @@ while(<>){
 
 #Copypaste from upper lines
 printf ("\n%s %s Y %d\n",$pri,$seg,$#ter+1);
-for ($i=1;$i<@ter;$i++){
+for ($i=0;$i<@ter;$i++){
     print "$pri $seg   ".lc($ter[$i])."\t\t".lc($qua[$i])."\t\t".lc($qui[$i])."\n";
 }
