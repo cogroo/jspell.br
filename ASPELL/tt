@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+#undef $/;
+#$/='';
+
+while(<>){
+s/-/\n/g;
+print
+
+}

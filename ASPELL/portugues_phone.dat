@@ -1,0 +1,217 @@
+#   phonetic_english.h - phonetic transformation rules for use with phonetic.c
+#   Copyright (C) 2000 Jose Joao Almeida
+#
+#   This library is free software; you can redistribute it and/or
+#   modify it under the terms of the GNU Lesser General Public
+#   License version 2.1 as published by the Free Software Foundation;
+#
+#   This library is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#   Lesser General Public License for more details.
+#
+#   You should have received a copy of the GNU Lesser General Public
+#   License along with this library; if not, write to the Free Software
+#   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+#   Jose Joao (jj@di.uminho.pt)
+#
+
+version portugues 0.0000000001
+
+гаO                CAO
+SS                 г
+C(EI)-             г
+RR                 R
+C(гT)-             _
+CH                 CH
+LH                 LH
+NH                 NH
+H                  _
+G(EI)-             J
+GU(EI)-            G
+G                  G
+QU(EI)-            K
+QU                 KU
+C(AOURL)-          K
+
+
+
+
+AI                 E
+AN(AEUIO)-         AM
+AN                 A
+AMM                AM
+AM(AEUIO)-         AM
+AM                 A
+AU                 O
+A                  A
+б                  A
+ю                  A
+BB                 P
+B                  P
+г                  S
+C(EI)-             S
+CU(EI)-            K
+CC(EI)-            X
+CC                 K
+CH                 CH
+C                  K
+DD                 T
+D                  T
+EMMENTAL           EMATAL
+EMMENTHAL          EMATAL
+EM(AEIOU)-         EM
+EM                 A
+ET$                E
+EU                 E
+EN(AEUIO)-         EM
+EN                 A
+ER$                E
+EO                 O
+EAU                O
+E                  E
+х                  E
+и                  E
+й                  E
+F                  F
+G(EIY)-            J
+GU(EIY)-           G
+G                  G
+H                  _
+I                  I
+н                  I
+J                  J
+KS                 X
+K                  K
+LL                 L
+L                  L
+MM                 M
+M                  M
+NN                 M
+N                  M
+OEU                E
+OU                 U
+Oы                 U
+O                  O
+т                  O
+PP                 P
+PH                 F
+P                  P
+QU                 K
+Q                  K
+RR                 R
+R                  R
+S$                 _
+SS                 S
+S                  S
+TT                 T
+T                  T
+U                  U
+ы                  U
+ш                  U
+V                  V
+W                  W
+X                  X
+Y(AEOU)-           IL
+Y                  I
+ZZ                 S
+Z                  S
+
+#The rules in a different view:
+#
+# Exceptions:
+#
+#  Beginning of word: "gn", "kn-", "pn-", "wr-"  ----> drop first letter
+#                     "Aebersold", "Gnagy", "Knuth", "Pniewski", "Wright"
+#
+#  Beginning of word: "x"                                ----> change to "s"
+#                                     as in "Deng Xiaopeng"
+#
+#  Beginning of word: "wh-"                              ----> change to "w"
+#                                     as in "Whalen"
+#  Beginning of word: leading vowels are transformed to "*"
+#
+#  "[crt]ough" and "enough" are handled separately because of "F" sound
+#
+#
+#  A --> A      at beginning
+#          _      otherwise
+#
+#  B --> B      unless at the end of word after "m", as in "dumb", "McComb"
+#
+#  C --> X      (sh) if "-cia-" or "-ch-"
+#          S      if "-ci-", "-ce-", or "-cy-"
+#                 SILENT if "-sci-", "-sce-", or "-scy-", or "-cq-"
+#          K      otherwise, including in "-sch-"
+#
+#  D --> K      if in "-dge-", "-dgy-", or "-dgi-"
+#          T      otherwise
+#
+#  E --> A      at beginnig
+#          _      SILENT otherwise
+#  
+#  F --> F
+#
+#  G -->        SILENT if in "-gh-" and not at end or before a vowel
+#                            in "-gn" or "-gned" or "-gns"
+#                           in "-dge-" etc., as in above rule
+#          K      if before "i", or "e", or "y" if not double "gg"
+#
+#          K      otherwise (incl. "GG"!)
+#
+#  H -->        SILENT if after vowel and no vowel or "Y" follows
+#                        or after "-ch-", "-sh-", "-ph-", "-th-", "-gh-"
+#                        or after "rh-" at beginning
+#          H      otherwise
+#
+#  I --> A      at beginning
+#          _      SILENT otherwise
+#
+#  J --> K
+#
+#  K -->        SILENT if after "c"
+#          K      otherwise
+#
+#  L --> L
+#
+#  M --> M
+#  
+#  N --> N
+#
+#  O --> A      at beginning
+#          _      SILENT otherwise
+#
+#  P --> F      if before "h"
+#          P      otherwise
+#
+#  Q --> K
+#
+#  R -->        SILENT if after vowel and no vowel or "Y" follows
+#          R      otherwise
+#
+#  S --> X      (sh) if before "h" or in "-sio-" or "-sia-"
+#          SK     if followed by "ch(eo)" (SCH(EO))
+#          S      otherwise
+#
+#  T --> X      (sh) if "-tia-" or "-tio-"
+#          0      (th) if before "h"
+#                 silent if in "-tch-"
+#          T      otherwise
+#
+#  U --> A      at beginning
+#          _      SILENT otherwise
+#
+#  V --> V      if first letter of word
+#          F      otherwise
+#
+#  W -->        SILENT if not followed by a vowel
+#          W      if followed by a vowel
+#
+#  X --> KS
+#
+#  Y -->        SILENT if not followed by a vowel
+#          Y      if followed by a vowel
+# 
+#  Z --> S
+   

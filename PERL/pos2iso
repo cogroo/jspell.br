@@ -1,0 +1,45 @@
+#!/usr/local/bin/perl -s
+# posacentuado to iso latin
+#  -v  c, para cedilha (def c')
+
+while (<>){
+  s/c'/ç/g unless $v;
+  s/C'/Ç/g unless $v;
+  s/c,/ç/g if($v);
+  s/C,/Ç/g if($v);
+  s/A'/Á/g;
+  s/A`/À/g;
+  s/A\^/Â/g;
+  s/A\~/Ã/g;
+  s/E'/É/g;
+  s/E\^/Ê/g;
+  s/E`/È/g;
+  s/I'/Í/g;
+  s/I`/Ì/g;
+  s/O'/Ó/g;
+  s/O\^/Ô/g;
+  s/O\~/Õ/g;
+  s/O\`/Ò/g;
+  s/U'/Ú/g;
+  s/U\^/Û/g;
+  s/U`/Ù/g;
+  s/a'/á/g;
+  s/a`/à/g;
+  s/a\^/â/g;
+  s/a\~/ã/g;
+  s/e'/é/g;
+  s/e\^/ê/g;
+  s/e`/è/g;
+  s/i'/í/g;
+  s/i`/ì/g;
+  s/o'/ó/g;
+  s/o\^/ô/g;
+  s/o\~/õ/g;
+  s/o\`/ò/g;
+  s/u'/ú/g;
+  s/u\^/û/g;
+  s/u`/ù/g;
+
+  print;
+}
+

@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+#undef $/;
+#$/='';
+
+while(<>){
+ if (m!/(.*)!){
+   my $ele=$1;
+   for( split(//,$ele)){$oco{$_}++;}
+ }
+}
+
+for (sort {$oco{$b} <=> $oco{$a}} keys %oco){ print "'$_'  - $oco{$_}\n";}

@@ -1,0 +1,1372 @@
+#        Affix table for Portugues
+#           For JSpell and ISpell (3.1...)
+#
+# Copyright (C) 1995,96,97,98,99  Jose Joao de Almeida <jj@di.uminho.pt> 
+#                            e Ulisses Pinto
+#   Dep. Informatica, Universidade do Minho
+#     Portugal
+#
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+# This affix file uses both upper- and lower-case affix flags, so you
+# must              #define MASKBITS 64 in your local.h file.
+#
+# 8 bits used (latin1) (please remove the #define NO8BIT line)
+#
+#
+#    available modes:
+#        -T lat               (latin1)
+#        -T tex
+#        -T pre               (  'a 'e ,c ...)
+#
+#    any comments, important new words, and errors should be mailed to
+#                 J.Joao Almeida (jj@di.uminho.pt)
+#
+#                      Last update: Dez 2000
+#
+# the last version Available in 
+#  (ispell)        http://natura.di.uminho.pt/~jj/pln/UMportugues.tgz
+#  (ispell)        http://natura.di.uminho.pt/~jj/SOURCES/ispell.port....
+#  (ispell)        http://natura.di.uminho.pt/~jj/SRPMS/ispell.port....
+#  (ispell)        http://natura.di.uminho.pt/~jj/RPMS/i586/ispell.port....
+#                  ***********************************************
+#
+
+allaffixes on
+
+defstringtype "lat" "nroff" ".list"
+
+boundarychars \-                       #noispell
+wordchars        a            A
+stringchar        á            Á
+stringchar        à            À
+stringchar        ã            Ã
+stringchar        â            Â
+wordchars        [bc]        [BC]
+stringchar        ç            Ç
+wordchars        [de]        [DE]
+stringchar        é            É
+stringchar        è            È
+stringchar        ê            Ê
+wordchars        [f-i]        [F-I]
+stringchar        í            Í
+stringchar        ì            Ì
+wordchars        [j-o]        [J-O]
+stringchar        ó            Ó
+stringchar        ò            Ò
+stringchar        õ            Õ
+stringchar        ô            Ô
+wordchars        [p-u]        [P-U]
+stringchar        ú            Ú
+stringchar        ù            Ù
+stringchar        ü            Ü
+wordchars        [v-z]        [V-Z]
+
+#
+#
+altstringtype "pre" "nroff" ".pre"
+
+altstringchar \'a á
+altstringchar \`a à
+altstringchar \~a ã
+altstringchar \^a â
+altstringchar \,c ç
+altstringchar \'e é
+altstringchar \`e è
+altstringchar \^e ê
+altstringchar \'i í
+altstringchar \`i ì
+altstringchar \'o ó
+altstringchar \`o ò
+altstringchar \~o õ
+altstringchar \^o ô
+altstringchar \'u ú
+altstringchar \`u ù
+#altstringchar \^u û
+
+altstringchar \'A Á
+altstringchar \`A À
+altstringchar \~A Ã
+altstringchar \^A Â
+altstringchar \,C Ç
+altstringchar \'E É
+altstringchar \`E È
+altstringchar \^E Ê
+altstringchar \'I Í
+altstringchar \`I Ì
+altstringchar \'O Ó
+altstringchar \`O Ò
+altstringchar \~O Õ
+altstringchar \^O Ô
+altstringchar \'U Ú
+altstringchar \`U Ù
+#altstringchar \^U Û
+
+#
+# Plain TeX
+#
+altstringtype "tex" "nroff" ".tex"
+
+altstringchar \\\'a á
+altstringchar \\\`a à
+altstringchar \\\~a ã
+altstringchar \\\^a â
+altstringchar \\c{c} ç
+altstringchar \\\'e é
+altstringchar \\\`e è
+altstringchar \\\^e ê
+altstringchar \\\'{\\i} í
+altstringchar \\\'o ó
+altstringchar \\\`o ò
+altstringchar \\\~o õ
+altstringchar \\\^o ô
+altstringchar \\\'u ú
+altstringchar \\\`u ù
+#altstringchar \\\^u û
+
+altstringchar \\\'A Á
+altstringchar \\\`A À
+altstringchar \\\~A Ã
+altstringchar \\\^A Â
+altstringchar \\c{C} Ç
+altstringchar \\\'E É
+altstringchar \\\`E È
+altstringchar \\\^E Ê
+altstringchar \\\'I Í
+altstringchar \\\'O Ó
+altstringchar \\\`O Ò
+altstringchar \\\~O Õ
+altstringchar \\\^O Ô
+altstringchar \\\'U Ú
+altstringchar \\\`U Ù
+#altstringchar \\\^U Û
+
+
+prefixes
+
+flag *A:                   # anti
+    .       >      ANTI       ; "PFSEM=anti"       # ex. venenoso -> antivenenoso
+flag *B:                   # -anti
+    .       >      ANTI\-     ; "PFSEM=anti"       # ex. semita -> anti-semita
+
+flag *S:                   # des
+[^H]        >      DES        ; "PFSEM=not"       # ex. amarrar -> desamarrar
+H           >    -H,DES       ; "PFSEM=not"       # ex. habitar -> desabitar
+
+flag *I:                   #in
+[^PLMR]     >      IN         ; "PFSEM=not"    # ex. finito -> infinito
+P           >      IM         ; "PFSEM=not"    # ex. paciente->impaciente
+[LM]        >      I          ; "PFSEM=not"    # ex. material->imaterial
+R           >      IR         ; "PFSEM=not"    # ex. real->irreal
+
+flag *R:                   #re
+[^S]        >      RE         ; "PFSEM=outra"     # ex. encontrar -> reencontrar
+S           >      RES        ; "PFSEM=outra"     # ex. surgir -> ressurgir
+
+flag *E:                   #pre
+    .       >      PRÉ\-     ; "PFSEM=pre"       # ex. escolar -> pré-escolar
+
+flag *O:                   #pos
+    .       >      PÓS\-     ; "PFSEM=pos"       # ex. guerra -> p'os-guerra
+
+flag *U:                   #sub
+    .       >      SUB\-      ; "PFSEM=sub"       # ex. problema -> sub-problema
+
+flag *F:  			#ultra super        #noispell
+    .       >      ULTRA      ; "PFSEM=ultra"     #         #noispell
+    .       >      SUPER      ; "PFSEM=super"     #        #noispell
+    .       >      HIPER      ; "PFSEM=hiper"     #        #noispell
+    .       >      BI      ; "PFSEM=2"     #        #noispell
+    S       >      TRIS      ; "PFSEM=3"     #        #noispell
+    [^S]    >      TRI       ; "PFSEM=3"     #        #noispell
+suffixes
+
+#-----------------------------------------
+# plurais - os mais habituais
+flag *p:         ; "CAT=a_nc,N=s"      #plurais
+[^Ã][^LSMRNZX]>     S    ; "N=p"         # -> s         ex. pato, patos
+Ã E         >       S    ; "N=p"         # ãe -> ães    ex. mãe, mães
+Ã O         >   -ÃO,ÕES  ; "N=p"         # ão -> ões    ex. leão, leões
+A L         >    -L,IS   ; "N=p"         # al -> ais    ex. animal, animais
+O L         >   -OL,ÓIS  ; "N=p"         # ol -> óis    ex. anzol, anzóis
+[^V] E L    >   -EL,ÉIS  ; "N=p"         # el -> éis    ex. papel, papéis
+[ÁÉÍÓÚ] V E L >  -L,IS   ; "N=p"         # el -> eis    ex. afável, afáveis
+I L         >    -L,S    ; "N=p"         # il -> is     ex. funil, funis
+[^ÁÉÊ] S    >       ES   ; "N=p"         # -> es        ex. deus, deuses
+Á S         >   -ÁS,ASES ; "N=p"         # ás -> ases   ex. gás, gases
+É S         >   -ÉS,ESES ; "N=p"         # és -> eses   ex. revés,reveses
+Ê S         >   -ÊS,ESES ; "N=p"         # ês -> eses   ex. japonês,japoneses
+M           >    -M,NS   ; "N=p"         # m -> ns      ex. jovem, jovens
+[RNZX]      >       ES   ; "N=p"         # -> es        ex. cantor, cantores
+
+flag *a:         ; "CAT=a_nc,N=s"      #plurais
+Ã O         >       S    ; "N=p"         # ão -> ãos     ex. mão, mãos
+I L         >   -IL,EIS  ; "N=p"         # il -> eis     ex. ágil, ágeis  # deve ser posto em todos os que têm acento e acabam em il
+
+
+flag *e:         ; "CAT=a_nc,N=s"      #plurais
+Ã O         >    -O,ES   ; "N=p"         # ão -> ães     ex. pão, pães
+A L         >    ES      ; "N=p"         #               ex. mal males
+
+#-----------------------------------------
+# femininos - os mais habituais
+flag *f:         ; "CAT=a_nc,G=m,N=s"  #femininos
+[^Ã] O      >    -O,A    ; "G=f"         # o -> a     ex. pato -> pata
+[^Ã] O      >    -O,AS   ; "G=f,N=p"
+[^AEIOUSCN] >       A    ; "G=f"         # -> a       ex. cantor -> cantora
+[^AEIOUSCN] >       AS   ; "G=f,N=p"
+[^Ê] S      >       A    ; "G=f"         # -> a       ex. deus   -> deusa
+[^Ê] S      >       AS   ; "G=f,N=p"
+Ê S         >   -ÊS,ESA  ; "G=f"         # ês -> esa   ex. japonês -> japonesa
+Ê S         >   -ÊS,ESAS ; "G=f,N=p"    # ês -> esas  ex. japonês -> japonesas
+Ã O         >   -ÃO,ONA  ; "G=f"         # ão -> ona   ex. burlão -> burlona
+Ã O         >   -ÃO,ONAS ; "G=f,N=p"
+E           >    -E,A    ; "G=f"         # e -> a     ex. ele -> ela
+E           >    -E,AS   ; "G=f,N=p"    # e -> a     ex. ele -> elas
+
+flag *b:         ; "CAT=a_nc,G=m,N=s"  #femininos
+Ã O         >    -O,-    ; "G=f"         # ão -> ã     ex. alemão -> alemã
+Ã O         >    -O,S    ; "G=f,N=p"    # ão -> ãs
+
+flag *g:         ; "CAT=a_nc,G=m,N=s"  #femininos
+Ã O         >   -ÃO,OA  ; "G=f"         # ão -> oa     ex. patrão -> patroa
+Ã O         >  -ÃOS,OAS ; "G=f,N=p"    # ão -> oas
+
+#----------------------------------------
+# mente
+flag +m:         ; "CAT=adj,N=s"       #mente
+O           >     -O,AMENTE    ; "CAT=adv"      # aberto->abertamente
+[^V][^N~][^O]>       MENTE     ; "CAT=adv"      # anterior->anteriormente  N~-means any char
+Á V E L     >  -ÁVEL,AVELMENTE ; "CAT=adv"      # amável->amavelmente
+Í V E L     >  -ÍVEL,IVELMENTE ; "CAT=adv"      # horrível->horrivelmente
+
+#----------------------------------------
+#mente
+flag +H:         ; "CAT=adj,N=s"       #mente
+
+D O R       >  AMENTE          ; "CAT=adv"
+Ó R I O     >  -ÓRIO,ORIAMENTE ; "CAT=adv"
+Á R I O     >  -ÁRIO,ARIAMENTE ; "CAT=adv"
+Á T I C O   >  -ÁTICO,ATICAMENTE ; "CAT=adv"
+Ó N I C O   >  -ÓNiCO,ONICAMENTE ; "CAT=adv"
+Ó G I C O   >  -ÓGICO,OGICAMENTE ; "CAT=adv"
+Í F E R O   >  -ÍFERO,IFERAMENTE ; "CAT=adv"
+É T I C O   >  -ÉTICO,ETICAMENTE ; "CAT=adv"
+Í S T I C O >  -ÍSTICO,ISTICAMENTE ; "CAT=adv"
+Í S S I M O >  -ÍSSIMO,ISSIMAMENTE ; "CAT=adv"
+Í T I C O   >  -ÍTICO,ITICAMENTE ; "CAT=adv"
+Á F I C O   >  -ÁFICO,AFICAMENTE ; "CAT=adv"
+É T R I C O >  -ÉTRICO,ETRICAMENTE ; "CAT=adv"
+Ó M I C O   >  -ÓMICO,OMICAMENTE ; "CAT=adv"
+É R I C O   >  -ÉRICO,ERICAMENTE ; "CAT=adv"
+Ó T I C O   >  -ÓTICO,OTICAMENTE ; "CAT=adv"
+Á C E O     >  -ÁCEO,ACEAMENTE ; "CAT=adv"
+Á S T I C O >  -ÁSTICO,ASTICAMENTE ; "CAT=adv"
+Í C I O     >  -ÍCIO,ICIAMENTE ; "CAT=adv"
+Í F I C O   >  -ÍFICO,IFICAMENTE ; "CAT=adv"
+Í A C O     >  -ÍACO,IACAMENTE ; "CAT=adv"
+Ó L I C O   >  -ÓLICO,OLICAMENTE ; "CAT=adv"
+Ó R I C O   >  -ÓRICO,ORICAMENTE ; "CAT=adv"
+É N I C O   >  -ÉNICO,ENICAMENTE ; "CAT=adv"
+Ó D I C O   >  -ÓDICO,ODICAMENTE ; "CAT=adv"
+Ó P I C O   >  -ÓPICO,OPICAMENTE ; "CAT=adv"
+Á L I C O   >  -ÁLICO,ALICAMENTE ; "CAT=adv"
+É R M I C O >  -ÉRMICO,ERMICAMENTE ; "CAT=adv"
+Í V O R O   >  -ÍVORO,IVORAMENTE ; "CAT=adv"
+Á B I C O   >  -ÁBICO,ABICAMENTE ; "CAT=adv"
+Ó F I L O   >  -ÓFILO,OFILAMENTE ; "CAT=adv"
+É L I C O   >  -ÉLICO,ELICAMENTE ; "CAT=adv"
+É M I C O   >  -ÉMICO,EMICAMENTE ; "CAT=adv"
+Ó N I O     >  -ÓNIO,ONIAMENTE ; "CAT=adv"
+Á S I C O   >  -ÁSICO,ASICAMENTE ; "CAT=adv"
+
+#----------------------------------------
+# íssimo
+flag *s:         ; "CAT=adj,N=s"       #issimo
+[^CÇG]O     >     -O,ÍSSIMO    ; "GR=sup"       # alto->altíssimo
+C O         >    -CO,QUÍSSIMO  ; "GR=sup"       # pouco->pouquíssimo
+Ç O         >    -ÇO,CÍSSIMO   ; "GR=sup"       # vivac,o->vivacíssimo
+G O         >    -GO,GUÍSSIMO  ; "GR=sup"       # meigo->meiguíssimo
+E           >     -E,ÍSSIMO    ; "GR=sup"       # leve->levíssimo
+[LR]        >        ÍSSIMO    ; "GR=sup"       # normal->normalíssimo
+Ê S         >    -ÊS,ESÍSSIMO  ; "GR=sup"       # burguês->burguesíssimo
+Z           >     -Z,CÍSSIMO   ; "GR=sup"       # feliz->felicíssimo
+
+[^CÇG]O     >     -O,ÍSSIMA    ; "GR=sup,G=f"       # alto->altíssima
+C O         >    -CO,QUÍSSIMA  ; "GR=sup,G=f"       # pouco->pouquíssima
+Ç O         >    -ÇO,CÍSSIMA   ; "GR=sup,G=f"       # vivac,o->vivacíssima
+G O         >    -GO,GUÍSSIMA  ; "GR=sup,G=f"       # meigo->meiguíssima
+E           >     -E,ÍSSIMA    ; "GR=sup,G=f"       # leve->levíssima
+[LR]        >        ÍSSIMA    ; "GR=sup,G=f"       # normal->normalíssima
+Ê S         >    -ÊS,ESÍSSIMA  ; "GR=sup,G=f"       #
+Z           >     -Z,CÍSSIMA   ; "GR=sup,G=f"       # feliz->felicíssima
+
+[^CÇG]O     >     -O,ÍSSIMOS   ; "GR=sup,N=p"       # alto->altíssimos
+C O         >    -CO,QUÍSSIMOS ; "GR=sup,N=p"       # pouco->pouquíssimos
+Ç O         >    -ÇO,CÍSSIMOS  ; "GR=sup,N=p"       # vivac,o->vivacíssimos
+G O         >    -GO,GUÍSSIMOS ; "GR=sup,N=p"       # meigo->meiguíssimos
+E           >     -E,ÍSSIMOS   ; "GR=sup,N=p"       # leve->levíssimos
+[LR]        >        ÍSSIMOS   ; "GR=sup,N=p"       # normal->normalíssimos
+Ê S         >    -ÊS,ESÍSSIMOS ; "GR=sup,N=p"       # burguês->burguesíssimos
+Z           >     -Z,CÍSSIMOS  ; "GR=sup,N=p"       # feliz->felicíssimos
+
+[^CÇG]O     >     -O,ÍSSIMAS   ; "GR=sup,G=f,N=p"   # alto->altíssimas
+C O         >    -CO,QUÍSSIMAS ; "GR=sup,G=f,N=p"   # pouco->pouquíssimas
+Ç O         >    -ÇO,CÍSSIMAS  ; "GR=sup,G=f,N=p"   # vivac,o->vivacíssimas
+G O         >    -GO,GUÍSSIMAS ; "GR=sup,G=f,N=p"   # meigo->meiguíssimas
+E           >     -E,ÍSSIMAS   ; "GR=sup,G=f,N=p"   # leve->levíssimas
+[LR]        >        ÍSSIMAS   ; "GR=sup,G=f,N=p"   # normal->normalíssimas
+Ê S         >    -ÊS,ESÍSSIMAS ; "GR=sup,G=f,N=p"   #
+Z           >     -Z,CÍSSIMAS  ; "GR=sup,G=f,N=p"   # feliz->felicíssimas
+
+#-----------------------------------------
+# idade
+flag +d:         ; "CAT=adj,N=s"       #idade
+[^ÇG]O      >     -O,IDADE     ; "CAT=nc,G=f,FSEM=dd" # activo->actividade
+Ç O         >    -ÇO,CIDADE    ; "CAT=nc,G=f,FSEM=dd" # castic,o->casticidade
+G O         >    -GO,GUIDADE   ; "CAT=nc,G=f,FSEM=dd" # antigo->antiguidade
+E           >     -E,IDADE     ; "CAT=nc,G=f,FSEM=dd" # breve->brevidade
+R           >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # angular->angularidade
+[^V][^N~] L >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # amoral->amoralidade
+[^ÁÍ] V E L >   -VEL,BILIDADE  ; "CAT=nc,G=f,FSEM=dd" #
+Á V E L     >  -ÁVEL,ABILIDADE ; "CAT=nc,G=f,FSEM=dd" # amável->amabilidade
+Í V E L     >  -ÍVEL,IBILIDADE ; "CAT=nc,G=f,FSEM=dd" # amovível->amovibilidade
+Z           >     -Z,CIDADE    ; "CAT=nc,G=f,FSEM=dd" # feroz->ferocidade
+
+[^ÇG]O      >     -O,IDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # activo->actividades
+G O         >    -GO,GUIDADES  ; "CAT=nc,G=f,N=p,FSEM=dd" # antigo->antiguidades
+[^V][^N~] L >        IDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # funcional->funcionalidades
+
+#-----------------------------------------
+# ismo
+flag *i:         ; "CAT=nc,N=s"   #ismo
+[^CÇÃ]O     >     -O,ISMO       ; "FSEM=ismo"   # activo->activismo
+C O         >    -CO,QUISMO     ; "FSEM=ismo"   # barroco->barroquismo
+Ç O         >    -ÇO,CISMO      ; "FSEM=ismo"   # castic,o->casticismo
+Ç Ã O       >   -ÇÃO,CIONISMO   ; "FSEM=ismo"   # abolic,ão->abolicionismo
+[^ICG]A     >     -A,ISMO       ; "FSEM=ismo"   # buda->budismo
+I A         >     -A,SMO        ; "FSEM=ismo"   # academia->academismo
+C A         >    -CA,QUISMO     ; "FSEM=ismo"   # benfica->benfiquismo
+G A         >    -GA,GUISMO     ; "FSEM=ismo"   # colega->coleguismo
+E           >     -E,ISMO       ; "FSEM=ismo"   # brilhante->brilhantismo
+[LR]        >        ISMO       ; "FSEM=ismo"   # actual->actualismo
+Ê S         >    -ÊS,ESISMO     ; "FSEM=ismo"   # chinês->chinesismo
+
+#-----------------------------------------
+# ista
+flag *t:          ; "CAT=nc,N=s"      #ista
+[^CÇÃ]O     >     -O,ISTA       ; "FSEM=ista"  # porto->portista
+C O         >    -CO,QUISTA     ; "FSEM=ista"  # bloco->bloquista
+Ç O         >    -ÇO,CISTA      ; "FSEM=ista"  # aderec,o->aderecista
+Ç Ã O       >   -ÇÃO,CIONISTA   ; "FSEM=ista"  # abolic,ão->abolicionista
+[^IÇG] A    >     -A,ISTA       ; "FSEM=ista"  # bomba->bombista
+I A         >     -A,STA        ; "FSEM=ista"  # anarquia->anarquista
+Ç A         >    -ÇA,CISTA      ; "FSEM=ista"  # cobranc,a->cobrancista
+G A         >     -A,UISTA      ; "FSEM=ista"  # borga->borguista
+E           >     -E,ISTA       ; "FSEM=ista"  # alarme->alarmista
+[LR]        >        ISTA       ; "FSEM=ista"  # flor->florista
+
+[^CÇÃ]O     >     -O,ISTAS      ; "N=p,FSEM=ista"  # porto->portistas
+C O         >    -CO,QUISTAS    ; "N=p,FSEM=ista"  # bloco->bloquistas
+Ç O         >    -ÇO,CISTAS     ; "N=p,FSEM=ista"  # aderec,o->aderecistas
+Ç Ã O       >   -ÇÃO,CIONISTAS  ; "N=p,FSEM=ista"  # abolic,ão->abolicionistas
+[^IÇG] A    >     -A,ISTAS      ; "N=p,FSEM=ista"  # bomba->bombistas
+I A         >     -A,STAS       ; "N=p,FSEM=ista"  # anarquia->anarquistas
+Ç A         >    -ÇA,CISTAS     ; "N=p,FSEM=ista"  # cobranc,a->cobrancistas
+G A         >     -A,UISTAS     ; "N=p,FSEM=ista"  # borga->borguistas
+E           >     -E,ISTAS      ; "N=p,FSEM=ista"  # alarme->alarmistas
+[LR]        >        ISTAS      ; "N=p,FSEM=ista"  # flor->floristas
+
+#-----------------------------------------
+# inho
+flag +h:            ; "CAT=a_nc,N=s"      #inho
+[^CGÇÃI]O   >     -O,INHO         ; "GR=dim"  # beijo->beijinho
+C O         >    -CO,QUINHO       ; "GR=dim"  # porco->porquinho
+Ç O         >    -ÇO,CINHO        ; "GR=dim"  # mac,o->macinho
+G O         >     -O,UINHO        ; "GR=dim"  # antigo->antiguinho
+Ã O         >        ZINHO        ; "GR=dim"  # cão->cãozinho
+E           >     -E,INHO         ; "GR=dim"  # bigode->bigodinho
+[^Ê][SZ]    >        INHO         ; "GR=dim"  # arroz->arrozinho
+Ê S         >    -ÊS,ESINHO       ; "GR=dim"  # chinês->chinesinho
+[IRUN]      >        ZINHO        ; "GR=dim"  # bar->barzinho
+Ó           >     -Ó,OZINHO       ; "GR=dim"  # pó->pozinho
+Ô           >     -Ô,OZINHO       ; "GR=dim"  # avô->avozinho
+É           >     -É,EZINHO       ; "GR=dim"  # pé->pezinho
+Ú           >     -Ú,UZINHO       ; "GR=dim"  # baú->bauzinho
+M           >     -M,NZINHO       ; "GR=dim"  # homem->homenzinho
+L           >        ZINHO        ; "GR=dim"  # anel->anelzinho
+
+[^CGÇÃI]O   >     -O,INHOS        ; "N=p,GR=dim"  # beijo->beijinhos
+C O         >    -CO,QUINHOS      ; "N=p,GR=dim"  # porco->porquinhos
+Ç O         >    -ÇO,CINHOS       ; "N=p,GR=dim"  # maço->macinhos
+G O         >     -O,UINHOS       ; "N=p,GR=dim"  # antigo->antiguinhos
+Ã O         >        ZINHOS       ; "N=p,GR=dim"  # cão->cãozinhos
+E           >     -E,INHOS        ; "N=p,GR=dim"  # bigode->bigodinhos
+[^Ê][SZ]    >        INHOS        ; "N=p,GR=dim"  # arroz->arrozinhos
+Ê S         >    -ÊS,ESINHOS      ; "N=p,GR=dim"  # chinês->chinesinhos
+[IRUN]      >        ZINHOS       ; "N=p,GR=dim"  # bar->barzinhos
+Ó           >     -Ó,OZINHOS      ; "N=p,GR=dim"  # pó->pozinhos
+Ô           >     -Ô,OZINHOS      ; "N=p,GR=dim"  # avô->avozinhos
+É           >     -É,EZINHOS      ; "N=p,GR=dim"  # pé->pezinhos
+Ú           >     -Ú,UZINHOS      ; "N=p,GR=dim"  # baú->bauzinhos
+M           >     -M,NZINHOS      ; "N=p,GR=dim"  # homem->homenzinhos
+L           >        ZINHOS       ; "N=p,GR=dim"  # anel->anelzinhos
+
+[^ÇG]A      >     -A,INHA         ; "GR=dim"  # depressa->depressinha
+C A         >    -CA,QUINHA       ; "GR=dim"  # vaca->vaquinha
+Ç A         >    -ÇA,CINHA        ; "GR=dim"  # cabeça->cabecinha
+G A         >     -A,UINHA        ; "GR=dim"  # carga->carguinha
+Á           >     -Á,AZINHA       ; "GR=dim"  # pá->pazinha
+Ã           >     -Ã,AZINHA       ; "GR=dim"  # mamã->mamazinha
+
+[^ÇG]A      >     -A,INHAS        ; "N=p,GR=dim"  # depressa->depressinhas
+C A         >    -CA,QUINHAS      ; "GR=dim"      # vaca->vaquinhas
+Ç A         >    -ÇA,CINHAS       ; "N=p,GR=dim"  # cabeça->cabecinhas
+G A         >     -A,UINHAS       ; "N=p,GR=dim"  # carga->carguinhas
+Á           >     -Á,AZINHAS      ; "N=p,GR=dim"  # pá->pazinhas
+Ã           >     -Ã,AZINHAS      ; "N=p,GR=dim"  # mamã->mamazinhas
+
+flag z:                               #inho
+[^Ã][EO]        >        ZINHO        ; "GR=dim"  # pobre->pobrezinho
+L           >        INHO         ; "GR=dim"  # casal->casalinho
+
+[^Ã][EO]        >        ZINHOS       ; "N=p,GR=dim"  # pobre->pobrezinhos
+L           >        INHOS        ; "N=p,GR=dim"  # casal->casalinhos
+
+#---------------------------------------
+# ção
+flag *c:                 ; "CAT=v,T=inf"      # çao
+[AE] R      >   -R,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # inalar->inalac,ão
+[^ZG] I R   >   -R,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # abolir->abolic,ão
+Z I R       > -ZIR,ÇÃO     ; "CAT=nc,G=f,N=s,FSEM=cao"  # seduzir->seduc,ão
+P O R       >   -R,SIÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # expor->exposic,ão
+
+[AE] R      >   -R,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # inalar->inalac,ões
+[^ZG] I R   >   -R,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # abolir->abolic,ões
+Z I R       > -ZIR,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # seduzir->seduc,ões
+P O R       >   -R,SIÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # expor->exposic,ões
+
+flag *C:                 ; "CAT=v,T=inf" #cao
+T A R       >   -TAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # cantar->canc,ão
+C I O N A R > -IONAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # adicionar->adic,ão
+A I R       >    -IR,CÇÃO  ; "CAT=nc,G=f,N=s,FSEM=cao"  # atrair->atracc,ão
+U I R       >    -IR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # evoluir->evoluc,ão
+
+T A R       >   -TAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # cantar->canc,ões
+C I O N A R > -IONAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # adicionar->adic,ões
+A I R       >    -IR,CÇÕES ; "CAT=nc,G=f,N=p,FSEM=cao"  # atrair->atracc,ões
+U I R       >    -IR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # evoluir->evoluc,ões
+
+#---------------------------------------
+# mento
+flag *M:                 ; "CAT=v,T=inf"      #mento
+[AI] R      >  -R,MENTO   ;"CAT=nc,G=m,N=s,FSEM=mento" # acumular->acumulamento
+E R         > -ER,IMENTO  ;"CAT=nc,G=m,N=s,FSEM=mento" # sofrer->sofrimento
+
+[AI] R      >  -R,MENTOS  ;"CAT=nc,G=m,N=p,FSEM=mento" # acumular->acumulamentos
+E R         > -ER,IMENTOS ;"CAT=nc,G=m,N=p,FSEM=mento" # sofrer->sofrimentos
+
+#---------------------------------------
+# nte
+flag *n:                ; "CAT=v,T=inf"       #ente
+[AE] R      >   -R,NTE        ; "CAT=adj,G=_,N=s,FSEM=nte"  # lavar->lavante
+I R         >  -IR,ENTE       ; "CAT=adj,G=_,N=s,FSEM=nte"  # aderir->aderente
+O R         >   -R,NENTE      ; "CAT=adj,G=_,N=s,FSEM=nte"  # opor->oponente
+
+[AE] R      >   -R,NTES       ; "CAT=adj,G=_,N=p,FSEM=nte"  # lavar->lavantes
+I R         >  -IR,ENTES      ; "CAT=adj,G=_,N=p,FSEM=nte"  # aderir->aderentes
+O R         >   -R,NENTES     ; "CAT=adj,G=_,N=p,FSEM=nte"  # opor->oponentes
+
+#---------------------------------------
+# *dor
+flag *D:                 ; "CAT=v,T=inf"     #dor
+[AEI] R     >   -R,DOR        ; "CAT=a_nc,G=m,N=s,FSEM=dor" # lavrar->lavrador
+[AEI] R     >   -R,DORA       ; "CAT=a_nc,G=f,N=s,FSEM=dor" # lavrar->lavradora
+[AEI] R     >   -R,DORES      ; "CAT=a_nc,G=m,N=p,FSEM=dor" # lavrar->lavradores
+[AEI] R     >   -R,DORAS      ; "CAT=a_nc,G=f,N=p,FSEM=dor" # lavrar->lavradoras
+
+#---------------------------------------
+# ível, ável           verb2adj
+flag *v:                  ; "CAT=v,T=inf"    #ável
+A R         >    -AR,ÁVEL    ; "CAT=adj,G=_,N=s,FSEM=vel"  # lavar->lavável
+E R         >    -ER,ÍVEL    ; "CAT=adj,G=_,N=s,FSEM=vel"  # amover->amovível
+I R         >    -IR,ÍVEL    ; "CAT=adj,G=_,N=s,FSEM=vel"  # auferir->auferível
+
+A R         >    -AR,ÁVEIS   ; "CAT=adj,G=_,N=p,FSEM=vel"  # lavar->laváveis
+E R         >    -ER,ÍVEIS   ; "CAT=adj,G=_,N=p,FSEM=vel"  # amover->amovíveis
+I R         >    -IR,ÍVEIS   ; "CAT=adj,G=_,N=p,FSEM=vel"  # auferir->auferíveis
+
+#---------------------------------------------
+# para já ponho só excepc,ões muito frequentes
+# erir ZY, uir K, ear ZY, air K, arar ZY, uzir ZY, por K, fazer K, dizer
+# [^\-] é posto para evitar a gerac,ão de hipóteses parvas
+
+flag *X:                ; "CAT=v,T=inf" # deve ser posta nos verbos regulares
+
+[^\-] A R   >  -AR,O       ; "P=1,N=s,T=p"
+A R         >  -R,S        ; "P=2,N=s,T=p"
+[^\-] A R   >  -AR,A       ; "P=3,N=s,T=p"
+A R         >  -R,MOS      ; "P=1,N=p,T=p"
+A R         >  -R,IS       ; "P=2,N=p,T=p"
+A R         >  -R,M        ; "P=3,N=p,T=p"
+[^CGÇ] A R  >  -AR,E       ; "P=1_3,N=s,T=pc"
+C A R       >  -CAR,QUE    ; "P=1_3,N=s,T=pc"
+G A R       >  -GAR,GUE    ; "P=1_3,N=s,T=pc"
+Ç A R       >  -ÇAR,CE     ; "P=1_3,N=s,T=pc"
+[^CGÇ] A R  >  -AR,ES      ; "P=2,N=s,T=pc"
+C A R       >  -CAR,QUES   ; "P=2,N=s,T=pc"
+G A R       >  -GAR,GUES   ; "P=2,N=s,T=pc"
+Ç A R       >  -ÇAR,CES    ; "P=2,N=s,T=pc"
+[^CGÇ] A R  >  -AR,EMOS    ; "P=1,N=p,T=pc"
+C A R       >  -CAR,QUEMOS ; "P=1,N=p,T=pc"
+G A R       >  -GAR,GUEMOS ; "P=1,N=p,T=pc"
+Ç A R       >  -ÇAR,CEMOS  ; "P=1,N=p,T=pc"
+[^CGÇ] A R  >  -AR,EIS     ; "P=2,N=p,T=pc"
+C A R       >  -CAR,QUEIS  ; "P=2,N=p,T=pc"
+G A R       >  -GAR,GUEIS  ; "P=2,N=p,T=pc"
+Ç A R       >  -ÇAR,CEIS   ; "P=2,N=p,T=pc"
+[^CGÇ] A R  >  -AR,EM      ; "P=3,N=p,T=pc"
+C A R       >  -CAR,QUEM   ; "P=3,N=p,T=pc"
+G A R       >  -GAR,GUEM   ; "P=3,N=p,T=pc"
+Ç A R       >  -ÇAR,CEM    ; "P=3,N=p,T=pc"
+[^\-] A R   >  -AR,A       ; "P=2,N=s,T=i" #noispell
+[^CGÇ] A R  >  -AR,E       ; "P=3,N=s,T=i" #noispell
+C A R       >  -CAR,QUE    ; "P=3,N=s,T=i" #noispell
+G A R       >  -GAR,GUE    ; "P=3,N=s,T=i" #noispell
+Ç A R       >  -ÇAR,CE     ; "P=3,N=s,T=i" #noispell
+[^CGÇ] A R  >  -AR,EMOS    ; "P=1,N=p,T=i" #noispell
+C A R       >  -CAR,QUEMOS ; "P=1,N=p,T=i" #noispell
+G A R       >  -GAR,GUEMOS ; "P=1,N=p,T=i" #noispell
+Ç A R       >  -ÇAR,CEMOS  ; "P=1,N=p,T=i" #noispell
+A R         >  -R,I        ; "P=2,N=p,T=i" 
+[^CGÇ] A R  >  -AR,EM      ; "P=3,N=p,T=i" #noispell
+C A R       >  -CAR,QUEM   ; "P=3,N=p,T=i" #noispell
+G A R       >  -GAR,GUEM   ; "P=3,N=p,T=i" #noispell
+Ç A R       >  -ÇAR,CEM    ; "P=3,N=p,T=i" #noispell
+
+[^CUG\-] E R >  -ER,O      ; "P=1,N=s,T=p"
+C E R       >  -CER,ÇO     ; "P=1,N=s,T=p"
+G E R       >  -GER,JO     ; "P=1,N=s,T=p"
+G U E R     >  -GUER,GO    ; "P=1,N=s,T=p"
+E R         >  -R,S        ; "P=2,N=s,T=p"
+E R         >  -ER,E       ; "P=3,N=s,T=p"
+E R         >  -R,MOS      ; "P=1,N=p,T=p"
+E R         >  -R,IS       ; "P=2,N=p,T=p"
+E R         >  -R,M        ; "P=3,N=p,T=p"
+[^CUG\-] E R >  -ER,A      ; "P=1_3,N=s,T=pc"
+C E R       >  -CER,ÇA     ; "P=1_3,N=s,T=pc"
+G E R       >  -GER,JA     ; "P=1_3,N=s,T=pc"
+G U E R     >  -GUER,GA    ; "P=1_3,N=s,T=pc"
+[^CUG] E R  >  -ER,AS      ; "P=2,N=s,T=pc"
+C E R       >  -CER,ÇAS    ; "P=2,N=s,T=pc"
+G E R       >  -GER,JAS    ; "P=2,N=s,T=pc"
+G U E R     >  -GUER,GAS   ; "P=2,N=s,T=pc"
+[^CUG] E R  >  -ER,AMOS    ; "P=1,N=p,T=pc"
+C E R       >  -CER,ÇAMOS  ; "P=1,N=p,T=pc"
+G E R       >  -GER,JAMOS  ; "P=1,N=p,T=pc"
+G U E R     >  -GUER,GAMOS ; "P=1,N=p,T=pc"
+[^CUG] E R  >  -ER,AIS     ; "P=2,N=p,T=pc"
+C E R       >  -CER,ÇAIS   ; "P=2,N=p,T=pc"
+G E R       >  -GER,JAIS   ; "P=2,N=p,T=pc"
+G U E R     >  -GUER,GAIS  ; "P=2,N=p,T=pc"
+[^CUG] E R  >  -ER,AM      ; "P=3,N=p,T=pc"
+C E R       >  -CER,ÇAM    ; "P=3,N=p,T=pc"
+G E R       >  -GER,JAM    ; "P=3,N=p,T=pc"
+G U E R     >  -GUER,GAM   ; "P=3,N=p,T=pc"
+E R         >  -ER,E       ; "P=2,N=s,T=i" #noispell
+[^CUG^\-] E R >  -ER,A     ; "P=3,N=s,T=i" #noispell
+C E R       >  -CER,ÇA     ; "P=3,N=s,T=i" #noispell
+G E R       >  -GER,JA     ; "P=3,N=s,T=i" #noispell
+G U E R     >  -GUER,GA    ; "P=3,N=s,T=i" #noispell
+[^CU] E R   >  -ER,AMOS    ; "P=1,N=p,T=i" #noispell
+C E R       >  -CER,ÇAMOS  ; "P=1,N=p,T=i" #noispell
+G E R       >  -GER,JAMOS  ; "P=1,N=p,T=i" #noispell
+G U E R     >  -GUER,GAMOS ; "P=1,N=p,T=i" #noispell
+E R         >  -R,I        ; "P=2,N=p,T=i" 
+[^CUG] E R  >  -ER,AM      ; "P=3,N=p,T=i" #noispell
+C E R       >  -CER,ÇAM    ; "P=3,N=p,T=i" #noispell
+G E R       >  -GER,JAM    ; "P=3,N=p,T=i" #noispell
+G U E R     >  -GUER,GAM   ; "P=3,N=p,T=i" #noispell
+
+[^CUG\-] I R >  -IR,O      ; "P=1,N=s,T=p"
+C I R       >  -CIR,ÇO     ; "P=1,N=s,T=p"
+G I R       >  -GIR,JO     ; "P=1,N=s,T=p"
+Q U I R     >  -QUIR,CO    ; "P=1,N=s,T=p"
+G U I R     >  -UIR,O      ; "P=1,N=s,T=p"
+I R         >  -IR,ES      ; "P=2,N=s,T=p"
+I R         >  -IR,E       ; "P=3,N=s,T=p"
+I R         >  -R,MOS      ; "P=1,N=p,T=p"
+I R         >  -R,S        ; "P=2,N=p,T=p"
+I R         >  -IR,EM      ; "P=3,N=p,T=p"
+[^CUG\-] I R >  -IR,A      ; "P=1_3,N=s,T=pc"
+C I R      >  -CIR,ÇA     ; "P=1_3,N=s,T=pc"
+G I R      >  -GIR,JA     ; "P=1_3,N=s,T=pc"
+Q U I R    >  -QUIR,CA    ; "P=1_3,N=s,T=pc"
+G U I R    >  -UIR,A      ; "P=1_3,N=s,T=pc"
+[^CUG] I R >  -IR,AS      ; "P=2,N=s,T=pc"
+C I R      >  -CIR,ÇAS    ; "P=2,N=s,T=pc"
+G I R      >  -GIR,JAS    ; "P=2,N=s,T=pc"
+Q U I R    >  -QUIR,CAS   ; "P=2,N=s,T=pc"
+G U I R    >  -UIR,AS     ; "P=2,N=s,T=pc"
+[^CUG] I R >  -IR,AMOS    ; "P=1,N=p,T=pc"
+C I R      >  -CIR,ÇAMOS  ; "P=1,N=p,T=pc"
+G I R      >  -GIR,JAMOS  ; "P=1,N=p,T=pc"
+Q U I R    >  -QUIR,CAMOS ; "P=1,N=p,T=pc"
+G U I R    >  -UIR,AMOS   ; "P=1,N=p,T=pc"
+[^CUG] I R >  -IR,AIS     ; "P=2,N=p,T=pc"
+C I R      >  -CIR,ÇAIS   ; "P=2,N=p,T=pc"
+G I R      >  -GIR,JAIS   ; "P=2,N=p,T=pc"
+Q U I R    >  -QUIR,CAIS  ; "P=2,N=p,T=pc"
+G U I R    >  -UIR,AIS    ; "P=2,N=p,T=pc"
+[^CUG] I R >  -IR,AM      ; "P=3,N=p,T=pc"
+C I R      >  -CIR,ÇAM    ; "P=3,N=p,T=pc"
+G I R      >  -GIR,JAM    ; "P=3,N=p,T=pc"
+Q U I R    >  -QUIR,CAM   ; "P=3,N=p,T=pc"
+G U I R    >  -UIR,AM     ; "P=3,N=p,T=pc"
+I R        >  -IR,E       ; "P=2,N=s,T=i" #noispell
+[^CUG\-] I R >  -IR,A     ; "P=3,N=s,T=i" #noispell
+C I R      >  -CIR,ÇA     ; "P=3,N=s,T=i" #noispell
+G I R      >  -GIR,JA     ; "P=3,N=s,T=i" #noispell
+Q U I R    >  -QUIR,CA    ; "P=3,N=s,T=i" #noispell
+G U I R    >  -UIR,A      ; "P=3,N=s,T=i" #noispell
+[^CUG] I R >  -IR,AMOS    ; "P=1,N=p,T=i" #noispell
+C I R      >  -CIR,ÇAMOS  ; "P=1,N=p,T=i" #noispell
+G I R      >  -GIR,JAMOS  ; "P=1,N=p,T=i" #noispell
+Q U I R    >  -QUIR,CAMOS ; "P=1,N=p,T=i" #noispell
+G U I R    >  -UIR,AMOS   ; "P=1,N=p,T=i" #noispell
+I R        >  -IR,I       ; "P=2,N=p,T=i" #noispell
+[^CUG] I R >  -IR,AM      ; "P=3,N=p,T=i" #noispell
+C I R      >  -CIR,ÇAM    ; "P=3,N=p,T=i" #noispell
+G I R      >  -GIR,JAM    ; "P=3,N=p,T=i" #noispell
+Q U I R    >  -QUIR,CAM   ; "P=3,N=p,T=i" #noispell
+G U I R    >  -UIR,AM     ; "P=3,N=p,T=i" #noispell
+#ispell A R > -AR,Á
+#ispell E R > -ER,Ê
+
+flag *Y:              ; "CAT=v,T=inf"  # Deve ser posta nos verbos regulares
+
+A R     >  -R,VA        ; "P=1_3,N=s,T=pi"
+A R     >  -R,VAS       ; "P=2,N=s,T=pi"
+A R     >  -AR,ÁVAMOS   ; "P=1,N=p,T=pi"
+A R     >  -AR,ÁVEIS    ; "P=2,N=p,T=pi"
+A R     >  -R,VAM       ; "P=3,N=p,T=pi"
+[^CÇG] A R >  -AR,EI    ; "P=1,N=s,T=pp"
+C A R   >  -CAR,QUEI    ; "P=1,N=s,T=pp"
+G A R   >  -GAR,GUEI    ; "P=1,N=s,T=pp"
+Ç A R  >  -ÇAR,CEI      ; "P=1,N=s,T=pp"
+A R     >  -R,STE       ; "P=2,N=s,T=pp"
+A R     >  -AR,OU       ; "P=3,N=s,T=pp"
+A R     >  -AR,ÁMOS     ; "P=1,N=p,T=pp"
+A R     >  -R,STES      ; "P=2,N=p,T=pp"
+A R     >  AM           ; "P=3,N=p,T=pp"
+A R     >  A            ; "P=1_3,N=s,T=pmp"
+A R     >  AS           ; "P=2,N=s,T=pmp"
+A R     >  -AR,ÁRAMOS   ; "P=1,N=p,T=pmp"
+A R     >  -AR,ÁREIS    ; "P=2,N=p,T=pmp"
+A R     >  AM           ; "P=3,N=p,T=pmp"  #noispell
+A R     >  EI           ; "P=1,N=s,T=f"
+A R     >  ÁS           ; "P=2,N=s,T=f"
+A R     >  Á            ; "P=3,N=s,T=f"
+A R     >  EMOS         ; "P=1,N=p,T=f"
+A R     >  EIS          ; "P=2,N=p,T=f"
+A R     >  ÃO           ; "P=3,N=p,T=f"
+A R     >  -R,SSE       ; "P=1_3,N=s,T=pic"
+A R     >  -R,SSES      ; "P=2,N=s,T=pic"
+A R     >  -AR,ÁSSEMOS  ; "P=1,N=p,T=pic"
+A R     >  -AR,ÁSSEIS   ; "P=2,N=p,T=pic"
+A R     >  -R,SSEM      ; "P=3,N=p,T=pic"
+A R     >  ES           ; "P=2,N=s,T=fc"
+A R     >  MOS          ; "P=1,N=p,T=fc"
+A R     >  DES          ; "P=2,N=p,T=fc"
+A R     >  EM           ; "P=3,N=p,T=fc"
+A R     >  IA           ; "P=1_3,N=s,T=c"
+A R     >  IAS          ; "P=2,N=s,T=c"
+A R     >  ÍAMOS        ; "P=1,N=p,T=c"
+A R     >  ÍEIS         ; "P=2,N=p,T=c"
+A R     >  IAM          ; "P=3,N=p,T=c"
+A R     >  -R,NDO       ; "T=g"
+A R     >  -R,DO        ; "G=m,N=s,T=ppa"
+A R     >  -R,DA        ; "G=f,N=s,T=ppa"
+A R     >  -R,DOS       ; "G=m,N=p,T=ppa"
+A R     >  -R,DAS       ; "G=f,N=p,T=ppa"
+
+E R     >  -ER,IA       ; "P=1_3,N=s,T=pi"
+E R     >  -ER,IAS      ; "P=2,N=s,T=pi"
+E R     >  -ER,ÍAMOS    ; "P=1,N=p,T=pi"
+E R     >  -ER,ÍEIS     ; "P=2,N=p,T=pi"
+E R     >  -ER,IAM      ; "P=3,N=p,T=pi"
+E R     >  -ER,I        ; "P=1,N=s,T=pp"
+E R     >  -R,STE       ; "P=2,N=s,T=pp"
+E R     >  -R,U         ; "P=3,N=s,T=pp"
+E R     >  -R,MOS       ; "P=1,N=p,T=pp"
+E R     >  -R,STES      ; "P=2,N=p,T=pp"
+E R     >  AM           ; "P=3,N=p,T=pp"
+E R     >  A            ; "P=1_3,N=s,T=pmp"
+E R     >  AS           ; "P=2,N=s,T=pmp"
+E R     >  -ER,ÊRAMOS   ; "P=1,N=p,T=pmp"
+E R     >  -ER,ÊREIS    ; "P=2,N=p,T=pmp"
+E R     >  AM           ; "P=3,N=p,T=pmp"  #noispell
+E R     >  EI           ; "P=1,N=s,T=f"
+E R     >  ÁS           ; "P=2,N=s,T=f"
+E R     >  Á            ; "P=3,N=s,T=f"
+E R     >  EMOS         ; "P=1,N=p,T=f"
+E R     >  EIS          ; "P=2,N=p,T=f"
+E R     >  ÃO           ; "P=3,N=p,T=f"
+E R     >  -R,SSE       ; "P=1_3,N=s,T=pic"
+E R     >  -R,SSES      ; "P=2,N=s,T=pic"
+E R     >  -ER,ÊSSEMOS  ; "P=1,N=p,T=pic"
+E R     >  -ER,ÊSSEIS   ; "P=2,N=p,T=pic"
+E R     >  -R,SSEM      ; "P=3,N=p,T=pic"
+E R     >  ES           ; "P=2,N=s,T=fc"
+E R     >  MOS          ; "P=1,N=p,T=fc"
+E R     >  DES          ; "P=2,N=p,T=fc"
+E R     >  EM           ; "P=3,N=p,T=fc"
+E R     >  IA           ; "P=1_3,N=s,T=c"
+E R     >  IAS          ; "P=2,N=s,T=c"
+E R     >  ÍAMOS        ; "P=1,N=p,T=c"
+E R     >  ÍEIS         ; "P=2,N=p,T=c"
+E R     >  IAM          ; "P=3,N=p,T=c"
+E R     >  -R,NDO       ; "T=g"
+E R     >  -ER,IDO      ; "G=m,N=s,T=ppa"
+E R     >  -ER,IDA      ; "G=f,N=s,T=ppa"
+E R     >  -ER,IDOS     ; "G=m,N=p,T=ppa"
+E R     >  -ER,IDAS     ; "G=f,N=p,T=ppa"
+
+I R     >  -R,A         ; "P=1_3,N=s,T=pi"
+I R     >  -R,AS        ; "P=2,N=s,T=pi"
+I R     >  -IR,ÍAMOS    ; "P=1,N=p,T=pi"
+I R     >  -IR,ÍEIS     ; "P=2,N=p,T=pi"
+I R     >  -R,AM        ; "P=3,N=p,T=pi"
+I R     >  -IR,I        ; "P=1,N=s,T=pp"
+I R     >  -R,STE       ; "P=2,N=s,T=pp"
+I R     >  -R,U         ; "P=3,N=s,T=pp"
+I R     >  -R,MOS       ; "P=1,N=p,T=pp"
+I R     >  -R,STES      ; "P=2,N=p,T=pp"
+I R     >  AM           ; "P=3,N=p,T=pp"
+I R     >  A            ; "P=1_3,N=s,T=pmp"
+I R     >  AS           ; "P=2,N=s,T=pmp"
+I R     >  -IR,ÍRAMOS   ; "P=1,N=p,T=pmp"
+I R     >  -IR,ÍREIS    ; "P=2,N=p,T=pmp"
+I R     >  AM           ; "P=3,N=p,T=pmp"  #noispell
+I R     >  EI           ; "P=1,N=s,T=f"
+I R     >  ÁS           ; "P=2,N=s,T=f"
+I R     >  Á            ; "P=3,N=s,T=f"
+I R     >  EMOS         ; "P=1,N=p,T=f"
+I R     >  EIS          ; "P=2,N=p,T=f"
+I R     >  ÃO           ; "P=3,N=p,T=f"
+I R     >  -R,SSE       ; "P=1_3,N=s,T=pic"
+I R     >  -R,SSES      ; "P=2,N=s,T=pic"
+I R     >  -IR,ÍSSEMOS  ; "P=1,N=p,T=pic"
+I R     >  -IR,ÍSSEIS   ; "P=2,N=p,T=pic"
+I R     >  -R,SSEM      ; "P=3,N=p,T=pic"
+I R     >  ES           ; "P=2,N=s,T=fc"
+I R     >  MOS          ; "P=1,N=p,T=fc"
+I R     >  DES          ; "P=2,N=p,T=fc"
+I R     >  EM           ; "P=3,N=p,T=fc"
+I R     >  IA           ; "P=1_3,N=s,T=c"
+I R     >  IAS          ; "P=2,N=s,T=c"
+I R     >  ÍAMOS        ; "P=1,N=p,T=c"
+I R     >  ÍEIS         ; "P=2,N=p,T=c"
+I R     >  IAM          ; "P=3,N=p,T=c"
+I R     >  -R,NDO       ; "T=g"
+I R     >  -R,DO        ; "G=m,N=s,T=ppa"
+I R     >  -R,DA        ; "G=f,N=s,T=ppa"
+I R     >  -R,DOS       ; "G=m,N=p,T=ppa"
+I R     >  -R,DAS       ; "G=f,N=p,T=ppa"
+#ispell A R > -AR,Á
+#ispell E R > -ER,Ê
+
+flag *Z:                ; "CAT=v,T=inf" #(p,Pc,I) Irregulares (frequente erir)
+
+E R I R     >   -ERIR,IRO    ; "P=1,N=s,T=p"
+E R I R     >   -IR,ES       ; "P=2,N=s,T=p"   #REG.
+E R I R     >   -IR,E        ; "P=3,N=s,T=p"   #REG.
+E R I R     >   -R,MOS       ; "P=1,N=p,T=p"   #REG.
+E R I R     >   -R,S         ; "P=2,N=p,T=p"   #REG.
+E R I R     >   -IR,EM       ; "P=3,N=p,T=p"   #REG.
+E R I R     >   -ERIR,IRA    ; "P=1_3,N=s,T=pc"
+E R I R     >   -ERIR,IRAS   ; "P=2,N=s,T=pc"
+E R I R     >   -ERIR,IRAMOS ; "P=1,N=p,T=pc"
+E R I R     >   -ERIR,IRAIS  ; "P=2,N=p,T=pc"
+E R I R     >   -ERIR,IRAM   ; "P=3,N=p,T=pc"
+E R I R     >   -IR,E        ; "P=2,N=s,T=i" #noispell
+E R I R     >   -ERIR,IRA    ; "P=3,N=s,T=i" #noispell
+E R I R     >   -ERIR,IRAMOS ; "P=1,N=p,T=i" #noispell
+E R I R     >   -IR,I        ; "P=2,N=p,T=i" #noispell
+E R I R     >   -ERIR,IRAM   ; "P=3,N=p,T=i" #noispell
+
+E A R       >   -AR,IO   ; "P=1,N=s,T=p"
+E A R       >   -AR,IAS  ; "P=2,N=s,T=p"
+E A R       >   -AR,IA   ; "P=3,N=s,T=p"
+E A R       >   -R,MOS   ; "P=1,N=p,T=p"   #REG.
+E A R       >   -R,IS    ; "P=2,N=p,T=p"   #REG.
+E A R       >   -AR,IAM  ; "P=3,N=p,T=p"
+E A R       >   -AR,IE   ; "P=1_3,N=s,T=pc"
+E A R       >   -AR,IES  ; "P=2,N=s,T=pc"
+E A R       >   -AR,EMOS ; "P=1,N=p,T=pc"   #REG.
+E A R       >   -AR,EIS  ; "P=2,N=p,T=pc"   #REG.
+E A R       >   -AR,IEM  ; "P=3,N=p,T=pc"
+E A R       >   -AR,IA   ; "P=2,N=s,T=i" #noispell
+E A R       >   -AR,IE   ; "P=3,N=s,T=i" #noispell
+E A R       >   -AR,EMOS ; "P=1,N=p,T=i"   #REG.#noispell
+E A R       >   -AR,AI   ; "P=2,N=p,T=i"   #REG.
+E A R       >   -AR,IEM  ; "P=3,N=p,T=i"
+
+U Z I R     >  -IR,O       ; "P=1,N=s,T=p"   #REG.
+U Z I R     >  -IR,ES      ; "P=2,N=s,T=p"   #REG.
+U Z I R     >  -ZIR,Z      ; "P=3,N=s,T=p"
+U Z I R     >  -R,MOS      ; "P=1,N=p,T=p"   #REG.
+U Z I R     >  -R,S        ; "P=2,N=p,T=p"   #REG.
+U Z I R     >  -IR,EM      ; "P=3,N=p,T=p"   #REG.
+U Z I R     >  -IR,A       ; "P=1_3,N=s,T=pc"   #REG.
+U Z I R     >  -IR,AS      ; "P=2,N=s,T=pc"   #REG.
+U Z I R     >  -IR,AMOS    ; "P=1,N=p,T=pc"   #REG.
+U Z I R     >  -IR,AIS     ; "P=2,N=p,T=pc"   #REG.
+U Z I R     >  -IR,AM      ; "P=3,N=p,T=pc"   #REG.
+U Z I R     >  -ZIR,Z      ; "P=2,N=s,T=i"   #noispell
+U Z I R     >  -IR,A       ; "P=3,N=s,T=i"   #REG.#noispell
+U Z I R     >  -IR,AMOS    ; "P=1,N=p,T=i"   #REG.#noispell
+U Z I R     >  -IR,I       ; "P=2,N=p,T=i"   #REG.
+U Z I R     >  -IR,AM      ; "P=3,N=p,T=i"   #REG.#noispell
+#ispell A R > -AR,Á
+#ispell E R > -ER,Ê
+
+
+flag *K:                ; "CAT=v,T=inf"   # Todos Irregulares (frequente [au]ir)
+# Excepto guir
+U I R       >   -IR,O       ; "P=1,N=s,T=p"
+A I R       >   -R,O        ; "P=1,N=s,T=p"
+[UA] I R    >   -R,S        ; "P=2,N=s,T=p"
+[UA] I R    >   -IR,I       ; "P=3,N=s,T=p"
+[UA] I R    >   -IR,ÍMOS    ; "P=1,N=p,T=p"
+[UA] I R    >   -IR,ÍS      ; "P=2,N=p,T=p"
+[UA] I R    >   -IR,EM      ; "P=3,N=p,T=p"
+[UA] I R    >   -IR,ÍA      ; "P=1_3,N=s,T=pi"
+[UA] I R    >   -IR,ÍAS     ; "P=2,N=s,T=pi"
+[UA] I R    >   -IR,ÍAMOS   ; "P=1,N=p,T=pi"  # REG.
+[UA] I R    >   -IR,ÍEIS    ; "P=2,N=p,T=pi"  # REG.
+[UA] I R    >   -IR,ÍAM     ; "P=3,N=p,T=pi"
+[UA] I R    >   -IR,Í       ; "P=1,N=s,T=pp"
+[UA] I R    >   -IR,ÍSTE    ; "P=2,N=s,T=pp"
+[UA] I R    >   -R,U        ; "P=3,N=s,T=pp"
+[UA] I R    >   -IR,ÍMOS    ; "P=1,N=p,T=pp"
+[UA] I R    >   -IR,ÍSTES   ; "P=2,N=p,T=pp"
+[UA] I R    >   -IR,ÍRAM    ; "P=3,N=p,T=pp"
+[UA] I R    >   -IR,ÍRA     ; "P=1_3,N=s,T=pmp"
+[UA] I R    >   -IR,ÍRAS    ; "P=2,N=s,T=pmp"
+[UA] I R    >   -IR,ÍRAMOS  ; "P=1,N=p,T=pmp"  # REG.
+[UA] I R    >   -IR,ÍREIS   ; "P=2,N=p,T=pmp"  # REG.
+[UA] I R    >   -IR,ÍRAM    ; "P=3,N=p,T=pmp"  #noispell
+[UA] I R    >   EI          ; "P=1,N=s,T=f"    # REG.
+[UA] I R    >   ÁS          ; "P=2,N=s,T=f"    # REG.
+[UA] I R    >   Á           ; "P=3,N=s,T=f"    # REG.
+[UA] I R    >   EMOS        ; "P=1,N=p,T=f"    # REG.
+[UA] I R    >   EIS         ; "P=2,N=p,T=f"    # REG.
+[UA] I R    >   ÃO          ; "P=3,N=p,T=f"    # REG.
+[UA] I R    >   -R,A        ; "P=1_3,N=s,T=pc"
+[UA] I R    >   -R,AS       ; "P=2,N=s,T=pc"
+[UA] I R    >   -R,AMOS     ; "P=1,N=p,T=pc"
+[UA] I R    >   -R,AIS      ; "P=2,N=p,T=pc"
+[UA] I R    >   -R,AM       ; "P=3,N=p,T=pc"
+[UA] I R    >   -IR,ÍSSE    ; "P=1_3,N=s,T=pic"
+[UA] I R    >   -IR,ÍSSES   ; "P=2,N=s,T=pic"
+[UA] I R    >   -IR,ÍSSEMOS ; "P=1,N=p,T=pic"  # REG.
+[UA] I R    >   -IR,ÍSSEIS  ; "P=2,N=p,T=pic"  # REG.
+[UA] I R    >   -IR,ÍSSEM   ; "P=3,N=p,T=pic"
+[UA] I R    >   -IR,ÍRES    ; "P=2,N=s,T=fc"
+[UA] I R    >    MOS        ; "P=1,N=p,T=fc"
+[UA] I R    >   -IR,ÍRDES   ; "P=2,N=p,T=fc"
+[UA] I R    >   -IR,ÍREM    ; "P=3,N=p,T=fc"
+[UA] I R    >   IA          ; "P=1_3,N=s,T=c"    # REG
+[UA] I R    >   IAS         ; "P=2,N=s,T=c"    # REG.
+[UA] I R    >   ÍAMOS       ; "P=1,N=p,T=c"    # REG.
+[UA] I R    >   ÍEIS        ; "P=2,N=p,T=c"    # REG.
+[UA] I R    >   IAM         ; "P=3,N=p,T=c"    # REG.
+[UA] I R    >   -IR,I       ; "P=2,N=s,T=i"    #noispell
+A I R       >   -R,A        ; "P=3,N=s,T=i"    #noispell
+U I R       >   -IR,A       ; "P=3,N=s,T=i"    #noispell
+A I R       >   -R,AMOS     ; "P=1,N=p,T=i"    #noispell
+U I R       >   -IR,AMOS    ; "P=1,N=p,T=i"    #noispell
+[UA] I R    >   -IR,Í       ; "P=2,N=p,T=i"  
+A I R       >   -R,AM       ; "P=3,N=p,T=i"    #noispell
+U I R       >   -IR,AM      ; "P=3,N=p,T=i"    #noispell
+[UA] I R    >   -R,NDO      ; "T=g"        # REG.
+[UA] I R    >   -IR,ÍDO     ; "G=m,N=s,T=ppa"
+[UA] I R    >   -IR,ÍDA     ; "G=f,N=s,T=ppa"
+[UA] I R    >   -IR,ÍDOS    ; "G=m,N=p,T=ppa"
+[UA] I R    >   -IR,ÍDAS    ; "G=f,N=p,T=ppa"
+
+
+P O R       >   -R,NHO        ; "P=1,N=s,T=p"
+P O R       >   -OR,ÕES       ; "P=2,N=s,T=p"
+P O R       >   -OR,ÕE        ; "P=3,N=s,T=p"
+P O R       >   -R,MOS        ; "P=1,N=p,T=p"
+P O R       >   -R,NDES       ; "P=2,N=p,T=p"
+P O R       >   -OR,ÕEM       ; "P=3,N=p,T=p"
+P O R       >   -OR,UNHA      ; "P=1_3,N=s,T=pi"
+P O R       >   -OR,UNHAS     ; "P=2,N=s,T=pi"
+P O R       >   -OR,ÚNHAMOS   ; "P=1,N=p,T=pi"
+P O R       >   -OR,ÚNHEIS    ; "P=2,N=p,T=pi"
+P O R       >   -OR,UNHAM     ; "P=3,N=p,T=pi"
+P O R       >   -OR,US        ; "P=1,N=s,T=pp"
+P O R       >   -OR,USESTE    ; "P=2,N=s,T=pp"
+P O R       >   -OR,ÔS        ; "P=3,N=s,T=pp"
+P O R       >   -OR,USEMOS    ; "P=1,N=p,T=pp"
+P O R       >   -OR,USESTES   ; "P=2,N=p,T=pp"
+P O R       >   -OR,USERAM    ; "P=3,N=p,T=pp"
+P O R       >   -OR,USERA     ; "P=1_3,N=s,T=pmp"
+P O R       >   -OR,USERAS    ; "P=2,N=s,T=pmp"
+P O R       >   -OR,USÉRAMOS  ; "P=1,N=p,T=pmp"
+P O R       >   -OR,USÉREIS   ; "P=2,N=p,T=pmp"
+P O R       >   -OR,USERAM    ; "P=3,N=p,T=pmp"  #noispell
+P O R       >   EI            ; "P=1,N=s,T=f"
+P O R       >   ÁS            ; "P=2,N=s,T=f"
+P O R       >   Á             ; "P=3,N=s,T=f"
+P O R       >   EMOS          ; "P=1,N=p,T=f"
+P O R       >   EIS           ; "P=2,N=p,T=f"
+P O R       >   ÃO            ; "P=3,N=p,T=f"
+P O R       >   -R,NHA        ; "P=1_3,N=s,T=pc"
+P O R       >   -R,NHAS       ; "P=2,N=s,T=pc"
+P O R       >   -R,NHAMOS     ; "P=1,N=p,T=pc"
+P O R       >   -R,NHAIS      ; "P=2,N=p,T=pc"
+P O R       >   -R,NHAM       ; "P=3,N=p,T=pc"
+P O R       >   -OR,USESSE    ; "P=1_3,N=s,T=pic"
+P O R       >   -OR,USESSES   ; "P=2,N=s,T=pic"
+P O R       >   -OR,USÉSSEMOS ; "P=1,N=p,T=pic"
+P O R       >   -OR,USÉSSEIS  ; "P=2,N=p,T=pic"
+P O R       >   -OR,USESSEM   ; "P=3,N=p,T=pic"
+P O R       >   -OR,USER      ; "P=1,N=s,T=fc"
+P O R       >   -OR,USERES    ; "P=2,N=s,T=fc"
+P O R       >   -OR,USER      ; "P=3,N=s,T=fc"
+P O R       >   -OR,USERMOS   ; "P=1,N=p,T=fc"
+P O R       >   -OR,USERDES   ; "P=2,N=p,T=fc"
+P O R       >   -OR,USEREM    ; "P=3,N=p,T=fc"
+P O R       >   IA            ; "P=1_3,N=s,T=c"
+P O R       >   IAS           ; "P=2,N=s,T=c"
+P O R       >   ÍAMOS         ; "P=1,N=p,T=c"
+P O R       >   ÍEIS          ; "P=2,N=p,T=c"
+P O R       >   IAM           ; "P=3,N=p,T=c"
+P O R       >   -OR,ÕE        ; "P=2,N=s,T=i"    #noispell
+P O R       >   -R,NHA        ; "P=3,N=s,T=i"    #noispell
+P O R       >   -R,NHAMOS     ; "P=1,N=p,T=i"    #noispell
+P O R       >   -R,NDE        ; "P=2,N=p,T=i"    
+P O R       >   -R,NHAM       ; "P=3,N=p,T=i"    #noispell
+P O R       >   -R,NDO        ; "T=g"
+P O R       >   -R,STO        ; "G=m,N=s,T=ppa"
+P O R       >   -R,STA        ; "G=f,N=s,T=ppa"
+P O R       >   -R,STOS       ; "G=m,N=p,T=ppa"
+P O R       >   -R,STAS       ; "G=f,N=p,T=ppa"
+P O R       >   ES            ; "P=2,N=s,T=ip"
+P O R       >   MOS           ; "P=1,N=p,T=ip"
+P O R       >   DES           ; "P=2,N=p,T=ip"
+P O R       >   EM            ; "P=3,N=p,T=ip"
+
+F A Z E R   >   -ZER,ÇO         ; "P=1,N=s,T=p"
+F A Z E R   >   -R,S            ; "P=2,N=s,T=p"
+F A Z E R   >   -ZER,Z          ; "P=3,N=s,T=p"
+F A Z E R   >   -R,MOS          ; "P=1,N=p,T=p"
+F A Z E R   >   -R,IS           ; "P=2,N=p,T=p"
+F A Z E R   >   -R,M            ; "P=3,N=p,T=p"
+F A Z E R   >   -ER,IA          ; "P=1_3,N=s,T=pi"
+F A Z E R   >   -ER,IAS         ; "P=2,N=s,T=pi"
+F A Z E R   >   -ER,ÍAMOS       ; "P=1,N=p,T=pi"
+F A Z E R   >   -ER,ÍEIS        ; "P=2,N=p,T=pi"
+F A Z E R   >   -ER,IAM         ; "P=3,N=p,T=pi"
+F A Z E R   >   -AZER,IZ        ; "P=1,N=s,T=pp"
+F A Z E R   >   -AZER,IZESTE    ; "P=2,N=s,T=pp"
+F A Z E R   >   -AZER,EZ        ; "P=3,N=s,T=pp"
+F A Z E R   >   -AZER,IZEMOS    ; "P=1,N=p,T=pp"
+F A Z E R   >   -AZER,IZESTES   ; "P=2,N=p,T=pp"
+F A Z E R   >   -AZER,IZERAM    ; "P=3,N=p,T=pp"
+F A Z E R   >   -AZER,IZERA     ; "P=1_3,N=s,T=pmp"
+F A Z E R   >   -AZER,IZERAS    ; "P=2,N=s,T=pmp"
+F A Z E R   >   -AZER,IZÉRAMOS  ; "P=1,N=p,T=pmp"
+F A Z E R   >   -AZER,IZÉREIS   ; "P=2,N=p,T=pmp"
+F A Z E R   >   -AZER,IZERAM    ; "P=3,N=p,T=pmp"  #noispell
+F A Z E R   >   -ZER,REI        ; "P=1,N=s,T=f"
+F A Z E R   >   -ZER,RÁS        ; "P=2,N=s,T=f"
+F A Z E R   >   -ZER,RÁ         ; "P=3,N=s,T=f"
+F A Z E R   >   -ZER,REMOS      ; "P=1,N=p,T=f"
+F A Z E R   >   -ZER,REIS       ; "P=2,N=p,T=f"
+F A Z E R   >   -ZER,RÃO        ; "P=3,N=p,T=f"
+F A Z E R   >   -ZER,ÇA         ; "P=1_3,N=s,T=pc"
+F A Z E R   >   -ZER,ÇAS        ; "P=2,N=s,T=pc"
+F A Z E R   >   -ZER,ÇAMOS      ; "P=1,N=p,T=pc"
+F A Z E R   >   -ZER,ÇAIS       ; "P=2,N=p,T=pc"
+F A Z E R   >   -ZER,ÇAM        ; "P=3,N=p,T=pc"
+F A Z E R   >   -AZER,IZESSE    ; "P=1_3,N=s,T=pic"
+F A Z E R   >   -AZER,IZESSES   ; "P=2,N=s,T=pic"
+F A Z E R   >   -AZER,IZÉSSEMOS ; "P=1,N=p,T=pic"
+F A Z E R   >   -AZER,IZÉSSEIS  ; "P=2,N=p,T=pic"
+F A Z E R   >   -AZER,IZESSEM   ; "P=3,N=p,T=pic"
+F A Z E R   >   -AZER,IZER      ; "P=1,N=s,T=fc"
+F A Z E R   >   -AZER,IZERES    ; "P=2,N=s,T=fc"
+F A Z E R   >   -AZER,IZER      ; "P=3,N=s,T=fc"
+F A Z E R   >   -AZER,IZERMOS   ; "P=1,N=p,T=fc"
+F A Z E R   >   -AZER,IZERDES   ; "P=2,N=p,T=fc"
+F A Z E R   >   -AZER,IZEREM    ; "P=3,N=p,T=fc"
+F A Z E R   >   -ZER,RIA        ; "P=1_3,N=s,T=c"
+F A Z E R   >   -ZER,RIAS       ; "P=2,N=s,T=c"
+F A Z E R   >   -ZER,RÍAMOS     ; "P=1,N=p,T=c"
+F A Z E R   >   -ZER,RÍEIS      ; "P=2,N=p,T=c"
+F A Z E R   >   -ZER,RIAM       ; "P=3,N=p,T=c"
+F A Z E R   >   -ZER,Z          ; "P=2,N=s,T=i"  #noispell
+F A Z E R   >   -ZER,ÇA         ; "P=3,N=s,T=i"  #noispell
+F A Z E R   >   -ZER,ÇAMOS      ; "P=1,N=p,T=i"  #noispell
+F A Z E R   >   -R,I            ; "P=2,N=p,T=i"
+F A Z E R   >   -ZER,ÇAM        ; "P=3,N=p,T=i"  #noispell
+F A Z E R   >   -R,NDO          ; "T=g"
+F A Z E R   >   -ZER,EITO       ; "G=m,N=s,T=ppa"
+F A Z E R   >   -ZER,EITA       ; "G=f,N=s,T=ppa"
+F A Z E R   >   -ZER,EITOS      ; "G=m,N=p,T=ppa"
+F A Z E R   >   -ZER,EITAS      ; "G=f,N=p,T=ppa"
+F A Z E R   >   ES             ; "P=2,N=s,T=ip"
+F A Z E R   >   ERMOS          ; "P=1,N=p,T=ip"
+F A Z E R   >   ERDES          ; "P=2,N=p,T=ip"
+F A Z E R   >   EM             ; "P=3,N=p,T=ip"
+
+D I Z E R   >   -ZER,GO        ; "P=1,N=s,T=p"
+D I Z E R   >   -R,S           ; "P=2,N=s,T=p"
+D I Z E R   >   -ZER,Z         ; "P=3,N=s,T=p"
+D I Z E R   >   -R,MOS         ; "P=1,N=p,T=p"
+D I Z E R   >   -R,IS          ; "P=2,N=p,T=p"
+D I Z E R   >   -R,M           ; "P=3,N=p,T=p"
+D I Z E R   >   -ER,IA         ; "P=1_3,N=s,T=pi"
+D I Z E R   >   -ER,IAS        ; "P=2,N=s,T=pi"
+D I Z E R   >   -ER,ÍAMOS      ; "P=1,N=p,T=pi"
+D I Z E R   >   -ER,ÍEIS       ; "P=2,N=p,T=pi"
+D I Z E R   >   -ER,IAM        ; "P=3,N=p,T=pi"
+D I Z E R   >   -ZER,SSE       ; "P=1,N=s,T=pp"
+D I Z E R   >   -ZER,SSESTE    ; "P=2,N=s,T=pp"
+D I Z E R   >   -ZER,SSE       ; "P=3,N=s,T=pp"
+D I Z E R   >   -ZER,SSEMOS    ; "P=1,N=p,T=pp"
+D I Z E R   >   -ZER,SSESTES   ; "P=2,N=p,T=pp"
+D I Z E R   >   -ZER,SSERAM    ; "P=3,N=p,T=pp"
+D I Z E R   >   -ZER,SSERA     ; "P=1_3,N=s,T=pmp"
+D I Z E R   >   -ZER,SSERAS    ; "P=2,N=s,T=pmp"
+D I Z E R   >   -ZER,SSÉRAMOS  ; "P=1,N=p,T=pmp"
+D I Z E R   >   -ZER,SSÉREIS   ; "P=2,N=p,T=pmp"
+D I Z E R   >   -ZER,SSERAM    ; "P=3,N=p,T=pmp"  #noispell
+D I Z E R   >   -ZER,REI       ; "P=1,N=s,T=f"
+D I Z E R   >   -ZER,RÁS       ; "P=2,N=s,T=f"
+D I Z E R   >   -ZER,RÁ        ; "P=3,N=s,T=f"
+D I Z E R   >   -ZER,REMOS     ; "P=1,N=p,T=f"
+D I Z E R   >   -ZER,REIS      ; "P=2,N=p,T=f"
+D I Z E R   >   -ZER,RÃO       ; "P=3,N=p,T=f"
+D I Z E R   >   -ZER,GA        ; "P=1_3,N=s,T=pc"
+D I Z E R   >   -ZER,GAS       ; "P=2,N=s,T=pc"
+D I Z E R   >   -ZER,GAMOS     ; "P=1,N=p,T=pc"
+D I Z E R   >   -ZER,GAIS      ; "P=2,N=p,T=pc"
+D I Z E R   >   -ZER,GAM       ; "P=3,N=p,T=pc"
+D I Z E R   >   -ZER,SSESSE    ; "P=1_3,N=s,T=pic"
+D I Z E R   >   -ZER,SSESSES   ; "P=2,N=s,T=pic"
+D I Z E R   >   -ZER,SSÉSSEMOS ; "P=1,N=p,T=pic"
+D I Z E R   >   -ZER,SSÉSSEIS  ; "P=2,N=p,T=pic"
+D I Z E R   >   -ZER,SSESSEM   ; "P=3,N=p,T=pic"
+D I Z E R   >   -ZER,SSER      ; "P=1,N=s,T=fc"
+D I Z E R   >   -ZER,SSERES    ; "P=2,N=s,T=fc"
+D I Z E R   >   -ZER,SSER      ; "P=3,N=s,T=fc"
+D I Z E R   >   -ZER,SSERMOS   ; "P=1,N=p,T=fc"
+D I Z E R   >   -ZER,SSERDES   ; "P=2,N=p,T=fc"
+D I Z E R   >   -ZER,SSEREM    ; "P=3,N=p,T=fc"
+D I Z E R   >   -ZER,RIA       ; "P=1_3,N=s,T=c"
+D I Z E R   >   -ZER,RIAS      ; "P=2,N=s,T=c"
+D I Z E R   >   -ZER,RÍAMOS    ; "P=1,N=p,T=c"
+D I Z E R   >   -ZER,RÍEIS     ; "P=2,N=p,T=c"
+D I Z E R   >   -ZER,RIAM      ; "P=3,N=p,T=c"
+D I Z E R   >   -ZER,Z         ; "P=2,N=s,T=i"  #noispell
+D I Z E R   >   -ZER,GA        ; "P=3,N=s,T=i"  #noispell
+D I Z E R   >   -ZER,GAMOS     ; "P=1,N=p,T=i"  #noispell
+D I Z E R   >   -R,I           ; "P=2,N=p,T=i" 
+D I Z E R   >   -ZER,GAM       ; "P=3,N=p,T=i"  #noispell
+D I Z E R   >   -R,NDO         ; "T=g"
+D I Z E R   >   -ZER,TO        ; "G=m,N=s,T=ppa"
+D I Z E R   >   -ZER,TA        ; "G=f,N=s,T=ppa"
+D I Z E R   >   -ZER,TOS       ; "G=m,N=p,T=ppa"
+D I Z E R   >   -ZER,TAS       ; "G=f,N=p,T=ppa"
+D I Z E R   >   ES             ; "P=2,N=s,T=ip"
+D I Z E R   >   MOS            ; "P=1,N=p,T=ip"
+D I Z E R   >   DES            ; "P=2,N=p,T=ip"
+D I Z E R   >   EM             ; "P=3,N=p,T=ip"
+#ispell A R > -AR,Á
+#ispell E R > -ER,Ê
+
+#-------------------------------------------
+#-------------------------------------------
+# conjugação pronominal (compl. indirecto)
+flag +L:     ; "CAT=v"             #-lho             #noispell
+            >      \-LHE    ; "DP=3,DG=_,DN=s"          #noispell
+            >      \-LHO    ; "DP=3,DG=m,DN=s"          #noispell
+            >      \-LHA    ; "DP=3,DG=f,DN=s"          #noispell
+
+            >      \-LHES   ; "DP=3,DG=_,DN=p"          #noispell
+            >      \-LHOS   ; "DP=3,DG=m,DN=p"          #noispell
+            >      \-LHAS   ; "DP=3,DG=f,DN=p"          #noispell
+
+# reflexividade dos verbos
+            >      \-ME     ; "AP=1,AN=s"          #noispell
+            >      \-TE     ; "AP=2,AN=s"          #noispell
+            >      \-SE     ; "AP=3,AN=_"          #noispell
+            >      \-NOS    ; "AP=1,AN=p"          #noispell
+S           >   -S,\-NOS    ; "AP=1,AN=p"          #noispell
+            >      \-VOS    ; "AP=2,AN=p"          #noispell
+
+R     >        \-ME\-EI     ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
+R     >        \-TE\-ÁS     ; "AP=2,AN=s,P=2,N=s,T=f"          #noispell
+R     >        \-SE\-Á      ; "AP=3,AN=s,P=3,N=s,T=f"          #noispell
+R     >        \-NOS\-EMOS  ; "AP=1,AN=p,P=1,N=p,T=f"          #noispell
+R     >        \-VOS\-EIS   ; "AP=2,AN=p,P=2,N=p,T=f"          #noispell
+R     >        \-SE\-ÃO     ; "AP=3,AN=p,P=3,N=p,T=f"          #noispell
+R     >        \-ME\-IA     ; "AP=1,AN=s,P=1,N=s,T=c"          #noispell
+R     >        \-TE\-IAS    ; "AP=2,AN=s,P=2,N=s,T=c"          #noispell
+R     >        \-SE\-IA     ; "AP=3,AN=s,P=3,N=s,T=c"          #noispell
+R     >        \-NOS\-ÍAMOS ; "AP=1,AN=p,P=1,N=p,T=c"          #noispell
+R     >        \-VOS\-ÍEIS  ; "AP=2,AN=p,P=2,N=p,T=c"          #noispell
+R     >        \-SE\-IAM    ; "AP=3,AN=p,P=3,N=p,T=c"          #noispell
+R     >        \-TE\-EI     ; "AP=2,AN=s,P=1,N=s,T=f"          #noispell
+R     >        \-TE\-Á      ; "AP=2,AN=s,P=3,N=s,T=f"          #noispell
+
+
+#-----------------------------------------
+# conjugação pronominal (compl. directo)
+# os acabados em (Z) ex.condu-la são irreg.
+flag +P:     ; "CAT=v"                  #-o              #noispell
+[AEIOUÁÉÊÔ]     >        \-O     ; "G=m,AN=s"          #noispell
+S               >     -S,\-LO    ; "G=m,AN=s"          #noispell
+M               >        \-NO    ; "G=m,AN=s"          #noispell
+
+[AEIOUÁÉÊÔ]     >        \-A     ; "G=f,AN=s"          #noispell
+S               >     -S,\-LA    ; "G=f,AN=s"          #noispell
+M               >        \-NA    ; "G=f,AN=s"          #noispell
+
+[AEIOUÁÉÊÔ]     >        \-OS    ; "G=m,AN=p"          #noispell
+S               >     -S,\-LOS   ; "G=m,AN=p"          #noispell
+M               >        \-NOS   ; "G=m,AN=p"          #noispell
+
+[AEIOUÁÉÊÔ]     >        \-AS    ; "G=f,AN=p"          #noispell
+S               >     -S,\-LAS   ; "G=f,AN=p"          #noispell
+M               >        \-NAS   ; "G=f,AN=p"          #noispell
+
+# tratar alguns verbos irreg.
+[IU] Z        >     -Z,\-LO     ; "G=m,AN=s"  # ex. di-lo          #noispell
+[IU] Z        >     -Z,\-LA     ; "G=f,AN=s"  # ex. condu-la          #noispell
+[IU] Z        >     -Z,\-LOS    ; "G=m,AN=p"          #noispell
+[IU] Z        >     -Z,\-LAS    ; "G=f,AN=p"          #noispell
+A Z           >    -AZ,Á\-LO   ; "G=m,AN=s"          #noispell
+A Z           >    -AZ,Á\-LA   ; "G=f,AN=s"  # ex. fá-la          #noispell
+A Z           >    -AZ,Á\-LOS  ; "G=m,AN=p"          #noispell
+A Z           >    -AZ,Á\-LAS  ; "G=f,AN=p"          #noispell
+E Z           >    -EZ,Ê\-LO   ; "G=m,AN=s"          #noispell
+E Z           >    -EZ,Ê\-LA   ; "G=f,AN=s"  # ex. fê-lo          #noispell
+E Z           >    -EZ,Ê\-LOS  ; "G=m,AN=p"          #noispell
+E Z           >    -EZ,Ê\-LAS  ; "G=f,AN=p"          #noispell
+
+# inf. pess, futuro e condicional pronominais
+A R     >  -AR,Á\-LO        ; "T=ip,AG=m,AN=s"     #noispell
+A R     >  -AR,Á\-LA        ; "T=ip,AG=f,AN=s"     #noispell
+A R     >  -AR,Á\-LOS       ; "T=ip,AG=m,AN=p"     #noispell
+A R     >  -AR,Á\-LAS       ; "T=ip,AG=f,AN=p"     #noispell
+A R     >  -AR,Á\-LO\-EI    ; "P=1,N=s,T=f"        #noispell
+A R     >  -AR,Á\-LO\-ÁS    ; "P=2,N=s,T=f"        #noispell
+A R     >  -AR,Á\-LO\-Á     ; "P=3,N=s,T=f"        #noispell
+A R     >  -AR,Á\-LO\-EMOS  ; "P=1,N=p,T=f"        #noispell
+A R     >  -AR,Á\-LO\-EIS   ; "P=2,N=p,T=f"        #noispell
+A R     >  -AR,Á\-LO\-ÃO    ; "P=3,N=p,T=f"        #noispell
+A R     >  -AR,Á\-LO\-IA    ; "P=1_3,N=s,T=c"      #noispell
+A R     >  -AR,Á\-LO\-IAS   ; "P=2,N=s,T=c"        #noispell
+A R     >  -AR,Á\-LO\-ÍAMOS ; "P=1,N=p,T=c"        #noispell
+A R     >  -AR,Á\-LO\-ÍEIS  ; "P=2,N=p,T=c"        #noispell
+A R     >  -AR,Á\-LO\-IAM   ; "P=3,N=p,T=c"        #noispell
+
+E R     >  -ER,Ê\-LO        ; "T=ip,G=m,N=s"          #noispell
+E R     >  -ER,Ê\-LA        ; "T=ip,G=f,N=s"          #noispell
+E R     >  -ER,Ê\-LOS       ; "T=ip,G=m,N=p"          #noispell
+E R     >  -ER,Ê\-LAS       ; "T=ip,G=f,N=p"          #noispell
+E R     >  -ER,Ê\-LO\-EI    ; "P=1,N=s,T=f"          #noispell
+E R     >  -ER,Ê\-LO\-ÁS    ; "P=2,N=s,T=f"          #noispell
+E R     >  -ER,Ê\-LO\-Á     ; "P=3,N=s,T=f"          #noispell
+E R     >  -ER,Ê\-LO\-EMOS  ; "P=1,N=p,T=f"          #noispell
+E R     >  -ER,Ê\-LO\-EIS   ; "P=2,N=p,T=f"          #noispell
+E R     >  -ER,Ê\-LO\-ÃO    ; "P=3,N=p,T=f"          #noispell
+E R     >  -ER,Ê\-LO\-IA    ; "P=1_3,N=s,T=c"      #noispell
+E R     >  -ER,Ê\-LO\-IAS   ; "P=2,N=s,T=c"        #noispell
+E R     >  -ER,Ê\-LO\-ÍAMOS ; "P=1,N=p,T=c"        #noispell
+E R     >  -ER,Ê\-LO\-ÍEIS  ; "P=2,N=p,T=c"        #noispell
+E R     >  -ER,Ê\-LO\-IAM   ; "P=3,N=p,T=c"        #noispell
+
+I R     >  -R,\-LO        ; "T=ip,G=m,N=s"         #noispell
+I R     >  -R,\-LA        ; "T=ip,G=f,N=s"         #noispell
+I R     >  -R,\-LOS       ; "T=ip,G=m,N=p"         #noispell
+I R     >  -R,\-LAS       ; "T=ip,G=f,N=p"         #noispell
+I R     >  -R,\-LO\-EI    ; "P=1,N=s,T=f"          #noispell
+I R     >  -R,\-LO\-ÁS    ; "P=2,N=s,T=f"          #noispell
+I R     >  -R,\-LO\-Á     ; "P=3,N=s,T=f"          #noispell
+I R     >  -R,\-LO\-EMOS  ; "P=1,N=p,T=f"          #noispell
+I R     >  -R,\-LO\-EIS   ; "P=2,N=p,T=f"          #noispell
+I R     >  -R,\-LO\-ÃO    ; "P=3,N=p,T=f"          #noispell
+I R     >  -R,\-LO\-IA    ; "P=1_3,N=s,T=c"        #noispell
+I R     >  -R,\-LO\-IAS   ; "P=2,N=s,T=c"          #noispell
+I R     >  -R,\-LO\-ÍAMOS ; "P=1,N=p,T=c"          #noispell
+I R     >  -R,\-LO\-ÍEIS  ; "P=2,N=p,T=c"          #noispell
+I R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
+
+O R     >  -R,\-LO        ; "T=ip,G=m,N=s"         #noispell
+O R     >  -R,\-LA        ; "T=ip,G=f,N=s"         #noispell
+O R     >  -R,\-LOS       ; "T=ip,G=m,N=p"         #noispell
+O R     >  -R,\-LAS       ; "T=ip,G=f,N=p"         #noispell
+O R     >  -R,\-LO\-EI    ; "P=1,N=s,T=f"          #noispell
+O R     >  -R,\-LO\-ÁS    ; "P=2,N=s,T=f"          #noispell
+O R     >  -R,\-LO\-Á     ; "P=3,N=s,T=f"          #noispell
+O R     >  -R,\-LO\-EMOS  ; "P=1,N=p,T=f"          #noispell
+O R     >  -R,\-LO\-EIS   ; "P=2,N=p,T=f"          #noispell
+O R     >  -R,\-LO\-ÃO    ; "P=3,N=p,T=f"          #noispell
+O R     >  -R,\-LO\-IA    ; "P=1_3,N=s,T=c"        #noispell
+O R     >  -R,\-LO\-IAS   ; "P=2,N=s,T=c"          #noispell
+O R     >  -R,\-LO\-ÍAMOS ; "P=1,N=p,T=c"          #noispell
+O R     >  -R,\-LO\-ÍEIS  ; "P=2,N=p,T=c"          #noispell
+O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
+
+#flag *A:  			# anti
+#flag *B:  			# -anti
+#flag *C:  ; "CAT=v,T=inf" 	#cao
+#flag *D:  ; "CAT=v,T=inf"     	#dor
+#flag *E:  			#pre
+#flag *F:  			#ultra
+#flag *G:  ;"CAT=adj"           #ice 
+#flag *I:  			#in
+#flag *K:  ; "CAT=v,T=inf"   	# Todos Irregulares (frequente [au]ir)
+#flag +L:  ; "CAT=v"            #-lho             #noispell
+#flag *M:  ; "CAT=v,T=inf"      #mento
+#flag *O:  			#pos
+#flag +P:  ; "CAT=v"            #-o              #noispell
+#flag *R:  			#re
+#flag *S:  			# des
+#flag *U:  			#sub
+#flag *X:  ; "CAT=v,T=inf" 	# deve ser posta nos verbos regulares
+#flag *Y:  ; "CAT=v,T=inf"  	# Deve ser posta nos verbos regulares
+#flag *Z:  ; "CAT=v,T=inf" 	#(p,Pc,I) Irregulares (frequente erir)
+#flag *a:  ; "CAT=a_nc,N=s"     #plurais
+#flag *b:  ; "CAT=a_nc,G=m,N=s" #femininos
+#flag *c:  ; "CAT=v,T=inf"      # çao
+#flag +d:  ; "CAT=adj,N=s"      #idade
+#flag *e:  ; "CAT=a_nc,N=s"     #plurais
+#flag *f:  ; "CAT=a_nc,G=m,N=s" #femininos
+#flag *g:  ; "CAT=adj_nome,G=m,N=s"  #femininos
+#flag +h:  ; "CAT=a_nc,N=s"     #inho
+#flag *i:  ; "CAT=nc,N=s"   	#ismo
+#flag *j:  ; "CAT=adj"          #izar  ....?
+#flag +m:  ; "CAT=adj,N=s"      #mente
+#flag *n:  ; "CAT=v,T=inf"      #ente
+#flag *p:  ; "CAT=a_nc,N=s"     #plurais
+#flag *s:  ; "CAT=adj,N=s"      #issimo
+#flag *t:  ; "CAT=nc,N=s"      	#ista
+#flag *v:  ; "CAT=v,T=inf"    	#ável
+#flag *w: ; "CAT=nc"            # oso
+#flag *y: ; "CAT=nc"            # eira
+#flag *x: ; "CAT=v,T=inf"       # dela
+#flag z:   			#inho
+
+flag *x: ; "CAT=v,T=inf" # dela
+[AI] R > -R,DELA  ; "CAT=nc,G=f,N=s,FSEM=dela"
+[AI] R > -R,DELAS  ; "CAT=nc,G=f,N=p,FSEM=dela"
+E R > -ER,IDELA  ; "CAT=nc,G=f,N=s,FSEM=dela"
+E R > -ER,IDELAS  ; "CAT=nc,G=f,N=p,FSEM=dela"
+
+flag *y: ; "CAT=nc"            # eira
+O > -O,EIRO  ; "G=m,N=s,FSEM=eiro"     # marmelo marmeleiro
+O > -O,EIROS  ; "G=m,N=o,FSEM=eiro"     # marmelo marmeleiros
+A > -A,EIRA  ; "G=f,N=s,FSEM=eiro"     # banana bananeira
+A > -A,EIRAS  ; "G=f,N=o,FSEM=eiro"     # banana bananeiras
+
+flag *w: ; "CAT=nc"            # oso
+O > SO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
+O > SA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
+O > SOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
+O > SAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
+A > -A,OSO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
+A > -A,OSA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
+A > -A,OSOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
+A > -A,OSAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
+Ç Ã O > -ÇÃO,CIOSO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
+Ç Ã O > -ÇÃO,CIOSA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
+Ç Ã O > -ÇÃO,CIOSOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
+Ç Ã O > -ÇÃO,CIOSAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
+E > -E,OSO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
+E > -E,OSA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
+E > -E,OSOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
+E > -E,OSAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
+[^AEIOU] > OSO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
+[^AEIOU]  > OSA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
+[^AEIOU]  > OSOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
+[^AEIOU]  > OSAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
+
+flag *j:  ; "CAT=adj"          #izar
+L           > IZAR  ; "CAT=v,T=inf,FSEM=izar"
+E           > -E,IZAR ; "CAT=v,T=inf,FSEM=izar"
+O           > -O,IZAR ; "CAT=v,T=inf,FSEM=izar"
+I A         > -A,ZAR ; "CAT=v,T=inf,FSEM=izar"
+[^I] A      > -A,IZAR ; "CAT=v,T=inf,FSEM=izar"
+
+L           > IZADO  ; "CAT=v,T=ppa,G=m,N=s,FSEM=izar"
+E           > -E,IZADO ; "CAT=v,T=ppa,G=m,N=s,FSEM=izar"
+O           > -O,IZADO ; "CAT=v,T=ppa,G=m,N=s,FSEM=izar"
+I A         > -A,ZADO ; "CAT=v,T=ppa,G=m,N=s,FSEM=izar"
+[^I] A      > -A,IZADO ; "CAT=v,T=ppa,G=m,N=s,FSEM=izar"
+
+L           > IZADA  ; "CAT=v,T=ppa,G=f,N=s,FSEM=izar"
+E           > -E,IZADA ; "CAT=v,T=ppa,G=f,N=s,FSEM=izar"
+O           > -O,IZADA ; "CAT=v,T=ppa,G=f,N=s,FSEM=izar"
+I A         > -A,ZADA ; "CAT=v,T=ppa,G=f,N=s,FSEM=izar"
+[^I] A      > -A,IZADA ; "CAT=v,T=ppa,G=f,N=s,FSEM=izar"
+
+L           > IZADOS  ; "CAT=v,T=ppa,G=m,N=p,FSEM=izar"
+E           > -E,IZADOS ; "CAT=v,T=ppa,G=m,N=p,FSEM=izar"
+O           > -O,IZADOS ; "CAT=v,T=ppa,G=m,N=p,FSEM=izar"
+I A         > -A,ZADOS ; "CAT=v,T=ppa,G=m,N=p,FSEM=izar"
+[^I] A      > -A,IZADOS ; "CAT=v,T=ppa,G=m,N=p,FSEM=izar"
+
+L           > IZADAS  ; "CAT=v,T=ppa,G=f,N=p,FSEM=izar"
+E           > -E,IZADAS ; "CAT=v,T=ppa,G=f,N=p,FSEM=izar"
+O           > -O,IZADAS ; "CAT=v,T=ppa,G=f,N=p,FSEM=izar"
+I A         > -A,ZADAS ; "CAT=v,T=ppa,G=f,N=p,FSEM=izar"
+[^I] A      > -A,IZADOS ; "CAT=v,T=ppa,G=m,N=p,FSEM=izar"
+
+flag *G:  ;"CAT=adj"          #ice 
+[^ÇGC]O      >     -O,ICE     ; "CAT=nc,G=f,FSEM=ice" # activo->activice
+Ç O         >    -ÇO,CICE    ; "CAT=nc,G=f,FSEM=ice" # castic,o->casticice
+G O         >    -GO,GUICE   ; "CAT=nc,G=f,FSEM=ice" # antigo->antiguice
+C O         >    -CO,QUICE   ; "CAT=nc,G=f,FSEM=ice" # bacoco->bacoquice
+[^ÇGC]A      >     -A,ICE    ; "CAT=nc,G=f,FSEM=ice" # activo->activice
+Ç A         >    -ÇA,CICE    ; "CAT=nc,G=f,FSEM=ice" # castic,o->casticice
+G A         >    -GA,GUICE   ; "CAT=nc,G=f,FSEM=ice" # antigo->antiguice
+C A         >    -CA,QUICE   ; "CAT=nc,G=f,FSEM=ice" # bacoco->bacoquice
+E           >     -E,ICE     ; "CAT=nc,G=f,FSEM=ice" # breve->brevice
+R           >        ICE     ; "CAT=nc,G=f,FSEM=ice" # angular->angularice
+A           >     -A,ICE     ; "CAT=nc,G=f,FSEM=ice" # palerma->palermice
+[^V][^N~] L >        ICE     ; "CAT=nc,G=f,FSEM=ice" # amoral->amoralice
+[^ÁÍ] V E L >   -VEL,BILICE  ; "CAT=nc,G=f,FSEM=ice" #
+Á V E L     >  -ÁVEL,ABILICE ; "CAT=nc,G=f,FSEM=ice" # amável->amabilice
+Í V E L     >  -ÍVEL,IBILICE ; "CAT=nc,G=f,FSEM=ice" # amovível->amovibilice
+Z           >     -Z,CICE    ; "CAT=nc,G=f,FSEM=ice" # feroz->ferocice
+
+[^ÇG]O      >     -O,ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # activo->activices
+G O         >    -GO,GUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # antigo->antiguices
+C O         >    -CO,QUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # bacoco->bacoquices
+[^ÇG]A      >     -A,ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # azelha->azelhices
+G A         >    -GA,GUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # antigo->antiguices
+C A         >    -CA,QUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # bacoco->bacoquices
+[^V][^N~] L >        ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # funcional->funcionalices
+

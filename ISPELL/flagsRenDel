@@ -1,0 +1,95 @@
+#!/usr/bin/perl
+
+use locale;
+
+my $f=shift;
+
+%ren= (
+'p'  => 'A',
+'f'  => 'B',
+'Y'  => 'C',
+'K'  => 'D',
+'X'  => 'E',
+'Z'  => 'F',
+'D'  => 'G',
+'c'  => 'H',
+'R'  => 'I',
+'M'  => 'J',
+'m'  => 'K',
+'S'  => 'L',
+'n'  => 'M',
+'d'  => 'N',
+'v'  => 'O',
+'I'  => 'P',
+'i'  => 'Q',
+'t'  => 'R',
+'y'  => 'S',
+'h'  => 'T',
+'H'  => 'U',
+'w'  => 'V',
+'s'  => 'W',
+'A'  => 'Y',
+'C'  => 'X',
+'a'  => 'Z',
+);
+
+%exp=(
+'b'  => 'b',
+'x'  => 'x',
+'g'  => 'g',
+'e'  => 'e',
+'j'  => 'j',
+'z'  => 'z',
+);
+
+#undef $/;
+#$/='';
+
+open(X,"$f.dic") or die("cant open $f.dic\n");
+open(Y,">_$f.dic") or die("cant create _$f.dic\n");
+open(E,"| jspell -d port -e -o '' > _aux" ) or die("cant expand\n");
+
+while(<X>){
+  if(m!(.*)/(.*)!){ my ($a,$b,$b2)=($1,$2,$2);
+                    $b2 =~ s/(.)/$exp{$1}/g;
+                    $b  =~ s/(.)/$ren{$1}/g;
+                    print E "$a/$b2\n" if ($b2);
+                    print Y "$a/$b\n"; }
+  else {print Y $_;}
+}
+
+close(X);
+close(E);
+open(X,"_aux");
+while(<X>){
+ while(/(\w+)=/g){print Y "$1/\n";}
+}
+close(X);
+close(Y);
+
+undef $/; # ="\nflag";
+
+open(X,"$f.aff") or die("cant open $f.aff\n");
+open(Y,">_$f.aff") or die("cant create _$f.aff\n");
+
+my $aff=<X>;
+my ($ini,@resto) = split(/(\n(?:flag|prefixes|suffixes))/, $aff);
+
+print Y $ini;
+
+while(@resto){
+  $w=shift(@resto);
+  print ".";
+  $v=shift(@resto);
+  if($w eq "\nflag"){
+    if($v =~ m!^(\s+\*?\s*)(\w)\s*:!){
+          my ($a,$b,$c)=($1,$2,$');
+          $b = $ren{$b};
+          next if($b eq "" || $b =~ /\d/ );
+          print Y "$w$a$b:$c"; }
+    else{ print Y $_;}}
+  else{ print Y "$w$v";}
+}
+
+close(X);
+close(Y);

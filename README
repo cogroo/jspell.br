@@ -1,0 +1,21 @@
+port.np.dic      - dicionario de nomes proprios
+port.aff         - regras morfologicas do portugues
+port.geral.dic   - dicionario geral de portugues
+port.inf.dic     - termos informáticos
+
+aux.all-irr.dic  - verbos irregulares 
+                     (gerado por "ge_verb" a partir de irregulares.txt)
+irregulares.txt  - verbos irregulares
+
+IRR              - processador de verbos irregulares
+     ge_verb     - traduz e-irr5.txt em all-irr.dic
+     ge_verb.l
+     ge_verb2.y
+
+port.dic         - dicionário que junta os dicionarios todos
+
+PERL/pos2iso     - converte acentuacao posfixa em latin1
+
+ISPELL           - para gerar dicionarios ispell
+JSPELL           - para gerar dicionarios jspell
+ASPELL           - para gerar dicionarios aspell

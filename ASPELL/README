@@ -1,0 +1,16 @@
+This is a Portuguese dictionary for aspell :
+(http://natura.di.uminho.pt)
+
+To install :
+ first install aspell if necessary (http://aspell.sourceforge.net)
+
+ make
+ make install
+
+
+Jose Joao Almeida (jj@di.uminho.pt)
+Jose Afonso
+Manuel Lima
+
+portugues_phone.dat -- fonetica - still missing
+RPM                   ... .spec - still missing... -- next week
