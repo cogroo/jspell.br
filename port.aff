@@ -426,23 +426,25 @@ M O R F I S M O >       -MORFISMO,MÓRFICAS ; "G=f,N=p"   # isomórfico
 #----------------------------------------
 # íssimo
 flag *s:         ; "CAT=adj,N=s"       #issimo
-[^CÇG]O     >     -O,ÍSSIMO    ; "GR=sup"       # alto->altíssimo
-C O         >    -CO,QUÍSSIMO  ; "GR=sup"       # pouco->pouquíssimo
-Ç O         >    -ÇO,CÍSSIMO   ; "GR=sup"       # vivac,o->vivacíssimo
-G O         >    -GO,GUÍSSIMO  ; "GR=sup"       # meigo->meiguíssimo
-E           >     -E,ÍSSIMO    ; "GR=sup"       # leve->levíssimo
-[LR]        >        ÍSSIMO    ; "GR=sup"       # normal->normalíssimo
-Ê S         >    -ÊS,ESÍSSIMO  ; "GR=sup"       # burguês->burguesíssimo
-Z           >     -Z,CÍSSIMO   ; "GR=sup"       # feliz->felicíssimo
+[^CÇG]O     >     -O,ÍSSIMO    ; "GR=sup,G=m,N=s" # alto->altíssimo
+C O         >    -CO,QUÍSSIMO  ; "GR=sup,G=m,N=s" # pouco->pouquíssimo
+Ç O         >    -ÇO,CÍSSIMO   ; "GR=sup,G=m,N=s" # vivac,o->vivacíssimo
+G O         >    -GO,GUÍSSIMO  ; "GR=sup,G=m,N=s" # meigo->meiguíssimo
+E           >     -E,ÍSSIMO    ; "GR=sup,G=m,N=s" # leve->levíssimo
+[LR]        >        ÍSSIMO    ; "GR=sup,G=m,N=s" # normal->normalíssimo
+Ê S         >    -ÊS,ESÍSSIMO  ; "GR=sup,G=m,N=s" # burguês->burguesíssimo
+Z           >     -Z,CÍSSIMO   ; "GR=sup,G=m,N=s" # feliz->felicíssimo
+Á V E L     >  -ÁVEL,ABILÍSSIMO; "GR=sup,G=m,N=s" # amável->amabilíssimo
 
-[^CÇG]O     >     -O,ÍSSIMA    ; "GR=sup,G=f"       # alto->altíssima
-C O         >    -CO,QUÍSSIMA  ; "GR=sup,G=f"       # pouco->pouquíssima
-Ç O         >    -ÇO,CÍSSIMA   ; "GR=sup,G=f"       # vivac,o->vivacíssima
-G O         >    -GO,GUÍSSIMA  ; "GR=sup,G=f"       # meigo->meiguíssima
-E           >     -E,ÍSSIMA    ; "GR=sup,G=f"       # leve->levíssima
-[LR]        >        ÍSSIMA    ; "GR=sup,G=f"       # normal->normalíssima
-Ê S         >    -ÊS,ESÍSSIMA  ; "GR=sup,G=f"       #
-Z           >     -Z,CÍSSIMA   ; "GR=sup,G=f"       # feliz->felicíssima
+[^CÇG]O     >     -O,ÍSSIMA    ; "GR=sup,G=f,N=s" # alto->altíssima
+C O         >    -CO,QUÍSSIMA  ; "GR=sup,G=f,N=s" # pouco->pouquíssima
+Ç O         >    -ÇO,CÍSSIMA   ; "GR=sup,G=f,N=s" # vivac,o->vivacíssima
+G O         >    -GO,GUÍSSIMA  ; "GR=sup,G=f,N=s" # meigo->meiguíssima
+E           >     -E,ÍSSIMA    ; "GR=sup,G=f,N=s" # leve->levíssima
+[LR]        >        ÍSSIMA    ; "GR=sup,G=f,N=s" # normal->normalíssima
+Ê S         >    -ÊS,ESÍSSIMA  ; "GR=sup,G=f,N=s" #
+Z           >     -Z,CÍSSIMA   ; "GR=sup,G=f,N=s" # feliz->felicíssima
+Á V E L     >  -ÁVEL,ABILÍSSIMA; "GR=sup,G=f,N=s" # amável->amabilíssima
 
 [^CÇG]O     >     -O,ÍSSIMOS   ; "GR=sup,N=p"       # alto->altíssimos
 C O         >    -CO,QUÍSSIMOS ; "GR=sup,N=p"       # pouco->pouquíssimos
@@ -452,6 +454,7 @@ E           >     -E,ÍSSIMOS   ; "GR=sup,N=p"       # leve->levíssimos
 [LR]        >        ÍSSIMOS   ; "GR=sup,N=p"       # normal->normalíssimos
 Ê S         >    -ÊS,ESÍSSIMOS ; "GR=sup,N=p"       # burguês->burguesíssimos
 Z           >     -Z,CÍSSIMOS  ; "GR=sup,N=p"       # feliz->felicíssimos
+Á V E L     >  -ÁVEL,ABILÍSSIMOS; "GR=sup,N=p"      # amável->amabilíssimos
 
 [^CÇG]O     >     -O,ÍSSIMAS   ; "GR=sup,G=f,N=p"   # alto->altíssimas
 C O         >    -CO,QUÍSSIMAS ; "GR=sup,G=f,N=p"   # pouco->pouquíssimas
@@ -461,6 +464,7 @@ E           >     -E,ÍSSIMAS   ; "GR=sup,G=f,N=p"   # leve->levíssimas
 [LR]        >        ÍSSIMAS   ; "GR=sup,G=f,N=p"   # normal->normalíssimas
 Ê S         >    -ÊS,ESÍSSIMAS ; "GR=sup,G=f,N=p"   #
 Z           >     -Z,CÍSSIMAS  ; "GR=sup,G=f,N=p"   # feliz->felicíssimas
+Á V E L     >  -ÁVEL,ABILÍSSIMAS; "GR=sup,G=f,N=p" # amável->amabilíssimas
 
 #-----------------------------------------
 # idade

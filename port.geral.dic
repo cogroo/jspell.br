@@ -878,9 +878,8 @@ agourentar/#vt/XYPL/
 agourento/#a//
 agouro/#nm/p/
 agraciar/#vt/XYPLMv/
-agradabilíssimo/#a,GR=sup/pf/
 agradar/#vi/XYLSvm/
-agradável/#an/d/
+agradável/#an/ds/
 agradecer/#vn/XYPLRMvm/
 agrado/#nm/p/
 agrafar/#vt/XYPL/
@@ -11553,7 +11552,7 @@ diferendo//p/
 diferente/#an/pm/
 diferir/#vn/ZYPLM/
 difícil/#an/a/
-dificílimo/$difícil$#an$GR=sub,G=m/fp/
+dificílimo/$difícil$#an$GR=sup,G=m/fp/
 dificilmente/$difícil$#an$#av//
 dificuldade/#nf/p/
 dificultar/#vt/XYPLc/
@@ -18296,7 +18295,7 @@ incombusto/#a//
 incomensurabilidade/#nf/p/
 incomensurável/#an/pmd/
 incomerciável/#an//
-incomodamente/$incómodo$#a$//
+incomodamente/$incómodo$#a$#av//
 incomodante/#an/p/
 incomodar/#vt/XYPLDn/
 incomodativo/#a/p/
@@ -18371,6 +18370,7 @@ inconstância/#nf/p/
 inconstante/#an/p/
 inconstitucional/#an/dp/
 inconstitucionalidade/#nf/p/
+inconstitucionalissimamente/$inconstitucional$#a$GR=sup,#av//
 inconsumível/#an/p/
 incontactável/#a/p/
 incontaminado/#a//
@@ -18420,7 +18420,7 @@ incrementício/#a//
 increr/#vn/XYPLv/
 incriminar/#vn/XYPLc/
 incristalizável/#an//
-incrivelmente/$incrível$#a$//
+incrivelmente/$incrível$#a$#av//
 incrustar/#vt/XYPLcD/
 incubadora/#nf//
 incubador/#hm/fp/
@@ -18657,7 +18657,7 @@ inelegibilidade/#nf/p/
 inelegível/#an/d/
 inenarrável/#an//
 inenrugável/#an//
-inepciamente/$inépcia$#a$//
+inepciamente/$inépcia$#a$#av//
 inépcia/#nf//
 ineptidão/#nf/p/
 ineptitude/#nf/p/
@@ -18774,7 +18774,7 @@ infestador/#hm//
 infestante/#an/p/
 infestar/#vt/XYPLcDn/
 infesto/#a//
-infidelíssimo/#a,GR=sup/p/
+infidelíssimo/$infiel$#a$GR=sup/p/
 infiel/#hn/pm/
 infiltrador/#hm//
 infiltrar/#vt/XYPLcDnv/
@@ -18890,9 +18890,8 @@ início/#nm/pR/
 inigualável/#an//
 iniludível///
 inimaginável/#an/p/
-inimicíssimo/#a,GR=sup/p/
+inimicíssimo/$inimigo$#a$GR=sup/p/
 inimigo/#hm/fp/
-inimistar///
 inimitável/#an//
 inimizade/#nf/p/
 inimizar/#vt/XYPL/
@@ -18921,7 +18920,7 @@ inobservável/#an//
 inocência/#nf/p/
 inocentar/#vt/XYPL/
 inocente/#hn/pm/
-inocuamente/$inócuo$#a$//
+inocuamente/$inócuo$#a$#av//
 inocuidade/#nf/p/
 inoculabilidade/#nf/p/
 inoculador/#hm//
@@ -19134,7 +19133,7 @@ integral/#an/pmtid/
 integralismo/#nm/p/
 integralista/#hn//
 integral/#nf/p/
-integramente/$íntegro$#a$//
+integramente/$íntegro$#a$#av//
 íntegra/#nf//
 integrante/#an/p/
 integrar/#vt/XYPLcDnv/
@@ -20583,7 +20582,7 @@ licenciatura/#nf/p/
 licenciosidade/#nf/p/
 licencioso/#a/fpmd/
 liceu/#nm/p/
-licitamente/$lícito$#a$//
+licitamente/$lícito$#a$#av//
 licitar/#vn/XYPLcDn/
 lícito/#hm/fp/
 licitude/#nf//
@@ -20638,7 +20637,7 @@ limpadura/#nf//
 limpa/#nf//
 limpar/#vt/XYPLcMD/
 limpeza/#nf/p/
-limpidamente/$límpido$#a$//
+limpidamente/$límpido$#a$#av//
 limpidez/#nf//
 límpido/#a/fp/
 limpo/#a/fp/
@@ -21240,7 +21239,7 @@ mal-empregado/#i//
 males/$mal$#nm$N=p//
 mal-estar/#nm//
 maleta/#nf/p/
-malevolamente/$malévolo$#a$//
+malevolamente/$malévolo$#a$#av//
 malevolência/#nf/p/
 malevolente/#an//
 malévolo/#a//
@@ -22330,7 +22329,7 @@ mimético/#a//
 mimetismo/#nm/p/
 mimetizar/#vt/XYPLnc/
 mimiambos///
-mimicamente/$mímica$#a$//
+mimicamente/$mímica$#a$#av//
 mímica/#nf//
 mimice/#nf//
 mímico/#hm/f/
@@ -23595,7 +23594,7 @@ nivoso/#hm//
 nizâmida///
 nobiliário/#hm/p/
 nobiliárquico//fp/
-nobilíssimo/#a/f/
+nobilíssimo/$nobre$#a$GR=sup/f/
 nobrecer/#vt/XYPL/
 nobre/#hn/pm/
 nobreza/#nf//
@@ -25870,7 +25869,7 @@ pessegueiro/#nm//
 pessimamente/#av//
 pessimismo/#nm/p/
 pessimista/#nn/p/
-péssimo/#a/fp/
+péssimo/$mau$#a$GR=sup/fp/
 pessoal/#an/pmidsA/
 pessoalidade/#nf/p/
 pessoalismo/#nm/p/
@@ -30772,7 +30771,6 @@ serena/#hf//
 serenar/#vn/XYPL/
 serenata/#nf/p/
 serenidade/#nf/p/
-sereníssimo/#a//
 sereno/#a/fdsmp/
 seriação/#nf//
 serial/#an//
@@ -30983,13 +30981,13 @@ simius///
 simonia///
 simpatia/#nf/p/
 simpático/#a/fpH/
-simpatiquíssimo/#a//
+simpatiquíssimo/$simpático$#a$GR=sup//
 simpatizante/#an/p/
 simpatizar/#vi/XYLn/
 simpléctico///
 simples/#hn2/m/
 simplicidade/#nf/p/
-simplicíssimo/#a/pfH/
+simplicíssimo/$simples$#a$GR=sup/pfH/
 simplificador/#hm//
 simplificar/#vt/XYPLcDv/
 simplificativo/#a/f/
@@ -32164,7 +32162,6 @@ tarde/#av/s/
 tarde/#nf/p/
 tardeza/#nf//
 tardio/#a/fpm/
-tardíssimo/#av//
 tarecada/#nf//
 tareco/#hm/fp/
 tarefa/#nf/p/
@@ -32513,7 +32510,7 @@ terreno/#nm/fp/
 térreo/#a/fp/
 terrestre/#an/p/
 terribilidade/#nf/p/
-terribilíssimo/#a//
+terribilíssimo/$terrível$#a$GR=sup//
 terrificante/#an/p/
 terrificar/#vn/XYPLDn/
 terrífico/#a/pfH/
