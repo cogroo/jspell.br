@@ -1498,28 +1498,34 @@ I A         > -A,ZADAS ; "CAT=v,T=ppa,G=f,N=p,FSEM=izar"
 [^I] A      > -A,IZADOS ; "CAT=v,T=ppa,G=m,N=p,FSEM=izar"
 
 flag *G:  ;"CAT=adj"          #ice 
-[^ÇGC]O      >     -O,ICE     ; "CAT=nc,G=f,FSEM=ice" # activo->activice
+[^ÇGC]O     >     -O,ICE     ; "CAT=nc,G=f,FSEM=ice" # activo->activice
 Ç O         >    -ÇO,CICE    ; "CAT=nc,G=f,FSEM=ice" # castic,o->casticice
 G O         >    -GO,GUICE   ; "CAT=nc,G=f,FSEM=ice" # antigo->antiguice
 C O         >    -CO,QUICE   ; "CAT=nc,G=f,FSEM=ice" # bacoco->bacoquice
-[^ÇGC]A      >     -A,ICE    ; "CAT=nc,G=f,FSEM=ice" # activo->activice
+[^ÇGC]A     >     -A,ICE    ; "CAT=nc,G=f,FSEM=ice" # activo->activice
 Ç A         >    -ÇA,CICE    ; "CAT=nc,G=f,FSEM=ice" # castic,o->casticice
 G A         >    -GA,GUICE   ; "CAT=nc,G=f,FSEM=ice" # antigo->antiguice
 C A         >    -CA,QUICE   ; "CAT=nc,G=f,FSEM=ice" # bacoco->bacoquice
 E           >     -E,ICE     ; "CAT=nc,G=f,FSEM=ice" # breve->brevice
 R           >        ICE     ; "CAT=nc,G=f,FSEM=ice" # angular->angularice
-A           >     -A,ICE     ; "CAT=nc,G=f,FSEM=ice" # palerma->palermice
-[^V][^Q] L >        ICE     ; "CAT=nc,G=f,FSEM=ice" # amoral->amoralice
+[^V][^Q] L  >        ICE     ; "CAT=nc,G=f,FSEM=ice" # amoral->amoralice
 [^ÁÍ] V E L >   -VEL,BILICE  ; "CAT=nc,G=f,FSEM=ice" #
 Á V E L     >  -ÁVEL,ABILICE ; "CAT=nc,G=f,FSEM=ice" # amável->amabilice
 Í V E L     >  -ÍVEL,IBILICE ; "CAT=nc,G=f,FSEM=ice" # amovível->amovibilice
 Z           >     -Z,CICE    ; "CAT=nc,G=f,FSEM=ice" # feroz->ferocice
 
-[^ÇG]O      >     -O,ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # activo->activices
+[^ÇGC]O      >     -O,ICES   ; "CAT=nc,G=f,N=p,FSEM=ice" # activo->activices
+Ç O         >    -ÇO,CICES   ; "CAT=nc,G=f,N=p,FSEM=ice" # castic,o->casticices
 G O         >    -GO,GUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # antigo->antiguices
 C O         >    -CO,QUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # bacoco->bacoquices
-[^ÇG]A      >     -A,ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # azelha->azelhices
+[^ÇGC]A     >      -A,ICES   ; "CAT=nc,G=f,N=p,FSEM=ice" # azelha->azelhices
+Ç A         >    -ÇA,CICES   ; "CAT=nc,G=f,N=p,FSEM=ice" # castic,o->casticice
 G A         >    -GA,GUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # antigo->antiguices
 C A         >    -CA,QUICES  ; "CAT=nc,G=f,N=p,FSEM=ice" # bacoco->bacoquices
-[^V][^Q] L >        ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # funcional->funcionalices
+[^V][^Q] L >        ICES     ; "CAT=nc,G=f,N=p,FSEM=ice" # funcional->funcionalices
+E           >     -E,ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # breve->brevice
+R           >        ICES    ; "CAT=nc,G=f,N=p,FSEM=ice" # angular->angularice
+[^ÁÍ] V E L >   -VEL,BILICES ; "CAT=nc,G=f,N=p,FSEM=ice" #
+Á V E L     >  -ÁVEL,ABILICES; "CAT=nc,G=f,N=p,FSEM=ice" # amável->amabilice
+Í V E L     >  -ÍVEL,IBILICES; "CAT=nc,G=f,N=p,FSEM=ice" # amovível->amovibilice
 
