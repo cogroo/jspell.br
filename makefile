@@ -29,6 +29,7 @@ what:
 	@ echo -e "jspell:"
 	@ echo -e "\tjspell -- builds jspell dictionary"
 	@ echo -e "\tjspell-install -- installs jspell"
+	@ echo -e "\tjspell-tgz -- creates jspell munged distribution file"
 	@ echo
 	@ echo -e "ispell:"
 	@ echo -e "\tispell -- builds ispell dictionary (slow)"
@@ -133,9 +134,13 @@ jspell: port.dic port.aff
 jspell-install: port.dic port.aff
 	cd JSPELL; make install
 
-jspell-tgz:
-	(cd JSPELL; make tgz)
-	mv JSPELL/jspell.$(ABR).$(DATE).tar.gz .
+jspell-tgz: jspell
+	mkdir -p jspell.$(ABR).$(DATE)
+	cp JSPELL/jspell.port/port.hash jspell.$(ABR).$(DATE)
+	cp JSPELL/jspell.port/port.irr  jspell.$(ABR).$(DATE)
+	cp JSPELL/jspell.mkfile.dist jspell.$(ABR).$(DATE)/makefile
+	tar zcvf jspell.$(ABR).$(DATE).tar.gz jspell.$(ABR).$(DATE)
+	rm -fr jspell.$(ABR).$(DATE)
 
 # Jspell port man
 
