@@ -25,7 +25,7 @@ todo: ispell
 
 D=portugues
 P=portugues
-plndir=$$HOME/public_html/pln
+plndir=/home/jj/public_html/pln
 FR = mv $D.dic _$D.dic ; mv $D.aff _$D.aff
 #FR = perl flagsRenDel $D
 
