@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 
 use jspell;
-
 use locale;
 
 sub remflag{
@@ -25,6 +24,7 @@ sub addflag{
    open(Do,"> $dicname.novo") or die;
 
    while(<Di>){
+     s!^((?:$p)/.*?/[^/]*)$f!$1!;
      s!^((?:$p)/.*?/)!$1$f!;
      print Do $_;
   }

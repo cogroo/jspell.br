@@ -23,24 +23,24 @@ D=portugues
 P=portugues
 plndir=$$HOME/public_html/pln
 ispell.tgz: 
-	tar -czf $P/$N.tgz $P/$N.dic $P/README  $P/$N.aff
-	mv $P/$N.tgz $(plndir)/UM$N.tgz
+	tar -czf $P/$D.tgz $P/$D.dic $P/README  $P/$D.aff
+	mv $P/$D.tgz $(plndir)/UM$D.tgz
 	
-ispell : $P/$N.hash $P/README
+ispell : $P/$D.hash $P/README
 
 $P/README: ../port.aff
 	perl -e '$$/ = ""; $$a=<>; print $$a;' ../port.aff > $P/README
 
-$P/$N.hash: $P/$N.dic $P/$N.aff $P/README
-	cd $P; buildhash $N.dic $N.aff $N.hash
+$P/$D.hash: $P/$D.dic $P/$D.aff $P/README
+	cd $P; buildhash $D.dic $D.aff $D.hash
 
-$P/$N.aff $P/$N.dic: ../port.dic ../port.aff 
+$P/$D.aff $P/$D.dic: ../port.dic ../port.aff 
 	mkdir -p  $P
-	jsp2isp.pl ../port.aff > /tmp/$N.aff 
-	jsp2isp.pl ../port.dic | grep -v '[#-]'  > /tmp/$N.dic
+	jsp2isp.pl ../port.aff > /tmp/$D.aff 
+	jsp2isp.pl ../port.dic | grep -v '[#-]'  > /tmp/$D.dic
 	cp flagsRenDel /tmp/
-	cd /tmp; perl flagsRenDel $N; munchlist -l _$N.aff _$N.dic > $N.dic ;
-	cd $P; mv /tmp/$N.dic . ; mv /tmp/_$N.aff $N.aff
+	cd /tmp; perl flagsRenDel $D; munchlist -l _$D.aff _$D.dic > $D.dic ;
+	cd $P; mv /tmp/$D.dic . ; mv /tmp/_$D.aff $D.aff
 
 ../port.dic:
 	cd ..; make port.dic
@@ -48,15 +48,15 @@ $P/$N.aff $P/$N.dic: ../port.dic ../port.aff
 #---------------------------------------------------------------------
 # instalations
 
-install : $P/$N.hash 
-	cp $P/$N.hash $(ISPELLLIB)
+install : $P/$D.hash 
+	cp $P/$D.hash $(ISPELLLIB)
 	-rm $(ISPELLLIB)/port.hash
-	ln -s $(ISPELLLIB)/$N.hash $(ISPELLLIB)/port.hash
+	ln -s $(ISPELLLIB)/$D.hash $(ISPELLLIB)/port.hash
 
 clean : 
-	rm -f $P/*.stat $P/*.cnt  $P/$N.hash
+	rm -f $P/*.stat $P/*.cnt  $P/$D.hash
 
 realclean:
 	rm -f $P/*.stat $P/*.cnt 
-	rm -f $P/$N.hash 
-	rm -f $P/$N.dic $P/$N.aff 
+	rm -f $P/$D.hash 
+	rm -f $P/$D.dic $P/$D.aff 
