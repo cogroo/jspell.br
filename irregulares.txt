@@ -447,6 +447,10 @@ oíam        3p pi
 oí          1s pp
 ói          2s i
 oa          2s i
+oído        ms ppa
+oída        fs ppa
+oídos       mp ppa
+oídas       fp ppa
 
 #v *seguir  //  ocur: 5
 sigo     1s p
