@@ -133,6 +133,10 @@ jspell: port.dic port.aff
 jspell-install: port.dic port.aff
 	cd JSPELL; make install
 
+jspell-tgz:
+	(cd JSPELL; make tgz)
+	mv JSPELL/jspell.$(ABR).$(DATE).tar.gz .
+
 # Jspell port man
 
 install-man: jspell.pt.1

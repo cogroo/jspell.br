@@ -1473,26 +1473,26 @@ A > -A,EIRA  ; "G=f,N=s,FSEM=eiro"     # banana bananeira
 A > -A,EIRAS  ; "G=f,N=o,FSEM=eiro"     # banana bananeiras
 
 flag *w: ; "CAT=nc"            # oso
-O > SO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
-O > SA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
-O > SOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
-O > SAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
-A > -A,OSO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
-A > -A,OSA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
-A > -A,OSOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
-A > -A,OSAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
-ว ร O > -วรO,CIOSO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
-ว ร O > -วรO,CIOSA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
-ว ร O > -วรO,CIOSOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
-ว ร O > -วรO,CIOSAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
-E > -E,OSO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
-E > -E,OSA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
-E > -E,OSOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
-E > -E,OSAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
-[^AEIOU] > OSO  ; "CAT=a,G=m,N=s,FSEM=oso"     # 
-[^AEIOU]  > OSA  ; "CAT=a,G=f,N=s,FSEM=oso"     # 
-[^AEIOU]  > OSOS  ; "CAT=a,G=m,N=p,FSEM=oso"     # 
-[^AEIOU]  > OSAS  ; "CAT=a,G=f,N=p,FSEM=oso"     # 
+O > SO  ; "CAT=adj,G=m,N=s,FSEM=oso"     # 
+O > SA  ; "CAT=adj,G=f,N=s,FSEM=oso"     # 
+O > SOS  ; "CAT=adj,G=m,N=p,FSEM=oso"     # 
+O > SAS  ; "CAT=adj,G=f,N=p,FSEM=oso"     # 
+A > -A,OSO  ; "CAT=adj,G=m,N=s,FSEM=oso"     # 
+A > -A,OSA  ; "CAT=adj,G=f,N=s,FSEM=oso"     # 
+A > -A,OSOS  ; "CAT=adj,G=m,N=p,FSEM=oso"     # 
+A > -A,OSAS  ; "CAT=adj,G=f,N=p,FSEM=oso"     # 
+ว ร O > -วรO,CIOSO  ; "CAT=adj,G=m,N=s,FSEM=oso"     # 
+ว ร O > -วรO,CIOSA  ; "CAT=adj,G=f,N=s,FSEM=oso"     # 
+ว ร O > -วรO,CIOSOS  ; "CAT=adj,G=m,N=p,FSEM=oso"     # 
+ว ร O > -วรO,CIOSAS  ; "CAT=adj,G=f,N=p,FSEM=oso"     # 
+E > -E,OSO  ; "CAT=adj,G=m,N=s,FSEM=oso"     # 
+E > -E,OSA  ; "CAT=adj,G=f,N=s,FSEM=oso"     # 
+E > -E,OSOS  ; "CAT=adj,G=m,N=p,FSEM=oso"     # 
+E > -E,OSAS  ; "CAT=adj,G=f,N=p,FSEM=oso"     # 
+[^AEIOU] > OSO  ; "CAT=adj,G=m,N=s,FSEM=oso"     # 
+[^AEIOU]  > OSA  ; "CAT=adj,G=f,N=s,FSEM=oso"     # 
+[^AEIOU]  > OSOS  ; "CAT=adj,G=m,N=p,FSEM=oso"     # 
+[^AEIOU]  > OSAS  ; "CAT=adj,G=f,N=p,FSEM=oso"     # 
 
 flag *j:  ; "CAT=adj"          #izar
 L           > IZAR  ; "CAT=v,T=inf,FSEM=izar"
