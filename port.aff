@@ -159,7 +159,7 @@ prefixes
 
 flag *A:                   # anti
 [^HIRS]	>	ANTI       ; "PFSEM=anti"	# antivenenoso
-[HIRS]	>	ANTI\-     ; "PFSEM=anti"	# anti-semita
+[HIRS]	>	ANTI\-     ; "PFSEM=anti"	# anti-semita #noispell
 
 flag *S:                   # des
 [^H]	>	DES	; "PFSEM=not"       # amarrar -> desamarrar
@@ -175,34 +175,34 @@ flag *R:                   #re
 [^S]        >      RE         ; "PFSEM=outra"     # ex. encontrar -> reencontrar
 S           >      RES        ; "PFSEM=outra"     # ex. surgir -> ressurgir
 
-flag *E:                   #pré-
-    .       >      PRÉ\-     ; "PFSEM=pre"       # ex. escolar -> pré-escolar
+flag *E:                   #pré- #noispell
+    .       >      PRÉ\-     ; "PFSEM=pre"       # ex. escolar -> pré-escolar #noispell
 
-flag *O:                   #pós-
-    .       >      PÓS\-     ; "PFSEM=pos"       # ex. guerra -> pós-guerra
+flag *O:                   #pós-   #noispell
+    .       >      PÓS\-     ; "PFSEM=pos"       # ex. guerra -> pós-guerra #noispell
 
 flag *u:                   #sub
-[BHR]	    >      SUB\-      ; "PFSEM=sub"	# ex. humano -> sub-humano
+[BHR]	    >      SUB\-      ; "PFSEM=sub"	# ex. humano -> sub-humano #noispell
 [^BHR]      >      SUB        ; "PFSEM=sub"	# ex. tribo -> subtribo
 
-flag *x:		# ex-
-    .	    >	EX\-		; "PFSEM=ex"	# ex-presidente
+flag *x:		# ex-                                     #noispell
+    .	    >	EX\-		; "PFSEM=ex"	# ex-presidente   #noispell
 
-flag *V:		# vice-
-    .	   >	VICE\-		; "PFSEM=vice"	# vice-presidente
+flag *V:		# vice-     #noispell
+    .	   >	VICE\-		; "PFSEM=vice"	# vice-presidente  #noispell
 
-flag *F:  			#ultra super        #noispell
-    .       >	   ULTRA     ; "PFSEM=ultra"	#	#noispell
-    .       >      SUPER     ; "PFSEM=super"	#	#noispell
-    .       >      HIPER     ; "PFSEM=hiper"	#	#noispell
+flag *F:  			#ultra super  
+    .       >	   ULTRA     ; "PFSEM=ultra"	#	
+    .       >      SUPER     ; "PFSEM=super"	#
+    .       >      HIPER     ; "PFSEM=hiper"	#
 
-flag * T:
-    .       >      BI        ; "PFSEM=2"	#	#noispell
-    S       >      TRIS      ; "PFSEM=3"	#	#noispell
-    [^S]    >      TRI       ; "PFSEM=3"	#	#noispell
-    .       >      TETRA     ; "PFSEM=4"	#	#noispell
-    .	    > 	   PENTA     ; "PFSEM=5"	#	#noispell
-    .       >      HEXA	     ; "PFSEM=6"        #	#noispell
+flag *T:
+    .       >      BI        ; "PFSEM=2"	#
+    S       >      TRIS      ; "PFSEM=3"	#
+    [^S]    >      TRI       ; "PFSEM=3"	#
+    .       >      TETRA     ; "PFSEM=4"	#
+    .	    > 	   PENTA     ; "PFSEM=5"	#
+    .       >      HEXA	     ; "PFSEM=6"        #
 
 suffixes
 
@@ -273,7 +273,7 @@ U		>	 AMENTE    ; "CAT=adv"	# cruamente
 flag +H:         ; "CAT=adj,N=s"       #mente
 
 D O R		>  AMENTE		; "CAT=adv"
-Ó R I O		>  -ÓRIO,ORIAMENT	; "CAT=adv"
+Ó R I O		>  -ÓRIO,ORIAMENTE	; "CAT=adv"
 Á R I O		>  -ÁRIO,ARIAMENTE	; "CAT=adv"
 Á T I C O	>  -ÁTICO,ATICAMENTE	; "CAT=adv"
 Ó N I C O	>  -ÓNiCO,ONICAMENTE	; "CAT=adv"

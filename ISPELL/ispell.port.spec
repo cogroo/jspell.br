@@ -1,13 +1,13 @@
 Summary: ispell portuguese dictionary
 Name: ispell.port
-Version: 2.00
+Version: 3.00
 Release: 1
 Copyright: GPL
 Source: ispell.port.tgz
 Group: Utilities/Text
 Packager: jj@di.uminho.pt (Jose Joao Almeida) - Proj Natura
 requires: ispell
-conflicts: ispell64
+# conflicts: ispell64
 
 #
 # $Id$

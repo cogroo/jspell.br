@@ -5072,7 +5072,7 @@ bonacheirice/#nf//
 bonança/#nf//
 bonançoso/#a//
 bondade/#nf/p/
-bonde/#nm/p$BRAS=1$/
+bonde/#nm,BRAS=1/p/
 bondoso/#a/fp/
 bonecada/#nf//
 boneca/#nf/h/
@@ -6723,16 +6723,16 @@ catolicizar/#vt/XYPLn/
 católico/#hm/fp/
 catolizar/#vt/XYPLc/
 catorze/#ca//
-!/CAT=punct//
-?/CAT=punct//
-./CAT=punct//
-.../CAT=punct//
-,/CAT=punct1//
-;/CAT=punct1//
-:/CAT=punct1//
-"/CAT=punct2//
-(/CAT=punct2//
-)/CAT=punct2//
+!/CAT=punct// #noispell
+?/CAT=punct// #noispell
+./CAT=punct// #noispell
+.../CAT=punct// #noispell
+,/CAT=punct1// #noispell
+;/CAT=punct1// #noispell
+:/CAT=punct1// #noispell
+"/CAT=punct2// #noispell
+(/CAT=punct2//  #noispell
+)/CAT=punct2// #noispell
 catrafilar/#vt/XYPL/
 catraia/#nf//
 catraio/#nm/f/
@@ -9863,7 +9863,7 @@ cruzeta/#nf/p/
 cruz/#nf//
 cuanza/#nm/p/
 cuba/#nf//
-cubano/#hm/fp/  
+cubano/#hm/fp/
 cubar/#vt/XYPL/
 cúbico/#a/fp/
 cubículo/#nm//
@@ -15011,7 +15011,7 @@ fascinar/#vt/XYPLcDn/
 fascínio/#nm//
 fascismo/#nm/pAO/
 fascista/#hn/pAO/
-fasear/#vt/XYPLM/ 
+fasear/#vt/XYPLM/
 fase/#nf/p/
 fasquiado/#hm//
 fasquia/#nf//
@@ -17830,7 +17830,7 @@ imobilismo/#nm/p/
 imobilista/#nn//
 imobilizar/#vt/XYPLc/
 imoderação/#nf//
-imoderado /#a/fp/
+imoderado/#a/fp/
 imolador/#hm//
 imolante/#an/p/
 imolar/#vt/XYPLcDn/
@@ -19924,7 +19924,7 @@ juventude/#nf/p/
 kantiano/#a/fp/
 kantismo/#nm/p/
 kepleriano/#a//
-kg/$quilograma$$ABR=1// 
+kg/$quilograma$$ABR=1//
 kilojoule/#nm//
 kilovolt/#nm/p/
 kilowatt-hora/#nm//
@@ -23811,7 +23811,7 @@ obreiro/#hm/fp/
 obrigação/#nf//
 obrigacionário/#nm//
 obrigacionista/#nn/p/
-obrigado!/CAT=in//
+obrigado/CAT=in//
 obrigante/#an/p/
 obrigar/#vt/XYPLcDn/
 obrigatário/#nm//
@@ -29933,7 +29933,7 @@ ruinoso/#a/mpf/
 ruir/#vi/KL/
 ruivacas///
 ruivo/#hm/f/
-rumar/#vt/XYPLc/ 
+rumar/#vt/XYPLc/
 ruminante/#an/p/
 ruminantes/#nm,N=p//
 ruminar/#vn/XYPLcn/
@@ -31526,7 +31526,7 @@ subjugante/#an/p/
 subjugar/#vt/XYPLcDn/
 subjuntivo/#hm//
 sublevação//p/
-sublevar/#vn/XYPLMn/ 
+sublevar/#vn/XYPLMn/
 sublimar/#vt/XYPLcv/
 sublimativo/#a//
 sublimatório/#hm//

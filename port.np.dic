@@ -12,7 +12,6 @@
 #tcf/CAT=np,SEM=cid,G=f,N=s
 #em/CAT=np,SEM=mes,G=m,N=s/
 
-
 Abecassis/#np/
 Abel/#npm/
 Abércio/#npm/
@@ -701,7 +700,7 @@ Dezembro/#em/
 Diabo/CAT=np,G=m/
 Diamantina/#np/
 Diana/#npf/
-Diáspora/CAT=np,s f/
+Diáspora/CAT=np,G=f,N=s/
 Didier/#np1/
 Diego/#np1/
 Dili/#tc/
@@ -825,7 +824,7 @@ Estremoz/#t/
 Estugarda/#tc/
 Etelvina/#npf/
 Etiópia/#tpf/
-Eucaristia/CAT=np,s f/
+Eucaristia/CAT=np,,N=s,G=f/
 Euclides/#npm/
 Eufémia/#npf/
 Eufrates/#tr/

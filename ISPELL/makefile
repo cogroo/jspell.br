@@ -9,6 +9,8 @@ ISPELLLIB=/home/jj/lib/ispell
 
 BASE= port.aff port.dic np.dic inf.dic irregulares.txt verb.dic \
       makefile all-irr.dic pos2iso jsp2isp.pl README irr2perl
+
+
 #--------------------------------------------------------------------- 
 
 todo: ispell
@@ -19,11 +21,16 @@ todo: ispell
 # P - dir name of ispell files
 # D - name of ispell portuguese dictionary
 
+# FR - Flag renaming (use flagsRenDel to get just 32 MASKBITS
+
 D=portugues
 P=portugues
 plndir=$$HOME/public_html/pln
+FR = mv $D.dic _$D.dic ; mv $D.aff _$D.aff
+#FR = perl flagsRenDel $D
+
 ispell.tgz: 
-	tar -czf $P/$D.tgz $P/$D.dic $P/README  $P/$D.aff
+	tar -czf $P/$D.tgz $P/$D.dic $P/README  $P/$D.aff $P/makefile
 	mv $P/$D.tgz $(plndir)/UM$D.tgz
 	
 ispell : $P/$D.hash $P/README
@@ -39,7 +46,9 @@ $P/$D.aff $P/$D.dic: ../port.dic ../port.aff
 	jsp2isp.pl ../port.aff > /tmp/$D.aff 
 	jsp2isp.pl ../port.dic | grep -v '[#-]'  > /tmp/$D.dic
 	cp flagsRenDel /tmp/
-	cd /tmp; perl flagsRenDel $D; munchlist -l _$D.aff _$D.dic > $D.dic ;
+	cp ver ispell.port.spec $P
+#	cd /tmp; perl flagsRenDel $D; munchlist -l _$D.aff _$D.dic > $D.dic ;
+	cd /tmp; ${FR} ; munchlist -l _$D.aff _$D.dic > $D.dic ;
 	cd $P; mv /tmp/$D.dic . ; mv /tmp/_$D.aff $D.aff
 
 ../port.dic:

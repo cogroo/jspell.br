@@ -7,6 +7,10 @@
 # make install-ispell
 # make ispell.tgz
 
+# make aspell   (very slow!!!)
+# make install-aspell
+# make aspell.tgz
+
 # make dic.tgz
 
 LIB=/usr/local/lib
