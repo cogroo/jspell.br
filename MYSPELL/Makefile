@@ -14,16 +14,18 @@ LIB=/usr/local/lib
 #ISPELLLIB=/home/jj/lib/aspell
 
 myspell:
-	if test ! -f ../ISPELL/portugues/portugues.aff ; then \
+	if test ! -f ../ISPELL/$P/$P.aff ; then \
 		cd .. ; make ispell; \
-	elif test ! -f ../ISPELL/portugues/portugues.dic ; then \
+	elif test ! -f ../ISPELL/$P/$P.dic ; then \
 		cd .. ; make ispell; \
 	fi;
-	cp ../ISPELL/portugues/portugues.dic portugues/
-	cp ../ISPELL/portugues/portugues.aff portugues/
-	perl gendic.pl portugues/portugues.aff > portugues/pt_PT.aff
-	mv portugues/portugues.dic portugues/pt_PT.dic
-	rm portugues/portugues.aff
+	cp ../ISPELL/$P/$P.dic $P/
+	cp ../ISPELL/$P/$P.aff $P/
+	perl gendic.pl $P/$P.aff > $P/pt_PT.aff
+	wc -l $P/pt_PT.dic | cut -c 0-7 > $P/pt_PT.dic
+	cat $P/$P.dic >> $P/pt_PT.dic
+	rm $P/$P.dic
+	rm $P/$P.aff
 tgz: 
 	tar -czf myspell.$(ABR).$(DATE).tar.gz $P
 
@@ -32,4 +34,4 @@ tgz:
 clean : 
 	make realclean
 realclean:
-	rm -f $P/*.aff $P.tgz $P/*~ $P/*.dic
+	rm -f $P/*.aff $P.tgz $P/*~ $P/*.dic *~
