@@ -9,5 +9,6 @@ open(F1,"| grep -v '#' |grep '[a-zA-Zайубъ]' | sort -u") or die;
 
 while(<F>){
   s/[-= ,\n]+/\n/g;
+  next if m!^#!;
   print F1 "$_\n";
 }
