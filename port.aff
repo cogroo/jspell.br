@@ -237,27 +237,29 @@ M           >    -M,NS   ; "N=p"         # m -> ns      ex. jovem, jovens
 
 flag *a:         ; "CAT=a_nc,N=s"      #plurais
 Ã O         >       S    ; "N=p"        # ex. mão, mãos
-I L         >   -IL,EIS  ; "N=p"        # ex. ágil, ágeis  # deve ser posto em todos os que têm acento e acabam em il
-E N T O S   >	-OS,AS	 ; "G=f"	# duzentos 
+
+# deve ser posto em todos os que têm acento e acabam em il
+I L         >   -IL,EIS  ; "N=p"        # ex. ágil, ágeis  
+E N T O S   >	-OS,AS	 ; "G=f"	# duzentos -> duzentas (FIXME)
 [^AEIOU]    >	S	 ; "N=p"	# buffers
 
 flag *e:         ; "CAT=a_nc,N=s"      #plurais
 Ã O         >    -O,ES   ; "N=p"         # ex. pão, pães
-A L         >    ES      ; "N=p"         #               ex. mal males
+A L         >    ES      ; "N=p"         # ex. mal, males
 
 #-----------------------------------------
 # femininos - os mais habituais
 flag *f:         ; "CAT=a_nc,G=m,N=s"  #femininos
 [^Ã] O      >    -O,A    ; "G=f"         # o -> a     ex. pato -> pata
-[^Ã] O      >    -O,AS   ; "G=f,N=p"
+[^Ã] O      >    -O,AS   ; "G=f,N=p"     #                pato -> patas
 [^AEIOUSCN] >       A    ; "G=f"         # -> a       ex. cantor -> cantora
-[^AEIOUSCN] >       AS   ; "G=f,N=p"
+[^AEIOUSCN] >       AS   ; "G=f,N=p"     #                cantor -> cantoras
 [^Ê] S      >       A    ; "G=f"         # -> a       ex. deus   -> deusa
-[^Ê] S      >       AS   ; "G=f,N=p"
+[^Ê] S      >       AS   ; "G=f,N=p"     #                deus   -> deusas
 Ê S         >   -ÊS,ESA  ; "G=f"         # ês -> esa   ex. japonês -> japonesa
 Ê S         >   -ÊS,ESAS ; "G=f,N=p"     # ês -> esas  ex. japonês -> japonesas
 Ã O         >   -ÃO,ONA  ; "G=f"         # ão -> ona   ex. burlão -> burlona
-Ã O         >   -ÃO,ONAS ; "G=f,N=p"
+Ã O         >   -ÃO,ONAS ; "G=f,N=p"     #                 burlão -> burlonas
 E           >    -E,A    ; "G=f"         # e -> a     ex. ele -> ela
 E           >    -E,AS   ; "G=f,N=p"     # e -> a     ex. ele -> elas
 
@@ -270,6 +272,7 @@ E	>	SSAS	; "G=f,N=p"	# condessas
 flag *g:         ; "CAT=a_nc,G=m,N=s"  #femininos
 Ã O         >   -ÃO,OA  ; "G=f"         # ão -> oa     ex. patrão -> patroa
 Ã O         >  -ÃOS,OAS ; "G=f,N=p"     # ão -> oas
+
 
 #----------------------------------------
 # mente
@@ -327,15 +330,15 @@ L O G I A	>	-OLOGIA,ÓLOGA	; "G=f,N=s"     # astróloga
 L O G I A	>	-OLOGIA,ÓLOGOS	; "G=m,N=p"	# astrólogos
 L O G I A	>	-OLOGIA,ÓLOGAS	; "G=f,N=p"	# astrólogas
 
-A F I A		>       -AFIA,ÁFICO    ; "G=m,N=s"     # etnográfico
-A F I A		>	-AFIA,ÁFICA    ; "G=f,N=s"     # etnográfica
-A F I A		>       -AFIA,ÁFICOS   ; "G=m,N=p"     # etnográficos
-A F I A		>       -AFIA,ÁFICAS   ; "G=f,N=p"     # etnográficas
+A F I A		>       -AFIA,ÁFICO     ; "G=m,N=s"     # etnográfico
+A F I A		>	-AFIA,ÁFICA     ; "G=f,N=s"     # etnográfica
+A F I A		>       -AFIA,ÁFICOS    ; "G=m,N=p"     # etnográficos
+A F I A		>       -AFIA,ÁFICAS    ; "G=f,N=p"     # etnográficas
 
-M A N I A	>	-OMANIA,ÓMANO     ; "G=m,N=s"	# melómano
-M A N I A       >       -OMANIA,ÓMANA     ; "G=m,N=s"   # melómana
-M A N I A       >       -OMANIA,ÓMANOS    ; "G=m,N=s"   # melómanos
-M A N I A       >       -OMANIA,ÓMANAS     ; "G=m,N=s"	# melómanas
+M A N I A	>	-OMANIA,ÓMANO   ; "G=m,N=s"	# melómano
+M A N I A       >       -OMANIA,ÓMANA   ; "G=m,N=s"   	# melómana
+M A N I A       >       -OMANIA,ÓMANOS  ; "G=m,N=s"   	# melómanos
+M A N I A       >       -OMANIA,ÓMANAS  ; "G=m,N=s"	# melómanas
 
 F O B I A	>	-OFOBIA,ÓFOBO	; "G=m,N=s"	# xenófobo
 F O B I A       >       -OFOBIA,ÓFOBA   ; "G=f,N=s"     # xenófoba
@@ -365,30 +368,30 @@ E Í S M O	>	-SMO,STA	; "G=_,N=s"	# politeísta
 E Í S M O 	>	-SMO,STAS	; "G=_,N=p"	# politeístas
 
 flag *r:        ; "CAT=hn"
-L O G I A       >       -OGIA,ÓGICO    ; "G=m,N=s"     # astrólogico
-L O G I A       >       -OGIA,ÓGICA    ; "G=f,N=s"     # astrólogica
-L O G I A       >       -OGIA,ÓGICOS   ; "G=m,N=p"     # astrólogicos
-L O G I A       >       -OGIA,ÓGICAS   ; "G=f,N=p"     # astrólogicas
+L O G I A       >       -OGIA,ÓGICO     ; "G=m,N=s"     # astrólogico
+L O G I A       >       -OGIA,ÓGICA     ; "G=f,N=s"     # astrólogica
+L O G I A       >       -OGIA,ÓGICOS    ; "G=m,N=p"     # astrólogicos
+L O G I A       >       -OGIA,ÓGICAS    ; "G=f,N=p"     # astrólogicas
 
 O G R A F I A	>	-OGRAFIA,ÓGRAFO	 ; "G=m,N=s"	# geógrafo
 O G R A F I A   >       -OGRAFIA,ÓGRAFA  ; "G=f,N=s"    # geógrafa
 O G R A F I A   >       -OGRAFIA,ÓGRAFOS ; "G=m,N=p"    # geógrafo
 O G R A F I A   >       -OGRAFIA,ÓGRAFAS ; "G=f,N=p"    # geógrafas
 
-N O M I A	>	-OMIA,ÓMICO	; "G=m,N=s"	# económico
-N O M I A       >       -OMIA,ÓMICA     ; "G=f,N=s"     # económica
-N O M I A       >       -OMIA,ÓMICOS    ; "G=m,N=p"     # económicos
-N O M I A       >       -OMIA,ÓMICAS    ; "G=f,N=p"     # económicas
+N O M I A	>	-OMIA,ÓMICO	 ; "G=m,N=s"	# económico
+N O M I A       >       -OMIA,ÓMICA      ; "G=f,N=s"    # económica
+N O M I A       >       -OMIA,ÓMICOS     ; "G=m,N=p"    # económicos
+N O M I A       >       -OMIA,ÓMICAS     ; "G=f,N=p"    # económicas
 
-M A N I A       >       -IA,ÍACO     ; "G=m,N=s"        # maníaco  
-M A N I A       >       -IA,ÍACA     ; "G=m,N=s"        # maníaca   
-M A N I A       >       -IA,ÍACOS    ; "G=m,N=s"        # maníacos    
-M A N I A       >       -IA,ÍACAS     ; "G=m,N=s"        # maníacas  
+M A N I A       >       -IA,ÍACO     	 ; "G=m,N=s"    # maníaco  
+M A N I A       >       -IA,ÍACA     	 ; "G=m,N=s"    # maníaca   
+M A N I A       >       -IA,ÍACOS        ; "G=m,N=s"    # maníacos    
+M A N I A       >       -IA,ÍACAS        ; "G=m,N=s"    # maníacas  
 
-C R A C I A	>	-ACIA,ÁTICO	; "G=m,N=s"	 # democrático
-C R A C I A     >       -ACIA,ÁTICA     ; "G=f,N=s"      # democrática
-C R A C I A     >       -ACIA,ÁTICOS     ; "G=m,N=p"     # democráticos
-C R A C I A     >       -ACIA,ÁTICAS     ; "G=f,N=p"     # democráticas
+C R A C I A	>	-ACIA,ÁTICO 	 ; "G=m,N=s"	# democrático
+C R A C I A     >       -ACIA,ÁTICA      ; "G=f,N=s"    # democrática
+C R A C I A     >       -ACIA,ÁTICOS     ; "G=m,N=p"    # democráticos
+C R A C I A     >       -ACIA,ÁTICAS     ; "G=f,N=p"    # democráticas
 
 C U L T U R A	>	-ICULTURA,ÍCOLA	 ; "G=_,N=s"	# piscícola
 C U L T U R A   >       -ICULTURA,ÍCOLAS ; "G=_,N=p"    # piscícolas
