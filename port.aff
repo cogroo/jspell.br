@@ -29,8 +29,8 @@
 #
 #    available modes:
 #        -T lat               (latin1)
-#        -T tex
-#        -T pre               (  'a 'e ,c ...)
+#     #   -T tex
+#     #   -T pre               (  'a 'e ,c ...)
 #
 #    any comments, important new words, and errors should be mailed to
 #                 J.Joao Almeida (jj@di.uminho.pt)
@@ -50,118 +50,119 @@ allaffixes on
 defstringtype "lat" "nroff" ".list"
 
 boundarychars \-                       #noispell
+boundarychars \'                       #noispell
 wordchars        a            A
-stringchar        á            Á
-stringchar        à            À
-stringchar        ã            Ã
-stringchar        â            Â
-stringchar        ä            Ä
+wordchars        á            Á
+wordchars        à            À
+wordchars        ã            Ã
+wordchars        â            Â
+wordchars        ä            Ä
 wordchars        [bc]        [BC]
-stringchar        ç            Ç
+wordchars        ç            Ç
 wordchars        [de]        [DE]
-stringchar        é            É
-stringchar        è            È
-stringchar        ê            Ê
-stringchar        ë            Ë
+wordchars        é            É
+wordchars        è            È
+wordchars        ê            Ê
+wordchars        ë            Ë
 wordchars        [f-i]        [F-I]
-stringchar        í            Í
-stringchar        ì            Ì
+wordchars        í            Í
+wordchars        ì            Ì
 wordchars        [j-n]        [J-N]
-stringchar        ñ            Ñ
-stringchar        o            O
-stringchar        ó            Ó
-stringchar        ò            Ò
-stringchar        õ            Õ
-stringchar        ô            Ô
-stringchar        ö            Ö
+wordchars        ñ            Ñ
+wordchars        o            O
+wordchars        ó            Ó
+wordchars        ò            Ò
+wordchars        õ            Õ
+wordchars        ô            Ô
+wordchars        ö            Ö
 wordchars        [p-u]        [P-U]
-stringchar        ú            Ú
-stringchar        ù            Ù
-stringchar        ü            Ü
+wordchars        ú            Ú
+wordchars        ù            Ù
+wordchars        ü            Ü
 wordchars        [v-z]        [V-Z]
 
 #
 #
-altstringtype "pre" "nroff" ".pre"
+#altstringtype "pre" "nroff" ".pre"
 
-altstringchar \'a á
-altstringchar \`a à
-altstringchar \~a ã
-altstringchar \^a â
-altstringchar \,c ç
-altstringchar \'e é
-altstringchar \`e è
-altstringchar \^e ê
-altstringchar \'i í
-altstringchar \`i ì
-altstringchar \'o ó
-altstringchar \`o ò
-altstringchar \~o õ
-altstringchar \^o ô
-altstringchar \'u ú
-altstringchar \`u ù
-altstringchar \~n ñ 
+#altstringchar \'a á
+#altstringchar \`a à
+#altstringchar \~a ã
+#altstringchar \^a â
+#altstringchar \,c ç
+#altstringchar \'e é
+#altstringchar \`e è
+#altstringchar \^e ê
+#altstringchar \'i í
+#altstringchar \`i ì
+#altstringchar \'o ó
+#altstringchar \`o ò
+#altstringchar \~o õ
+#altstringchar \^o ô
+#altstringchar \'u ú
+#altstringchar \`u ù
+#altstringchar \~n ñ 
 #altstringchar \^u û
 
-altstringchar \'A Á
-altstringchar \`A À
-altstringchar \~A Ã
-altstringchar \^A Â
-altstringchar \,C Ç
-altstringchar \'E É
-altstringchar \`E È
-altstringchar \^E Ê
-altstringchar \'I Í
-altstringchar \`I Ì
-altstringchar \'O Ó
-altstringchar \`O Ò
-altstringchar \~O Õ
-altstringchar \^O Ô
-altstringchar \'U Ú
-altstringchar \`U Ù
+#altstringchar \'A Á
+#altstringchar \`A À
+#altstringchar \~A Ã
+#altstringchar \^A Â
+#altstringchar \,C Ç
+#altstringchar \'E É
+#altstringchar \`E È
+#altstringchar \^E Ê
+#altstringchar \'I Í
+#altstringchar \`I Ì
+#altstringchar \'O Ó
+#altstringchar \`O Ò
+#altstringchar \~O Õ
+#altstringchar \^O Ô
+#altstringchar \'U Ú
+#altstringchar \`U Ù
 #altstringchar \^U Û
-altstringchar \~N Ñ 
+#altstringchar \~N Ñ 
 
 #
 # Plain TeX
 #
-altstringtype "tex" "nroff" ".tex"
+#altstringtype "tex" "nroff" ".tex"
 
-altstringchar \\\'a á
-altstringchar \\\`a à
-altstringchar \\\~a ã
-altstringchar \\\^a â
-altstringchar \\c{c} ç
-altstringchar \\\'e é
-altstringchar \\\`e è
-altstringchar \\\^e ê
-altstringchar \\\'{\\i} í
-altstringchar \\\'o ó
-altstringchar \\\`o ò
-altstringchar \\\~o õ
-altstringchar \\\^o ô
-altstringchar \\\'u ú
-altstringchar \\\`u ù
+#altstringchar \\\'a á
+#altstringchar \\\`a à
+#altstringchar \\\~a ã
+#altstringchar \\\^a â
+#altstringchar \\c{c} ç
+#altstringchar \\\'e é
+#altstringchar \\\`e è
+#altstringchar \\\^e ê
+#altstringchar \\\'{\\i} í
+#altstringchar \\\'o ó
+#altstringchar \\\`o ò
+#altstringchar \\\~o õ
+#altstringchar \\\^o ô
+#altstringchar \\\'u ú
+#altstringchar \\\`u ù
 #altstringchar \\\^u û
-altstringchar \\\~n ñ 
+#altstringchar \\\~n ñ 
 
-altstringchar \\\'A Á
-altstringchar \\\`A À
-altstringchar \\\~A Ã
-altstringchar \\\^A Â
-altstringchar \\c{C} Ç
-altstringchar \\\'E É
-altstringchar \\\`E È
-altstringchar \\\^E Ê
-altstringchar \\\'I Í
-altstringchar \\\'O Ó
-altstringchar \\\`O Ò
-altstringchar \\\~O Õ
-altstringchar \\\^O Ô
-altstringchar \\\'U Ú
-altstringchar \\\`U Ù
+#altstringchar \\\'A Á
+#altstringchar \\\`A À
+#altstringchar \\\~A Ã
+#altstringchar \\\^A Â
+#altstringchar \\c{C} Ç
+#altstringchar \\\'E É
+#altstringchar \\\`E È
+#altstringchar \\\^E Ê
+#altstringchar \\\'I Í
+#altstringchar \\\'O Ó
+#altstringchar \\\`O Ò
+#altstringchar \\\~O Õ
+#altstringchar \\\^O Ô
+#altstringchar \\\'U Ú
+#altstringchar \\\`U Ù
 #altstringchar \\\^U Û
-altstringchar \\\~N Ñ 
+#altstringchar \\\~N Ñ 
 
 
 prefixes

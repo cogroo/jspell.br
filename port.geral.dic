@@ -5114,6 +5114,7 @@ bordadura/#nf/p/
 bordalense/#hn/p/
 bordalês/#hm/fp/
 borda/#nf//
+bordão/#hm/p/
 bordar/#vt/XYPLD/
 bordeleiro/#a//
 bordel/#nm/p/
@@ -6001,7 +6002,7 @@ cananeu/#hn/p/
 cana/#nf/p/
 canapé/#nm/p/
 canarinho/#hn/fp/
-canário/#nm/f/
+canário/#nm/fp/
 cana-sacarina/#nf//
 canastrada/#nf//
 canastrado/#a/f/
@@ -6715,16 +6716,16 @@ catolicizar/#vt/XYPLn/
 católico/#hm/fp/
 catolizar/#vt/XYPLc/
 catorze/#ca//
-,/CAT=punct1// #noispell
-;/CAT=punct1// #noispell
-:/CAT=punct1// #noispell
-"/CAT=punct2// #noispell
-(/CAT=punct2//  #noispell
-)/CAT=punct2// #noispell
-!/CAT=punct// #noispell
-?/CAT=punct// #noispell
-./CAT=punct// #noispell
-.../CAT=punct// #noispell
+,/CAT=punct1a// #noispell
+;/CAT=punct1b// #noispell
+:/CAT=punct1c// #noispell
+"/CAT=punct2d// #noispell
+(/CAT=punct2e//  #noispell
+)/CAT=punct2f// #noispell
+!/CAT=punctg// #noispell
+?/CAT=puncth// #noispell
+./CAT=puncti// #noispell
+.../CAT=punctj// #noispell
 catrafilar/#vt/XYPL/
 catraia/#nf//
 catraio/#nm/f/
@@ -8391,7 +8392,7 @@ concessório/#a//
 concessor/#nm//
 conchada/#nf//
 conchado/#a/f/
-concha/#nf//
+concha/#nf/p/
 concharia/#nf/p/
 conchegar/#vt/XYPL/
 conchegativo/#a//
@@ -9353,7 +9354,7 @@ corpanzudo/#a//
 corpete/#nm/p/
 corpo/#nm/ph/
 corporação/#nf/p/
-corpora/#nm//
+corpora/#nm,N=p//
 corporal/#an/pmd/
 corporalidade/#nf/p/
 corporalizar/#vt/XYPLc/
@@ -9967,7 +9968,7 @@ curtidoiro/#nm//
 curtidouro/#nm//
 curtidura/#nf//
 curtir/#vt/XYPLMD/
-curto/#a/pfms/
+curto/#a/pfmsh/
 curto-circuito/#nm//
 curtume/#nm/p/
 curva/#nf//
@@ -9982,7 +9983,7 @@ cuspideira/#hf//
 cuspidela/#nf/p/
 cuspidouro/#nm//
 cuspidura/#nf//
-cuspir/#vn/XYPLD/
+cuspir/#vn,I=3/YPLD/
 cuspo/#nm//
 custa/#nf//
 custar/#vn/XYPL/
@@ -13004,7 +13005,7 @@ enojadiço/#a//
 enojar/#vt/XYPLMD/
 enol/#nm//
 enologia/#nf/prq/
-enorme/#an/pmd/
+enorme/#an/pmds/
 enormidade/#nf/p/
 enovelar/#vt/XYPLM/
 enquadrar/#vn/XYPLMR/
@@ -14783,7 +14784,7 @@ facciosismo/#nm/p/
 faccioso/#a/id/
 face/#nf/p/
 faceta/#nf/p/
-facetar///
+facetar/#vt/XY/
 fac/$faculdade$#nf$ABR=1//
 fachada/#nf/p/
 facho/#nm/p/
@@ -16039,6 +16040,7 @@ fumegar/#vi/XYLn/
 fumeiro/#nm/p/
 fumo/#nm/p/
 função/#nf/p/
+functor/#nm/p/
 funchalense/#hn/p/
 funcional/#an/pmid/
 funcionalismo/#nm/p/
@@ -22769,7 +22771,7 @@ montão/#nm/p/
 montaria/#nf/p/
 montar/#vn/XYPLSDnv/
 montenegrino/#hm/fp/
-monte/#nm/p/
+monte/#nm/ph/
 montês/#a/fp/
 montesinho/#a//
 montesino/#a//
@@ -23372,7 +23374,7 @@ nené/#nm/p/
 nenhum/CAT=pind,G=m,N=s/fp/
 nenhures/#av//
 nê/#nm//
-nenúfar/#nm//
+nenúfar/#nm/p/
 neocatolicismo/#nm/p/
 neocatólico/#hm//
 neoclassicismo/#nm/p/
@@ -24314,7 +24316,7 @@ ortose///
 orvalhada/#nf//
 orvalhado/#a/p/
 orvalhar/#vt,I=4/PL/
-orvalho/#nm//
+orvalho/#nm/p/
 orvalhoso/#a//
 oscilador/#hm//
 oscilante/#an/p/
@@ -25560,7 +25562,7 @@ perdido/#a/pfh/
 perdigão/#nm//
 perdigotar/#vi/XYL/
 perdigoto/#nm//
-perdigueiro/#hm//
+perdigueiro/#hm/p/
 perdizada/#nf//
 perdiz/#nf/p/
 perdoador/#hm//
@@ -27569,7 +27571,6 @@ pumba/#i//
 pum/#i//
 punção///
 punctiforme/#an/p/
-punctual///
 punctura/#nf//
 pungente/#an//
 pungir/#vn/XYPLM/
@@ -29523,7 +29524,7 @@ reversão/#nf//
 reversibilidade/#nf/p/
 reversível/#an/d/
 reversivo/#a//
-reverso/#hm//
+reverso/#hm/fp/
 reverter/#vi/XYLv/
 rever/#vn,I=3/PLD/
 reveses///

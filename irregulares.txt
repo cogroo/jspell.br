@@ -207,7 +207,7 @@ oíbe   2s i
 oíba   3s i
 oíbam  3p i
 
-#vX:u acudir, bulir/RL, entupir, subir, sumir, consumir/PL  // 4.1 u?ir
+#vX:u acudir, bulir/RL, cuspir, entupir, subir, sumir, consumir/PL  // 4.1 u?ir
 oXes     2s p
 oXe      3s p
 oXem     3p p
