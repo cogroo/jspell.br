@@ -54,13 +54,14 @@ $P/$D.hash: $P/$D.dic $P/$D.aff $P/README
 
 $P/$D.aff $P/$D.dic: ../port.dic ../port.aff 
 	mkdir -p  $P
-	jsp2isp.pl ../port.aff > /tmp/$D.aff 
-	jsp2isp.pl ../port.dic | grep -v '[#-]'  > /tmp/$D.dic
+	perl jsp2isp.pl ../port.aff > /tmp/$D.aff 
+	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > /tmp/$D.dic
 	cp flagsRenDel /tmp/
 	cp ver ispell.port.spec $P
 #	cd /tmp; perl flagsRenDel $D; munchlist -l _$D.aff _$D.dic > $D.dic ;
-	cd /tmp; ${FR} ; munchlist -l _$D.aff _$D.dic > $D.dic ;
-	cd $P; mv /tmp/$D.dic . ; mv /tmp/_$D.aff $D.aff
+	cd /tmp; ${FR} ;
+	munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic
+	cd $P; mv /tmp/$D.dic . ; mv /tmp/_$D.aff $D.aff ; 
 
 ../port.dic:
 	cd ..; make port.dic
