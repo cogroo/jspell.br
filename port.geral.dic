@@ -3375,7 +3375,7 @@ atempado/#a/fpm/
 atempar/#vn/XYPLc/
 atemporal/#an/p/
 atenção/#nf/p/
-atencioso/#a/fpS/
+atencioso/#a/fpSm/
 atendar/#vi/XYL/
 atender/#vn/XYPLDMv/
 ateniense/#hn/p/
@@ -5804,9 +5804,9 @@ calda/#nf//
 caldar/#vt/XYPL/
 caldas/#nf,N=p//
 caldear/#vt/ZYPLcM/
-caldeirada/#nf//
-caldeira/#nf//
-caldeirão/#nm//
+caldeirada/#nf/p/
+caldeira/#nf/p/
+caldeirão/#nm/p/
 caldeiraria/#nf/p/
 caldeirar/#vt/XYPL/
 caldeireiro/#nm//
@@ -14034,12 +14034,12 @@ estagiar/#vi/XYL/
 estágio/#nm/p/
 estagnante/#an/p/
 estagnar/#vt/XYPLcMDn/
-estalactite/#nf//
+estalactite/#nf/p/
 estalactítico/#a//
 estalada/#nf//
 estaladiço/#a/p/
 estalagem/#nf/p/
-estalagmite/#nf//
+estalagmite/#nf/p/
 estalajadeiro/#nm//
 estalante/#an/p/
 estalar/#vi/XYLn/
@@ -14538,7 +14538,7 @@ exercitar/#vt/XYPLcDn/
 exército/#nm/p/
 ex/$exemplo$#nm$ABR=1//
 exibicionismo/#nm/p/
-exibicionista/#nn//
+exibicionista/#nn/p/
 exibir/#vt/XYPLcDR/
 exibitivo/#a//
 exibitório/#a//
@@ -15468,7 +15468,8 @@ físsil/#an//
 fissuração/#nf//
 fissura/#nf/p/
 fístula///
-fita/#nf//
+fita/#nf/p/
+fita-cola/#nf//
 fitar/#vt/XYPL/
 fito/#hm//
 fitoplâncton/#nm//
@@ -17541,7 +17542,7 @@ horrível/#an/pmd/
 horrorífico/#a//
 horrorizar/#vt/XYPL/
 horror/#nm/p/
-horroroso/#a//
+horroroso/#a/pf/
 hortaliça/#nf/p/
 hortaliceira/#nf//
 horta/#nf/p/
@@ -25380,6 +25381,7 @@ peitada/#nf/f/
 peitilho/#nm//
 peito/#nm/p/
 peitoral/#hm2/p/
+peitoril/#nm/p/
 peitudo/#a//
 peixada/#nf//
 peixão/#nm//
@@ -25907,6 +25909,7 @@ petrologia/#nf//
 petroquímica///
 petulância/#nf/p/
 petulante/#an/p/
+petúnia/#nf/p/
 peugada/#nf/p/
 peúga/#nf/p/
 peva/#nf//
@@ -26021,7 +26024,7 @@ pingarelho/#nm//
 pingar/#vn/XYPL/
 pingente//p/
 pingo-de-mel/#nm//
-pingo/#nm//
+pingo/#nm/p/
 pingoso/#a/p/
 pingue-pongue/#nm//
 pinguim/#nm/p/
@@ -26279,7 +26282,7 @@ pobrete/#hm//
 pobreza/#nf//
 poça/#nf/p/
 poçada/#nf//
-poção/#nf//
+poção/#nf/p/
 poceira/#nf//
 poceirão/#nm//
 poceiro/#nm/f/
@@ -26487,7 +26490,7 @@ pontaria/#nf/p/
 pontear/#vt/ZYPL/
 ponteiro/#nm/p/
 ponte/#nf/p/
-pontiagudo/#a//
+pontiagudo/#a/p/
 ponticidade/#nf/p/
 pontícula/#nf//
 pontículo/#nm/f/
@@ -28205,7 +28208,7 @@ raptor/#hm/fp/
 raqueta/#nf/p/
 raquete/#nf/p/
 raquídio///
-raquítico/#a//
+raquítico/#a/p/
 raquitismo/#nm/p/
 rarear/#vn/ZYPLM/
 rarefacção/#nf//
@@ -29965,7 +29968,7 @@ ruindade/#nf/p/
 ruinoso/#a/mpf/
 ruir/#vi/KL/
 ruivacas///
-ruivo/#hm/f/
+ruivo/#hm/fp/
 rumar/#vt/XYPLc/
 ruminante/#an/p/
 ruminantes/#nm,N=p//
@@ -33452,7 +33455,7 @@ troncudo/#a/fp/
 trono/#nm/p/
 tropa/#nf/p/
 tropa/#nm/p/
-tropeção/#nm//
+tropeção/#nm/p/
 tropeçar/#vi/XYLM/
 tropecilho/#nm//
 tropeçudo/#a//
@@ -33540,7 +33543,7 @@ túmulo/#nm/p/
 tumulto/#nm/p/
 tumultuante/#an/p/
 tumultuar/#vn/XYPLDn/
-tumultuoso/#a/f/
+tumultuoso/#a/fp/
 tuna/#nf/p/
 tundra/#nf//
 túneis/#nm,N=p//
@@ -33662,7 +33665,7 @@ unicelular/#an/p/
 unicidade/#nf/p/
 único/#a/fp/
 unicolor/#an//
-unicórnio/#nm//
+unicórnio/#nm/p/
 unidade/#nf/up/
 unidireccional/#an/p/
 unificador/#a//

@@ -144,3 +144,11 @@ install-man: jspell.pt.1
 
 jspell.pt.1: jspell.pt.pod
 	pod2man --center="jSpell Documentation" jspell.pt.pod jspell.pt.1
+
+
+################
+jspell-distro:
+	rm -f jspell-dist/src/*.dic
+	rm -f jspell-dist/src/*.aff
+	cp port.aff $(PTDIC) jspell-dist/src/
+	(cd jspell-dist && ./autogen.sh && make distcheck && mv jspell.pt-*.tar.gz ..)
