@@ -1324,10 +1324,10 @@ E Z           >    -EZ,Ê\-LOS  ; "G=m,AN=p"          #noispell
 E Z           >    -EZ,Ê\-LAS  ; "G=f,AN=p"          #noispell
 
 # inf. pess, futuro e condicional pronominais
-A R     >  -AR,Á\-LO        ; "T=ip,AG=m,AN=s"     #noispell
-A R     >  -AR,Á\-LA        ; "T=ip,AG=f,AN=s"     #noispell
-A R     >  -AR,Á\-LOS       ; "T=ip,AG=m,AN=p"     #noispell
-A R     >  -AR,Á\-LAS       ; "T=ip,AG=f,AN=p"     #noispell
+A R     >  -AR,Á\-LO        ; "AG=m,AN=s"     #noispell
+A R     >  -AR,Á\-LA        ; "AG=f,AN=s"     #noispell
+A R     >  -AR,Á\-LOS       ; "AG=m,AN=p"     #noispell
+A R     >  -AR,Á\-LAS       ; "AG=f,AN=p"     #noispell
 A R     >  -AR,Á\-LO\-EI    ; "P=1,N=s,T=f"        #noispell
 A R     >  -AR,Á\-LO\-ÁS    ; "P=2,N=s,T=f"        #noispell
 A R     >  -AR,Á\-LO\-Á     ; "P=3,N=s,T=f"        #noispell
@@ -1340,10 +1340,10 @@ A R     >  -AR,Á\-LO\-ÍAMOS ; "P=1,N=p,T=c"        #noispell
 A R     >  -AR,Á\-LO\-ÍEIS  ; "P=2,N=p,T=c"        #noispell
 A R     >  -AR,Á\-LO\-IAM   ; "P=3,N=p,T=c"        #noispell
 
-E R     >  -ER,Ê\-LO        ; "T=ip,G=m,N=s"          #noispell
-E R     >  -ER,Ê\-LA        ; "T=ip,G=f,N=s"          #noispell
-E R     >  -ER,Ê\-LOS       ; "T=ip,G=m,N=p"          #noispell
-E R     >  -ER,Ê\-LAS       ; "T=ip,G=f,N=p"          #noispell
+E R     >  -ER,Ê\-LO        ; "G=m,N=s"          #noispell
+E R     >  -ER,Ê\-LA        ; "G=f,N=s"          #noispell
+E R     >  -ER,Ê\-LOS       ; "G=m,N=p"          #noispell
+E R     >  -ER,Ê\-LAS       ; "G=f,N=p"          #noispell
 E R     >  -ER,Ê\-LO\-EI    ; "P=1,N=s,T=f"          #noispell
 E R     >  -ER,Ê\-LO\-ÁS    ; "P=2,N=s,T=f"          #noispell
 E R     >  -ER,Ê\-LO\-Á     ; "P=3,N=s,T=f"          #noispell
@@ -1356,10 +1356,10 @@ E R     >  -ER,Ê\-LO\-ÍAMOS ; "P=1,N=p,T=c"        #noispell
 E R     >  -ER,Ê\-LO\-ÍEIS  ; "P=2,N=p,T=c"        #noispell
 E R     >  -ER,Ê\-LO\-IAM   ; "P=3,N=p,T=c"        #noispell
 
-I R     >  -R,\-LO        ; "T=ip,G=m,N=s"         #noispell
-I R     >  -R,\-LA        ; "T=ip,G=f,N=s"         #noispell
-I R     >  -R,\-LOS       ; "T=ip,G=m,N=p"         #noispell
-I R     >  -R,\-LAS       ; "T=ip,G=f,N=p"         #noispell
+I R     >  -R,\-LO        ; "G=m,N=s"         #noispell
+I R     >  -R,\-LA        ; "G=f,N=s"         #noispell
+I R     >  -R,\-LOS       ; "G=m,N=p"         #noispell
+I R     >  -R,\-LAS       ; "G=f,N=p"         #noispell
 I R     >  -R,\-LO\-EI    ; "P=1,N=s,T=f"          #noispell
 I R     >  -R,\-LO\-ÁS    ; "P=2,N=s,T=f"          #noispell
 I R     >  -R,\-LO\-Á     ; "P=3,N=s,T=f"          #noispell
@@ -1372,10 +1372,10 @@ I R     >  -R,\-LO\-ÍAMOS ; "P=1,N=p,T=c"          #noispell
 I R     >  -R,\-LO\-ÍEIS  ; "P=2,N=p,T=c"          #noispell
 I R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 
-O R     >  -R,\-LO        ; "T=ip,G=m,N=s"         #noispell
-O R     >  -R,\-LA        ; "T=ip,G=f,N=s"         #noispell
-O R     >  -R,\-LOS       ; "T=ip,G=m,N=p"         #noispell
-O R     >  -R,\-LAS       ; "T=ip,G=f,N=p"         #noispell
+O R     >  -R,\-LO        ; "G=m,N=s"         #noispell
+O R     >  -R,\-LA        ; "G=f,N=s"         #noispell
+O R     >  -R,\-LOS       ; "G=m,N=p"         #noispell
+O R     >  -R,\-LAS       ; "G=f,N=p"         #noispell
 O R     >  -R,\-LO\-EI    ; "P=1,N=s,T=f"          #noispell
 O R     >  -R,\-LO\-ÁS    ; "P=2,N=s,T=f"          #noispell
 O R     >  -R,\-LO\-Á     ; "P=3,N=s,T=f"          #noispell

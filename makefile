@@ -40,6 +40,10 @@ port.irr: aux.all-irr.dic
 ispell: port.dic port.aff
 	cd ISPELL; make
 
+ispell-install: port.dic port.aff
+	cd ISPELL; make install
+
+
 jspell: port.dic port.aff
 	cd JSPELL; make
 
