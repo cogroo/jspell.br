@@ -1,6 +1,4 @@
 #---------------------------------------------------------------------
-# make install
-
 # make jspell
 # make install-jspell
 # make jspell.tgz
@@ -33,15 +31,6 @@ rpm:
 	mv jspell.port.tgz /home/jj/SOURCES/
 	rpm -ba jspell.port.spec
 
-install :  port.hash port.irr
-	mkdir -p ${LIB}/jspell
-	mv port.hash ${LIB}/jspell/
-	mv port.irr  ${LIB}/jspell/
-
-installj :  port.hash port.irr
-	mv port.hash  $(JSPELLLIB)/
-	mv port.irr  $(JSPELLLIB)/
-
 port.irr: aux.all-irr.dic
 	./irr2perl > port.irr
 
@@ -53,6 +42,9 @@ jspell: port.dic port.aff
 
 install-jspell: port.dic port.aff
 	cd JSPELL; make install
+
+jspell-install: port.dic port.aff
+        cd JSPELL; make install
 
 jspell.port.tgz: $(BASE)
 	rm -rf jspell.port-`./ver`
