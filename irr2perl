@@ -1,7 +1,8 @@
 #!/usr/bin/perl
 
 undef $/;
-open(I,shift) or die "cant open: $!\n";
+my $f = shift; 
+open(I,$f) or die "cant open: $!\n";
 
 $_=<I>;
 close I;

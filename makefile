@@ -54,12 +54,12 @@ what:
 
 port.dic: $(PTDIC) aux.all-irr.dic 
 	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
-	cat $(PTDIC) >> port.dic 
+	cat $(PTDIC) aux.all-irr.dic >> port.dic 
 
 
 
 port.irr: aux.all-irr.dic
-	./irr2perl > port.irr
+	./irr2perl aux.all-irr.dic > port.irr
 
 aux.verb.dic: DIC/port.geral.dic
 	egrep "CAT=v|\#v" DIC/port.geral.dic > aux.verb.dic
