@@ -419,6 +419,7 @@ Boximanes/CAT=np,G=m,N=p,SEM=po/
 Boyle/#np1/
 Brabante/#np/
 Bracara/#t/
+Bradenburgo/#t/
 Bragança/#tc/
 Braga/#tc/
 Brahms/#np1/
@@ -457,6 +458,7 @@ Buda/#npm/
 Budapeste/#tc/
 Buenos/#tc/
 Bulgária/#tpf/
+Burgenland/#t/
 Burgos/#t/
 Bush/#np1/
 Byron/#np1/
@@ -472,6 +474,7 @@ Caetano/#npm/
 Caim/#npm/
 Caio/#npm/
 Cairo/#tc/
+Calábria/#t/
 Calcedónia/#t/
 Calcutá/#t/
 Caldelas/#t/
@@ -508,6 +511,8 @@ Caraíbas/#t/
 Carcavelos/#t/
 Cardan/#np1/
 Cardoso/#np/
+Carélia/#t/
+Caríntia/#t/
 Carla/#npf/
 Carl/#np1/
 Carlos/#npm/
@@ -549,6 +554,7 @@ Cáucaso/#t/
 Cavaco/#np/ti/
 Cávado/#tr/
 Caxias/#t/
+Cazaquistão/#npm/
 Ceará/#t/
 Cecília/#npf/
 Cedofeita/#t/
@@ -837,6 +843,7 @@ Estela/#npf/
 Estêvão/#npm/
 Esteves/#npm/
 Estio/CAT=np,G=m/
+Estíria/#t/
 Estocolmo/#tc/
 Estónia/#tpf/
 Estoril/#t/
@@ -957,6 +964,7 @@ Freitas/#np/
 Freixo/#t/
 Freud/#np1/
 Friburgo/CAT=np/
+Frísia/#t/
 Fritz/#np1/
 Friuli/#t/
 Fulton/#np1/
@@ -988,11 +996,9 @@ Gaulle/#np1/
 Gaza/#t/
 Gedeão/#np/
 Geiger/CAT=np,G=m/
-Genebra/CAT=np,SEM=tc/
+Genebra/#tc/
 Génesis/CAT=np,G=m/
 Génova/#tc/
-Geografia/CAT=np/
-Geologia/CAT=np/
 George/#np1/
 Geórgia/#tpf/
 Georgina/#npf/
@@ -1129,6 +1135,7 @@ Hernâni/#npm/
 Herodes/#npm/
 Heródoto/CAT=np/
 Herzegovina/#tpf/
+Hessen/#t/
 Hess/#np1/
 Hilário/#npm/
 Hilbert/#np1/
@@ -1311,10 +1318,8 @@ Kahn/#np1/
 Kali/#np1/
 Kant/#np1/
 Karl/#np1/
-Kasan/#np1/
 Kazan/#np1/
 Kazan/#tc/
-Kazaquestão/CAT=np/
 Keaton/#np1/
 Keil/#np1/
 Keller/#np1/
@@ -1357,6 +1362,7 @@ Lautrec/#np1/
 Lavoisier/#np1/
 Lawrence/#np1/
 Lázaro/#npm/
+Lázio/#t/
 Leal/#np/
 Leandro/CAT=np/
 Leça/#t/
@@ -1397,6 +1403,7 @@ Ljubljana/#tc/
 Lobato/#np/
 Lobo/#np/
 Loiola/CAT=np/
+Lombardia/#t/
 Lombardi/#np1/
 Londres/#tc/
 Lopes/#np/
@@ -1489,6 +1496,7 @@ Mangualde/#t/
 Manica/CAT=np/
 Manila/#tc/
 Manteigas/#t/
+Mântua/#tc/
 Manuela/#npf/
 Manuel/#npm/
 Maomé/#npm/
@@ -1704,6 +1712,7 @@ Neptuno/CAT=np,G=m,SEM=pl/
 Néri/#npm/
 Nero/#npm/
 Nestor/#npm/
+Neva/#tc/
 Nevogilde/#t/
 Newcastle/#t/
 Newman/#np1/
@@ -1905,6 +1914,7 @@ Piauí/#t/
 Piçarra/#np/
 Picasso/#npm/
 Piemonte/CAT=np/
+Piemonte/#t/
 Pierre/#np1/
 Pilar/CAT=np/
 Pilatos/#npm/
@@ -1935,6 +1945,7 @@ Polinésia/#t/
 Polónia/#tpf/
 Polo//#np///Marco Polo
 Pombeiro/CAT=np/
+Pomerânia/#t/
 Pompeu/#npm/
 Pontevedra/#tc/
 Pontífice/CAT=np/
@@ -1966,6 +1977,7 @@ Pskov/#tc/
 Ptolomeu/#npm/
 Públia/CAT=np/
 Públio/CAT=np/
+Puglia/#t/
 Pulitzer/#np1/
 Quanza/CAT=np/
 Quaternário/CAT=np/
@@ -2129,6 +2141,7 @@ Sara/#npf/
 Sardenha/#t/
 Sardoal/#t/
 Sargão/CAT=np/
+Sarre/#t/
 Sartre/#np1/
 Satã/CAT=np,G=m/
 Satanás/CAT=np,G=m/
@@ -2139,11 +2152,13 @@ Satureja/CAT=np/
 Saturno/CAT=np,G=m,SEM=pl/
 Saudita/#tpf/
 Savóia/#t/
+Saxónia-Anhalt/#t/
 Saxónia/#t/
 Scala/CAT=np/
 Scarlatti/#np1/
 Schelling/#np1/
 Schiller/#np1/
+Schlwesig-Holstein/#t/
 Schopenhauer/#np1/
 Schubert/#np1/
 Schumann/#np1/
@@ -2191,6 +2206,7 @@ Sidney/#tc/
 Sidónio/#npm/
 Sídon/#tc/
 Siegfried/#np1/
+Silésia/#t/
 Silva/#np/
 Silveira/#np/
 Silvério/#npm/
@@ -2387,6 +2403,7 @@ Tudor/CAT=np/
 Tui/#t/
 Tunes/#t/
 Tunísia/#tpf/
+Turcomenistão/#npm/
 Turim/#tc/
 Turíngia/CAT=np/
 Túrios/CAT=np/
@@ -2399,12 +2416,14 @@ Uganda/#tp/
 Uíge/#t/
 Ulisses/#npm/
 Ulster/#npf/
+Umbria/#t/
 UNESCO/CAT=np,SEM=s/
 Universo/CAT=np,G=m/
 Urais/#t/
 Úrano/CAT=np,G=m,SEM=pl/
 Urbión/#t/
 Uruguai/#tp/
+Uzbequistão/#npm/
 Valdemar/#npm/
 Valdevez/#t/
 Valença/#np/
@@ -2415,6 +2434,7 @@ Valentim/#np/
 Valentino/#npm/
 Valhadolid/#t/
 Valongo/#tc/
+Valónia/#t/
 Valpaços/#t/
 Van/#np1/
 Varsóvia/#tc/
@@ -2497,6 +2517,7 @@ Volga/#tr/
 Voltaire/#np1/
 Volta/#tr/
 Von/#np1/
+Vorarlberg/#t/
 Vouga/#tr/
 Vouzela/#t/
 Vulcano/CAT=np/
