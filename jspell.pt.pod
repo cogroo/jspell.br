@@ -1,0 +1,235 @@
+=head1 NAME
+
+jspell.pt - formato do dicionário Jspell para português
+
+=head1 DESCRIPTION
+
+=head1 Abreviaturas
+
+  #a	/CAT=adj,N=s,G=m// na realidade N=?? G=??
+  #af	/CAT=adj,N=s,G=f//
+  #an	/CAT=adj,N=s,G=_//
+  #av	/CAT=adv//
+  #avl	/CAT=adv,SUBCAT=lugar//
+  #avn	/CAT=adv,SUBCAT=neg//
+  #avt	/CAT=adv,SUBCAT=tempo//
+  #ca	/CAT=card,N=p//
+  #em	/CAT=np,SEM=mes,G=m,N=s/
+  #hf2	/CAT=a_nc,G=2,N=s// Se for nc é fem. se for adj. é neutro
+  #hf	/CAT=a_nc,G=f,N=s//
+  #hm2	/CAT=a_nc,G=2,N=s// Se for nc é masc. se for adj. é neutro
+  #hm	/CAT=a_nc,G=m,N=s//
+  #hn2	/CAT=a_nc,N=_,G=_//
+  #hn	/CAT=a_nc,N=s,G=_//
+  #i	/CAT=in//
+  #la	/LA=1
+  #mit	/CAT=np,SEM=mitol
+  #n	/CAT=nc//
+  #nf	/CAT=nc,G=f,N=s//
+  #nm	/CAT=nc,G=m,N=s//
+  #nn	/CAT=nc,G=_,N=s//
+  #np1	/CAT=np,SEM=p1
+  #np	/CAT=np,SEM=p
+  #npf	/CAT=np,G=f,SEM=p
+  #npm	/CAT=np,G=m,SEM=p
+  #o	/CAT=nord,G=m,N=s//
+  #t	/CAT=np,SEM=ter,G=m,N=s
+  #tc	/CAT=np,SEM=cid,G=m,N=s
+  #tcf	/CAT=np,SEM=cid,G=f,N=s
+  #tf	/CAT=np,SEM=ter,G=f,N=s
+  #tfp	/CAT=np,SEM=ter,G=f,N=p
+  #tm	/CAT=np,SEM=mar
+  #tmp	/CAT=np,SEM=ter,G=m,N=p
+  #tms	/CAT=np,SEM=ter,G=m,N=s
+  #tn	/CAT=np,SEM=ter,G=n,N=s
+  #tp	/CAT=np,SEM=country,G=m,N=s
+  #tpf	/CAT=np,SEM=country,G=f,N=s
+  #tr	/CAT=np,SEM=rio
+  #tsf	/CAT=np,G=f,N=s,SEM=sigla//
+  #tsfp	/CAT=np,G=f,N=p,SEM=sigla//
+  #tsm	/CAT=np,G=m,N=s,SEM=sigla//
+  #tsmp	/CAT=np,G=m,N=p,SEM=sigla//
+  #v	/CAT=v,T=inf,TR=_//  Na realidade TR=??
+  #vi	/CAT=v,T=inf,TR=i//
+  #vn	/CAT=v,T=inf,TR=_//
+  #vt	/CAT=v,T=inf,TR=t//
+
+=head1 Flags utilizadas
+
+  *A:                       #Prefixo  anti
+  *C:  ; "CAT=v,T=inf"      #cao
+  *D:  ; "CAT=v,T=inf"      #dor
+
+  *E:                       #Prefixo pre
+  *F:                       #Prefixo ultra, hiper, super
+
+  *G:  ;"CAT=adj"           #ice
+
+  *I:                       #Prefixo in
+
+  *K:  ; "CAT=v,T=inf"      # Todos Irregulares (frequente [au]ir)
+
+  +L:  ; "CAT=v"            #-lho             #noispell
+
+  *M:  ; "CAT=v,T=inf"      #mento
+  *O:                       #Prefixo pos
+  +P:  ; "CAT=v"            #-o               #noispell
+
+  *R:                       #Prefixo  re
+  *S:                       #Prefixo  des
+  *T:                       #Prefixo  bi-,tri, penta, campeão
+  *U:                       #Perfixo  sub
+
+  *X:  ; "CAT=v,T=inf"      # deve ser posta nos verbos regulares
+  *Y:  ; "CAT=v,T=inf"      # Deve ser posta nos verbos regulares
+
+  *Z:  ; "CAT=v,T=inf"      #(p,Pc,I) Irregulares (frequente erir)
+
+  *a:  ; "CAT=a_nc,N=s"     #plurais
+  *b:  ; "CAT=a_nc,G=m,N=s" #femininos
+  *c:  ; "CAT=v,T=inf"      # çao
+  +d:  ; "CAT=adj,N=s"      #idade
+  *e:  ; "CAT=a_nc,N=s"     #plurais
+  *f:  ; "CAT=a_nc,G=m,N=s" #femininos
+  *g:  ; "CAT=a_nc,G=m,N=s" #femininos
+  +h:  ; "CAT=a_nc,N=s"     #inho
+  *i:  ; "CAT=nc,N=s"       #ismo
+  *j:  ; "CAT=adj"          #izar  izado 
+  +m:  ; "CAT=adj,N=s"      #mente
+  *n:  ; "CAT=v,T=inf"      #ente
+  *o: ; "CAT=v,T=inf"       # dela
+  *p:  ; "CAT=a_nc,N=s"     #plurais
+  *q:  ; "CAT=hn"           #ólogo,áfico,etc.
+  *r:  ; "CAT=hn"           #ológico,etc.
+  *s:  ; "CAT=adj,N=s"      #issimo
+  *t:  ; "CAT=nc,N=s"       #ista
+  *u:  ; "PFSEM=u"          #sub
+  *v:  ; "CAT=v,T=inf"      #ável
+  *w: ; "CAT=nc"            # oso
+  *x:       ;               #Prefixo  ex-
+  *y:       ; "CAT=nc"      # eira
+  *z: ;                     #inho
+
+=head1 Atributos e seus valores
+
+ABR 1
+
+Adv a algures ali aqu aqui onde outrora
+
+AG f m
+
+AN _ p s
+
+AP 1 2 3
+
+Art a as o um
+
+BRAS 1
+
+C a
+
+CAR nc
+
+CAT a
+ adj
+ adv
+ a_nc
+ art
+ card
+ con
+ cp
+ hn
+ in
+ inte
+ nc
+ nord
+ np
+ npm
+ pass
+ pdem
+ pind
+ pint
+ ppes
+ ppos
+ prel
+ prep
+ punct
+ punct1
+ punct2
+ v
+
+C d g n
+
+DG _ f m
+
+DN p s
+
+DP 3
+
+FSEM cao dd dela dor eiro ice ismo ista izar mento nte oso vel
+
+G _ 2 f m n p
+
+GR dim sup
+
+I 3 4
+
+LA 1
+
+N _ n o p s
+
+P 1 1_3 2 3
+
+Pdem2 outro
+
+Pdem aquele aquilo esse este isso isto
+
+PFSEM 2
+ 3
+ 4
+ 5
+ 6 
+ anti
+ ex
+ hiper
+ not
+ outra
+ pos
+ pre
+ sub
+ super
+ u
+ ultra
+ vice
+
+Pind algo algu algum o outrem outro
+
+Ppes ele lhe me migo nosco sigo te tigo vosco
+
+Prep2 entre
+
+Prep a com de em por
+
+SEM cid country lingua livro mar mes mitol n np1 p p1 pl po rio
+ s sigla ter
+
+SUBCAT lug lugar neg tempo
+
+T c f fc g i inf ip p pc pi pic pmp pp ppa
+
+TR t _ i
+
+Tr t
+
+
+Verb haver
+
+=head1 AUTHOR
+
+J.Joao Almeira, jj@di.uminho.pt
+
+=head1 SEE ALSO
+
+perl(1).
+
+=cut      

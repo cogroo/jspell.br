@@ -244,11 +244,11 @@ flag *f:         ; "CAT=a_nc,G=m,N=s"  #femininos
 [^Ê] S      >       A    ; "G=f"         # -> a       ex. deus   -> deusa
 [^Ê] S      >       AS   ; "G=f,N=p"
 Ê S         >   -ÊS,ESA  ; "G=f"         # ês -> esa   ex. japonês -> japonesa
-Ê S         >   -ÊS,ESAS ; "G=f,N=p"    # ês -> esas  ex. japonês -> japonesas
+Ê S         >   -ÊS,ESAS ; "G=f,N=p"     # ês -> esas  ex. japonês -> japonesas
 Ã O         >   -ÃO,ONA  ; "G=f"         # ão -> ona   ex. burlão -> burlona
 Ã O         >   -ÃO,ONAS ; "G=f,N=p"
 E           >    -E,A    ; "G=f"         # e -> a     ex. ele -> ela
-E           >    -E,AS   ; "G=f,N=p"    # e -> a     ex. ele -> elas
+E           >    -E,AS   ; "G=f,N=p"     # e -> a     ex. ele -> elas
 
 flag *b:         ; "CAT=a_nc,G=m,N=s"  #femininos
 Ã O	>	-O,-	; "G=f"		# alemão -> alemã
@@ -258,7 +258,7 @@ E	>	SSAS	; "G=f,N=p"	# condessas
 
 flag *g:         ; "CAT=a_nc,G=m,N=s"  #femininos
 Ã O         >   -ÃO,OA  ; "G=f"         # ão -> oa     ex. patrão -> patroa
-Ã O         >  -ÃOS,OAS ; "G=f,N=p"    # ão -> oas
+Ã O         >  -ÃOS,OAS ; "G=f,N=p"     # ão -> oas
 
 #----------------------------------------
 # mente
@@ -1403,7 +1403,7 @@ O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 #flag *R:  			#re
 #flag *S:  			#des
 #flag *T:			# bi-,tricampeão
-#flag *U:  			#sub
+#flag *U:  		
 #flag *X:  ; "CAT=v,T=inf" 	# deve ser posta nos verbos regulares
 #flag *Y:  ; "CAT=v,T=inf"  	# Deve ser posta nos verbos regulares
 #flag *Z:  ; "CAT=v,T=inf" 	#(p,Pc,I) Irregulares (frequente erir)

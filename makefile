@@ -133,3 +133,10 @@ jspell: port.dic port.aff
 jspell-install: port.dic port.aff
 	cd JSPELL; make install
 
+# Jspell port man
+
+install-man: jspell.pt.1
+	cp jspell.pt.1  /usr/local/man/man1/
+
+jspell.pt.1: jspell.pt.pod
+	pod2man --center="jSpell Documentation" jspell.pt.pod jspell.pt.1

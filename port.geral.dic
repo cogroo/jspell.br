@@ -493,8 +493,9 @@ acutangular/#an//
 acutângulo/#a//
 acutiladiço/#a//
 acutilante/#a/p/
+acutilância/#nf/p/
 acutilar/#vt/XYPLMD/
-adaga/#nf//
+adaga/#nf/p/
 adagial/#an//
 adagiário/#nm//
 adagiar/#vi/XYL/
@@ -2522,7 +2523,7 @@ aquartilhar/#vt/XYPL/
 aquático/#a/fpu/
 aquecedor/#hm//
 aquecer/#vn/XYPLMDvR/
-aquecimento/R//
+aquecimento/#av//
 aqueduto/#nm/p/
 àquele/CAT=cp,Prep=a,Pdem=aquele,G=m,N=s/fp/
 aquele/CAT=pdem,N=s,G=m/fp/
@@ -4216,7 +4217,7 @@ barbaresco/#a/fp/
 barbaria/#nf/p/
 barbarice/#nf/p/
 barbaridade/#nf/p/
-barbárie/#nf//
+barbárie/#nf/p/
 barbarismo/#nm/p/
 barbarizar/#vn/XYPLcn/
 bárbaro/#a/fp/
@@ -4284,7 +4285,7 @@ barreiral/#nm//
 barreira/#nf/p/
 barreirar/#vt/XYPL/
 barreirense/#hn/p/
-barrento/#a//
+barrento/#a/fp/
 barretada/#nf//
 barreta/#nf//
 barreteiro/#nm//
@@ -5076,7 +5077,7 @@ bonança/#nf//
 bonançoso/#a//
 bondade/#nf/p/
 bonde/#nm,BRAS=1/p/
-bondoso/#a/fp/
+bondoso/#a/fpm/
 bonecada/#nf//
 boneca/#nf/h/
 boneco/#nm/fp/
@@ -6314,6 +6315,7 @@ carcereiro/#nm/p/
 cárcere/#nm/p/
 carcinoma//p/
 cardar/#vt/XY/
+cardápio/#nm/p/
 cardeal/#nm/p/
 cardíaco/#hm/fp/
 cardinal/#a/pd/
@@ -9072,6 +9074,7 @@ contrapunho/#nm//
 contraquartel/#nm//
 contraquilha/#nf//
 contra-regra/#nm//
+contra-relógio/#nm/p/
 contra-revolta/#nf//
 contra-revolução/#nf/p/
 contra-revolucionário/#hm//
@@ -13451,6 +13454,7 @@ escandalizar/#vn/XYPLDv/
 escândalo/#nm/p/
 escandaloso/#a/fpm/
 escandinavo/#a/fp/
+escaninho/#nm/p/
 escanelado/#a//
 escangalhar/#vt/XYPL/
 escanhoadela/#nf/p/
@@ -14635,7 +14639,7 @@ exponencial/#an/pm/
 exponente/#hm/p/
 exportador/#hm/fp/
 exportar/#vt/XYPLRcDv/
-expor/#vt/KPLR/
+expor/#vt/KPLRc/
 exposição/#nf/p/
 expositivo/#a//
 expositor/#nm/p/
@@ -14828,6 +14832,7 @@ fagocitose/#nf//
 fagulha/#nf//
 fagulhar/#vi/XYLc/
 fagulhento/#a//
+faia/#nf/p/
 faialense/#hn/p/
 faiança/#nf/p/
 faina/#nf//
@@ -16528,7 +16533,7 @@ geosfera/#nf//
 geotectónica/#nf//
 geotérmico/#a//
 geotermismo/#nm/p/
-geração/#nf//
+geração/#nf/p/
 gerador/#hm/fp/
 geral/#an/pm/
 geral/#nm/p/
@@ -26328,6 +26333,7 @@ poliéster/#nm//
 polietileno/#nm//
 polifacética///
 polifásico/#a//
+polifonia/#nf/p/
 poligamia/#nf//
 polígamo/#a//
 poliglota/#hn/i/
@@ -26429,7 +26435,7 @@ ponderoso/#a//
 pónei/#nm/p/
 pongue///
 pó/#nm/h/
-pontada/#nf//
+pontada/#nf/p/
 ponta-de-lança/#nm//
 pontal/#hm//
 ponta/#nf/p/
@@ -29041,7 +29047,7 @@ reóstato/#nm/p/
 repagar/#vt/XYPL/
 repaginar/#vt/XYPLc/
 repago/#a//
-repa/#nf//
+repa/#nf/p/
 reparadeira/#hf//
 reparador/#hm//
 reparar/#vn/XYPLcDv/
@@ -31203,6 +31209,7 @@ sodomita/#nn//
 sodomítico/#a//
 sodomizar/#vt/XYPLnc/
 sofá/#nm/p/
+sofá-cama/#nm//
 sofisma/#nm//
 sofismar/#vn/XYPLv/
 sofista/#hn/p/
@@ -31231,7 +31238,7 @@ soldador/#nm/p/
 soldadura/#nf/p/
 soldagem/#nf/p/
 solda/#nf//
-soldar/#vt,intr/XYPLDv/
+soldar/#vt/XYPLDv/
 soldo/#nm/p/
 soleira/#nf/p/
 solene/#a/pdm/
@@ -34037,7 +34044,7 @@ ventoinha/#nf/p/
 vento/#nm/p/
 ventosa/#hf/p/
 ventosidade/#nf/p/
-ventoso/#hm/fd/
+ventoso/#hm/fpd/
 ventral/#an/p/
 ventre/#nm/p/
 ventricular/#an/p/
