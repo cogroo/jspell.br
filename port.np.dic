@@ -6,8 +6,8 @@
 #tf/CAT=np,SEM=ter,G=f,N=s
 #tn/CAT=np,SEM=ter,G=n,N=s
 #tr/CAT=np,SEM=rio
-#tp/CAT=np,SEM=país,G=m,N=s
-#tpf/CAT=np,SEM=país,G=f,N=s
+#tp/CAT=np,SEM=count,G=m,N=s
+#tpf/CAT=np,SEM=count,G=f,N=s
 #tc/CAT=np,SEM=cid,G=m,N=s
 #tcf/CAT=np,SEM=cid,G=f,N=s
 #em/CAT=np,SEM=mes,G=m,N=s/

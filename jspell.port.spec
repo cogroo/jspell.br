@@ -1,7 +1,7 @@
 Summary: jspell portuguese dictionary
 Name: jspell.port
 Version: 1.10
-Release: 1
+Release: 2
 Copyright: GPL
 Source: jspell.port.tgz
 Group: Utilities/Text
