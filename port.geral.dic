@@ -3184,7 +3184,7 @@ assexuado/#a/f/
 assexual/#an/d/
 assexualidade/#nf/p/
 assidrar/#vt/XYPL/
-assiduamente/#av//
+assiduamente/$assíduo$#a$#av//
 assiduidade/#nf/p/
 assíduo/#a/fp/
 assilabia/#nf//
@@ -3206,7 +3206,7 @@ assinalar/#vt/XYPLcMDnv/
 assinante/#nn/p/
 assinar/#vt/XYPLcMnv/
 assinatura/#nf/p/
-assincronamente/#av//
+assincronamente/$assíncrono$#a$#av//
 assincronia/#nf/p/
 assíncrono/#a/fp/
 assindético/#a/fp/
@@ -3679,7 +3679,7 @@ automotor/#hm/f/
 automóvel/#nm/p/
 autónimo/#a//
 auto/#nm/pti/
-autonomamente/#av//
+autonomamente/$autónomo$#a$#av//
 autonomia/#nf/ptir/
 autonomizar/#vt/XYPLnc/
 autónomo/#a/fp/
@@ -3785,7 +3785,7 @@ avicida/#hn//
 avicular/#hm2//
 aviculário/#hm//
 avicultura/#nf/prq/
-avidamente/#av//
+avidamente/$ávido$#a$#av//
 avidez/#nf//
 ávido/#a/fp/
 avigorar/#vt/XYPL/
@@ -4209,7 +4209,7 @@ barbada/#nf//
 barbado/#nm//
 barba/#nf/p/
 barbante/#nm/p/
-barbaramente/#av//
+barbaramente/$bárbaro$#a$#av//
 barbaresco/#a//
 barbaria/#nf/p/
 barbarice/#nf/p/
@@ -4522,7 +4522,7 @@ bendizer/#vt/KPL/
 beneditina/#hf//
 beneditino/#hm/fp/
 beneditismo/#nm/p/
-beneficamente/#av//
+beneficamente/$benéfico$#a$#av//
 beneficência/#nf/p/
 beneficente/#an/p/
 beneficiação/#nf//
@@ -4895,8 +4895,8 @@ bisturi/#nm//
 bitola/#nf//
 bitolar/#vt/XYPL/
 bitonalidade/#nf/p/
-biunívoca/#a//
-biunivocamente/#av//
+biunívoco/#a/fp/
+biunivocamente/$biunívoco$#a$#av//
 bivalência/#nf/p/
 bivalente/#an/p/
 bivalve//p/
@@ -6677,7 +6677,7 @@ catarsia/#nf//
 catártico/#hm//
 catar/#vt/XYPLM/
 catástrofe/#nf/p/
-catastroficamente/#av//
+catastroficamente/$catastrófico$#a$#av//
 catastrófico/#a/fp/
 catastrofismo/#nm/p/
 catatua/#nf/p/
@@ -6890,7 +6890,7 @@ celebrizar/#vt/XYPLc/
 celeireiro/#nm//
 celeiro/#nm/p/
 célere/#an//
-celeremente/#av//
+celeremente/$célere$#a$#av//
 celeridade/#nf/p/
 celerímetro/#nm//
 celeste/#an/p/
@@ -7412,7 +7412,7 @@ cicatrizante/#an/p/
 cicatrizar/#vn/XYPLcnv/
 cicatriz/#nf/p/
 cicerone/#nm//
-ciclicamente/#av//
+ciclicamente/#$cíclico$#a$av//
 cíclico/#a/fp/
 ciclismo/#nm/p/
 ciclista/#nn/p/
@@ -7470,7 +7470,7 @@ cilício/#hm//
 cilindrada/#nf//
 cilindragem/#nf//
 cilindrar/#vt/XYPL/
-cilindricamente/#av//
+cilindricamente/$cilíndrico$#a$#av//
 cilindricidade/#nf/p/
 cilíndrico/#a/fp/
 cilindriforme/#an//
@@ -7664,7 +7664,7 @@ clarividente/#an//
 claro-escuro/#nm//
 claro/#hm/pfmd/
 classe/#nf/p/
-classicamente/#av//
+classicamente/$clássico$#a$#av//
 classicismo/#nm/p/
 classicista/#nn//
 clássico/#a/fp/
@@ -7716,7 +7716,7 @@ climatismo/#nm/p/
 climatizar/#vt/XYPLc/
 climatologia/#nf/qrt/
 clímax/#nm//
-clinicamente/#av//
+clinicamente/$clínico$#a$#av//
 clínica/#nf//
 clínico/#a/fp/
 clique/#nm/p/
@@ -8925,7 +8925,7 @@ contextuar/#vt/XYPLc/
 contextura/#nf//
 contia//p/
 contigo/CAT=cp,Prep=com,Ppes=tigo,G=_,N=s//
-contiguamente/#av//
+contiguamente/$contíguo$#a$#av//
 contiguar/#vn,I=3/YL/
 contiguidade/#nf/p/
 contíguo/#a/fp/
@@ -8939,7 +8939,7 @@ contingente/#an/pmi/
 contingente/#nm/p/
 contingentismo/#nm/p/
 continuador/#hm//
-continuamente/#av//
+continuamente/$contínuo$#a$#av//
 continuar/#vn/XYPLScD/
 continuativo/#a//
 continue//d/
@@ -10086,7 +10086,7 @@ debilidade/#nf/p/
 debilitador/#a//
 debilitante/#an/p/
 debilitar/#vt/XYPLcMDnv/
-debilmente/#av//
+debilmente/$débil$#a$#av//
 debiqueiro/#hm//
 debique/#nm//
 debitar/#vt/XYPL/
@@ -10531,8 +10531,7 @@ depressível/#an//
 depressivo/#a/fpA/
 depressor/#hm/p/
 deprimência/#nf/p/
-deprimente/#an//
-deprimir/#vt/XYPL/
+deprimir/#vt/XYPLn/
 depurador/#hm//
 depurante/#an/p/
 depurar/#vt/XYPLcDn/
@@ -11538,7 +11537,7 @@ diferente/#an/pm/
 diferir/#vn/ZYPLM/
 difícil/#an/a/
 dificílimo/#a//
-dificilmente/#av//
+dificilmente/$difícil$#an$#av//
 dificuldade/#nf/p/
 dificultar/#vt/XYPLc/
 dificultoso/#a//
@@ -11617,7 +11616,7 @@ diminuto/#a/fp/
 dimitis///
 dimorfismo/#nm/p/
 dinamarquês/#hm/fp/
-dinamicamente/#av//
+dinamicamente/$dinâmico$#a$#av//
 dinâmica/#nf//
 dinâmico/#a/fp/
 dinamismo/#nm/p/
@@ -12104,7 +12103,7 @@ dualismo/#nm/p/
 dualista/#hn//
 dualizar/#vt/XYPLD/
 duas/$dois$#ca$G=f//
-dubiamente/#av//
+dubiamente/$dúbio$#a$#av//
 dubiedade/#nf/p/
 dúbio/#a/fp/
 dubitabilidade/#nf/p/
@@ -12295,7 +12294,7 @@ electivo/#a/fpd/
 electrão/#nm/p/
 electrão-volt/#nm//
 electrencefalograma/#nm//
-electricamente/#av//
+electricamente/$eléctrico$#a$#av//
 electricidade/#nf/p/
 electricismo/#nm/p/
 electricista/#hn/p/
@@ -12597,7 +12596,7 @@ empilhar/#vt/XYPLM/
 empinadela/#nf//
 empinar/#vt/XYPL/
 empinocar/#vt/XYPL/
-empiricamente/#av//
+empiricamente/$empírico$#a$#av//
 empírico/#hm/fp/
 empirismo/#nm/p/
 empirista/#nn/p/
@@ -13239,7 +13238,7 @@ eocénico/#a//
 eólico/#a/fp/
 epibranquiais///
 epicálice///
-epicamente/#av//
+epicamente/$épico$#a$#av//
 epicarpo///
 epicentral/#an//
 epicentro/#nm//
@@ -13887,7 +13886,7 @@ espirro/#nm/p/
 esplanada/#nf/p/
 esplendecente/#an/p/
 esplendecer/#vi/XYLn/
-esplendidamente/#av//
+esplendidamente/$esplêndido$#a$#av//
 esplêndido/#a/fp/
 esplendor/#nm/p/
 esplendoroso/#a/fp/
