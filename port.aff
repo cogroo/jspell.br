@@ -67,6 +67,7 @@ wordchars        ë            Ë
 wordchars        [f-i]        [F-I]
 wordchars        í            Í
 wordchars        ì            Ì
+wordchars        ï            Ï
 wordchars        [j-n]        [J-N]
 wordchars        ñ            Ñ
 wordchars        o            O
