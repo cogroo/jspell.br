@@ -50,7 +50,6 @@ allaffixes on
 defstringtype "lat" "nroff" ".list"
 
 boundarychars \-                       #noispell
-boundarychars \'                       #noispell
 wordchars        a            A
 wordchars        á            Á
 wordchars        à            À
