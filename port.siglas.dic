@@ -3,22 +3,22 @@
 #tsmp/CAT=np,G=m,N=p,SEM=sigla//
 #tsfp/CAT=np,G=f,N=p,SEM=sigla//
 
-AAC/#tsf//
+AAC/#tsf//#Associação Académica de Coimbra
 ABC/#tsm//
 ACP/#tsm//
 AD/#tsf//
-AFP/#tsf//
+AFP/#tsf//#Agência France-Press
 AG/#tsf//
 AIP/#tsf//
-AML/#tsf//
-AMP/#tsf//
+AML/#tsf//#Área Metropolitana de Lisboa
+AMP/#tsf//#Área Metropolitana do Porto
 ANC/#tsm//
 ANMP/#tsf//
-APDL/#tsf//
+APDL/#tsf//Administração dos Portos do Douro e Leixões
 APEL/#tsf//
 APL/#tsf//
 ARS/#tsf//
-BBC/#tsf//
+BBC/#tsf//#British Broadcasting Corporation (en)
 BCI/#tsm//
 BCM/#tsm//
 BCP/#tsm//
@@ -27,35 +27,35 @@ BESCL/#tsm//
 BFE/#tsm//
 BMG/#tsm//
 BMW/#tsm//
-BNU/#tsm//
+BNU/#tsm//#Banco Nacional Ultramarino
 BP/#tsf//
-BPA/#tsm//
+BPA/#tsm//#Banco Português do Atlântico
 BPI/#tsm//
-BPSM/#tsm//
+BPSM/#tsm//#Banco Pinto & Sotto Mayor
 BSE/#tsf//
-BT/#tsf//
+BT/#tsf//#Brigada de Trânsito
 BTA/#tsm//
-BVL/#tsf//
+BVL/#tsf//#Bolsa de Valores de Lisboa
 CAP/#tsf//
-CC/#tsm//
-CCB/#tsm//
+CC/#tsm//#Comité Central
+CCB/#tsm//#Centro Cultural de Belém
 CCRN/#tsf//
 CD/#tsm//
-CDS/#tsm//
-CDU/#tsf//
+CDS/#tsm//#Centro Democrático Social
+CDU/#tsf//#Coligação Democrática Unitária
 CE/#tsm//
 CEI/#tsf//
 CES/#tsm//
-CGD/#tsf//
-CGTP/#tsf//
+CGD/#tsf//#Caixa Geral de Depósitos
+CGTP/#tsf//#Confederação Geral dos Trabalhadores Portugueses
 CIG/#tsf//
 CIP/#tsf//
-CML/#tsf//
-CMP/#tsf//
+CML/#tsf//#Câmara Municipal de Lisboa
+CMP/#tsf//#Câmara Municipal do Porto
 CMVM/#tsf//
 CNE/#tsm//
 CNN/#tsf//
-COI/#tsm//
+COI/#tsm//#Comité Olímpico Internacional
 CP/#tsf//
 CPLP/#tsf//
 CREL/#tsf//
@@ -68,23 +68,23 @@ EN/#tsf//
 EPAL/#tsf//
 ESA/#tsf//
 ETA/#tsf//
-ETAR/#tsf//
-EUA/#tsmp//
-FAP/#tsf//
+ETAR/#tsf//#Estação de Tratamento de Águas Residuais
+EUA/#tsmp//#Estados Unidos da América
+FAP/#tsf//#Força Aérea Portuguesa
 FBI/#tsm//
 FC/#tsf//
-FCUP/#tsf//
+FCUP/#tsf//#Faculdade de Ciências da Universidade do Porto
 FIFA/#tsf//
 FIL/#tsf//
-FIS/#tsf//
+FIS/#tsf//#Frente Islâmica de Salvação (Argélia)
 FMI/#tsm//
 FPF/#tsf//
 GATT/#tsm//
-GNR/#tsf//
+GNR/#tsf//#Guarda Nacional Republicana
 GP/#tsm//
 HIV/#tsm//
 ICEP/#tsm//
-IPACA/#tsm//
+IPACA/#tsm//#Instituto Português de Apoio aos Comunistas Arrependidos
 IPC/#tsm//
 IPE/#tsm//
 IPPAR/#tsm//
@@ -92,55 +92,55 @@ IPPC/#tsm//
 IRC/#tsm//
 IRS/#tsm//
 IURD/#tsf//
-JAE/#tsf//
+JAE/#tsf//#Junta Autónoma das Estradas
 JS/#tsf//
 JSD/#tsf//
 KGB/#tsm//
-LNEC/#tsm//
+LNEC/#tsm//#Laboratório Nacional de Engenharia Civil
 LP/#tsm//
-MNE/#tsm//
+MNE/#tsm//#Ministério dos Negócios Estrangeiros
 MP/#tsm//
-MPLA/#tsm//
+MPLA/#tsm//#Movimento Popular para a Libertação de Angola
 NASA/#tsf//
 NBA/#tsf//
 OCDE/#tsf//
 OE/#tsm//
 OGMA/#tsfp//
-OLP/#tsf//
-OMS/#tsf//
-ONG/#tsfp//
-ONU/#tsf//
+OLP/#tsf//#Organização para a Libertação da Palestina
+OMS/#tsf//#Organização Mundial de Saúde
+ONG/#tsfp//#Organizações Não-Governamentais
+ONU/#tsf//#Organização das Nações Unidas
 OPA/#tsf//
 OPEP/#tsf//
 OPV/#tsf//
 OSCE/#tsf//
 PAC/#tsf//
-PAIGC/#tsm//
+PAIGC/#tsm//#Partido Africano para a Independência da Guiné e Cabo Verde
 PALOP/#tsmp//
 PCP/#tsm//
 PCUS/#tsm//
-PDM/#tsm//
+PDM/#tsm//#Plano Director Municipal
 PDS/#tsm//
 PEDIP/#tsm//
 PGA/#tsf//
 PGR/#tsf//
 PIB/#tsm//
 PIDDAC/#tsm//
-PIDE/#tsf//
+PIDE/#tsf//#Polícia Internacional de Defesa do Estado
 PJ/#tsf//
-PKK/#tsm//
+PKK/#tsm//#Partido dos Trabalhadores do Curdistão (trad.)
 PLD/#tsm//
 PME/#tsfp//
-PP/#tsm//
-PR/#tsm//
-PRD/#tsm//
-PS/#tsm//
-PSD/#tsm//
+PP/#tsm//#Partido Popular
+PR/#tsm//#Presidente da República
+PRD/#tsm//#Partido Renovador Democrático
+PS/#tsm//#Partido Socialista
+PSD/#tsm//#Partido Social-Democrata
 PSF/#tsm//
-PSN/#tsm//
-PSOE/#tsm//
+PSN/#tsm//#Partido da Solidariedade Nacional
+PSOE/#tsm//#Partido Socialista Operário Espanhol
 PSP/#tsm//
-PSR/#tsm//
+PSR/#tsm//#Partido Socialista Revolucionário
 PSV/#tsm//
 PT/#tsm//
 PT/#tsf//
@@ -151,30 +151,30 @@ RPR/#tsm//
 RS/#tsf//
 RTP/#tsf//
 SEC/#tsf//
-SEF/#tsm//
+SEF/#tsm//#Serviço de Estrangeiros e Fronteiras
 SGPS/#tsf//
 SIC/#tsf//
-SMAS/#tsmp//
+SMAS/#tsmp//#Serviços Municipalizados de Água e Saneamento
 SME/#tsm//
 SOS/#tsm//
 SPA/#tsf//
 SPD/#tsm//
-STCP/#tsmp//
+STCP/#tsmp//#Sociedade de Transportes Colectivos do Porto
 STJ/#tsm//
-TAP/#tsf//
+TAP/#tsf//#Transportes Aéreos Portugueses
 TC/#tsm//
 TLP/#tsmp//
 TSF/#tsf//
 TV/#tsf//
 TVI/#tsf//
 UBP/#tsf//
-UDP/#tsf//
+UDP/#tsf//#União Democrática Popular
 UDT/#tsf//
 UE/#tsf//
 UEFA/#tsf//
-UEM/#tsf//
-UEO/#tsf//
+UEM/#tsf//#União Económica e Monetária
+UEO/#tsf//#União da Europa Ocidental
 UGT/#tsf//
 UNITA/#tsf//
 URSS/#tsf//
-VW/#tsm//
+VW/#tsm//#VolksWagen (de)
