@@ -133,8 +133,7 @@ aspell-tgz:
 #-------------------------------------------------------------------
 
 jspell-rpm: jspell-tgz
-	mv jspell.$(ABR).$(DATE).tar.gz
-	rpmbuild -ba jspell.port.spec
+	rpmbuild -ba jspell.port.spec jspell.$(ABR).$(DATE).tar.gz
 
 
 jspell: port.hash port.irr
