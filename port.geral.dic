@@ -884,7 +884,7 @@ agravo/#nm/p/
 agre/#an//
 agredir/#vt,I=3/YPL/
 agregado/#hm//
-agregar/#vt/XYPLSc/
+agregar/#vt/DXYPLSc/
 agregativo/#a/p/
 agremiação/#nm/p/
 agressão/#nf/p/
@@ -2541,6 +2541,7 @@ aquisitivo/#a/fd/
 aquosidade/#nf/p/
 aquoso/#a/fpd/
 árabe/#hn/p/
+arabesco/#nm/p/
 arábias/#nf,N=p//
 arábico/#hm//
 arábio/#a/f/
@@ -4568,10 +4569,12 @@ berbérico/#a//
 berbicacho/#nm//
 berbigão/#nm//
 berbigoeira/#nf//
+berçário/#nm/p/
 berço/#nm/p/
 beribérico/#hm/fp/
 beribéri/#nm//
 berílio/#nm//
+beringela/#nf//
 berlinda/#nf//
 berlinde/#nm/p/
 berlinense/#hn/p/
@@ -5586,7 +5589,7 @@ cachaçudo/#a//
 cachalote/#nm/p/
 cachão/#nm//
 cachear/#vn/ZYPL/
-cachecol/#nm//
+cachecol/#nm/p/
 cacheirada/#nf//
 cacheira/#nf//
 cacheiro//f/
@@ -9860,6 +9863,7 @@ cubiforme/#an/p/
 cubismo/#nm/p/
 cubista/#nn/p/
 cubital///
+cúbito/#nm/p/
 cubóide/#hm2//
 cubo/#nm/pfti/
 cuco/#nm/p/
@@ -10313,7 +10317,7 @@ degradador/#hm//
 degradante/#an/p/
 degradar/#vt/XYPLcMDn/
 degrau/#nm/p/
-degredado///
+degredado//fp/
 degredo///
 degressivo/#a//
 degustar/#vt/XYPLc/
@@ -12262,7 +12266,7 @@ egiptologia/#nf/rtq/
 egocêntrico/#a/fp/
 egocentrismo/#nm/p/
 egocentrista/#hn//
-egoísmo/#nm//
+egoísmo/#nm/p/
 egoísta/#hn/p/
 egoístico/#a//
 ego/#nm//
@@ -12588,7 +12592,7 @@ empenho/#nm/p/
 emperrar/#vt/XYPLSM/
 empertigar/#vt/XYPL/
 empestar/#vn/XYPLM/
-empilhar/#vt/XYPLMD/
+empilhar/#vt/DXYPLM/
 empinadela/#nf/p/
 empinar/#vt/XYPL/
 empinocar/#vt/XYPL/
@@ -13345,7 +13349,7 @@ ergonomia/#nf/q/
 erguer/#vt/XYPLR/
 eriçada//p/
 erigir/#vt/XYPLv/
-ermida/#nf//
+ermida/#nf/p/
 ermita/#nm/p/
 ermitão/#nm//
 ermo/#hm/p/
@@ -14959,6 +14963,7 @@ farófia/#nf/p/
 faroleiro/#nm/p/
 farolete/#nm//
 farolizar/#vt/XYPLc/
+farolim/#nm/p/
 farol/#nm/p/
 faro/#nm/p/
 farpa/#nf//
@@ -15435,6 +15440,7 @@ fisiológico/#a/pfH/
 fisionomia/#nf/pqt/
 fisiopatia/#nf/pq/
 fisiopatológico///
+fisioterapeuta/#nm/p
 fisioterapia/#nf//
 físsil/#an//
 fissuração/#nf//
@@ -16090,6 +16096,7 @@ furuncular/#an//
 furúnculo/#nm/p/
 furunculose/#nf//
 furunculoso/#a/fp/
+fusa/#nf/p/
 fusão/#nf/p/
 fusco/#a//
 fuseiro/#nf//
@@ -16456,6 +16463,7 @@ género/#nm/up/
 generosidade/#nf/p/
 generoso/#a/fpmd/
 génese/#nf//
+gene/#nm/p/
 genesíaco/#a//
 genética/#nf//
 geneticismo/#nm/p/
@@ -16470,6 +16478,7 @@ génio/#nm/p/
 genital/#an/p/
 genitivo/#nm/fp/
 genocídio/#nm/pq/
+genoma/#nm/p/
 genovense/#hn/p/
 genovês/#hm/fp/
 genro/#nm/p/
@@ -16983,14 +16992,14 @@ guacho/#nm//
 guapo/#a/p/
 guarani/#nm//
 guarani/#nn//
-guarda-chuva/#nm//
+guarda-chuva/#nm/p/
 guarda-costas/#nm//
 guardadeira/#nf//
 guardador/#nm//
 guarda-fatos/#nm//
 guarda-fiscal/#nm//
 guarda-florestal/#nm//
-guarda-freio/#nm//
+guarda-freio/#nm/p/
 guarda-jóias/#nm//
 guarda-lama/#nm/p/
 guarda-livros/#nm//
@@ -19746,7 +19755,7 @@ jazida/#nf//
 jazigo/#nm/p/
 jazz/#nm//
 jeito/#nm/h/
-jeitoso/#a//
+jeitoso/#a/fp/
 jejuar/#vi/XYLD/
 jejum/#nm/p/
 jeovismo/#nm/p/
@@ -20144,6 +20153,7 @@ lanudo/#a//
 lanugem/#nf//
 lanugioso/#a//
 lanzudo/#a/fp/
+láparo/#nm/p/
 lapada/#nf//
 lapa/#nf//
 lapão/#nm//
@@ -20451,7 +20461,7 @@ letradice/#nf//
 letrado/#hm/p/
 letra-morta/#nf//
 letra/#nf/pt/
-letreiro/#nm//
+letreiro/#nm/p/
 letzte///
 leucemia/#nf/p/
 leucócito/#nm/p/
@@ -20743,7 +20753,7 @@ localizar/#vt/XYPLcSR/
 local/#nm/p/
 loção/#nf/p/
 locar/#vt/XYPLcD/
-locatário/#nm//
+locatário/#nm/p/
 locativo/#hm//
 locomobilidade/#nf/p/
 locomoção/#nf//
@@ -21100,6 +21110,7 @@ magnitude/#nf//
 magno/#hm/fp/
 magnólia/#nf//
 magnólio/#nm/f/
+magnóreiro/#nm/p/
 magnório/#nm//
 mágoa/#nf/p/
 magoar/#vt/XYPL/
@@ -22395,7 +22406,7 @@ miserável/#a/pt/
 miseravelmente/#av//
 miséria/#nf/p/
 misericórdia/#nf/p/
-misericordioso/#a/fm/
+misericordioso/#a/fpm/
 mísero/#a/p/
 misérrimo/#a//
 misogamia/#nf//
@@ -25018,7 +25029,7 @@ passarinhada/#nf//
 passarinha/#nf//
 passarinhar/#vi/XYL/
 passarinheiro/#nm//
-passarinho/#nm/f/
+passarinho/#nm/fp/
 passaroco/#nm/p/
 passarola/#nf/p/
 pássaro/#nm/fp/
@@ -25070,7 +25081,7 @@ pastoril/#an//
 pastor/#nm/p/
 pastosidade/#nf/p/
 pastoso/#a/fpd/
-pataca/#nf//
+pataca/#nf/p/
 patacão/#nm//
 pata-choca/#nf//
 patacoada/#nf//
@@ -26245,7 +26256,7 @@ poeirada/#nf//
 poeira/#nf/p/
 poeirento/#a//
 poema/#nm/p/
-poente/#hm//
+poente/#hm/p/
 poesia/#nf/p/
 poetaço/#nm//
 poeta/#hm/pi/
@@ -30543,6 +30554,7 @@ semiesfera/#nf//
 semiesférico/#a//
 semifinal/#a/pt/
 semifluida///
+semifusa/#nf/p/
 semigasto/#a//
 semigloboso///
 semi-inconsciente/#a//
@@ -31057,7 +31069,7 @@ sob/CAT=prep//
 sobejar/#vi/XYL/
 sobejo/#a/pfm/
 sobejos/#nm,N=p//
-soberania/#nf//
+soberania/#nf/p/
 soberanizar/#vt/XYPL/
 soberano/#hm/pfm/
 soberba/#hf//
@@ -31510,7 +31522,7 @@ submetálico///
 submeter/#vt/XYPLM/
 subministrar/#vt/XYPLc/
 submissam///
-submissão/#nf/I/
+submissão/#nf/pI/
 submisso/#a/pfI/
 submucosa///
 subnormal///
@@ -31654,7 +31666,7 @@ sugar/#vt/XYPLcD/
 sugerir/#vt/ZYPLv/
 sugestão/#nf/p/
 sugestibilidade/#nf/p/
-sugestionar/#vt/XYPLv/
+sugestionar/#vt/DXYPLv/
 sugestível/#an/d/
 sugestivo/#a/pfm/
 suíças/#nf,N=p//
@@ -32043,6 +32055,7 @@ tango/#nm/p/
 tangueiro/#a//
 tanguista/#nn//
 tânjara/#nf//
+tanoeiro/#nm/p/
 tanque/#nm/pA/
 tanso/#hm/p/
 tantadiço/#a//
@@ -33563,6 +33576,7 @@ ultravioleta/#hm2/p/
 umbigo/#nm/p/
 umbilicado/#a//
 umbilical/#an//
+úmero/CAT=nc,N=s,G=m/p/
 um/CAT=art,N=s,G=m/fp/
 um/CAT=card,N=s,G=m/f/
 um/CAT=pind,G=m,N=s/fp/
