@@ -37,6 +37,6 @@ aux.all-irr.dic: irregulares.txt aux.verb.dic IRR/ge_verb
 
 port.dic: $(PTDIC) aux.all-irr.dic
 	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
-	cat $(PTDIC) >> port.dic 
+	cat $(PTDIC) aux.all-irr.dic >> port.dic 
 
 
