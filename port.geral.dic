@@ -166,8 +166,8 @@ abreviar/#vt/XYPLcmMD/
 abreviativo/#a//
 abreviatura/#nf/p/
 abrigada/#nf//
-abrigadoiro/#nm//
-abrigadouro/#nm//
+abrigadoiro/#nm/p/
+abrigadouro/#nm/p/
 abrigar/#vt/XYPLSD/
 abrigo/#nm/p/
 abrilhantar/#vt/XYPL/
@@ -181,8 +181,8 @@ abrupto/#a/fpm/
 absentismo/#nm/p/
 absentista/#hn/p/
 abside/#nf/p/
-absíntio/#nm//     ; o m.q. absinto
-absinto/#nm//
+absíntio/#nm/p/     ; o m.q. absinto
+absinto/#nm/p/
 absoluto/#hm/pfmti/
 absolutório/#a//
 absolver/#vt/XYPLM/
@@ -190,7 +190,7 @@ absolvição/#nf/p/
 absorção/#nf/p/
 absorto/#a/fp/
 absorvedor/#a//
-absorvedouro/#nm//
+absorvedouro/#nm/p/
 absorvência/#nf/p/
 absorvente/#hn//
 absorver/#vt/XYPLDnv/
@@ -266,7 +266,7 @@ a/CAT=prep//
 acautelar/#vn/XYPLS/
 acavalado/#a//
 acção/#nf/pI/
-accionado/#nm,#a//
+accionado/#nm,#a/p/
 accionador/#hm//
 accional/#nn//
 accionar/#vt/XYPLMDv/
@@ -374,7 +374,7 @@ acolchoar/#vt/XYPLM/
 acolher/#vt/XYPLSMD/
 acolhida/#nf//
 acolia/#nf//
-acólito/#nm/p/
+acólito/#nm/pf/
 acomadrar/#v/XYL/
 acometer/#vt/XYPLMDv/
 acometida/#nf//
@@ -387,7 +387,7 @@ acompanhar/#vn/XYPLSMDn/
 acompassar/#vt/XYPL/
 acompridar/#vt/XYPL/
 aconchegar/#vt/XYPLS/
-aconchego/#nm//
+aconchego/#nm/p/
 acondicionar/#vt/XYPLcM/
 acondimentar/#vt/XYPL/
 aço/#nm/p/
@@ -502,13 +502,13 @@ adagiário/#nm//
 adagiar/#vi/XYL/
 adágio/#nm//
 adamascar/#vt/XYPL/
-adamastor/#nm//
+adamastor/#nm/p/
 adaptabilidade/#nf/Ip/
 adaptação/#nf//
 adaptador/#hm//
 adaptar/#vt/XYPLRScDv/
 adaptativo/#a/fp/
-adaptómetro/#nm//
+adaptómetro/#nm/p/
 adega/#nf//
 adegar/#vt/XYPL/
 adegueiro/#nm//
@@ -563,7 +563,7 @@ adjectivar/#vt/XYPLc/
 adjectivo/#hm/pfd/
 adjudicador/#hm//
 adjudicar/#vt/XYPLcD/
-adjudicatário/#nm//
+adjudicatário/#nm/p/
 adjudicatório/#a//
 adjunção/#nf//
 adjunto/#nm/fp/
@@ -738,7 +738,7 @@ afinagem/#nf//
 afinal/#av//
 afinar/#vt/XYPLcMD/
 afincar/#vt/XYPLM/
-afinco/#nm//
+afinco/#nm/s/
 afinidade/#nf/p/
 afirmação/#nf//
 afirmar/#vt/XYPLRc/
@@ -782,7 +782,7 @@ aforístico/#a/f/
 aformosear/#vt/ZYPL/
 aforquilhar/#vt/XYPL/
 aforrar/#vt/XYPL/
-aforro/#nm//
+aforro/#nm/p/
 afortalezar/#vt/XYPL/
 afortunar/#vt/XYPLm/
 afracar/#vn/XYPLM/
@@ -801,7 +801,7 @@ afrodisíaco/#a/fp/
 afrodisia/#nf//
 afrodita/#a/p/
 afroditas/#nf,N=p//
-afroixamento/#nm//
+afroixamento/#nm/p/
 afronhar/#vt/XYPL/
 afrontadiço/#a//
 afrontador/#hm//
@@ -878,7 +878,7 @@ agradabilíssimo/#a,GR=sup/p/
 agradar/#vi/XYLSvm/
 agradável/#an/d/
 agradecer/#vn/XYPLRMvm/
-agrado/#nm//
+agrado/#nm/p/
 agrafar/#vt/XYPL/
 agrafia/#nf//
 agrafo/#nm/p/
@@ -978,7 +978,7 @@ ai/#i//
 ai-jesus/#i//
 ainda/#av//
 ai/#nm/p/
-aio/#nm/f/
+aio/#nm/fp/
 airoso/#a/dpfsm/
 ajanotar/#vt/XYPL/
 ajantarado/#a//
@@ -1000,7 +1000,7 @@ ajuntadouro/#nm//
 ajunta/#nf//
 ajuntar/#vt/XYPLMDv/
 ajuramentar/#vt/XYPLc/
-ajustador/#nm//
+ajustador/#nm/p/
 ajustar/#vt/XYPLRSMDnv/
 ajuste/#nm/p/
 ajustiçar/#vt/XYPL/
@@ -4221,7 +4221,7 @@ barbar/#vi/XYLdn/
 barbatana/#nf/p/
 barbearia/#nf/p/
 barbear/#vt/ZYPLc/
-barbeirice/#nf/+/
+barbeirice/#nf//
 barbeiro/#nm/p/
 barbela/#nf/p/
 barbica/#nf//
@@ -7119,7 +7119,7 @@ chamar/#vn/XYPLMD/
 chamejante/#an/p/
 chamejar/#vn/XYPLn/
 chaminé/#nf/p/
-champanha/#nm/	/
+champanha/#nm//
 champanhe/#nm/p/
 champanhizar/#vt/XYPL/
 champô/#nm//
@@ -7294,13 +7294,13 @@ chiquismo/#nm/p/
 chirriante/#an/p/
 chirriar/#vi/XYLn/
 chispar/#vi//
-chispe/#nm//
+chispe/#nm/p/
 chita/#nf/p/
-chocadeira/#nf//
+chocadeira/#nf/p/
 chocalhada/#nf//
 chocalhar/#vn/XYPL/
-chocalheiro/#a//
-chocalho/#nm/G/
+chocalheiro/#a/p/
+chocalho/#nm/Gp/
 choca/#nf/p/
 choça/#nf/p/
 chocar/#vt/XYPLnm/
@@ -7314,7 +7314,7 @@ chofrada/#nf//
 chofrar/#vn/XYPL/
 chofre/#nm//
 choldra/#nf//
-choqueiro/#nm//
+choqueiro/#nm/p/
 choque/#nm/p/
 choquento/#a//
 choradeira/#nf//
@@ -7892,14 +7892,14 @@ co-gerente/#nn//
 cogitar/#vi//
 cognição/#nf/p/
 cognitivo/#a/fp/
-cognome/#nm//
+cognome/#nm/p/
 cognominar/#vt/XYPLc/
 cogumelo/#nm/p/
 co-herdar/#vn/XYPL/
 co-herdeiro/#nm//
 coibir/#vt,I=3/YPLc/
 coicear/#vi/ZYL/
-coice/#nm//
+coice/#nm/p/
 coifa/#nf//
 coima/#nf/p/
 coimbrão/#hm/pb/
@@ -8040,8 +8040,8 @@ columbino/#a/fp/
 columbofilia/#nf/q/
 coluna/#nf/pt/
 colunar/#an/p/
-colunata/#nf//
-comadre/#nf//
+colunata/#nf/p/
+comadre/#nf/p/
 comadrice/#nf//
 comadrio/#nm//
 comanches/#nm,N=p//
@@ -28215,12 +28215,12 @@ rastro/#nm/p/
 rasura/#nf//
 rasurar/#vt/XYPL/
 ratada/#nf//
-rata/#nf//
+rata/#nf/p/
 ratão/#nm/fp/
 rataplão/#nm//
 rataria/#nf/p/
 ratar/#vt/XYPL/
-ratazana/#nf//
+ratazana/#nf/p/
 ratazanar/#vt/XYPL/
 rateador/#hm//
 ratear/#vt/ZYPLcMD/
@@ -28228,7 +28228,7 @@ rateiro/#a//
 raticida/#hm2//
 ratificar/#vt/XYPLcvD/
 rato-almiscareiro/#nm//
-ratoeira/#nf//
+ratoeira/#nf/p/
 rato/#hm/pfhG/
 ratonar/#vi/XYL/
 ratonice/#nf//
@@ -32453,7 +32453,7 @@ terraplanagem/#nf/p/
 terraplanar/#vt/XYPL/
 terráqueo/#a//
 terreiro/#hm//
-terremoto/#nm//
+terremoto/#nm/p/
 terreno/#nm/fp/
 térreo/#a/fp/
 terrestre/#an/p/
@@ -32519,7 +32519,7 @@ teta/#nf/p/
 tetania///
 tetânico/#a//
 tetanizar/#vt/XYPLc/
-teta/#nm//
+teta/#nm/p/
 tétano/#nm//
 teté/#nm//
 tetina/#nf//
@@ -32538,8 +32538,8 @@ tetrassilábico/#a//
 tetrassílabo/#a/p/
 tetratómico/#a//
 tetravalente/#a//
-tetravó/#nf//
-tetravô/#nm//
+tetravó/#nf/p/
+tetravô/#nm/p/
 tetricidade/#nf/p/
 tétrico/#a//
 tetudo/#a//
@@ -32549,7 +32549,7 @@ têxtil/#an/a/
 texto/#nm/p/
 textual/#an/pmt/
 textura/#nf/p/
-texugo/#nm//
+texugo/#nm/p/
 tez///
 thesaurus///
 tia-avó/#nf/p/
@@ -33799,18 +33799,18 @@ vala/#nf/p/
 valar/#an//
 valar/#vt/XYPLD/
 valdenses///
-valenciana/#nf//
+valenciana/#nf/p/
 valência/#nf/p/
 valenciano/#hm/fp/
 vale/#nm/pd/
 valentaço/#hm/p/
 valentão/#a/p/
 valente/#hn/pms/
-valentia/#nf//
+valentia/#nf/p/
 valeroso/#a/p/
 valer/#vn,I=3/YLM/
-valeta/#nf//
-valete/#nm//
+valeta/#nf/p/
+valete/#nm/p/
 valia/#nf//
 validação/#nf//
 validade/#nf/p/
@@ -34578,7 +34578,7 @@ votar/#vn/XYPLcn/
 voto/#nm/p/
 vovó/#nf//
 vovô/#nm//
-vozeirão/#nm//
+vozeirão/#nm/p/
 voz/#nf/p/
 vulcâneo/#a//
 vulcanicidade/#nf/p/
@@ -34622,7 +34622,7 @@ xerez/#nm//
 xerifado/#nm//
 xerife/#nm/p/
 xerografia/#nf/pq/
-xexé/#nm//
+xexé/#nm/p/
 xícara/#nf/p/
 xiismo/#nm//
 xiita/#hn/p/
@@ -34670,7 +34670,7 @@ zelote/#a/p/
 zé-ninguém/#nm//
 zenital/#an/p/
 zénite/#nm//
-zê/#nm//
+zê/#nm/p/
 zé-pereira/#nm//
 zeplim/#nm//
 zé-povinho/#nm//
@@ -34702,7 +34702,7 @@ zulu/#hm/p/
 zumba/#i//
 zumbido/#nm/p/
 zumbir/#vi/XYLD/
-zumzum/#nm//
+zumzum/#nm/p/
 zunido/#nm/p/
 zurrada/#nf//
 zurrapa/#nf//
