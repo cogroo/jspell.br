@@ -4,6 +4,8 @@ jspell.pt - formato do dicionário Jspell para português
 
 =head1 DESCRIPTION
 
+Este documento pretende ajudar na edição do dicionário jspell para o PT.
+
 =head1 Abreviaturas
 
   #a	/CAT=adj,N=s,G=m// na realidade N=?? G=??
@@ -112,51 +114,39 @@ jspell.pt - formato do dicionário Jspell para português
 
 =head1 Atributos e seus valores
 
-ABR 1
+ G (Género): _  f  m
 
-Adv a algures ali aqu aqui onde outrora
+ N (Número): _  p  s
 
-AG f m
+ P (Pessoa): 1  2  3
 
-AN _ p s
-
-AP 1 2 3
-
-Art a as o um
-
-BRAS 1
-
-C a
-
-CAR nc
-
-CAT a
- adj
- adv
- a_nc
- art
- card
- con
- cp
- hn
- in
- inte
- nc
- nord
- np
- npm
- pass
- pdem
- pind
- pint
- ppes
- ppos
- prel
- prep
- punct
- punct1
- punct2
- v
+ Categorias:
+  adj  --- adjectivo
+  adv  --- advérbio
+  a_nc --- adjectivo ou substantivo
+  art  --- artigo
+  card --- cardinal
+  con  --- 
+  cp   --- 
+  hn   --- 
+  in   --- 
+  inte ---
+  nc   --- subtantivo/nome comum
+  nord --- número ordinal
+  np   --- nome próprio
+  npm  --- 
+  pass --- 
+  pdem --- pronome demonstrativo
+  pind --- pronome indicativo
+  pint --- 
+  ppes --- pronome pessoal
+  ppos --- pronome possessivo
+  prel --- pronome relativo
+  prep --- preposição
+  punct -- pontuação
+  punct1 - pontuação
+  punct2 - pontuação
+  v    --- verbo
 
 C d g n
 
