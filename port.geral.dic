@@ -8,6 +8,7 @@
 #av/CAT=adv//
 #avl/CAT=adv,SUBCAT=lugar//
 #avt/CAT=adv,SUBCAT=tempo//
+#avn/CAT=adv,SUBCAT=neg//
 #i/CAT=in//
 #hm/CAT=a_nc,G=m,N=s//
 #hm2/CAT=a_nc,G=2,N=s// Se for nc é masc. se for adj. é neutro
@@ -19710,7 +19711,7 @@ jade/#nm//
 jaguar/#nm//
 jagunço/#nm//
 jamaicano/#hn/fp/
-jamais/#av//
+jamais/#avn//
 jande/#nf/p/
 janeiras/#nf,N=p//
 janela/#nf/p/
@@ -21667,7 +21668,7 @@ matinar/#vn/XYPL/
 matizar/#vt/XYPLc/
 matiz/#nm/p/
 mato-grossense/#hn/p/
-mato/#nm/f/
+mato/#nm/p/
 matosinhense/#hn/p/
 matoso/#a//
 matraca/#nf/p/
@@ -21855,7 +21856,7 @@ melhor/#an/pm/
 melhorar/#vn/XYPLMD/
 melhoras/#nf,N=p//
 melhorativo/#a//
-melhor/#av/m/
+melhor/#av//
 melhoria/#nf/p/
 meliante/#nm/p/
 melífero/#a/f/
@@ -22979,7 +22980,7 @@ mudo/#hm/fpm/
 mugido/#nm//
 mugir/#vi,I=3/YLD/
 mui/#av//
-muito/#av/pfs/
+muito/#av/s/
 muito/CAT=pind,G=m,N=s/fp/
 muito/CAT=pind,G=_,N=_//
 mulada/#nf//
@@ -23186,7 +23187,7 @@ namoro/#nm/ti/
 nana/#nf//
 nanar/#vi/XYL/
 nano//fi/
-não/#av//
+não/#avn//
 não-te-rales/#nm//
 napalm/#nm//
 napoleão/#nm//
@@ -23734,7 +23735,7 @@ numeroso/#a/pfds/
 numismata/#nn//
 numismática/#nf//
 numismático/#a/fp/
-nunca/#av//
+nunca/#avn//
 nunciatura/#nf//
 núncio/#nm//
 nupcial/#an/pdEO/
@@ -26641,7 +26642,7 @@ potente/#an/p/
 potra/#nf//
 potro/#nm/f/
 pouca-vergonha/#nf//
-pouco/#av/pfh/
+pouco/#av//
 pouco/CAT=pind,G=m,N=s/pfh/
 poucochinho/#av//
 poupador/#hm/fp/
@@ -32098,7 +32099,7 @@ tara/#nf//
 tarântula/#nf//
 tarar/#vt/XYPL/
 tardar/#vn/XYPLMD/
-tarde/#av/ps/
+tarde/#av/s/
 tarde/#nf/p/
 tardeza/#nf//
 tardio/#a/fpm/
