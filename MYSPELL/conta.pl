@@ -1,5 +1,6 @@
 #!/usr/bin/perl
-#Obtains a list of dictionary letters, sorted by ocurrence #reads a dic file
+#Obtains a list of dictionary letters, sorted by ocurrence 
+#reads an ISPELL dic file
 
 use locale;
 while(<>){
@@ -14,6 +15,7 @@ while(<>){
 #sortear ao fim
 
 foreach (sort {$p{$b}<=>$p{$a}} (keys (%p))){
-    #print "$_ -> $p{$_}\n";
+    #print "$_ -> $p{$_}\n";       ##Uncomment this line to get statistics
     print "$_";
 }
+print "\n";

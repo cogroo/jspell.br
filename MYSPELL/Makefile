@@ -1,6 +1,5 @@
 #---------------------------------------------------------------------
-# EM TESTES
-# NECESSITA DO ISPELL GERADO
+# Generates ISPELL if required
 
 # make install
 # make myspell
@@ -30,7 +29,7 @@ myspell:
 tgz: 
 	tar -czf myspell.$(ABR).$(DATE).tar.gz $P
 
-#install : 
+#install : # Openoffice user directory #Mozilla Mail #Thunderbird
 	#cd $P; make install
 clean : 
 	make realclean

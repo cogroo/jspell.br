@@ -48,8 +48,8 @@ what:
 	@ echo -e "\taspell-tgz -- creates aspell distribution file"
 	@ echo
 	@ echo -e "myspell:"
-	@ echo -e "\tmyspell -- builds myspell dictionary (ispell required)"
-	@ echo -e "\tmyspell-install -- installs myspell (NO INSTALL)"
+	@ echo -e "\tmyspell -- builds myspell dictionary (will make ispell if required)"
+	@ echo -e "\tmyspell-install -- installs myspell (NO INSTALL YET)"
 	@ echo -e "\tmyspell-tgz -- creates myspell distribution file"
 	@ echo
 #-------------------------------------------------------------------
