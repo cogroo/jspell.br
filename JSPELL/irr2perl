@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 undef $/;
-open(I,"aux.all-irr.dic") or die "cant open aux.allirr..\n";
+open(I,"../aux.all-irr.dic") or die "cant open aux.allirr..\n";
 
 $_=<I>;
 close I;
