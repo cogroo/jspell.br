@@ -88,13 +88,11 @@ port.tgz: $(BASE)
 #-------------------------------------------------------------------
 clean : 
 	cd IRR;    make clean
-	cd JSPELL; make clean
 	cd ISPELL; make clean
 	rm -f *.stat *.cnt
 
 realclean:
 	cd IRR;    make realclean
-	cd JSPELL; make realclean
 	cd ISPELL; make realclean
 	rm -f *.stat *.cnt 
 	rm -f aux.all-irr.dic 
