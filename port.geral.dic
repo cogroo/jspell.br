@@ -19938,6 +19938,7 @@ karate/#nm//
 kepleriano/#a//
 kg/$quilograma$$ABR=1//
 kilojoule/#nm//
+kilómetro/#nm/p/
 kilovolt/#nm/p/
 kilowatt-hora/#nm//
 kilowatt/#nm/p/
@@ -24466,6 +24467,7 @@ oxilo///
 oxónio///
 ozonar/#vt/XYPL/
 ozone/#nm//
+ozono/#nm//
 ozonificar/#vt/XYPL/
 ozónio/#nm//
 ozonizador/#nm//
@@ -32586,10 +32588,9 @@ textual/#an/pmt/
 textura/#nf/p/
 texugo/#nm/p/
 tez///
-thesaurus///
+thesaurus/#nm//
+thesauri/$thesaurus$#nm$N=p//
 tia-avó/#nf/p/
-tiamina///
-tiazol///
 tibetano/#hm/fp/
 tibial/#an//
 tíbia/#nf/p/
