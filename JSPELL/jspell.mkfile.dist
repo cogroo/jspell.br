@@ -1,0 +1,13 @@
+# -*- makefile -*-
+
+LIB=`jspell-dict --dic-dir`
+
+all:
+	@ echo 
+	@ echo "type 'make install' to install jspell dictionary"
+	@ echo
+
+install:
+	mkdir -p ${LIB}
+	cp port.hash ${LIB}
+	cp port.irr  ${LIB}
