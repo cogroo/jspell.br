@@ -1430,8 +1430,8 @@ O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 # adamente
 flag *B:  ; "CAT=v,T=inf"      #adamente
 
-[IA] R  >  -R, DAMENTE    ; "CAT=adv"              # acertadamente
-E R     >  -ER, IDAMENTE  ; "CAT=adv"              # perdidamente
+[IA] R  >  -R,DAMENTE    ; "CAT=adv"              # acertadamente
+E R     >  -ER,IDAMENTE  ; "CAT=adv"              # perdidamente
 
 #flag *A:  			# anti
 #flag *B:  ; "CAT=v,T=inf"      #adamente
