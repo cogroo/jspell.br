@@ -1,6 +1,7 @@
 Summary: jspell portuguese dictionary
 Name: jspell.pt
 Version: VERSION
+Release: 1
 Copyright: GPL
 Source: jspell.pt.tgz
 Group: Utilities/Text
