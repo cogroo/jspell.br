@@ -2396,6 +2396,7 @@ apodrir/#vi/XYL/
 apófase/#nf//
 apófise//p/
 apogeu/#nm//
+apogeatura/#nf/p/ # FIXME: confirmar apogeature vs apogiatura
 apoiar/#vt/XYPLn/
 apoio/#nm/p/
 apólice/#nf/p/
@@ -11667,7 +11668,7 @@ diplomático/#a/fpH/
 diplopia///
 dipolo/#nm/p/
 dique/#nm/p/
-direcção/#nf/p/
+direcção/#nf/pI/
 direccionado/#a/pf/
 direccional/#an//
 direccionar/#v/XYLR/
@@ -12133,6 +12134,7 @@ duelista/#nn//
 duelo/#nm/pt/
 duende/#nm/pz/
 dueto/#nm/tp/
+duina/#nm/p/
 dulciaquícolas///
 dulcificar/#vt/XYPL/
 dulcineia/#nf//
@@ -16665,6 +16667,7 @@ glicose/#nf//
 glicósido//p/
 glicuronizar///
 glide///
+glifo/#nm/p/
 global/#a/pmid/
 globalismo/#nm/p/
 globalístico/#a//
@@ -19415,7 +19418,7 @@ intruso/#hm/fp/
 intuicionismo/#nm/p/
 intuicionista//p/
 intuir/#vt/KPLc/
-intuitivo/#a/fm/
+intuitivo/#a/fmp/
 intuito/#nm/p/
 inumado///
 inumanidade/#nf/p/
@@ -20589,7 +20592,7 @@ liderança/#nf/p/
 liderar/#vt/XY/
 líder/#hn/px/
 ligação/#nf//
-ligadura/#nf//
+ligadura/#nf/p/
 ligamentoso/#a/f/
 liga/#nf/p/
 ligar/#vn/XYPLScMn/
@@ -24139,7 +24142,7 @@ ontem/#avt//
 ontogénese/#nf//
 ontogenia/#nf//
 ontogénico/#a//
-ontologia/#nf//
+ontologia/#nf/p/
 ontológico/#a/fpH/
 ontologismo/#nm/p/
 ónus/#nm//
@@ -26369,6 +26372,7 @@ polietileno/#nm//
 polifacética///
 polifásico/#a//
 polifonia/#nf/p/
+polifónico/#nm/pf/
 poligamia/#nf//
 polígamo/#a//
 poliglota/#hn/i/
@@ -26576,6 +26580,7 @@ portaria/#nf/p/
 portar/#vt/XYPLDn/
 portátil/#an/a/
 porta-voz/#nm/p/
+portável/#an/a/
 portear/#vt/ZYPL/
 porteira/#nf//
 porteiro/#nm/fp/
@@ -27856,6 +27861,7 @@ questor/#nm/p/
 quezília/#nf/p/
 quezilento/#a/pf/
 quiasma///
+quiáltera/#nf/p/
 quiçá/CAT=con//
 quico/#nm/p/
 quiescente/#an//
@@ -29013,7 +29019,7 @@ remir/#vt,I=3/YPLcDv/
 remissão/#nf/p/
 remissibilidade/#nf/p/
 remissível/#an/d/
-remissivo/#a/p/
+remissivo/#a/pf/
 remisso/#a//
 remissório/#a//
 remitente/#an//
@@ -30619,7 +30625,7 @@ seminal/#an//
 seminário/#nm/p/
 seminarista/#nm/p/
 seminarístico/#a//
-semínima/#nf//
+semínima/#nf/p/
 seminudez/#nf//
 semioficial/#an//
 semioficioso/#a//
@@ -32441,6 +32447,7 @@ terçar/#vt/XYPL/
 terceiro/#o/fp/
 terceto/#nm/p/
 terciário/#a/fp/
+tercina/#nf/p/
 terço/#nm/p/
 teres/#nm,N=p//
 terferência/#nf/p/
@@ -32618,6 +32625,7 @@ tilintada/#nf//
 tilintante/#an/p/
 tilintar/#vi/XYLn/
 til/#nm/p/
+timbale/#nm/p/   ## FIXME: validar tímbale
 timbrar/#vn/XYPLD/
 timbre/#nm/p/
 timbroso/#a//
