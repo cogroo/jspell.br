@@ -16,6 +16,7 @@ jspell is a morphological analyser.
 jspell.port is dictionary is for Portuguese language
 
 %prep
+
 %setup
 
 #configure
