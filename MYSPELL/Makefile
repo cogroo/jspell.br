@@ -22,7 +22,7 @@ myspell:
 	cp ../ISPELL/$P/$P.dic $P/
 	cp ../ISPELL/$P/$P.aff $P/
 	perl gendic.pl $P/$P.aff > $P/pt_PT.aff
-	wc -l $P/pt_PT.dic | cut -c 0-7 > $P/pt_PT.dic
+	wc -l $P/$P.dic | cut -c 0-7 > $P/pt_PT.dic
 	cat $P/$P.dic >> $P/pt_PT.dic
 	rm $P/$P.dic
 	rm $P/$P.aff
