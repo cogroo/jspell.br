@@ -1418,23 +1418,37 @@ O R     >  -R,\-LO\-ÍAMOS ; "P=1,N=p,T=c"          #noispell
 O R     >  -R,\-LO\-ÍEIS  ; "P=2,N=p,T=c"          #noispell
 O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 
+#----------------------------------------
+# adamente
+flag *B:  ; "CAT=v,T=inf"      #adamente
+
+[IA] R  >  -R, DAMENTE    ; "CAT=adv"              # acertadamente
+E R     >  -ER, IDAMENTE  ; "CAT=adv"              # perdidamente
+
 #flag *A:  			# anti
+#flag *B:  ; "CAT=v,T=inf"      #adamente
 #flag *C:  ; "CAT=v,T=inf" 	#cao
 #flag *D:  ; "CAT=v,T=inf"     	#dor
 #flag *E:  			#pre
 #flag *F:  			#ultra
 #flag *G:  ;"CAT=adj"           #ice 
+#flag +H:  ;"CAT=adj,N=s"       #mente
 #flag *I:  			#in
+#J
 #flag *K:  ; "CAT=v,T=inf"   	# Todos Irregulares (frequente [au]ir)
 #flag +L:  ; "CAT=v"            #-lho             #noispell
 #flag *M:  ; "CAT=v,T=inf"      #mento
+#N
 #flag *O:  			#pos
 #flag +P:  ; "CAT=v"            #-o              #noispell
+#Q
 #flag *R:  			#re
 #flag *S:  			#des
 #flag *T:			# bi-,tricampeão
 #flag *U:  		
+#flag  V:                       # vice
 #flag *X:  ; "CAT=v,T=inf" 	# deve ser posta nos verbos regulares
+#W
 #flag *Y:  ; "CAT=v,T=inf"  	# Deve ser posta nos verbos regulares
 #flag *Z:  ; "CAT=v,T=inf" 	#(p,Pc,I) Irregulares (frequente erir)
 #flag *a:  ; "CAT=a_nc,N=s"     #plurais
@@ -1447,6 +1461,8 @@ O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 #flag +h:  ; "CAT=a_nc,N=s"     #inho
 #flag *i:  ; "CAT=nc,N=s"   	#ismo
 #flag *j:  ; "CAT=adj"          #izar  ....?
+#k
+#l
 #flag +m:  ; "CAT=adj,N=s"      #mente
 #flag *n:  ; "CAT=v,T=inf"      #ente
 #flag *o: ; "CAT=v,T=inf"       # dela

@@ -285,7 +285,7 @@ aceitar/#vt/XYPLcMDnvm/
 aceite/#nm/p/  ;Tem sign. próp.
 acelerador/#hm//
 acelerante/#an/p/
-acelerar/#vt/XYPLScMDn/
+acelerar/#vt/XYPLScMDnB/
 acenar/#vi/XYLM/
 acender/#vt/XYPLMDvR/
 aceno/#nm/p/
@@ -299,7 +299,7 @@ acerca/#av//
 acercar/#vt/XYPL/
 acerrimamente/#av//
 acérrimo/#a/fp/
-acertar/#vt/XYPLS/
+acertar/#vt/XYPLSB/
 acerto/#nm/pS/
 acervo/#nm/p/
 aceso/#a/fp/
@@ -738,7 +738,7 @@ afinador/#hm//
 afinagem/#nf//
 afinal/#av//
 afinar/#vt/XYPLcMD/
-afincar/#vt/XYPLM/
+afincar/#vt/XYPLMB/
 afinco/#nm/s/
 afinidade/#nf/p/
 afirmação/#nf//
@@ -1839,7 +1839,7 @@ angulosidade/#nf/p/
 anguloso/#a/fpd/
 angústia/#nf/p/
 angustiante/#an/mp/
-angustiar/#vt/XYPLDn/
+angustiar/#vt/XYPLDnB/
 angustioso/#a/fpm/
 anho/#nm/p/
 anião/#nm/p/
@@ -1869,7 +1869,7 @@ animalizar/#vt/XYPLc/
 animalogia/#nf//
 animante/#an/p/
 anima//pti/
-animar/#vt/XYPLcDnv/
+animar/#vt/XYPLcDnvB/
 animatógrafo/#nm/p/
 anímico/#a/fp/
 animismo/#nm/p/
@@ -2212,7 +2212,7 @@ apagador/#hm//
 apaga/#nf//
 apagar/#vt/XYPLMD/
 apaixonadiço/#a//
-apaixonar/#vt/XYPLnSv/
+apaixonar/#vt/XYPLnSvB/
 apalaçar/#vt/XYPL/
 apalacianar/#vt/XYPL/
 apaladar/#vt/XYPL/
@@ -2381,7 +2381,7 @@ aplicabilidade/#nf/p/
 aplicação/#nf//
 aplicada/#nf//
 aplicante/#nn/p/
-aplicar/#vt/XYPLcnv/
+aplicar/#vt/XYPLcnvB/
 aplicativo/#a/fp/
 apocalíptico/#a/fp/
 apócrifo/#a/p/
@@ -2854,7 +2854,7 @@ arrebanhadura/#nf//
 arrebanhar/#vt/XYPLD/
 arrebanho/#nm//
 arrebatante/#an/p/
-arrebatar/#vt/XYPLMDn/
+arrebatar/#vt/XYPLMDnB/
 arrebate/#nm//
 arrebato/#nm//
 arrebentadiço/#a//
@@ -3275,7 +3275,7 @@ assossegar/#vn/XYPL/
 assossego/#nm//
 assotar/#vt/XYPL/
 assovinar/#vt/XYPL/
-assumir/#vt/XYPLR/
+assumir/#vt/XYPLRB/
 assumptível/#an//
 assumptivo/#a//
 assunto/#nm/p/
@@ -8311,7 +8311,7 @@ compromisso/#nm/p/
 compromissório/#a//
 comprovador/#a//
 comprovante/#an/p/
-comprovar/#vt/XYPLcDn/
+comprovar/#vt/XYPLcDnB/
 comprovativo/#a/fp/
 compulsão/#nf//
 compulsar/#vt/XYPLcDv/
@@ -9026,7 +9026,7 @@ contragolpe/#nm//
 contragosto/#nm//
 contra-indicação//p/
 contra-indicar/#vt/XYPL/
-contrair/#vt/KPLvS/
+contrair/#vt/KPLvSB/
 contralto/#nm/p/
 contraluz/#nf//
 contramandado/#nm//
@@ -10183,7 +10183,7 @@ declamatório/#a//
 declaração/#nf/p/
 declarador/#hm//
 declarante/#hn/p/
-declarar/#vt/XYPLcDnv/
+declarar/#vt/XYPLcDnvB/
 declarativo/#a/fp/
 declaratório/#a//
 declinante/#an/p/
@@ -10590,7 +10590,7 @@ desabafo/#nm/p/
 desabar/#vn/XYPLM/
 desabe/#nm//
 desabotoadura/#nf//
-desabrido/#a//
+desabrido/#a/fpm/
 desabrigo/#nm//
 desabrochar/#vn/XYPLM/
 desabusar///
@@ -10678,7 +10678,7 @@ desassombro/#nm//
 desassorear/#vt/ZYPLM/
 desassossegar/#vt/XYPLD/
 desassossego/#nm//
-desastrado/#a/fp/
+desastrado/#a/fpm/
 desastre/#nm/p/
 desastroso/#a/fp/
 desatacar/#vt/XYPL/
@@ -10725,7 +10725,7 @@ desbravador/#hm//
 desbravar/#vt/XYPLMD/
 descabelar/#vn/XYPL/
 descaber/#vi,I=3/L/
-descabidamente/#av//
+descabido/#a/fpm/
 descaída/#nf//
 descaidela/#nf/p/
 descair/#vn/KLM/
@@ -10741,7 +10741,7 @@ descalço/#a/fp/
 descamar/#vn/XYPLc/
 descampado/#hm/p/
 descampar/#vi/XYL/
-descansar/#vn/XYPL/
+descansar/#vn/XYPLB/
 descanso/#nm/p/
 descapotável/#an/p/
 descaracterizar/#vt/XYPLc/
@@ -10786,9 +10786,8 @@ descolorante/#hm2/p/
 descomodidade/#nf/p/
 descómodo/#nm//
 descomover/#vt/XYPL/
-descompadrar/#vt/XYPL/
+descompadrar/#vt/XYPLB/
 descompaixão/#nf//
-descompassadamente/#av//
 descompassar/#vn/XYPL/
 descompassivo/#a//
 descompasso/#nm//
@@ -10831,7 +10830,7 @@ desconsertar/#vt/XYPLD/
 desconserto/#nm//
 desconsiderar/#vt/XYPLc/
 desconsoante/#an/p/
-desconsolador/#hm//
+desconsolado/#a/fpm/
 desconsolar/#vt/XYPLcDv/
 desconsolativo/#a//
 desconsolo/#nm//
@@ -10981,7 +10980,7 @@ desenvergonhado/#a/pfm/
 desenvolto/#a//
 desenvoltura/#nf//
 desenvolvente/#an//
-desenvolver/#vn/XYPLMnu/
+desenvolver/#vn/XYPLMnuB/
 desenxabir/#vt/XYPL/
 desenxamear/#vt/ZYPL/
 desenxofrar/#vt/XYPL/
@@ -11171,7 +11170,7 @@ desobriga/#nf//
 desobrigar/#vt/XYPLc/
 desodorizante/#hm2/p/
 desodorizar/#vt/XYPLn/
-desolador/#hm//
+desolado/#a/fpm/
 desolar/#vt/XYPLcD/
 desoneração/#nf//
 desonestidade/#nf/p/
@@ -11254,7 +11253,7 @@ desprazer/#nm//
 desprazer/#vi,I=3/LMv/
 despregar/#vt/XYPL/
 desprender/#vt/XYPLM/
-despreocupar/#vt/XYPLc/
+despreocupar/#vt/XYPLcB/
 despreparo/#nm//
 desprestígio/#nm//
 despretensão/#nf//
@@ -11272,7 +11271,7 @@ desproporção/#nf//
 despropositar/#vi/XYL/
 desproveito/#nm//
 desprover/#vt/XYPLM/
-despudorado/#nm/fp/
+despudorado/#nm/fpm/
 despudor/#nm//
 desqualificador/#hm//
 desqualificar/#vt/XYPLcD/
@@ -11548,7 +11547,7 @@ diferendo//p/
 diferente/#an/pm/
 diferir/#vn/ZYPLM/
 difícil/#an/a/
-dificílimo/#a//
+dificílimo/$difícil$#an$GR=sub,G=m/fp/
 dificilmente/$difícil$#an$#av//
 dificuldade/#nf/p/
 dificultar/#vt/XYPLc/
@@ -11667,7 +11666,7 @@ diplopia///
 dipolo/#nm/p/
 dique/#nm/p/
 direcção/#nf/p/
-direccionado//p/
+direccionado/#a/pf/
 direccional/#an//
 direccionar/#v/XYLR/
 directiva/#nf//
@@ -11736,7 +11735,7 @@ discussão/#nf/p/
 discutir/#vn/XYPLDv/
 discutível/#a/pi/
 disenteria/#nm//
-disfarçar/#vt/XYPL/
+disfarçar/#vt/XYPLB/
 disfarce/#nm//
 disfasia/#nf//
 disferir/#vt/ZYPL/
@@ -11866,7 +11865,7 @@ distrital/#a/p/
 distrito/#nm/pu/
 disturbar/#vt/XYPL/
 distúrbio/#nm/p/
-ditado/#hm//
+ditado/#hm/p/
 ditador/#nm//
 ditadura/#nf/p/
 ditame/#nm/p/
@@ -12295,7 +12294,7 @@ ejaculatório/#a//
 ejecção/#nf//
 ejectar/#vt/XYPLv/
 ejector/#nm//
-elaborador/#hm//
+elaborado/#a/fpm/
 elaborar/#vt/XYPLRcDv/
 elasticidade/#nf/p/
 elástico/#a/fpH/
@@ -12455,7 +12454,7 @@ embarrar/#vn/XYPL/
 embarretar/#vt/XYPL/
 embarricar/#vt/XYPLM/
 embarrilação/#nf//
-embarrilado/#a//
+embarrilado/#a/fpm/
 embarrilar/#nm/XYPLcDn/
 embasbacar/#vn/XYPLcM/
 embate/#nm/p/
@@ -12573,7 +12572,7 @@ empalidecer/#vn/XYPL/
 empanada/#nf//
 empanar/#vn/XYPLM/
 empancar/#vn/XYPLM/
-empandeirado/#a//
+empandeirado/#a/fp/
 empantanar/#vt/XYPL/
 empantufar/#vt/XYPL/
 empanturrar/#vt/XYPLM/
@@ -12599,7 +12598,7 @@ empedernecer/#vi/XYL/
 empedernir/#vn,I=3/YLSM/
 empedrar/#vt/XYPLMD/
 empenar/#vn/XYPLSM/
-empenhar/#vt/XYPLMDv/
+empenhar/#vt/XYPLMDvB/
 empenho/#nm/p/
 emperrar/#vt/XYPLSM/
 empertigar/#vt/XYPL/
@@ -12718,7 +12717,7 @@ encarnar/#vn/XYPLcD/
 encarniçadamente/#nm//
 encarniçar/#vt/XYPL/
 encarrapitar/#vt/XYPLS/
-encarregado/#hm/p/
+encarregado/#hm/pf/
 encarregar/#vt/XYPL/
 encarregue/#an/p/
 encarreirar/#vn/XYPLM/
@@ -12836,7 +12835,7 @@ endereçar/#vt/XYPLM/
 endereço/#nm/fp/
 endeusar/#vt/XYPLMD/
 endiabrar/#vt/XYPLm/
-endinheirado/#a/p/
+endinheirado/#a/pf/
 endireita/#nm//
 endireitar/#vn/XYPLR/
 endireito/#nm/f/
@@ -13077,7 +13076,7 @@ ensino/#nm/p/
 ensoalheirar/#vt/XYPL/
 ensombrar/#vt/XYPL/
 ensombro/#nm//
-ensonado/#a/fp/
+ensonado/#a/fpm/
 ensonorentado/#a//
 ensopadela/#nf/p/
 ensopar/#vt/XYPL/
@@ -13100,7 +13099,7 @@ entanto/#av//
 então/#av//
 entardecer/#vi/XYL/
 entarraxar/#vt/XYPL/
-enteado/#hm//
+enteado/#hm/fp/
 entear/#vt/ZYPL/
 entelhar/#vt/XYPL/
 entendedor/#hm/p/
@@ -13184,7 +13183,7 @@ entusiástico/#a/pfH/
 enublar/#vn/XYPLc/
 enumerar/#vt/XYPLcDv/
 enumerativo/#a//
-enunciado/#nm//
+enunciado/#nm/p/
 enunciador/#hm//
 enunciar/#vt/XYPLcDv/
 enunciativo/#a/fp/
@@ -13315,9 +13314,8 @@ equidistante/#an/p/
 equidistar/#vi/XYLn/
 equilateral/#an/pm/
 equilátero/#a//
-equilibrador/#a//
 equilibrante/#an/p/
-equilibrar/#vt/XYPLScDnR/
+equilibrar/#vt/XYPLScDnRB/
 equilibra//ti/
 equilíbrio/#nm/pSR/
 equilibrismo/#nm/p/
@@ -13411,7 +13409,7 @@ esboroar/#vt/XYPLM/
 esborratar/#vn/XYPL/
 esbracejar/#vi/XYL/
 esbranquiçar/#vt/XYPL/
-esbugalhado//fp/
+esbugalhado/#a/fp/
 esburacar/#vt/XYPL/
 escabeche/#nm/p/
 escabroso/#a/pfm/
@@ -13465,7 +13463,7 @@ escangalhar/#vt/XYPL/
 escanhoadela/#nf/p/
 escanhoar/#vt/XYPLMD/
 escantilhão/#nm//
-escanzelado/#a//
+escanzelado/#a/fpm/
 escapada/#nf//
 escapadela/#nf/p/
 escapadiço/#a//
@@ -13567,7 +13565,7 @@ escorrer/#vn/XYPLM/
 escorva///
 escotilha/#nf//
 escovadela/#nf/p/
-escovado/#nm//
+escovado/#hm//
 escova/#nf//
 escovar/#vt/XYPL/
 escoveiro/#nm//
@@ -14181,7 +14179,7 @@ estoicamente/#av//
 estoicidade/#nf/p/
 estoicismo/#nm/p/
 estóico/#hm/fp/
-estoirado/#hm//
+estoirado/#hm/fp/
 estoirar/#vn/XYPL/
 estoiro/#nm//
 estojo/#nm//
@@ -14897,8 +14895,8 @@ faltar/#vi/XYL/
 falto/#a//
 faltoso/#a/p/
 famalicense/#hn/p/
-fama/#nf//
-famigerado/#a/f/
+fama/#nf/p/
+famigerado/#a/fp/
 família/#nf/p/
 familiar/#an/pmd/
 familiaridade/#nf/p/
@@ -15194,7 +15192,7 @@ ferocidade/#nf/p/
 ferocíssimo/$feroz$#a$G=m,GR=sup/pf/
 feroz/#an/pdsm/
 ferradela/#nf/p/
-ferrado/#hm//
+ferrado/#hm/p/
 ferrador/#nm/p/
 ferradura/#nf/p/
 ferragem/#nf/p/
@@ -15691,7 +15689,7 @@ foral/#nm/p/
 forâneos///
 forasteiro/#hm/p/
 forçadamente/#av//
-forcado/#hm//
+forcado/#hm/p/
 forca/#nf/p/
 força/#nf/p/
 forcar/#vt/XYPL/
@@ -16476,7 +16474,7 @@ general/#hm2/pdsx/
 generalidade/#nf/p/
 generalista/#a/p/
 generalizador/#a/fp/
-generalizar/#vt/XYPLcDv/
+generalizar/#vt/XYPLcDvB/
 generante/#an/p/
 generativo/#a/f/
 generatriz/#nf//
@@ -18925,7 +18923,7 @@ inolvidável/#an//
 inominada///
 inominável/#an//
 inoperante/#an/p/
-inopinado/#a//
+inopinado/#a/fpm/
 inopinável/#an//
 inoportunidade/#nf/p/
 inoportuno/#a/mdfp/
@@ -24399,7 +24397,7 @@ ourivesaria/#nf/p/
 ourives/#nm//
 ouro/#nm//
 ousadia/#nf/p/
-ousar/#vt/XYPL/
+ousar/#vt/XYPLB/
 ousia///
 outeiro/#nm/p/
 outonada/#nf//
@@ -27262,7 +27260,7 @@ prologal/#an//
 prologar/#vt/XYPL/
 prólogo/#nm/p/
 prolonga/#nf//
-prolongar/#vt/XYPLcMv/
+prolongar/#vt/XYPLcMvB/
 promanar/#vt/XYPL/
 promessa/#nf/p/
 prometedor/#hm/pfH/
@@ -30706,7 +30704,8 @@ sentimentalismo/#nm/p/
 sentimentalista/#hn//
 sentimentalizar/#vt/XYPL/
 sentinela/#nf/p/
-sentir/#vn,I=3/YLMP/
+sentir/#vn,I=3/YLMPB/
+sentido/#nm/p/
 sépala/#nf/p/
 separabilidade/#nf/p/
 separadamente/#av//

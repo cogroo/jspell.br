@@ -83,13 +83,13 @@ acautelar/#vn/XYPLS/
 accionar/#vt/XYPLMDv/
 aceder/#vi/XYLn/
 aceitar/#vt/XYPLcMDnvm/
-acelerar/#vt/XYPLScMDn/
+acelerar/#vt/XYPLScMDnB/
 acenar/#vi/XYLM/
 acender/#vt/XYPLMDvR/
 acentuar/#vt/XYPLSmc/
 acerbar/#vt/XYPL/
 acercar/#vt/XYPL/
-acertar/#vt/XYPLS/
+acertar/#vt/XYPLSB/
 acetinar/#vt/XYPLcD/
 achar/#vt/XYPLMD/
 achatar/#vt/XYPLM/
@@ -236,7 +236,7 @@ afilar/#vt/XYPLMD/
 afilhar/#vi/XYL/
 afiliar/#vt/XYPLc/
 afinar/#vt/XYPLcMD/
-afincar/#vt/XYPLM/
+afincar/#vt/XYPLMB/
 afirmar/#vt/XYPLRc/
 afivelar/#vt/XYPL/
 afixar/#vt/XYPLcv/
@@ -532,13 +532,13 @@ anexar/#vt/XYPLSc/
 angariar/#vt/XYPLcD/
 angelizar/#vt/XYPLc/
 anglicizar/#vt/XYPL/
-angustiar/#vt/XYPLDn/
+angustiar/#vt/XYPLDnB/
 anichar/#vt/XYPL/
 anilar/#vt/XYPL/
 anilhar/#vt/XYPL/
 anilinar/#vt/XYPL/
 animalizar/#vt/XYPLc/
-animar/#vt/XYPLcDnv/
+animar/#vt/XYPLcDnvB/
 aninhar/#vt/XYPLMD/
 aniquilar/#vt/XYPLcMD/
 anisar/#vt/XYPL/
@@ -575,7 +575,7 @@ apachorrar/#v/XYL/
 apadrinhar/#vt/XYPLSMD/
 apadroar/#vt/XYPL/
 apagar/#vt/XYPLMD/
-apaixonar/#vt/XYPLnSv/
+apaixonar/#vt/XYPLnSvB/
 apalaçar/#vt/XYPL/
 apalacianar/#vt/XYPL/
 apaladar/#vt/XYPL/
@@ -643,7 +643,7 @@ aplacar/#vn/XYPLv/
 aplainar/#vt/XYPLcMD/
 aplanar/#vt/XYPLcD/
 aplaudir/#vn/XYPLv/
-aplicar/#vt/XYPLcnv/
+aplicar/#vt/XYPLcnvB/
 apoderar/#v/XYLM/
 apodrecer/#vn/XYPLM/
 apodrentar/#vn/XYPL/
@@ -751,7 +751,7 @@ arrasar/#vt/XYPLD/
 arrastar/#vt/XYPLMD/
 arrear/#vt/ZYPLcMD/
 arrebanhar/#vt/XYPLD/
-arrebatar/#vt/XYPLMDn/
+arrebatar/#vt/XYPLMDnB/
 arrebentar/#vt/XYPLcM/
 arrebitar/#vt/XYPL/
 arrebolar/#vt/XYPL/
@@ -867,7 +867,7 @@ assorear/#vt/ZYPLM/
 assossegar/#vn/XYPL/
 assotar/#vt/XYPL/
 assovinar/#vt/XYPL/
-assumir/#vt/XYPLR/
+assumir/#vt/XYPLRB/
 assustar/#vt/XYPLD/
 astralizar/#vt/XYPLc/
 astuciar/#vi/XYL/
@@ -1584,7 +1584,7 @@ comprazer/#vi,I=3/LMD/
 compreender/#vt/XYPL/
 comprimir/#vt/XYPLv/
 comprometer/#vt/XYPLMDS/
-comprovar/#vt/XYPLcDn/
+comprovar/#vt/XYPLcDnB/
 compulsar/#vt/XYPLcDv/
 compungir/#vn/XYPLM/
 computar/#vt/XYPLcDv/
@@ -1720,7 +1720,7 @@ contradizer/#vt/KPL/
 contrafazer/#vt/KPL/
 contrafortar/#vt/XYPL/
 contra-indicar/#vt/XYPL/
-contrair/#vt/KPLvS/
+contrair/#vt/KPLvSB/
 contramandar/#vt/XYPL/
 contramanobrar/#vi/XYL/
 contramarcar/#vt/XYPLc/
@@ -1891,7 +1891,7 @@ decidir/#vn/XYPL/
 decifrar/#vn/XYPLcMDv/
 decilitrar/#vi/XYL/
 declamar/#vn/XYPLcDn/
-declarar/#vt/XYPLcDnv/
+declarar/#vt/XYPLcDnvB/
 declinar/#vn/XYPLcDnv/
 declivar/#vn/XYPL/
 decompor/#vt/KPL/
@@ -2059,7 +2059,7 @@ descalçar/#vt/XYPLD/
 descalcificar/#vt/XYPLcDn/
 descamar/#vn/XYPLc/
 descampar/#vi/XYL/
-descansar/#vn/XYPL/
+descansar/#vn/XYPLB/
 descaracterizar/#vt/XYPLc/
 descarar/#vt/XYPLM/
 descarnar/#vt/XYPLD/
@@ -2078,7 +2078,7 @@ descobrir/#vn,I=3/YPLRMD/
 descoimar/#vt/XYPL/
 descolar/#vn/XYPLM/
 descomover/#vt/XYPL/
-descompadrar/#vt/XYPL/
+descompadrar/#vt/XYPLB/
 descompassar/#vn/XYPL/
 descompor/#vt/KPL/
 descomprimir/#vt/XYPL/
@@ -2172,7 +2172,7 @@ desentrelaçar/#vt/XYPL/
 desentrincheirar/#vt/XYPL/
 desentulhar/#vt/XYPLD/
 desenvencilhar/#vt/XYPL/
-desenvolver/#vn/XYPLMnu/
+desenvolver/#vn/XYPLMnuB/
 desenxabir/#vt/XYPL/
 desenxamear/#vt/ZYPL/
 desenxofrar/#vt/XYPL/
@@ -2301,7 +2301,7 @@ desposar/#vt/XYPL/
 desprazer/#vi,I=3/LMv/
 despregar/#vt/XYPL/
 desprender/#vt/XYPLM/
-despreocupar/#vt/XYPLc/
+despreocupar/#vt/XYPLcB/
 desprezar/#vt/XYPLDv/
 desprimorar/#vt/XYPL/
 despronunciar/#vt/XYPL/
@@ -2404,7 +2404,7 @@ discrepar/#vi/XYLn/
 discriminar/#vt/XYPLcDnv/
 discursar/#vn/XYPLD/
 discutir/#vn/XYPLDv/
-disfarçar/#vt/XYPL/
+disfarçar/#vt/XYPLB/
 disferir/#vt/ZYPL/
 disformar/#vt/XYPL/
 disjuntar/#vt/XYPL/
@@ -2592,7 +2592,7 @@ empedernecer/#vi/XYL/
 empedernir/#vn,I=3/YLSM/
 empedrar/#vt/XYPLMD/
 empenar/#vn/XYPLSM/
-empenhar/#vt/XYPLMDv/
+empenhar/#vt/XYPLMDvB/
 emperrar/#vt/XYPLSM/
 empertigar/#vt/XYPL/
 empestar/#vn/XYPLM/
@@ -2918,7 +2918,7 @@ epilogar/#vt/XYPLcD/
 epistolar/#vt//
 equacionar/#vt/XYPLMR/
 equidistar/#vi/XYLn/
-equilibrar/#vt/XYPLScDnR/
+equilibrar/#vt/XYPLScDnRB/
 equiparar/#vt/XYPLcv/
 equipar/#vt/XYPLMvRu/
 equivaler/#vi,I=3/YLn/
@@ -3470,7 +3470,7 @@ gelificar/#vt/XYPL/
 gemar/#vn/XYPL/
 gemer/#vn/XYPLDn/
 geminar/#vt/XYPLcv/
-generalizar/#vt/XYPLcDv/
+generalizar/#vt/XYPLcDvB/
 gentilizar/#vt/XYPL/
 gerar/#vt/XYPLcD/
 gerir/#vn/ZYPL/
@@ -4407,7 +4407,7 @@ ossificar/#vt/XYPLc/
 ostentar/#vn/XYPLcD/
 ostracizar/#vt/XYPLn/
 ourar/#vn/XYPL/
-ousar/#vt/XYPL/
+ousar/#vt/XYPLB/
 outonar/#vn/XYPL/
 outorgar/#vn/XYPLMDn/
 ouvir/#vt,I=3/YPLDn/
@@ -4790,7 +4790,7 @@ projectar/#vt/XYPLcn/
 proletarizar/#vt/XYPL/
 proliferar/#vi/XYLc/
 prologar/#vt/XYPL/
-prolongar/#vt/XYPLcMv/
+prolongar/#vt/XYPLcMvB/
 promanar/#vt/XYPL/
 prometer/#vn/XYPLMD/
 promiscuir/#v/KL/
@@ -5475,7 +5475,7 @@ sensualizar/#vt/XYPLc/
 sentar/#vt/XYPL/
 sentenciar/#vn/XYPLD/
 sentimentalizar/#vt/XYPL/
-sentir/#vn,I=3/YLMP/
+sentir/#vn,I=3/YLMPB/
 separar/#vt/XYPLcDvm/
 sepultar/#vt/XYPLMDn/
 sequestrar/#vt/XYPLcDv/
