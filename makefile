@@ -134,7 +134,7 @@ aspell-tgz:
 
 jspell-rpm: jspell-tgz
 	mv $(DIST_DIR).tar.gz ~/rpms/SOURCES/jspell.$(ABR).tgz
-	perl -pe 's/VERSION/chomp($$a=`date +%Y%d%m`);$$a/e;' jspell.pt.spec.in > jspell.pt.spec
+	perl -pe 's/VERSION/chomp($$a=`date +%Y%m%d`);$$a/e;' jspell.pt.spec.in > jspell.pt.spec
 	rpmbuild -ba jspell.pt.spec 
 
 
@@ -166,7 +166,7 @@ jspell-tgz: $(EXTRADIST)
 	cp $(EXTRADIST) $(DIST_DIR)
 
 	cp dist_makefile $(DIST_DIR)/makefile
-	perl -pi -e 's/DISTDATE/chomp($$a=`date +%Y%d%m`);$$a/e;' $(DIST_DIR)/makefile
+	perl -pi -e 's/DISTDATE/chomp($$a=`date +%Y%m%d`);$$a/e;' $(DIST_DIR)/makefile
 	perl -pi -e 's!DICFILES!$(PTDIC)!'                        $(DIST_DIR)/makefile
 
 	tar -zcvf $(DIST_DIR).tar.gz $(DIST_DIR)
