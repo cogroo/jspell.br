@@ -9,8 +9,8 @@
 
 # make publish
 
-LIB=/usr/local/lib
-ISPELLLIB=/usr/local/lib/ispell
+LIB=/usr/lib
+ISPELLLIB=/usr/lib/ispell
 
 BASE= port.aff port.dic np.dic inf.dic irregulares.txt verb.dic \
       makefile all-irr.dic pos2iso jsp2isp.pl README irr2perl

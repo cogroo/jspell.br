@@ -1,5 +1,6 @@
 #n/CAT=nc//
 #nm/CAT=nc,G=m,N=s//
+#nmp/CAT=nc,G=m,N=p//
 #nf/CAT=nc,G=f,N=s//
 #nn/CAT=nc,G=_,N=s//
 #a/CAT=adj,N=s,G=m// na realidade N=?? G=??
@@ -9367,6 +9368,7 @@ corpanzudo/#a//
 corpete/#nm/p/
 corpo/#nm/ph/
 corporação/#nf/p/
+corpora/#nm//
 corporal/#an/pmd/
 corporalidade/#nf/p/
 corporalizar/#vt/XYPLc/
@@ -9382,7 +9384,7 @@ corporiforme/#an/p/
 corporizar/#vt/XYPLc/
 corpulência/#nf/p/
 corpulento/#a/p/
-corpus///
+corpus/#nmp//
 corpuscular/#an//
 corpúsculo/#nm/p/
 correcção/#nf/p/
