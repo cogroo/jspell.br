@@ -10043,7 +10043,7 @@ dado/#nm/p/
 dador/#hm//
 daí/CAT=cp,Prep=de,Adv=aí//
 dáimio//p/
-dalém/CAT=cp,Prep=de,Adv,além//
+dalém/CAT=cp,Prep=de,Adv=além//
 dalgo/CAT=cp,Prep=de,Pind=algo,G=_,N=_//
 dalguém/CAT=cp,Prep=de,Pind=alguém,G=_,N=_//
 dalgum/CAT=cp,Prep=de,Pind=algum,G=m,N=s/fp/
@@ -12734,8 +12734,8 @@ encarreirar/#vn/XYPLM/
 encartar/#vt/XYPLScM/
 encasacar/#vt/XYPL/
 encascar/#vn/XYPL/
-encastelar/#vt,intr/XYPL/
-encasular/#vt,intr/XYPL/
+encastelar/#vt/XYPL/
+encasular/#vt/XYPL/
 encatrafiar/#vt/XYPL/
 encavacadela/#nf/p/
 encavacar/#vi/XYLc/
@@ -29158,7 +29158,7 @@ repoiso/#nm//
 repolho/#nm/p/
 repolhudo/#a//
 reportagem/#nf/p/
-reportar/#vt,intr/XYPLcM/
+reportar/#vt/XYPLcM/
 repórter/#nm/p/
 reportório/#hm/p/
 repor/#vt/KPL/
