@@ -20,7 +20,7 @@ pt-aspell.pwli:
 	echo $(pkglibdir)/portugues > pt-aspell.pwli
 
 install: portugues
-#	${INSTALL_DATA} $(PHONET) $(pkgdatadir)/
+	${INSTALL_DATA} $(PHONET) $(pkgdatadir)/
 	echo ${INSTALL_DATA} $(CONFIG) $(pkgdatadir)/
 	echo ${INSTALL_DATA} portugues  $(pkglibdir)/
 	echo ${INSTALL_DATA} pt-aspell.pwli $(pspell_pkgdatadir)/
