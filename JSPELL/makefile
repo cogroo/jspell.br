@@ -14,28 +14,35 @@ BASE= ../port.aff $(PTDIC) irregulares.txt aux.verb.dic \
 $B/port.hash: $B/port.dic ../port.aff
 	cd $B; jbuild port.dic port.aff port.hash
 
-$B/port.dic $B/port.aff : ../port.dic ../port.aff
+
+$B/port.dic $B/port.aff $B/makefile $B/jspell.port.spec: ../port.dic ../port.aff  makefile.simple
 	mkdir -p $B
 	grep -v "nojspell" ../port.dic > $B/port.dic 
 	cp ../port.aff $B/port.aff
+	cp ../jspell.port.spec $B/
+	cp ../ver $B/
+	cp makefile.simple $B/makefile
 
 install : $B/port.hash $B/port.irr
 	mkdir -p ${LIB}/jspell
 	cp $B/port.hash ${LIB}/jspell/
 	cp $B/port.irr  ${LIB}/jspell/
 
+base: $B/port.dic $B/port.aff $B/makefile  $B/jspell.port.spec $B/port.irr
+
 #--------------------------------------------------------------------- 
 rpm: 
-	make jspell.port.tgz
-	mv jspell.port.tgz /home/jj/SOURCES/
-	rpm -ba jspell.port.spec
+	make base
+	cd $B; make rpm
 
 $B/port.irr: ../aux.all-irr.dic
 	./irr2perl > $B/port.irr
 
 jspell: $B/port.hash
 
-jspell.port.tgz: $(BASE)
+dist: jspell.port.tgz
+
+jspell.port.tgz:
 	rm -rf jspell.port-`./ver`
 	mkdir -p jspell.port-`./ver`
 	cp $(BASE) jspell.port-`./ver`

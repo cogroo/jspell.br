@@ -1,6 +1,7 @@
 #---------------------------------------------------------------------
 # make jspell
 # make install-jspell
+# make jspell-rpm
 # make jspell.tgz
 
 # make ispell   (very slow!!!)
@@ -21,7 +22,7 @@ PTDIC = port.geral.dic aux.all-irr.dic port.inf.dic port.np.dic port.siglas.dic
 
 BASE= port.aff $(PTDIC) irregulares.txt aux.verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
-      pos2iso jsp2isp.pl README jspell.port.spec irr2perl
+      PERL/pos2iso PERL/jsp2isp.pl README jspell.port.spec irr2perl
 
 what:
 	@ echo "make what? (jspell ispell install-jspell install-ispell)"
@@ -30,10 +31,8 @@ port.dic: $(PTDIC)
 	cat $(PTDIC) > port.dic 
 
 #--------------------------------------------------------------------- 
-rpm: 
-	make jspell.port.tgz
-	mv jspell.port.tgz /home/jj/SOURCES/
-	rpm -ba jspell.port.spec
+jspell-rpm: 
+	cd JSPELL; make rpm
 
 port.irr: aux.all-irr.dic
 	./irr2perl > port.irr
@@ -49,6 +48,10 @@ install-jspell: port.dic port.aff
 
 jspell-install: port.dic port.aff
 	cd JSPELL; make install
+
+tgz:
+	make clean
+	cd .. ; tar -cvzf jspell.pt.tgz jspell.pt ; mv jspell.pt.tgz jspell.pt/dicionario.pt.tgz
 
 jspell.port.tgz: $(BASE)
 	rm -rf jspell.port-`./ver`
