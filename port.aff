@@ -604,12 +604,12 @@ Z I R       > -ZIR,ÇÕES    ; "CAT=nc,G=f,N=p,FSEM=cao"  # seduzir->seduções
 P O R       >   -R,SIÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # expor->exposições
 
 flag *C:                 ; "CAT=v,T=inf" #cao
-T A R       >   -TAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # cantar->canção
+#T A R       >   -TAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # cantar->canção
 C I O N A R > -IONAR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # adicionar->adição
 A I R       >    -IR,CÇÃO  ; "CAT=nc,G=f,N=s,FSEM=cao"  # atrair->atracção
 U I R       >    -IR,ÇÃO   ; "CAT=nc,G=f,N=s,FSEM=cao"  # evoluir->evolução
 
-T A R       >   -TAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # cantar->canções
+#T A R       >   -TAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # cantar->canções
 C I O N A R > -IONAR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # adicionar->adições
 A I R       >    -IR,CÇÕES ; "CAT=nc,G=f,N=p,FSEM=cao"  # atrair->atracções
 U I R       >    -IR,ÇÕES  ; "CAT=nc,G=f,N=p,FSEM=cao"  # evoluir->evoluções
