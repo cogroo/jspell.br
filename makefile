@@ -47,7 +47,11 @@ what:
 	@ echo -e "\taspell-install -- installs aspell"
 	@ echo -e "\taspell-tgz -- creates aspell distribution file"
 	@ echo
-
+	@ echo -e "myspell: (Em desenvolvimento)"
+	@ echo -e "\tmyspell -- builds myspell dictionary (slow)"
+	@ echo -e "\tmyspell-install -- installs myspell"
+	@ echo -e "\tmyspell-tgz -- creates myspell distribution file"
+	@ echo
 #-------------------------------------------------------------------
 # Generated files
 #-------------------------------------------------------------------
@@ -90,6 +94,7 @@ clean :
 	cd IRR;    make clean
 	cd ISPELL; make clean
 	rm -f *.stat *.cnt
+	rm -f *~
 
 realclean:
 	cd IRR;    make realclean
@@ -125,6 +130,20 @@ aspell-install: aspell
 aspell-tgz:
 	(cd ASPELL; make tgz)
 	mv ASPELL/aspell.$(ABR).$(DATE).tar.gz .
+
+#-------------------------------------------------------------------
+# myspell rules ################################## Para definir
+#-------------------------------------------------------------------
+
+myspell: port.dic port.aff
+	cd MYSPELL; make
+
+myspell-install: myspell
+	cd MYSPELL; make install
+
+myspell-tgz: myspell
+	cd MYSPELL; make tgz
+	mv MYSPELL/$(LING)/myspell.$(ABR).$(DATE).tar.gz .
 
 #-------------------------------------------------------------------
 # jspell rules
