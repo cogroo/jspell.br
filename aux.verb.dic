@@ -813,7 +813,7 @@ arvorar/#vt/XYPL/
 asar/#vt/XYPLD/
 ascender/#vi/XYLMn/
 asfaltar/#vt/XYPLD/
-asfixiar/#vt/XYPLn/
+asfixiar/#vt/XYPLnM/
 asilar/#vt/XYPL/
 asnear/#vi/ZYL/
 aspirar/#vt/XYPLc/
@@ -1060,7 +1060,7 @@ barbear/#vt/ZYPLc/
 barlaventear/#vi/ZYL/
 barlaventejar/#vi/XYL/
 baronizar/#vt/XYPL/
-barrar/#vt/XYPL/
+barrar/#vt/XYPLM/
 barreirar/#vt/XYPL/
 barricar/#vt/XYPL/
 barulhar/#vn/XYPL/
@@ -1366,7 +1366,7 @@ centrar/#vt/XYPLS/
 centrifugar/#vt/XYPLcD/
 centuplicar/#vt/XYPL/
 cercar/#vt/XYPLD/
-cercear/#vt/ZYPLD/
+cercear/#vt/ZYPLDM/
 cerebralizar/#vt/XYPL/
 cerimoniar/#vt/XYPL/
 cernir/#vi/XYL/i?
@@ -1624,7 +1624,7 @@ confessar/#vt/XYPLRv/
 confiar/#vi/XYPLnSmv/
 confidenciar/#vt/XYPL/
 configurar/#vt/XYPLRScv/
-confinar/#vn/XYPLcn/
+confinar/#vn/XYPLcnM/
 confirmar/#vt/XYPLcDn/
 confiscar/#vt/XYPLcv/
 conflagrar/#vt/XYPLc/
@@ -1996,7 +1996,7 @@ desairar/#vt/XYPL/
 desajeitar/#vt/XYPLm/
 desalentar/#vn/XYPLD/
 desaliar/#vt/XYPL/
-desalinhar/#vt/XYPL/
+desalinhar/#vt/XYPLM/
 desalinhavar/#vt/XYPL/
 desalmar/#vt/XYPLM/
 desancar/#vt/XYPLD/
@@ -2010,6 +2010,7 @@ desapoiar/#vt/XYPL/
 desapontar/#vt/XYPLM/
 desapoquentar/#vt/XYPL/
 desapossar/#vt/XYPL/
+desapropriar/#vt/XYPLDnM/
 desaprumar/#vt/XYPL/
 desarmonizar/#vt/XYPLcD/
 desarranchar/#vt/XYPL/
@@ -2321,7 +2322,7 @@ destravar/#vn/XYPL/
 destreinar/#vt/XYPL/
 destrinçar/#vt/XYPLDv/
 destroçar/#vt/XYPLD/
-destronar/#vt/XYPL/
+destronar/#vt/XYPLM/
 destruir/#vn,I=3/PLcDv/
 desumidificar/#vt/XYPLcD/
 desunhar/#vt/XYPL/
@@ -3231,7 +3232,7 @@ extraditar/#vt/XYPL/
 extrair/#vt/KPLv/
 extrapolar/#vt/XYPLc/
 extravaganciar/#vn/XYPL/
-extravasar/#vn/XYPL/
+extravasar/#vn/XYPLM/
 extraviar/#vt/XYPLD/
 extremar/#vt/XYPLv/
 exuberar/#vn/XYPLn/
@@ -3269,7 +3270,7 @@ fanicar/#vi/XYL/
 fantasiar/#vn/XYPLD/
 fantasmagorizar/#vt/XYPL/
 fantochar/#vi/XYL/
-fardar/#vt/XYPLM/
+fardar/#vt/XYPL/
 farolizar/#vt/XYPLc/
 farpar/#vt/XYPLn/
 farrapar/#vt/XYPL/
@@ -3647,7 +3648,7 @@ improvar/#vt/XYPLcDv/
 improvisar/#vn/XYPLcD/
 impugnar/#vt/XYPLcDv/
 impulsar/#vt/XYPL/
-impulsionar/#vt/XYPLD/
+impulsionar/#vt/XYPLDM/
 impurificar/#vt/XYPL/
 imputar/#vt/XYPLcDv/
 imunizar/#vt/XYPLcDn/
@@ -3967,7 +3968,7 @@ ligar/#vn/XYPLScMn/
 limar/#vt/XYPLD/
 limitar/#vn/XYPLcnvDm/
 limpar/#vt/XYPLcMD/
-linchar/#vt/XYPLD/
+linchar/#vt/XYPLDM/
 linearizar/#v/XYPLc/
 linguarejar/#vi/XYL/
 liquefazer/#vt/KPL/
@@ -4335,7 +4336,7 @@ obviar/#vn/XYPLv/
 ocasionar/#vt/XYPLD/
 ocidentalizar/#vt/XYPLc/
 ocorrer/#vi/XYLn/
-ocultar/#vt/XYPLcDnS/
+ocultar/#vt/XYPLcDnSM/
 ocupar/#vt/XYPLScDn/
 odiar/#vt,I=3/YPLv/
 odorar/#vi/XYLn/
@@ -5517,7 +5518,7 @@ sobrancear/#vn/ZYPL/
 sobrar/#vi/XYLn/
 sobrealimentar/#vt/XYPLc/
 sobreavisar/#vt/XYPL/
-sobrecarregar/#vt/XYPL/
+sobrecarregar/#vt/XYPLM/
 sobreexcitar/#vt/XYPLc/
 sobre-humanizar/#vt/XYPL/
 sobreirritar/#vt/XYPL/

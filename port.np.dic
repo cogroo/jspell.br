@@ -12,6 +12,7 @@
 #tcf/CAT=np,SEM=cid,G=f,N=s
 #em/CAT=np,SEM=mes,G=m,N=s/
 
+Aachen/#tc/
 Abecassis/#np/
 Abel/#npm/
 Abércio/#npm/
@@ -59,6 +60,7 @@ Alasca/#t/
 Albânia/#tpf/
 Albano/#npm/
 Alba/#npf/
+Albergaria-a-Nova/#t/
 Albergaria-a-Velha/#t/
 Albertina/#npf/
 Albertino/#npm/
@@ -247,6 +249,7 @@ Atenas/#tc/
 Átila/#npm/
 Atlanta/#tc/
 Atlântico/#t/
+Auckland/#tc/
 Augusta/#npf/
 Augustini/#np1/
 Augusto/#npm/
@@ -363,8 +366,8 @@ Bertrand/#np1/
 Betânia/#npf/
 Bética/#t/
 Bíblia/CAT=np,G=f/
-Bié/#t/
 Bielorússia/#tpf/
+Bié/#t/
 Bilbau/#tc/
 Bill/CAT=np,G=m,SEM=p1/
 Birmânia/#tpf/
@@ -1570,8 +1573,8 @@ Ming/#np1/
 Minho/#t/
 Minneli/#np1/
 Minnesota/#t/
-Minsk/#tc/
 Minotauro/CAT=np,G=m/
+Minsk/#tc/
 Miragaia/#t/
 Miranda/#np/
 Mirandela/#t/
@@ -1909,8 +1912,8 @@ Praga/#tc/
 Preciosa/#npf/
 Primavera/CAT=np,G=f,N=s//
 Prince/#np1/
-Proença/#np/
 Proença-a-Nova/#t/
+Proença/#np/
 Prokofiev/#np1/
 Prometeu/#npm/
 Protágoras/CAT=np/
@@ -2196,11 +2199,11 @@ Stefano/#np1/
 Stephens/#np1/
 Stern/#np1/
 Stevens/#np1/
+Stewart/#np1/
 Stratford/#t/
 Strauss/#np1/
 Stravinsky/#np1/
 Stuart/#np1/
-Stewart/#np1/
 Suárez/#np1/
 Sudão/#tp/
 Sudetas/CAT=np/
@@ -2359,9 +2362,9 @@ Urbión/#t/
 Uruguai/#tp/
 Valdemar/#npm/
 Valdevez/#t/
-Valência/#tc/
 Valença/#np/
 Valença/#t/
+Valência/#tc/
 Vale/#np/
 Valentim/#np/
 Valentino/#npm/
