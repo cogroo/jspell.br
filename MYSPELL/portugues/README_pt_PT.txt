@@ -40,7 +40,7 @@ HISTÓRIA
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Versão 25/1/2005
 Gerada uma nova versão do dicionário. (Ficheiro de afixos e dicionário foram refeitos)
-1. O dicionário contém agora XXXXX radicais de palavras em relação às 32082 da versão anterior
+1. O dicionário possui agora 32200 radicais de palavras em relação às 32082 da versão anterior
 2. O ficheiro de afixos inclui mais regras de sufixação, obtidas do dicionário Ispell, e regras de substituição para erros comuns (ss <-> c, cç <-> x, ch <-> x, cao -> ção, ... )
 
 Versão 20/5/2002
@@ -63,5 +63,5 @@ HISTORY
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Version: 25/1/2005
 New dictionary version generated. (affix file and dictionary file were remade)
-1. The dictionary now has around XXXXX word radicals. Previous version had 32082 word radicals.
+1. The dictionary now has around 32200 word radicals. Previous version had 32082 word radicals.
 2. The affix file includes more suffix rules from the Ispell dictionary, and some replacing rules for common spelling mistakes (ss <-> c, cç <-> x, ch <-> x, cao -> ção, ... )
