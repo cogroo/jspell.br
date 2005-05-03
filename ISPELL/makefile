@@ -36,10 +36,10 @@ DATE=`date +%Y%m%d`
 FR = mv $D.dic _$D.dic ; mv $D.aff _$D.aff
 #FR = perl flagsRenDel $D
 
-ispell.tgz: tgz
+ispell-tgz: tgz
 
 tgz:
-	tar -czf $P/ispell.$(ABR).$(DATE).tar.gz $P/$D.dic $P/README $P/$D.aff $P/makefile
+	tar cfz ispell.$(ABR)-$(DATE).tar.gz $P/$D.dic $P/README $P/$D.aff $P/makefile
 
 publish: tgz
 	mv $P/$D.tgz $(plndir)/UM$D.tgz
@@ -57,14 +57,14 @@ $P/$D.aff $P/$D.dic: ../port.dic ../port.aff
 	#perl jsp2isp.pl ../port.aff > /tmp/$D.aff 
 	#perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > /tmp/$D.dic
 	perl jsp2isp.pl ../port.aff > $P/$D.aff 
-	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/$D.dic
+	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/_$D.dic
 	#cp flagsRenDel /tmp/
 
 	cp ver ispell.port.spec $P
 
 	#cd /tmp
 	#perl flagsRenDel $D
-	#munchlist -l $P/$D.aff $P/_$D.dic > $P/$D.dic;
+	./munchlist -l $P/$D.aff $P/_$D.dic > $P/$D.dic;
 
 	#cd /tmp; perl flagsRenDel $D; ${FR} ; munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic
 	#cd $P

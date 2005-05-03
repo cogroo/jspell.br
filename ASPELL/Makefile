@@ -15,8 +15,10 @@ aspell: ../port.dic
 	perl tt ../port.dic > $P/portugues.aspell
 	cd $P; make
 
+aspell-tgz: tgz
+
 tgz: 
-	tar -czf aspell.$(ABR).$(DATE).tar.gz $P
+	tar czf aspell.$(ABR).$(DATE).tar.gz $P
 
 ../port.dic:
 	cd ..; make port.dic

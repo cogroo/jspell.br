@@ -26,8 +26,12 @@ myspell:
 	cat $P/$P.dic >> $P/pt_PT.dic
 	rm $P/$P.dic
 	rm $P/$P.aff
+myspell-tgz: tgz
+
+myspell-zip: zip
+
 tgz: 
-	tar -czf myspell.$(ABR).$(DATE).tar.gz $P/*pt*
+	tar -czf myspell.$(ABR)-$(DATE).tar.gz $P/*pt* $P/makefile
 zip:
 	zip myspell_$(ABR)_$(DATE).zip $P/*pt*
 

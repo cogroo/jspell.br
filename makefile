@@ -116,7 +116,7 @@ ispell-install: ispell
 
 ispell-tgz: ispell
 	cd ISPELL; make tgz
-	mv ISPELL/$(LING)/ispell.$(ABR).$(DATE).tar.gz .
+	mv ISPELL/ispell.$(ABR)-$(DATE).tar.gz .
 
 #-------------------------------------------------------------------
 # aspell rules
@@ -128,7 +128,7 @@ aspell: port.dic port.aff
 aspell-install: aspell
 	cd ASPELL; make install
 
-aspell-tgz:
+aspell-tgz: aspell
 	(cd ASPELL; make tgz)
 	mv ASPELL/aspell.$(ABR).$(DATE).tar.gz .
 
