@@ -64,7 +64,7 @@ $P/$D.aff $P/$D.dic: ../port.dic ../port.aff
 
 	#cd /tmp
 	#perl flagsRenDel $D
-	#munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic;
+	#munchlist -l $P/$D.aff $P/_$D.dic > $P/$D.dic;
 
 	#cd /tmp; perl flagsRenDel $D; ${FR} ; munchlist -l /tmp/_$D.aff /tmp/_$D.dic > /tmp/$D.dic
 	#cd $P
