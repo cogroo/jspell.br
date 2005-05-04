@@ -1,0 +1,14 @@
+<!--#include virtual="/pagina_linguateca/cabecalho.html"-->
+<h1>Dicionários portugueses</h1>
+
+<h2>Dicionários opensource de correcção ortográfica</h2>
+<ul>
+	<li>Aspell: <a href="<TMPL_VAR NAME="ASPELL">"><TMPL_VAR NAME="ASPELL"></a> <em>(<TMPL_VAR NAME="SASPELL">)<em></li>
+	<li>Ispell: <a href="<TMPL_VAR NAME="ISPELL">"><TMPL_VAR NAME="ISPELL"></a> <em>(<TMPL_VAR NAME="SISPELL">)<em></li>
+	<li>Myspell: <a href="<TMPL_VAR NAME="MYSPELL">"><TMPL_VAR NAME="MYSPELL"></a> <em>(<TMPL_VAR NAME="SMYSPELL">)<em> -  (Openoffice, Mozilla, Thunderbird)</li>
+	<li>Jspell: <a href="<TMPL_VAR NAME="JSPELL">"><TMPL_VAR NAME="JSPELL"></a> <em>(<TMPL_VAR NAME="SJSPELL">)<em></li>
+
+</ul>
+
+<!--#include virtual="/pagina_linguateca/menu.html"-->
+<!--#include virtual="/pagina_linguateca/rodape.html"-->
