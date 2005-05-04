@@ -217,11 +217,16 @@ shower: jspell-tgz ispell-tgz myspell-tgz aspell-tgz
 
 publish-natura: shower
 	cp as*.gz $(NATURA_PUB)/aspell
+	ln -s $(NATURA_PUB)/aspell/aspell.pt-$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell.pt-latest.tar.gz
 	cp my*.gz $(NATURA_PUB)/myspell
+	ln -s $(NATURA_PUB)/myspell/myspell.pt-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.pt-latest.tar.gz
 	cp i*.gz $(NATURA_PUB)/ispell
+	ln -s $(NATURA_PUB)/ispell/ispell.pt-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.pt-latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
+	ln -s $(NATURA_PUB)/jspell/jspell.pt-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.pt-latest.tar.gz
 
 publish-linguateca: shower
 	rm -f $(LINGUATECA_PUB)/*.gz
 	cp *.gz $(LINGUATECA_PUB)
 	cd pub; perl pub_dics.pl linguateca $(LINGUATECA_PUB)
+
