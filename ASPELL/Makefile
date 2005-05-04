@@ -14,7 +14,7 @@ aspell: ../port.dic
 aspell-tgz: tgz
 
 tgz:
-	cd $P; make tar
+	tar cfz aspell.$(ABR)-$(DATE).tar.gz $P/portugues.aspell $P/Makefile $P/README $P/port*dat
 
 ../port.dic:
 	cd ..; make port.dic

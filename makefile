@@ -132,13 +132,13 @@ ispell-tgz: ispell
 #-------------------------------------------------------------------
 
 aspell: port.dic port.aff
-	(cd ASPELL; make)
+	cd ASPELL; make
 
 aspell-install: aspell
 	cd ASPELL; make install
 
 aspell-tgz: aspell
-	(cd ASPELL; make tgz)
+	cd ASPELL; make tgz
 	mv ASPELL/aspell.$(ABR)-$(DATE).tar.gz .
 
 #-------------------------------------------------------------------
