@@ -17,7 +17,7 @@ sub estat{
 $data= `date +%Y%m%d`;
 chomp($data);
 
-my $template = HTML::Template->new(filename => ('lgdics.template');
+my $template = HTML::Template->new(filename => 'lgdics.template');
 
 $template->param(
       MYSPELL => 'myspell.pt-'.$data.'.tar.gz',
