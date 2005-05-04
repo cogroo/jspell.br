@@ -1,15 +1,11 @@
 #---------------------------------------------------------------------
 # make install
-
-# make aspell   (very slow!!!)
+# make aspell
 # make tgz
 
 P=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
-
-LIB=/usr/local/lib
-ISPELLLIB=/home/jj/lib/aspell
 
 aspell: ../port.dic
 	perl tt ../port.dic > $P/portugues.aspell
@@ -17,8 +13,8 @@ aspell: ../port.dic
 
 aspell-tgz: tgz
 
-tgz: 
-	tar czf aspell.$(ABR).$(DATE).tar.gz $P
+tgz:
+	cd $P; make tar
 
 ../port.dic:
 	cd ..; make port.dic
@@ -27,7 +23,8 @@ install :
 	cd $P; make install
 
 clean : 
+	rm -f $P/*~ *~
+	cd $P; make clean
 
-
-realclean:
+realclean: clean
 	rm -f $P/portugues.aspell $P.tgz

@@ -1,5 +1,5 @@
 #---------------------------------------------------------------------
-# Generates ISPELL if required
+# Generates MYSPELL if required
 
 # make install
 # make myspell
@@ -8,9 +8,6 @@
 P=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
-
-LIB=/usr/local/lib
-#ISPELLLIB=/home/jj/lib/aspell
 
 myspell:
 	if test ! -f ../ISPELL/$P/$P.aff ; then \
@@ -35,21 +32,9 @@ tgz:
 zip:
 	zip myspell_$(ABR)_$(DATE).zip $P/*pt*
 
-install : 	# Openoffice user directory #Mozilla Mail #Thunderbird
-	#Como detectar a ultima versão ?			
-	if test -w $(HOME)/.openoffice/1.1.4/user/wordbook ; then \
-		cp $P/*pt* $(HOME)/.openoffice/1.1.4/user/wordbook ; \
-		echo "OpenOffice install!"; \
-	fi;
-	if test -w /usr/lib/mozilla/components/myspell ; then \
-		cp $P/*pt* /usr/lib/mozilla/components/myspell; \
-		echo "Mozilla install!"; \
-	fi;
-	if test -w /usr/lib/MozillaThunderbird/components/myspell ; then \
-		cp $P/*pt* /usr/lib/MozillaThunderbird/components/myspell; \
-		echo "Mozilla Thunderbird install!"; \
-	fi;
-
+install :
+	cd $P
+	make install
 clean : 
 	make realclean
 realclean:
