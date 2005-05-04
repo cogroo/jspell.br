@@ -23,10 +23,16 @@ May 2005
 #
 
 To install :
- first install aspell if necessary (http://aspell.sourceforge.net)
+    first install aspell if necessary (http://aspell.sourceforge.net)
 
- make
- make install
+    make
+    make install
+
+
+Latest versions at:
+	http://natura.di.uminho.pt/download/sources/Dictionaries/myspell/
+or
+	http://linguateca.di.uminho.pt/dics/dics.html
 
 
 

@@ -6,9 +6,9 @@ Este dicionário é baseado na versão Ispell do dicionário de Português criado por
 A versão do dicionário de Português para MySpell de 25/1/2005 é da autoria de Rui Vilela (ruivilela@di.uminho.pt) da Linguateca(http://www.linguateca.pt). O Dicionário é também mantido por Alberto Simões (ambs@di.uminho.pt) e José João de Almeida (jj@di.uminho.pt) do projecto Natura (http://natura.di.uminho.pt).
 
 Novas versões deste e outros dicionários poderão estar disponíveis em:
-http://linguateca.di.uminho.pt/
+http://linguateca.di.uminho.pt/dics/dics.html
 ou
-http://natura.di.uminho.pt/
+http://natura.di.uminho.pt/download/sources/Dictionaries/myspell/
 
 Todas as versões disponibilizadas do dicionário de Português para MySpell estão cobertas pela versão 2 da Licença Pública Geral da Fundação para o Software Livre (FSF GPL).
 
