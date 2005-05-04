@@ -1,6 +1,6 @@
 <!--#include virtual="/pagina_linguateca/cabecalho.html"-->
 <h1>Dicionários portugueses</h1>
-
+<p>Mais versões disponíveis no: <a href="http://natura.di.uminho.pt/download/sources/Dictionaries">natura.di.uminho.pt</a></p>
 <h2>Dicionários opensource de correcção ortográfica</h2>
 <ul>
 	<li>Aspell: <a href="<TMPL_VAR NAME="ASPELL">"><TMPL_VAR NAME="ASPELL"></a> <em>(<TMPL_VAR NAME="SASPELL">)<em></li>
