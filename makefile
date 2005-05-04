@@ -14,8 +14,8 @@ DATE=`date +%Y%m%d`
 DIST_DIR=jspell.$(ABR)-$(DATE)
 
 LIB=`jspell-dict --dic-dir`
-ISPELLLIB=/home/jj/lib/ispell
-JSPELLLIB=/home/jj/lib/jspell
+#ISPELLLIB=/home/jj/lib/ispell
+#JSPELLLIB=/home/jj/lib/jspell
 
 IRRFILES=IRR/ge_verb.l IRR/ge_verb2.y IRR/makefile
 
@@ -27,10 +27,14 @@ BASE= port.aff $(PTDIC) irregulares.txt aux.verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
       PERL/pos2iso PERL/jsp2isp.pl README jspell.port.spec irr2perl
 
+LINGUATECA_PUB=/home/www/htdocs/dics
+NATURA_PUB=/home/natura/download/sources/Dictionaries
+
 #-------------------------------------------------------------------
 # Instructions
 #-------------------------------------------------------------------
 what:
+
 	@ echo
 	@ echo -e "jspell:"
 	@ echo -e "\tjspell -- builds jspell dictionary"
@@ -52,6 +56,11 @@ what:
 	@ echo -e "\tmyspell-install -- installs myspell"
 	@ echo -e "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
 	@ echo -e "\tmyspell-zip -- creates myspell distribution file (zip)"
+	@ echo
+	@ echo -e "chuveiro:"
+	@ echo -e "\tshower -- build all available dictionaries"
+	@ echo -e "\tpublish-natura -- online publish at natura"
+	@ echo -e "\tpublish-linguateca -- online publish at linguateca"
 	@ echo
 #-------------------------------------------------------------------
 # Generated files
@@ -94,15 +103,15 @@ port.tgz: $(BASE)
 clean : 
 	cd IRR;    make clean
 	cd ISPELL; make clean
+	cd ASPELL; make clean
+	cd MYSPELL; make clean
 	rm -f *.stat *.cnt
 	rm -f *~
 
-realclean:
-	cd IRR;    make realclean
-	cd ISPELL; make realclean
-	rm -f *.stat *.cnt 
+realclean: clean
 	rm -f aux.all-irr.dic 
 	rm -f port.dic
+	rm -f *.gz
 
 #-------------------------------------------------------------------
 # ispell rules
@@ -130,7 +139,7 @@ aspell-install: aspell
 
 aspell-tgz: aspell
 	(cd ASPELL; make tgz)
-	mv ASPELL/aspell.$(ABR).$(DATE).tar.gz .
+	mv ASPELL/aspell.$(ABR)-$(DATE).tar.gz .
 
 #-------------------------------------------------------------------
 # myspell rules
@@ -144,7 +153,7 @@ myspell-install: myspell
 
 myspell-tgz: myspell
 	cd MYSPELL; make tgz
-	mv MYSPELL/myspell.$(ABR).$(DATE).tar.gz .
+	mv MYSPELL/myspell.$(ABR)-$(DATE).tar.gz .
 
 myspell-zip: myspell
 	cd MYSPELL; make zip
@@ -200,3 +209,19 @@ jspell-tgz: $(EXTRADIST)
 port.hash: port.dic port.aff
 	jbuild port.dic port.aff port.hash
 
+#-------------------------------------------------------------------
+# chuveiro rules
+#-------------------------------------------------------------------
+
+shower: jspell-tgz ispell-tgz myspell-tgz aspell-tgz
+
+publish-natura: shower
+	cp as*.gz $(NATURA_PUB)/aspell
+	cp my*.gz $(NATURA_PUB)/myspell
+	cp i*.gz $(NATURA_PUB)/ispell
+	cp j*.gz $(NATURA_PUB)/jspell
+
+publish-linguateca: shower
+	rm -f $(LINGUATECA_PUB)/*.gz
+	cp *.gz $(LINGUATECA_PUB)
+	cd pub; perl pub_dics.pl linguateca $(LINGUATECA_PUB)
