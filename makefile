@@ -11,7 +11,7 @@
 LING=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
-DIST_DIR=jspell.$(ABR)-$(DATE)
+DIST_DIR=jspell-$(ABR).$(DATE)
 
 LIB=`jspell-dict --dic-dir`
 #ISPELLLIB=/home/jj/lib/ispell
@@ -123,9 +123,9 @@ ispell: port.dic port.aff
 ispell-install: ispell
 	cd ISPELL; make install
 
-ispell-tgz: ispell
+ispell-tgz:
 	cd ISPELL; make tgz
-	mv ISPELL/ispell.$(ABR)-$(DATE).tar.gz .
+	mv ISPELL/ispell-$(ABR).$(DATE).tar.gz .
 
 #-------------------------------------------------------------------
 # aspell rules
@@ -137,9 +137,9 @@ aspell: port.dic port.aff
 aspell-install: aspell
 	cd ASPELL; make install
 
-aspell-tgz: aspell
+aspell-tgz:
 	cd ASPELL; make tgz
-	mv ASPELL/aspell.$(ABR)-$(DATE).tar.gz .
+	mv ASPELL/aspell-$(ABR).$(DATE).tar.gz .
 
 #-------------------------------------------------------------------
 # myspell rules
