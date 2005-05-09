@@ -228,5 +228,5 @@ publish-natura: shower
 publish-linguateca: shower
 	rm -f $(LINGUATECA_PUB)/*.gz
 	cp *.gz $(LINGUATECA_PUB)
-	cd pub; perl pub_dics.pl linguateca $(LINGUATECA_PUB)
+	cd pub; perl pub_dics.pl $(LINGUATECA_PUB)
 
