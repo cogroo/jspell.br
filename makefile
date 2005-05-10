@@ -44,6 +44,7 @@ what:
 	@ echo -e "ispell:"
 	@ echo -e "\tispell -- builds ispell dictionary (slow)"
 	@ echo -e "\tispell-install -- installs ispell"
+	@ echo -e "\tispell-clean -- clears ispell generated dictionaries"
 	@ echo -e "\tispell-tgz -- creates ispell distribution file"
 	@ echo
 	@ echo -e "aspell:"
@@ -126,6 +127,10 @@ ispell-install: ispell
 ispell-tgz:
 	cd ISPELL; make tgz
 	mv ISPELL/ispell-$(ABR).$(DATE).tar.gz .
+
+ispell-clean:
+	cd ISPELL; make clean
+
 
 #-------------------------------------------------------------------
 # aspell rules

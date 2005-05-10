@@ -1,4 +1,10 @@
 #---------------------------------------------------------------------
+#  
+# This is   ASPELL/Makefile
+#
+#---------------------------------------------------------------------
+
+
 # make install
 # make aspell
 # make tgz
@@ -9,7 +15,7 @@ DATE=`date +%Y%m%d`
 
 aspell: ../port.dic
 	perl tt ../port.dic > $P/portugues.aspell
-	cd $P; make
+	cd $P; make all
 
 tgz:
 	mkdir aspell-$(ABR).$(DATE)

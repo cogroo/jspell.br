@@ -1,4 +1,10 @@
 #---------------------------------------------------------------------
+#  
+# This is   ISPELL/makefile
+#
+#---------------------------------------------------------------------
+
+
 # make install
 
 # make ispell
@@ -52,10 +58,11 @@ $P/$D.hash: $P/$D.dic $P/$D.aff $P/README
 $P/$D.aff $P/$D.dic: ../port.dic ../port.aff 
 	perl jsp2isp.pl ../port.aff > $P/$D.aff 
 	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/_$D.dic
-
+	munchlist -l $P/$D.aff $P/_$D.dic > $P/$D.dic
+	rm -f $P/_$D.dic
 	cp ver ispell.port.spec $P
 
-	munchlist -l $P/$D.aff $P/_$D.dic > $P/$D.dic;
+
 
 ../port.dic:
 	cd ..; make port.dic
@@ -68,8 +75,7 @@ install : $P/$D.hash
 	ln -sf $(ISPELLLIB)/$D.hash $(ISPELLLIB)/port.hash
 
 clean : 
-	rm -f $P/*.stat $P/*.cnt  $P/$D.hash
-	rm -rf ispell-$(ABR).$(DATE)
+	rm -f $P/*.stat $P/*.cnt  $P/$D.hash $P/$D.dic
 	rm -f *.gz
 
 realclean:
