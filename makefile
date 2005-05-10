@@ -153,11 +153,11 @@ myspell-install: myspell
 
 myspell-tgz: myspell
 	cd MYSPELL; make tgz
-	mv MYSPELL/myspell.$(ABR)-$(DATE).tar.gz .
+	mv MYSPELL/myspell-$(ABR).$(DATE).tar.gz .
 
-myspell-zip: myspell
-	cd MYSPELL; make zip
-	mv MYSPELL/myspell_$(ABR)_$(DATE).zip .
+#myspell-zip: myspell
+#	cd MYSPELL; make zip
+#	mv MYSPELL/myspell_$(ABR)_$(DATE).zip .
 
 #-------------------------------------------------------------------
 # jspell rules
@@ -217,13 +217,13 @@ shower: jspell-tgz ispell-tgz myspell-tgz aspell-tgz
 
 publish-natura: shower
 	cp as*.gz $(NATURA_PUB)/aspell
-	ln -sf $(NATURA_PUB)/aspell/aspell.pt-$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell.pt-latest.tar.gz
+	ln -sf $(NATURA_PUB)/aspell/aspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell-$(ABR).latest.tar.gz
 	cp my*.gz $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell.pt-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.pt-latest.tar.gz
+	ln -sf $(NATURA_PUB)/myspell/myspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell-$(ABR).latest.tar.gz
 	cp i*.gz $(NATURA_PUB)/ispell
-	ln -sf $(NATURA_PUB)/ispell/ispell.pt-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.pt-latest.tar.gz
+	ln -sf $(NATURA_PUB)/ispell/ispell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell-$(ABR).latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
-	ln -sf $(NATURA_PUB)/jspell/jspell.pt-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.pt-latest.tar.gz
+	ln -sf $(NATURA_PUB)/jspell/jspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell-$(ABR).latest.tar.gz
 
 publish-linguateca: shower
 	rm -f $(LINGUATECA_PUB)/*.gz

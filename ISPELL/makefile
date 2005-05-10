@@ -32,14 +32,14 @@ DATE=`date +%Y%m%d`
 
 ispell-tgz: tgz
 
-tgz:
+tgz: ispell
 	mkdir ispell-$(ABR).$(DATE)
 	cp $P/$D.dic $P/README $P/$D.aff $P/makefile ispell-$(ABR).$(DATE)
 	tar -czf ispell-$(ABR).$(DATE).tar.gz ispell-$(ABR).$(DATE)
 	rm -fr ispell-$(ABR).$(DATE)
 
-publish: tgz
-	mv $P/$D.tgz $(plndir)/UM$D.tgz
+#publish: tgz
+#	mv $P/$D.tgz $(plndir)/UM$D.tgz
 
 ispell : $P/$D.hash $P/README
 
@@ -69,8 +69,12 @@ install : $P/$D.hash
 
 clean : 
 	rm -f $P/*.stat $P/*.cnt  $P/$D.hash
+	rm -rf ispell-$(ABR).$(DATE)
+	rm -f *.gz
 
 realclean:
 	rm -f $P/*.stat $P/*.cnt 
 	rm -f $P/$D.hash 
 	rm -f $P/$D.dic $P/$D.aff 
+	rm -f *~ $P/*~
+

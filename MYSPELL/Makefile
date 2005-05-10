@@ -23,19 +23,29 @@ myspell:
 	cat $P/$P.dic >> $P/pt_PT.dic
 	rm $P/$P.dic
 	rm $P/$P.aff
+
 myspell-tgz: tgz
 
-myspell-zip: zip
+#myspell-zip: zip
 
-tgz: 
-	tar -czf myspell.$(ABR)-$(DATE).tar.gz $P/*pt* $P/makefile
-zip:
-	zip myspell_$(ABR)_$(DATE).zip $P/*pt*
+tgz: myspell
+	mkdir myspell-$(ABR).$(DATE)
+	cp $P/pt_PT.dic $P/README $P/pt_PT.aff $P/makefile myspell-$(ABR).$(DATE)
+	tar -czf myspell-$(ABR).$(DATE).tar.gz myspell-$(ABR).$(DATE)
+	rm -rf myspell-$(ABR).$(DATE)
+
+#zip:
+#	zip myspell_$(ABR)_$(DATE).zip $P/*pt*
 
 install :
 	cd $P
 	make install
 clean : 
-	make realclean
-realclean:
+	rm -rf myspell-$(ABR).$(DATE)	
 	rm -f $P/*.aff *.gz $P/*~ $P/*.dic *~ *.zip
+	make realclean
+
+realclean:
+	rm -rf *~
+
+

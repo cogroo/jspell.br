@@ -11,7 +11,7 @@ aspell: ../port.dic
 	perl tt ../port.dic > $P/portugues.aspell
 	cd $P; make
 
-tgz: 
+tgz: aspell
 	mkdir aspell-$(ABR).$(DATE)
 	mv $P/CVS _CVS
 	cp $P/* aspell-$(ABR).$(DATE)
@@ -29,6 +29,7 @@ install :
 clean : 
 	rm -f $P/*~ *~
 	cd $P; make clean
+	rm -rf aspell-$(ABR).$(DATE)
 
 realclean: clean
-	rm -f $P/portugues.aspell $P.tgz
+	rm -f $P/portugues.aspell *.gz
