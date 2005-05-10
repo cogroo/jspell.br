@@ -11,7 +11,7 @@ aspell: ../port.dic
 	perl tt ../port.dic > $P/portugues.aspell
 	cd $P; make
 
-tgz: aspell
+tgz:
 	mkdir aspell-$(ABR).$(DATE)
 	mv $P/CVS _CVS
 	cp $P/* aspell-$(ABR).$(DATE)

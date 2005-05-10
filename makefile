@@ -137,7 +137,7 @@ aspell: port.dic port.aff
 aspell-install: aspell
 	cd ASPELL; make install
 
-aspell-tgz:
+aspell-tgz: aspell
 	cd ASPELL; make tgz
 	mv ASPELL/aspell-$(ABR).$(DATE).tar.gz .
 
