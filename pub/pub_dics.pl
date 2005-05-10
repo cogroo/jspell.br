@@ -20,11 +20,11 @@ chomp($data);
 my $template = HTML::Template->new(filename => 'lgdics.template');
 
 $template->param(
-      MYSPELL => 'myspell.pt-'.$data.'.tar.gz',
+      MYSPELL => 'myspell-pt.'.$data.'.tar.gz',
       ISPELL => 'ispell-pt.'.$data.'.tar.gz',
       ASPELL => 'aspell-pt.'.$data.'.tar.gz',
       JSPELL => 'jspell-pt.'.$data.'.tar.gz',
-      SMYSPELL => &estat ('myspell.pt-'.$data.'.tar.gz'),
+      SMYSPELL => &estat ('myspell-pt.'.$data.'.tar.gz'),
       SISPELL => &estat ('ispell-pt.'.$data.'.tar.gz'),
       SASPELL => &estat ('aspell-pt.'.$data.'.tar.gz'),
       SJSPELL => &estat ('jspell-pt.'.$data.'.tar.gz'),
