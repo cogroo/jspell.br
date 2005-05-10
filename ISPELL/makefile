@@ -55,7 +55,7 @@ $P/$D.aff $P/$D.dic: ../port.dic ../port.aff
 
 	cp ver ispell.port.spec $P
 
-	./munchlist -l $P/$D.aff $P/_$D.dic > $P/$D.dic;
+	munchlist -l $P/$D.aff $P/_$D.dic > $P/$D.dic;
 
 ../port.dic:
 	cd ..; make port.dic
