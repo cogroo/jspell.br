@@ -1,3 +1,6 @@
+d1=/opt/OpenOffice.org/share/dict/ooo
+d2=/usr/lib/OpenOffice.org/share/dict/ooo
+
 #----------------------------------------------------------------------
 # make install -- 
 #----------------------------------------------------------------------
@@ -6,14 +9,14 @@ all:
 	@echo -e "make install -- Tries to install Myspell dictionary on default places"
 
 install :
-	if test -w /opt/OpenOffice.org/share/dict/ooo ; then \
-		cp pt* /opt/OpenOffice.org/share/dict/ooo; \
-		echo "DICT pt PT pt_PT" >> /opt/OpenOffice.org/share/dict/ooo/dictionary.lst ; \
+	if test -w $(d1) ; then \
+		cp pt* $(d1); \
+		if ! grep $(d1)/dictionary.lst -e 'DICT pt PT pt_PT' ; then echo "DICT pt PT pt_PT" >> $(d1)/dictionary.lst ; fi; \
 		echo "OpenOffice dict install!"; \
 	fi;
-	if test -w /usr/lib/OpenOffice.org/share/dict/ooo ; then \
-		cp pt* /usr/lib/OpenOffice.org/share/dict/ooo; \
-		echo "DICT pt PT pt_PT" >> /usr/lib/OpenOffice.org/share/dict/ooo/dictionary.lst ; \
+	if test -w $(d2) ; then \
+		cp pt* $(d2); \
+		if ! grep $(d2)/dictionary.lst -e 'DICT pt PT pt_PT' ; then echo "DICT pt PT pt_PT" >> $(d2)/dictionary.lst ; fi; \
 		echo "OpenOffice dict install!"; \
 	fi;
 	if test -w /usr/lib/mozilla/components/myspell ; then \

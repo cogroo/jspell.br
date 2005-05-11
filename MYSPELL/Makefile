@@ -42,10 +42,10 @@ install :
 	make install
 clean : 
 	rm -rf myspell-$(ABR).$(DATE)	
-	rm -f $P/*.aff *.gz $P/*~ $P/*.dic *~ *.zip
+	rm -rf *~ $P/*~
 	make realclean
 
 realclean:
-	rm -rf *~
+	rm -f $P/*.aff *.gz $P/*~ $P/*.dic *.zip
 
 
