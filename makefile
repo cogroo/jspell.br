@@ -59,7 +59,7 @@ what:
 	@ echo -e "\tmyspell-zip -- creates myspell distribution file (zip)"
 	@ echo
 	@ echo -e "chuveiro:"
-	@ echo -e "\tshower -- build all available dictionaries"
+	@ echo -e "\tchuveiro -- build all available dictionaries"
 	@ echo -e "\tpublish-natura -- online publish at natura"
 	@ echo -e "\tpublish-linguateca -- online publish at linguateca"
 	@ echo
@@ -218,9 +218,9 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-shower: jspell-tgz ispell-tgz myspell-tgz aspell-tgz
+chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz
 
-publish-natura: shower
+publish-natura: chuveiro
 	cp as*.gz $(NATURA_PUB)/aspell
 	ln -sf $(NATURA_PUB)/aspell/aspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell-$(ABR).latest.tar.gz
 	cp my*.gz $(NATURA_PUB)/myspell
@@ -230,7 +230,7 @@ publish-natura: shower
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell-$(ABR).latest.tar.gz
 
-publish-linguateca: shower
+publish-linguateca: chuveiro
 	rm -f $(LINGUATECA_PUB)/*.gz
 	cp *.gz $(LINGUATECA_PUB)
 	cd pub; perl pub_dics.pl $(LINGUATECA_PUB)
