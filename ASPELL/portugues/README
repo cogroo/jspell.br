@@ -1,11 +1,12 @@
 This is a Portuguese dictionary for aspell:
-http://natura.di.uminho.pt
 
-Jose Joao Almeida (jj@di.uminho.pt)
-Jose Afonso
-Manuel Lima
+Copyright (C) 1995,96,97,98,99  Jose Joao de Almeida <jj@di.uminho.pt> ,
+#                            Jose Afonso e Manuel Lima
 
-May 2005
+#     Dep. Informatica, Universidade do Minho
+#     Portugal
+
+#    June 2005
 
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -33,6 +34,10 @@ Latest versions at:
 	http://natura.di.uminho.pt/download/sources/Dictionaries/myspell/
 or
 	http://linguateca.di.uminho.pt/dics/dics.html
+
+
+Submit new words or custom dics on http://linguateca.di.uminho.pt/dics/dics_en.html
+
 
 
 

@@ -1,26 +1,43 @@
-:: Dicionário Português para MySpell / Portuguese Dictionary for MySpell ::
+This is a Portuguese dictionary for myspell:
 
-:: PORTUGUÊS ::
-Este dicionário é baseado na versão Ispell do dicionário de Português criado por José João de Almeida (jj@di.uminho.pt), Ulisses Pinto. O dicionário original está coberto pela licença versão 2 da Licença Pública Geral da Fundação para o Software Livre (FSF GPL).
+Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> , 
+	Rui Vilela <ruivilela@di.uminho.pt> 
+	Alberto Simões <ambs@di.uminho.pt>
 
-A versão do dicionário de Português para MySpell de 25/1/2005 é da autoria de Rui Vilela (ruivilela@di.uminho.pt) da Linguateca(http://www.linguateca.pt). O Dicionário é também mantido por Alberto Simões (ambs@di.uminho.pt) e José João de Almeida (jj@di.uminho.pt) do projecto Natura (http://natura.di.uminho.pt).
+#     Dep. Informatica, Universidade do Minho
+#     Portugal
 
-Novas versões deste e outros dicionários poderão estar disponíveis em:
-http://linguateca.di.uminho.pt/dics/dics.html
-ou
-http://natura.di.uminho.pt/download/sources/Dictionaries/myspell/
+#    June 2005
 
-Todas as versões disponibilizadas do dicionário de Português para MySpell estão cobertas pela versão 2 da Licença Pública Geral da Fundação para o Software Livre (FSF GPL).
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
 
-:: ENGLISH ::
-This dictionary is based on the Ispell version of the Portuguese dictionary created by José João de Almeida (jj@di.uminho.pt) and Ulisses Pinto, and thus is covered by his original Free Software Foundation (FSF)  GPL version 2 license.
+#    Affix file converted from the ISPELL version by Rui Vilela, Linguateca.
 
-All modifications on and after 25/1/2005 to the affix file and word-list to make it work with MySpell are copyright Rui Vilela (ruivilela@di.uminho.pt) from Linguateca (http://www.linguateca.pt). The dictionary is also maintained by Alberto Simões (ambs@di.uminho.pt) and José João de Almeida (jj@di.uminho.pt) of Natura project(http://natura.di.uminho.pt).
+To install :
+    Find a suitable application that uses myspell dictionaries like openoffice, mozilla, thunderbird.
 
-New dictionary versions may be available at:
-http://linguateca.di.uminho.pt/
+    In Linux as root do (with some luck):
+	    make install	
+    It tries to install on default locations of the mentioned applications
+
+Latest versions at:
+	http://natura.di.uminho.pt/download/sources/Dictionaries/myspell/
 or
-http://natura.di.uminho.pt/
+	http://linguateca.di.uminho.pt/dics/dics.html
 
-All dictionary releases are covered by the GPL version 2 license.
+
+Submit new words or custom dics on http://linguateca.di.uminho.pt/dics/dics_en.html
 
