@@ -16,5 +16,25 @@
 
 </ul>
 
+<h2>Submissão de sugestões de palavras novas para os dicionários</h2>
+<FORM action="http://linguateca.di.uminho.pt/cgi-bin/submeter_dics.cgi" method="post">
+    <P style="margin-left:40px">
+    <Label name="area">Copia para aqui as palavras:</label><br>
+    <TEXTAREA name="palavras" rows="10" cols="40"></TEXTAREA> <input type="reset" value="Limpar"/><br>
+    Palavras separadas por qualquer separador, excepto hífenes.<br>
+    </p>
+    <P style="margin-left:40px">
+    <LABEL name="nome">Nome (opcional): </LABEL><INPUT type="text" name="nome"/><br>
+    <LABEL name="email">Email (opcional): </LABEL><INPUT type="text" name="email"/><BR>
+    <INPUT type="submit" value="Submeter"/>
+    </P>
+ </FORM>
+
+<h2>Lista das pessoas que contribuiram</h2>
+<p>Pessoas que contribuiram para o desenvolvimento do dicionário por submissão online:</p>
+<p>A desenvolver a tabela</p>
+
+
+
 <!--#include virtual="/pagina_linguateca/menu.html"-->
 <!--#include virtual="/pagina_linguateca/rodape.html"-->
