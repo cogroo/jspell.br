@@ -13,7 +13,7 @@
 
 </ul>
 
-<h2>Submission of new word for the dictionaries</h2>
+<h2>Submission of new words for the dictionaries</h2>
 <FORM action="http://linguateca.di.uminho.pt/cgi-bin/submeter_dics.cgi" method="post">
     <P style="margin-left:40px">
     <Label name="area">Copy to the text box the words:</label><br>
