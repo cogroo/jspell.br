@@ -220,7 +220,7 @@ port.hash: port.dic port.aff
 
 chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz
 
-publish-natura: chuveiro
+publish-natura:
 	cp as*.gz $(NATURA_PUB)/aspell
 	ln -sf $(NATURA_PUB)/aspell/aspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell-$(ABR).latest.tar.gz
 	cp my*.gz $(NATURA_PUB)/myspell
@@ -230,7 +230,7 @@ publish-natura: chuveiro
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell-$(ABR).latest.tar.gz
 
-publish-linguateca: chuveiro
+publish-linguateca:
 	rm -f $(LINGUATECA_PUB)/*.gz
 	cp *.gz $(LINGUATECA_PUB)
 	cd pub; perl pub_dics.pl $(LINGUATECA_PUB)
