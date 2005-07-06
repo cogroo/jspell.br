@@ -1,5 +1,6 @@
 d1=/opt/OpenOffice.org/share/dict/ooo
 d2=/usr/lib/OpenOffice.org/share/dict/ooo
+#d3=~/.openoffice.org/*/user/wordbook/
 
 #----------------------------------------------------------------------
 # make install -- 

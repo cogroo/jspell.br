@@ -4,10 +4,12 @@ Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> ,
 	Rui Vilela <ruivilela@di.uminho.pt> 
 	Alberto Simões <ambs@di.uminho.pt>
 
-#     Dep. Informatica, Universidade do Minho
-#     Portugal
+#    Dep. Informatica, Universidade do Minho
+#    Portugal
 
 #    June 2005
+
+#    Many thanks to Artur Correia <artur.correia@srcc.pt> for previous dictionary versions.
 
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
