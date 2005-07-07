@@ -29,9 +29,15 @@
 
 <h2>List of contributers</h2>
 <p>People that contributed for the development of the dictionary by online submission:</p>
-<p>Waiting for submissions</p>
 
-
+<div align="center">
+<table border='1' width='80%'>
+<th>
+	<td>Name</td><td>Number of contributions</td><td>Last words</td>
+</th>
+<TMPL_VAR NAME="HEROIS">
+</table>
+</div>
 
 <!--#include virtual="/pagina_linguateca/menu.html"-->
 <!--#include virtual="/pagina_linguateca/rodape.html"-->

@@ -14,6 +14,27 @@ sub estat{
 	sprintf("%.1f KB",(((stat "$dir/$_[0]")[7])/1024));
 }
 
+sub listaherois{
+    open $H, "<topmais.txt";
+    $t='<tr>';
+    while (<$H>){
+	if /(\w+)\:(\w+)/{
+	    $nome=$1;
+	    $pals=$2;
+	    $numero=split / /, $pals;
+	    @pals=split / /, $pals;
+	    foreach (reverse @pals){
+		$upals=$_;
+		$n++;
+		last if ($n>2);
+	    }
+	    $t.='<td>'.$nome.'</td><td>'.$numero.'</td><td>'.$upals.'</td>'
+	}
+    }
+    $t.='</tr>';
+    return $t;
+}
+
 $data= `date +%Y%m%d`;
 chomp($data);
 
@@ -28,7 +49,7 @@ $template->param(
       SISPELL => &estat ('ispell-pt.'.$data.'.tar.gz'),
       SASPELL => &estat ('aspell-pt.'.$data.'.tar.gz'),
       SJSPELL => &estat ('jspell-pt.'.$data.'.tar.gz'),
-
+      HEROIS => &listaherois,
   );
 
 open(DIC_HTML, ">", "$dir/dics.html") or die "$!";
@@ -48,7 +69,7 @@ $template->param(
       SISPELL => &estat ('ispell-pt.'.$data.'.tar.gz'),
       SASPELL => &estat ('aspell-pt.'.$data.'.tar.gz'),
       SJSPELL => &estat ('jspell-pt.'.$data.'.tar.gz'),
-
+      HEROIS => &listaherois,
   );
 
 open(DIC_HTML, ">", "$dir/dics_en.html") or die "$!";

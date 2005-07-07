@@ -29,8 +29,14 @@
 
 <h2>Lista das pessoas que contribuiram</h2>
 <p>Pessoas que contribuiram para o desenvolvimento do dicionário por submissão online:</p>
-<p>A desenvolver a tabela</p>
-
+<div align="center">
+<table border='1' width='80%'>
+<th>
+	<td>Nome</td><td>Número de contribuições</td><td>Últimas palavras</td>
+</th>
+<TMPL_VAR NAME="HEROIS">
+</table>
+</div>
 
 
 <!--#include virtual="/pagina_linguateca/menu.html"-->
