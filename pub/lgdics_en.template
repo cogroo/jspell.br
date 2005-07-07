@@ -31,9 +31,9 @@
 <p>People that contributed for the development of the dictionary by online submission:</p>
 
 <div align="center">
-<table border='1' width='20%'>
+<table border="0" style="border: 2px solid Black; width: 600px;">
 <tr>
-	<td>Number of contributions</td><td>Name</td><td>Last words</td>
+	<td>Number of contribuitions</td><td>Name</td><td>Last words</td>
 </tr>
 <TMPL_VAR NAME="HEROIS">
 </table>
