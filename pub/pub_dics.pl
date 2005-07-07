@@ -16,18 +16,21 @@ sub estat{
 
 sub listaherois{
     open $H, "<topmais.txt";
+    $t='';
 
     while (<$H>){
+	chomp;
 	if (/([\w\s]+)\:([\w\s]+)/){
 	    $nome=$1;
 	    $pals=$2;
 	    $numero=split / /, $pals;
 	    @pals=split / /, $pals;
+	    $upals='';
 	    foreach (reverse @pals){
 		$upals.=$_.' ; ';
-		$n++;
-		last if ($n>2);
+		last if ($n++>2);
 	    }
+	    print STDERR $upals;
 	    $t.='<tr><td>'.$numero.'</td><td>'.$nome.'</td><td>'.$upals.'</td></tr>';
 	}
     }
