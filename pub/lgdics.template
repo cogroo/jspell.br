@@ -30,10 +30,10 @@
 <h2>Lista das pessoas que contribuiram</h2>
 <p>Pessoas que contribuiram para o desenvolvimento do dicionário por submissão online:</p>
 <div align="center">
-<table border='1' width='80%'>
-<th>
-	<td>Nome</td><td>Número de contribuições</td><td>Últimas palavras</td>
-</th>
+<table border="0" style="border: 2px solid Black; width: 600px;">
+<tr>
+	<td>Número de contribuições</td><td>Nome</td><td>Últimas palavras</td>
+</tr>
 <TMPL_VAR NAME="HEROIS">
 </table>
 </div>

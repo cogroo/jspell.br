@@ -17,7 +17,7 @@ myspell:
 	fi;
 	cp ../ISPELL/$P/$P.dic $P/
 	cp ../ISPELL/$P/$P.aff $P/
-	perl gendic.pl $P/$P.aff > $P/pt_PT.aff
+	LANG="pt_PT" perl gendic.pl $P/$P.aff > $P/pt_PT.aff
 	cat $P.replace >> $P/pt_PT.aff
 	wc -l $P/$P.dic | cut -c 0-5 > $P/pt_PT.dic
 	cat $P/$P.dic >> $P/pt_PT.dic

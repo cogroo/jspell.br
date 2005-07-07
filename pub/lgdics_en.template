@@ -31,10 +31,10 @@
 <p>People that contributed for the development of the dictionary by online submission:</p>
 
 <div align="center">
-<table border='1' width='80%'>
-<th>
-	<td>Name</td><td>Number of contributions</td><td>Last words</td>
-</th>
+<table border='1' width='20%'>
+<tr>
+	<td>Number of contributions</td><td>Name</td><td>Last words</td>
+</tr>
 <TMPL_VAR NAME="HEROIS">
 </table>
 </div>
