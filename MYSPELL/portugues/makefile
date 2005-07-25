@@ -21,11 +21,13 @@ install :
 		echo "OpenOffice dict install!"; \
 	fi;
 	if test -w /usr/lib/mozilla/components/myspell ; then \
-		cp pt* /usr/lib/mozilla/components/myspell; \
+		cp pt_PT.aff /usr/lib/mozilla/components/myspell/pt-PT.aff; \
+		cp pt_PT.dic /usr/lib/mozilla/components/myspell/pt-PT.dic; \
 		echo "Mozilla dict install!"; \
 	fi;
 	if test -w /usr/lib/MozillaThunderbird/components/myspell ; then \
-		cp pt* /usr/lib/MozillaThunderbird/components/myspell; \
+		cp pt_PT.aff /usr/lib/thunderbird/components/myspell/pt-PT.aff; \
+		cp pt_PT.dic /usr/lib/thunderbird/components/myspell/pt-PT.dic; \
 		echo "Mozilla Thunderbird dict install!"; \
 	fi;
 
