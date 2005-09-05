@@ -68,8 +68,8 @@ Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> ,
 To install :
     Find a suitable application that uses myspell dictionaries like openoffice, mozilla, thunderbird.
 
-    In Linux as root do (with some luck):
-	    make install	
+    In your system run as root or user (with some luck):
+	    sh install.sh	
     It tries to install on default locations of the mentioned applications
 
 Latest versions at:
