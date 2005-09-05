@@ -39,7 +39,7 @@ tgz: myspell
 
 install :
 	cd $P
-	make install
+	./install.sh
 clean : 
 	rm -rf myspell-$(ABR).$(DATE)	
 	rm -rf *~ $P/*~
