@@ -15,6 +15,7 @@ install : $P.hash
 #	cp $P.hash `ispell -vv | grep 'LIBDIR' | sed -e 's/.*"\(.*\)"/\1/'` 
 #$(ISPELLLIB)
 	cp $P.hash $(ISPELLLIB)/
+	cp portugues.aff $(ISPELLLIB)/portugues.aff
 	-rm $(ISPELLLIB)/port.hash
 	ln -s $(ISPELLLIB)/$P.hash $(ISPELLLIB)/port.hash
 
