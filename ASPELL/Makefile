@@ -15,7 +15,7 @@ DATE=`date +%Y%m%d`
 
 aspell: ../port.dic
 	perl tt ../port.dic > $P/portugues.aspell
-	cd $P; make all
+	cd $P; ./configure; make all
 
 tgz:
 	mkdir aspell-$(ABR).$(DATE)

@@ -1,14 +1,14 @@
 # Generated with Aspell Dicts "proc" script version 0.50.1
 
-lang = pl
-version = 0.50-2
+lang = portugues
+version = 0.50-5
 
 cwl_files = portugues.cwl
 data_files = portugues.dat
 doc_files = README Copyright
 extra_files = configure info Makefile.pre
-multi_files = pl.multi polish.alias
-rws_files = pl.rws
+multi_files = portugues.multi portuguese.alias pt_PT.alias português.alias
+rws_files = portugues.rws
 
 
 distdir=aspell-${lang}-${version}
@@ -51,11 +51,11 @@ rel:
 	mv ${distdir}.tar.bz2 ../rel
 
 
-pl.rws: pl.cwl
+portugues.rws: portugues.cwl
 
 
 .SUFFIXES: .cwl .rws
 
 .cwl.rws:
-	${WORD_LIST_COMPRESS} d < $< | ${ASPELL} ${ASPELL_FLAGS} --lang=pl create master ./$@
+	${WORD_LIST_COMPRESS} d < $< | ${ASPELL} ${ASPELL_FLAGS} --lang=${lang} create master ./$@
 
