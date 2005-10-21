@@ -14,9 +14,6 @@ P=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
 
-all:
-	make aspell
-
 aspell: ../port.dic
 	perl tt ../port.dic | LANG='C' sort | word-list-compress c > $P/portugues.cwl
 #	perl tt ../port.dic > $P/portugues.aspell 
@@ -28,7 +25,7 @@ tgz:
 	mv $P/CVS _CVS
 	cp $P/* aspell-$(ABR).$(DATE)
 	mv _CVS $P/CVS
-	rm -f aspell-$(ABR).$(DATE)/*~ *.old
+	cd aspell-$(ABR).$(DATE); rm -f *~ *.old *.rws
 	tar czf aspell-$(ABR).$(DATE).tar.gz aspell-$(ABR).$(DATE)
 	rm -fr aspell-$(ABR).$(DATE)
 
