@@ -28,7 +28,7 @@ tgz:
 	mv $P/CVS _CVS
 	cp $P/* aspell-$(ABR).$(DATE)
 	mv _CVS $P/CVS
-	rm -f aspell-$(ABR).$(DATE)/*~
+	rm -f aspell-$(ABR).$(DATE)/*~ *.old
 	tar czf aspell-$(ABR).$(DATE).tar.gz aspell-$(ABR).$(DATE)
 	rm -fr aspell-$(ABR).$(DATE)
 
@@ -44,4 +44,4 @@ clean :
 	rm -rf aspell-$(ABR).$(DATE)
 
 realclean: clean
-	rm -f $P/portugues.aspell *.gz
+	rm -f $P/portugues.cwl *.gz

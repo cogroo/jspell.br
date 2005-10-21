@@ -24,7 +24,7 @@ install: all
 	cd ${DESTDIR}${datadir}/ && chmod 644 ${data_files}
 
 clean:
-	rm -f ${rws_files}
+	rm -f ${rws_files} *~
 
 uninstall:
 	-cd ${DESTDIR}${dictdir}/ && rm ${rws_files} ${multi_files} ${link_files}
