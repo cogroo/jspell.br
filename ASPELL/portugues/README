@@ -26,6 +26,7 @@ Copyright (C) 1995,96,97,98,99  Jose Joao de Almeida <jj@di.uminho.pt> ,
 To install :
     first install aspell if necessary (http://aspell.sourceforge.net)
 
+    ./configure
     make
     make install
 
