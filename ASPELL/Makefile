@@ -9,12 +9,18 @@
 # make aspell
 # make tgz
 
+SHELL=/bin/bash
 P=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
 
+all:
+	make aspell
+
 aspell: ../port.dic
-	perl tt ../port.dic > $P/portugues.aspell
+	perl tt ../port.dic | LANG='C' sort | word-list-compress c > $P/portugues.cwl
+#	perl tt ../port.dic > $P/portugues.aspell 
+#	LANG='C' sort $P/portugues.aspell | word-list-compress c > $P/portugues.cwl
 	cd $P; ./configure; make all
 
 tgz:

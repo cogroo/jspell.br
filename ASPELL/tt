@@ -12,3 +12,7 @@ while(<F>){
   next if m!^#!;
   print F1 "$_\n";
 }
+
+close F1;
+close F;
+
