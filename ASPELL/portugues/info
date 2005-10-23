@@ -7,7 +7,7 @@ copyright GPL
 version 0.50-5
 charset iso8859-1
 soundslike generic
-alias pt_PT pt:awli portuguese português
+alias pt_PT pt:awli portuguese 
 dict:
   name portugues
   add portugues
