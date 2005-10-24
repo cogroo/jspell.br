@@ -1,7 +1,7 @@
 name portugues
 charset iso8859-1
 soundslike generic
-affix en
+affix pt
 affix-compress true
 
 special - -*-

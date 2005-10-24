@@ -1,6 +1,7 @@
 # Generated with Aspell Dicts "proc" script version 0.50.1
 
 lang = portugues
+LANG = UTF-8
 version = 0.6.0-0
 
 cwl_files = portugues.cwl
@@ -64,7 +65,7 @@ portugues.rws: portugues.cwl
 .SUFFIXES: .cwl .rws .wl
 
 .cwl.rws:
-	${PREZIP} -d < $< | ${ASPELL} ${ASPELL_FLAGS} --lang=pt_PT create master ./$@
+	${PREZIP} -d < $< | ${ASPELL} ${ASPELL_FLAGS} --lang=portugues create master ./$@
 
 .wl.cwl:
 	cat $< | LC_COLLATE=C sort -u | ${PREZIP} -z > $@

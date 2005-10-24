@@ -23,12 +23,11 @@ aspell: ../port.dic
 	fi;
 	cp ../ISPELL/$P/$P.dic $P/
 	cp ../ISPELL/$P/$P.aff $P/
-	LANG="pt_PT" perl gendic.pl $P/$P.aff > $P/pt.aff
-	cat $P.replace >> $P/pt.aff
-	wc -l $P/$P.dic | cut -c 0-5 > $P/pt.dic
+	LANG="pt_PT" perl gendic.pl $P/$P.aff > $P/$P_affix.dat
+	cat $P.replace >> $P/$P_affix.dat
 	cat $P/$P.dic >> $P/pt.dic
-	mv $P/pt.dic $P/$P.dic
-	mv $P/pt.aff $P/$P.aff
+#rm $P/portugues.aff
+
 #Generate cwl
 	LANG='C' sort $P/$P.dic | word-list-compress c > $P/$P.cwl
 	cd $P; ./configure; make all

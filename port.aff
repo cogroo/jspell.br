@@ -271,7 +271,7 @@ E	>	SSAS	; "G=f,N=p"	# condessas
 
 flag *g:         ; "CAT=a_nc,G=m,N=s"  #femininos
 Ã O         >   -ÃO,OA  ; "G=f"         # ão -> oa     ex. patrão -> patroa
-Ã O         >  -ÃOS,OAS ; "G=f,N=p"     # ão -> oas
+Ã O         >  -ÃO,OAS ; "G=f,N=p"     # ão -> oas
 
 
 #----------------------------------------
@@ -325,30 +325,30 @@ D O R		>  AMENTE		; "CAT=adv"
 Á S I C O	>  -ÁSICO,ASICAMENTE	; "CAT=adv"
 
 flag *q:	; "CAT=hn"
-L O G I A	>	-OLOGIA,ÓLOGO	; "G=m,N=s"	# astrólogo
-L O G I A	>	-OLOGIA,ÓLOGA	; "G=f,N=s"     # astróloga
-L O G I A	>	-OLOGIA,ÓLOGOS	; "G=m,N=p"	# astrólogos
-L O G I A	>	-OLOGIA,ÓLOGAS	; "G=f,N=p"	# astrólogas
+O L O G I A	>	-OLOGIA,ÓLOGO	; "G=m,N=s"	# astrólogo
+O L O G I A	>	-OLOGIA,ÓLOGA	; "G=f,N=s"     # astróloga
+O L O G I A	>	-OLOGIA,ÓLOGOS	; "G=m,N=p"	# astrólogos
+O L O G I A	>	-OLOGIA,ÓLOGAS	; "G=f,N=p"	# astrólogas
 
 A F I A		>       -AFIA,ÁFICO     ; "G=m,N=s"     # etnográfico
 A F I A		>	-AFIA,ÁFICA     ; "G=f,N=s"     # etnográfica
 A F I A		>       -AFIA,ÁFICOS    ; "G=m,N=p"     # etnográficos
 A F I A		>       -AFIA,ÁFICAS    ; "G=f,N=p"     # etnográficas
 
-M A N I A	>	-OMANIA,ÓMANO   ; "G=m,N=s"	# melómano
-M A N I A       >       -OMANIA,ÓMANA   ; "G=m,N=s"   	# melómana
-M A N I A       >       -OMANIA,ÓMANOS  ; "G=m,N=s"   	# melómanos
-M A N I A       >       -OMANIA,ÓMANAS  ; "G=m,N=s"	# melómanas
+O M A N I A	>	-OMANIA,ÓMANO   ; "G=m,N=s"	# melómano
+O M A N I A     >       -OMANIA,ÓMANA   ; "G=m,N=s"   	# melómana
+O M A N I A     >       -OMANIA,ÓMANOS  ; "G=m,N=s"   	# melómanos
+O M A N I A     >       -OMANIA,ÓMANAS  ; "G=m,N=s"	# melómanas
 
-F O B I A	>	-OFOBIA,ÓFOBO	; "G=m,N=s"	# xenófobo
-F O B I A       >       -OFOBIA,ÓFOBA   ; "G=f,N=s"     # xenófoba
-F O B I A       >       -OFOBIA,ÓFOBOS	; "G=m,N=p"	# xenófobos
-F O B I A       >       -OFOBIA,ÓFOBAS	; "G=f,N=p"	# xenófobas
+O F O B I A	>	-OFOBIA,ÓFOBO	; "G=m,N=s"	# xenófobo
+O F O B I A     >       -OFOBIA,ÓFOBA   ; "G=f,N=s"     # xenófoba
+O F O B I A     >       -OFOBIA,ÓFOBOS	; "G=m,N=p"	# xenófobos
+O F O B I A     >       -OFOBIA,ÓFOBAS	; "G=f,N=p"	# xenófobas
 
-F I L I A	>	-OFILIA,ÓFILO	; "G=m,N=s"	# columbófilo
-F I L I A       >       -OFILIA,ÓFILA   ; "G=f,N=s"     # columbófila
-F I L I A       >       -OFILIA,ÓFILOS	; "G=m,N=p"     # columbófilos
-F I L I A       >       -OFILIA,ÓFILAS	; "G=f,N=p"     # columbófilas
+O F I L I A	>	-OFILIA,ÓFILO	; "G=m,N=s"	# columbófilo
+O F I L I A     >       -OFILIA,ÓFILA   ; "G=f,N=s"     # columbófila
+O F I L I A     >       -OFILIA,ÓFILOS	; "G=m,N=p"     # columbófilos
+O F I L I A     >       -OFILIA,ÓFILAS	; "G=f,N=p"     # columbófilas
 
 C Í D I O	>	-ÍDIO,IDA	; "G=_,N=s"	# homicida
 C Í D I O	>	-ÍDIO,IDAS	; "G=_,N=p"	# homicidas
@@ -393,8 +393,8 @@ C R A C I A     >       -ACIA,ÁTICA      ; "G=f,N=s"    # democrática
 C R A C I A     >       -ACIA,ÁTICOS     ; "G=m,N=p"    # democráticos
 C R A C I A     >       -ACIA,ÁTICAS     ; "G=f,N=p"    # democráticas
 
-C U L T U R A	>	-ICULTURA,ÍCOLA	 ; "G=_,N=s"	# piscícola
-C U L T U R A   >       -ICULTURA,ÍCOLAS ; "G=_,N=p"    # piscícolas
+I C U L T U R A	>	-ICULTURA,ÍCOLA	 ; "G=_,N=s"	# piscícola
+I C U L T U R A >       -ICULTURA,ÍCOLAS ; "G=_,N=p"    # piscícolas
 
 A R Q U I A	>	-ARQUIA,ÁRQUICO	 ; "G=m,N=s"	# monárquico
 A R Q U I A     >       -ARQUIA,ÁRQUICA  ; "G=f,N=s"    # monárquica

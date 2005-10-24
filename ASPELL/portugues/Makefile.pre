@@ -57,5 +57,5 @@ portugues.rws: portugues.cwl
 .SUFFIXES: .cwl .rws
 
 .cwl.rws:
-	${WORD_LIST_COMPRESS} d < $< | ${ASPELL} ${ASPELL_FLAGS} --lang=pt_PT create master ./$@
+	${WORD_LIST_COMPRESS} d < $< | ${ASPELL} ${ASPELL_FLAGS} --lang=portugues create master ./$@
 

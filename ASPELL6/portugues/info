@@ -1,6 +1,6 @@
 name_english Portuguese
 lang portugues
-data-file portugues.aff
+data-file portugues_affix.dat
 version 0.6.0-0
 source-version 6
 complete false

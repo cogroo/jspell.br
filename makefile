@@ -142,7 +142,7 @@ ispell-clean:
 # aspell 0.50 rules
 #-------------------------------------------------------------------
 
-aspell: port.dic port.aff
+aspell: port.dic port.aff ispell
 	cd ASPELL; make
 
 aspell-install: aspell
@@ -156,13 +156,13 @@ aspell-tgz: aspell
 # aspell 0.60 rules
 #-------------------------------------------------------------------
 
-aspell: port.dic port.aff
+aspell6: port.dic port.aff ispell
 	cd ASPELL6; make
 
-aspell-install: aspell
+aspell6-install: aspell6
 	cd ASPELL6; make install
 
-aspell-tgz: aspell
+aspell6-tgz: aspell6
 	cd ASPELL6; make tgz
 	mv ASPELL6/aspell6-$(ABR).$(DATE).tar.gz .
 
@@ -170,7 +170,7 @@ aspell-tgz: aspell
 # myspell rules
 #-------------------------------------------------------------------
 
-myspell: port.dic port.aff
+myspell: port.dic port.aff ispell
 	cd MYSPELL; make
 
 myspell-install: myspell
@@ -250,7 +250,7 @@ publish-natura:
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell-$(ABR).latest.tar.gz
 	cp aspell6-*.gz $(NATURA_PUB)/aspell6
-	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell6-$(ABR).latest.tar.gz
+	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell6/aspell6-$(ABR).latest.tar.gz
 
 #Não usar!
 publish-linguateca:
