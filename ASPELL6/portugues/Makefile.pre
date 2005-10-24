@@ -64,7 +64,7 @@ portugues.rws: portugues.cwl
 .SUFFIXES: .cwl .rws .wl
 
 .cwl.rws:
-	${PREZIP} -d < $< | ${ASPELL} ${ASPELL_FLAGS} --lang=${LANG} create master ./$@
+	${PREZIP} -d < $< | ${ASPELL} ${ASPELL_FLAGS} --lang=pt_PT create master ./$@
 
 .wl.cwl:
 	cat $< | LC_COLLATE=C sort -u | ${PREZIP} -z > $@
