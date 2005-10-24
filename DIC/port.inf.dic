@@ -54,6 +54,7 @@ password/CAT=nc,G=f,N=s/a/
 PC/CAT=nc,G=m,N=s//
 Perl/CAT=nc,G=m,N=s//
 pipe/CAT=nc,G=f,N=s/p/
+pixel/CAT=nc,G=m,N=s/p/
 PostgreSQL/CAT=np//
 Prolog/CAT=np//
 plotter/CAT=nc,G=f,N=s/a/
