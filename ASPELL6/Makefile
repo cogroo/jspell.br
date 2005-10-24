@@ -23,8 +23,8 @@ aspell: ../port.dic
 	fi;
 	cp ../ISPELL/$P/$P.dic $P/
 	cp ../ISPELL/$P/$P.aff $P/
-	LANG="pt_PT" perl gendic.pl $P/$P.aff > $P/pt_PT.aff
-	cat $P.replace >> $P/pt_PT.aff
+	LANG="pt_PT" perl gendic.pl $P/$P.aff > $P/pt.aff
+	cat $P.replace >> $P/pt.aff
 	wc -l $P/$P.dic | cut -c 0-5 > $P/pt.dic
 	cat $P/$P.dic >> $P/pt.dic
 	mv $P/pt.dic $P/$P.dic
