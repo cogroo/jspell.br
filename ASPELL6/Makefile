@@ -30,7 +30,7 @@ aspell: ../port.dic
 	mv $P/pt.dic $P/$P.dic
 	mv $P/pt.aff $P/$P.aff
 #Generate cwl
-	LANG='C' sort $P/portugues.dic | word-list-compress c > $P/portugues.cwl
+	LANG='C' sort $P/$P.dic | word-list-compress c > $P/$P.cwl
 	cd $P; ./configure; make all
 
 tgz:
