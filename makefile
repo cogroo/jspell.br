@@ -66,7 +66,6 @@ what:
 	@ echo -e "chuveiro:"
 	@ echo -e "\tchuveiro -- build all available dictionaries"
 	@ echo -e "\tpublish-natura -- online publish at natura"
-	@ echo -e "\tpublish-linguateca -- online publish at linguateca"
 	@ echo
 #-------------------------------------------------------------------
 # Generated files
@@ -252,8 +251,3 @@ publish-natura:
 	cp aspell6-*.gz $(NATURA_PUB)/aspell6
 	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell6/aspell6-$(ABR).latest.tar.gz
 
-#Não usar!
-publish-linguateca:
-	rm -f $(LINGUATECA_PUB)/*.gz
-	cp *.gz $(LINGUATECA_PUB)
-	cd pub; perl pub_dics.pl $(LINGUATECA_PUB)
