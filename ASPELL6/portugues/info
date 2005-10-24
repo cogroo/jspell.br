@@ -1,0 +1,16 @@
+name_english Portuguese
+lang portugues
+data-file portugues.aff
+version 0.6.0-0
+source-version 6
+complete false
+accurate false
+author:
+  name Jose Joao Almeida
+  email jj at di uminho pt
+copyright GPL
+charset iso8859-1
+alias pt_PT pt:awli portuguese 
+dict:
+  name portugues
+  add portugues

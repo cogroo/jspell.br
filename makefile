@@ -42,15 +42,20 @@ what:
 	@ echo -e "\tjspell-tgz -- creates jspell munged distribution file"
 	@ echo
 	@ echo -e "ispell:"
-	@ echo -e "\tispell -- builds ispell dictionary (slow)"
+	@ echo -e "\tispell -- builds ispell dictionary"
 	@ echo -e "\tispell-install -- installs ispell"
 	@ echo -e "\tispell-clean -- clears ispell generated dictionaries"
 	@ echo -e "\tispell-tgz -- creates ispell distribution file"
 	@ echo
 	@ echo -e "aspell:"
-	@ echo -e "\taspell -- builds aspell dictionary (slow)"
+	@ echo -e "\taspell -- builds aspell 0.50 dictionary"
 	@ echo -e "\taspell-install -- installs aspell"
-	@ echo -e "\taspell-tgz -- creates aspell distribution file"
+	@ echo -e "\taspell-tgz -- creates aspell 0.50 distribution file"
+	@ echo
+	@ echo -e "aspell6:"
+	@ echo -e "\taspell6 -- builds aspell 0.60 dictionary"
+	@ echo -e "\taspell6-install -- installs aspell"
+	@ echo -e "\taspell6-tgz -- creates aspell 0.60 distribution file"
 	@ echo
 	@ echo -e "myspell:"
 	@ echo -e "\tmyspell -- builds myspell dictionary (will make ispell if required)"
@@ -105,6 +110,7 @@ clean :
 	cd IRR;    make clean
 	cd ISPELL; make clean
 	cd ASPELL; make clean
+	cd ASPELL6; make clean
 	cd MYSPELL; make clean
 	rm -f *.stat *.cnt
 	rm -f *~
@@ -133,7 +139,7 @@ ispell-clean:
 
 
 #-------------------------------------------------------------------
-# aspell rules
+# aspell 0.50 rules
 #-------------------------------------------------------------------
 
 aspell: port.dic port.aff
@@ -145,6 +151,20 @@ aspell-install: aspell
 aspell-tgz: aspell
 	cd ASPELL; make tgz
 	mv ASPELL/aspell-$(ABR).$(DATE).tar.gz .
+
+#-------------------------------------------------------------------
+# aspell 0.60 rules
+#-------------------------------------------------------------------
+
+aspell: port.dic port.aff
+	cd ASPELL6; make
+
+aspell-install: aspell
+	cd ASPELL6; make install
+
+aspell-tgz: aspell
+	cd ASPELL6; make tgz
+	mv ASPELL6/aspell6-$(ABR).$(DATE).tar.gz .
 
 #-------------------------------------------------------------------
 # myspell rules
@@ -218,10 +238,10 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz
+chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz aspell6-tgz
 
 publish-natura:
-	cp as*.gz $(NATURA_PUB)/aspell
+	cp aspell-*.gz $(NATURA_PUB)/aspell
 	ln -sf $(NATURA_PUB)/aspell/aspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell-$(ABR).latest.tar.gz
 	cp my*.gz $(NATURA_PUB)/myspell
 	ln -sf $(NATURA_PUB)/myspell/myspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell-$(ABR).latest.tar.gz
@@ -229,7 +249,10 @@ publish-natura:
 	ln -sf $(NATURA_PUB)/ispell/ispell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell-$(ABR).latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell-$(ABR).latest.tar.gz
+	cp aspell6-*.gz $(NATURA_PUB)/aspell6
+	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell6-$(ABR).latest.tar.gz
 
+#Não usar!
 publish-linguateca:
 	rm -f $(LINGUATECA_PUB)/*.gz
 	cp *.gz $(LINGUATECA_PUB)

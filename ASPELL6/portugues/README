@@ -1,4 +1,4 @@
-This is a Portuguese dictionary for aspell 0.50:
+This is a Portuguese dictionary for aspell, version 0.60:
 
 Copyright (C) 1995-2005  Jose Joao de Almeida <jj @ di dot uminho dot pt> , Jose Afonso, Manuel Lima, e Rui Vilela
 
@@ -22,10 +22,11 @@ Copyright (C) 1995-2005  Jose Joao de Almeida <jj @ di dot uminho dot pt> , Jose
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
 
-This dictionary is somewhat obsolete, if you can, use aspell 0.60 dictionary.
+This dictionary is mainly based on myspell portuguese dictionary.
+ Dictionary compression was the the only transformation added.
 
 To install :
-    first install aspell if necessary (http://aspell.sourceforge.net)
+    first install aspell 0.6 if necessary (http://aspell.sourceforge.net)
 
     ./configure
     make
@@ -39,8 +40,6 @@ or
 
 
 Submit new words or custom dics on http://linguateca.di.uminho.pt/dics/dics_en.html
-
-
 
 
 

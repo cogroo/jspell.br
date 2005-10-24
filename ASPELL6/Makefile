@@ -1,0 +1,57 @@
+#---------------------------------------------------------------------
+#  
+# This is   ASPELL/Makefile for version 0.60.X
+#
+#---------------------------------------------------------------------
+
+
+# make install
+# make aspell
+# make tgz
+
+SHELL=/bin/bash
+P=portugues
+ABR=pt
+DATE=`date +%Y%m%d`
+
+aspell: ../port.dic
+#generate myspell dic
+	if test ! -f ../ISPELL/$P/$P.aff ; then \
+		cd .. ; make ispell; \
+	elif test ! -f ../ISPELL/$P/$P.dic ; then \
+		cd .. ; make ispell; \
+	fi;
+	cp ../ISPELL/$P/$P.dic $P/
+	cp ../ISPELL/$P/$P.aff $P/
+	LANG="pt_PT" perl gendic.pl $P/$P.aff > $P/pt_PT.aff
+	cat $P.replace >> $P/pt_PT.aff
+	wc -l $P/$P.dic | cut -c 0-5 > $P/pt.dic
+	cat $P/$P.dic >> $P/pt.dic
+	mv $P/pt.dic $P/$P.dic
+	mv $P/pt.aff $P/$P.aff
+#Generate cwl
+	LANG='C' sort $P/portugues.dic | word-list-compress c > $P/portugues.cwl
+	cd $P; ./configure; make all
+
+tgz:
+	mkdir aspell6-$(ABR).$(DATE)
+	mv $P/CVS _CVS
+	cp $P/* aspell6-$(ABR).$(DATE)
+	mv _CVS $P/CVS
+	cd aspell6-$(ABR).$(DATE); rm -f *~ *.old *.rws Makefile
+	tar czf aspell6-$(ABR).$(DATE).tar.gz aspell6-$(ABR).$(DATE)
+	rm -fr aspell6-$(ABR).$(DATE)
+
+../port.dic:
+	cd ..; make port.dic
+
+install : 
+	cd $P; make install
+
+clean : 
+	rm -f $P/*~ *~
+	cd $P; make clean
+	rm -rf aspell6-$(ABR).$(DATE)
+
+realclean: clean
+	rm -f $P/portugues.cwl *.gz
