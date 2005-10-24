@@ -37,7 +37,7 @@ tgz:
 	mv $P/CVS _CVS
 	cp $P/* aspell6-$(ABR).$(DATE)
 	mv _CVS $P/CVS
-	cd aspell6-$(ABR).$(DATE); rm -f *~ *.old *.rws Makefile
+	cd aspell6-$(ABR).$(DATE); rm -f *~ *.old *.rws Makefile *.dic *.aff
 	tar czf aspell6-$(ABR).$(DATE).tar.gz aspell6-$(ABR).$(DATE)
 	rm -fr aspell6-$(ABR).$(DATE)
 
