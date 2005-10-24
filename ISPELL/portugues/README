@@ -1,12 +1,12 @@
-This is a Portuguese dictionary for ispell:
-
-Copyright (C) 1995,96,97,98,99  Jose Joao de Almeida <jj@di.uminho.pt> 
+#        Affix table for Portugues
+#           For JSpell and ISpell (3.1...)
+#
+# Copyright (C) 1995,96,97,98,99  Jose Joao de Almeida <jj@di.uminho.pt> 
 #                            e Ulisses Pinto
 #   Dep. Informatica, Universidade do Minho
 #     Portugal
-
-#    June 2005
-
+#
+#
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation; either version 2 of the License, or
@@ -21,18 +21,27 @@ Copyright (C) 1995,96,97,98,99  Jose Joao de Almeida <jj@di.uminho.pt>
 #    along with this program; if not, write to the Free Software
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
-
-To install :
-    first install ispell if necessary (http://ispell.sourceforge.net)
-
-    make
-    make install
-
-
-the last version Available in 
-     http://natura.di.uminho.pt/download/sources/Dictionaries/ispell/
-or 
-     http://linguateca.di.uminho.pt/dics/dics.html
-
-Submit new words or custom dics on http://linguateca.di.uminho.pt/dics/dics_en.html
+# This affix file uses both upper- and lower-case affix flags, so you
+# must              #define MASKBITS 64 in your local.h file.
+#
+# 8 bits used (latin1) (please remove the #define NO8BIT line)
+#
+#
+#    available modes:
+#        -T lat               (latin1)
+#     #   -T tex
+#     #   -T pre               (  'a 'e ,c ...)
+#
+#    any comments, important new words, and errors should be mailed to
+#                 J.Joao Almeida (jj@di.uminho.pt)
+#
+#                      Last update: Dez 2000
+#
+# the last version Available in 
+#  (ispell)        http://natura.di.uminho.pt/~jj/pln/UMportugues.tgz
+#  (ispell)        http://natura.di.uminho.pt/~jj/SOURCES/ispell.port....
+#  (ispell)        http://natura.di.uminho.pt/~jj/SRPMS/ispell.port....
+#  (ispell)        http://natura.di.uminho.pt/~jj/RPMS/i586/ispell.port....
+#                  ***********************************************
+#
 
