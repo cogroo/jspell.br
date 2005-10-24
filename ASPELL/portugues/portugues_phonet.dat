@@ -1,0 +1,74 @@
+#   phonetic_english.h - phonetic transformation rules for use with phonetic.c
+#   Copyright (C) 2000 Jose Joao Almeida
+#
+#   This library is free software; you can redistribute it and/or
+#   modify it under the terms of the GNU Lesser General Public
+#   License version 2.1 as published by the Free Software Foundation;
+#
+#   This library is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#   Lesser General Public License for more details.
+#
+#   You should have received a copy of the GNU Lesser General Public
+#   License along with this library; if not, write to the Free Software
+#   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+#   Jose Joao (jj@di.uminho.pt)
+#
+
+version portugues 0.0000000001
+
+гаO                гAO
+SS                 г
+C(EI)-             г
+
+RR                 R
+
+C(гT)-             _
+
+X                  X
+CH                 X 
+S(TN)-             X
+
+LH                 LH
+NH                 NH
+H                  _
+
+G(EI)-             J
+GU(EI)-            G
+G                  G
+
+QU(EI)-            K
+QU                 KU
+C(AOURL)-          K
+
+AS(AEIOU)          AZ
+ES(AEIOU)          EZ
+IS(AEIOU)          IZ
+OS(AEIOU)          OZ
+US(AEIOU)          UZ
+
+а                  A
+ю                  A
+б                  A
+ц                  A
+
+E                  E
+х                  E
+и                  E
+й                  E
+
+I                  I
+м                  I
+
+O                  O
+т                  O
+с                  O
+у                  O
+
+U                  U
+з                  U
+
+Z$                 X 
+

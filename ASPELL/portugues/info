@@ -11,3 +11,5 @@ alias pt_PT pt:awli portuguese
 dict:
   name portugues
   add portugues
+  add portugues_phonet
+
