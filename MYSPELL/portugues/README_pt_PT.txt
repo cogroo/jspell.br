@@ -9,7 +9,8 @@ Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> ,
 
 #    July 2005
 
-#    Many thanks to Artur Correia <artur.correia@srcc.pt> for previous dictionary versions.
+#    Many thanks to Artur Correia <artur.correia@srcc.pt> for previous dictionary
+#    versions.
 #    Affix file converted from the ISPELL version by Rui Vilela, Linguateca.
 
 ########################################
@@ -65,12 +66,13 @@ Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> ,
 
 ########################################
 
-To install :
-    Find a suitable application that uses myspell dictionaries like openoffice, mozilla, thunderbird.
-
-    In your system run as root or user (with some luck, so i recommend to search the place to install youself. Notice that in windows it is recommended to use the available interfaces):
-
-	    sh install.sh  #It tries to install on default locations of the mentioned applications, but i recomend to install it manualy, or with the associated application program.
+To install : 
+    Find a suitable application that uses myspell dictionaries like
+    openoffice, mozilla, thunderbird. Use the program dictionary
+    application (if it has) for installing the dictionaries. 
+    For openoffice, you should make sure that the dictionary.lst
+    file has the following line:
+	  DICT pt PT pt_PT
 
 Latest versions at:
 	http://natura.di.uminho.pt/download/sources/Dictionaries/myspell/

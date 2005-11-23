@@ -30,7 +30,8 @@ myspell-tgz: tgz
 
 tgz: myspell
 	mkdir myspell-$(ABR).$(DATE)
-	cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff $P/install.sh myspell-$(ABR).$(DATE)
+	#cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff $P/install.sh myspell-$(ABR).$(DATE)
+	cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff myspell-$(ABR).$(DATE)
 	tar -czf myspell-$(ABR).$(DATE).tar.gz myspell-$(ABR).$(DATE)
 	rm -rf myspell-$(ABR).$(DATE)
 
