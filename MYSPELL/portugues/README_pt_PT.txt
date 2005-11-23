@@ -68,9 +68,9 @@ Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> ,
 To install :
     Find a suitable application that uses myspell dictionaries like openoffice, mozilla, thunderbird.
 
-    In your system run as root or user (with some luck, so i recommend to search the place to install youself. Notice that in windows it is recommended to use the available interface):
+    In your system run as root or user (with some luck, so i recommend to search the place to install youself. Notice that in windows it is recommended to use the available interfaces):
 
-	    sh install.sh #It tries to install on default locations of the mentioned applications
+	    sh install.sh  #It tries to install on default locations of the mentioned applications, but i recomend to install it manualy, or with the associated application program.
 
 Latest versions at:
 	http://natura.di.uminho.pt/download/sources/Dictionaries/myspell/
