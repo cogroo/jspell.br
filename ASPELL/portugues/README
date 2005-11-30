@@ -1,11 +1,12 @@
-This is a Portuguese dictionary for aspell 0.50:
+This is a Portuguese dictionary for ASpell 0.50:
 
-Copyright (C) 1995-2005  Jose Joao de Almeida <jj @ di dot uminho dot pt> , Jose Afonso, Manuel Lima, e Rui Vilela
+Copyright (C) 1995-2005 Jose Joao de Almeida <jj@di.uminho.pt> , Jose
+Afonso, Manuel Lima, e Rui Vilela
 
-#     Dep. Informatica, Universidade do Minho
-#     Portugal
+Dep. Informatica, Universidade do Minho
+Portugal
 
-#    June 2005
+#    Nov 2005
 
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -22,7 +23,7 @@ Copyright (C) 1995-2005  Jose Joao de Almeida <jj @ di dot uminho dot pt> , Jose
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
 
-This dictionary is somewhat obsolete, if you can, use aspell 0.60 dictionary.
+This dictionary is obsolete, if you can, you should use aspell 0.6X dictionary.
 
 To install :
     first install aspell if necessary (http://aspell.sourceforge.net)
@@ -39,10 +40,3 @@ or
 
 
 Submit new words or custom dics on http://linguateca.di.uminho.pt/dics/dics_en.html
-
-
-
-
-
-#### portugues_phone.dat -- fonetica - still missing
-#### RPM                   ... .spec - still missing... -- next week

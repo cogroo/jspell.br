@@ -1,11 +1,12 @@
-This is a Portuguese dictionary for aspell, version 0.60:
+This is a Portuguese dictionary for ASpell, version 0.60.
 
-Copyright (C) 1995-2005  Jose Joao de Almeida <jj @ di dot uminho dot pt> , Jose Afonso, Manuel Lima, e Rui Vilela
+Copyright (C) 1995-2005 Jose Joao de Almeida <jj@di.uminho.pt> , Jose
+Afonso, Manuel Lima, e Rui Vilela
 
-#     Dep. Informatica, Universidade do Minho
-#     Portugal
+Dep. Informatica, Universidade do Minho
+Portugal
 
-#    June 2005
+#    Nov 2005
 
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -39,9 +40,6 @@ or
 	http://linguateca.di.uminho.pt/dics/dics.html
 
 
-Submit new words or custom dics on http://linguateca.di.uminho.pt/dics/dics_en.html
+Submit new words or custom dics on
+http://linguateca.di.uminho.pt/dics/dics_en.html
 
-
-
-#### portugues_phone.dat -- fonetica - still missing
-#### RPM                   ... .spec - still missing... -- next week

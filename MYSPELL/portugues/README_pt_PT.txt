@@ -4,14 +4,13 @@ Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> ,
 	Rui Vilela <ruivilela@di.uminho.pt> 
 	Alberto Simões <ambs@di.uminho.pt>
 
-#    Dep. Informatica, Universidade do Minho
-#    Portugal
-
-#    July 2005
+Dep. Informatica, Universidade do Minho
+Portugal
 
 #    Many thanks to Artur Correia <artur.correia@srcc.pt> for previous dictionary
 #    versions.
-#    Affix file converted from the ISPELL version by Rui Vilela, Linguateca.
+
+#    Nov 2005
 
 ########################################
 #    This dictionary is currently covered by the GPL and BSD licence
@@ -66,6 +65,8 @@ Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> ,
 
 ########################################
 
+Affix file converted from the JSPELL/ISPELL version by Rui Vilela, Linguateca.
+
 To install : 
     Find a suitable application that uses myspell dictionaries like
     openoffice, mozilla, thunderbird. Use the program dictionary
@@ -80,5 +81,6 @@ or
 	http://linguateca.di.uminho.pt/dics/dics.html
 
 
-Submit new words or custom dics on http://linguateca.di.uminho.pt/dics/dics_en.html
+Submit new words or custom dics on
+http://linguateca.di.uminho.pt/dics/dics_en.html
 

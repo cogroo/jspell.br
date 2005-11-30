@@ -96,6 +96,7 @@ tgz:
 jspell.port.tgz: $(BASE)
 	rm -rf jspell.port-`./ver`
 	mkdir -p jspell.port-`./ver`
+	cp COPYING jspell.port-`./ver`
 	cp $(BASE) jspell.port-`./ver`
 	tar -cvzf jspell.port.tgz jspell.port-`./ver`
 
@@ -113,8 +114,6 @@ clean :
 	cd MYSPELL; make clean
 	rm -f *.stat *.cnt
 	rm -f *~
-
-realclean: clean
 	rm -f aux.all-irr.dic 
 	rm -f port.dic
 	rm -f *.gz

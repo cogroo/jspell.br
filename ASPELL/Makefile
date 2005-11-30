@@ -22,6 +22,7 @@ aspell: ../port.dic
 
 tgz:
 	mkdir aspell-$(ABR).$(DATE)
+	cp ../COPYING aspell-$(ABR).$(DATE)
 	mv $P/CVS _CVS
 	cp $P/* aspell-$(ABR).$(DATE)
 	mv _CVS $P/CVS

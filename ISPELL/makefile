@@ -40,6 +40,7 @@ ispell-tgz: tgz
 
 tgz: ispell
 	mkdir ispell-$(ABR).$(DATE)
+	cp ../COPYING ispell-$(ABR).$(DATE)
 	cp $P/$D.dic $P/README $P/$D.aff $P/makefile ispell-$(ABR).$(DATE)
 	tar -czf ispell-$(ABR).$(DATE).tar.gz ispell-$(ABR).$(DATE)
 	rm -fr ispell-$(ABR).$(DATE)
