@@ -178,9 +178,9 @@ myspell-tgz: myspell
 	cd MYSPELL; make tgz
 	mv MYSPELL/myspell-$(ABR).$(DATE).tar.gz .
 
-#myspell-zip: myspell
-#	cd MYSPELL; make zip
-#	mv MYSPELL/myspell_$(ABR)_$(DATE).zip .
+myspell-zip: myspell
+	cd MYSPELL; make myspell-zip
+	mv MYSPELL/myspell_$(ABR)_$(DATE).zip .
 
 #-------------------------------------------------------------------
 # jspell rules
@@ -236,7 +236,7 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz aspell6-tgz
+chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz aspell6-tgz myspell-zip
 
 publish-natura:
 	cp aspell-*.gz $(NATURA_PUB)/aspell

@@ -30,7 +30,7 @@ myspell-zip:
 	mkdir myspell-$(ABR).$(DATE)
 	cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff myspell-$(ABR).$(DATE)
 	cp ../COPYING myspell-$(ABR).$(DATE)
-	zip myspell_$(ABR)_$(DATE).zip myspell-$(ABR).$(DATE)
+	zip -r myspell-$(ABR).$(DATE).zip myspell-$(ABR).$(DATE)
 	rm -rf myspell-$(ABR).$(DATE)
 
 tgz: myspell
