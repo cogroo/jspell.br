@@ -12,11 +12,12 @@
 # make ispell.tgz
 
 LIB=/usr/lib
-ISPELLLIB=/usr/lib/ispell
+
+#ISPELLLIB=/usr/lib/ispell
+ISPELLLIB=`ispell -vv | grep 'LIBDIR' | sed -e 's/.*"\(.*\)"/\1/'`
 
 BASE= port.aff port.dic np.dic inf.dic irregulares.txt verb.dic \
       makefile all-irr.dic pos2iso jsp2isp.pl README irr2perl
-
 
 #--------------------------------------------------------------------- 
 
@@ -72,8 +73,9 @@ $P/$D.aff $P/$D.dic: ../port.dic ../port.aff
 # instalations
 
 install : $P/$D.hash 
-	cp $P/$D.hash $(ISPELLLIB)
-	ln -sf $(ISPELLLIB)/$D.hash $(ISPELLLIB)/port.hash
+	cd $P; make install
+#	cp $P/$D.hash $(ISPELLLIB)
+#	ln -sf $(ISPELLLIB)/$D.hash $(ISPELLLIB)/port.hash
 
 clean : 
 	rm -f $P/*.stat $P/*.cnt  $P/$D.hash $P/$D.dic
