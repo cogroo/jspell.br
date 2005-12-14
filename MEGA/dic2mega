@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+use Data::Dumper;
+$Data::Dumper::Indent=1;
+$Data::Dumper::Terse=1;
+
+my %D=();
+my $f;
+while(<>){
+  chomp;
+  next unless m{/};
+  ($a,$b,$c,$d)=split('/',$_,4);
+ 
+  $f= {cla=> $b, flags=> $c, file=>$ARGV, ($d ? (comms=> $d) : ())};
+  $f->{prov}[0]="jspell";
+  if (defined($D{$a})) { push(@{$D{$a}},$f); } else { $D{$a}= [$f] }
+}
+
+print Dumper(\%D)
+
+__END__
+
+print '%D=(', "\n";
+while(<>){
+  chomp;
+  next unless m{/};
+  ($a,$b,$c,@d)=split('/',$_);
+  $a =~ s/"/\\"/g;
+ 
+  print qq{"$a" => \{ cla => '$b', flags => '$c', file => "$ARGV" },
+        (@d ? sprintf( ', comms => "%s"',join('/',@d)) : ""),
+        "},\n";
+}
+print "\n);\n";

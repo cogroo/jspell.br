@@ -1,0 +1,48 @@
+#!/usr/bin/perl -s
+
+use jspell             ;
+
+use Data::Dumper       ;
+$Data::Dumper::Indent=1;
+$Data::Dumper::Terse=1;
+
+our ($dic,$err);
+$dic ||="megaport.dic.pl";
+$err ||="_err";
+my $d = do($dic);
+
+jspell_dict("port");
+
+open(F,"> $err") or die;
+
+while(<>){
+ chomp;
+ ($a,$b,$c)=split(' ',$_,3);
+ if(@{$d->{$a}}   ==1){ $n++; 
+    if (defined  $d->{$a}[0]{freq}{corlex}) {
+       if ($c > $d->{$a}[0]{freq}{corlex}){
+          $d->{$a}[0]{freq}{corlex} = $c ; 
+          $d->{$a}[0]{cla2}=$b;}}
+    else {
+       $d->{$a}[0]{freq}={corlex=>$c} ; 
+       $d->{$a}[0]{cla2}=$b;}
+    push(@{$d->{$a}[0]{prov}}, "corlex");
+ }
+ elsif(@{$d->{$a}}==0){
+    my @r=rad($a);
+    if(@r){ print F "=====remete $a ",join(",",@r),"\n"; }
+    else  { print F "=====nova $_\n";  
+            $nova++; 
+            push(@{$d->{$a}[0]{prov}}, "corlex");
+            $d->{$a}[0]{freq}= { corlex => $c }; 
+            $d->{$a}[0]{cla2}=$b;} }
+ else { $amb++;  
+    print F "=====ambígua $_\n"; 
+    for(0..@{$d->{$a}-1}){
+       ### not yet...
+    }
+ }
+}
+
+print Dumper($d);
+print F "\n\nembutidas = $n; novas = $nova ; ambiguas = $amb\n";
