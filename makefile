@@ -11,7 +11,7 @@
 LING=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
-DIST_DIR=jspell-$(ABR).$(DATE)
+DIST_DIR=jspell.$(ABR)-$(DATE)
 
 LIB=`jspell-dict --dic-dir`
 #ISPELLLIB=/home/jj/lib/ispell
