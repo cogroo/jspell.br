@@ -11,6 +11,8 @@
 LING=portugues
 ABR=pt
 DATE=`date +%Y%m%d`
+
+## In case you change this, please let jspell maintainers know...
 DIST_DIR=jspell.$(ABR)-$(DATE)
 
 LIB=`jspell-dict --dic-dir`
