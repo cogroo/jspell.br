@@ -118,7 +118,7 @@ clean :
 	rm -f *~
 	rm -f aux.all-irr.dic 
 	rm -f port.dic
-	rm -f *.gz
+	rm -f *.gz *.zip
 
 #-------------------------------------------------------------------
 # ispell rules
