@@ -250,7 +250,7 @@ port.hash: port.dic port.aff
 chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz aspell6-tgz myspell-zip
 
 publish-natura:
-	cp aspell-*.gz $(NATURA_PUB)/aspell
+	cp aspell.*.gz $(NATURA_PUB)/aspell
 	ln -sf $(NATURA_PUB)/aspell/aspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell.$(ABR)-latest.tar.gz
 	cp my*.gz $(NATURA_PUB)/myspell
 	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.tar.gz
@@ -260,6 +260,6 @@ publish-natura:
 	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
-	cp aspell6-*.gz $(NATURA_PUB)/aspell6
+	cp aspell6.*.gz $(NATURA_PUB)/aspell6
 	ln -sf $(NATURA_PUB)/aspell6/aspell6.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/aspell6/aspell6.$(ABR)-latest.tar.gz
 
