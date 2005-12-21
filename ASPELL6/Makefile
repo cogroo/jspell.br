@@ -33,14 +33,14 @@ aspell: ../port.dic
 	cd $P; ./configure; make all
 
 tgz:
-	mkdir aspell6-$(ABR).$(DATE)
-	cp ../COPYING aspell6-$(ABR).$(DATE)
+	mkdir aspell6.$(ABR)-$(DATE)
+	cp ../COPYING aspell6.$(ABR)-$(DATE)
 	mv $P/CVS _CVS
-	cp $P/* aspell6-$(ABR).$(DATE)
+	cp $P/* aspell6.$(ABR)-$(DATE)
 	mv _CVS $P/CVS
-	cd aspell6-$(ABR).$(DATE); rm -f *~ *.old *.rws Makefile *.dic *.aff
-	tar czf aspell6-$(ABR).$(DATE).tar.gz aspell6-$(ABR).$(DATE)
-	rm -fr aspell6-$(ABR).$(DATE)
+	cd aspell6.$(ABR)-$(DATE); rm -f *~ *.old *.rws Makefile *.dic *.aff
+	tar czf aspell6.$(ABR)-$(DATE).tar.gz aspell6.$(ABR)-$(DATE)
+	rm -fr aspell6.$(ABR)-$(DATE)
 
 ../port.dic:
 	cd ..; make port.dic
@@ -51,7 +51,7 @@ install :
 clean : 
 	rm -f $P/*~ *~
 	cd $P; make clean
-	rm -rf aspell6-$(ABR).$(DATE)
+	rm -rf aspell6.$(ABR)-$(DATE)
 
 realclean: clean
 	rm -f $P/portugues.cwl *.gz

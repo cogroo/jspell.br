@@ -27,24 +27,24 @@ myspell:
 myspell-tgz: tgz
 
 myspell-zip:
-	mkdir myspell-$(ABR).$(DATE)
-	cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff myspell-$(ABR).$(DATE)
-	cp ../COPYING myspell-$(ABR).$(DATE)
-	zip -r myspell-$(ABR).$(DATE).zip myspell-$(ABR).$(DATE)
-	rm -rf myspell-$(ABR).$(DATE)
+	mkdir myspell.$(ABR)-$(DATE)
+	cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff myspell.$(ABR)-$(DATE)
+	cp ../COPYING myspell.$(ABR)-$(DATE)
+	zip -r myspell.$(ABR)-$(DATE).zip myspell.$(ABR)-$(DATE)
+	rm -rf myspell.$(ABR)-$(DATE)
 
 tgz: myspell
-	mkdir myspell-$(ABR).$(DATE)
-	cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff myspell-$(ABR).$(DATE)
-	cp ../COPYING myspell-$(ABR).$(DATE)
-	tar -czf myspell-$(ABR).$(DATE).tar.gz myspell-$(ABR).$(DATE)
-	rm -rf myspell-$(ABR).$(DATE)
+	mkdir myspell.$(ABR)-$(DATE)
+	cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff myspell.$(ABR)-$(DATE)
+	cp ../COPYING myspell.$(ABR)-$(DATE)
+	tar -czf myspell.$(ABR)-$(DATE).tar.gz myspell.$(ABR)-$(DATE)
+	rm -rf myspell.$(ABR)-$(DATE)
 
 install :
 	cd $P
 	./install.sh
 clean : 
-	rm -rf myspell-$(ABR).$(DATE)	
+	rm -rf myspell.$(ABR)-$(DATE)	
 	rm -rf *~ $P/*~
 	make realclean
 

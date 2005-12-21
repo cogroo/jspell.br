@@ -21,14 +21,14 @@ aspell: ../port.dic
 	cd $P; ./configure; make all
 
 tgz:
-	mkdir aspell-$(ABR).$(DATE)
-	cp ../COPYING aspell-$(ABR).$(DATE)
+	mkdir aspell.$(ABR)-$(DATE)
+	cp ../COPYING aspell.$(ABR)-$(DATE)
 	mv $P/CVS _CVS
-	cp $P/* aspell-$(ABR).$(DATE)
+	cp $P/* aspell.$(ABR)-$(DATE)
 	mv _CVS $P/CVS
-	cd aspell-$(ABR).$(DATE); rm -f *~ *.old *.rws Makefile
-	tar czf aspell-$(ABR).$(DATE).tar.gz aspell-$(ABR).$(DATE)
-	rm -fr aspell-$(ABR).$(DATE)
+	cd aspell.$(ABR)-$(DATE); rm -f *~ *.old *.rws Makefile
+	tar czf aspell.$(ABR)-$(DATE).tar.gz aspell.$(ABR)-$(DATE)
+	rm -fr aspell.$(ABR)-$(DATE)
 
 ../port.dic:
 	cd ..; make port.dic
@@ -39,7 +39,7 @@ install :
 clean : 
 	rm -f $P/*~ *~
 	cd $P; make clean
-	rm -rf aspell-$(ABR).$(DATE)
+	rm -rf aspell.$(ABR)-$(DATE)
 
 realclean: clean
 	rm -f $P/portugues.cwl *.gz

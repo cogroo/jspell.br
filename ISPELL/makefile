@@ -40,11 +40,11 @@ DATE=`date +%Y%m%d`
 ispell-tgz: tgz
 
 tgz: ispell
-	mkdir ispell-$(ABR).$(DATE)
-	cp ../COPYING ispell-$(ABR).$(DATE)
-	cp $P/$D.dic $P/README $P/$D.aff $P/makefile ispell-$(ABR).$(DATE)
-	tar -czf ispell-$(ABR).$(DATE).tar.gz ispell-$(ABR).$(DATE)
-	rm -fr ispell-$(ABR).$(DATE)
+	mkdir ispell.$(ABR)-$(DATE)
+	cp ../COPYING ispell.$(ABR)-$(DATE)
+	cp $P/$D.dic $P/README $P/$D.aff $P/makefile ispell.$(ABR)-$(DATE)
+	tar -czf ispell.$(ABR)-$(DATE).tar.gz ispell.$(ABR)-$(DATE)
+	rm -fr ispell.$(ABR)-$(DATE)
 
 #publish: tgz
 #	mv $P/$D.tgz $(plndir)/UM$D.tgz

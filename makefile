@@ -132,7 +132,7 @@ ispell-install: ispell
 
 ispell-tgz:
 	cd ISPELL; make tgz
-	mv ISPELL/ispell-$(ABR).$(DATE).tar.gz .
+	mv ISPELL/ispell.$(ABR)-$(DATE).tar.gz .
 
 ispell-clean:
 	cd ISPELL; make clean
@@ -150,7 +150,10 @@ aspell-install: aspell
 
 aspell-tgz: aspell
 	cd ASPELL; make tgz
-	mv ASPELL/aspell-$(ABR).$(DATE).tar.gz .
+	mv ASPELL/aspell.$(ABR)-$(DATE).tar.gz .
+
+aspell-clean:
+	cd ASPELL; make clean
 
 #-------------------------------------------------------------------
 # aspell 0.60 rules
@@ -164,7 +167,10 @@ aspell6-install: aspell6
 
 aspell6-tgz: aspell6
 	cd ASPELL6; make tgz
-	mv ASPELL6/aspell6-$(ABR).$(DATE).tar.gz .
+	mv ASPELL6/aspell6.$(ABR)-$(DATE).tar.gz .
+
+aspell6-clean:
+	cd ASPELL6; make clean
 
 #-------------------------------------------------------------------
 # myspell rules
@@ -178,11 +184,14 @@ myspell-install: myspell
 
 myspell-tgz: myspell
 	cd MYSPELL; make tgz
-	mv MYSPELL/myspell-$(ABR).$(DATE).tar.gz .
+	mv MYSPELL/myspell.$(ABR)-$(DATE).tar.gz .
 
 myspell-zip: myspell
 	cd MYSPELL; make myspell-zip
-	mv MYSPELL/myspell-$(ABR).$(DATE).zip .
+	mv MYSPELL/myspell.$(ABR)-$(DATE).zip .
+
+myspell-clean:
+	cd MYSPELL; make clean
 
 #-------------------------------------------------------------------
 # jspell rules
@@ -242,15 +251,15 @@ chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz aspell6-tgz myspell-zip
 
 publish-natura:
 	cp aspell-*.gz $(NATURA_PUB)/aspell
-	ln -sf $(NATURA_PUB)/aspell/aspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell-$(ABR).latest.tar.gz
+	ln -sf $(NATURA_PUB)/aspell/aspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell.$(ABR)-latest.tar.gz
 	cp my*.gz $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell-$(ABR).latest.tar.gz
+	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.tar.gz
 	cp my*.zip $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell-$(ABR).$(DATE).zip $(NATURA_PUB)/myspell/myspell-$(ABR).latest.zip
+	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).zip $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.zip
 	cp i*.gz $(NATURA_PUB)/ispell
-	ln -sf $(NATURA_PUB)/ispell/ispell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell-$(ABR).latest.tar.gz
+	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
-	ln -sf $(NATURA_PUB)/jspell/jspell-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell-$(ABR).latest.tar.gz
+	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
 	cp aspell6-*.gz $(NATURA_PUB)/aspell6
-	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABR).$(DATE).tar.gz $(NATURA_PUB)/aspell6/aspell6-$(ABR).latest.tar.gz
+	ln -sf $(NATURA_PUB)/aspell6/aspell6.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/aspell6/aspell6.$(ABR)-latest.tar.gz
 
