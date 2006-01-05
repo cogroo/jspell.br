@@ -20,5 +20,5 @@ ISPELL           - para gerar dicionarios ispell
 JSPELL           - para gerar dicionarios jspell
 ASPELL           - para gerar dicionarios aspell
 MYSPELL		 - para gerar dicionarios myspell
-ASPELL           - para gerar a versao 6 de dicionarios aspell
+ASPELL6          - para gerar a versao 6 de dicionarios aspell
 
