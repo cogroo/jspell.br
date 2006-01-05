@@ -262,4 +262,7 @@ publish-natura:
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
 	cp aspell6.*.gz $(NATURA_PUB)/aspell6
 	ln -sf $(NATURA_PUB)/aspell6/aspell6.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/aspell6/aspell6.$(ABR)-latest.tar.gz
+	date >> $(NATURA_PUB)/CHANGELOG
+	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
+
 
