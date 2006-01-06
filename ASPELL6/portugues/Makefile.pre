@@ -4,7 +4,7 @@ lang = portugues
 version = 0.6.0-0
 
 cwl_files = portugues.cwl
-data_files = portugues.dat portugues_phonet.dat
+data_files = portugues.dat portugues_phonet.dat portugues_affix.dat
 doc_files = README Copyright
 extra_files = configure info Makefile.pre
 multi_files = portugues.multi portuguese.alias pt_PT.alias
