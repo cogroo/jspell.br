@@ -148,7 +148,7 @@ Este documento pretende ajudar na edição do dicionário jspell para o PT.
   punct2 - pontuação
   v    --- verbo
 
-C d g n
+C d g n a
 
 DG _ f m
 
