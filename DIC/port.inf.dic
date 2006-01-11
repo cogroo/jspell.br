@@ -33,6 +33,7 @@ IBM/CAT=np,G=f,N=s//
 input/CAT=nc,G=m,N=s/p/
 Intel/CAT=np,G=f,N=s//
 Internet/CAT=nc,N=s//
+Latex/CAT=nc,N=s//
 link/CAT=nc,N=s//
 Linux/CAT=np,G=m//
 LISP/CAT=np//
