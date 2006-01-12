@@ -25,7 +25,7 @@ IRRFILES=IRR/ge_verb.l IRR/ge_verb2.y IRR/makefile
 PTDIC = DIC/port.geral.dic DIC/port.inf.dic DIC/port.np.dic DIC/port.siglas.dic
 EXTRADIST = irregulares.txt irr2perl port.aff jspell-pt.1
 
-BASE= port.aff $(PTDIC) irregulares.txt aux.verb.dic \
+BASE= port.aff $(PTDIC) irregulares.txt aux_verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
       PERL/pos2iso PERL/jsp2isp.pl README jspell.port.spec irr2perl
 
@@ -73,20 +73,20 @@ what:
 # Generated files
 #-------------------------------------------------------------------
 
-port.dic: $(PTDIC) aux.all-irr.dic 
+port.dic: $(PTDIC) aux_all_irr.dic 
 	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
-	cat $(PTDIC) aux.all-irr.dic >> port.dic 
+	cat $(PTDIC) aux_all_irr.dic >> port.dic 
 
 
 
-port.irr: aux.all-irr.dic
-	./irr2perl aux.all-irr.dic > port.irr
+port.irr: aux_all_irr.dic
+	./irr2perl aux_all_irr.dic > port.irr
 
-aux.verb.dic: DIC/port.geral.dic
-	egrep "CAT=v|\#v" DIC/port.geral.dic > aux.verb.dic
+aux_verb.dic: DIC/port.geral.dic
+	egrep 'CAT=v|\#v' DIC/port.geral.dic > aux_verb.dic
 
-aux.all-irr.dic: irregulares.txt aux.verb.dic IRR/ge_verb
-	IRR/ge_verb aux.verb.dic < irregulares.txt > aux.all-irr.dic
+aux_all_irr.dic: irregulares.txt aux_verb.dic IRR/ge_verb
+	IRR/ge_verb aux_verb.dic < irregulares.txt > aux_all_irr.dic
 
 IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
 	cd IRR; make
@@ -116,7 +116,7 @@ clean :
 	cd MYSPELL; make clean
 	rm -f *.stat *.cnt
 	rm -f *~
-	rm -f aux.all-irr.dic 
+	rm -f aux_all_irr.dic 
 	rm -f port.dic
 	rm -f *.gz *.zip
 
