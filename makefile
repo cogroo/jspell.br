@@ -231,6 +231,7 @@ jspell-tgz: $(EXTRADIST)
 	cp $(EXTRADIST) $(DIST_DIR)
 
 	cp dist_makefile $(DIST_DIR)/makefile
+	cp port.meta $(DIST_DIR)/port.meta
 	perl -pi -e 's/DISTDATE/chomp($$a=`date +%Y%m%d`);$$a/e;' $(DIST_DIR)/makefile
 	perl -pi -e 's!DICFILES!$(PTDIC)!'                        $(DIST_DIR)/makefile
 
