@@ -80,6 +80,7 @@ install : $P/$D.hash
 clean : 
 	rm -f $P/*.stat $P/*.cnt  $P/$D.hash $P/$D.dic
 	rm -f *.gz
+	rm -f *~
 
 realclean:
 	rm -f $P/*.stat $P/*.cnt 

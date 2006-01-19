@@ -50,7 +50,6 @@ install :
 
 clean : 
 	rm -f $P/*~ *~
-	cd $P; make clean
 	rm -rf aspell6.$(ABR)-$(DATE)
 
 realclean: clean
