@@ -29,6 +29,7 @@ flag/CAT=nc,G=f,N=s/a/
 Fortran/CAT=np//
 Fuzzy/CAT=adj,G=_,N=s//
 hardware/CAT=nc,G=m,N=s//
+http/CAT=np//
 IBM/CAT=np,G=f,N=s//
 input/CAT=nc,G=m,N=s/p/
 Intel/CAT=np,G=f,N=s//
@@ -78,4 +79,5 @@ Unix/CAT=np,G=m//
 URL/CAT=np,G=m//
 VDM/CAT=np,G=m//
 Windows/CAT=nc,G=m,N=s//
+www/CAT=np//
 XP/CAT=nc,G=m,N=s//

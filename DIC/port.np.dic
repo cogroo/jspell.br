@@ -16,6 +16,7 @@
 #tpf/CAT=np,SEM=country,G=f,N=s
 #tc/CAT=np,SEM=cid,G=m,N=s
 #tcf/CAT=np,SEM=cid,G=f,N=s
+#nppf/CAT=np,SEM=proj,G=f,N=s
 #em/CAT=np,SEM=mes,G=m,N=s/
 
 Aachen/#tc/
@@ -814,6 +815,7 @@ Electra/CAT=np/
 Elia/#np1/
 Elias/#np/
 Elisa/#npf/
+Elisabete/#npf//
 Elísio/#npm/
 Elísios/#t/
 Elói/#npm/
@@ -1428,6 +1430,7 @@ Lili/#npf/
 Lima/#np/
 Limpopo/CAT=np/
 Lincoln/#np1/
+Linguateca/#nppf/
 Lino/#npm/
 Lisboa/#tc/
 Lituânia/#la,#tpf/
