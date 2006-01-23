@@ -37,6 +37,7 @@ Internet/CAT=nc,N=s//
 Latex/CAT=nc,N=s//
 link/CAT=nc,N=s//
 Linux/CAT=np,G=m//
+logs/CAT=nc,N=p//ficheiros de log
 LISP/CAT=np//
 Macintosh/CAT=np,G=f,N=s//
 mail/CAT=nc,G=m,N=s//
