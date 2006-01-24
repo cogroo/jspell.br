@@ -57,10 +57,12 @@ package/CAT=nc,G=f/p/
 Pascal/CAT=np,G=m//
 password/CAT=nc,G=f,N=s/a/
 PC/CAT=nc,G=m,N=s//
+PDF/CAT=np,G=f,N=s,SEM=sigla/p/
 Perl/CAT=nc,G=m,N=s//
 pipe/CAT=nc,G=f,N=s/p/
 pixel/CAT=nc,G=m,N=s/p/
 PostgreSQL/CAT=np//
+Postscript/CAT=np//
 Prolog/CAT=np//
 plotter/CAT=nc,G=f,N=s/a/
 RAM/CAT=nc,G=f,N=s//
@@ -69,6 +71,7 @@ robot/CAT=a_nc,N=s/p/
 ROM/CAT=nc,G=m,N=s//
 scanner/CAT=nc,G=m,N=s/a/
 scope/CAT=nc,G=m,N=s//
+SGML/CAT=np,SEM=sigla//
 shell/CAT=nc,G=f,N=s//
 site/CAT=nc,G=m,N=s/p/
 slot/CAT=nc,G=m,N=s/a/
@@ -84,3 +87,4 @@ VDM/CAT=np,G=m//
 Windows/CAT=nc,G=m,N=s//
 www/CAT=np//
 XP/CAT=nc,G=m,N=s//
+XML/CAT=np//
