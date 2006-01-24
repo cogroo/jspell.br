@@ -3027,7 +3027,6 @@ artesanato/#nm//
 artesão/#nm/ab/
 artesiano/#a//
 artes/#nf,N=p//
-artesoada///
 articulação/#nf/p/
 articulante/#hn/p/
 articular/#vt/XYPLpcnvDmS/
@@ -3731,7 +3730,7 @@ auxílio/#nm/p/
 auxina//p/
 avaladar/#vt/XYPL/
 avalancha/#nf//
-avalanche///
+avalanche/#nf/p/
 avaliador/#hm//
 avaliar/#vt/XYPLcMDRu/
 avalista/#nn//
@@ -3886,17 +3885,16 @@ azinhaga/nc/p/
 azinhoso/#a//
 azo/#nm//
 azotar/#vt/XYPL/
-azótico///
+azótico/#a/p/
 azoto/#nm//
 azotoso/#nm//
-azuis/$azul$CAT=adj,G=_$N=p//
 azuláceo/#a//
 azular/#vt/XYPLMD/
 azul-de-metileno/#nm//
 azulejador/#hm//
 azulejar/#vt/XYPLD/
 azulejo/#nm/p/
-azul/#hm2//
+azul/#hm2/p/
 babado/#hm/pfh/
 babadouro/#nm//
 babadura/#nf//
@@ -4777,7 +4775,7 @@ bilingue/#an/pi/
 bilinguismo/#nm/p/
 bilionário/#hm/fp/
 bilioso/#a/fp/
-bilirrubina///
+bilirrubina/#nf//
 bílis/#nf//
 bilocular/#an//
 bimarginado/#a//
@@ -4901,9 +4899,9 @@ bissexuado/#a//
 bissexual/#an/dp/
 bissexualidade/#nf/p/
 bissílabo/#hm/p/
-bissimilares///
+bissimilar/#an/p/
 bissimilaridade//p/
-bissimula///
+bissimular/#vi//
 bisturi/#nm//
 bitola/#nf//
 bitolar/#vt/XYPL/
@@ -6114,7 +6112,7 @@ cânone/#nm/p/
 canonical/#an//
 canonicidade/#nf/p/
 canónico/#a/pfH/
-canónico-civil///
+canónico-civil/#a//
 canonista/#nn//
 canonizar/#vt/XYPLcDv/
 canoro/#a/fp/
@@ -6475,7 +6473,7 @@ carroção/#nm//
 carroçaria/#nf/p/
 carroçar/#vn/XYPL/
 carroceiro/#nm//
-carrocel///
+carrocel/#nm/p/
 carro/#nm/phA/
 carrossel/#nm//
 carruagem/#nf/p/
@@ -6764,7 +6762,7 @@ caulículo/#nm//
 caulífero/#a//
 caulificar/#vi/XYLc/
 caulifloro/#a//
-caulinite///
+caulinite/#nf/p/
 caulino/#nm//
 causador/#hm/fp/
 causal/#hf2/pmd/
@@ -7599,7 +7597,7 @@ círio/#nm//
 cirrose/#nf/pd/
 cirrosidade/#nf/p/
 cirroso/#a/d/
-cirtercienses///
+cirterciense/#an/p/
 cirurgia/#nf/p/
 cirurgião/#nm/p/
 cirúrgico/#a/fp/
@@ -8210,7 +8208,7 @@ comparticipar/#vt/XYPL/
 compartilha/#nf//
 compartilhante/#hn/p/
 compartilhar/#vt/XYPLDn/
-compartimentação///
+compartimentação/#nm//
 compartir/#vt/XYPLM/
 compassadamente/#av//
 compassar/#vt/XYPL/
@@ -8261,7 +8259,7 @@ completivo/#a//
 completivo/#a/fp/
 completo/#hm/pfm/
 completório/#nm//
-completude///
+completude/#nf//
 complexão/#nf//
 complexidade/#nf/p/
 complexidão/#nf/p/
@@ -8313,7 +8311,6 @@ comprimir/#vt/XYPLv/
 comprobatório/#a/p/
 comprometedor/#a//
 comprometer/#vt/XYPLMDS/
-compromissiais///
 compromissivo/#a//
 compromisso/#nm/p/
 compromissório/#a//
@@ -8332,6 +8329,7 @@ computacional//pm/
 computador/#hm//
 computarizado//fp/
 computar/#vt/XYPLcDv/
+computacional/#an/p/
 cômputo/#nm//
 computorizado//fp/
 comum/#an/pm/
@@ -8347,7 +8345,7 @@ comunicado/#nm/p/
 comunicante/#an/p/
 comunicar/#vt/XYPLcDnv/
 comunicativo/#a/fpI/
-comunidade//p/
+comunidade/#nf/p/
 comunismo/#nm/p/
 comunista/#hn/px/
 comunitário//fp/
@@ -8854,9 +8852,8 @@ consubstanciar/#vt/XYPLc/
 consulado/#nm/p/
 consular/#an/p/
 consulente/#hn//
-cônsules///
 consulesa/#nf//
-cônsul/#nm/xV/
+cônsul/#nm/xVe/
 consulta/#nf//
 consultante/#hn/p/
 consultar/#vn/XYPLcDnv/
@@ -8918,9 +8915,6 @@ contentar/#vn/XYPLSMv/
 contente/#an/pS/
 contentivo/#a//
 contentor/#nm/p/
-contêramos///
-contera//p/
-contêreis///
 conterrâneo/#hm/fp/
 conter/#vt,I=3/PLpn/
 contêsseis///
@@ -9000,7 +8994,6 @@ contracenar/#vi/XYL/
 contracepção/#nf//
 contraceptivo/#a/p/
 contracifra/#nf//
-contraconcepção///
 contracorrente/#nf//
 contracosta/#nf//
 contractivo/#a//
@@ -9020,7 +9013,7 @@ contraditor/#hm//
 contraditória/#nf//
 contraditório/#a/fp/
 contradizer/#vt/KPL/
-contradomínio///
+contradomínio/#nm/p/
 contra-espionagem/#nf//
 contrafazer/#vt/KPL/
 contrafeitiço/#nm//
@@ -9063,7 +9056,7 @@ contraplacar/#vt/XYPL/
 contrapoder/#nm/p/
 contrapontear/#vt/ZYPL/
 contrapontista/#nn//
-contrapontística///
+contrapontística/#hf/p/
 contraponto/#nm/tp/
 contrapor/#vt/KPL/
 contraposição/#nf//
@@ -9309,7 +9302,7 @@ cordoaria/#nf/p/
 cordoar/#vt/XYPL/
 cordoeiro/#nm//
 cordoniz/#nm/p/
-coreáceo///
+coreáceo/#a/pf/
 coreano/#a/fp/
 co-redactor/#nm//
 co-redentor/#nm//
@@ -9323,7 +9316,6 @@ co-responsável/#an//
 coreto/#nm//
 co-réu/#nm//
 coreutas///
-coriáceas///
 corifeus///
 corimbiforme/#an/p/
 coríntio/#a//
@@ -9502,7 +9494,7 @@ corticotropa///
 cortinado/#nm//
 cortina/#nf/p/
 cortinar/#vt/XYPL/
-cortisona///
+cortisona/#nf/p/
 coruja/#nf//
 corujar/#vi/XYL/
 corujeira/#nf//
@@ -9783,7 +9775,6 @@ cristianicida/#nn//
 cristianismo/#nm/p/
 cristianíssimo/#a,GR=sup/p/
 cristianizar/#vt/XYPLRSc/
-cristina///
 cristologia/#nf/prt/
 critério/#nm/pu/
 criterioso/#a/mpf/
@@ -9826,7 +9817,7 @@ cromo/#nm/p/
 cromoplasta/#nm//
 cromoplastídio/#nm//
 cromossoma/#nm/p/
-cromossómica///
+cromossómico/#a/fp/
 crónica/#nf//
 cronicar/#vi/XYL/
 cronicidade/#nf/p/
@@ -9883,7 +9874,7 @@ cubículo/#nm//
 cubiforme/#an/p/
 cubismo/#nm/p/
 cubista/#nn/p/
-cubital///
+cubital/#an/p/
 cúbito/#nm/p/
 cubóide/#hm2//
 cubo/#nm/pti/
@@ -9980,8 +9971,7 @@ curricular/#an/p/
 currículo/#nm/p/
 cursar/#vn/XYPLv/
 cursista/#nn//
-cursiva///
-cursivo/#hm//
+cursivo/#hm/fp/
 curso/#nm/pt/
 cursor/#hm//
 curta-metragem/#nf//
@@ -10163,7 +10153,7 @@ decerto/#av//
 decibel/#nm/p/
 decididamente/#av//
 decidir/#vn/XYPL/
-decidíveis///
+decidível/#an/p/
 decídua///
 decifrador/#hm//
 decifrar/#vn/XYPLcMDv/
@@ -10281,8 +10271,7 @@ défice/#nm/p/
 deficiência/#nf/p/
 deficiente/#an/pm/
 deficitário/#a/fp/
-deficit/#nm//
-déficits///
+deficit/#nm/p/
 definhador/#hm//
 definhar/#vn/XYPLMD/
 definibilidade/#nf/p/
@@ -10339,7 +10328,7 @@ degradante/#an/p/
 degradar/#vt/XYPLcMDn/
 degrau/#nm/p/
 degredado//fp/
-degredo///
+degredo/#nm//
 degressivo/#a//
 degustar/#vt/XYPLc/
 deidade//p/
@@ -10466,7 +10455,7 @@ dendolatria/#nf/p/
 dendrites/#nf,N=p//
 dendróides///
 denegar/#vt/XYPLc/
-denegridora///
+denegridor/#hm/pdf/
 denegrir/#vt,I=3/YPLM/
 dengue/#an/p/
 denguice/#nf//
@@ -10602,7 +10591,6 @@ desabotoadura/#nf//
 desabrido/#a/fpm/
 desabrigo/#nm//
 desabrochar/#vn/XYPLM/
-desabusar///
 desacatar/#vt/XYPLM/
 desacato/#nm/p/
 desachegar/#vt/XYPL/
@@ -10645,7 +10633,7 @@ desalinhavar/#vt/XYPL/
 desalinho/#nm//
 desalmadamente/#av//
 desalmar/#vt/XYPLM/
-desambiguemos///
+desambiguar/#vt/XYPL/
 desambiguidade//p/
 desancar/#vt/XYPLD/
 desandadela/#nf/p/
@@ -10844,8 +10832,7 @@ desconsolar/#vt/XYPLcDv/
 desconsolativo/#a//
 desconsolo/#nm//
 descontar/#vt/XYPLRv/
-descontextualizadas///
-descontextualizados///
+descontextualizado/#a/pf/
 descontextualizável///
 descontínuo/#a//
 desconto/#nm/p/
@@ -10996,6 +10983,7 @@ desenxamear/#vt/ZYPL/
 desenxofrar/#vt/XYPL/
 desenxovalhar/#vt/XYPL/
 desenxovalho/#nm//
+desequilíbrio/#nm/p/
 deserção/#nf/p/
 deserdar/#vn/XYPL/
 desertar/#vt/XY/
@@ -11096,12 +11084,11 @@ desinfectante/#hm2/p/
 desinfectar/#vt/XYPLDn/
 desinquietante/#an/p/
 desinquietar/#vt/XYPLcDn/
-desintegradores///
+desintegrador/#hm/pf/
 desintegrar/#vt/XYPLc/
 desinteligência/#nf/p/
 desintoxicar/#vt/XYPLc/
 desintrincar/#vt/XYPL/
-desiquilíbrio///
 desirmanar/#vt/XYPL/
 desirmão/#a//
 desistência/#nf/p/
@@ -27431,11 +27418,9 @@ protodinásticas///
 proto-história/#nf//
 protoplasma/#nm//
 protoplasmático/#a/fp/
-prototificar///
-prototipados///
-prototipagem///
+prototipar/#vt/XYPL/
+prototipagem/#nf/p/
 prototípico/#a//
-prototipifica///
 protótipo/#nm/p/
 protozoário/#nm/p/
 protrair/#vt/KPL/
@@ -27527,8 +27512,8 @@ psicopatia/#nf/pqr/
 psicopompo///
 psicose/#nf/p/
 psicossomático/#a/fp/
-psicoterapêutica///
-psicoterapia///
+psicoterapêutico/$a/fp/
+psicoterapia/#nf//
 psicrométrica///
 psicrómetro//p/
 psi/#nm//
@@ -27612,7 +27597,7 @@ pulvímetro/#nm//
 puma/#nm/p/
 pumba/#i//
 pum/#i//
-punção///
+punção/#nf/p/
 punctiforme/#an/p/
 punctura/#nf//
 pungente/#an//
@@ -27624,7 +27609,7 @@ punhalada/#nf//
 punhal/#nm/p/
 punho/#nm/p/
 punição/#nf//
-púnicas///
+púnica/#af/p/
 punir/#vn/XYPLcDv/
 punitivo/#a/fp/
 punível/#a/pd/
@@ -28392,7 +28377,6 @@ rebombar/#vi/XYL/
 rebombo/#nm//
 reboque/#nm/p/
 rebordo/#nm/p/
-rebrotaram///
 rebuçado/#nm/p/
 rebuliço/#nm//
 rebulir/#vi,I=3/L/
@@ -28531,7 +28515,7 @@ recontro/#nm/p/
 reconvalescença/#nf//
 reconvalescente/#hn//
 reconvalescer/#vi/XYLn/
-reconversão///
+reconversão/#nf/p/
 reconverter/#vt/XYPL/
 recopiar/#vt/XYPL/
 recordação/#nf//
@@ -28577,7 +28561,7 @@ rectal/#an//
 rectangular/#an/pd/
 rectangularidade/#nf/p/
 rectângulo/#hm/p/
-recticulado//p/
+recticulado/#hm/p/
 rectículo///
 rectidão/#nf//
 rectificador/#hm//
@@ -28871,7 +28855,7 @@ regularização/#nf/p/
 regularizar/#vt/XYPLcD/
 regular/#vt/XYPLmcMSDv/
 regulativa///
-régulo///
+régulo/#nm/p/
 regurgitar/#vn/XYPLc/
 reimplantar/#vt/XYPLc/
 reimpressão/#nf//
@@ -28959,7 +28943,7 @@ relevância/#nf/p/
 relevante/#hm2/pm/
 relevar/#vn/XYPLcMDn/
 relevo/#nm/p/
-relicário///
+relicário/#nm/p/
 religar/#vt/XYPL/
 religião/#nf/p/
 religiosidade/#nf/p/
@@ -29160,12 +29144,11 @@ reportar/#vt/XYPLcM/
 repórter/#nm/p/
 reportório/#hm/p/
 repor/#vt/KPL/
-reposição//p/
-repositório//p/
+reposição/#nf/p/
+repositório/#nm/p/
 repositor/#nm/p/
 reposta/#nf//
 reposteiro/#nm/p/
-reposto//f/
 repousar/#vn/XYPL/
 repouso/#nm//
 repreender/#vt/XYPLD/
@@ -29250,7 +29233,7 @@ rescrever/#vt/XYPL/
 rescrição/#nf//
 rescrito/#nm//
 rés-do-chão/#nm//
-resenha///
+resenha/#nf/p/
 reservadamente/#av//
 reserva/#nf/pt/
 reservar/#vt/XYPLD/

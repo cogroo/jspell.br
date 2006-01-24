@@ -222,7 +222,7 @@ flag *p:         ; "CAT=a_nc,N=s"      #plurais
 [^Ã][^LSMRNZX]>     S    ; "N=p"         # -> s         ex. pato, patos
 Ã E         >       S    ; "N=p"         # ãe -> ães    ex. mãe, mães
 Ã O         >   -ÃO,ÕES  ; "N=p"         # ão -> ões    ex. leão, leões
-A L         >    -L,IS   ; "N=p"         # al -> ais    ex. animal, animais
+[AU] L      >    -L,IS   ; "N=p"         # al -> ais    ex. animal, animais
 O L         >   -OL,ÓIS  ; "N=p"         # ol -> óis    ex. anzol, anzóis
 [^V] E L    >   -EL,ÉIS  ; "N=p"         # el -> éis    ex. papel, papéis
 [ÁÉÍÓÚ] V E L >  -L,IS   ; "N=p"         # el -> eis    ex. afável, afáveis
@@ -243,8 +243,8 @@ E N T O S   >	-OS,AS	 ; "G=f"	# duzentos -> duzentas (FIXME)
 [^AEIOU]    >	S	 ; "N=p"	# buffers
 
 flag *e:         ; "CAT=a_nc,N=s"      #plurais
+L           >    ES      ; "N=p"         # ex. mal, males cônsules
 Ã O         >    -O,ES   ; "N=p"         # ex. pão, pães
-A L         >    ES      ; "N=p"         # ex. mal, males
 
 #-----------------------------------------
 # femininos - os mais habituais
