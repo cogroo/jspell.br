@@ -42,6 +42,7 @@ Linux/CAT=np,G=m//
 logs/CAT=nc,N=p//ficheiros de log
 LISP/CAT=np//
 Macintosh/CAT=np,G=f,N=s//
+macro/CAT=nc,G=f,N=s/p/
 mail/CAT=nc,G=m,N=s//
 mainframe/CAT=a_nc,N=s/p/
 Microsoft/CAT=np,G=f,N=s//
@@ -84,6 +85,7 @@ Thunderbird/CAT=np,G=m,N=s//
 Unix/CAT=np,G=m//
 URL/CAT=np,G=m//
 VDM/CAT=np,G=m//
+webmaster/CAT=nc,G=m,N=s//
 Windows/CAT=nc,G=m,N=s//
 www/CAT=np//
 XP/CAT=nc,G=m,N=s//

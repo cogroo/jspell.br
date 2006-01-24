@@ -18,6 +18,7 @@ ANMP/#tsf//#Associação Nacional de Munícipios Portugueses
 APDL/#tsf//#Administração dos Portos do Douro e Leixões
 APEL/#tsf//#Associação Portuguesa de Editores e Livreiros
 APL/#tsf//#Administração do Porto de Lisboa
+API/#tsf//#Aplication Prog. interface
 ARS/#tsf//#Administração Regional de Saúde
 BBC/#tsf//#British Broadcasting Corporation (en)
 BCE/#tsf//#Banco Central Europeu
@@ -66,6 +67,8 @@ CREL/#tsf//#Circular Regional Exterior de Lisboa
 CRIL/#tsf//#Circular Regional Interior de Lisboa
 CSCE/#tsf//#Conferência para a Segurança e Cooperação na Europa
 CTT/#tsmp//#Correios, Telégrafos e Telefones
+CV/#tsm//#Curriculum Vitae
+DTD/#tsm/p/#Document type definition
 EDP/#tsf//#Electricidade De Portugal
 EFTA/#tsf//#European Free Trade Association (en)
 EN/#tsf//
@@ -195,3 +198,4 @@ UNITA/#tsf//#União Nacional para a Indepêndencia Total de Angola
 URSS/#tsf/x/#União das Repúblicas Socialistas Soviéticas
 VCI/#tsf//#Via de Cintura Interna
 VW/#tsm//#VolksWagen (de)
+XHTML/#tsm//#XHTML
