@@ -18,6 +18,7 @@ Cobol/CAT=np//
 copyright/#nm//
 deamon/CAT=nc,G=m,N=s/a/
 debug/CAT=nc,G=m,N=s//
+disquete/#nf/p/
 DOS/CAT=np,G=m,N=s//
 drive/CAT=nc,N=s/a/
 driver/CAT=nc,N=s/a/
