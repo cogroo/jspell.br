@@ -16,6 +16,7 @@ chipcard/CAT=nc,G=m,N=s/a/
 CISC/CAT=nc,G=m,N=s//
 Cobol/CAT=np//
 copyright/#nm//
+CVS/#nm//
 deamon/CAT=nc,G=m,N=s/a/
 debug/CAT=nc,G=m,N=s//
 disquete/#nf/p/
