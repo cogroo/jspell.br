@@ -7765,7 +7765,6 @@ cloroformizar/#vt/XYPLc/
 cloro/#nm//
 cloroplasta/#nm//
 clube/#nm/pti/
-cm/$centímetro$#nm$ABR=1//
 coabitante/#hn/p/
 coabitar/#vi/XYLcDn/
 coacção/#nf/p/
@@ -12094,7 +12093,6 @@ dramatizar/#vt/XYPLcSD/
 dramatologia/#nf/rt/
 dramaturgo/#nm/p/
 drástico/#hm/fpH/
-dr/$doutor$#nm$ABR=1/p/
 drenagem/#nf//
 drenar/#vt/XYPLDv/
 driblagem/#nf//
@@ -14344,7 +14342,6 @@ etano///
 etanol/#nm//
 etapa/#nf/p/
 etário/#a/fp/
-etc/ABR=1//
 etéreo/#a/p/
 eterificar/#vt/XYPLc/
 eternal/#an//
@@ -14537,7 +14534,6 @@ exercício/#nm/p/
 exercitante/#hn/p/
 exercitar/#vt/XYPLcDn/
 exército/#nm/p/
-ex/$exemplo$#nm$ABR=1//
 exibicionismo/#nm/p/
 exibicionista/#nn/p/
 exibir/#vt/XYPLcDR/
@@ -14674,7 +14670,6 @@ expulsor/#hm//
 expulsório/#a//
 expurgar/#vt/XYPLcD/
 expurgatório/#hm//
-exs/$exemplos$#nm$ABR=1//
 êxtase/#nm/p/
 extasiar/#vt/XYPL/
 extemporaneamente/#av//
@@ -14803,7 +14798,6 @@ faccioso/#a/id/
 face/#nf/p/
 faceta/#nf/p/
 facetar/#vt/XY/
-fac/$faculdade$#nf$ABR=1//
 fachada/#nf/p/
 facho/#nm/p/
 facial/#an/p/
@@ -15330,7 +15324,6 @@ figadal/#an//
 figadeira/#nf//
 fígado/#nm/p/
 figa/#nf//
-fig/$figura$#nf$ABR=1//
 figo/#nm/p/
 figueiral/#nm/p/
 figueira/#nf/p/
@@ -19941,14 +19934,12 @@ kantiano/#a/fp/
 kantismo/#nm/p/
 karate/#nm//
 kepleriano/#a//
-kg/$quilograma$$ABR=1//
 kilojoule/#nm//
 kilómetro/#nm/p/
 kilovolt/#nm/p/
 kilowatt-hora/#nm//
 kilowatt/#nm/p/
 kiwi/#nm//
-km/$kilómetro$$ABR=1/p/
 kuwaitiano/#hn/fp/
 lá/#av//
 labareda/#nf/p/
@@ -20752,7 +20743,6 @@ lixívia/#nf//
 lixivioso/#a//
 lixo/#nm/p/
 lixoso/#a//
-ln/$logaritmo$#nm$ABR=1//
 lobacho/#nm//
 lobado/#a/fp/
 lobal/#an//
@@ -22500,7 +22490,6 @@ miudinho/#hm/fp/
 miúdo/#nm/fp/
 mixordeiro/#nm//
 mixórdia/#nf//
-mm/$milimetro$$ABR=1//
 mnemónica/#nf//
 mnemónico/#a/fp/
 mnemonizar/#vt/XYPLcv/
@@ -24544,7 +24533,6 @@ pagodeiro/#hm/f/
 pagode/#nm/pt/
 pagodice/#nf//
 pago/#hm/fp/
-pág/$página$#nf$ABR=1//
 painel/#nm/p/
 pai/#nm/ph/
 paioleiro/#nm//
@@ -27214,7 +27202,6 @@ profissionalismo/#nm/p/
 profissionalizar/#vt/XYPLnc/
 profluente/#an//
 pró-forma/#nm//
-prof/$professor$#nm$ABR=1/p/
 profundar/#vn/XYPLv/
 profundeza/#nf/p/
 profundez/#nf//
@@ -30446,8 +30433,6 @@ secretina///
 secreto/#a/fpmis/
 secretor/#hm//
 secretório/#a/fp/
-séc/$século$#nm$ABR=1//
-sécs/$século$#nm$N=p,ABR=1//
 sectário/#hm/fp/
 sectarismo/#nm/p/
 sectarista/#nn//
@@ -31475,10 +31460,8 @@ sovinar/#vt/XYPL/
 sozinho/#a/fp/
 spin/#nm//
 sportinguista/#nn/p/
-sr/$senhor$#nm$ABR=1/f/
 standard/#hm/p/
 stand/#nm/p/
-sta/$santo$#nm$ABR=1,G=f//
 stock/#nm/p/
 stop/#nm/p/
 sua/CAT=ppos,N=s,P=3,G=f/p/
