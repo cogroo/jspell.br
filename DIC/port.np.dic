@@ -470,6 +470,7 @@ Bruges/#t/
 Bruno/#npm/
 Brutus/#npm/
 Bruxelas/#tc/
+Buarque/#np1/
 Buçaco/#la,#t/
 Bucareste/#tc/
 Buda/#npm/
@@ -608,6 +609,7 @@ Cher/#np1/
 Chevalier/#np1/
 Chicago/#tc/
 Chile/#la,#tp/
+Chico/#npm/
 China/#la,#tpf/
 Chipre/#tp/
 Chomsky/#np1/
@@ -692,6 +694,7 @@ Criologia/CAT=np/
 Criptófita/CAT=np/
 Cristiânia/CAT=np/
 Cristiano/#np/
+Cristina/#npf/
 Cristo/#npm/
 Cristóvão/#np/
 Croácia/#la,#tpf/
@@ -1506,6 +1509,7 @@ Madalena/#npf/
 Madeleine/#np1/
 Madonna/#np1/
 Madre/CAT=np/
+Madredeus/CAT=np/
 Madrid/#tc/
 Madureira/#np/
 Mafalda/#npf/
@@ -1532,6 +1536,7 @@ Mamede/#np/
 Manchester/#tc/
 Manchúria/#t/
 Mandela/#np/
+Manel/#npm/
 Mangualde/#t/
 Manica/CAT=np/
 Manila/#tc/
@@ -2079,6 +2084,7 @@ Renoir/#np1/
 Reno/#la,#tr/
 Resende/#np/
 Ressurreição/#npf/
+Restelo/#t/
 Reynolds/#np1/
 Ribatejo/#la,#t/
 Ribeiro/#np/
@@ -2093,6 +2099,7 @@ Rioja/#t/
 Rita/#npf/
 Rivera/CAT=np/
 Riviera/#la,#t/
+Rivoli/CAT=np,SEM=intituicao/
 Robert/#np1/
 Roberto/#npm/
 Robespierre/#np1/
@@ -2555,6 +2562,7 @@ Vimioso/#t/
 Vinci/#np1/
 Vingt/#np1/
 Vinhais/#t/
+Vinicius/#np1/
 Virgílio/#npm/
 Virgínia/#npf/
 Virgo/CAT=np,G=m/
