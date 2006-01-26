@@ -7,7 +7,7 @@ cwl_files = portugues.cwl
 data_files = portugues.dat portugues_phonet.dat portugues_affix.dat
 doc_files = README Copyright
 extra_files = configure info Makefile.pre
-multi_files = portugues.multi portuguese.alias pt_PT.alias
+multi_files = portugues.multi portuguese.alias pt_PT.alias port.alias
 rws_files = portugues.rws
 
 distdir=aspell6-${lang}-${version}
