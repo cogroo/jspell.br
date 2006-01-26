@@ -1174,6 +1174,7 @@ alfândega/#nf/p/
 alfandegário/#a/fp/
 alfandegar/#vt/XYPLS/
 alfa/#nm//
+alfanumérico/#am/fp/
 alfarrábio/#nm/p/
 alfarrabista/#nn/p/
 alfarrobal/#nm//
@@ -1474,7 +1475,7 @@ ambicionar/#vt/XYPL/
 ambicioso/#a/fp/
 ambidextro/CAT=a_nc,N=s/p/
 ambiência/#nf/p/
-ambiental//ptm/
+ambiental/#an/ptm/
 ambientar/#vt/XYPL/
 ambiente/#an/p/
 ambiguidade/#nf/p/
@@ -4722,7 +4723,7 @@ bicudo/#a/fp/
 bidão/#nm/p/
 bidé/#nm//
 bidentado/#a//
-bidimensional//p/
+bidimensional/#an/p/
 bidireccional/#a/p/
 biela/#nf/p/
 bielorrusso/#hm/fp/
@@ -7687,7 +7688,7 @@ classificar/#vt/XYPLcDvR/
 classificativo/#a/fp/
 claudicante/#an/p/
 claudicar/#vi/XYLcn/
-clausal//p/
+clausal/#an/p/
 claustral/#an/p/
 claustra/#nf//
 claustrar/#vt/XYPL/
@@ -7735,6 +7736,7 @@ clínico/#a/fp/
 clique/#nm/p/
 clisterizar/#vn/XYPLc/
 clister/#nm//
+clítico/#hm/fp/
 clitóride/#nf//
 clitoridismo/#nm/p/
 clítoris/#nf//
@@ -8270,12 +8272,12 @@ complicador/#a//
 complicar/#vn/XYPLcD/
 componente/#hn/p/
 componível/#an/p/
-comportamental//p/
+comportamental/#an/p/
 comporta/#nf//
 comportar/#vt/XYPLMv/
 compor/#vt/KPLR/
 composição/#nf/p/
-composicional//pmd/
+composicional/#an/pmd/
 compositivo/#a//
 compósito/#a//
 compositor/#nm/fp/
@@ -8327,7 +8329,7 @@ compulsória/#nf//
 compulsório/#a/f/
 compungir/#vn/XYPLM/
 compungitivo/#a//
-computacional//pm/
+computacional/#an/pm/
 computador/#hm//
 computarizado//fp/
 computar/#vt/XYPLcDv/
@@ -9211,6 +9213,7 @@ convulsível/#an/d/
 convulsivo/#a/pm/
 convulso/#a/fp/
 coobrigar/#vt/XYPLc/
+coocorrer/#vi/XYPL/
 co-ocupante/#nm/p/
 cooperador/#hm//
 cooperar/#vi/XYLcDn/
@@ -10466,7 +10469,7 @@ denigrir/#vt/XYPL/
 denominador/#hm//
 denominar/#vt/XYPLcD/
 denominativo/#a//
-denotacional//p/
+denotacional/#an/p/
 denotar/#vt/XYPLcD/
 denotativo/#a/fp/
 densidade/#nf/p/
@@ -16589,7 +16592,7 @@ gestatório/#a//
 gesticular/#vn/XYPLcD/
 gesto/#nm/p/
 gestor/#nm/fp/
-gestual//p/
+gestual/#an/p/
 giboso/#a/fp/
 gibraltino/#a/fp/
 giestal/#nm/p/
@@ -16822,6 +16825,7 @@ gradual/#an/mit/
 graduando/#nm/p/
 graduar/#vt/XYPLcMDO/
 grã-duquesa/#nf//
+grafar/#vi/XYPL/
 grafia/#nf/pi/
 gráfica/#nf/p/
 gráfico/#hm/pfH/
@@ -16831,7 +16835,7 @@ grafítico/#a//
 grafitização/#nf//
 grafologia/#nf/pqr/
 grafonola/#nf/p/
-grafo//p/
+grafo/#nm/p/
 grainha/#nf/p/
 gralha/#nf/p/
 gralhar/#vi/XYLD/
@@ -18405,7 +18409,7 @@ incorrupto/#a//
 incredibilidade/#nf/p/
 incredulidade/#nf/p/
 incrédulo/#hm/fp/
-incremental//pm/
+incremental/#an/pm/
 incrementar/#vt/XYPLc/
 incrementício/#a//
 increr/#vn/XYPLv/
@@ -18653,7 +18657,7 @@ ineptidão/#nf/p/
 ineptitude/#nf/p/
 inepto/#a/pmf/
 inequação/#nf/p/
-inequacional//p/
+inequacional/#an/p/
 inequivocamente/#av//
 inequívoco/#a/fp/
 inércia/#nf//
@@ -18745,7 +18749,7 @@ infecundo/#a/pfd/
 infelicidade/#nf/p/
 infelicitar/#vt/XYPL/
 infeliz/#hn/pmd/
-inferencial///
+inferencial/#an//
 inferência/#nf/p/
 inferior/#hn/pmd/
 inferioridade/#nf/p/
@@ -19150,7 +19154,7 @@ intemperar/#vt/XYPLMn/
 intempérie/#nf/p/
 intempestividade/#nf/p/
 intempestivo/#an/mdpf/
-intemporal//p/
+intemporal/#an/p/
 intenção/#nf/p/
 intencionado/#a/fp/
 intencional/#an/pmd/
@@ -19301,7 +19305,7 @@ intersecção/#nf/p/
 interseccional/#an//
 intersectar/#vt/XYPL/
 interstelar/#an//
-intersticial//p/
+intersticial/#an/p/
 interstício///
 intersubespecífico///
 intersubjectivo//f/
@@ -20053,7 +20057,7 @@ lagrimante/#an/p/
 laguna/#nf//
 lagunar/#an/p/
 laia/#nf//
-laical///
+laical/#an//
 laicidade/#nf/p/
 laicismo/#nm/p/
 laicizar/#vt/XYPLcn/
@@ -21724,7 +21728,7 @@ maxila/#nf/p/
 maxilar/#an/p/
 maxilar/#nm/p/
 maxiloso/#a//
-maximal//pi/
+maximal/#an/pi/
 maximamente/#av//
 máxima/#nf//
 maximizar/#v/XYLc/
@@ -22735,7 +22739,7 @@ monografia/#nf/pqr/
 monograma/#nm/t/
 monogramático/#a/fp/
 mono/#hm/fti/
-monoidal///
+monoidal/#an//
 monóide/#an//
 monoideísmo/#nm//
 monolingue/#a/p/
@@ -23039,7 +23043,7 @@ multiconjunto//p/
 multicor/#an//
 multicultor/#hm//
 multidão/#nf/p/
-multidimensional///
+multidimensional/#an//
 multiface/#an//
 multifacetado/#a/fp/
 multifloros///
@@ -23418,7 +23422,7 @@ neoplatonismo/#nm/p/
 neo-realismo/#nm/p/
 neo-realista/#nn/p/
 neo-romantismo/#nm//
-neotropical///
+neotropical/#an//
 neozelandês/#hm/fp/
 neperiano/#a/fp/
 nepotismo/#nm/p/
@@ -23670,7 +23674,7 @@ nostálgico/#hm/fp/
 notabilidade/#nf/p/
 notabilizar/#vt/XYPL/
 notação/#nf//
-notacional//pm/
+notacional/#an/pm/
 notador/#hm//
 nota/#nf/p/
 notariado/#nm/p/
@@ -23771,7 +23775,7 @@ nupcialidade/#nf/p/
 núpcias/#nf,N=p//
 nutribilidade/#nf/p/
 nutrício/#a//
-nutricional//p/
+nutricional/#an/p/
 nutriente/#a/p/
 nutrificar/#vt/XYPL/
 nutrimental/#an//
@@ -23850,7 +23854,7 @@ obséquio/#nm//
 obsequiosidade/#nf/p/
 obsequioso/#a/md/
 observação/#nf//
-observacional//pm/
+observacional/#an/pm/
 observador/#hm/p/
 observância/#nf/p/
 observante/#hn/p/
@@ -24151,7 +24155,7 @@ opalescente/#a//
 opalescer/#vt/XYPLn/
 opalizar/#vt/XYPLc/
 opção/#nf/p/
-opcional//pmd/
+opcional/#an/pmd/
 operação/#nf/p/
 operacional/#an/pmd/
 operacionalizar/#vt/XYPLnc/
@@ -24275,7 +24279,7 @@ organigrama/#nm/p/
 organismo/#nm/p/
 organista/#nn//
 organização/#nf//
-organizacional//p/
+organizacional/#an/p/
 organizador/#hm/fp/
 organizar/#vt/XYPLcDv/
 organizativo/#a/fp/
@@ -24948,6 +24952,7 @@ parenteral/#an//
 parentérica///
 parentesco/#nm/p/
 parêntesis/#nm//
+parêntese/#nm/p/
 parentético/#a//
 pária/#nm//
 paridade/#nf/p/
@@ -26409,7 +26414,7 @@ politicão/#nm//
 politicar/#vt/XYPLn/
 político/#hm/pfH/
 político-militar//p/
-político-social//p/
+político-social/#an/p/
 politiqueiro/#nm//
 politiquice/#nf//
 politiquismo/#nm/p/
@@ -27134,7 +27139,7 @@ problematizar/#vt/XYPL/
 procedência/#nf/p/
 procedente/#an//
 proceder/#vi/XYLMn/
-procedimental//p/
+procedimental/#an/p/
 processamento/#nm/pR/
 processão/#nf//
 processar/#vt/XYPLMDvER/
@@ -27915,7 +27920,7 @@ quinona///
 quinquagenário/#hm//
 quinquagésima/#nf//
 quinquagésimo/#o/f/
-quinquenal//p/
+quinquenal/#an/p/
 quinquenário/#an//
 quinquénio/#nm//
 quinta-coluna/#nf//
@@ -31042,7 +31047,7 @@ siniense/#hn/p/
 sinistrar/#vi/XYL/
 sinistro/#a/fmp/
 si/#nm//
-sinodal///
+sinodal/#an//
 sínodo/#nm/p/
 sino-japonês/#a/f/
 sinonimar/#vt/XYPL/
@@ -31581,7 +31586,7 @@ subministrar/#vt/XYPLc/
 submissão/#nf/pI/
 submisso/#a/pfI/
 submucosa///
-subnormal///
+subnormal/#an//
 subnutrição/#nf//
 suborbiculares///
 subordem/#nf//
@@ -31768,6 +31773,7 @@ suma/#nf//
 sumarento/#a/fp/
 sumariar/#vt/XYPL/
 sumário/#hm/fpH/
+sumarizar/#vt/XLPL/
 sumiço/#nm//
 sumidade/#nf/p/
 sumidiço/#a//
@@ -31874,7 +31880,7 @@ supracitado/#a//
 supraescapular///
 supra-estrutura/#nf//
 supralunar/#an//
-supramarginal///
+supramarginal/#an//
 supramencionado/#a//
 supranacional/#a/p/
 supranatural/#an/ti/
@@ -33057,7 +33063,7 @@ transferir/#vt/ZYPLDv/
 transfigurador/#hm//
 transfigurar/#vt/XYPLcDv/
 transformação/#nf//
-transformacional//p/
+transformacional/#an/p/
 transformada/#hf//
 transformador/#hm/fp/
 transformante/#an/p/
