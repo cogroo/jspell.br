@@ -17,6 +17,7 @@
 #hf2/CAT=a_nc,G=2,N=s// Se for nc é fem. se for adj. é neutro
 #hn/CAT=a_nc,N=s,G=_//
 #hn2/CAT=a_nc,N=_,G=_//
+#pr/CAT=pref//
 #v/CAT=v,T=inf,TR=_//  Na realidade TR=??
 #vt/CAT=v,T=inf,TR=t//
 #vi/CAT=v,T=inf,TR=i//
@@ -2000,6 +2001,7 @@ antever/#vt,I=3/PL/
 antevéspera/#nf//
 antevidência/#nf/p/
 antevidente/#hn//
+anti/#pr//
 antiabolicionismo/#nm/p/
 antiabortivo/#a//
 antiacadémico/#a//
@@ -11991,6 +11993,7 @@ doiradura/#nf//
 doirar/#vt/XYPLMD/
 dois/#ca,G=m//
 dólar/#nm/p/
+dolente/#an/p/
 dolicocéfalo/#a/fp/
 dólman/#nm//
 dólmen/#nm//
@@ -15928,6 +15931,7 @@ freirice/#nf//
 freirinha/#nf//
 fremente/#an//
 fremir/#vi,I=3/YL/
+frémito/#nm//
 frenadora///
 frenadores///
 frenar/#vt/XYPL/
@@ -23048,7 +23052,7 @@ multimédia/#hf//
 multímetro/#nm//
 multimilionário/#hm/fp/
 multinacional/#an/p/
-multi/// #nojspell
+multi/#pr//
 multipartidário/#an/fp/
 multiplamente/#av//
 multiplexado/#a/p/
@@ -26601,7 +26605,7 @@ porventura/#av//
 porvir/#nm//
 pôr/#vt,I=3/PL/
 posar/#vi/XYL/
-pós/CAT=prep//
+pós/#pr//
 pós-clássico/#a//
 pós-embrionário/#a//
 pose/#nf//
@@ -26657,7 +26661,7 @@ posterioridade/#nf/p/
 posterizar/#vt/XYPL/
 postiça/#nf//
 postiço/#a/fp/
-postiços/#nm,N=p//
+postiços/#nmp//
 postigo/#nm/p/
 posto/#nm/p/
 postulado/#nm/p/
@@ -26751,7 +26755,7 @@ prazenteio/#nm//
 prazenteiro/#a/pf/
 prazer/#nm/p/
 prazo/#nm/p/
-pré///
+pré/#pr//
 preambular/#an//
 preâmbulo/#nm/p/
 pré-câmbrico/#nm/f/
@@ -33443,6 +33447,7 @@ tropeçar/#vi/XYLM/
 tropecilho/#nm//
 tropeçudo/#a//
 trôpego/#a//
+tropel/#nm/p/
 tropelia/#nf/p/
 tropical/#an/ptu/
 tropicalista/#nn//
