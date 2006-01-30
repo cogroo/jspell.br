@@ -24281,9 +24281,9 @@ oscilatório/#a/f/
 osciloscópio/#nm//
 osga/#nf/p/
 osmótica//p/
-os/$o$CAT=art$G=m,N=p//
-os/$o$CAT=pind$G=m,N=p//
-os/$o$CAT=ppes$G=m,N=p,P=3,C=a//
+os/$o$CAT=art,G=m$N=p//
+os/$o$CAT=pind,G=m$N=p//
+os/$o$CAT=ppes,G=m$N=p,P=3,C=a//
 ossada/#nf/p/
 ossaria/#nf/p/
 ósseo/#a/fp/
