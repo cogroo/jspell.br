@@ -1874,7 +1874,6 @@ animalista/#hn//
 animalizar/#vt/XYPLc/
 animalogia/#nf//
 animante/#an/p/
-anima//pti/
 animar/#vt/XYPLcDnvB/
 animatógrafo/#nm/p/
 anímico/#a/fp/
@@ -1920,7 +1919,7 @@ anotação/#nf//
 anotador/#nm/p/
 anotar/#vt/XYPLcD/
 anovelar/#vt/XYPL/
-ansa//p/
+ansa/#nf/p/
 anseio/#nm/p/
 ânsia/#nf/p/
 ansiar/#vt,I=3/YPLM/
@@ -3579,7 +3578,7 @@ aumentador/#hm//
 aumentar/#vt/XYPLcDv/
 aumentativo/#hm/p/
 aumento/#nm/p/
-aura//p/
+aura/#nf/p/
 áureo/#hm/fp/
 auréola/#nf//
 aureolar/#an//
@@ -16667,8 +16666,7 @@ glorificador/#hm//
 glorificante/#an/p/
 glorificar/#vt/XYPLcDn/
 glorioso/#a/fpm/
-glosados///
-glosa//p/
+glosa/#nf/p/
 glossário/#nm/p/
 glossematismo/#nm/p/
 glote/#nf//
@@ -17549,8 +17547,8 @@ hoteleiro/#hm/fp/
 hotel/#nm/p/
 huerta//p/
 hui/#i//
-hulha//p/
-hulhífera///
+hulha/#nf/p/
+hulhífero/#nm/f/
 humanado/#a//
 humanal/#an//
 humanidade/#nf/p/
@@ -19671,7 +19669,7 @@ israeliano/#hm//
 israelita/#hn/pA/
 israelítico/#a//
 isso/CAT=pdem,G=n,N=n//
-istmo//p/
+istmo/#nm/p/
 isto/CAT=pdem,G=n,N=n//
 italianada/#nf//
 italianismo/#nm/p/
@@ -19868,7 +19866,6 @@ jura/#nf/p/
 jurar/#vn/XYPLMD/
 jurássico/#nm/p/
 juratório/#a//
-jure//t/
 juridicamente/#av//
 jurídico/#a/fp/
 júri/#nm/p/
@@ -20279,7 +20276,7 @@ laxação/#nf//
 laxante/#hm2/p/
 laxativo/#a//
 laxismo/#nm/p/
-laxo//i/
+laxo/#a/i/
 lazer/#nm/p/
 lãzudo/#a/fp/
 leal/#an/pimt/
@@ -20328,7 +20325,6 @@ legitimador/#hm//
 legitimamente/#av//
 legítima/#nf//
 legitimar/#vt/XYPLScDR/
-legitime//td/
 legitimidade/#nf/p/
 legitimista/#hn//
 legítimo/#a/fp/
@@ -21701,7 +21697,7 @@ mealheiro/#hm/p/
 meandrar/#vi/XYL/
 meândrico/#a//
 meandro/#an/p/
-meato//p/
+meato/#nm/p/
 mecanicamente/#av//
 mecânica/#nf//
 mecanicismo/#nm/p/
@@ -22588,7 +22584,7 @@ molhar/#vt/XYPL/
 molheira/#nf//
 molhe/#nm/p/
 molho/#nm/ph/
-molibdénio///
+molibdénio/#nm//
 moliceiro/#hm/p/
 moliço/#nm//
 molieresco/#a/fp/
@@ -22609,7 +22605,7 @@ momento/#nm/ph/
 momentoso/#a/p/
 monacal/#an//
 monada/#nf//
-mónada//p/
+mónade/#nf/p/
 mona/#nf//
 monarca/#nm/px/
 monarquia/#nf/p/
@@ -22624,7 +22620,6 @@ monção/#nf/p/
 monco/#nm/p/
 moncoso/#a//
 mondar/#vn/XYPL/
-mondo//f/
 monetário/#hm/fpH/
 monetarismo/#nm/p/
 monetarista/#a/p/
@@ -23088,9 +23083,7 @@ mutatório/#a//
 mutável/#an/pd/
 mutilador/#hm//
 mutilar/#vt/XYPLcDn/
-mutile//f/
 mutismo/#nm/p/
-muto//i/
 mutual/#an/tid/
 mutualidade/#nf/p/
 mutualismo/#nm/p/
@@ -24507,7 +24500,7 @@ palancar/#vt/XYPL/
 palanco/#nm/fp/
 palanqueiro/#nm//
 palanque/#nm/p/
-pala//p/
+pala/#nf/p/
 palatal/#an//
 palatalizar/#vt/XYPLc/
 palatino/#hm/f/
@@ -26132,7 +26125,7 @@ plasticizante/#an/p/
 plasticizar/#vt/XYPLcn/
 plástico/#hm/fp/
 plastificar/#vt/XYPLn/
-plastrão///
+plastrão/#nm//
 plataforma/#nf/p/
 plátano/#nm/p/
 plateia/#nf/p/
@@ -26166,7 +26159,7 @@ pleonástico/#a/pfH/
 pleural/#an//
 pleura/#nf/p/
 plexiforme/#an/p/
-plexo//p/
+plexo/#nm/p/
 plica/#nf/p/
 plicar/#vn/XYPL/
 plistocénicos///
@@ -26198,7 +26191,7 @@ pneumogástrico///
 pneumonia/#nf//
 pneumónica/#nf//
 pneumónico/#hm/f/
-pneumotórax///
+pneumotórax/#nm//
 pneu/#nm/p/
 pobre/#hn/pmz/
 pobreta/#hn//
@@ -26379,7 +26372,6 @@ pombalino/#a/fp/
 pombalismo/#nm/p/
 pombal/#nm/ti/
 pomba/#nf//
-pombeiros///
 pombinha/#nf//
 pombo-correio/#nm//
 pombos-correio/$pombo-correio$#nm$N=p//
@@ -30161,7 +30153,6 @@ sanduichar/#vt/XYPL/
 sanduíche/#nf//
 saneador/#hm//
 sanear/#vt/ZYPLMDv/
-sane//ds/
 sangrador/#hm//
 sangradouro/#nm//
 sangradura/#nf//
@@ -31779,7 +31770,6 @@ suplementar/#an/p/
 suplementário/#a//
 suplemento/#nm/p/
 suplente/#hn/p/
-supletividade//p/
 súplica/#nf/p/
 suplicante/#hn/p/
 suplicar/#vt/XYPLcn/
@@ -31899,7 +31889,7 @@ tabernáculo/#nm//
 tabernal/#an//
 taberna/#nf/p/
 taberneiro/#hm/fp/
-tabique//p/
+tabique/#nm/p/
 tablóide/#a/p/
 tabuada/#nf/p/
 tabuado/#nm/p/
@@ -31962,7 +31952,6 @@ talassemia///
 tal/CAT=pdem,G=n,N=s/p/
 talco/#nm//
 talcoso/#a//
-tale//fp/
 talento/#nm/p/
 talentoso/#a/fp/
 talhada/#nf//
@@ -31978,12 +31967,11 @@ talhar/#vt/XYPLMDn/
 talhe/#nm/p/
 talher/#nm/p/
 talho/#nm/p/
-talião///
-tálio///
+tálio/#nm/p/
 talismânico/#a//
 talismã/#nm/p/
 talmúdico/#a/fp/
-talo//fp/
+talo/#nm/p/
 taluda/#hf//
 taludar/#vt/XYPL/
 talude/#nm//
@@ -32145,7 +32133,6 @@ tecelagem/#nf/p/
 tecelão/#nm/p/
 tecer/#vt/XYPLD/
 tecido/#nm//
-tecidular//p/
 teclado/#nm/p/
 tecla/#nf/pt/
 tecnicamente/#av//
@@ -32878,7 +32865,6 @@ trabalhador/#hm//
 trabalhão/#nm//
 trabalhar/#vn/XYPLDv/
 trabalheira/#nf//
-trabalhe//ti/
 trabalhismo/#nm/p/
 trabalhista/#hn//
 trabalho/#nm/pti/
@@ -32986,7 +32972,6 @@ transformada/#hf//
 transformador/#hm/fp/
 transformante/#an/p/
 transformar/#vt/XYPLcDnv/
-transforma//ti/
 transformativo/#a//
 transforme/#an/p/
 transformismo/#nm/p/
@@ -33026,7 +33011,7 @@ transmissor/#hm/fpR/
 transmissório/#a//
 transmitir/#vt/XYPLR/
 transmontano/#hm/fp/
-transmudar//c/
+transmudar/#vt/XYPLcvD/
 transmutabilidade/#nf/p/
 transmutador/#nm/p/
 transmutar/#vt/XYPLcvD/
@@ -33236,7 +33221,7 @@ tricô/#nm//
 tricolor/#an//
 tricotar/#vt/XYPLv/
 tricórnio/#nm/p/
-tricotomia///
+tricotomia/#nf//
 tridentado/#a//
 tridente/#an/p/
 tridente/#nm//
@@ -33245,12 +33230,11 @@ triedro/#a//
 trienal/#an//
 triénio/#nm/p/
 trifásico/#nm//
-trifosfato///
 trigal/#hm//
 trigramas/#nmp//
 trigémeo/#hm//
 trigésimo/#o/pf/
-trigonal//p/
+trigonal/#an/p/
 trigo/#nm/p/
 trigonometria/#nf/pr/
 trigonométrico/#a/fpH/
@@ -33302,7 +33286,7 @@ triplicidade/#nf/p/
 triplo/#a/fp/
 tripudiar///
 tripulação/#nf/p/
-tripulante//p/
+tripulante/#nn/p/
 tripular/#vt/XYPL/
 trisavó/#nf//
 trisavô/#nm//
@@ -33433,7 +33417,7 @@ tuberculosidade/#nf/p/
 tuberculoso/#hm/fpd/
 tubo/#nm/p/
 tubular/#an/p/
-tubuloso//fp/
+tubuloso/#a/fp/
 tucano/#nm//
 tu/CAT=ppes,N=s,P=2,C=n//
 tudo/CAT=pind,G=_,N=_/h/
@@ -33450,7 +33434,6 @@ tulipa/#nf/p/
 tumba/#nn//
 tumefacção/#nf/p/
 tum/#i//
-tumoral//p/
 tumor/#nm/p/
 tumular/#an/p/
 túmulo/#nm/p/
@@ -33791,7 +33774,7 @@ valpacense/#hn/p/
 valquíria/#nf/p/
 valsa/#nf/pt/
 valsar/#vn/XYPLD/
-valva//p/
+valva/#nf/p/
 valvar/#an//
 válvula/#nf/p/
 valvular/#an/p/
@@ -33931,7 +33914,6 @@ vegetariano/#hm/fp/
 vegetar/#vi/XYLcv/
 vegetativo/#a/fp/
 veia/#nf/p/
-veiculador//p/
 veicular/#an//
 veicular/#vt/XYPLD/
 veículo/#nm/p/
