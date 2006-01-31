@@ -1,5 +1,5 @@
-LA: Leva artigo? -- indica se um Nome Próprio leva artigo
-LA=1: 
+LA: Necessita artigo
+LA=1: sim
 
 Prep: Preposição (usada em contrações de prep com ...)
 Prep=em: 
