@@ -2678,7 +2678,7 @@ ardume/#nm//
 areado/#a//
 areal/#nm/p/
 areamento/#nm//
-área/#nf/p/
+área/#nf/pu/
 areeiro/#nm//
 areia/#nf/p/
 arejador/#hm//
@@ -4457,8 +4457,7 @@ beduíno/#nm/fp/
 beethovénico/#a//
 bege/#hm2//
 begónia/#nf//
-behaviorista//p/
-behaviourismo/#nm/p/
+behaviourismo/#nm//
 beiçada/#nf//
 beiçana/#nn//
 beiça/#nf//
@@ -4915,7 +4914,7 @@ biunivocamente/$biunívoco$#a$#av//
 biunívoco/#a/fp/
 bivalência/#nf/p/
 bivalente/#an/p/
-bivalve//p/
+bivalve/#an/p/
 bivaque/#nm//
 bivariada//p/
 bizantinismo/#nm/p/
@@ -7432,7 +7431,7 @@ ciclóide/#hf2//
 ciclomotor/#nm/pt/
 ciclone/#nm/pA/
 ciclónico/#a/fp/
-ciclo/#nm/pti/
+ciclo/#nm/ptiu/
 ciclope/#nm/p/
 ciclópeo/#a//
 ciclópico/#a/fp/
@@ -8267,7 +8266,7 @@ complexidão/#nf/p/
 complexo/#a/pfmd/
 complicador/#a//
 complicar/#vn/XYPLcD/
-componente/#hn/p/
+componente/#hn/pu/
 componível/#an/p/
 comportamental/#an/p/
 comporta/#nf//
@@ -31410,26 +31409,18 @@ subalternizar/#vn/XYPLc/
 subalterno/#hm/fp/
 subalveolar//p/
 subandar//p/
-subaponevrótico///
 subaquático/#a/fp/
-subarbusto//p/
-subárea///
-subárvore//p/
-subciclo//p/
 subclasse/#nf/p/
 subclavicular/#an//
 subcomandante/#nm/p/
-subcomponente//p/
 subconsciência/#nf/p/
 subconsciente/#nm/p/
-subcontratação///
 subdelegante/#an/p/
 subdelegar/#vt/XYPLcnv/
 subderivado/#a//
 subdiaconado/#nm/p/
 subdirectoria/#nf//
 subdirigir/#vt/XYPL/
-subdisciplinas///
 subdistinção/#nf//
 subdistinguir/#vt/XYPL/
 súbdito/#hm/p/
@@ -31438,7 +31429,6 @@ subdivisão/#nf/p/
 subdivisionário/#a//
 subdivisível/#an//
 subdocumento//p/
-subdolicocefalia///
 subentender/#vt/XYPLM/
 subespontâneo/#a//
 subestação/#nf/p/
@@ -31569,7 +31559,6 @@ subtilizar/#vn/XYPLD/
 subtipo/#nm/p/
 subtracção/#nf/p/
 subtractivo/#a//
-subtractores///
 subtrair/#vt/KPL/
 suburbano/#a/fp/
 subúrbio/#nm/p/
@@ -32876,7 +32865,7 @@ tracção/#nf//
 tracejar/#vn/XYPLM/
 traço/#nm/p/
 tractorista/#nn/p/
-tractor/#nm/p/
+tractor/#nm/pu/
 tradição/#nf/p/
 tradicional/#an/pmtid/
 tradicionalidade/#an/p/
