@@ -219,13 +219,14 @@ suffixes
 #-----------------------------------------
 # plurais - os mais habituais
 flag *p:         ; "CAT=a_nc,N=s"      #plurais
-[^Ã][^LSMRNZX]>     S    ; "N=p"         # -> s         ex. pato, patos
+[^Ã] [^LSMRNZX] >     S    ; "N=p"         # -> s         ex. pato, patos
 Ã E         >       S    ; "N=p"         # ãe -> ães    ex. mãe, mães
 Ã O         >   -ÃO,ÕES  ; "N=p"         # ão -> ões    ex. leão, leões
 [AU] L      >    -L,IS   ; "N=p"         # al -> ais    ex. animal, animais
 O L         >   -OL,ÓIS  ; "N=p"         # ol -> óis    ex. anzol, anzóis
 [^V] E L    >   -EL,ÉIS  ; "N=p"         # el -> éis    ex. papel, papéis
-[ÁÉÍÓÚ] V E L >  -L,IS   ; "N=p"         # el -> eis    ex. afável, afáveis
+[^ÁÉÍÓÚ] V E L > -EL,ÉIS  ; "N=p"         # el -> éis   ex. cascavel, cascavéis
+[ÁÉÍÓÚ] V E L  >  -L,IS   ; "N=p"         # el -> eis   ex. afável, afáveis
 I L         >    -L,S    ; "N=p"         # il -> is     ex. funil, funis
 [^ÁÉÊ] S    >       ES   ; "N=p"         # -> es        ex. deus, deuses
 Á S         >   -ÁS,ASES ; "N=p"         # ás -> ases   ex. gás, gases

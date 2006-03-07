@@ -259,8 +259,8 @@ acastanhado/#a/fp/
 acastelar/#vt/XYPLM/
 acatador/#hm//
 acatar/#vt/XYPLMDv/
-à/CAT=cp,Prep=a,Art=a,G=f,N=s/p/
-acatólico/#hm//
+à/$ao$CAT=cp,Prep=a,Art=o$G=f,N=s//
+acatólico/#hm/p/
 acato/#nm//
 a/CAT=prep//
 acautelar/#vn/XYPLS/
@@ -2207,9 +2207,9 @@ anuviar/#vt/XYPLD/
 anzolado/#a//
 anzoleiro/#nm/p/
 anzol/#nm/p/
-a/$o$CAT=art$G=f,N=s/p/
+a/$o$CAT=art$G=f,N=s//
+a/$o$CAT=ppes,G=m,N=s,P=3,C=a$G=f,N=s//
 ao/CAT=cp,Prep=a,Art=o,G=m,N=s/p/
-a/$o$CAT=ppes,G=m,N=s,P=3,C=a$G=f,N=s/p/
 aonde/#avl//
 aorta/#nf//
 aórtico/#a/f/
@@ -3074,7 +3074,7 @@ asa/#nf/p/
 asada/#nf//
 asador/#nm//
 asar/#vt/XYPLD/
-às/CAT=cp,Prep=a,Art=as,G=f,N=p//   Não devia ser nec., mas ...
+às/$ao$CAT=cp,Prep=a,Art=o$G=f,N=p//
 ascendência/#nf/p/
 ascendente/#hn//
 ascender/#vi/XYLMn/
