@@ -208,7 +208,8 @@ abstraccionismo/#nm/p/
 abstractivo/#a//
 abstracto/#hm/pfmi/
 abstrair/#vt/KPL/
-absurdeza/#nf//absurdez/#nf//
+absurdez/#nf//
+absurdeza/#nf//
 absurdo/#a/fpidm/
 abulia/#nf//
 abundância/#nf/p/
@@ -3322,7 +3323,7 @@ astronáutica/#nf//
 astronímia/#nf//
 astrónimo/#nm//
 astro/#nm/p/
-astronomia/#nf/qr/
+astronomia/#nf/r/
 astronómico/#a/p/
 astrónomo/#nm/fp/
 astroquímica/#nf//
@@ -7643,7 +7644,7 @@ ciúme/#nm/p/
 ciumento/#a/f/
 cível/#a/p/
 cívico/#a/fp/
-civil/#an/pmtd/
+civil/#an/pt/
 civilidade/#nf/p/
 civilista/#nn//
 civilização/#nf//
@@ -8180,7 +8181,7 @@ cómodo/#a/Ipf/
 comotividade/#nf/p/
 comovedor/#a//
 comovente/#an//
-comover/#vn/XYPLDnm/
+comover/#vn/XYPLDn/
 compactar/#v/XYcS/
 compactidade/#nf/p/
 compacto/#a/fpd/
@@ -9814,7 +9815,6 @@ crónico/#a/fp/
 croniqueiro/#nm//
 croniquizar/#vt/XYPL/
 cronista/#nn/p/
-cronoestratigráfica///
 cronografia/#nf/prq/
 cronologia/#nf/pt/
 cronológico/#a/pfH/
@@ -12852,7 +12852,7 @@ enegrecer/#vn/XYPLM/
 energética/#nf//
 energético/#a/fp/
 energia/#nf/p/
-enérgico/#a/pfH/
+enérgico/#a/pf/
 energicamente/$enérgico$#a$#av//
 energitismo/#nm/p/
 enervante/#an/p/
@@ -13341,7 +13341,7 @@ eremita/#nn/pi/
 ergativo/#nm//
 erg/#nm//
 ergofobia/#nf//
-ergonomia/#nf/q/
+ergonomia/#nf/r/
 erguer/#vt/XYPLR/
 eriçada//p/
 erigir/#vt/XYPLv/
@@ -14215,7 +14215,8 @@ estranheza/#nf//
 estranho/#hm/pfm/
 estratagema//p/
 estratégia/#nf/p/
-estratégico/#a/fpH/
+estratégico/#a/fp/
+estrategicamente/$estratégico$#a$#av//
 estrategista/#nn//
 estratego/#nm/fpt/
 estratificar/#vt/XYPLc/
@@ -15436,7 +15437,7 @@ fisiogenia/#nf//
 fisiografia/#nf/q/
 fisiologia/#nf/qt/
 fisiológico/#a/pfH/
-fisionomia/#nf/pqt/
+fisionomia/#nf/prt/
 fisiopatia/#nf/pq/
 fisiopatológico///
 fisioterapeuta/#nm/p/
@@ -16174,7 +16175,7 @@ gajada/#nf//
 gajão/#nm//
 gajice/#nf//
 gajo/#nm/fp/
-galáctico/#a/pfM/
+galáctico/#a/pf/
 galactose/#nf//
 galaico/#a//
 galaico-português/#a//
@@ -17411,15 +17412,15 @@ hispanista/#nn/p/
 hispanizar/#vt/XYPL/
 hispano-americano/#a//
 histerese/#nm//
-histeria/#nf/Hp/
+histeria/#nf/pm/
 histericismo/#nm/p/
 histérico/#a/pfH/
 histerismo/#nm/p/
 histograma/#nm//
 histológico//fp/
-histologistas///
-historiador/#nm//
-historial/#an//
+histologista/#nn/p/
+historiador/#nm/p/
+historial/#an/p/
 história/#nf/pE/
 historiar/#vn/XYPLD/
 historicidade/#nf/p/
@@ -18220,7 +18221,7 @@ incitador/#hm//
 incitante/#an/p/
 incitar/#vt/XYPLcMDnv/
 incitativo/#a/m/
-incivil/#an/md/
+incivil/#an//
 incivilidade/#nf/p/
 incivilizado/#a//
 incivilizável/#an//
@@ -20594,7 +20595,7 @@ lince/#nm/p/
 linchador/#hm//
 linchagem/#nf//
 linchar/#vt/XYPLDM/
-linda/#nf/ps/
+linda/#nf/p/
 lindeza/#nf//
 lindo/#a/pfms/
 lindote/#a//
@@ -20679,7 +20680,7 @@ litigioso/#a//
 lítio/#nm//
 litografia/#nf/pqr/
 litolatria/#nf/p/
-litolgia/#nf/r/
+litologia/#nf/r/
 litoral/#hm2/p/
 litorâneo/#a/fp/
 litosfera/#nf/p/
@@ -20692,7 +20693,7 @@ lívido/#a/fp/
 livra/#i//
 livraria/#nf/p/
 livrar/#vt/XYPLcMD/
-livre/#an/pm/
+livre/#an/p/
 livre-câmbio/#nm//
 livre-cambismo/#nm//
 livre-cambista/#nn//
@@ -21014,7 +21015,7 @@ macrobiotismo/#nm/p/
 macrocefalia/#nf//
 macrocefálico/#a//
 macrocéfalo/#hm//
-macroeconomia/#nf/q/
+macroeconomia/#nf/r/
 macroscópico//fp/
 macroscópio/#a//
 macrósporo/#a/fp/
@@ -21572,8 +21573,7 @@ martirológio///
 marujada/#nf//
 marujar/#vi/XYL/
 marxismo-leninismo/#nm//
-marxista/#hn/pH/
-marxista-leninista///
+marxista/#hn/p/
 mascarada/#nf//
 máscara/#nf/p/
 mascarar/#vt/SXYPL/
@@ -23836,13 +23836,11 @@ ocasionalidade/#nf/p/
 ocasionalismo/#nm/p/
 ocasionar/#vt/XYPLD/
 ocaso/#nm//
-o/CAT=art,G=m,N=s/p/
-o/CAT=ppes,G=m,N=s,P=3,C=a/fp/
+o/CAT=art,G=m,N=s//
+o/CAT=ppes,G=m,N=s,P=3,C=a//
 occipital/#an/p/
-occitócica///
 oceanicidade/#nf/p/
 oceânico/#a/fp/
-oceánicos///
 oceanografia/#nf/pqr/
 oceano/#nm/p/
 ocidental/#an/ptid/
@@ -25297,9 +25295,9 @@ pegar/#vn/XYPLMD/
 peguilha/#nf//
 peguilhar/#vi/XYL/
 peguilhento/#a//
-peitaça/#nf/f/
+peitaça/#nf//
 peitaço/#nm//
-peitada/#nf/f/
+peitada/#nf//
 peitilho/#nm//
 peito/#nm/p/
 peitoral/#hm2/p/
@@ -26530,7 +26528,7 @@ português/#hm/pfi/
 portuoso/#a//
 porventura/#av//
 porvir/#nm//
-pôr/#vt,I=3/PL/
+pôr/#vt,I=3/L/
 posar/#vi/XYL/
 pós/#pr//
 pós-clássico/#a//
@@ -27965,7 +27963,7 @@ radícula/#nf//
 radicular/#an//
 radioactividade/#nf/p/
 radioactivo/#a/fpd/
-radioastronomia/#nf/rq/
+radioastronomia/#nf/r/
 radiocomunicação/#nf/p/
 radiocondutibilidade/#nf/p/
 radiocondutor/#nm//
@@ -28338,7 +28336,7 @@ recear/#vn/ZYPL/
 recebedor/#hm//
 recebedoria/#nf//
 receber/#vt/XYPLMD/
-receio/#nm/ap/
+receio/#nm/p/
 receita/#nf/p/
 receitário/#nm//
 receitar/#vn/XYPL/
@@ -28900,7 +28898,7 @@ remadura/#nf//
 remagnetizar/#vt/XYPL/
 remanência/#nf/p/
 remanente/#hm2/p/
-remanescente/#hm2/e/
+remanescente/#hm2/p/
 remanescer/#vi/XYLn/
 remanso///
 remarcar/#vt/XYPL/
@@ -29449,7 +29447,7 @@ retumbante/#an/p/
 retumbar/#vn/XYPLn/
 reuma/#nf//
 reumatalgia/#nf//
-reumático/#a/fpU/
+reumático/#a/fp/
 reumatismal/#an//
 reumatismo/#nm/p/
 reumatóide/#an//
@@ -29635,7 +29633,7 @@ ritmo/#nm/p/
 rito/#nm/p/
 ritual/#hm2/ptim/
 ritualizar/#vt/XYPLnc/
-rival/#hn/pd/
+rival/#hn/p/
 rivalidade/#nf/p/
 rivalizar/#vi/XYLv/
 rixa/#nf/p/
@@ -30178,7 +30176,7 @@ saníssimo/#a//
 sanita/#nf/p/
 sanitário/#a/fp/
 sanitários/#nm,N=p//
-sanitarista/#a/fp/
+sanitarista/#a/p/
 sanjoaneiro/#nm//
 sanjoanino/#a/fp/
 sanscrítico/#a//
@@ -30405,7 +30403,7 @@ sedimento/#nm/p/
 sedimentoso/#a//
 sedoso/#a/p/
 sedução/#nf/p/
-sedutor/#a/fpH/
+sedutor/#a/fp/
 seduzir/#vt/ZYPLv/
 sefardita/#a/p/
 segmentário/#a//
@@ -30738,7 +30736,7 @@ serviçal/#hn/p/
 serviço/#nm/p/
 servidão/#nf//
 ser/#vi,I=3/PLn/
-servil/#an/im/
+servil/#an/i/
 servilismo/#nm/p/
 servilizar/#vt/XYPL/
 servir/#vn,I=3/YPLDv/
@@ -30922,7 +30920,7 @@ sincero/#a/fpmd/
 síncope/#nf//
 sincretismo/#nm/p/
 sincronia/#nf/p/
-sincrónico/#a/nf/
+sincrónico/#a/pf/
 sincronismo/#nm/p/
 sincronizar/#vt/XYPLmcRS/
 síncrono/#a/fp/
@@ -31015,7 +31013,6 @@ sistematizar/#vt/XYPLcD/
 sistémico/#a/fp/
 sístole///
 sistólico//f/
-siso/#nm/
 sisudeza/#nf//
 sisudez/#nf//
 sisudo/#a/fpm/
@@ -32103,11 +32100,11 @@ taxilogia/#nf/r/
 taxímetro/#nm/p/
 taxi/#nm/p/
 táxi/#nm/p/
-taxinomia/#nf/qt/
-taxiologia/#nf/qr/
-taxionomia/#nf/rq/
+taxinomia/#nf//
+taxiologia/#nf/r/
+taxionomia/#nf/pr/
 taxista/#hn/p/
-taxonomia/#nf/pq/
+taxonomia/#nf/pr/
 tchetcheno/#an/fp/
 tear/#nm//
 teatrada/#nf//
