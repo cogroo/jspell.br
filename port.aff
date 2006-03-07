@@ -323,6 +323,7 @@ D O R		>  AMENTE		; "CAT=adv"
 É M I C O	>  -ÉMICO,EMICAMENTE	; "CAT=adv"
 Ó N I O		>  -ÓNIO,ONIAMENTE	; "CAT=adv"
 Á S I C O	>  -ÁSICO,ASICAMENTE	; "CAT=adv"
+Á G I C O	>  -ÁGICO,AGICAMENTE	; "CAT=adv"	# tragicamente
 
 flag *q:	; "CAT=hn"
 O L O G I A	>	-OLOGIA,ÓLOGO	; "G=m,N=s"	# astrólogo
@@ -604,7 +605,7 @@ G A         >     -A,UINHAS       ; "N=p,GR=dim"  # carga->carguinhas
 Á           >     -Á,AZINHAS      ; "N=p,GR=dim"  # pá->pazinhas
 Ã           >     -Ã,AZINHAS      ; "N=p,GR=dim"  # mamã->mamazinhas
 
-flag z:                               #inho
+flag *z:                               #inho
 [^Ã][EO]	>        ZINHO        ; "GR=dim"  # pobre->pobrezinho
 L	>	INHO	; "GR=dim"	# casal->casalinho
 
@@ -1595,6 +1596,3 @@ A R         > -AR,ÓDROMO     ;  "CAT=nc,FSEM=odromo"   #
 A           > -A,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
 O           > -O,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
 E           > -E,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
-
-
-
