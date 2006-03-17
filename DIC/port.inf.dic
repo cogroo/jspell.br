@@ -71,7 +71,6 @@ RISC/CAT=nc,G=m,N=s//
 robot/CAT=a_nc,N=s/p/
 ROM/CAT=nc,G=m,N=s//
 scanner/CAT=nc,G=m,N=s/a/
-scope/CAT=nc,G=m,N=s//
 SGML/CAT=np,SEM=sigla//
 shell/CAT=nc,G=f,N=s//
 site/CAT=nc,G=m,N=s/p/
