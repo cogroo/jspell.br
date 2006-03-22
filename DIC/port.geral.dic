@@ -159,7 +159,7 @@ abrasante/#an/p/
 abrasão/#nf//
 abrasar/#vt/XYPLMn/
 abrasileirar/#vt/XYPL/
-abrasivo/#nm/fpmd/
+abrasivo/#nm/fp/
 abreacção/#nf/p/
 abre-latas/#nm,N=_//
 abrenunciar/#vt/XYPLc/
@@ -399,7 +399,7 @@ aço/#nm/p/
 aconselhador/#hm/pf/
 aconselhar/#vt/XYPLSDvM/
 aconsoantar/#vt/XYPL/
-acontecer/#vi/XYLpM/
+acontecer/#vi/XYLM/
 acoplamento/#nm/p/
 acoplar/#vt/XYPLcDR/
 acopular/#v/L/
@@ -459,14 +459,16 @@ actinomórfica/G=f,N=s/p/
 activante/#an/p/
 activar/#vt/XYPLRScDn/
 actividade/#nf/Ip/
-activo/#a/pfmtidI/
+activismo/#nm/p/
+activista/#hn/p/
+activo/#hm/pfmdI/
 acto/#nm/p/
-actor/#nm/pf/
+actor/#nm/p/
 actriz/#nf/p/
 actuação/#nf/p/
-actual/#an/pmtid/
+actual/#an/pmd/
 actualismo/#nm/p/
-actualista/#hn//
+actualista/#hn/p/
 actualizar/#vt/XYPLRSDc/
 actuante/#a/p/
 actuar/#vi/XYLcnD/
@@ -530,7 +532,7 @@ adentar/#vt/XYPL/
 adentrar/#vt/XYPL/
 adentro/#av//
 adepto/#hm/fp/
-adequar/#vt,I=3/YPLcmvdS/
+adequar/#vt,I=3/YPLcdmvS/
 aderecista/#nn/p/
 adereço/#nm/p/
 aderência/#nf/p/
@@ -551,7 +553,7 @@ adicional/#an/pm/
 adicionar/#vt/XYPLcMDv/
 adido/#hm/p/
 adietar/#vt/XYPL/
-adipose/#nf/dp/
+adipose/#nf/p/
 adiposo/#a/fd/
 adir/#vt/XYPLc/
 aditar/#vn/XYPLM/
@@ -642,7 +644,7 @@ adultério/#nm/p/
 adúltero/#hm/fp/
 adulteroso/#a//
 adulto/#hm/fp/
-aduzir/#vt/LT/
+aduzir/#vt/L/
 adventício/#hm/fp/
 adventismo/#nm/p/
 adventista/#hn/p/
@@ -1121,7 +1123,7 @@ aldrabeiro/#hm//
 aldrabice/#nf/p/
 aleatório/#a/pfH/
 alecrim/#nm/p/
-alegado/#nm/pfm/
+alegado/#hm/pfm/
 alegante/#hn/p/
 alegar/#vt/XYPLcnv/
 alegoria/#nf/pti/
@@ -2467,7 +2469,7 @@ apreensor/#hm//
 apreensório/#a//
 aprefixar/#vt/XYPL/
 apregoador/#hm//
-apregoar/#hm/XYPL/
+apregoar/#vt/XYPL/
 apre/#i//
 aprender/#vn/XYPLRS/
 aprendizado/#nm//
@@ -2784,7 +2786,7 @@ aromático/#a/fp/
 aromatismo/#nm/p/
 aromatizante/#an/p/
 aromatizar/#vn/XYPLScnD/
-aro/#nm/pd/
+aro/#nm/p/
 arpão/#nm/p/
 arpar/#vt/XYPL/
 arpear/#vt/ZYPL/
@@ -3119,7 +3121,7 @@ asneirento/#a//
 asneirola/#nf//
 asnidade/#nf/p/
 ás/#nm//
-asno/#nm/pdG/
+asno/#nm/pG/
 as/$o$CAT=art$G=f,N=p//
 as/$o$CAT=ppes,G=m,N=s,P=3,C=a$G=f,N=p//
 aso/#nm//
@@ -3217,7 +3219,7 @@ assim/#av//
 assimetria/#nf/pr/
 assimilabilidade/#nf/p/
 assimilador/#a/fp/
-assimilar/#vt,#an/XYPLcDv/
+assimilar/#vt/XYPLcv/
 assimilativo/#a//
 assimptota/#nf/p/
 assímptota/#nf/p/
@@ -3718,7 +3720,7 @@ autoritário/#a/fp/
 autoritarismo/#nm/p/
 autorizador/#hm//
 autorizar/#vt/XYPLcDv/
-autor/#nm/pfd/
+autor/#nm/pf/
 autoscopia/#nf//
 autoscópio/#nm//
 autos-de-fé/$auto-de-fé$#nm$N=p//
@@ -4240,7 +4242,7 @@ barbárie/#nf/p/
 barbarismo/#nm/p/
 barbarizar/#vn/XYPLcn/
 bárbaro/#a/fp/
-barbar/#vi/XYLdn/
+barbar/#vi/XYLn/
 barbatana/#nf/p/
 barbearia/#nf/p/
 barbear/#vt/ZYPLc/
@@ -5390,7 +5392,7 @@ brumaceiro/#a//
 brumal/#an//
 bruma/#nf/p/
 brumoso/#a/fp/
-brunir/#vt/XTP/
+brunir/#vt/XP/
 brusco/#a/fpm/
 brusquidão/#nf//
 brutal/#an/pdm/
@@ -5581,7 +5583,7 @@ cabulice/#nf/p/
 cacada/#nf/p/
 caçada/#nf/p/
 caçadeira/#hf/p/
-caçador/#nf/fp/
+caçador/#nm/fp/
 caça-minas/#nm//
 caça-moscas/#nm//
 caca/#nf//
@@ -5748,7 +5750,7 @@ caju/#nm//
 calaboiço/#nm/p/
 calabouço/#nm/p/
 calada/#nf//
-calado/#nm/hm/
+calado/#hm/hm/
 calador/#nm//
 calafate/#nm//
 calafetagem/#nf//
@@ -5830,7 +5832,7 @@ calejar/#vn/XYPLMD/
 calenda/#nf/p/
 calendário/#nm/p/
 calendarizar/#vt/XYPLnc/
-cale/#nf/ft/
+cale/#nf//
 calfe/#nm//
 calhadoiro/#nm//
 calhadouro/#nm//
@@ -6223,7 +6225,7 @@ capitel/#nm/p/
 capitoa/#nf//
 capitólio/#nm//
 capitulante/#an/p/
-capitular/#vi/XYLpcn/
+capitular/#vi/XYLcn/
 capítulo/#nm/p/
 capoeira/#nf/p/
 capoeiro/#a/fp/
@@ -6827,7 +6829,7 @@ cavalinhas/#nf,N=p//
 cavalitas/#nf,N=p//
 cavalo-de-batalha/#nm//
 cavalo-marinho/#nm//
-cavalo/#nm/pdh/
+cavalo/#nm/ph/
 cavalório/#nm//
 cavalo-vapor/#nm//
 cavaqueador/#a//
@@ -6838,7 +6840,7 @@ cavaquinho/#nm/pf/
 cavar/#vt/XYPLcD/
 caveira/#nf/p/
 caveiroso/#a//
-cave/#nf/pd/
+cave/#nf/p/
 cavernal/#an//
 caverna/#nf/p/
 cavernar/#vi/XYL/
@@ -6927,9 +6929,8 @@ celulífero/#a//
 celuliforme/#an/p/
 celulite/#nf//
 celulóide/#nf//
-celulose/#nf/pd/
+celulose/#nf/p/
 celulósico/#a//
-celulosidade/#nf/p/
 celuloso/#a/d/
 cem/#ca//
 cemiterial/#an//
@@ -7600,8 +7601,7 @@ circunvolucionário/#a//
 circunvolver/#vn/XYPL/
 cirílico/#a/p/
 círio/#nm//
-cirrose/#nf/pd/
-cirrosidade/#nf/p/
+cirrose/#nf/p/
 cirroso/#a/d/
 cirterciense/#an/p/
 cirurgia/#nf/p/
@@ -7644,9 +7644,9 @@ ciúme/#nm/p/
 ciumento/#a/f/
 cível/#a/p/
 cívico/#a/fp/
-civil/#an/pt/
+civil/#an/p/
 civilidade/#nf/p/
-civilista/#nn//
+civilista/#nn/p/
 civilização/#nf//
 civilizacional/#a/p/
 civilizar/#vt/XYPLcDv/
@@ -7957,7 +7957,7 @@ cola/#nf/p/
 colapsar/#vt/X/
 colapso/#nm/p/
 colarinho/#nm/p/
-colar/#vn/XYPLpcDR/
+colar/#vn/XYPLcDR/
 colateral/#an/pdm/
 colateralidade/#nf/p/
 co-latitude/#nf//
@@ -8119,7 +8119,7 @@ comenda/#nf/p/
 comendatário/#a/p/
 comendatório/#a//
 comensalidade/#nf/p/
-comensal/#nn/idp/
+comensal/#nn/ip/
 comensurabilidade/#nf/p/
 comensurar/#vt/XYPLcv/
 comentador/#hm//
@@ -10180,8 +10180,8 @@ declinativo/#a//
 declinatório/#a//
 declínio/#nm//
 declivar/#vn/XYPL/
-declive/#nm/pd/
-declividade/#nf/p/
+declive/#nm/p/
+declividade/#nf//
 declívio/#nm//
 declivoso/#a//
 decomponente/#hn//
@@ -11172,7 +11172,7 @@ desoxidar/#vt/XYPLcn/
 desoxigenar/#vt/XYPL/
 despachador/#hm//
 despachante/#nn/p/
-despachar/#vn/XYPLpDn/
+despachar/#vn/XYPLDn/
 despacho/#nm/p/
 desparafusar/#vt/XYPL/
 despatriado/#a//
@@ -11257,7 +11257,7 @@ desproporção/#nf//
 despropositar/#vi/XYL/
 desproveito/#nm//
 desprover/#vt/XYPLM/
-despudorado/#nm/fpm/
+despudorado/#a/fpm/
 despudor/#nm//
 desqualificador/#hm//
 desqualificar/#vt/XYPLcD/
@@ -11736,7 +11736,7 @@ disparar/#vn/XYPLD/
 disparatar/#vi/XYL/
 disparate/#nm/p/
 disparidade/#nf/p/
-disparo/#nm/dp/
+disparo/#nm/p/
 dispêndio/#nm//
 dispendioso/#a/fp/
 dispensabilidade/#nf/p/
@@ -12436,7 +12436,7 @@ embarretar/#vt/XYPL/
 embarricar/#vt/XYPLM/
 embarrilação/#nf//
 embarrilado/#a/fpm/
-embarrilar/#nm/XYPLcDn/
+embarrilar/#vt/XYPLcn/
 embasbacar/#vn/XYPLcM/
 embate/#nm/p/
 embater/#vi/XYL/
@@ -13089,7 +13089,7 @@ entear/#vt/ZYPL/
 entelhar/#vt/XYPL/
 entendedor/#hm/p/
 entender/#vn/XYPLMD/
-ente/#nm/pd/
+ente/#nm/p/
 entenrecer/#vt/XYPL/
 enternecedor/#a//
 enternecer/#vn/XYPLMD/
@@ -14283,7 +14283,7 @@ estudantado/#nm/f/
 estudanteco/#nm//
 estudante/#nn/p/
 estudantil/#an/p/
-estudar/#vn/XYPLRpn/
+estudar/#vn/XYPLRn/
 estúdio/#nm/p/
 estudioso/#a/p/
 estudo/#nm/p/
@@ -14474,7 +14474,7 @@ excluído/#a/fp/
 excluir/#vt/KPL/
 exclusão/#nf/p/
 exclusiva/#nf//
-exclusive/#av/id/
+exclusive/#av/i/
 exclusividade/#nf/p/
 exclusivismo/#nm/p/
 exclusivo/#hm/pfmid/
@@ -14844,7 +14844,7 @@ falângico/#a//
 falanginha/#nf//
 falangista/#nm//
 falante/#an/p/
-falar/#vn/XYLpDn/
+falar/#vn/XYLDn/
 falatório/#nm//
 falcão/#nm/p/
 falcatas///
@@ -15539,7 +15539,7 @@ florífero/#a/p/
 florim/#nm/p/
 florir/#vn/XYL/i?
 florista/#nn/p/
-flor/#nf/fp/
+flor/#nf/p/
 flostria/#nf//
 fluência/#nf/p/
 fluente/#an/pm/
@@ -16056,7 +16056,8 @@ fundear/#vi/ZYL/
 fundiário/#a/fp/
 fundilho/CAT=a_nc,N=s/p/
 fundir/#vt/XYPLcDv/
-fundo/#nm/pmt/
+fundo/#hm/pmt/
+fundo/#avl/p/
 fundura/#nf//
 fúnebre/#an/p/
 funeral/#nm/p/
@@ -17411,7 +17412,7 @@ hispanista/#nn/p/
 hispanizar/#vt/XYPL/
 hispano-americano/#a//
 histerese/#nm//
-histeria/#nf/pm/
+histeria/#nf/p/
 histericismo/#nm/p/
 histérico/#a/pfH/
 histerismo/#nm/p/
@@ -17539,7 +17540,7 @@ hospitaleira/#nf//
 hospitaleiro/#hm/fp/
 hospitalidade/#nf/p/
 hospitalizar/#vt/XYPLc/
-hospital/#nm/pd/
+hospital/#nm/p/
 hoste/#nf/p/
 hóstia/#nf/p/
 hostil/#an/mdp/
@@ -17581,7 +17582,7 @@ humildoso/#a/m/
 humilhante/#an/p/
 humilhar/#vt/XYPLcnD/
 humilhoso/#a//
-humo/#nm/d/
+humo/#nm//
 humorado/#a/fp/
 humoral/#an//
 humorismo/#nm/p/
@@ -17589,11 +17590,10 @@ humorista/#hn/p/
 humorístico/#a/pfH/
 humor/#nm/p/
 humoroso/#a/fp/
-húmus///
+húmus/#nm//
 húngaro/#a/fp/
 huno/#a/fp/
 hurra/#i//
-hurrita//p/
 iâmbico//fp/
 iambo//p/
 ianque/#hn/p/
@@ -19787,7 +19787,7 @@ jogatar/#nf//
 jogo/#nm/p/
 jogralice/#nf//
 jogralidade/#nf/p/
-jogral/#nm/d/
+jogral/#nm//
 joguetar/#vi/XYL/
 joguete/#nm//
 jóia/#nf/p/
@@ -20785,7 +20785,7 @@ loirar/#vi/XYL/
 loirecer/#vn/XYPL/
 loireiro/#nm//
 loirejante/#an/p/
-loiro/#nn/fps/
+loiro/#hm/fps/
 loisa/#nf//
 loja/#nf/pt/
 lojeca/#nf//
@@ -21470,7 +21470,7 @@ marear/#vn/ZYPLcn/
 marécages///
 marechal/#nm//
 marejar/#vi/XYL/
-maremoto/#nm/pm/
+maremoto/#nm/p/
 maré/#nf/p/
 maresia/#nf//
 marfim/#nm/p/
@@ -21535,7 +21535,7 @@ marmóreo/#a//
 marmorista/#nn//
 marmorizar/#vn/XYPL/
 marmota/#hf/p/
-mar/#nm/pc/
+mar/#nm/p/
 marosca/#nf//
 marotagem/#nf//
 marotear/#vi/ZYL/
@@ -23534,7 +23534,7 @@ nódoa/#nf/p/
 nodo/#nm/p/
 nodosidade/#nf/p/
 nodoso/#a/d/
-nodular/#v/XYLp/
+nodular/#v/XYL/
 nódulo/#nm/p/
 noduloso/#a//
 noema///
@@ -23583,7 +23583,6 @@ nordestada/#nf//
 nordestear/#vi/ZYL/
 nordeste/#nm//
 nordestia/#nf//
-nordestino/#nf/fp/
 nórdico/#hm/fp/
 normal/#an/pmtds/
 normalizar/#vt/XYPLcv/
@@ -23613,7 +23612,7 @@ notariado/#nm/p/
 notarial/#an/pm/
 notário/#nm/p/
 notar/#vt/XYPLcDv/
-notável/#nm/pm/
+notável/#hm2/pm/
 noticiador/#hm//
 notícia/#nf/p/
 noticiário/#nm/p/
@@ -23634,7 +23633,7 @@ noutrora/#av//
 nova/#hf//
 nova-iorquino/#hm//
 novato/#hm/p/
-nove/#ca/ds/
+nove/#ca/s/
 novecentista//p/
 novecentos/#ca/a/
 novela/#nf/p/
@@ -23740,7 +23739,7 @@ objectiva/#nf//
 objectivar/#vt/XYPLcnv/
 objectivismo/#nm/p/
 objectivo/#hm/pfmtidu/
-objecto/#nm/pd/
+objecto/#nm/p/
 objector/#an/fp/
 oblato//f/
 obliquamente/#av//
@@ -23990,7 +23989,7 @@ olhadela/#nf/p/
 olhador/#hm//
 olhadura/#nf//
 olhal/#nm//
-olhar/#vn/XYPLpD/
+olhar/#vn/XYPLD/
 olhe/CAT=in//
 olheiras/#nf,N=p//
 olheirento/#a//
@@ -25003,7 +25002,7 @@ passarinho/#nm/fp/
 passaroco/#nm/p/
 passarola/#nf/p/
 pássaro/#nm/fp/
-passar/#vn/XYPLpDn/
+passar/#vn/XYPLDn/
 passatempo/#nm/p/
 passeadoiro/#nm//
 passeador/#hm//
@@ -25343,7 +25342,7 @@ pelotão/#nm//
 pelote/#nm//
 pelouro/#nm/p/
 pelúcia/#nf//
-peludo/#nf/fp/
+peludo/#nm/fp/
 pelugem/#nf//
 peluginoso/#a//
 peluche/#nm/p/
@@ -25980,7 +25979,7 @@ piolhento/#a//
 piolho/#nm/pG/
 piolhoso/#a//
 pioneiro/#nm/fpi/
-pio/#nm/m/
+pio/#hm/m/
 piopardo/#nm/p/
 piora/#nf//
 piorar/#vn/XYPL/
@@ -26918,7 +26917,8 @@ prestador/#hm//
 prestante/#an/p/
 prestar/#vn/XYPLcDnv/
 prestativo/#a//
-prestes/#av/m/
+prestes/#hn2/m/
+prestes/#av//
 presteza/#nf//
 prestidigitação/#nf//
 prestidigitador/#nm//
@@ -26993,7 +26993,8 @@ primaz/#hm//
 primazia/#nf//
 primeiranista/#nn//
 primeiríssimo/#a//
-primeiro/#av/m/
+primeiro/#a/m/
+primeiro/#av//
 primeiro-cabo/#nm//
 primeiro-ministro/#nm/fxV/
 primeiro/#o/fp/
@@ -27656,7 +27657,7 @@ quantioso/#a//
 quantíssimo/#a//
 quantitativo/#hm/pfm/
 quantização///
-quanto/#av/pfds/
+quanto/#av/pfs/
 quanto/CAT=pind,G=m,N=s/fp/
 quanto/CAT=pint/pfs/
 quanto/CAT=prel,G=m,N=s,C=a/fp/
@@ -30660,7 +30661,7 @@ sequaz/#hn/p/
 sequeiro/#hm//
 sequela/#nf/p/
 sequenciação///
-sequencial/#nm/pmd/
+sequencial/#hm2/pm/
 sequência/#nf/p/
 sequer/#av//
 sequestrador/#hm//
@@ -31692,7 +31693,7 @@ superácido/#a//
 superalimentar/#an//
 superalimentar/#vn/XYLc/
 superante/#an/p/
-superar/#vt/XYPLcDnvd/
+superar/#vt/XYPLcDnv/
 superavit/#nm//
 supercarburante/#nm/p/
 supercivilizado/#a//
@@ -31852,7 +31853,7 @@ sustenizar/#vt/XYPL/
 sustentáculo/#nm//
 sustentador/#hm//
 sustentante/#hn/p/
-sustentar/#vt/XYPLcMDnvd/
+sustentar/#vt/XYPLcMDnv/
 sustento/#nm//
 suster/#vt,I=3/PLMn/
 sustinendo/#nm/p/
@@ -31890,7 +31891,7 @@ tabulação/#nf//
 tabulado/#nm//
 tabuladora/#nf//
 tabulador/#nm/fp/
-tabular/#an/pD/
+tabular/#an/p/
 tabuleiro/#nm/p/
 tabuleta/#nf/p/
 taçada/#nf//
@@ -31929,7 +31930,7 @@ tagarela/#nf/p/
 tagarelar/#vi/XYLD/
 tagarelice/#nf//
 tá/#i//
-tailandês/#nf/fp/
+tailandês/#nm/fp/
 tainha/#nf//
 taipal/#nm//
 taipa/#nf//
@@ -33404,7 +33405,7 @@ tuberculizável/#an//
 tubérculo/#nm/p/
 tuberculose/#nf/d/
 tuberculosidade/#nf/p/
-tuberculoso/#hm/fpd/
+tuberculoso/#hm/fp/
 tubo/#nm/p/
 tubular/#an/p/
 tubuloso/#a/fp/
@@ -33727,7 +33728,7 @@ vaia/#nf/p/
 vaiar/#vn/XYPLD/
 vaidade/#nf/p/
 vaidoso/#hm/fp/
-vá/#i/p/
+vá/#i//
 vaivém/#nm/p/
 valada/#nf//
 valado/#hm//
@@ -33739,7 +33740,7 @@ valdense/#an/p/
 valenciana/#nf/p/
 valência/#nf/p/
 valenciano/#hm/fp/
-vale/#nm/pd/
+vale/#nm/p/
 valentaço/#hm/p/
 valentão/#a/p/
 valente/#hn/pms/
@@ -33827,8 +33828,7 @@ varicoso/#a//
 variedade/#nf/p/
 varinha/#nf/p/
 varino/#nm/fp/
-vário/#av/fp/
-vário/CAT=pind,G=m,N=s/fpm/
+vário/#a/fpm/
 variolado/#a//
 varíola/#nf//
 varioloso/#a//
@@ -34109,7 +34109,7 @@ vesperal/#hm2/p/
 véspera/#nf/p/
 vespertino/#a/fp/
 vestalidade/#nf/p/
-vestal/#nf/d/
+vestal/#nf//
 veste/#nf/p/
 vestiário/#nm/p/
 vestibular/#an/p/
