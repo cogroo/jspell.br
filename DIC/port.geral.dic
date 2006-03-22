@@ -706,8 +706,8 @@ afásico/#hm//
 afastador/#hm//
 afastar/#vt/XYPLMD/
 afável/#an/dpm/
-afazeres/#nm,N=p//
-afazer/#vt/KPLp/
+afazeres/#nmp//
+afazer/#vt/KPL/
 afecção/#nf/p/
 afectante/#an/p/
 afectar/#vt/XYPLScnmR/
@@ -1254,7 +1254,7 @@ alienista/#hn//
 aligeirar/#vt/XYPLM/
 alijar/#vt/XYPLM/
 alimentador/#a//
-alimentar/#vt/XYPLpcD/
+alimentar/#vt/XYPLcD/
 alimentício/#a/fp/
 alimentividade/#nf/p/
 alimento/#nm/pt/
@@ -3036,7 +3036,7 @@ artesiano/#a//
 artes/#nf,N=p//
 articulação/#nf/p/
 articulante/#hn/p/
-articular/#vt/XYPLpcnvDmS/
+articular/#vt/XYPLcnvDmS/
 articulatório/#a//
 articulista/#nn//
 artículo/#nm//
@@ -8917,7 +8917,7 @@ contente/#an/pS/
 contentivo/#a//
 contentor/#nm/p/
 conterrâneo/#hm/fp/
-conter/#vt,I=3/PLpn/
+conter/#vt,I=3/PLn/
 contestabilidade/#nf/p/
 contestador/#hm//
 contestante/#hn/p/
@@ -9892,7 +9892,7 @@ culposo/#a/f/
 cúltico//f/
 cultismo/#nm/p/
 cultivador/#nm//
-cultivar/#vt/XYPLpcDv/
+cultivar/#vt/XYPLcDv/
 cultivo/#nm//
 culto/#hm/pfi/
 cultor/#nm/p/
@@ -12780,7 +12780,7 @@ encomiástica///
 encompridar/#vt/XYPL/
 encontradiço/#a//
 encontrão/#nm/p/
-encontrar/#vt/XYPLRSp/
+encontrar/#vt/XYPLRS/
 encontro/#nm/p/
 encorajar/#vt/XYPLSMD/
 encordoar/#vt/XYPL/
@@ -16124,7 +16124,6 @@ futebol/#nm/t/
 fútil/#an/a/
 futilidade/#nf/p/
 futilizar/#vn/XYPL/
-future//tid/
 futuridade/#nf/p/
 futurismo/#nm/p/
 futurista/#hn/p/
@@ -20259,7 +20258,7 @@ lavandaria/#nf/p/
 lavandeira/#nf//
 lavandeiro/#nm/f/
 lava/#nf//
-lavar/#vt/XYPLpcnMDv/
+lavar/#vt/XYPLcnMDv/
 lavatório/#nm//
 lávica//p/
 lavoira/#nf/p/
@@ -30407,7 +30406,7 @@ sedutor/#a/fp/
 seduzir/#vt/ZYPLv/
 sefardita/#a/p/
 segmentário/#a//
-segmentar/#vt/XYPLpcD/
+segmentar/#vt/XYPLcD/
 segmento/#nm/p/
 segredar/#vn/XYPL/
 segredeiro/#a//
