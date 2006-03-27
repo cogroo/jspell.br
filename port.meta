@@ -180,9 +180,9 @@ SUBCAT=lug: advérbio de lugar
 SUBCAT=lugar: advérbio de lugar
 SUBCAT=tempo: advérbio de tempo
 SUBCAT=neg: advérbio de negação
+SUBCAT=quant: advérbio de quantidade
 
 G: Género
-G=p: ...
 G=n: neutro
 G=m: masculino
 G=2: ambos

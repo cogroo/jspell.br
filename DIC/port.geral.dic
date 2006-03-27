@@ -10,6 +10,7 @@
 #avl/CAT=adv,SUBCAT=lugar//
 #avt/CAT=adv,SUBCAT=tempo//
 #avn/CAT=adv,SUBCAT=neg//
+#avq/CAT=adv,SUBCAT=quant//
 #i/CAT=in//
 #hm/CAT=a_nc,G=m,N=s//
 #hm2/CAT=a_nc,G=2,N=s// Se for nc é masc. se for adj. é neutro
@@ -4354,7 +4355,7 @@ basquetebolista/#nn//
 basquetebol/#nm/t/
 basta/#i//
 basta/#nf//
-bastante/#av/p/
+bastante/#avq/p/
 bastão/#nm/p/
 bastardia/#nf//
 bastardo/#nm/fp/
@@ -12517,7 +12518,7 @@ emergir/#vi/XYL/i?
 emersão/#nf//
 emerso/#a/fp/
 emigrador/#a//
-emigrante/#hn/p/
+emigrante/#hn/px/
 emigrar/#vi/XYLcDn/
 emigratório/#a//
 eminência/#nf/p/
@@ -17804,7 +17805,7 @@ imersão/#nf//
 imersivo/#a//
 imerso/#a/fp/
 imersor/#hm//
-imigrante/#hn/p/
+imigrante/#hn/px/
 imigrar/#vi/XYLcn/
 imigratório/#a//
 iminência/#nf/p/
@@ -22947,7 +22948,7 @@ mudo/#hm/fpm/
 mugido/#nm//
 mugir/#vi,I=3/YLD/
 mui/#av//
-muito/#av/s/
+muito/#avq/s/
 muito/CAT=pind,G=m,N=s/fp/
 muito/CAT=pind,G=_,N=_//
 mulada/#nf//
@@ -23112,7 +23113,7 @@ nacionalizar/#vt/XYPLScDR/
 nacional-socialismo/#nm//
 nacional-socialista/#hn//
 naco/#nm/p/
-nada/#av//
+nada/#avq//
 nada/CAT=pind,G=_,N=_//
 nadadeira/#nf//
 nadador/#hm/fp/
@@ -26611,7 +26612,7 @@ potente/#an/p/
 potra/#nf//
 potro/#nm/f/
 pouca-vergonha/#nf//
-pouco/#av//
+pouco/#avq//
 pouco/CAT=pind,G=m,N=s/pfh/
 poucochinho/#av//
 poupador/#hm/fp/
@@ -27657,7 +27658,7 @@ quantioso/#a//
 quantíssimo/#a//
 quantitativo/#hm/pfm/
 quantização///
-quanto/#av/pfs/
+quanto/#avq/pfs/
 quanto/CAT=pind,G=m,N=s/fp/
 quanto/CAT=pint/pfs/
 quanto/CAT=prel,G=m,N=s,C=a/fp/
