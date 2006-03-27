@@ -135,7 +135,7 @@ P=2: segunda
 P=1_3: primeira/terceira
 
 ABR: Abreviatura
-ABR=1: 
+ABR=1: Sim
 
 Verb: Do verbo
 Verb=haver:
@@ -169,11 +169,11 @@ Ppes=lhe: lhe
 Ppes=migo: migo
 
 BRAS: Origem Brasileira
-BRAS=1:
+BRAS=1: sim
 
 I: Nível de irregularidade
-I=4: 
-I=3:
+I=4: 4
+I=3: 3
 
 SUBCAT: Subcategoria
 SUBCAT=lug: advérbio de lugar
