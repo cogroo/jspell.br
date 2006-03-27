@@ -93,14 +93,14 @@ FSEM=vel:  exemplo -- lavar-lavável
 FSEM=dd:   exemplo -- feliz-felicidade
 
 Adv: Contracção com advérbio
-Adv=a:
+Adv=a: a
 Adv=aqu:
-Adv=onde:
+Adv=onde: onde
 Adv=al:
-Adv=ali:
-Adv=algures:
-Adv=aqui:
-Adv=outrora:
+Adv=ali: ali
+Adv=algures: algures
+Adv=aqui: aqui
+Adv=outrora: outrora
 
 C: Caso latino
 C=n: nominativo
@@ -138,7 +138,7 @@ ABR: Abreviatura
 ABR=1: Sim
 
 Verb: Do verbo
-Verb=haver:
+Verb=haver: haver
 
 Pdem: Contracção com pronome demonstrativo
 Pdem=isto: isto
@@ -152,10 +152,10 @@ Prep2: Contracção com preposição
 Prep2=entre:
 
 Art: Contracção com artigo
-Art=as:
-Art=a:
-Art=um:
-Art=o:
+Art=as: as
+Art=a: a
+Art=um: um
+Art=o: o
 
 Ppes: Contracção com pronome pessoal
 Ppes=sigo: sigo
@@ -192,7 +192,7 @@ G=f: feminino
 rad: Lema
 
 PFSEM: Prefixo semântico
-PFSEM=outra:
+PFSEM=outra: outra
 
 unknown: Palavra sugerida
 unknown=1:
