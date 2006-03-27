@@ -1,12 +1,12 @@
 LA: Necessita artigo
 LA=1: sim
 
-Prep: Preposição (usada em contrações de prep com ...)
-Prep=em: 
-Prep=por:
-Prep=de:
-Prep=a:
-Prep=com:
+Prep: Preposição com
+Prep=em: em
+Prep=por: por
+Prep=de: de
+Prep=a: a
+Prep=com: com
 
 T: Tempo
 T=ip: infinitivo pessoal
@@ -25,7 +25,7 @@ T=f: futuro
 T=i: imperativo
 
 N: Número
-N=n:
+N=n: neutro
 N=p: plural
 N=_: neutro
 N=s: singular
@@ -51,32 +51,32 @@ SEM=cid: cidade
 SEM=lingua: ...
 
 CAT: Categoria
-CAT=punct2d: ...
+CAT=punct2d: aspas
 CAT=np: nome próprio
 CAT=ppos: pronome possessivo
-CAT=punctj: ...
-CAT=punct1c: ...
+CAT=punctj: reticências
+CAT=punct1c: dois pontos
 CAT=prep: preposição
-CAT=punctg: ...
-CAT=puncth: ...
-CAT=punct1a: ...
+CAT=punctg: ponto de exclamação
+CAT=puncth: ponto de interrogação
+CAT=punct1a: vírgula
 CAT=in: interjeição
 CAT=npm: ...
 CAT=con: conjunções
-CAT=pint: ...
-CAT=punct2e: ...
-CAT=punct1b: ...
+CAT=pint: pronome interrogativo
+CAT=punct2e: abertura de parêntesis
+CAT=punct1b: ponto e vírgula
 CAT=pdem: pronome demonstrativo
-CAT=puncti: ...
+CAT=puncti: ponto final
 CAT=nc: substantivo comum
-CAT=pind: ...
+CAT=pind: pronome indefinido
 CAT=pass: ...
 CAT=a_nc: substantivo/adjectivo
 CAT=art: artigo
-CAT=prel: ...
+CAT=prel: pronome relativo
 CAT=v: verbo
-CAT=cp: ...
-CAT=punct2f: ...
+CAT=cp: contracção de preposição
+CAT=punct2f: fecho de parêntesis
 CAT=ppes: pronome pessoal
 CAT=card: cardinal
 CAT=adj: adjectivo
@@ -92,37 +92,37 @@ FSEM: Sufixo
 FSEM=vel:  exemplo -- lavar-lavável
 FSEM=dd:   exemplo -- feliz-felicidade
 
-Adv: Advérbio
-Adv=a: ...
-Adv=aqu: ...
-Adv=onde: ...
-Adv=al: ...
-Adv=ali: ...
-Adv=algures: ...
-Adv=aqui: ...
-Adv=outrora: ...
+Adv: Contracção com advérbio
+Adv=a:
+Adv=aqu:
+Adv=onde:
+Adv=al:
+Adv=ali:
+Adv=algures:
+Adv=aqui:
+Adv=outrora:
 
-C: caso latino
+C: Caso latino
 C=n: nominativo
 C=a: acusativo
 C=g: genitivo
 C=d: dativo
 
-Pdem2: ... em contracções com ...
-Pdem2=outro: ...
+Pdem2: Contracção com pronome demonstrativo
+Pdem2=outro:
 
 TR: Transitividade
 TR=_: transitivo/intransitivo
 TR=i: intransitivo
 TR=t: transitivo
 
-Pind: ...
-Pind=algo: ...
-Pind=outro: ...
-Pind=outrem: ...
-Pind=algum: ...
-Pind=algu: ...
-Pind=o: ...
+Pind: Contracção da preposição com pronome indefinido
+Pind=algo:
+Pind=outro:
+Pind=outrem:
+Pind=algum:
+Pind=algu:
+Pind=o:
 
 GR: Grau
 GR=sup: superlativo
@@ -134,13 +134,13 @@ P=3: terceira
 P=2: segunda
 P=1_3: primeira/terceira
 
-ABR: é abreviatura?
+ABR: Abreviatura
 ABR=1: 
 
-Verb: ...
-Verb=haver: ...
+Verb: Do verbo
+Verb=haver:
 
-Pdem: contracção com Pronome Demonstrativo
+Pdem: Contracção com Pronome Demonstrativo
 Pdem=isto: isto
 Pdem=isso: isso
 Pdem=esse: esse
@@ -148,34 +148,34 @@ Pdem=aquele: aquele
 Pdem=aquilo: aquilo
 Pdem=este: este
 
-Prep2: ...
-Prep2=entre: ...
+Prep2: contracção com preposição
+Prep2=entre:
 
 Art: contracção com Artigo
-Art=as: ...
-Art=a: ...
-Art=um: ...
-Art=o: ...
+Art=as: as
+Art=a: a
+Art=um: um
+Art=o: o
 
 Ppes: contracção com Pronome Pessoal
-Ppes=sigo: ...
-Ppes=ele: ...
-Ppes=te: ...
-Ppes=tigo: ...
-Ppes=nosco: ...
-Ppes=me: ...
-Ppes=vosco: ...
-Ppes=lhe: ...
-Ppes=migo: ...
+Ppes=sigo: sigo
+Ppes=ele: ele
+Ppes=te: te
+Ppes=tigo: tigo
+Ppes=nosco: nosco
+Ppes=me: me
+Ppes=vosco: vosco
+Ppes=lhe: lhe
+Ppes=migo: migo
 
 BRAS: Origem Brasileira
-BRAS=1: sim
+BRAS=1:
 
-I: ...
-I=4: ...
-I=3: ...
+I: Nível de irregularidade
+I=4: 
+I=3:
 
-SUBCAT: subcategoria
+SUBCAT: Subcategoria
 SUBCAT=lug: advérbio de lugar
 SUBCAT=lugar: advérbio de lugar
 SUBCAT=tempo: advérbio de tempo
@@ -183,16 +183,16 @@ SUBCAT=neg: advérbio de negação
 
 G: Género
 G=p: ...
-G=n: ...
+G=n: neutro
 G=m: masculino
 G=2: ambos
-G=_: indefinido
+G=_: neutro
 G=f: feminino
 
 rad: Lema
 
-PFSEM: prefixo semântico
-PFSEM=outra: ...
+PFSEM: Prefixo semântico
+PFSEM=outra:
 
-unknown: palavra sugerida
-unknown=1: sim
+unknown: Palavra sugerida
+unknown=1:
