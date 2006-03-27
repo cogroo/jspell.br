@@ -62,7 +62,7 @@ CAT=puncth: ponto de interrogação
 CAT=punct1a: vírgula
 CAT=in: interjeição
 CAT=npm: ...
-CAT=con: conjunções
+CAT=con: conjunção
 CAT=pint: pronome interrogativo
 CAT=punct2e: abertura de parêntesis
 CAT=punct1b: ponto e vírgula
@@ -140,7 +140,7 @@ ABR=1: Sim
 Verb: Do verbo
 Verb=haver:
 
-Pdem: Contracção com Pronome Demonstrativo
+Pdem: Contracção com pronome demonstrativo
 Pdem=isto: isto
 Pdem=isso: isso
 Pdem=esse: esse
@@ -148,16 +148,16 @@ Pdem=aquele: aquele
 Pdem=aquilo: aquilo
 Pdem=este: este
 
-Prep2: contracção com preposição
+Prep2: Contracção com preposição
 Prep2=entre:
 
-Art: contracção com Artigo
-Art=as: as
-Art=a: a
-Art=um: um
-Art=o: o
+Art: Contracção com artigo
+Art=as:
+Art=a:
+Art=um:
+Art=o:
 
-Ppes: contracção com Pronome Pessoal
+Ppes: Contracção com pronome pessoal
 Ppes=sigo: sigo
 Ppes=ele: ele
 Ppes=te: te
@@ -175,7 +175,7 @@ I: Nível de irregularidade
 I=4: 4
 I=3: 3
 
-SUBCAT: Subcategoria
+SUBCAT: Sub categoria
 SUBCAT=lug: advérbio de lugar
 SUBCAT=lugar: advérbio de lugar
 SUBCAT=tempo: advérbio de tempo
