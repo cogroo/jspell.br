@@ -81,7 +81,7 @@ CAT=ppes: pronome pessoal
 CAT=card: cardinal
 CAT=adj: adjectivo
 CAT=nord: ordinal
-CAT=adv: adverbio
+CAT=adv: advérbio
 
 F: Frequência
 F=0: quase inexistente
@@ -179,7 +179,7 @@ SUBCAT: subcategoria
 SUBCAT=lug: advérbio de lugar
 SUBCAT=lugar: advérbio de lugar
 SUBCAT=tempo: advérbio de tempo
-SUBCAT=neg: advérbio de quantidade
+SUBCAT=neg: advérbio de negação
 
 G: Género
 G=p: ...
