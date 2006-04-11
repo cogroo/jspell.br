@@ -60,7 +60,7 @@ abarrotar/#vt/XYPLM/
 abastança/#nf//
 abastardar/#vt/XYPLM/
 abastar/#vt/XYPLM/
-abastecedouro/#nm//
+abastecedouro/#nm/p/
 abastecer/#vt/XYPLMD/
 abastonar/#vt/XYPL/
 abatatar/#vt/XYPL/
@@ -72,11 +72,11 @@ abcissa/#nf/p/
 abdicante/#hn/p/
 abdicar/#vn/XYPLcDnv/
 abdicatário/#hm//
-abdicativo/#a//
+abdicativo/#a/p/
 abdicatório/#a//
 abdómen/#nm/p/
 abdominal/#an/p/
-abdução/#nf//
+abdução/#nf/p/
 abducente/#an//
 abdutivo/#a/f/
 abdutor/#nm/fp/
@@ -126,7 +126,7 @@ abóbada/#nf/p/
 abobar/#vt/XYPL/
 aboboral/#nm//
 abóbora/#nf/p/
-abocamento/#nm//
+abocamento/#nm/p/
 abocanhar/#vt/XYPL/
 abolicionismo/#nm/p/
 abolicionista/#hn/Ap/
@@ -508,7 +508,7 @@ adaga/#nf/p/
 adagial/#an//
 adagiário/#nm//
 adagiar/#vi/XYL/
-adágio/#nm//
+adágio/#nm/p/
 adamascar/#vt/XYPL/
 adamastor/#nm/p/
 adaptabilidade/#nf/Ip/
@@ -1144,7 +1144,7 @@ além-mundo/#nm//
 além/#nm//
 alentar/#vn/XYPLm/
 alentejano/#a/fp/
-alento/#nm//
+alento/#nm/p/
 alergia/#nf/p/
 alérgico/#a/fp/
 alerta/#av//
@@ -1177,7 +1177,7 @@ alfândega/#nf/p/
 alfandegário/#a/fp/
 alfandegar/#vt/XYPLS/
 alfa/#nm//
-alfanumérico/#am/fp/
+alfanumérico/CAT=adj,G=m,N=p/fp/
 alfarrábio/#nm/p/
 alfarrabista/#nn/p/
 alfarrobal/#nm//
@@ -1219,12 +1219,12 @@ algorítmico/#a/p/
 algoritmo/#nm/p/
 algoz/#nm/p/
 alguém/CAT=pind,G=_,N=_//
-alguidar/#nm//
+alguidar/#nm/p/
 algum/CAT=pind,N=s/fp/
 algures/#avl,SUBCAT=lug//
 alhada/#nf/p/
 alhear/#vi/XY/
-alheamento/#nm//
+alheamento/#nm/p/
 alheável/#an//
 alheio/#nm/fp/
 alheira/#nf/p/
@@ -1277,7 +1277,7 @@ almanaque/#nm/p/
 alma/#nf/p/
 almejante/#an/p/
 almejar/#vt/XYPLn/
-almejo/#nm//
+almejo/#nm/p/
 alminhas/#nf,N=p//
 almirantado/#nm//
 almiranta/#nf//
@@ -1311,7 +1311,7 @@ alparca/#nf//
 alpendrado/#hm//
 alpendrar/#vt/XYPL/
 alpendre/#nm/p/
-alperce/#nm//
+alperce/#nm/p/
 alpinismo/#nm/p/
 alpinista/#hn/p/
 alpino/#a/pfti/
@@ -1359,7 +1359,7 @@ alto-falante/#nm/p/
 alto-relevo/#nm//
 altos-fornos/#nm,N=p//
 altruísmo/#nm//
-altruísta/#hn//
+altruísta/#hn/p/
 altruístico/#a//
 altura/#nf/p/
 aluadamente/#av//
@@ -1405,7 +1405,7 @@ alvoredo/#nm//
 alvor/#nm/p/
 alvoroçante/#an/p/
 alvoroçar/#vt/XYPLMDn/
-alvoroço/#nm//
+alvoroço/#nm/p/
 alvura/#nf//
 amabilidade/#nf/p/
 amacacar/#vt/XYPL/
@@ -1418,11 +1418,11 @@ amador/#hm/p/
 amadorismo/#nm/p/
 amadrinhar/#vt/XYPL/
 amadurecer/#vn/XYPLM/
-âmago/#nm//
+âmago/#nm/p/
 amainar/#vn/XYPL/
 amalandrar/#vi/XYL/
 amaldiçoar/#vt/XYPLD/
-amálgama/#nm//
+amálgama/#nm/p/
 amalgamar/#vt/XYPL/
 amalgamentação/#nf//
 amalgamento/#nm//
@@ -3372,7 +3372,7 @@ ateatrado/#a//
 até/CAT=con//
 até/CAT=prep//
 atediar/#vt/XYPL/
-ateia/#nf//
+ateia/$ateu$#nm$G=f/p/
 ateísmo/#nm/pq/
 ateístico/#a//
 atelier/#nm//
@@ -14284,7 +14284,7 @@ eurítmico/#a//
 euro-asiático/#a/fp/
 eurodeputado/#hn/fpx/
 euro/#nm/p/
-europeia/#af/p/
+europeia/$europeu$CAT=adj,N=s,G=m$G=f/p/
 europeísmo/#nm//
 europeísta/#an/p/
 europeizar/#vt,I=3/YPLc/
@@ -14847,6 +14847,7 @@ farinha/#nf/p/
 farinheiro/#nm/p/
 farinhento/#a/fp/
 farinhoso/#a/p/
+fariseia/$fariseu$#nm$G=f/p
 fariseu/#nm/p/
 farmacêutico/#hm/fp/
 farmácia/#nf/p/
@@ -17481,6 +17482,7 @@ idêntico/#a/fp/
 identidade/#nf/p/
 identificação/#nf//
 identificar/#vt/XYPLcDv/
+identificativo/#a/fp/
 ideograma/#nf/p/
 ideologia/#nf/pq/
 ideológico/#a/fpH/
@@ -18858,6 +18860,7 @@ instalação/#nf//
 instalador/#hm//
 instalar/#vt/XYPLcDS/
 instância/#nf/p/
+instanciar/#vt/Yc/
 instantaneamente/#av//
 instantaneidade/#nf/p/
 instantâneo/#hm/fp/
@@ -34068,7 +34071,7 @@ zambiano/#hm/fp/
 zambujal/#nm//
 zambujeiro/#nm//
 zanga/#nf/p/
-zangão/#hm//
+zângão/#hm//
 zangar/#vn/XYPLD/
 zaragata/#nf/p/
 zaragatear/#vi/ZYL/
