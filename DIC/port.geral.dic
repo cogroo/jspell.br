@@ -643,7 +643,7 @@ adultério/#nm/p/
 adúltero/#hm/fp/
 adulteroso/#a//
 adulto/#hm/fp/
-aduzir/#vt/L/
+aduzir/#vt/ZYL/
 adventício/#hm/fp/
 adventismo/#nm/p/
 adventista/#hn/p/
@@ -2729,7 +2729,7 @@ argonáutico/#a//
 argúcia/#nf//
 arguciar/#vi/XYL/
 argucioso/#a//
-arguir/#vt,I=3/YPLcDv/
+arguir/#vn,I=3/KPLcDv/
 arguitivo/#an//
 argumental/#an//
 argumentar/#vt/XYPLcDn/
@@ -8714,7 +8714,7 @@ cônscio/#a/p/
 consecução/#nf//
 consecutivo/#a/pfm/
 conseguinte/#a/m/
-conseguir/#vt,I=3/YPLMDnv/
+conseguir/#vt,I=3/KPLMDnv/
 conselheiral/#an//
 conselheirático/#a/fp/
 conselheirismo/#nm/p/
@@ -8826,7 +8826,7 @@ constritivo/#a//
 constrito/#a//
 constritor/#hm//
 construção/#nf/pRS/
-construir/#vt,I=3/PLRS/
+construir/#vt,I=3/KPLRS/
 construtivo/#a/pfm/
 construtor/#hm/pfR/
 construtura/#nf//
@@ -10338,7 +10338,7 @@ delinear/#vt/ZYPLcMD/
 delineativo/#a//
 delinquência/#nf/p/
 delinquente/#hn/p/
-delinquir/#vi,I=3/L/
+delinquir/#vi,I=3/KL/
 delirante/#an/pm/
 delirar/#vi/XYLn/
 delírio/#nm/p/
@@ -11266,7 +11266,7 @@ destroçador/#hm//
 destroçar/#vt/XYPLD/
 destroço/#nm/p/
 destronar/#vt/XYPLM/
-destruir/#vn,I=3/PLcDv/
+destruir/#vn,I=3/KPLcDv/
 destrutível/#a//
 destrutividade/#nf/p/
 destrutivo/#a/fd/
@@ -14588,7 +14588,7 @@ extermínio/#nm/p/
 externato/#nm/p/
 externo/#hm/pfm/
 extinção/#nf/p/
-extinguir/#vt/XYPLDv/
+extinguir/#vt/KPLDv/
 extintivo/#a//
 extinto/#a/fp/
 extintor/#hm/p/
@@ -24454,7 +24454,7 @@ papeleiro/#hm/f/
 papeleta/#nf//
 papelista/#nn//
 papel-moeda/#nm//
-papel/#nm/pthz/
+papel/#nm/ptz/
 papelosa/#nf/p/
 papelotes/#nm,N=p//
 papelucho/#nm//
@@ -25383,7 +25383,7 @@ perscrutador/#hm//
 perscrutar/#vt/XYPLcDv/
 persecução/#nf//
 persecutório/#a/fp/
-perseguir/#vt,I=3/YPLcMD/
+perseguir/#vt,I=3/KPLcMD/
 pérseo/#a//
 perseverança/#nf//
 perseverante/#an/mp/
@@ -26960,7 +26960,7 @@ prosperidade/#nf/p/
 próspero/#a/fp/
 prossecução/#nf//
 prossecutor/#nm//
-prosseguir/#vn,I=3/YPLcMD/
+prosseguir/#vn,I=3/KPLcMD/
 próstata/#nf/p/
 prostático/#a/f/
 prostituir/#vt/KPLcDv/
@@ -28920,7 +28920,7 @@ restauro/#nm/p/
 réstia/#nf//
 restilar/#vt/XYPLc/
 restilo/#nm//
-restinguir/#vt/XYPL/
+restinguir/#vt/KPL/
 restituir/#vt/KPLcDv/
 restitutório/#a//
 resto/#nm/p/
@@ -28998,7 +28998,7 @@ retórica/#nf/p/
 retórico/#hm/fp/
 retornar/#vn/XYPLM/
 retorno/#nm/p/
-retorquir/#vt/YKPLv/
+retorquir/#vt/KPLv/
 retorsão/#nf//
 retorto/#a//
 retostar/#vt/XYPL/
@@ -30013,7 +30013,7 @@ segregar/#vt/XYPLc/
 segregativo/#a//
 seguida/#hf/m/
 seguinte/#hm2/pm/
-seguir/#vn,I=3/YPLMDn/
+seguir/#vn,I=3/KPLMDn/
 segunda-feira/#nf//
 segundanista/#nn/p/
 segundar/#vt/XYPL/
