@@ -46,9 +46,6 @@ tgz: ispell
 	tar -czf ispell.$(ABR)-$(DATE).tar.gz ispell.$(ABR)-$(DATE)
 	rm -fr ispell.$(ABR)-$(DATE)
 
-#publish: tgz
-#	mv $P/$D.tgz $(plndir)/UM$D.tgz
-
 ispell : $P/$D.hash $P/README
 
 $P/README: ../port.aff
@@ -60,8 +57,9 @@ $P/$D.hash: $P/$D.dic $P/$D.aff $P/README
 $P/$D.aff $P/$D.dic: ../port.dic ../port.aff 
 	perl jsp2isp.pl ../port.aff > $P/$D.aff 
 	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/_$D.dic
-	munchlist -l $P/$D.aff $P/_$D.dic > $P/$D.dic
-	rm -f $P/_$D.dic
+	munchlist -l $P/$D.aff $P/_$D.dic > $P/_.dic
+	sort $P/_.dic > $P/$D.dic
+	rm -f $P/_$D.dic $P/_.dic
 	cp ver ispell.port.spec $P
 
 

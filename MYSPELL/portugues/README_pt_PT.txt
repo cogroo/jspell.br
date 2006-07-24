@@ -1,7 +1,7 @@
 This is a Portuguese dictionary for myspell:
 
-Copyright (C) 2005  Jose Joao de Almeida <jj@di.uminho.pt> , 
-	Rui Vilela <ruivilela@di.uminho.pt> 
+Copyright (C) 2006  Jose Joao de Almeida <jj@di.uminho.pt> , 
+	Rui Vilela <ruivilela@di.uminho.pt> ,
 	Alberto Simões <ambs@di.uminho.pt>
 
 Dep. Informatica, Universidade do Minho
@@ -10,11 +10,12 @@ Portugal
 #    Many thanks to Artur Correia <artur.correia@srcc.pt> for previous dictionary
 #    versions.
 
-#    Nov 2005
+# All dictionary files and associated programs are currently covered
+     by the GPL and BSD licence
 
 ########################################
-#    This dictionary is currently covered by the GPL and BSD licence
-
+# GPL Licence:
+#
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation; either version 2 of the License, or
