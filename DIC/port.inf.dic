@@ -80,6 +80,7 @@ software/CAT=nc,G=m,N=s//
 SQL/CAT=a_nc,N=s//
 stack/CAT=nc,G=m//
 string/CAT=a_nc,N=s/p/
+supercomputador/#nm,N=s/p/
 Thunderbird/CAT=np,G=m,N=s//
 Unix/CAT=np,G=m//
 URL/CAT=np,G=m//
