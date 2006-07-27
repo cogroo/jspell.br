@@ -381,7 +381,6 @@ acolhida/#nf//
 acolia/#nf//
 acólito/#nm/pf/
 acórdão/#nm/p/
-acomadrar/#v/XYL/
 acometer/#vt/XYPLMDv/
 acometida/#nf/p/
 acomodação/#nf/p/
@@ -470,7 +469,6 @@ actualizar/#vt/XYPLRSDc/
 actuante/#a/p/
 actuar/#vi/XYLcnD/
 açucarar/#vt/XYPL/
-açucareira/#a//
 açucareiro/#hm//
 açúcar/#nm/p/
 açudar/#vt/XYPL/
@@ -1408,7 +1406,6 @@ alvoroço/#nm/p/
 alvura/#nf//
 amabilidade/#nf/p/
 amacacar/#vt/XYPL/
-amaca/#nf//
 amachucadela/#nf/p/
 amachucar/#vt/XYPL/
 amaciar/#vt/XYPL/
@@ -2498,7 +2495,7 @@ apropriado/#a/pfmS/
 apropriador/#hm//
 apropriar/#vt/XYPLcD/
 aprosar/#vt/XYPL/
-aprouver/#v/XYL/
+aprouver/#v/XYL/         #aprazer ?
 aprovador/#hm//
 aprovar/#vt/XYPLScDv/
 aprovativo/#a//
@@ -3407,7 +3404,7 @@ aterroar/#vt/XYPL/
 aterro/#nm/p/
 aterrorizador/#a//
 aterrorizar/#vt/XYPLDn/
-ater/#v/XYLn/
+atear/#v/XYLn/
 atestado/#nm/p/
 atestante/#nn/p/
 atestar/#vn/XYPLcMDn/
@@ -3510,7 +3507,7 @@ atrelagem/#nf//
 atrelar/#vt/XYPL/
 atrepar/#vt/XYPL/
 atrevediço/#a//
-atrever/#v/XYLM/
+atrevido/#a/fp/
 atrevidote/#a//
 atribuição/#nf//
 atribuir/#nm/p/
@@ -3912,7 +3909,6 @@ baboso/#a/fpG/
 babugento/#a//
 babuíno/#nm/p/
 babujar/#vt/XYPL/
-baça/#a/p/
 bacalhau/#nm/p/
 bacalhoada/#nf//
 bacalhoeiro/#hm/p/
@@ -4458,7 +4454,6 @@ behaviourismo/#nm//
 beiçada/#nf//
 beiçana/#nn//
 beiça/#nf//
-beicinha/#nf//
 beicinho/#nm/f/
 beiçola/#a//
 beiço/#nm/p/
@@ -4819,7 +4814,7 @@ biomecânica/#nf//
 biomédico/#hm/pf/
 biometria/#nf/pr/
 biopse/#nf//
-biópsia/#nf/p/
+biopsia/#nf/p/
 bioquímica/#nf//
 bioquímico/#hm/fp/
 biosfera/#nf//
@@ -5239,7 +5234,6 @@ bragancês/#a//
 braguês/#hm//
 braguilha/#nf//
 braille/#nm//
-bramã/#hn//
 brâmane/#nm/p/
 brama/#nf/ti/
 bramânico/#a/fp/
@@ -5702,6 +5696,7 @@ cagar/#vn/XYPL/
 caiadela/#nf/p/
 caiador/#nm//
 caiadura/#nf//
+caiaque/#nm/p/
 caiar/#vt/XYPLcD/
 cãibra/#nf/p/
 caída/#nf//
@@ -6662,7 +6657,6 @@ catalão/#hm/eb/
 catalisar/#vt/XYPLD/
 catálise/#nf//
 catalítico/#a/f/
-catalizar/#vt/XYPLcD/
 catalogador/#hm//
 catalogal/#an//
 catalogar/#vt/XYPLcD/
@@ -6843,7 +6837,6 @@ cavilhar/#vt/XYPLcD/
 cavitário/#a//
 cavo/#a/fd/
 caxemira/#nf//
-cazaque/#hm/p/
 cê/#nm//
 cear/#vn/ZYPL/
 ceata/#nf//
@@ -7865,6 +7858,7 @@ co-delinquência/#nf/p/
 co-delinquente/#nm//
 co-detentor/#nm//
 co-dialecto/#nm//
+coderniz/#nf/p/
 códice/#nm/p/
 codificador/#nm/p/
 codificar/#vt/XYPLScDv/
@@ -7983,7 +7977,6 @@ coleira/#nf/p/
 cólera/#nf//
 colérico/#a/pfH/
 colesterol/#nm//
-colestrol/#nm//
 colete-de-forças/#nm//
 coleteiro/#nm//
 colete/#nm/p/
@@ -9276,7 +9269,6 @@ cordilheira/#nf/p/
 cordoaria/#nf/p/
 cordoar/#vt/XYPL/
 cordoeiro/#nm//
-cordoniz/#nm/p/
 coreáceo/#a/pf/
 coreano/#a/fp/
 co-redactor/#nm//
@@ -13209,7 +13201,6 @@ epitelial/#an//
 epitélio/#nm//
 epíteto/#nm/p/
 época/#nf/p/
-epodos/#nm/p/
 epónimo/#nm/p/
 epopeia/#nf/p/
 epopeico/#a//
@@ -16133,8 +16124,7 @@ gamar/#vt/XYPL/
 gamba/#nf/p/
 gambiarra/#nf/p/
 gambito/#nm/p/
-gambozino/#nm/p/
-gambuzino/#nm/p/  não consegui saber a grafia certa
+gambozinos/#nmp//
 gamela/#nf/p/
 gamelo/#nm/f/
 gâmeta/#nm/p/
@@ -16280,7 +16270,6 @@ gaúcho/#nm/fp/
 gáudio/#nm//
 gaudioso/#a//
 gaulês/#hm/fp/
-gaullista/#a/p/
 gaussiano/#a/fp/
 gauss/#nm//
 gávea/#nf//
@@ -19510,7 +19499,6 @@ jaguar/#nm//
 jagunço/#nm//
 jamaicano/#hn/fp/
 jamais/#avn//
-jande/#nf/p/
 janeiras/#nf,N=p//
 janela/#nf/p/
 janeleiro/#hm/fp/
@@ -19523,6 +19511,7 @@ janotar/#vt/XYPL/
 janotice/#nf//
 janotismo/#nm/p/
 janta/#nf//
+jante/#nf/p/
 jantarada/#nf//
 jantarão/#nm//
 jantar/#nm/p/
@@ -19719,11 +19708,6 @@ kantismo/#nm/p/
 karate/#nm//
 karaoke/#nm//
 kepleriano/#a/fp/
-kilojoule/#nm//
-kilómetro/#nm/p/
-kilovolt/#nm/p/
-kilowatt-hora/#nm//
-kilowatt/#nm/p/
 kiwi/#nm/p/
 kuwaitiano/#hn/fp/
 lá/#av//
@@ -20292,7 +20276,6 @@ lezíria/#nf//
 lhe/CAT=ppes,N=s,P=3,C=a/p/
 lho/CAT=cp,Ppes=lhe,Pind=o,G=m,N=s/fp/
 liamba/#nf//
-lião/#nm/p/
 libação/#nm/p/
 libanês/#hm/fp/
 libelinha/#nf/p/
@@ -20843,7 +20826,7 @@ mãe/#nf/p/
 maestro/#nm/fp/
 mafarrico/#nm//
 má-fé/#nf//
-mafia/#nf/p/
+máfia/#nf/p/
 mafioso/#hn/fp/
 mafrense/#hn/p/
 maganão/#hm/p/
@@ -20926,7 +20909,6 @@ maiúsculo/#a/fp/
 majestade/#nf/p/
 majestático/#a/fpH/
 majestoso/#a/fpm/
-majorar/#v/c/
 majoria/#nf//
 major/#nm//
 malabarismo/#nm/p/
@@ -21249,7 +21231,6 @@ marcenaria/#nf/p/
 marceneirar/#vi/XYL/
 marceneiro/#nm//
 marchador/#nm//
-marchal/#nm//
 marcha/#nf/p/
 marchante/#nm/p/
 marchar/#vi/XYLDn/
@@ -21751,7 +21732,7 @@ merenda/#nf//
 merendar/#vt/XYPL/
 merendeira/#nf//
 merendeiro/#hm/f/
-meretiz/#nf//
+meretriz/#nf//
 mergulhador/#hm/fp/
 mergulhante/#an/p/
 mergulhão/#nm//
@@ -23179,7 +23160,6 @@ neve/#nf/p/
 neviscar/#vi/XYL/
 nevoaça/#nf//
 névoa/#nf/p/
-nevoar/#v/XYL/
 nevoeirada/#nf//
 nevoeira/#nf//
 nevoeirento/#a//
@@ -23374,7 +23354,6 @@ notificatório/#a//
 notocórdio/#nm//
 notoriedade/#nf/p/
 notório/#a/fpH/
-noturno/#a/pf/
 noutro/CAT=cp,Prep=em,Pind=outro,G=m,N=s/fp/
 noutrora/#av//
 nova/#hf//
@@ -26405,7 +26384,6 @@ predispor/#vt/KPL/
 predisposição/#nf/p/
 predisposto/#a//
 predizer/#vt/KPL/
-prediz/#nf/p/
 predominância/#nf/p/
 predominante/#an/pm/
 predominar/#vi/XYLcDn/
@@ -27431,17 +27409,21 @@ quilate/#nm/p/
 quilha/#nf/p/
 quilhar/#hm//
 quilhar/#vt/XYPL/
-quilocaloria/#nf//
-quilociclo/#nm//
+quilocaloria/#nf/p/
+quilociclo/#nm/p/
 quilograma/#nm/p/
 quilograma-padrão/#nm//
 quilograma-peso/#nm//
+quilojoule/#nm/p/
 quilohertz/#nm//
 quilolitro/#nm/p/
 quilometragem/#nf//
 quilometrar/#vt/XYPL/
 quilométrico/#a/p/
 quilómetro/#nm/p/
+quilovolt/#nm/p/
+quilowatt/#nm/p/
+quilowatt-hora/#nm//
 quilo/#nm/p/
 quiloso/#a//
 quilovátio-hora/#nm//
@@ -30376,7 +30358,6 @@ sexuado/#a/fm/
 sexual/#an/ptidm/
 sexualidade/#nf/p/
 sexualismo/#nm/p/
-sexualizar/#v/XYL/
 shakespeariano/#a/fp/
 siamês/#hm/fp/
 sibéria/#nf//
@@ -30888,7 +30869,6 @@ sopranista/#hm//
 soprano/#nn/t/
 soprar/#vn/XYPLD/
 sopro/#nm/p/
-sórbio/#a/fp/
 sordícia/#nf//
 sordideza/#nf//
 sordidez/#nf//
@@ -30944,7 +30924,6 @@ sova/#nf/p/
 sovar/#vt/XYPL/
 soviete/#nm/p/
 soviético/#a/pfAOx/
-sovietologia/#nf/qt/
 sovina/#hn/G/
 sovinaria/#nf/p/
 sovinar/#vt/XYPL/
