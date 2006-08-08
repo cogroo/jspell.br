@@ -2476,7 +2476,6 @@ apropriado/#a/pfmS/
 apropriador/#hm//
 apropriar/#vt/XYPLcD/
 aprosar/#vt/XYPL/
-aprouver/#v/XYL/         #aprazer ?
 aprovador/#hm//
 aprovar/#vt/XYPLScDv/
 aprovativo/#a//
@@ -6224,7 +6223,7 @@ caraça/#nf/p/
 caracará/#nm//
 caracolar/#vi/XYL/
 caracol/#nm/p/
-caracteres/#nm//
+caracteres/$carácter$#nmp//
 caracterial/#an//
 característica/#nf//
 característico/#a/pfH/
@@ -6232,7 +6231,6 @@ caracterização/#nf//
 caracterizante/#an/p/
 caracterizar/#vt/XYPLcDnS/
 carácter/#nm//
-caracter/#nm/p/
 caracterologia/#nf/pr/
 carago/#i//
 caraíba/#hn/p/
@@ -7640,7 +7638,6 @@ classificar/#vt/XYPLcDvR/
 classificativo/#a/fp/
 claudicante/#an/p/
 claudicar/#vi/XYLcn/
-clausal/#an/p/
 claustral/#an/p/
 claustra/#nf//
 claustrar/#vt/XYPL/
@@ -10251,7 +10248,6 @@ dejectar/#vt/XYPL/
 dejecto/#nm/p/
 dejectório/#nm//
 delação/#nf//
-delamber/#v/XYL/
 delambido/#hm//
 delatar/#vt/XYPLv/
 delator/#hm//
@@ -19870,7 +19866,7 @@ lanterna/#nf/p/
 lanterneiro/#nm//
 lanudo/#a//
 lanugem/#nf//
-lanugioso/#a//
+lanuginoso/#a//
 lanzudo/#a/fp/
 lapada/#nf//
 lapa/#nf//
@@ -20058,7 +20054,6 @@ legitimidade/#nf/p/
 legitimista/#hn//
 legítimo/#a/fp/
 legível/#an/pdm/
-lego/#nm/p/
 légua/#nf/p/
 legume/#nm/pt/
 leguminoso/#a/f/
@@ -21879,6 +21874,7 @@ migalha/#nf/p/
 migalharia/#nf/p/
 migalhice/#nf//
 migalho/#nm/f/
+migar/#vt/XY/
 migas/#nf,N=p//
 migo/CAT=ppes//
 migração/#nf//
@@ -23018,7 +23014,6 @@ neotropical/#an//
 neozelandês/#hm/fp/
 neperiano/#a/fp/
 nepotismo/#nm/p/
-nepotista/#hn/p/
 neptuniano/#a/fp/
 nervação/#nf//
 nervado/#a//
@@ -28695,7 +28690,7 @@ resistência/#nf/p/
 resistente/#an/pm/
 resistibilidade/#nf/p/
 resistir/#vi/XYLv/
-resitividade/#nf/p/
+resistividade/#nf/p/
 resma/#nf/p/
 resmungadela/#nf/p/
 resmungão/#hm/p/
@@ -28782,7 +28777,6 @@ ressunção/#nf//
 ressurgência/#nf/p/
 ressurgente/#an//
 ressurgir/#vn/XYPLM/
-ressurrecional/#an//
 ressurrecto/#a//
 ressurreição/#nf//
 ressuscitador/#hm//
@@ -28887,7 +28881,6 @@ retractar/#vt/XYPLc/
 retráctil/#an//
 retractilidade/#nf/p/
 retractivo/#a//
-retractor/$retractar$#vt$#hm//
 retradução/#nf//
 retraduzir/#vt/ZYPL/
 retraído/#a//
@@ -29039,7 +29032,7 @@ rezingueiro/#hm//
 riacho/#nm/p/
 ria/#nf/p/
 ribalta/#nf/p/
-ribanaceira/#nf//
+ribanceira/#nf//
 ribatejano/#hm/fp/
 ribeirada/#nf//
 ribeira/#nf/p/
@@ -29717,7 +29710,6 @@ sarar/#vn/XYPL/
 sarau/#nm/p/
 sarça/#nf/p/
 sarcasmo/#nm/p/
-sarcasta/#nn//
 sarcástico/#a/fpH/
 sarcófago/#hm//
 sarda/#nf/p/
@@ -29855,7 +29847,6 @@ secularizar/#vt/XYPLc/
 secular/#nm/p/
 século/#nm/p/
 secundário/#hm/pfH/
-secundarizar/#vt/XYPLnc/
 secundar/#vt/XYPL/
 secura/#nf/p/
 seda/#nf/p/
@@ -29868,7 +29859,7 @@ sedentarismo/#nm/p/
 sedente/#an/p/
 sedento/#a/p/
 sediar/#vt/XYPLMnv/
-sedimentalogia/#nf//
+sedimentologia/#nf//
 sedimentar/#an/p/
 sedimentário/#a//
 sedimentar/#vi/pc/
@@ -29982,7 +29973,7 @@ semicilíndrico/#a//
 semicilindro/#nm//
 semicircular/#an/p/
 semicírculo/#nm/p/
-semicircunfrência/#nf/p/
+semicircunferência/#nf/p/
 semiclausura/#nf//
 semicolcheia/#nf//
 semicondutor/#nm/p/
@@ -30113,7 +30104,7 @@ separatista/#hn//
 separativo/#a//
 separatório/#hm/fp/
 septenal/#an//
-septicemias/#nf/p/
+septicemia/#nf/p/
 séptico/#a/fp/
 septo/#nm/p/
 septuagenário/#hm/fp/
@@ -30189,7 +30180,6 @@ serrania/#nf/p/
 serrano/#hm/fp/
 serrar/#vt/XYPLcMD/
 serrim/#nm//
-serrotear/#vt/ZYPL/
 serrote/#nm//
 sertã/#nf//
 sertão/#nm//
@@ -30476,7 +30466,7 @@ sitiar/#vt/XYPLDn/
 sítio/#nm/p/
 situação/#nf//
 situacionismo/#nm/p/
-situacionsita/#nn//
+situacionista/#nn//
 situar/#vt/XYPLc/
 slogan/#nm/p/
 snobe/#nm/i/
@@ -30813,7 +30803,6 @@ soterrâneo/#hm//
 soterrar/#vt/XYPLcM/
 soturnidade/#nf/p/
 soturno/#a/d/
-souber/#v/XYL/
 soutien/#nf/p/
 souto/#nm/p/
 sovaco/#nm/p/
@@ -30973,7 +30962,6 @@ substantivo/#a/fp/
 substituir/#vt/KPLcnv/
 substitutivo/#a//
 substituto/#hm/fp/
-substracto/#hm//
 substrato/#nm/p/
 substrução/#nf//
 substrutura/#nf//
@@ -31272,7 +31260,6 @@ sustentante/#hn/p/
 sustentar/#vt/XYPLcMDnv/
 sustento/#nm//
 suster/#vt,I=3/PLMn/
-sustinendo/#nm/p/
 susto/#nm/p/
 su-sudoeste/#nm//
 su-sueste/#nm//
@@ -31427,7 +31414,6 @@ tânjara/#nf//
 tanoeiro/#nm/p/
 tanque/#nm/pA/
 tanso/#hm/p/
-tantadiço/#a//
 tântalo/#nm//
 tantíssimo/#a//
 tanto/#av/pfs/
@@ -31680,7 +31666,6 @@ tendenciosidade/#nf/p/
 tendencioso/#a/pd/
 tendente/#an//
 tender/#vn/XYPLn/
-tendiniforme/#an/p/
 tendinoso/#a//
 tendola/#nf//
 tenebrosidade/#nf/p/
@@ -31822,6 +31807,7 @@ terroso/#a/f/
 tertúlia/#nf/p/
 ter/#vn,I=3/PL/
 tesão/#nm//
+tesauro/$thesaurus$#nm$N=p//
 tese/#nf/p/
 teso/#hm/p/
 tesoirada/#nf//
@@ -31894,7 +31880,6 @@ textura/#nf/p/
 texugo/#nm/p/
 tez/#nf//
 thesaurus/#nm//
-thesauri/$thesaurus$#nm$N=p//
 tia-avó/#nf/p/
 tibetano/#hm/fp/
 tibial/#an//
@@ -32503,7 +32488,6 @@ travessia/#nf/p/
 travesso/#a/f/
 travessura/#nf/p/
 travesti/#nm//
-travestir/#v,I=3/L/
 travestismo/#nm/p/
 travo/#nm//
 travor/#nm//
@@ -32606,7 +32590,7 @@ trienal/#an//
 triénio/#nm/p/
 trifásico/#nm//
 trigal/#hm//
-trigramas/#nmp//
+trigrama/#nm/p/
 trigémeo/#hm//
 trigésimo/#o/pf/
 trigonal/#an/p/
@@ -32885,7 +32869,7 @@ ultimamente/#av//
 ultimar/#vt/XYPLcD/
 ultimato/#nm/p/
 último/#hm/fp/
-ultrajano/#a//
+ultrajado/#a//
 ultrajante/#an/p/
 ultrajar/#vt/XYPLDn/
 ultraje/#nm/p/
@@ -33501,7 +33485,6 @@ veterano/#hm/fp/
 veterinária/#nf/p/
 veterinário/#hm/fp/
 veto/#nm/p/
-vetusidade/#nf/p/
 vetusto/#a/fp/
 véu/#nm/p/
 vexame/#nm//
