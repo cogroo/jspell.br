@@ -61,7 +61,8 @@ PC/CAT=nc,G=m,N=s//
 PDF/CAT=np,G=f,N=s,SEM=sigla/p/
 Perl/CAT=nc,G=m,N=s//
 pipe/CAT=nc,G=f,N=s/p/
-pixel/CAT=nc,G=m,N=s/p/
+pixel/CAT=nc,G=m,N=s//
+pixeis/$pixel$#nm$N=p//
 PostgreSQL/CAT=np//
 Postscript/CAT=np//
 Prolog/CAT=np//
@@ -86,6 +87,7 @@ Unix/CAT=np,G=m//
 URL/CAT=np,G=m//
 VDM/CAT=np,G=m//
 webmaster/CAT=nc,G=m,N=s//
+web/CAT=nc,G=f,N=s//
 Windows/CAT=nc,G=m,N=s//
 www/CAT=np//
 XP/CAT=nc,G=m,N=s//
