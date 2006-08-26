@@ -12,18 +12,22 @@ use Date::Calc qw(Delta_Days);
 
 my $DIC='/home/natura/download/sources/Dictionaries';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
-my @cvs=qw!~/dicionarios/jspell.pt/DIC ~/natura/dicionarios/jspell.pt/DIC!;
+my @cvs=("$ENV{HOME}/dicionarios/jspell.pt/DIC",
+	 "$ENV{HOME}/natura/dicionarios/jspell.pt/DIC");
 my $cvs;
 
 for (@cvs){
-    $cvs=$_ && last if (-d $_);
+    if (-d "$_"){
+	$cvs=$_;
+	last;
+    }
 }
 
 my $feedfile='Atom.xml';
 
 $XML::Atom::DefaultVersion = "1.0";
 
-my $feed = XML::Atom::Feed->new;
+my $feed = XML::Atom::Feed->new(Version => 1.0);
 
 $feed->version; # 1.0
 $feed->title("Dicionários Opensource para o português");
@@ -40,34 +44,35 @@ $author->email('ruivilela@di.uminho.pt');
 $feed->author($author);
 
 #######################################################
-my $entry = XML::Atom::Entry->new;
+my $entry = XML::Atom::Entry->new(Version => 1.0);;
 $entry->title('Nova versão do dicionário português: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`);
 
-my $f=`ls -1t *.gz |grep -v latest|head -n 2`;
+my $f=`ls -1t $DIC/jspell/*.gz |grep -v latest|head -n 2`;
 
-$f=s/\n//;
+$f=~s/\n//;
 
-my $D;
-if (/(\d{4})(\d{2})(\d{2})\D+(d{4})(\d{2})(\d{2})/){
-    $D=@-;
+my $days;
+if ($f=~/(\d{4})(\d{2})(\d{2})\D+(\d{4})(\d{2})(\d{2})/s){
+    $days = abs(Delta_Days ($1,$2,$3,$4,$5,$6));
+}else{
+    warn "Problema com a pasta dos dicionários $DIC";
+    exit;
 }
 
-my $days = Delta_Days ($D);
+my $rcvs="<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? "s" : '')."):</p>";
+$rcvs.='='x64;
+$rcvs.="<br>\n\n";
 
-my $rcvs;
-foreach (`ls -1 $cvs`){
-    $rcvs=`cd $cvs; cvs diff -D $days`;
+foreach (`ls -1 $cvs/*.dic`){
+    $rcvs.=`cd $cvs; cvs diff -D "$days days ago" $_`;
 }
+$rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
+$rcvs=~s/RCS file.+\n//g;
+$rcvs=~s/retrieving revision.+\n//g;
 
-print Dumper $rcvs;
+#GET LAST ENTRYS
 
-$entry->content("Nova actualização do dicionário português para Jspell/Myspell/Aspell/Ispell disponível.\n\n Ver CHANGELOG para mais informações\n");
-
-my $link = XML::Atom::Link->new;
-$link->type('text/html');
-$link->rel('alternate');
-$link->href('http://www.example.com/2003/12/post.html');
-$entry->add_link($link);
+$entry->content("</br>\n$rcvs</br>\n<pre>Ver CHANGELOG para mais informações</pre>\n");
 
 $feed->add_entry($entry);
 
@@ -75,9 +80,9 @@ $feed->add_entry($entry);
 
 my $xml = $feed->as_xml;
 
-print Dumper $xml;
+#print Dumper \$xml;
 
-#$rss->add_item(about => time2str('%s',time),
-#	       description => 'Nova actualização do dicionário português para Jspell/Myspell/Aspell/Ispell disponível. Ver CHANGELOG para mais informações',
-#	       );
-#
+open my $F, ">$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
+print $F $xml;
+close $F;
+print "$feedfile criado com sucesso!\n" if (-e "$DIC/$feedfile");
