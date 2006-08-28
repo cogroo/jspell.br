@@ -80,9 +80,11 @@ $feed->add_entry($entry);
 
 my $xml = $feed->as_xml;
 
+$xml=~s/utf-8/iso-8859-1/i; #Resolver bug do módulo
 #print Dumper \$xml;
 
 open my $F, ">$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
 print $F $xml;
 close $F;
+
 print "$feedfile criado com sucesso!\n" if (-e "$DIC/$feedfile");
