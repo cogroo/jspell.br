@@ -9,6 +9,7 @@ use XML::Atom::Feed;
 use XML::Atom::Entry;
 use Data::Dumper;
 use Date::Calc qw(Delta_Days);
+use Date::Format qw(time2str);
 
 my $DIC='/home/natura/download/sources/Dictionaries';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
@@ -81,6 +82,10 @@ $feed->add_entry($entry);
 my $xml = $feed->as_xml;
 
 $xml=~s/utf-8/iso-8859-1/i; #Resolver bug do módulo
+my $data=time2str("%Y-%m-%dT%XZ",time);
+$xml=~s/(<entry.*)/$1<updated>$data<\/updated>/;
+
+
 #print Dumper \$xml;
 
 open my $F, ">$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
