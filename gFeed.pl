@@ -48,7 +48,7 @@ $feed->author($author);
 
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
-$entry->title('Nova versão do dicionário português: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`);
+$entry->title(Encode::decode_utf8('Nova versão do dicionário português: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`));
 
 my $f=`ls -1t $DIC/jspell/*.gz |grep -v latest|head -n 2`;
 
@@ -62,8 +62,8 @@ if ($f=~/(\d{4})(\d{2})(\d{2})\D+(\d{4})(\d{2})(\d{2})/s){
     exit;
 }
 
-my $rcvs="<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? "s" : '')."):</p>";
-$rcvs.='='x64;
+my $rcvs=Encode::decode_utf8("<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? "s" : '')."):</p>");
+$rcvs.='='x67;
 $rcvs.="<br>\n\n";
 
 foreach (`ls -1 $cvs/*.dic`){
@@ -72,10 +72,11 @@ foreach (`ls -1 $cvs/*.dic`){
 $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rcvs=~s/RCS file.+\n//g;
 $rcvs=~s/retrieving revision.+\n//g;
+$rcvs=~s/-r[\d\.]+//g;
 
 #GET LAST ENTRYS
 
-$entry->content("</br>\n$rcvs</br>\n<pre>Ver CHANGELOG para mais informações</pre>\n");
+$entry->content("</br>\n$rcvs</br>\n<pre>".Encode::decode_utf8("Ver CHANGELOG para mais informações</pre>\n"));
 
 $feed->add_entry($entry);
 
@@ -83,8 +84,8 @@ $feed->add_entry($entry);
 
 my $xml = $feed->as_xml;
 
-$xml=~s/utf-8/iso-8859-1/i; #Resolver bug do módulo
-my $data=time2str("%Y-%m-%dT%XZ",time);
+#$xml=~s/utf-8/iso-8859-1/i; #Resolver bug do módulo
+my $data=time2str("%Y-%m-%dT%XZ",time,'GMT');
 $xml=~s/(<entry.*)/$1<updated>$data<\/updated>/;
 
 
