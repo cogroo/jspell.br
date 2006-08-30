@@ -10,6 +10,8 @@ use XML::Atom::Entry;
 use Data::Dumper;
 use Date::Calc qw(Delta_Days);
 use Date::Format qw(time2str);
+use Encode;
+
 
 my $DIC='/home/natura/download/sources/Dictionaries';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
@@ -65,7 +67,7 @@ $rcvs.='='x64;
 $rcvs.="<br>\n\n";
 
 foreach (`ls -1 $cvs/*.dic`){
-    $rcvs.=`cd $cvs; cvs diff -D "$days days ago" $_`;
+    $rcvs.= Encode::decode('iso-8859-1',`cd $cvs; cvs diff -D "$days days ago" $_`);
 }
 $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rcvs=~s/RCS file.+\n//g;
