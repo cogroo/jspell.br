@@ -64,7 +64,7 @@ if ($f=~/(\d{4})(\d{2})(\d{2})\D+(\d{4})(\d{2})(\d{2})/s){
 
 my $rcvs=Encode::decode_utf8("<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? "s" : '')."):</p>");
 $rcvs.='='x67;
-$rcvs.="<br>\n\n";
+$rcvs.="\n\n";
 
 foreach (`ls -1 $cvs/*.dic`){
     $rcvs.= Encode::decode('iso-8859-1',`cd $cvs; cvs diff -D "$days days ago" $_`);
@@ -73,10 +73,12 @@ $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rcvs=~s/RCS file.+\n//g;
 $rcvs=~s/retrieving revision.+\n//g;
 $rcvs=~s/-r[\d\.]+//g;
+$rcvs=~s/\n/<\/br>\n/g;
 
 #GET LAST ENTRYS
+print Dumper \$rcvs;
 
-$entry->content("</br>\n$rcvs</br>\n<pre>".Encode::decode_utf8("Ver CHANGELOG para mais informações</pre>\n"));
+$entry->content("$rcvs</br>\n<pre>".Encode::decode_utf8("Ver CHANGELOG para mais informações</pre>\n"));
 
 $feed->add_entry($entry);
 
