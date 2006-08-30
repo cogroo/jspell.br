@@ -84,7 +84,7 @@ $feed->add_entry($entry);
 
 my $xml = $feed->as_xml;
 
-#$xml=~s/utf-8/iso-8859-1/i; #Resolver bug do módulo
+$xml=~s/utf-8/iso-8859-1/i; #Resolver bug do módulo
 my $data=time2str("%Y-%m-%dT%XZ",time,'GMT');
 $xml=~s/(<entry.*)/$1<updated>$data<\/updated>/;
 
