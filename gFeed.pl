@@ -48,7 +48,7 @@ $feed->author($author);
 
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
-$entry->title(Encode::decode_utf8('Nova versão do dicionário português: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`));
+$entry->title(Encode::decode_utf8('Nova versão do dicionário: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`));
 
 my $f=`ls -1t $DIC/jspell/*.gz |grep -v latest|head -n 2`;
 
