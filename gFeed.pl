@@ -13,7 +13,7 @@ use Date::Format qw(time2str);
 use Encode;
 
 
-my $DIC='/home/natura/download/sources/Dictionaries/jspell';
+my $DIC='/home/natura/download/sources/Dictionaries';
 #my $DIC='/home/ruivilela/dd';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
 my @cvs=("$ENV{HOME}/dicionarios/jspell.pt/DIC",
@@ -50,9 +50,9 @@ $feed->author($author);
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
 
-$entry->title(Encode::decode_utf8('Nova versão do dicionário: '. `ls -rt -c1 $DIC |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`));
+$entry->title(Encode::decode_utf8('Nova versão do dicionário: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`));
 
-my $f=`ls -1t $DIC/*.gz |grep -v latest|head -n 2`;
+my $f=`ls -1t $DIC/jspell/*.gz |grep -v latest|head -n 2`;
 
 $f=~s/\n//;
 
