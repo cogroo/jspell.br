@@ -93,8 +93,10 @@ $xml=~s/utf-8/iso-8859-1/i; #Resolver bug do módulo
 #print Dumper \$xml;
 
 my $data=time2str("%Y-%m-%dT%XZ",time);
-$xml=~s/<feed.*/$&<updated>$data<\/updated>/;
-$xml=~s/<entry.*/$&<updated>$data<\/updated><published>$data<\/published>/;
+my $id="http://natura.di.uminho.pt/,".time2str("%s",time);
+$xml=~s/<feed.*/$&<updated>$data<\/updated><id>$id<\/id>/;
+$xml=~s/<entry.*/$&<updated>$data<\/updated><published>$data<\/published><id>$id<\/id>/;
+
 
 my $new = $& if ($xml=~/(<entry.*?<\/entry>)/s);
 #print Dumper \$new;
