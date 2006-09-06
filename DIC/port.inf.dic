@@ -30,6 +30,7 @@ Firefox/CAT=np,G=m,N=s//
 flag/CAT=nc,G=f,N=s/a/
 Fortran/CAT=np//
 Fuzzy/CAT=adj,G=_,N=s//
+Google/CAT=np,G=m,N=s//
 hardware/CAT=nc,G=m,N=s//
 http/CAT=np//
 IBM/CAT=np,G=f,N=s//

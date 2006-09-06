@@ -16,8 +16,9 @@
 #tpf/CAT=np,SEM=country,G=f,N=s
 #tc/CAT=np,SEM=cid,G=m,N=s
 #tcf/CAT=np,SEM=cid,G=f,N=s
+#nppm/CAT=np,SEM=proj,G=m,N=s
 #nppf/CAT=np,SEM=proj,G=f,N=s
-#em/CAT=np,SEM=mes,G=m,N=s/
+#em/CAT=np,SEM=mes,G=m,N=s
 
 Aachen/#tc/
 Aalborg/#tc/
@@ -843,6 +844,7 @@ Engrácia/#npf/
 Entre-os-Rios/#t/
 Epicuro/#np/
 Erasmo/#np1/
+Erasmus/#nppm/
 Eratóstenes/#np/
 Ericeira/CAT=np/
 Erich/#np1/
@@ -2304,6 +2306,7 @@ Siracusa/CAT=np/
 Siracusanas/CAT=np/
 Sir/CAT=np/
 Síria/#la,#tpf/
+Siza/#np/
 Smith/#np1/
 Soares/#np/
 Sobral/#t/
@@ -2520,6 +2523,7 @@ Valongo/#tc/
 Valónia/#t/
 Valpaços/#t/
 Van/#np1/
+Vânia/#npf/
 Varsóvia/#tc/
 Varzim/#tc/
 Vasconcelos/CAT=np/
