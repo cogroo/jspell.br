@@ -76,7 +76,7 @@ $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rcvs=~s/RCS file.+\n//g;
 $rcvs=~s/retrieving revision.+\n//g;
 $rcvs=~s/-r[\d\.]+//g;
-$rcvs=~s/\n/<\/br>\n/g;
+$rcvs=~s/\n/<br\/>\n/g;
 
 #GET LAST ENTRYS
 #print Dumper \$rcvs;
