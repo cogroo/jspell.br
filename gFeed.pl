@@ -51,6 +51,7 @@ $feed->author($author);
 
 $feed->id("http://natura.di.uminho.pt/,".time2str("%s",time));
 $feed->updated($data);
+$feed->icon($url."dic.ico");
 
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
