@@ -79,8 +79,9 @@ $rcvs.="</p>";
 $rcvs.="<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? 's' : '')."):</p>";
 $rcvs.="\n\n<code>";
 
+my $hours=$days*24-12; #Não contar o dia da última alteração?
 foreach (`ls -1 $cvs/*.dic`){
-   $rcvs.= Encode::decode('iso-8859-1',`cd $cvs; cvs diff -D "$days days ago" $_`); #eval?
+   $rcvs.= Encode::decode('iso-8859-1',`cd $cvs; cvs diff -D "$hours hours ago" $_`); #eval?
 }
 
 $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
