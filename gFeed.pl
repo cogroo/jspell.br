@@ -13,8 +13,8 @@ use Date::Format qw(time2str);
 use XML::DT;
 
 
-#my $DIC='/home/natura/download/sources/Dictionaries';
-my $DIC='/home/ruivilela/dd';
+my $DIC='/home/natura/download/sources/Dictionaries';
+#my $DIC='/home/ruivilela/dd';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
 my @cvs=("$ENV{HOME}/dicionarios/jspell.pt/DIC",
 	 "$ENV{HOME}/natura/dicionarios/jspell.pt/DIC");
@@ -71,9 +71,9 @@ my $rcvs="<p>Alterações efectuadas desde a última actualização (Há $days d
 $rcvs.='='x67;
 $rcvs.="\n";
 
-#foreach (`ls -1 $cvs/*.dic`){
-#   $rcvs.= `cd $cvs; cvs diff -D "$days days ago" $_`; #eval?
-#}
+foreach (`ls -1 $cvs/*.dic`){
+   $rcvs.= `cd $cvs; cvs diff -D "$days days ago" $_`; #eval?
+}
 
 $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rcvs=~s/RCS file.+\n//g;
@@ -93,36 +93,27 @@ my $xml = $feed->as_xml;
 
 ######################################################
 
-my $new = $& if ($xml=~/(<entry.*?<\/entry>)/s);
+my @entry;
 
-#Barb
-my $G;
-open $G,"<feedHistory" || goto label1;
+my %h = ( -outputenc => 'UTF-8',
+       -inputenc => 'UTF-8',
+       'entry' => sub{push @entry, "<$q>$c</$q>"}
+       ); 
+dt("$DIC/$feedfile",%h) if (-e "$DIC/$feedfile");
 
-$/='</entry>';
 my $c=10;
 my $d=substr($data,0,10);
 my $oldEntry='';
-while (<$G>){
+for (@entry){
     next if (/$d/); #Evitar mais do que uma entry por dia
     next if /^\s$/s;
-    $xml=~s/<\/entry>/$&$_/;
+    $xml=~s/<\/entry>/"$&\n$_"/e;
     last if (--$c==0);
-    $oldEntry.=$_;
 }
 
-$/='\n';
-close $G;
+print Dumper \$xml;
 
-label1:
-
-open $G, ">feedHistory" || warn "Not keeping feed history!";
-print $G $new."\n".$oldEntry;
-close $G;
-
-#print Dumper \$xml;
-
-open my $F, ">:utf8","$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
-print $F $xml;
-close $F;
-print "$feedfile criado com sucesso!\n" if (-e "$DIC/$feedfile");
+#open my $F, ">:utf8","$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
+#print $F $xml;
+#close $F;
+#print "$feedfile criado com sucesso!\n" if (-e "$DIC/$feedfile");
