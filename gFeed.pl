@@ -12,6 +12,7 @@ use Data::Dumper;
 use Date::Calc qw(Delta_Days);
 use Date::Format qw(time2str);
 use encoding "utf-8";
+use Encode "decode";
 use XML::DT;
 
 
@@ -79,7 +80,7 @@ $rcvs.="<p>Alterações efectuadas desde a última actualização (Há $days dia
 $rcvs.="\n\n<code>";
 
 foreach (`ls -1 $cvs/*.dic`){
-   $rcvs.= `cd $cvs; cvs diff -D "$days days ago" $_`; #eval?
+   $rcvs.= Encode::decode('iso-8859-1',`cd $cvs; cvs diff -D "$days days ago" $_`); #eval?
 }
 
 $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
@@ -114,7 +115,6 @@ my $c=10;
 my $d=substr($data,0,10);
 for (@entry){
     next if (/$d/s); #Evitar mais do que uma entry por dia
-    next if /^\s$/s;
     $xml=~s/<\/entry>/"$&\n$_"/e;
     last if (--$c==0);
 }
