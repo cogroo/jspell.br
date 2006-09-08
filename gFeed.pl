@@ -2,6 +2,7 @@
 
 #Rui Vilela, Linguateca 2006
 #Gera um feed para o lançamento de novas versões do dicionário
+#USAR com makefile installweb
 
 use strict;
 use warnings;
@@ -10,6 +11,7 @@ use XML::Atom::Entry;
 use Data::Dumper;
 use Date::Calc qw(Delta_Days);
 use Date::Format qw(time2str);
+use encoding "utf-8";
 use XML::DT;
 
 
@@ -18,6 +20,7 @@ my $DIC='/home/natura/download/sources/Dictionaries';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
 my @cvs=("$ENV{HOME}/dicionarios/jspell.pt/DIC",
 	 "$ENV{HOME}/natura/dicionarios/jspell.pt/DIC");
+my $feedfile='atom.xml';
 my $cvs;
 
 for (@cvs){
@@ -26,8 +29,6 @@ for (@cvs){
 	last;
     }
 }
-
-my $feedfile='atom.xml';
 
 $XML::Atom::DefaultVersion = "1.0";
 my $feed = XML::Atom::Feed->new(Version => 1.0);
@@ -53,7 +54,9 @@ $feed->updated($data);
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
 
-$entry->title('Nova versão do dicionário: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`);
+my $l=`ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`; ##eval?
+$l=~s/\n$//;
+$entry->title("Nova versão do dicionário: $l");
 
 my $f=`ls -1t $DIC/jspell/*.gz |grep -v latest|head -n 2`; ##
 
@@ -67,9 +70,13 @@ if ($f=~/(\d{4})(\d{2})(\d{2})\D+(\d{4})(\d{2})(\d{2})/s){
     exit;
 }
 
-my $rcvs="<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? 's' : '')."):</p>";
-$rcvs.='='x67;
-$rcvs.="\n";
+my $rcvs="<p>Disponível nos formatos: [";
+$l=~s/^\w+//;
+$rcvs.=" <a href='$url$_/$_$l.tar.gz'>$_</a> |" for (qw/jspell myspell aspell aspell6 ispell/);
+$rcvs=~s/\|$/\]/;
+$rcvs.="</p>";
+$rcvs.="<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? 's' : '')."):</p>";
+$rcvs.="\n\n<code>";
 
 foreach (`ls -1 $cvs/*.dic`){
    $rcvs.= `cd $cvs; cvs diff -D "$days days ago" $_`; #eval?
@@ -79,9 +86,11 @@ $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rcvs=~s/RCS file.+\n//g;
 $rcvs=~s/retrieving revision.+\n//g;
 $rcvs=~s/-r[\d\.]+//g;
+
+$rcvs.="</code><p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?&topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
 $rcvs=~s/\n/<br\/>\n/g;
 
-$entry->content("$rcvs<pre>Ver CHANGELOG para mais informações</pre>\n");
+$entry->content($rcvs);
 
 $entry->id("http://natura.di.uminho.pt/,".time2str("%s",time));
 $entry->published($data);
@@ -103,17 +112,16 @@ dt("$DIC/$feedfile",%h) if (-e "$DIC/$feedfile");
 
 my $c=10;
 my $d=substr($data,0,10);
-my $oldEntry='';
 for (@entry){
-    next if (/$d/); #Evitar mais do que uma entry por dia
+    next if (/$d/s); #Evitar mais do que uma entry por dia
     next if /^\s$/s;
     $xml=~s/<\/entry>/"$&\n$_"/e;
     last if (--$c==0);
 }
 
-print Dumper \$xml;
+#print Dumper \$xml;
 
-#open my $F, ">:utf8","$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
-#print $F $xml;
-#close $F;
-#print "$feedfile criado com sucesso!\n" if (-e "$DIC/$feedfile");
+open my $F, ">:utf8","$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
+print $F $xml;
+close $F;
+print "$feedfile criado com sucesso!\n" if (-e "$DIC/$feedfile");
