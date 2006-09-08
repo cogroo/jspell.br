@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -w
 
 #Rui Vilela, Linguateca 2006
 #Gera um feed para o lançamento de novas versões do dicionário
@@ -10,11 +10,11 @@ use XML::Atom::Entry;
 use Data::Dumper;
 use Date::Calc qw(Delta_Days);
 use Date::Format qw(time2str);
-use Encode;
+use XML::DT;
 
 
-my $DIC='/home/natura/download/sources/Dictionaries';
-#my $DIC='/home/ruivilela/dd';
+#my $DIC='/home/natura/download/sources/Dictionaries';
+my $DIC='/home/ruivilela/dd';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
 my @cvs=("$ENV{HOME}/dicionarios/jspell.pt/DIC",
 	 "$ENV{HOME}/natura/dicionarios/jspell.pt/DIC");
@@ -30,8 +30,8 @@ for (@cvs){
 my $feedfile='atom.xml';
 
 $XML::Atom::DefaultVersion = "1.0";
-
 my $feed = XML::Atom::Feed->new(Version => 1.0);
+my $data=time2str("%Y-%m-%dT%XZ",time);
 
 #$feed->version; # 1.0
 $feed->title("Dicionários Opensource para o português");
@@ -47,12 +47,15 @@ $author->name('Rui Vilela');
 $author->email('ruivilela@di.uminho.pt');
 $feed->author($author);
 
+$feed->id("http://natura.di.uminho.pt/,".time2str("%s",time));
+$feed->updated($data);
+
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
 
-$entry->title(Encode::decode_utf8('Nova versão do dicionário: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`));
+$entry->title('Nova versão do dicionário: '. `ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`);
 
-my $f=`ls -1t $DIC/jspell/*.gz |grep -v latest|head -n 2`;
+my $f=`ls -1t $DIC/jspell/*.gz |grep -v latest|head -n 2`; ##
 
 $f=~s/\n//;
 
@@ -64,13 +67,13 @@ if ($f=~/(\d{4})(\d{2})(\d{2})\D+(\d{4})(\d{2})(\d{2})/s){
     exit;
 }
 
-my $rcvs=Encode::decode_utf8("<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? "s" : '')."):</p>");
+my $rcvs="<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? 's' : '')."):</p>";
 $rcvs.='='x67;
 $rcvs.="\n";
 
-foreach (`ls -1 $cvs/*.dic`){
-    $rcvs.= Encode::decode('iso-8859-1',`cd $cvs; cvs diff -D "$days days ago" $_`);
-}
+#foreach (`ls -1 $cvs/*.dic`){
+#   $rcvs.= `cd $cvs; cvs diff -D "$days days ago" $_`; #eval?
+#}
 
 $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rcvs=~s/RCS file.+\n//g;
@@ -78,28 +81,19 @@ $rcvs=~s/retrieving revision.+\n//g;
 $rcvs=~s/-r[\d\.]+//g;
 $rcvs=~s/\n/<br\/>\n/g;
 
-#GET LAST ENTRYS
-#print Dumper \$rcvs;
+$entry->content("$rcvs<pre>Ver CHANGELOG para mais informações</pre>\n");
 
-$entry->content("$rcvs<pre>".Encode::decode_utf8("Ver CHANGELOG para mais informações")."</pre>\n");
+$entry->id("http://natura.di.uminho.pt/,".time2str("%s",time));
+$entry->published($data);
+$entry->updated($data);
 
 $feed->add_entry($entry);
 
-#######################################################
-
 my $xml = $feed->as_xml;
 
-$xml=~s/utf-8/iso-8859-1/i; #Resolver bug do módulo
-#print Dumper \$xml;
-
-my $data=time2str("%Y-%m-%dT%XZ",time);
-my $id="http://natura.di.uminho.pt/,".time2str("%s",time);
-$xml=~s/<feed.*/$&<updated>$data<\/updated><id>$id<\/id>/;
-$xml=~s/<entry.*/$&<updated>$data<\/updated><published>$data<\/published><id>$id<\/id>/;
-
+######################################################
 
 my $new = $& if ($xml=~/(<entry.*?<\/entry>)/s);
-#print Dumper \$new;
 
 #Barb
 my $G;
@@ -120,8 +114,6 @@ while (<$G>){
 $/='\n';
 close $G;
 
-#print Dumper \$xml;
-#print Dumper \$oldEntry;
 label1:
 
 open $G, ">feedHistory" || warn "Not keeping feed history!";
@@ -130,9 +122,7 @@ close $G;
 
 #print Dumper \$xml;
 
-open my $F, ">$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
+open my $F, ">:utf8","$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
 print $F $xml;
 close $F;
-
-#xmllint --format ?
 print "$feedfile criado com sucesso!\n" if (-e "$DIC/$feedfile");
