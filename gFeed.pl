@@ -51,7 +51,7 @@ $feed->author($author);
 
 $feed->id("http://natura.di.uminho.pt/,".time2str("%s",time));
 $feed->updated($data);
-$feed->icon($url."dic.ico");
+#$feed->icon($url."dic.ico");
 
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
@@ -89,8 +89,8 @@ $rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rcvs=~s/RCS file.+\n//g;
 $rcvs=~s/retrieving revision.+\n//g;
 $rcvs=~s/-r[\d\.]+//g;
-
-$rcvs.="</code><p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
+$rcvs.="</code><p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
+$rcvs.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
 $rcvs=~s/\n/<br\/>\n/g;
 
 $entry->content($rcvs);
