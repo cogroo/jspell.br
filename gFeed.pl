@@ -41,7 +41,7 @@ $feed->title("Dicionários Opensource para o português");
 my $mlink = XML::Atom::Link->new;
 $mlink->type('text/html');
 $mlink->rel('alternate');
-$mlink->href('http://natura.di.uminho.pt/natura/natura?&topic=Dicion%E1rios');
+$mlink->href('http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios');
 $feed->add_link($mlink);
 
 my $author = XML::Atom::Person->new;
@@ -90,7 +90,7 @@ $rcvs=~s/RCS file.+\n//g;
 $rcvs=~s/retrieving revision.+\n//g;
 $rcvs=~s/-r[\d\.]+//g;
 
-$rcvs.="</code><p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?&topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
+$rcvs.="</code><p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
 $rcvs=~s/\n/<br\/>\n/g;
 
 $entry->content($rcvs);
