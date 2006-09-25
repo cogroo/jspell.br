@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+my $dict = shift or die;
+
+open(F, "cut -f 1,3 -d '/' $dict | jspell -d port  -e  |") or die;
+
+open(F1,"| sort -u") or die;
+
+while(<F>){
+#  next if /^#/;
+  s/lex\(.*?\)//g;
+  s/[=\n, ]+/\n/g;
+  print "$_\n";
+}
+
+close F1;
+
