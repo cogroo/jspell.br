@@ -214,7 +214,7 @@ jspell-install: port.hash port.irr
 
 # Jspell port man
 
-install-man: jspell.pt.1
+install-man: jspell-pt.1
 	cp jspell.pt.1  /usr/local/man/man1/
 
 jspell-pt.1: jspell.pt.pod
