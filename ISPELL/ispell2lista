@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+my $dict = shift or die;
+
+open(F, "ispell -d port  -e < $dict |") or die;
+open(F1,"| sort -u") or die;
+
+while(<F>){
+  s/[-= ,\n]+/\n/g;
+  print F1 "$_\n";
+}
+
+close F1;

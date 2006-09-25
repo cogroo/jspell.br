@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+my $dict = shift or die;
+
+open(F,qq{awk -F / '{print \$1 "/" \$3}' $dict | jspell -e -o '' |}) or die;
+open(F1,"| grep -v '#' |grep '[a-zA-Zайубъ]' | sort -u") or die;
+
+while(<F>){
+  s/[= ,\n]+/\n/g;
+  print F1 "$_\n";
+}
+
