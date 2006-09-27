@@ -9,7 +9,6 @@ use warnings;
 use XML::Atom::Feed;
 use XML::Atom::Entry;
 use Data::Dumper;
-use Date::Calc qw(Delta_Days);
 use Date::Format qw(time2str);
 use encoding "utf-8";
 use Encode "decode";
@@ -19,14 +18,17 @@ use XML::DT;
 my $DIC='/home/natura/download/sources/Dictionaries';
 #my $DIC='/home/ruivilela/dd';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
-my @cvs=("$ENV{HOME}/dicionarios/jspell.pt/DIC",
+my @svn=("$ENV{HOME}/dics/jspell.pt/DIC",
 	 "$ENV{HOME}/natura/dicionarios/jspell.pt/DIC");
-my $feedfile='atom.xml';
-my $cvs;
 
-for (@cvs){
+my $feedfile='atom.xml';
+#my $feedfile='_atom.xml';
+
+my $svn;
+
+for (@svn){
     if (-d "$_"){
-	$cvs=$_;
+	$svn=$_;
 	last;
     }
 }
@@ -49,9 +51,24 @@ $author->name('Rui Vilela');
 $author->email('ruivilela@di.uminho.pt');
 $feed->author($author);
 
-$feed->id("http://natura.di.uminho.pt/,".time2str("%s",time));
+(my $currentRevision=`svn update | tail -n 1`)=~s/^\D*(\d+)\D*$/$1/;
+
+$feed->id(time2str("%s",time)."-".$currentRevision);
 $feed->updated($data);
 #$feed->icon($url."dic.ico");
+
+#######################################################
+
+my $ultRev=0;
+my @entry;
+
+my %h = ( -outputenc => 'UTF-8',
+	  -inputenc => 'UTF-8',
+	  "feed/id" => sub{ if ($c=~/-(\d+)/) { $ultRev=$1; } },
+	  "entry" => sub{push @entry, "<$q>$c</$q>"}
+       ); 
+
+pathdt("$DIC/$feedfile",%h) if (-e "$DIC/$feedfile");
 
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
@@ -60,43 +77,31 @@ my $l=`ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n
 $l=~s/\n$//;
 $entry->title("Nova versão do dicionário: $l");
 
-my $f=`ls -1t $DIC/jspell/*.gz |grep -v latest|head -n 2`; ##
-
-$f=~s/\n//;
-
-my $days;
-if ($f=~/(\d{4})(\d{2})(\d{2})\D+(\d{4})(\d{2})(\d{2})/s){
-    $days = abs(Delta_Days ($1,$2,$3,$4,$5,$6));
-}else{
-    warn "Problema com a pasta dos dicionários $DIC";
-    exit;
-}
-
-my $rcvs="<p>Disponível nos formatos: [";
+my $rsvn="<p>Disponível nos formatos: [";
 $l=~s/^\w+//;
-$rcvs.=" <a href='$url$_/$_$l.tar.gz'>$_</a> |" for (qw/jspell myspell aspell aspell6 ispell/);
-$rcvs=~s/\|$/\]/;
-$rcvs.="</p>";
-$rcvs.="<p>Alterações efectuadas desde a última actualização (Há $days dia".($days>1 ? 's' : '')."):</p>";
-$rcvs.="\n\n<code>";
+$rsvn.=" <a href='$url$_/$_$l.tar.gz'>$_</a> |" for (qw/jspell myspell aspell aspell6 ispell/);
+$rsvn=~s/\|$/\]/;
+$rsvn.="</p>";
+my $lastUpdate=`svn log -r $ultRev |grep -e '^r' |awk '{print \$5,\$6}' `;
+$rsvn.="<p>Alterações efectuadas desde a última actualização desde : $lastUpdate</p>";
+$rsvn.="\n\n<code>";
 
-my $hours=$days*24-12; #Não contar o dia da última alteração?
-foreach (`ls -1 $cvs/*.dic`){
-   (my $rrcvs= Encode::decode('iso-8859-1',`cd $cvs; cvs diff -D "$hours hours ago" $_`)) =~tr/<>/\-\+/;
-   $rcvs.= $rrcvs; #eval? #tr para bug dos readers
+foreach (`ls -1 $svn/*.dic`){
+    if ($ultRev!=0){
+	$rsvn.= Encode::decode('iso-8859-1',`cd $svn; svn diff -r $ultRev:$currentRevision --diff-cmd /usr/bin/diff -x -U0 $_`);
+    }else{
+	$rsvn.= "<p>Não foi possível obter as diferenças desde a última versão<p>"
+    }
 }
 
-$rcvs=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
-$rcvs=~s/RCS file.+\n//g;
-$rcvs=~s/retrieving revision.+\n//g;
-$rcvs=~s/-r[\d\.]+//g;
-$rcvs.="</code><p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
-$rcvs.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
-$rcvs=~s/\n/<br\/>\n/g;
+$rsvn=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
+$rsvn.="</code><p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
+$rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
+$rsvn=~s/\n/<br\/>\n/g;
 
-$entry->content($rcvs);
+$entry->content($rsvn);
 
-$entry->id("http://natura.di.uminho.pt/,".time2str("%s",time));
+$entry->id(time2str("%s",time)."-".$currentRevision);
 $entry->published($data);
 $entry->updated($data);
 
@@ -105,14 +110,6 @@ $feed->add_entry($entry);
 my $xml = $feed->as_xml;
 
 ######################################################
-
-my @entry;
-
-my %h = ( -outputenc => 'UTF-8',
-       -inputenc => 'UTF-8',
-       'entry' => sub{push @entry, "<$q>$c</$q>"}
-       ); 
-dt("$DIC/$feedfile",%h) if (-e "$DIC/$feedfile");
 
 my $c=10;
 my $d=substr($data,0,10);
