@@ -83,7 +83,7 @@ $rsvn.=" <a href='$url$_/$_$l.tar.gz'>$_</a> |" for (qw/jspell myspell aspell as
 $rsvn=~s/\|$/\]/;
 $rsvn.="</p>";
 my $lastUpdate=`svn log -r $ultRev |grep -e '^r' |awk '{print \$5,\$6}' `;
-$rsvn.="<p>Alterações efectuadas desde a última actualização desde : $lastUpdate</p>";
+$rsvn.="<p>Alterações efectuadas desde a última actualização : $lastUpdate</p>";
 $rsvn.="\n\n<code>";
 
 foreach (`ls -1 $svn/*.dic`){
