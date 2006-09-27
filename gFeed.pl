@@ -64,8 +64,8 @@ my @entry;
 
 my %h = ( -outputenc => 'UTF-8',
 	  -inputenc => 'UTF-8',
-	  "feed/id" => sub{ if ($c=~/-(\d+)/) { $ultRev=$1; } },
-	  "entry" => sub{push @entry, "<$q>$c</$q>"}
+	  "feed/id" => sub{ if ($c=~/-(\d+)/) { $ultRev=$1 } },
+	  "entry" => sub{ push @entry, "<$q>$c</$q>" }
        ); 
 
 pathdt("$DIC/$feedfile",%h) if (-e "$DIC/$feedfile");
@@ -95,6 +95,7 @@ foreach (`ls -1 $svn/*.dic`){
 }
 
 $rsvn=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
+$rsvn=~s!(--- |\+\+\+ ).+?([^/\n]+)!$1$2!g;
 $rsvn.="</code><p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
 $rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
 $rsvn=~s/\n/<br\/>\n/g;

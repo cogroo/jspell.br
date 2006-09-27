@@ -23,9 +23,7 @@ aspell: ../port.dic
 tgz:
 	mkdir aspell.$(ABR)-$(DATE)
 	cp ../COPYING aspell.$(ABR)-$(DATE)
-	mv $P/CVS _CVS
 	cp $P/* aspell.$(ABR)-$(DATE)
-	mv _CVS $P/CVS
 	cd aspell.$(ABR)-$(DATE); rm -f *~ *.old *.rws Makefile
 	tar czf aspell.$(ABR)-$(DATE).tar.gz aspell.$(ABR)-$(DATE)
 	rm -fr aspell.$(ABR)-$(DATE)
