@@ -2065,6 +2065,7 @@ anti-hemorroidal/#an//
 anti-hepático/#a/fp/
 anti-hipnótico/#a//
 anti-infeccioso/#a//
+anti-inflamatório/#nm/p/
 antijurídico/#a//
 antiletárgico/#a//
 antiliberal/#an//
@@ -5062,7 +5063,7 @@ bonequeiro/#nm//
 bonificar/#vt/XYPLc/
 boníssimo/#a,GR=sup/p/
 boniteza/#nf//
-bonito/#hm/fp/
+bonito/#hm/fph/
 bonitote/#a//
 bonomia/#nf//
 bons-dias/#nm,N=p//
@@ -7947,7 +7948,7 @@ colheita/#nf/p/
 colheraça/#nf//
 colherada/#nf//
 colherão/#nm//
-colher/#nf/p/
+colher/#nf/ph/
 colher/#vn/XYPLM/
 colibri/#nm//
 cólica/#nf//
@@ -8983,7 +8984,7 @@ contranaturalidade/#nf/p/
 contra/#nf/p/
 contra-ofensiva/#nf/p/
 contra-ordem/#nf//
-contra-ordenar/#vt/XYPL/
+contra-ordenar/#vt/XYPLc/
 contrapartida/#nf/p/
 contrapasso/#nm/p/
 contrapesar/#vn/XYPL/
@@ -12160,7 +12161,7 @@ einsteiniano/#a/fp/
 eirada/#nf//
 eirado/#nm/f/
 eira/#nf/p/
-eis/#av//
+eis/#av/P/
 eixo/#nm/p/
 ejacular/#vt/XYPLcD/
 ejaculatório/#a//
@@ -14925,8 +14926,8 @@ federalizar/#vt/XYPL/
 federar/#vt/XYPLc/
 federativo/#a/fp/
 feder/#vi/XYL/
-fedorenta/#nf//
-fedorento/#a/f/
+fedorenta/#nf/p/
+fedorento/#hn/fp/
 fedor/#nm/p/
 feição/#nf/p/
 feijão-frade/#nm//
@@ -15411,7 +15412,7 @@ fogão/#nm/p/
 fogareiro/#nm//
 fogo-de-artifício/#nm//
 fogo-fátuo/#nm//
-fogo/#nm/p/
+fogo/#nm/pA/
 fogosidade/#nf/p/
 fogoso/#a/fpmd/
 foguear/#vn/ZYPL/
@@ -19435,7 +19436,7 @@ jagunço/#nm//
 jamaicano/#hn/fp/
 jamais/#avn//
 janeiras/#nf,N=p//
-janela/#nf/p/
+janela/#nf/ph/
 janeleiro/#hm/fp/
 janelo/#nm/p/
 jangada/#nf/p/
@@ -21324,6 +21325,7 @@ matagoso/#a//
 matança/#nf/p/
 mata/#nf/p/
 mata-ratos/#nm//
+mata-moscas/#nmp//
 matar/#vn/XYPLD/
 mate/#hm//
 matemática/#nf/p/
@@ -25373,7 +25375,7 @@ pesquisar/#vt/XYPLD/
 pessegada/#nf//
 pessegal/#nm//
 pêssego/#nm/p/
-pessegueiro/#nm//
+pessegueiro/#nm/p/
 pessimamente/#av//
 pessimismo/#nm/p/
 pessimista/#nn/p/
@@ -25973,7 +25975,7 @@ pontilhar/#vt/XYPLc/
 pontinha/#nf//
 ponto/#nm/ph/
 pontuação/#nf/p/
-pontual/#an/pmd/
+pontual/#an/pmds/
 pontualidade/#nf/p/
 pontuar/#vn/XYPLcv/
 pontudo/#a//
@@ -28050,7 +28052,7 @@ redoma/#nf//
 redondear/#vt/ZYPL/
 redondeza/#nf/p/
 redondez/#nf//
-redondo/#a/fmp/
+redondo/#a/fmph/
 redopiar/#vi/XYL/
 redopio/#nm//
 redor/#nm//
@@ -32089,7 +32091,7 @@ tontaria/#nf/p/
 tontear/#vi/ZYL/
 tonteira/#nf/p/
 tonto/#a/fpmG/
-tontura/#nf//
+tontura/#nf/p/
 topada/#nf//
 topar/#vt/XYPL/
 topázio/#nm/p/
