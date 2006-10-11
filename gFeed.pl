@@ -19,7 +19,9 @@ my $DIC='/home/natura/download/sources/Dictionaries';
 #my $DIC='/home/ruivilela/dd';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
 my @svn=("$ENV{HOME}/dics/jspell.pt/DIC",
-	 "$ENV{HOME}/natura/dicionarios/jspell.pt/DIC");
+	 "$ENV{HOME}/natura/dicionarios/jspell.pt/DIC",
+	 "$ENV{HOME}/dicionarios/jspell.pt/DIC"
+);
 
 my $feedfile='atom.xml';
 #my $feedfile='_atom.xml';
@@ -59,7 +61,7 @@ $feed->updated($data);
 
 #######################################################
 
-my $ultRev=0;
+my $ultRev=2657;
 my @entry;
 
 my %h = ( -outputenc => 'UTF-8',
