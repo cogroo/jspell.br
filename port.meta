@@ -51,6 +51,7 @@ SEM=cid: cidade
 SEM=lingua: ...
 
 CAT: Categoria
+CAT=punct: pontuação
 CAT=punct2d: aspas
 CAT=np: nome próprio
 CAT=ppos: pronome possessivo
