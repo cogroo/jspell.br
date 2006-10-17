@@ -266,6 +266,7 @@ installweb:
 	ln -sf $(NATURA_PUB)/aspell6/aspell6.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/aspell6/aspell6.$(ABR)-latest.tar.gz
 	date >> $(NATURA_PUB)/CHANGELOG
 	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
+	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~
 	perl gFeed.pl
 
 
