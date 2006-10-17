@@ -13,27 +13,19 @@ use Date::Format qw(time2str);
 use encoding "utf-8";
 use Encode "decode";
 use XML::DT;
+use File::Spec;
+use File::Basename 'basename';
+use Cwd 'getcwd';
+
 
 
 my $DIC='/home/natura/download/sources/Dictionaries';
-#my $DIC='/home/ruivilela/dd';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
-my @svn=("$ENV{HOME}/dics/jspell.pt/DIC",
-	 "$ENV{HOME}/natura/dicionarios/jspell.pt/DIC",
-	 "$ENV{HOME}/dicionarios/jspell.pt/DIC"
-);
+#Assumir directoria da makefile
+my $svn=File::Spec->catdir(getcwd, "DIC");
 
-my $feedfile='atom.xml';
-#my $feedfile='_atom.xml';
-
-my $svn;
-
-for (@svn){
-    if (-d "$_"){
-	$svn=$_;
-	last;
-    }
-}
+my $feedfile=File::Spec->catfile($DIC,'atom.xml');
+#my $feedfile=File::Spec->catfile($DIC,'_atom.xml');
 
 $XML::Atom::DefaultVersion = "1.0";
 my $feed = XML::Atom::Feed->new(Version => 1.0);
@@ -61,22 +53,29 @@ $feed->updated($data);
 
 #######################################################
 
-my $ultRev=2657;
+my $ultRev=0; #E se não houver entradas ?
 my @entry;
 
 my %h = ( -outputenc => 'UTF-8',
 	  -inputenc => 'UTF-8',
-	  "feed/id" => sub{ if ($c=~/-(\d+)/) { $ultRev=$1 } },
+	  "entry/id" => sub{ 
+	      if ($c=~/-(\d+)/) { 
+		  $ultRev=$1 if ($1 > $ultRev); #Não funciona se já houver uma entrada no mesmo dia
+	      };
+	      "<$q>$c</$q>"
+	  },
 	  "entry" => sub{ push @entry, "<$q>$c</$q>" }
-       ); 
+	  );
 
-pathdt("$DIC/$feedfile",%h) if (-e "$DIC/$feedfile");
+pathdt($feedfile,%h) if (-e $feedfile);
 
 #######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
 
-my $l=`ls -rt -c1 $DIC/jspell |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`; ##eval?
-$l=~s/\n$//;
+my $dd=File::Spec->catdir($DIC,'jspell');
+my $l=`ls -rt -c1 $dd |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`; ##eval?
+chomp $l;
+
 $entry->title("Nova versão do dicionário: $l");
 
 my $rsvn="<p>Disponível nos formatos: [";
@@ -124,7 +123,7 @@ for (@entry){
 
 #print Dumper \$xml;
 
-open my $F, ">:utf8","$DIC/$feedfile" or warn "Não foi possível criar o ficheiro $feedfile - $!";
+open my $F, ">:utf8",$feedfile or warn "Não foi possível criar o ficheiro $feedfile - $!";
 print $F $xml;
 close $F;
-print "$feedfile criado com sucesso!\n" if (-e "$DIC/$feedfile");
+print basename($feedfile)." criado com sucesso!\n" if (-e $feedfile);
