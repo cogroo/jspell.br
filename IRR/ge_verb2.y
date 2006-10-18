@@ -421,7 +421,7 @@ void trata_corpo()
 %token <str> PALAVRA
 %token <ch> LETRA
 
-%token V, VX
+%token V VX
 
 %type <str> flags
 
