@@ -365,13 +365,13 @@ truída    fs ppa
 truídos   mp ppa
 truídas   fp ppa
 
-#v obstruir/SL instruir/PL
+#v obstruir/SL, instruir/PL
 truis     2s p
 truem     3p p
 trui      3s p
 trui       2s i
 
-#v destruir/SL construir/SL
+#v destruir/SL, construir/SL
 troem     3p p
 tróis    2s p
 trói     3s p
