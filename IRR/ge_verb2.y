@@ -500,7 +500,7 @@ void legenda()
 #endif
 }
 
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
    char out_inf[80];
 
@@ -521,4 +521,5 @@ main(int argc, char *argv[])
       yyparse();
       if (argc > 2) fclose(fp_inf);
    }
+   return 0;
 }
