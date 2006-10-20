@@ -906,10 +906,16 @@ E R     >  ÍAMOS        ; "P=1,N=p,T=c"
 E R     >  ÍEIS         ; "P=2,N=p,T=c"
 E R     >  IAM          ; "P=3,N=p,T=c"
 E R     >  -R,NDO       ; "T=g"
-E R     >  -ER,IDO      ; "G=m,N=s,T=ppa"
-E R     >  -ER,IDA      ; "G=f,N=s,T=ppa"
-E R     >  -ER,IDOS     ; "G=m,N=p,T=ppa"
-E R     >  -ER,IDAS     ; "G=f,N=p,T=ppa"
+[^E] [^V] E R     >  -ER,IDO      ; "G=m,N=s,T=ppa"
+[^E] [^V] E R     >  -ER,IDA      ; "G=f,N=s,T=ppa"
+[^E] [^V] E R     >  -ER,IDOS     ; "G=m,N=p,T=ppa"
+[^E] [^V] E R     >  -ER,IDAS     ; "G=f,N=p,T=ppa"
+E V E R     >  -EVER,ITO      ; "G=m,N=s,T=ppa"
+E V E R     >  -EVER,ITA      ; "G=f,N=s,T=ppa"
+E V E R     >  -EVER,ITOS     ; "G=m,N=p,T=ppa"
+E V E R     >  -EVER,ITAS     ; "G=f,N=p,T=ppa"
+
+
 
 I R     >  -R,A         ; "P=1_3,N=s,T=pi"
 I R     >  -R,AS        ; "P=2,N=s,T=pi"
@@ -1075,10 +1081,14 @@ U I R       >   -IR,AMOS    ; "P=1,N=p,T=i"    #noispell
 A I R       >   -R,AM       ; "P=3,N=p,T=i"    #noispell
 U I R       >   -IR,AM      ; "P=3,N=p,T=i"    #noispell
 [UA] I R    >   -R,NDO      ; "T=g"        # REG.
-[UA] I R    >   -IR,ÍDO     ; "G=m,N=s,T=ppa"
-[UA] I R    >   -IR,ÍDA     ; "G=f,N=s,T=ppa"
-[UA] I R    >   -IR,ÍDOS    ; "G=m,N=p,T=ppa"
-[UA] I R    >   -IR,ÍDAS    ; "G=f,N=p,T=ppa"
+[^Q][UA] I R    >   -IR,ÍDO     ; "G=m,N=s,T=ppa"
+[^Q][UA] I R    >   -IR,ÍDA     ; "G=f,N=s,T=ppa"
+[^Q][UA] I R    >   -IR,ÍDOS    ; "G=m,N=p,T=ppa"
+[^Q][UA] I R    >   -IR,ÍDAS    ; "G=f,N=p,T=ppa"
+Q U I R    >   -IR,IDO     ; "G=m,N=s,T=ppa"
+Q U I R    >   -IR,IDA     ; "G=f,N=s,T=ppa"
+Q U I R    >   -IR,IDOS    ; "G=m,N=p,T=ppa"
+Q U I R    >   -IR,IDAS    ; "G=f,N=p,T=ppa"
 
 
 P O R       >   -R,NHO        ; "P=1,N=s,T=p"
