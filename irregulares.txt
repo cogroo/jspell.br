@@ -167,6 +167,12 @@ argúi   3s p
 argúem  3p p
 argúi   1s i
 
+#v rugir
+ruges	2s p
+ruge	3s p
+rugem	3p p
+ruge	1s i
+
 #v reunir
 reúno   1s p
 reúnes  2s p
@@ -330,16 +336,10 @@ pedi      2p i
 peçam    3p i
 
 #v *truir
-// construir/RPL, destruir/PL, obstruir/SL
+// construir/RPL, destruir/PL, instruir/PL, obstruir/SL
 truo      1s p
-truis     2s p
-tróis    2s p
-trui      3s p
-trói     3s p
 truímos  1p p
 truís    2p p
-truem     3p p
-troem     3p p
 truía    1s pi
 truías   2s pi
 truía    3s pi
@@ -359,13 +359,23 @@ truísse   3s pic
 truíssem  3p pic
 truíres   2s fc
 truírem   3p fc
-trui       2s i
-trói      2s i
 truí      2p i
 truído    ms ppa
 truída    fs ppa
 truídos   mp ppa
 truídas   fp ppa
+
+#v obstruir/SL instruir/PL
+truis     2s p
+truem     3p p
+trui      3s p
+trui       2s i
+
+#v destruir/SL construir/SL
+troem     3p p
+tróis    2s p
+trói     3s p
+trói      2s i
 
 #v pôr/PL           // ocur:1
 ponho      1s p
