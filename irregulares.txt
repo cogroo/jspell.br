@@ -336,7 +336,7 @@ pedi      2p i
 peçam    3p i
 
 #v *truir
-// construir/KRPL, destruir/KPL, instruir/KPL, obstruir/KSL
+// construir/RPL, destruir/PL, instruir/PL, obstruir/SL
 truo      1s p
 truímos  1p p
 truís    2p p
@@ -365,13 +365,13 @@ truída    fs ppa
 truídos   mp ppa
 truídas   fp ppa
 
-#v obstruir/KSL, instruir/KPL
+#v obstruir/SL, instruir/PL
 truis     2s p
 truem     3p p
 trui      3s p
 trui       2s i
 
-#v destruir/KSL, construir/KSL
+#v destruir/SL, construir/SL
 troem     3p p
 tróis    2s p
 trói     3s p
