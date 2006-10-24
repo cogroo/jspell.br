@@ -186,7 +186,7 @@ reúne   2s i
 reúna   3s i
 reúnam  3p i
 
-#vX:i ajuizar/SL, arruinar, maleinar, enraizar/SL,
+#vX:i ajuizar/SL, arruinar, enraizar/SL,
           hebraizar, judaizar, europeizar, homogeneizar, plebeizar  //3.1 *i?ar
 íXo   1s p
 íXas  2s p
