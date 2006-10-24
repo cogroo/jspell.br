@@ -1306,6 +1306,7 @@ alpendrado/#hm//
 alpendrar/#vt/XYPL/
 alpendre/#nm/p/
 alperce/#nm/p/
+alpestre/#hn/p/
 alpinismo/#nm/p/
 alpinista/#hn/p/
 alpino/#a/pfti/
@@ -5380,6 +5381,7 @@ búdico/#a//
 budismo/#nm/p/
 budista/#nn/p/
 bueiro/#nm//
+bué/#avq//
 búfalo/#nm/p/
 bufão/#nm//
 bufar/#vi/XYL/
@@ -6378,6 +6380,7 @@ carnosidade/#nf/p/
 carnoso/#a/fpd/
 carnudo/#a/fp/
 caro/#a/pf/
+caro/#av/pfs/
 caroçame/#nm//
 carocha/#nf//
 carochinha/#nf//
@@ -7018,7 +7021,7 @@ certificar/#vt/XYPLcDn/
 certificativo/#a//
 certificatório/#a//
 certo/CAT=pind,G=m,N=s/fp/
-certo/#hm/pfm/
+certo/#hm/pfms/
 cervantesco/#a/fp/
 cervantino/#a/fp/
 cervejada/#nf//
@@ -15247,6 +15250,7 @@ finto/#hm//
 finura/#nf//
 fio-de-prumo/#nm//
 fio/#nm/p/
+fiorde/#nm/p/
 firmal/#nm//
 firmamental/#an//
 firma/#nf/p/
@@ -17297,6 +17301,7 @@ horoscópio/#nm//
 horóscopo/#nm//
 horrendo/#a/fp/
 horrente/#an//
+hórrido/#an//
 horrífico/#a//
 horripilante/#an/p/
 horripilar/#vt/XYPLcDn/
@@ -18497,7 +18502,7 @@ infecundidade/#nf/p/
 infecundo/#a/pfd/
 infelicidade/#nf/p/
 infelicitar/#vt/XYPL/
-infeliz/#hn/pmd/
+infeliz/#hn/pmds/
 inferencial/#an//
 inferência/#nf/p/
 inferior/#hn/pmd/
@@ -20821,8 +20826,8 @@ magrebino/#hn/fp/
 magrete/#a//
 magreza/#nf/p/
 magricela/#nf/p/
-magro/#a/fp/
-magrote/#a//
+magro/#a/fpsh/
+magrote/#an//
 magusto/#nm//
 má/#hf/p/
 maia/#nf/p/
@@ -25683,6 +25688,7 @@ planície/#nf/p/
 planificar/#vt/XYPLcv/
 planiforme/#an/p/
 planisfério/#nm//
+plangente/#hn//
 plano/#a/pfm/
 plantação/#nf//
 plantador/#hm//
@@ -25788,7 +25794,7 @@ podar/#vt/XYPLD/
 pó-de-arroz/#nm//
 poderio/#nm//
 poder/#nm/p/
-poderoso/#a/pfm/
+poderoso/#a/pfms/
 poder/#vn,I=3/L/
 pódio/#nm//
 podre/#hm2/p/
@@ -25991,7 +25997,7 @@ populaça/#nf//
 população/#nf/p/
 populacho/#nm//
 populacional/#an/p/
-popular/#an/pdm/
+popular/#an/pdms/
 popularidade/#nf/p/
 popularizar/#vt/XYPLc/
 popular/#nm/p/
@@ -26263,7 +26269,7 @@ precessão/#nf//
 preciosidade/#nf/p/
 preciosismo/#nm/p/
 preciosista/#a//
-precioso/#a/pfidm/
+precioso/#a/pfidms/
 precipício/#nm/p/
 precipitação/#nf//
 precipitadamente/#av//
@@ -27625,6 +27631,7 @@ rapé/#nm//
 rapidamente/#av//
 rapidez/#nf//
 rápido/#a/fp/
+rapidíssimo/$rápido$#a$GR=sup/fp/
 rapinador/#hm//
 rapinagem/#nf//
 rapinanço/#nm//
@@ -28779,6 +28786,7 @@ resseco/#a//
 resselar/#vt/XYPL/
 ressemear/#vt/ZYPL/
 ressentir/#vt,I=3/YPLM/
+ressequido/#an/fp/
 ressequir/#vt/KPL/
 ressoador/#hm//
 ressoante/#an/p/
@@ -30221,6 +30229,7 @@ servo/#hm/fp/
 servomecanismo/#nm/p/
 servomotor/#nm//
 sesimbrão/#hm//
+sesmaria/#nf/p/
 sessão/#nf/p/
 sessenta/#ca//
 sessentão/#nm//
@@ -31408,7 +31417,7 @@ tamborileiro/#hm//
 tamboril/#nm/p/
 tamborim/#nm/p/
 tambor/#nm/p/
-tâmil/#hn/p/
+tâmil/#hn//
 tampa/#nf/p/
 tampão/#nm/p/
 tampar/#vt/XYPLS/
@@ -31696,7 +31705,7 @@ ténis/#nm//
 tenista/#nn/p/
 tê/#nm//
 tenor/#nm/p/
-tenro/#a/fp/
+tenro/#a/fph/
 tenrura/#nf//
 tensa/#nf//
 tensão/#nf/p/
@@ -33439,7 +33448,7 @@ vernaculizar/#vt/XYPL/
 vernáculo/#a/fp/
 verniz/#nm/p/
 verónica/#nf/p/
-verosímil/#an/Ip/
+verosímil/#an/Ia/
 verosimilhança/#nf/p/
 verosimilhante/#an/p/
 verruga/#nf/p/
