@@ -910,10 +910,10 @@ E R     >  -ER,IDO      ; "G=m,N=s,T=ppa"
 E R     >  -ER,IDA      ; "G=f,N=s,T=ppa"
 E R     >  -ER,IDOS     ; "G=m,N=p,T=ppa"
 E R     >  -ER,IDAS     ; "G=f,N=p,T=ppa"
-E V E R     >  -EVER,ITO      ; "G=m,N=s,T=ppa"
-E V E R     >  -EVER,ITA      ; "G=f,N=s,T=ppa"
-E V E R     >  -EVER,ITOS     ; "G=m,N=p,T=ppa"
-E V E R     >  -EVER,ITAS     ; "G=f,N=p,T=ppa"
+C R E V E R     >  -EVER,ITO      ; "G=m,N=s,T=ppa"
+C R E V E R     >  -EVER,ITA      ; "G=f,N=s,T=ppa"
+C R E V E R     >  -EVER,ITOS     ; "G=m,N=p,T=ppa"
+C R E V E R     >  -EVER,ITAS     ; "G=f,N=p,T=ppa"
 
 
 
