@@ -165,13 +165,13 @@ arguo   1s p
 argúis  2s p
 argúi   3s p
 argúem  3p p
-argúi   1s i
+argúi   2s i
 
 #v rugir
 ruges	2s p
 ruge	3s p
 rugem	3p p
-ruge	1s i
+ruge	2s i
 
 #v reunir
 reúno   1s p
@@ -956,30 +956,6 @@ requeira    3s i
 requeiramos 1p i
 requerei    2p i
 requeiram   3p i
-
-#v delinquir
-delinquo    1s p
-delínquo    1s p
-delinqúis   2s p
-delínques   2s p
-delinqúi    3s p
-delínque    3s p
-delinqúem   3p p
-delínquem   3p p
-delinqua    1s pc
-delínqua    1s pc
-delinquas   2s pc
-delínquas   2s pc
-delinqua    3s pc
-delínqua    3s pc
-delinquam   3p pc
-delínquam   3p pc
-delinqúi    2s i
-delínque    2s i
-delinqua    3s i
-delínqua    3s i
-delinquam   3p i
-delínquam   3p i
 
 #v estar
 estou        1s p
