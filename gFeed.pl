@@ -89,7 +89,7 @@ $rsvn.="\n\n<code>";
 
 foreach (`ls -1 $svn/*.dic`){
     if ($ultRev!=0){
-	$rsvn.= Encode::decode('iso-8859-1',`cd $svn; svn diff -r $ultRev:$currentRevision --diff-cmd /usr/bin/diff -x -U0 $_`);
+	$rsvn.= Encode::decode('iso-8859-1',`cd $svn; svn diff -r $ultRev:$currentRevision --diff-cmd /usr/bin/diff -x -U1 $_`);
     }else{
 	$rsvn.= "<p>Não foi possível obter as diferenças desde a última versão<p>"
     }
