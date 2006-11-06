@@ -48,7 +48,7 @@ mail/CAT=nc,G=m,N=s//
 mainframe/CAT=a_nc,N=s/p/
 Microsoft/CAT=np,G=f,N=s//
 modem/CAT=nc,G=m,N=s/a/
-Mototola/CAT=np,G=f,N=s//
+Motorola/CAT=np,G=f,N=s//
 Mozilla/CAT=np,G=m,N=s//
 MS-DOS/CAT=np,G=m,N=s//
 negrito/CAT=a_nc,G=m,N=s/p/
