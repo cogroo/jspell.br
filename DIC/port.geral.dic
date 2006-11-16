@@ -15222,6 +15222,7 @@ filtrar/#vt/XYPLcMDn/
 filtro/#nm/p/
 fímbria/#nf//
 fim-de-semana/#nm//
+fins-de-semana/$fim-de-semana$#nm$N=p//
 fim/#nm/p/
 final/#hm2/pmtids/
 finalidade/#nf/p/
@@ -15607,7 +15608,7 @@ fósforo/#nm/p/
 fosforoso/#a//
 fossado/#hm//
 fossa/#nf/p/
-fossar/$vt//
+fossar/#vt//
 fosseta/#nf/p/
 fóssil/#hm2/a/
 fossilífero/#a//
@@ -20518,7 +20519,7 @@ loja/#nf/pt/
 lojeca/#nf//
 lojista/#nn//
 lombada/#nf//
-lomba/#nf//
+lomba/#nf/p/
 lombar/#an/p/
 lombarda/#a//
 lombeiro/#hm/f/
@@ -23905,6 +23906,7 @@ ortógono/#a//
 ortografar/#vt/XYPL/
 ortografia/#nf/p/
 ortográfico/#a/fpH/
+ortónimo/#nm/p/
 ortopedia/#nf/t/
 ortopédico/#a//
 orvalhada/#nf//
@@ -30353,7 +30355,8 @@ simbolizar/#vt/XYPLcDn/
 simbologia/#nf/r/
 símbolo/#nm/p/
 sim/CAT=in//
-simetria/#nf/pr/
+simetria/#nf/p/
+simétrico/#a/pH/
 simetrizar/#vn/XYPLc/
 similar/#hm2/pmd/
 similaridade/#nf/p/
@@ -31576,7 +31579,7 @@ teimar/#vi/XYL/
 teimice/#nf//
 teimosia/#nf//
 teimosice/#nf//
-teimoso/#hm/pmf/
+teimoso/#hm/pmfs/
 teísmo/#nm/pq/
 tejadilho/#nm/p/
 tela/#nf/p/
