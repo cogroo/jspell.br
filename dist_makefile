@@ -30,11 +30,11 @@ port.irr: aux.all-irr.dic
 IRR/ge_verb:
 	cd IRR; make ge_verb;
 
-aux.verb.dic: DIC/port.geral.dic
-	egrep "CAT=v|\#v" DIC/port.geral.dic > aux.verb.dic
+auxi.verb.dic: DIC/port.geral.dic
+	egrep "CAT=v|\#v" DIC/port.geral.dic > auxi.verb.dic
 
-aux.all-irr.dic: irregulares.txt aux.verb.dic IRR/ge_verb
-	IRR/ge_verb aux.verb.dic < irregulares.txt > aux.all-irr.dic
+aux.all-irr.dic: irregulares.txt auxi.verb.dic IRR/ge_verb
+	IRR/ge_verb auxi.verb.dic < irregulares.txt > aux.all-irr.dic
 
 port.dic: $(PTDIC) aux.all-irr.dic
 	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic

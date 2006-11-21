@@ -19,6 +19,6 @@ PERL/pos2iso     - converte acentuacao posfixa em latin1
 ISPELL           - para gerar dicionarios ispell
 JSPELL           - para gerar dicionarios jspell
 ASPELL           - para gerar dicionarios aspell
-MYSPELL		 - para gerar dicionarios myspell
+MYSPELL		 - para gerar dicionarios myspell (hunspell)
 ASPELL6          - para gerar a versao 6 de dicionarios aspell
 
