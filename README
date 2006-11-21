@@ -3,7 +3,10 @@ port.aff         - regras morfologicas do portugues
 port.geral.dic   - dicionario geral de portugues
 port.inf.dic     - termos informáticos
 
-aux.all-irr.dic  - verbos irregulares 
+jspell.pt.pod	 - Documentação do formato do dicionário Jspell
+jspell.pt.spec.in - Especificação para a instalação do Jspell
+
+auxi.all-irr.dic  - verbos irregulares 
                      (gerado por "ge_verb" a partir de irregulares.txt)
 irregulares.txt  - verbos irregulares
 
@@ -15,6 +18,7 @@ IRR              - processador de verbos irregulares
 port.dic         - dicionário que junta os dicionarios todos
 
 PERL/pos2iso     - converte acentuacao posfixa em latin1
+PERL/jspell2lista - ?
 
 ISPELL           - para gerar dicionarios ispell
 JSPELL           - para gerar dicionarios jspell

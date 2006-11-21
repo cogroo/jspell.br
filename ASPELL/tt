@@ -1,5 +1,7 @@
 #!/usr/bin/perl -w
 
+#Gera uma lista de palavras flexionadas dos lemas do dicionário
+
 #undef $/;
 #$/='';
 my $dict = shift or die;
