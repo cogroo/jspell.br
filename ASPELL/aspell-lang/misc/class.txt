@@ -1,0 +1,59 @@
+Abjads:
+  Arabic
+  Dhives Akuru
+  Hebrew
+  Syriac
+
+Alphabets:
+  Armenian
+  Avestan
+  Cyrillic
+  Georgian
+  Greek
+  Korean
+  Latin
+  Mongolian
+  Ol Cemet
+
+Alphasyllabaries:
+  Bengali
+  Cham
+  Devanagari
+  Gujarati
+  Gurmukhi
+  Hmong
+  Javanese
+  Kannada
+  Khmer
+  Lao
+  Lontara/Makasar
+  Malayalam
+  Myanmar (Burmese)
+  Oriya
+  Ranjana
+  Sinhala
+  Tamil
+  Telugu
+  Thai
+  Thai
+  Tibetan
+  Thaana
+  Tagalog
+
+Special:
+  Hangul
+  Japanese
+
+Syllabaries:
+  Canadian Syllabics (??)
+  Ethiopic (270)
+  Ojibwe (120)
+  Yi (819)
+  Cherokee (84)
+
+Logographic:
+  Han
+
+Unknown:
+  Parachalit
+  Lontara / Makasar

@@ -1,0 +1,12 @@
+This is the French word list for Aspell.
+
+This word list have been build by mixing the two following dictionary :
+
+the dictionary of the GUTenberg association
+(http://www.unil.ch/ling/cp/frgut.html) 
+the dictionary of IREQ
+(ftp://ftp.robot.ireq.ca/pub/ispell/)
+
+To install : read the ../README
+
+Any problem ? read the ../README

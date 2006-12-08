@@ -1,0 +1,43 @@
+
+                  Technical Notes for Word List authors 
+                        and Package Maintainers
+
+In order to make things as straight forward, portable, and uniform, I
+have decided to enforce the following rules.
+
+1) All language names are now the two letter ISO code (en, da) etc.
+2) The actual dictionary files must all start with the two letter
+code and end in .rws and may only contain ASCII characters.
+3) Alias are created using Aspell's multi files and not symbolic links.
+
+These rules are very different from the current way dictionaries are
+handled but I fell they will make life easier for everyone.  
+
+The reason for the first rule is because in the past the Aspell
+language names were a mixture of the name spelled out in English and
+the name spelled out in the native language and in some cases involved
+non-ASCII characters which was just asking for trouble on non-Unix
+like platforms and probably some older Unix ones.  Some people want as
+far as doing it both ways by symbolically linking one language data
+file to the other.  This amazingly worked but it is a complete abuse
+of how languages names and data files are meant to be used.  Finally
+others, thought that language variants (American, Swiss German, etc.)
+should be considered separate languages and either attempt to specify
+them as a language at the command line, for example trying "aspell
+--lang=canadian ..." or creating separate data files for them.  All of
+this did no good but to confuse people so I wanted to formalize this
+and was originally planning on using the language name spelled out in
+ASCII characters but released that in many cases I didn't know what
+this should be so I decided to go with the universal known language
+codes.
+
+The second rule is there so that is is clear which words lists belong
+to which languages.  I require them to be all ASCII characters for
+maximum portability.  However, the end user is not expected to use
+these words lists directly.  Instead they are expected to use one of
+the aliases created via the .multi file.  These alias can be anything
+what so every and may included non ASCII characters.  Symbolic links
+are not used as there are Unix specific and not supported by Win32.
+Non-ASCII characters are okay for aliases as they can simply not be
+installed on platforms which don't support them.
+

@@ -1,0 +1,3 @@
+== cp1255
+no-latin
+include cp1255.txt

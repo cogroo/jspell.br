@@ -1,0 +1,9 @@
+include iso-8859-5.txt
+no-latin
+
+0x90 U+04A2
+0x91 U+04A3
+0x92 U+04E8
+0x93 U+04E9
+0x94 U+04AE
+0x95 U+04AF

@@ -1,0 +1,104 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my $path = `pwd`;
+chop $path;
+
+# usage: <lang> <charset>
+
+die "usage: $0 <lang> <charset>\n" unless @ARGV == 2;
+
+my $lang = $ARGV[0];
+if ($lang !~ /^[a-z]{2,3}(|_[A-Z]{2})(|-[a-z0-9]+)$/) {
+  die "invalid language string: $lang\n";
+  # FIXME: Make more informative
+}
+
+my @included_charsets = qw(cp1250 cp1251 cp1252 cp1253 cp1254 cp1255
+                           cp1256 cp1257 cp1258 iso-8859-10
+                           iso-8859-11 iso-8859-13 iso-8859-14
+                           iso-8859-15 iso-8859-16 iso-8859-1
+                           iso-8859-2 iso-8859-3 iso-8859-4 iso-8859-5
+                           iso-8859-6 iso-8859-7 iso-8859-8 iso-8859-9
+                           koi8-r);
+my $charset = $ARGV[1];
+
+my $charset_included = 0;
+foreach (@included_charsets) {
+  $charset_included = 1 if ($_ eq $charset);
+}
+if (!$charset_included) {
+  -e "maps/$charset.txt" or die "Unable to find $charset.txt.\n";
+  # FIXME: Make more informative 
+  system ("./mkchardata maps/$charset.txt");
+}
+
+my $encoding;
+if ($charset_included) {
+  $encoding = $charset;
+} else {
+  local $/ = undef;
+  open F, "$path/maps/$charset.cset" or die;
+  local $_ = <F>;
+  my ($cs) = /^= (.+)$/m;
+  if (grep {$_ eq $cs} @included_charsets) {
+    $encoding = $charset;
+  } else {
+    $encoding = 'utf-8';
+  }
+}
+
+mkdir $lang or die "Unable to mkdir $lang";
+chdir $lang or die;
+
+open F, ">info";
+print F << "---";
+name_english Unknown
+name_native Unknown
+lang $lang
+---
+
+if (!$charset_included) {
+  print F "data-file $charset.cset\n";
+  print F "data-file $charset.cmap\n";
+  system ("cp $path/maps/$charset.cset $path/maps/$charset.cmap .");
+  system ("mkdir misc");
+  system ("cp $path/maps/$charset.txt misc/");
+}
+
+print F << "---";
+author:
+  name Unknown
+  email unknown at someplace com
+copyright Unknown
+#url Unknown
+version 0.01-0
+#source-version 0.01
+accurate unknown
+complete unknown
+#alias $lang unknown
+dict:
+  name $lang
+  add $lang
+---
+
+close F;
+
+open F, ">$lang.dat";
+print F "name $lang\n";
+print F "charset $charset\n";
+print F "#" unless $encoding eq 'utf-8';
+print F "data-encoding utf-8\n";
+print F "#special ' -*-\n";
+
+open F, ">Copyright";
+print F "Copyright (c) YEAR by SO AND SO under the WHAT.\n";
+close F;
+
+open F, ">$lang.wl";
+close F;
+
+system "ln -s $path/proc .";
+

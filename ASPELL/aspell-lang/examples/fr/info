@@ -1,0 +1,49 @@
+name_english French
+name_ascii Francais 
+name_native Français 
+lang fr
+data-file fr_phonet.dat
+author:
+  name  Rémi Vanicat
+  email vanicat at labri u-bordeaux fr
+author:
+  name GUTenberg association
+author:
+  name Christophe Pythoud
+  email Christophe Pythoud at ling unil ch
+copyright GPL
+version 0.50-4
+url http://aspellfr.free.fr/aspell/
+source-version 0.06
+alias fr_FR fr:awli francais french
+alias fr_CH suisse
+alias 40 sml
+alias 60 med
+alias 80 lrg
+dict:
+  name fr_FR-40
+  add fr-40-only
+dict:
+  name fr_FR-60
+  add fr-40-only
+  add fr-60-only
+dict: 
+  name fr_FR-80
+  add fr-40-only
+  add fr-60-only
+  add fr-80-only
+dict:
+  name fr_CH-40
+  add fr_CH-only
+  add fr-40-only
+dict:
+  name fr_CH-60
+  add fr_CH-only
+  add fr-40-only
+  add fr-60-only
+dict: 
+  name fr_CH-80
+  add fr_CH-only
+  add fr-40-only
+  add fr-60-only
+  add fr-80-only

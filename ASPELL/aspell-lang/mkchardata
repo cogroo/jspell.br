@@ -1,0 +1,448 @@
+#!/usr/bin/perl
+
+# This file is part of The New Aspell
+# Copyright (C) 2004 by Kevin Atkinson under the GNU LGPL
+# license version 2.0 or 2.1.  You should have received a copy of the
+# LGPL license along with this library if you did not you can find it
+# at http://www.gnu.org/.
+
+use strict;
+use warnings;
+
+no locale;
+
+use IO::File;
+
+use Data::Dumper;
+
+use constant { 
+  CHAR => 0, TYPE => 1, DISPLAY=> 2, UPPER => 3, LOWER => 4, TITLE => 5,
+  PLAIN => 6, SCRIPT => 7, NAME => 8,
+};
+
+use constant {COMPAT => 1, PRIVATE => 2};
+
+sub uni_char($$$); # uni def what
+sub print_map(@);
+sub codepoint($);
+
+my (%unidata, %decomp, %fdecomp, %uni_char, %char_uni, %compexcl);
+
+sub cdecomp ( $ ) {local $_ = $fdecomp{$_[0]};
+                   return $_[0] unless defined $_;
+                   return $_;}
+
+open IN, "unicode.txt" or die "Can't open \"unicode.txt\": $!\n";
+
+while (<IN>) {
+  chop;
+  s/\s*#\s*(.*)$//;
+  my $n = $1;
+  next unless length $_ > 0;
+  my @data = split / /;
+  $n =~ /#\s*(.+?)\s*$/;
+  push @data, $1;
+  $unidata{$data[0]} = \@data;
+}
+
+open IN, "decomp.txt" or die "Can't open \"decomp.txt\": $!\n";
+
+while (<IN>) {
+  chop;
+  s/\s*#.*$//;
+  next unless length $_ > 0;
+  my ($c, $f, $d) = /^([0-9A-F]+) (.) (.+)$/ or die;
+  $d =~ s/  / /g;
+  # flags one-way, compat, private
+  my $a =
+    [ $d,
+      $f eq '!',
+      grep {0xE000 <= hex($_) && hex($_) < 0xF800} split(' ', $d)];
+  push @{$decomp{$c}}, $a;
+  $fdecomp{$c} = $d unless $a->[COMPAT] || $a->[PRIVATE];
+  $compexcl{$c} = $d if $f eq '>' && ! exists $compexcl{$c};
+}
+
+foreach my $file (@ARGV) {
+  my %scripts;
+  my ($base) = $file =~ /^(.+)\.txt/i or die "$file does not end in \".txt\"\n";
+  $base = lc $base;
+
+  open OUT, ">$base\.cset" or die "Can't create \"$base\.cset\": $!\n";
+  open MAP, ">$base\.cmap" or die "Can't create \"$base\.cmap\": $!\n";
+
+  my $nl = 0;
+
+  my @in = (new IO::File);
+  open $in[0], "<:utf8", "$base\.txt" or die "Can't open \"$base.txt\": $!\n";
+
+  my $dir = '';
+  $base =~ s/^(.+)\/// and $dir = $1;
+
+  my @ord;
+  push @ord, "= $base";
+
+  my @ascii = (0,16,32..64,91..96,123..127);
+  my @chardata;
+  undef %char_uni;
+  undef %uni_char;
+
+  my %ldata;
+
+  my @base_letters;
+  my %base_letter;
+  my @vowels;
+  my @special_case;
+
+  my $no_ascii = 0;
+
+  while (@in) {
+    while (local $_ = $in[0]->getline) {
+      chop;
+      s/\s*#.*$//;
+      s/^\s+//;
+      next unless $_;
+
+      if (/^include\s+(.+)/i) {
+
+        unshift(@in, new IO::File);
+        open $in[0], "<:utf8", "$dir/$1" or die "Unable to open \"$dir/$1\": $!\n";
+
+      } elsif (/^no-latin/i) {
+
+        $nl = 1;
+
+      } elsif (/^(<|==|>)\s*(.+)/) {
+
+        if ($1 eq '==') {$ord[0] = "= $2"}
+        else            {push @ord, "$1 $2"}
+
+      } elsif (/^(letter|vowel)s?\s+(.+)/i) {
+
+        my $w = $1;
+        my $l = $2;
+        my (@l) = split /\s+/, $2;
+        foreach (@l) {
+          my $c = codepoint $_;
+          push @base_letters, $c;
+          push @vowels, $c if $w =~ /^vowel/i;
+        }
+
+      } elsif (/^case\s+(.+)/i) {
+
+        push @special_case, [map {codepoint $_} (split /\s+/, $1)];
+
+      } else {
+
+        s/\=|0x|U\+//g;
+        my ($char, $uni) = /^\s*([a-fA-F0-9.]+)\s+\=?\s*([a-fA-F0-9.]+)/ or next;
+        my @char = map {sprintf "%02X", $_}
+          ($char =~ /(.+?)\.\.(.+)/ ? (hex($1)..hex($2)) : hex $char);
+        my @uni = map {sprintf "%04X", $_}
+          ($uni =~ /(.+?)\.\.(.+)/ ? (hex($1)..hex($2)) : hex $uni);
+        die "bad range in $base\n" unless @char == @uni;
+        my $num = @char;
+        for (my $i = 0; $i != $num; $i++) {
+          next unless $num == 1 || $unidata{$uni[$i]};
+          my $char = hex($char[$i]);
+          my $uni  = hex($uni[$i]);
+          next if $char == $uni && ($char < 0x20 || (0x80 <= $char && $char < 0xA0));
+          next if exists $uni_char{$uni[$i]};
+          printf("Warning remapping '%c' (0x%X) may cause problems with Aspell.\n",
+                 $char, $char)
+            if $char != $uni && ($char == 0x00 || $char == 0x10
+                                 || (0x20 <= $char && $char <= 0x40)
+                                 || (0x5B <= $char && $char <= 0x60)
+                                 || (0x7B <= $char && $char <= 0x7F));
+          $no_ascii = 2 if $char != $uni && (0x20 <= $char && $char <= 0x7F);
+          $char_uni{$char[$i]} = $uni[$i];
+          $uni_char{$uni[$i]} = $char[$i];
+        }
+
+      }
+    }
+    $in[0]->close;
+    shift @in;
+  }
+
+  foreach my $i (@ascii) {
+    my $char = sprintf("%02X",$i);
+    my $unichar = "00".$char;
+    next if defined $char_uni{$char};
+    $char_uni{$char} = $unichar;
+    $uni_char{$unichar} = $char;
+  }
+
+  foreach (keys %uni_char) {
+    $ldata{$_} = [@{$unidata{$_}}] if defined $unidata{$_};
+  }
+
+  foreach my $case (@special_case) {
+    foreach my $u (@$case) {
+      $ldata{$u}[UPPER] = $case->[0];
+      $ldata{$u}[LOWER] = $case->[1];
+      $ldata{$u}[TITLE] = $case->[2] || $case->[0];
+    }
+  }
+
+  foreach my $u (@base_letters) {
+    $base_letter{$ldata{$u}[UPPER]} = 1;
+    $base_letter{$ldata{$u}[LOWER]} = 1;
+    $base_letter{$ldata{$u}[TITLE]} = 1;
+  }
+
+  foreach my $u (keys %ldata) {
+    my $plain = $u;
+    $plain = $unidata{$plain}[PLAIN] while (!$base_letter{$plain} &&
+                                            $plain ne $unidata{$plain}[PLAIN]);
+    $ldata{$u}[PLAIN] = defined $ldata{$plain} ? $plain : $u;
+  }
+
+  if (@vowels) {
+    $_->[TYPE] =~ tr/vV/lL/ foreach (values %ldata);
+    foreach (@vowels) {
+      my $u = $ldata{$_}[PLAIN];
+      $ldata{$ldata{$u}[UPPER]}[TYPE] = 'V';
+      $ldata{$ldata{$u}[LOWER]}[TYPE] = 'V';
+      $ldata{$ldata{$u}[TITLE]}[TYPE] = 'V';
+    }
+    foreach my $u (keys %ldata) {
+      next unless uc $ldata{$u}[TYPE] eq 'L';
+      $ldata{$u}[TYPE] = 'V' if $ldata{$ldata{$u}[PLAIN]}[TYPE] eq 'V';
+    }
+  }
+
+  foreach my $i (0x00..0xFF) {
+    my $char = sprintf("%02X",$i);
+    my $unichar = $char_uni{$char};
+    my $info = $ldata{$unichar} if defined $unichar;
+    my $letter = $info->[SCRIPT] eq 'Latn' if defined $info;
+    if (defined $info && (!$nl || !$letter)) {
+      $scripts{$info->[SCRIPT]} = 1;
+      $chardata[$i] =
+        [$char,
+         $unichar,
+         $info->[TYPE],                            # 2
+         $info->[DISPLAY],                         # 3
+         uni_char($info->[UPPER], $char, "upper"), # 4
+         uni_char($info->[LOWER], $char, "lower"), # 5
+         uni_char($info->[TITLE], $char, "title"), # 6
+         uni_char($info->[PLAIN], $char, "plain"), # 7
+         '00',                                     # 8
+         '00',                                     # 9
+         $info->[NAME],
+        ];
+    } else {
+      my $u = (defined $unichar ? hex($unichar)
+               : $no_ascii && 0x20 <= $i && $i < 0x80 ? $i + 0xE000
+               : $i >= 0xA0 ? $i + 0xE000
+               : $i);
+      my $n = ($u >= 0xE000 ? '<unused>'
+               : defined $unichar ?
+               ($letter ? '<unused latin letter>' : '<unused special>')
+               : $u < 0x20 ? '<unused control>'
+               : $u < 0x80 ? '<unused latin letter>'
+               : $u < 0xA0 ? '<unused control>'
+               : die "$base $u");
+      $chardata[$i] =
+        [$char,
+         sprintf("%04X", $u),
+         '.', ($n =~ /letter/ ? 'Y': 'N'),
+         $char, $char, $char, '00', '00', '00',
+         $n];
+    }
+  }
+
+  foreach my $char (sort keys %char_uni) {
+    my $unichar = $char_uni{$char};
+    my $info = $ldata{$unichar};
+    next unless defined $info;
+    my $inf = $chardata[hex $char];
+    my $t = uc($inf->[2]);
+    if ($t eq 'L' || $t eq 'V') {
+      $inf->[2] =~ tr/vV/lL/;
+      $inf->[8] = $t eq 'V' ? '2A' : $chardata[hex $inf->[5]][7];
+      $inf->[9] = $t eq 'V' ? '00' : $chardata[hex $inf->[5]][7];
+    } else {
+      $inf->[7] = '00';
+    }
+  }
+
+  #push @ord, '> ascii' unless $no_ascii || $base eq 'ascii';
+
+  print OUT "# Aspell Character Data File.\n";
+  foreach (@ord) {print OUT "$_\n";}
+  print OUT "/\n";
+  print OUT "# <char> <uni> <type> <display> <upper> <lower> <title> <plain>\n";
+  print OUT "#                                                         <sl-first> <sl-rest>\n";
+  foreach my $i (0..255) {
+    my @d = @{$chardata[$i]};
+    print OUT "@d[0..9] # $d[10]\n";
+  }
+
+  my %map;
+  my %rmap;
+  my %nmap;
+
+  foreach my $i (0..255) {
+    my $char = $chardata[$i][0];
+    my $unichar = $chardata[$i][1];
+    next if 0xE000 <= hex($unichar) && hex($unichar) <= 0xE100;
+    $map{$unichar} = $char;
+    $rmap{$char} = [$unichar];
+    foreach my $d (@{$decomp{$unichar}}) {
+      next if $d->[COMPAT];
+      $map{$d->[0]} = $char;
+      push @{$rmap{$char}}, $d->[0];
+    }
+  }
+
+  while (my ($u, $dl) = each %decomp) {
+    next if $uni_char{$u};
+    foreach my $d (@$dl) {
+      my @d = split ' ', $d->[0];
+      my $dont_use;
+      my $unsupported;
+      local $_ = '';
+      foreach my $c (@d) {
+        my $i = $uni_char{$c};
+        my $t = $chardata[hex $i][2] if defined $i;
+        if (defined $i && $t ne '.') {$_ .= "$i ";}
+        elsif ($unidata{$c} && $unidata{$c}[2] eq 'M') {$unsupported = 1;}
+        else {$dont_use = 1;}
+      }
+      die if exists $map{$u};
+      next if $dont_use;
+      next unless length $_ > 0;
+      chop;
+      if    ($unsupported) {$_ .= " # unsup: $d->[0]"}
+      elsif ($d->[COMPAT]) {$_ .= ' # compat'}
+      $map{$u} = $_;
+      push @{$rmap{$_}}, $u unless $unsupported || $d->[COMPAT];
+      last;
+    }
+  }
+
+  my $use_comb = $scripts{Latn} || $scripts{Grek} || $scripts{Cyrl};
+  if ($use_comb) {
+    foreach my $u (0x300..0x345) {
+      my $uni = sprintf "%04X", $u;
+      next unless defined $unidata{$uni};
+      next if     $map{$uni};
+      $map{$uni} = "0 # unsup";
+    }
+  }
+
+  #$map{"FFFF FFFF FFFF"} = "FD";
+
+  my @INTERNAL;
+  foreach (sort keys %map) {
+    push @INTERNAL, "$_ > $map{$_}\n";
+  }
+
+  my @STRICT;
+  foreach (sort keys %map) {
+    next if $map{$_} =~ /\#/;
+    push @STRICT, "$_ > $map{$_}\n";
+  }
+
+  my @NFD;
+  foreach my $k (sort keys %rmap) {
+    my $d = join ' ', map {cdecomp $_} split ' ', $rmap{$k}[-1];
+    my $d0 = $k !~ / / ? '' : join ' ', (map {cdecomp $_}
+                                         map {$chardata[hex $_][1]}
+                                         split ' ', $k);
+    push @NFD, "$k > $d\n" unless $d0 eq $d;
+  }
+
+  my @NFC;
+  foreach my $k (sort keys %rmap) {
+    my $d0 = '';
+    my $d = $rmap{$k}[0];
+    while ($d0 ne $d) {
+      $d0 = $d;
+      $d = join ' ', map {$compexcl{$_} || $_} split ' ', $d0;
+    }
+    push @NFC, "$k > $d\n" unless $k eq $d;
+  }
+
+  my @COMP;
+  foreach my $k (sort keys %rmap) {
+    push @COMP, "$k > $rmap{$k}[0]\n"
+  }
+
+  print MAP "INTERNAL\n/\n";
+  print MAP print_map(@INTERNAL), "\n";
+
+  print MAP "\nSTRICT\n";
+  if ("@INTERNAL" ne "@STRICT") {print MAP "/\n", print_map(@STRICT), "\n"}
+  else                          {print MAP "= INTERNAL\n.\n"}
+
+  print MAP "\nNFD\n/\n";
+  print MAP print_map(@NFD), "\n";
+
+  print MAP "\nNFC\n";
+  if ("@NFC" ne "@NFD") {print MAP "/\n", print_map(@NFC), "\n"}
+  else                  {print MAP "= NFD\n.\n"}
+
+  print MAP "\nCOMP\n";
+  if ("@COMP" ne "@NFC") {print MAP "/\n", print_map(@COMP), "\n"}
+  else                   {print MAP "= NFC\n.\n"}
+}
+
+sub codepoint($) {
+  local ($_) = @_;
+  my $c = -1;
+  $c = ord $_ if length $_ == 1;
+  $c = hex $2 if /^(U\+|0x)([A-F0-9]+)$/i;
+  die if $c == -1;
+  return sprintf("%04X", $c);
+}
+
+sub uni_char($$$) {
+  my ($uni, $def, $what) = @_;
+  my $chr =  $uni_char{$uni};
+  return $chr if defined $chr;
+  print STDERR "Warning U+$uni mot mapped.  It is needed for the \"$what\" mapping of 0x$def.\n"
+    if ($unidata{$uni} eq 'L' || $unidata{$uni} eq 'V') 
+      && ($unidata{$char_uni{$def}} eq 'L' || $unidata{$char_uni{$def}} eq 'V');
+  return $def;
+}
+
+sub print_map(@) {
+  my (@map) = @_;
+  my $i = 0;
+  my $f;
+  $f = sub {
+    my $c = 0;
+    my $l = '';
+    my $p = '';
+    while ($i < @map) {
+      my ($k,$r) = $map[$i] =~ /^(.+) > (.+)\n$/ or die;
+      $k =~ s/^$_[0]// || last if length $_[0] > 0;
+      my @k = split / /, $k;
+      $c++ if $k[0] ne $p;
+      if (@k == 1) {
+        $l .= "\n";
+        $l .= ' 'x(length $_[0]);
+        $l .= "$k[0] > $r";
+        $i++;
+      } else {
+        if ($k[0] ne $p) {
+          $l .= "\n";
+          $l .= ' 'x(length $_[0]);
+          $l .= "$k[0] > -";
+        }
+        $l .= " /\n";
+        $l .= &$f("$_[0]$k[0] ")
+      }
+      $p = $k[0];
+    }
+    return join ('',
+                 ' 'x(length $_[0]), 'N ', $c,
+                 $l, "\n",
+                 ' 'x(length $_[0]), '.');
+  };
+  &$f('');
+}
+

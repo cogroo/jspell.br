@@ -1,0 +1,5 @@
+include iso-8859-9.txt
+== iso-8859-9
+case I ı
+case İ i
+letters Ç Ğ İ Ö Ş Ü

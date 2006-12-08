@@ -1,0 +1,7 @@
+E000..E0FF # Unused 8-bit code points
+E100..E1FF # Reserved for Aspell's internal use
+E200..E20F # Unmapped Letters/Symbols
+E210..E3BF # <unused>
+E3C0..E3FF # Precomposed Cyrillic Letters for Serbian
+E400..E47F # Broken up Ethiopic
+E480..E4FF # Broken up Yi

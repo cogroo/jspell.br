@@ -1,0 +1,369 @@
+Arabic:
+  ar
+  fa
+  id?
+  inh
+  ks
+  ku
+  ky-
+  ms?
+  ps
+  sd
+  tg?
+  tk?
+  tr?
+  ug
+  ur
+
+Armenian:
+  hy
+
+Bengali:
+  as
+  bn
+  kha
+  sat
+
+Canadian Syllabics:
+  cr
+  iu
+
+Cherokee:
+  chr
+
+Cyrillic:
+  ab
+  ady
+  av
+  az-
+  ba
+  be
+  bg
+  ce
+  chm
+  cu
+  cv
+  dar
+  kbd
+  kk
+  ku
+  kum
+  kv
+  ky
+  lez
+  mk
+  mn
+  mo
+  nog
+  os
+  rom
+  ru
+  sah
+  sel
+  sr
+  tg
+  tk?
+  tt
+  udm
+  ug?
+  uk
+  uz
+  xal
+
+Devanagari:
+  awa
+  bh
+  bho
+  gon
+  hi
+  ks?
+  mr
+  mwr
+  ne
+  new
+  pi
+  sa
+  sat
+
+Ethiopic:
+  am
+  gez
+  om-
+  ti
+  tig
+
+Georgian:
+  ka
+
+Greek:
+  cop
+  el
+
+Gujarati:
+  gu
+
+Gurmukhi:
+  pa
+
+Han:
+  ko
+  zh
+
+Hangul:
+  ko
+
+Hebrew:
+  he
+  lad
+  yi
+
+Japanese:
+  ja
+
+Hmong:
+  hmn
+
+Javanese:
+  jv
+
+Kannada:
+  kn
+
+Khmer:
+  km
+
+Lao:
+  lo
+
+Latin:
+  aa
+  af
+  ak
+  an
+  ast
+  ay
+  az
+  bi
+  bm
+  br
+  bs
+  ca
+  ceb
+  ch
+  chr
+  co
+  cr
+  cs
+  cy
+  da
+  de
+  dsb
+  ee
+  en
+  eo
+  es
+  et
+  eu
+  ff
+  fi
+  fj
+  fo
+  fr
+  fy
+  ga
+  gd
+  gl
+  gn
+  gv
+  ha
+  haw
+  hmn
+  ho
+  hr
+  hsb
+  ht
+  hu
+  hz
+  ia
+  id
+  ie
+  ig
+  ik
+  inh
+  io
+  is
+  it
+  iu
+  jbo
+  jv
+  kg
+  kha
+  ki
+  kj
+  kl
+  kr
+  ku
+  kw
+  ky-
+  la
+  lb
+  lg
+  li
+  ln
+  lt
+  lu
+  lv
+  mg
+  mh
+  mi
+  ml?
+  ms
+  mt
+  na
+  nb
+  nd
+  nds
+  ng
+  nl
+  nn
+  no
+  nr
+  nso
+  nv
+  ny
+  oc
+  om
+  pl
+  pt
+  qu
+  rm
+  rn
+  ro
+  rom
+  rw
+  sc
+  se
+  sg
+  sk
+  sl
+  sm
+  sn
+  so
+  sq
+  sr
+  ss
+  st
+  su
+  sv
+  sw
+  tet
+  tg?
+  tk
+  tl
+  tn
+  to
+  tpi
+  tr
+  ts
+  tw
+  ty
+  ug-
+  uz-
+  ve
+  vi
+  vo
+  wa
+  wo  
+  xh
+  yo
+  za
+  zu
+  csb
+
+  bem
+  kac
+  hil
+  pap
+  pam
+  ilo
+  fur
+  lua
+  luo
+  min
+  iba
+  ban
+  kok
+  chk
+  tkl
+  niu
+  loz
+  kha
+  rar
+
+Malayalam:
+  ml
+
+Mongolian:
+  mn-
+  mnc
+
+Myanmar:
+  my
+  shn
+
+Ol Cemet:
+  sat
+
+Oriya:
+  or
+  sat
+
+Parachalit:
+  new
+
+Ranjana:
+  new
+
+Sinhala:
+  pi
+  sa?
+  si
+
+Syriac:
+  syr
+
+Tagalog:
+  tl-
+
+Tamil:
+  ta
+
+Telugu:
+  gon
+  te
+
+Thai:
+  pi
+  th
+
+Tibetan:
+  bo
+  dz
+
+Avestan:
+  ae
+
+Dhives Akuru:
+  dv?
+
+Lontara / Makasar:
+  mak
+
+Ojibwe:
+  oj
+
+Yi:
+  ii
+
+Thaana:
+  dv

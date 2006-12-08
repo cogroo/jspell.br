@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ln -s ../configure configure
+ln -s ../proc proc

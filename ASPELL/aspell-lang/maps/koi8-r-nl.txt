@@ -1,0 +1,3 @@
+== koi8-r
+no-latin
+include koi8-r.txt

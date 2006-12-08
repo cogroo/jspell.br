@@ -1,0 +1,24 @@
+#!/bin/sh
+
+for l in da en it pl sk sv uk
+do
+  echo "*** Making aspell-$l ***"
+  cd $l
+  if test "$1" = unsafe
+  then
+    ./proc unsafe &&\
+    ./configure && \
+    make dist-nogen &&\
+    mv *.tar.bz2 ../rel
+  else
+    ./proc &&\
+    ./configure && \
+    make dist-nogen &&\
+    make distcheck &&\
+    mv *.tar.bz2 ../rel
+  fi
+  cd ..
+done
+
+tar cfj aspell-gen.tar.bz2 announcement.txt manual.txt \
+  mk-dist mkindex mklinks proc update-ver

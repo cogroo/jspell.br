@@ -1,0 +1,443 @@
+aa	Afar
+ab	Abkhazian
+ace	Achinese
+ach	Acoli
+ada	Adangme
+ady	Adyghe
+ae	Avestan
+af	Afrikaans
+afa	Afro-Asiatic (Other)
+afh	Afrihili
+ak	Akan
+akk	Akkadian
+ale	Aleut
+am	Amharic
+an	Aragonese
+ang	Old English (ca.450-1100)
+ar	Arabic
+arc	Aramaic
+arn	Araucanian
+arp	Arapaho
+arw	Arawak
+as	Assamese
+ast	Asturian / Bable
+av	Avar
+awa	Awadhi
+ay	Aymara
+az	Azerbaijani
+ba	Bashkir
+bad	Banda
+bal	Baluchi
+ban	Balinese
+bas	Basa
+bat	Baltic (Other)
+be	Belarusian
+bej	Beja
+bem	Bemba
+ber	Berber (Other)
+bg	Bulgarian
+bh	Bihari
+bho	Bhojpuri
+bi	Bislama
+bik	Bikol
+bin	Bini
+bla	Siksika
+bm	Bambara
+bn	Bengali
+bnt	Bantu (Other)
+bo	Tibetan
+br	Breton
+bra	Braj
+bs	Bosnian
+btk	Batak (Indonesia)
+bua	Buriat
+bug	Buginese
+byn	Blin
+ca	Catalan / Valencian
+cad	Caddo
+cai	Central American Indian (Other)
+car	Carib
+cau	Caucasian (Other)
+ce	Chechen
+ceb	Cebuano
+cel	Celtic (Other)
+ch	Chamorro
+chb	Chibcha
+chg	Chagatai
+chk	Chuukese
+chm	Mari
+chn	Chinook jargon
+cho	Choctaw
+chp	Chipewyan
+chr	Cherokee
+chy	Cheyenne
+co	Corsican
+cop	Coptic
+cpe	Creoles and pidgins, English-based (Other)
+cpf	Creoles and pidgins, French-based (Other)
+cpp	Creoles and pidgins, Portuguese-based (Other)
+cr	Cree
+crh	Crimean Turkish
+crp	Creoles and pidgins(Other)
+cs	Czech
+csb	Kashubian
+cu	Old Slavonic
+cus	Cushitic (Other)
+cv	Chuvash
+cy	Welsh
+da	Danish
+dak	Dakota
+dar	Dargwa
+day	Dayak
+de	German
+del	Delaware
+den	Slave (Athapascan)
+dgr	Dogrib
+din	Dinka
+doi	Dogri
+dra	Dravidian (Other)
+dsb	Lower Sorbian
+dua	Duala
+dum	Moddle Dutch (ca. 1050-1350)
+dv	Divehi
+dyu	Dyula
+dz	Dzongkha
+ee	Ewe
+efi	Efik
+egy	Egyptian (Ancient)
+eka	Ekajuk
+el	Greek
+elx	Elamite
+en	English
+enm	Middle English (1100-1500)
+eo	Esperanto
+es	Spanish
+et	Estonian
+eu	Basque
+ewo	Ewondo
+fa	Persian
+fan	Fang
+fat	Fanti
+ff	Fulah
+fi	Finnish
+fiu	Finno-Ugrian (Other)
+fj	Fijian
+fo	Faroese
+fon	Fon
+fr	French
+frm	Middle French (ca.1400-1600)
+fro	Old French (842-ca.1400)
+fur	Friulian
+fy	Frisian
+ga	Irish
+gaa	Ga
+gay	Gayo
+gba	Gbaya
+gd	Scottish Gaelic
+gem	Germanic (Other)
+gez	Geez
+gil	Gilbertese
+gl	Gallegan
+gmh	German, Middle High (ca.1050-1500)
+gn	Guarani
+goh	German, Old High (ca.750-1050)
+gon	Gondi
+gor	Gorontalo
+got	Gothic
+grb	Grebo
+grc	Ancient Greek (to 1453)
+gu	Gujarati
+gv	Manx Gaelic
+gwi	Gwich´in
+ha	Hausa
+hai	Haida
+haw	Hawaiian
+he	Hebrew
+hi	Hindi
+hil	Hiligaynon
+him	Himachali
+hit	Hittite
+hmn	Hmong
+ho	Hiri Motu
+hr	Croatian
+hsb	Upper Sorbian
+ht	Haitian Creole
+hu	Hungarian
+hup	Hupa
+hy	Armenian
+hz	Herero
+ia	Interlingua (IALA)
+iba	Iban
+id	Indonesian
+ie	Interlingue
+ig	Igbo
+ii	Sichuan Yi
+ijo	Ijo
+ik	Inupiaq
+ilo	Iloko
+inc	Indic (Other)
+ine	Indo-European (Other)
+inh	Ingush
+io	Ido
+ira	Iranian (Other)
+is	Icelandic
+it	Italian
+iu	Inuktitut
+ja	Japanese
+jbo	Lojban
+jpr	Judeo-Persian
+jrb	Judeo-Arabic
+jv	Javanese
+ka	Georgian
+kaa	Kara-Kalpak
+kab	Kabyle
+kac	Kachin
+kam	Kamba
+kar	Karen
+kaw	Kawi
+kbd	Kabardian
+kg	Kongo
+kha	Khasi
+khi	Khoisan (Other)
+kho	Khotanese
+ki	Kikuyu / Gikuyu
+kj	Kwanyama
+kk	Kazakh
+kl	Kalaallisut / Greenlandic
+km	Khmer
+kmb	Kimbundu
+kn	Kannada
+ko	Korean
+kok	Konkani
+kos	Kosraean
+kpe	Kpelle
+kr	Kanuri
+krc	Karachay-Balkar
+kro	Kru
+kru	Kurukh
+ks	Kashmiri
+ku	Kurdish
+kum	Kumyk
+kut	Kutenai
+kv	Komi
+kw	Cornish
+ky	Kirghiz
+la	Latin
+lad	Ladino
+lah	Lahnda
+lam	Lamba
+lb	Luxembourgish
+lez	Lezghian
+lg	Ganda
+li	Limburgian
+ln	Lingala
+lo	Lao
+lol	Mongo
+loz	Lozi
+lt	Lithuanian
+lu	Luba-Katanga
+lua	Luba-Lulua
+lui	Luiseno
+lun	Lunda
+luo	Luo (Kenya and Tanzania)
+lus	Lushai
+lv	Latvian
+mad	Madurese
+mag	Magahi
+mai	Maithili
+mak	Makasar
+man	Mandingo
+map	Austronesian (Other)
+mas	Masai
+mdf	Moksha
+mdr	Mandar
+men	Mende
+mg	Malagasy
+mga	Middle Irish (900-1200)
+mh	Marshallese
+mi	Maori
+mic	Micmac
+min	Minangkabau
+mk	Macedonian
+mkh	Mon-Khmer (Other)
+ml	Malayalam
+mn	Mongolian
+mnc	Manchu
+mni	Manipuri
+mo	Moldavian
+moh	Mohawk
+mos	Mossi
+mr	Marathi
+ms	Malay
+mt	Maltese
+mus	Creek
+mwr	Marwari
+my	Burmese
+myv	Erzya
+na	Nauruan
+nah	Nahuatl
+nai	North American Indian (Other)
+nap	Neapolitan
+nb	Norwegian Bokmal
+nd	North Ndebele
+nds	Low Saxon
+ne	Nepali
+new	Newari
+ng	Ndonga
+nia	Nias
+nic	Niger-Kordofanian (Other)
+niu	Niuean
+nl	Dutch
+nn	Norwegian Nynorsk
+no	Norwegian
+nog	Nogai
+non	Old Norse
+nr	South Ndebele
+nso	Northern Sotho
+nv	Navajo
+nwc	Old Newari
+ny	Nyanja
+nym	Nyamwezi
+nyn	Nyankole
+nyo	Nyoro
+nzi	Nzima
+oc	Occitan / Provencal
+oj	Ojibwa
+om	Oromo
+or	Oriya
+os	Ossetic
+osa	Osage
+ota	Turkish, Ottoman (1500-1928)
+pa	Punjabi
+paa	Papuan (Other)
+pag	Pangasinan
+pal	Pahlavi
+pam	Pampanga
+pap	Papiamento
+pau	Palauan
+peo	Old Persian (ca.600-400)
+phi	Philippine (Other)
+phn	Phoenician
+pi	Pali
+pl	Polish
+pon	Pohnpeian
+pra	Prakrit languages
+pro	Old Provençal (to 1500)
+ps	Pushto
+pt	Portuguese
+qu	Quechua
+raj	Rajasthani
+rap	Rapanui
+rar	Rarotongan
+rm	Raeto-Romance
+rn	Rundi
+ro	Romanian
+roa	Romance (Other)
+rom	Romany
+ru	Russian
+rw	Kinyarwanda
+sa	Sanskrit
+sad	Sandawe
+sah	Yakut
+sai	South American Indian (Other)
+sam	Samaritan Aramaic
+sas	Sasak
+sat	Santali
+sc	Sardinian
+sco	Scots
+sd	Sindhi
+se	Northern Sami
+sel	Selkup
+sem	Semitic (Other)
+sg	Sango
+sga	Old Irish (to 900)
+shn	Shan
+si	Sinhalese
+sid	Sidamo
+sit	Sino-Tibetan (Other)
+sk	Slovak
+sl	Slovenian
+sla	Slavic (Other)
+sm	Samoan
+sma	Southern Sami
+smj	Lule Sami
+smn	Inari Sami
+sms	Skolt Sami
+sn	Shona
+snk	Soninke
+so	Somali
+sog	Sogdian
+son	Songhai
+sq	Albanian
+sr	Serbian
+srr	Serer
+ss	Swati
+ssa	Nilo-Saharan (Other)
+st	Southern Sotho
+su	Sundanese
+suk	Sukuma
+sus	Susu
+sux	Sumerian
+sv	Swedish
+sw	Swahili
+syr	Syriac
+ta	Tamil
+tai	Tai (Other)
+te	Telugu
+tem	Timne
+ter	Tereno
+tet	Tetum
+tg	Tajik
+th	Thai
+ti	Tigrinya
+tig	Tigre
+tiv	Tiv
+tk	Turkmen
+tkl	Tokelau
+tl	Tagalog
+tli	Tlingit
+tmh	Tamashek
+tn	Tswana
+to	Tonga
+tog	Tonga (Nyasa)
+tpi	Tok Pisin
+tr	Turkish
+ts	Tsonga
+tsi	Tsimshian
+tt	Tatar
+tum	Tumbuka
+tut	Altaic (Other)
+tvl	Tuvalu
+tw	Twi
+ty	Tahitian
+tyv	Tuvinian
+udm	Udmurt
+ug	Uighur
+uga	Ugaritic
+uk	Ukrainian
+umb	Umbundu
+ur	Urdu
+uz	Uzbek
+vai	Vai
+ve	Venda
+vi	Vietnamese
+vo	Volapuk
+vot	Votic
+wa	Walloon
+wal	Walamo
+war	Waray
+was	Washo
+wo	Wolof
+xal	Kalmyk
+xh	Xhosa
+yao	Yao
+yap	Yapese
+yi	Yiddish
+yo	Yoruba
+za	Zhuang
+zap	Zapotec
+zen	Zenaga
+zh	Chinese
+znd	Zande
+zu	Zulu
+zun	Zuni

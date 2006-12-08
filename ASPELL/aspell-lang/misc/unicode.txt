@@ -1,0 +1,113 @@
+# Aspell Unicode Data File.
+# Generated with "Unicode-Proc.pl" from the Unicode Character Database 4.0.0.
+# Do Not Edit Directly!
+# 
+# <char> <type> <display> <upper> <lower> <title> <plain> <script> # <category> # <name>
+# 
+# <char> is the unicode code point
+# 
+# <type> is one of:
+#   'D' - a decimal digit
+#   'H' - hyphen
+#   'W' - white space
+#   'A' - a "Alphabetic" code point.  Any character marked as alphabetic
+#         by the Unicode standard but is not actually part of a word.
+#         Ie, it will not appear as part of the word in a dictionary
+#         or if it does it is part of a "special" word such as "1st".
+#   'M' - a "Modifier", Diacritic, or other symbol that are not considered
+#         letters but are part of the word in a dictionary.
+#   'V' - a "Vowel" or "significant" modifier.  For Syllabaries this
+#         only includes vowel marks and not Vowels which appear by
+#         them self or at the beginning of a syllable.
+#   'L' - a "Letter"
+#   '-' - other
+# a lowercase letter means I am unsure of the code point's role in a word.
+# 
+# Code points marked as 'A' will generally be removed in a preprocessing
+# stage.  Code points marked as 'M' will be stored with a word in the
+# dictionary but will generally be stripped from a word when indexing
+# it.  This means that these code points should not significantly change
+# the meaning of a word.  Ie, a word without the modifier or a different
+# modifier will generally be considered a misspelling and not a separate
+# word. Symbols which can appear as part of a word but also have other
+# functions, such as the apostrophe U+0027, should _not_ be tagged with
+# 'M'.  Code points tagged with a 'V' are generally vowels, but can also
+# include "significant" modifier which generally change the meaning of a
+# word.  Code points tagged with 'L' are generally considered letters.
+# The distinction between 'V' and 'L' is not very important.  Code
+# points tagged with 'V' are stripped from a word when forming a
+# primitive soundslike equivalent for a word.
+# 
+# <display> Y, N, M
+# 
+# <upper> is the uppercase version of the letter
+# 
+# <lower> is the lowercase version of the letter
+# 
+# <title> is the titlecase version of the letter
+# 
+# <plain> is the "base" form of the letter, ie one without any accents.
+# 
+# <category> is the "General Category" as given in UnicodeData.txt
+# 
+# <name> is the name as given in UnicodeData.txt
+#
+
+E430 V N E430 E430 E430 E430 Ethi # Lo # [ETHIOPIC VOWEL PART ..A (GEEZ)]
+E431 V N E431 E431 E431 E431 Ethi # Lo # [ETHIOPIC VOWEL PART ..U (KAIB)]
+E432 V N E432 E432 E432 E432 Ethi # Lo # [ETHIOPIC VOWEL PART ..I (SALIS)]
+E433 V N E433 E433 E433 E433 Ethi # Lo # [ETHIOPIC VOWEL PART ..AA (RABI)]
+E434 V N E434 E434 E434 E434 Ethi # Lo # [ETHIOPIC VOWEL PART ..EE (HAMIS)]
+E435 V N E435 E435 E435 E435 Ethi # Lo # [ETHIOPIC VOWEL PART ..E (SADIS)]
+E436 V N E436 E436 E436 E436 Ethi # Lo # [ETHIOPIC VOWEL PART ..O (SABI)]
+E437 V N E437 E437 E437 E437 Ethi # Lo # [ETHIOPIC VOWEL PART ..OA (SAMIN)]
+E438 V N E438 E438 E438 E438 Ethi # Lo # [ETHIOPIC VOWEL PART ..WA (ZEMEDE_GEEZ)]
+E439 V N E439 E439 E439 E439 Ethi # Lo # [ETHIOPIC VOWEL PART ..WE (ZEMEDE_KAIB)]
+E43A V N E43A E43A E43A E43A Ethi # Lo # [ETHIOPIC VOWEL PART ..WI (ZEMEDE_SALIS)]
+E43B V N E43B E43B E43B E43B Ethi # Lo # [ETHIOPIC VOWEL PART ..WAA (ZEMEDE_RABI)]
+E43C V N E43C E43C E43C E43C Ethi # Lo # [ETHIOPIC VOWEL PART ..WEE (ZEMEDE_HAMIS)]
+E440 L N E440 E440 E440 E440 Ethi # Lo # [ETHIOPIC CONSONANT PART H..]
+E441 L N E441 E441 E441 E441 Ethi # Lo # [ETHIOPIC CONSONANT PART L..]
+E442 L N E442 E442 E442 E442 Ethi # Lo # [ETHIOPIC CONSONANT PART HH..]
+E443 L N E443 E443 E443 E443 Ethi # Lo # [ETHIOPIC CONSONANT PART M..]
+E444 L N E444 E444 E444 E444 Ethi # Lo # [ETHIOPIC CONSONANT PART SZ..]
+E445 L N E445 E445 E445 E445 Ethi # Lo # [ETHIOPIC CONSONANT PART R..]
+E446 L N E446 E446 E446 E446 Ethi # Lo # [ETHIOPIC CONSONANT PART S..]
+E447 L N E447 E447 E447 E447 Ethi # Lo # [ETHIOPIC CONSONANT PART SH..]
+E448 L N E448 E448 E448 E448 Ethi # Lo # [ETHIOPIC CONSONANT PART SS..]
+E449 L N E449 E449 E449 E449 Ethi # Lo # [ETHIOPIC CONSONANT PART Q..]
+E44A L N E44A E44A E44A E44A Ethi # Lo # [ETHIOPIC CONSONANT PART QH..]
+E44B L N E44B E44B E44B E44B Ethi # Lo # [ETHIOPIC CONSONANT PART QY..]
+E44C L N E44C E44C E44C E44C Ethi # Lo # [ETHIOPIC CONSONANT PART B..]
+E44D L N E44D E44D E44D E44D Ethi # Lo # [ETHIOPIC CONSONANT PART V..]
+E44E L N E44E E44E E44E E44E Ethi # Lo # [ETHIOPIC CONSONANT PART T..]
+E44F L N E44F E44F E44F E44F Ethi # Lo # [ETHIOPIC CONSONANT PART C..]
+E450 L N E450 E450 E450 E450 Ethi # Lo # [ETHIOPIC CONSONANT PART CC..]
+E451 L N E451 E451 E451 E451 Ethi # Lo # [ETHIOPIC CONSONANT PART X..]
+E452 L N E452 E452 E452 E452 Ethi # Lo # [ETHIOPIC CONSONANT PART N..]
+E453 L N E453 E453 E453 E453 Ethi # Lo # [ETHIOPIC CONSONANT PART NY..]
+E454 L N E454 E454 E454 E454 Ethi # Lo # [ETHIOPIC CONSONANT PART GL_A..]
+E455 L N E455 E455 E455 E455 Ethi # Lo # [ETHIOPIC CONSONANT PART K..]
+E456 L N E456 E456 E456 E456 Ethi # Lo # [ETHIOPIC CONSONANT PART KY..]
+E457 L N E457 E457 E457 E457 Ethi # Lo # [ETHIOPIC CONSONANT PART KX..]
+E458 L N E458 E458 E458 E458 Ethi # Lo # [ETHIOPIC CONSONANT PART XY..]
+E459 L N E459 E459 E459 E459 Ethi # Lo # [ETHIOPIC CONSONANT PART WA..]
+E45A L N E45A E45A E45A E45A Ethi # Lo # [ETHIOPIC CONSONANT PART PH_A..]
+E45B L N E45B E45B E45B E45B Ethi # Lo # [ETHIOPIC CONSONANT PART Z..]
+E45C L N E45C E45C E45C E45C Ethi # Lo # [ETHIOPIC CONSONANT PART ZH..]
+E45D L N E45D E45D E45D E45D Ethi # Lo # [ETHIOPIC CONSONANT PART ZZ..]
+E45E L N E45E E45E E45E E45E Ethi # Lo # [ETHIOPIC CONSONANT PART Y..]
+E45F L N E45F E45F E45F E45F Ethi # Lo # [ETHIOPIC CONSONANT PART D..]
+E460 L N E460 E460 E460 E460 Ethi # Lo # [ETHIOPIC CONSONANT PART DD..]
+E461 L N E461 E461 E461 E461 Ethi # Lo # [ETHIOPIC CONSONANT PART J..]
+E462 L N E462 E462 E462 E462 Ethi # Lo # [ETHIOPIC CONSONANT PART G..]
+E463 L N E463 E463 E463 E463 Ethi # Lo # [ETHIOPIC CONSONANT PART GG..]
+E464 L N E464 E464 E464 E464 Ethi # Lo # [ETHIOPIC CONSONANT PART GY..]
+E465 L N E465 E465 E465 E465 Ethi # Lo # [ETHIOPIC CONSONANT PART TH..]
+E466 L N E466 E466 E466 E466 Ethi # Lo # [ETHIOPIC CONSONANT PART CH..]
+E467 L N E467 E467 E467 E467 Ethi # Lo # [ETHIOPIC CONSONANT PART CCH..]
+E468 L N E468 E468 E468 E468 Ethi # Lo # [ETHIOPIC CONSONANT PART PH..]
+E469 L N E469 E469 E469 E469 Ethi # Lo # [ETHIOPIC CONSONANT PART TS..]
+E46A L N E46A E46A E46A E46A Ethi # Lo # [ETHIOPIC CONSONANT PART TZ..]
+E46B L N E46B E46B E46B E46B Ethi # Lo # [ETHIOPIC CONSONANT PART F..]
+E46C L N E46C E46C E46C E46C Ethi # Lo # [ETHIOPIC CONSONANT PART P..]

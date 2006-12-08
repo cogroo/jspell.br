@@ -1,0 +1,5 @@
+80..94 = 05B0..05C4 # Points
+9D..CF = FB1D..FB4F # Extended Letters
+DF     = 2017       # From iso-8859-8
+E0..FA = 05D0..05EA # Hebrew Letters (iso-8859-8)
+FB..FF = 05F0..05F4 # Yiddish digraphs / Punctuation

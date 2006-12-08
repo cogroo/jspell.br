@@ -1,0 +1,16 @@
+include iso-8859-5.txt
+no-latin
+letters Ӣ Ӯ
+
+0x90 U+0492 # Ғ
+0x91 U+0493 # ғ
+0x92 U+049A # Қ
+0x93 U+049B # қ
+0x94 U+04B2 # Ҳ
+0x95 U+04B3 # ҳ
+0x96 U+04B6 # Ҷ
+0x97 U+04B7 # ҷ
+0x98 U+04E2 # Ӣ
+0x99 U+04E3 # ӣ
+0x9A U+04EE # Ӯ
+0x9B U+04EF # ӯ

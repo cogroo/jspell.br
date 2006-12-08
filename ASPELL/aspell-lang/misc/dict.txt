@@ -1,0 +1,114 @@
+# Aspell 0.50
+af
+bg
+br
+ca
+cs
+cy
+da
+de
+el
+en
+eo
+es
+fo
+fr
+ga
+gd
+gl
+gv
+hr
+ia
+id
+is
+it
+mi
+mk
+ms
+mt
+nb
+nl
+nn
+pl
+pt
+ro
+ru
+rw
+sc
+sk
+sl
+sv
+sw
+tet
+tn
+tr
+uk
+wa
+zu
+
+be
+ny
+tl
+ku
+mg
+
+hil
+
+# Aspell 0.60
+am E
+az E
+bn E
+et E
+fi E
+he E
+hsb E
+hu E
+la E
+lt E
+lv E
+mn E
+qu E
+ta E
+uz E
+vi E
+yi E
+fa E
+or E
+nds E
+pa E
+csb E
+
+hi E
+mr E
+
+te E
+
+# Binary Ispell hash tables only
+sq M
+
+# crubadan begin
+# crubadan end
+
+# made contact with kde/gnome translation teams
+bs M
+eu M
+gu M
+#hi M
+kg M
+li M
+#mr M
+ne M
+ss M
+tg M
+ur M
+ve M
+xh M
+
+# other possibilites
+ar P
+lb M
+sr M
+ti M
+tk P
+ak P
+ml P

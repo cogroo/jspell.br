@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+
+$/ = undef;
+
+foreach my $code (<??>) {
+  my $file = "";
+  #my $file = readlink "$code/aspell-$code-latest.tar.bz2";
+  #($dir) = $file =~ /^.+\.tar\.bz2$/ or die;
+  #open IN, "tar xfjO $code/$file $dir/info |" or next;
+  open IN, "$code/info";
+  $_ = <IN>;
+  my ($name) = /name_english\s+(.+)/ or die "$code";
+  my ($ver)  = /version\s+(.+)/ or die "$code";
+  my ($copyright) = /copyright\s+(.+)/ or die "$code";
+  my ($url) = /url\s+(.+)/;
+  my ($author) = /author:\s+name\s+(.+)/ or die "$code";
+  my $size = -s "$code/$file";
+  my $size = int(($size + 1023)/1024);
+  my $urlr;
+  $urlr = "<a href=\"$url\">Here</a>" if defined $url;
+  print ("<tr>",
+	 "<td>$name",
+	 "<td><a href=\"$code/$file\">$file",
+	 "<td>$size KB",
+	 "<td>$author",
+	 "<td>$copyright",
+	 "<td>$urlr\n"
+	);
+}
+
+#return 0;

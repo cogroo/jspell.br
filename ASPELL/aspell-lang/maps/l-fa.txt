@@ -1,0 +1,5 @@
+include cp1256.txt
+no-latten
+
+0xEE U+06CC
+0XE0 U+0654

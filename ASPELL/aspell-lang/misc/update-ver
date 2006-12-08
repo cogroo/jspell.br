@@ -1,0 +1,1 @@
+perl -pi.bak -e 's|0.50-1|0.50-2|' `find ??/ -name "info"`
