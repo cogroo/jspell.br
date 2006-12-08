@@ -1,0 +1,27 @@
+name_english Portuguese
+name_native português
+lang pt_PT
+author:
+  name Jose Joao Almeida
+  name-native José João Almeida
+  email jj at di uminho pt
+  maintainer true
+author:
+  name Alberto Simoes
+  name-native Alberto Simões
+  email ambs at di uminho pt
+  maintainer false
+author:
+  name Rui Vilela
+  email ruivilela at di uminho pt
+  maintainer true
+copyright GPL
+url http://natura.di.uminho.pt
+version VERSAO
+accurate true
+complete true
+mode ASPELL
+dict:
+  name pt_PT
+  add pt_PT
+  alias portuguese port portugues
