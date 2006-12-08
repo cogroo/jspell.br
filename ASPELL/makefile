@@ -7,9 +7,10 @@
 T=aspell-lang
 P=$T/pt_PT
 L=pt_PT
-DATE=`date +%Y%m%d`
+DATE=date +%Y%m%d
 
 all:
+	make clean
 	make aspell
 
 aspell:
@@ -25,13 +26,14 @@ aspell5:
 aspellv: aspell-wl
 	cd $T; perl pre $L iso-8859-1
 	cp Copyright $P
-	perl -pe 's/VERSAO/${DATE}/;s/ASPELL/aspell${V}/' info > $P/info
+	echo ${DATE}
+	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/;s/ASPELL/aspell${V}/' info > $P/info
 	cd $P; perl proc create
 	cd $P; ./configure; make
 
 aspell-wl: ../port.dic
-#	perl gerarWordList ../port.dic | LANG='C' sort > $L.wl
-	perl gerarWordList ../port.dic > $L.wl
+#	perl gerarWordList ../port.dic > $L.wl
+	echo "teste\npolar\nurso\nxadrez" > $L.wl
 
 dist:
 	cp $P; make dist
@@ -43,4 +45,4 @@ install :
 	cd $P; make install
 
 clean : 
-	rm -rf *~ $T/*~ $P $L
+	rm -rf *~ $T/*~ $P $L.wl
