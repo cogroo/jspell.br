@@ -10,12 +10,7 @@ L=pt_PT
 DATE=date +%Y%m%d
 
 all:
-	make clean
-	make aspell
-
-aspell:
 	make aspell6
-	make aspell5
 
 aspell6:
 	make aspellv V=6
@@ -25,18 +20,21 @@ aspell5:
 
 aspellv: aspell-wl
 	cd $T; perl pre $L iso-8859-1
+	cp $L.wl $P
 	cp Copyright $P
-	echo ${DATE}
-	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/;s/ASPELL/aspell${V}/' info > $P/info
-	cd $P; perl proc create
-	cd $P; ./configure; make
+	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell${V}/g' info > $P/info
+	cd $P; perl proc create; ./configure; #make
 
 aspell-wl: ../port.dic
+	rm -rf $P
 #	perl gerarWordList ../port.dic > $L.wl
-	echo "teste\npolar\nurso\nxadrez" > $L.wl
+	tail -n 100 ../port.dic > _
+	perl gerarWordList _ > $L.wl
+	rm _
+
 
 dist:
-	cp $P; make dist
+	cd $P; make dist
 
 ../port.dic:
 	cd ..; make port.dic

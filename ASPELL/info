@@ -17,11 +17,14 @@ author:
   maintainer true
 copyright GPL
 url http://natura.di.uminho.pt
-version VERSAO
+#versão tem de ser neste formato
+version 0.1-VERSAO
+source-version VERSAO
 accurate true
 complete true
 mode ASPELL
 dict:
+  awli false
   name pt_PT
   add pt_PT
-  alias portuguese port portugues
+  alias port
