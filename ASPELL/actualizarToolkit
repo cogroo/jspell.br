@@ -1,2 +1,3 @@
 touch $HOME/.cvspass
 cvs -z3 -d:pserver:anonymous@cvs.savannah.gnu.org:/sources/aspell up
+rm -rf aspell-lang/examples
