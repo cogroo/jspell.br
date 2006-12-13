@@ -17,7 +17,6 @@ author:
   maintainer true
 copyright GPL
 url http://natura.di.uminho.pt
-#versão tem de ser neste formato
 version 0.1-VERSAO
 source-version VERSAO
 accurate true

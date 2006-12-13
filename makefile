@@ -10,6 +10,10 @@
 
 LING=portugues
 ABR=pt
+#iso631 country code
+ABRX=pt_PT
+#Aspell fixed version (changes with date)
+AS=0.1
 DATE=`date +%Y%m%d`
 
 ## In case you change this, please let jspell maintainers know...
@@ -67,7 +71,7 @@ what:
 	@ echo
 	@ echo -e "chuveiro:"
 	@ echo -e "\tchuveiro -- build all available dictionaries"
-	@ echo -e "\tinstallweb -- online publish at natura"
+	@ echo -e "\tinstall -- online publish at natura"
 	@ echo
 #-------------------------------------------------------------------
 # Generated files
@@ -112,13 +116,12 @@ clean :
 	cd IRR;    make clean
 	cd ISPELL; make clean
 	cd ASPELL; make clean
-	cd ASPELL6; make clean
 	cd MYSPELL; make clean
 	rm -f *.stat *.cnt
 	rm -f *~
 	rm -f aux_all_irr.dic 
 	rm -f port.dic
-	rm -f *.gz *.zip
+	rm -f *.gz *.zip *.bz2
 
 #-------------------------------------------------------------------
 # ispell rules
@@ -141,16 +144,16 @@ ispell-clean:
 #-------------------------------------------------------------------
 # aspell 0.50 rules
 #-------------------------------------------------------------------
-
+#make clean first?
 aspell: port.dic port.aff ispell
-	cd ASPELL; make
+	cd ASPELL; make aspell5
 
 aspell-install: aspell
 	cd ASPELL; make install
 
 aspell-tgz: aspell
-	cd ASPELL; make tgz
-	mv ASPELL/aspell.$(ABR)-$(DATE).tar.gz .
+	cd ASPELL; make dist
+	mv ASPELL/aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 .
 
 aspell-clean:
 	cd ASPELL; make clean
@@ -160,17 +163,17 @@ aspell-clean:
 #-------------------------------------------------------------------
 
 aspell6: port.dic port.aff ispell
-	cd ASPELL6; make
+	cd ASPELL; make aspell6
 
 aspell6-install: aspell6
-	cd ASPELL6; make install
+	cd ASPELL; make install
 
 aspell6-tgz: aspell6
-	cd ASPELL6; make tgz
-	mv ASPELL6/aspell6.$(ABR)-$(DATE).tar.gz .
+	cd ASPELL; make dist
+	mv ASPELL/aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 .
 
 aspell6-clean:
-	cd ASPELL6; make clean
+	cd ASPELL; make clean
 
 #-------------------------------------------------------------------
 # myspell rules
@@ -249,11 +252,15 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz ispell-tgz myspell-tgz aspell-tgz aspell6-tgz myspell-zip
+chuveiro: jspell-tgz ispell-tgz myspell-tgz myspell-zip
+#Similar versions
+	make aspell-tgz
+	make aspell-clean
+	make aspell6-tgz
 
-installweb:
-	cp aspell.*.gz $(NATURA_PUB)/aspell
-	ln -sf $(NATURA_PUB)/aspell/aspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/aspell/aspell.$(ABR)-latest.tar.gz
+install:
+	cp aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell
+	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell/aspell5.$(ABRX)-latest.tar.bz2
 	cp my*.gz $(NATURA_PUB)/myspell
 	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.tar.gz
 	cp my*.zip $(NATURA_PUB)/myspell
@@ -262,12 +269,12 @@ installweb:
 	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
-	cp aspell6.*.gz $(NATURA_PUB)/aspell6
-	ln -sf $(NATURA_PUB)/aspell6/aspell6.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/aspell6/aspell6.$(ABR)-latest.tar.gz
+	cp aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell6
+	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
 	date >> $(NATURA_PUB)/CHANGELOG
 	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
 	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~
 	perl gFeed.pl
-
+	@echo "Go edit $(NATURA_PUB)/CHANGELOG !"
 
 

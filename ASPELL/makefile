@@ -1,7 +1,10 @@
 #Aspell Makefile for using official aspell Language Toolkit
 
-#make aspell (aspell6,aspell5)
+#make (aspell6|aspell5)
 #make install
+
+#Do FIRST make
+#then make dist|install
 
 
 T=aspell-lang
@@ -11,6 +14,7 @@ DATE=date +%Y%m%d
 
 all:
 	make aspell5
+	rm -rf $P #aspell5 is still there
 	make aspell6
 
 aspell6:
@@ -31,20 +35,17 @@ aspellv: aspell-wl
 	cd $P; perl proc create; ./configure; make
 
 aspell-wl: ../port.dic
-	rm -rf $P
 	perl gerarWordList ../port.dic > $L.wl
-#	tail -n 100 ../port.dic > _
-#	perl gerarWordList _ > $L.wl
-#	rm _
-
 
 dist:
+	@echo "WARNING TO MANUAL USAGE: Compile first wished version"
 	cd $P; make dist
 
 ../port.dic:
 	cd ..; make port.dic
 
 install :
+	@echo "WARNING TO MANUAL USAGE: Compile first wished version"
 	cd $P; make install
 
 clean : 
