@@ -32,10 +32,10 @@ aspellv: aspell-wl
 
 aspell-wl: ../port.dic
 	rm -rf $P
-#	perl gerarWordList ../port.dic > $L.wl
-	tail -n 100 ../port.dic > _
-	perl gerarWordList _ > $L.wl
-	rm _
+	perl gerarWordList ../port.dic > $L.wl
+#	tail -n 100 ../port.dic > _
+#	perl gerarWordList _ > $L.wl
+#	rm _
 
 
 dist:
@@ -48,4 +48,4 @@ install :
 	cd $P; make install
 
 clean : 
-	rm -rf *~ $T/*~ $P $L.wl
+	rm -rf *~ $T/*~ $P $L.wl a*bz2
