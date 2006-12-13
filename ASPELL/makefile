@@ -5,25 +5,30 @@
 
 
 T=aspell-lang
-P=$T/pt_PT
 L=pt_PT
+P=$T/$L
 DATE=date +%Y%m%d
 
 all:
+	make aspell5
 	make aspell6
 
 aspell6:
 	make aspellv V=6
+	make dist
+	mv $P/aspell6*`${DATE}`* .
 
 aspell5:
 	make aspellv V=5
+	make dist
+	mv $P/aspell5*`${DATE}`* .
 
 aspellv: aspell-wl
 	cd $T; perl pre $L iso-8859-1
 	cp $L.wl $P
 	cp Copyright $P
 	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell${V}/g' info > $P/info
-	cd $P; perl proc create; ./configure; #make
+	cd $P; perl proc create; ./configure; make
 
 aspell-wl: ../port.dic
 	rm -rf $P
