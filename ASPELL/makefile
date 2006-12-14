@@ -28,10 +28,12 @@ aspell5:
 	mv $P/aspell5*`${DATE}`* .
 
 aspellv: aspell-wl
+	rm -rf $P
 	cd $T; perl pre $L iso-8859-1
 	cp $L.wl $P
 	cp Copyright $P
 	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell${V}/g' info > $P/info
+	echo "special - -*-" >> $P/$L.dat
 	cd $P; perl proc create; ./configure; make
 
 aspell-wl: ../port.dic
