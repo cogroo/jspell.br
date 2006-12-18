@@ -254,13 +254,13 @@ port.hash: port.dic port.aff
 
 chuveiro: jspell-tgz ispell-tgz myspell-tgz myspell-zip
 #Similar versions
-	make aspell-tgz
-	make aspell-clean
-	make aspell6-tgz
+#	make aspell-tgz
+#	make aspell-clean
+#	make aspell6-tgz
 
 install:
-	cp aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell
-	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell/aspell5.$(ABRX)-latest.tar.bz2
+#	cp aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell
+#	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell/aspell5.$(ABRX)-latest.tar.bz2
 	cp my*.gz $(NATURA_PUB)/myspell
 	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.tar.gz
 	cp my*.zip $(NATURA_PUB)/myspell
@@ -269,8 +269,8 @@ install:
 	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
-	cp aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell6
-	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
+#	cp aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell6
+#	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
 	date >> $(NATURA_PUB)/CHANGELOG
 	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
 	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~
