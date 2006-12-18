@@ -39,8 +39,7 @@ NATURA_PUB=/home/natura/download/sources/Dictionaries
 #-------------------------------------------------------------------
 # Instructions
 #-------------------------------------------------------------------
-what:
-
+all:
 	@ echo
 	@ echo -e "jspell:"
 	@ echo -e "\tjspell -- builds jspell dictionary"
