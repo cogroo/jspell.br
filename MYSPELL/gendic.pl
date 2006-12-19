@@ -1,8 +1,7 @@
 #!/usr/bin/perl -w
 
-#Generates MYSpell dictionary for Portuguese from ISpell dictionary for Portuguese
-#Rui Vilela, Linguateca
-#Last version 19/01/2005
+#Generates myspell affix rules from ispell affix rules for Portuguese
+#Rui Vilela, 2005
 
 use strict;
 use locale;

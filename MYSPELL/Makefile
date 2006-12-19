@@ -26,7 +26,7 @@ myspell:
 
 myspell-tgz: tgz
 
-myspell-zip:
+myspell-zip: myspell
 	mkdir myspell.$(ABR)-$(DATE)
 	cp $P/pt_PT.dic $P/README_pt_PT.txt $P/pt_PT.aff myspell.$(ABR)-$(DATE)
 	cp ../COPYING myspell.$(ABR)-$(DATE)
@@ -44,11 +44,7 @@ install :
 	cd $P
 	./install.sh
 clean : 
-	rm -rf myspell.$(ABR)-$(DATE)	
-	rm -rf *~ $P/*~
-	make realclean
-
-realclean:
-	rm -f $P/*.aff *.gz $P/*~ $P/*.dic *.zip
+	rm -rf myspell.$(ABR)-$(DATE)
+	rm -rf *~ $P/*~ $P/*.aff *.gz $P/*~ $P/*.dic *.zip
 
 
