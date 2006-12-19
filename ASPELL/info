@@ -1,6 +1,7 @@
 name_english Portuguese
 name_native português
 lang LANG
+data-file LANG_phonet.dat
 author:
   name Jose Joao Almeida
   name-native José João Almeida

@@ -30,7 +30,9 @@ aspellv6:
 	cd $T; perl pre $L iso-8859-1
 	cp $L.wl $P
 	cp Copyright $P
+	cp $L_phonet.dat $P/$L_phonet.dat
 	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell6/g; s/LANG/$L/g' info > $P/info
+	perl -pe 's/LANG/$L/g' $L.dat > $P/$L.dat;
 	echo "special - -*-" >> $P/$L.dat
 	cd $P; perl proc create; ./configure
 	cd $P; make
@@ -40,14 +42,16 @@ aspellv5:
 	cd $T; perl pre $K iso-8859-1
 	cp $L.wl $O/$K.wl
 	cp Copyright $O
+	cp $L_phonet.dat $O/$K_phonet.dat
 	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell5/g; s/LANG/$K/g;' info > $O/info
+	perl -pe 's/LANG/$K/g' $L.dat > $O/$K.dat;
 	echo "special - -*-" >> $O/$K.dat
 	cd $O; perl proc create; ./configure; 
 	cd $O; make
 
 
 aspell-wl: ../port.dic
-#	perl gerarWordList ../port.dic > $L.wl
+	perl gerarWordList ../port.dic > $L.wl
 
 dist5: aspell5
 	cd $O; make dist

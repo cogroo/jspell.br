@@ -1,0 +1,6 @@
+name LANG
+charset iso-8859-1
+special - -*-
+soundslike LANG
+sug-split-char -
+special - -*-
