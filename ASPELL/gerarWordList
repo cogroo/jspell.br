@@ -14,7 +14,7 @@ open(F1,"| grep -v '#' |grep '[a-zA-Zайубъ]' | LANG=C sort -u") or die;
 my $i;
 while(<F>){
     $i++;
-    s/[= ,\n]+/\n/g;
+    s/[-= ,\n]+/\n/g;
     next if m!^#!;
     print F1 "$_\n";
     print STDERR ".. $i" unless ($i % 5000);

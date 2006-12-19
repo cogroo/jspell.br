@@ -13,7 +13,6 @@ ABR=pt
 #iso631 country code
 ABRX=pt_PT
 #Aspell fixed version (changes with date)
-AS=0.1
 DATE=`date +%Y%m%d`
 
 ## In case you change this, please let jspell maintainers know...
@@ -111,7 +110,7 @@ port.tgz: $(BASE)
 #-------------------------------------------------------------------
 # Garbage collecting :)
 #-------------------------------------------------------------------
-clean : 
+clean: 
 	cd IRR;    make clean
 	cd ISPELL; make clean
 	cd ASPELL; make clean
@@ -152,7 +151,7 @@ aspell-install: aspell
 
 aspell-tgz: aspell
 	cd ASPELL; make dist
-	mv ASPELL/aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 .
+	mv ASPELL/aspell5*$(DATE)*bz2 .
 
 aspell-clean:
 	cd ASPELL; make clean
@@ -169,7 +168,7 @@ aspell6-install: aspell6
 
 aspell6-tgz: aspell6
 	cd ASPELL; make dist
-	mv ASPELL/aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 .
+	mv ASPELL/aspell6*$(DATE)*bz2 .
 
 aspell6-clean:
 	cd ASPELL; make clean
@@ -251,15 +250,11 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz ispell-tgz myspell-tgz myspell-zip
-#Similar versions
-#	make aspell-tgz
-#	make aspell-clean
-#	make aspell6-tgz
+chuveiro: jspell-tgz ispell-tgz myspell-tgz myspell-zip aspell-tgz aspell6-tgz
 
 install:
-#	cp aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell
-#	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell/aspell5.$(ABRX)-latest.tar.bz2
+	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
+	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABR)-0.1_$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell5.$(ABR)-latest.tar.bz2
 	cp my*.gz $(NATURA_PUB)/myspell
 	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.tar.gz
 	cp my*.zip $(NATURA_PUB)/myspell
@@ -268,8 +263,8 @@ install:
 	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
-#	cp aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell6
-#	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-$(AS)-$(DATE).tar.bz2 $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
+	cp aspell6*$(DATE)*bz2 $(NATURA_PUB)/aspell
+	ln -sf $(NATURA_PUB)/aspell/aspell6-$(ABRX)-0.1_$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell6.$(ABRX)-latest.tar.bz2
 	date >> $(NATURA_PUB)/CHANGELOG
 	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
 	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~
