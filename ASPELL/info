@@ -1,6 +1,6 @@
 name_english Portuguese
 name_native português
-lang pt_PT
+lang LANG
 author:
   name Jose Joao Almeida
   name-native José João Almeida
@@ -17,12 +17,12 @@ author:
   maintainer true
 copyright GPL
 url http://natura.di.uminho.pt
-version 0.1_VERSAO-0
+version 0.1-VERSAO-0
 source-version VERSAO
 accurate true
 complete true
 mode ASPELL
 dict:
   awli false
-  name pt_PT
-  add pt_PT
+  name LANG
+  add LANG
