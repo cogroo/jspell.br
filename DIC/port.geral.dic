@@ -1891,6 +1891,7 @@ anoitecer/#vi/XYL/
 anojadiço/#a//
 anojar/#vt/XYPLMD/
 ano-luz/#nm//
+anos-luz/$ano-luz$N=p//
 anomalia/#nf/p/
 anómalo/#a/fp/
 anomia/#nf//
@@ -1986,6 +1987,7 @@ anterior/#an/pmd/
 anterioridade/#nf/p/
 anteriorizar/#vt/XYPL/
 antes/#avt//
+antestreia/#nf//
 antever/#vt,I=3/PL/
 antevéspera/#nf//
 antevidência/#nf/p/
@@ -3154,6 +3156,7 @@ assegurador/#nm//
 assegurar/#vt/XYPLcDv/
 asseio/#nm//
 assembleia/#nf/p/
+assembleia-geral/#nf//
 assemelhar/#vt/XYPLc/
 assenhorar/#v/XYLM/
 assenhorear/#vt/XYPL/
@@ -3647,6 +3650,7 @@ autodigestão/#nf//
 autodinamia/#nf//
 autodinâmico/#a/fp/
 autódromo/#nm/p/
+auto-estima/#nf//
 auto-estrada/#nf/p/
 autoestrada/#nf/p/
 autofecundação/#nf//
@@ -5349,7 +5353,6 @@ bronze/#nm/pt/
 brônzeo/#a//
 brotar/#vn/XYPLM/
 broto/#nm/f/
-browniano/#a//
 brucelose/#nf/p/
 bruços/#nm,N=p//
 brumaceiro/#a//
@@ -6449,7 +6452,9 @@ carroçar/#vn/XYPL/
 carroceiro/#nm//
 carrocel/#nm/p/
 carro/#nm/phA/
+carro-patrulha/#nm//
 carrossel/#nm//
+carros-patrulha/$carro-patrulha$N=p//
 carruagem/#nf/p/
 carta-branca/#nf//
 cartada/#nf//
@@ -7482,6 +7487,7 @@ cinematografia/#nf/pqr/
 cinematoscópio/#nm//
 cinescopia/#nf//
 cinestesia/#nf//
+cine-teatro/#nm//
 cinética/#nf//
 cinético/#a/f/
 cingir/#vt/XYPL/
@@ -8236,6 +8242,7 @@ compositivo/#a//
 compósito/#a//
 compositor/#nm/fp/
 compossessor/#nm//
+compostagem/#nf//
 compostelano/#hm/f/
 composto/#hm/fp/
 compostura/#nf//
@@ -8805,6 +8812,7 @@ consulente/#hn//
 consulesa/#nf//
 cônsul/#nm/xVe/
 consulta/#nf//
+colsultadoria/#nf//
 consultante/#hn/p/
 consultar/#vn/XYPLcDnv/
 consultivo/#a/fp/
@@ -11125,6 +11133,7 @@ despiedar/#v/XYL/
 despiolhar/#vt/XYPLcM/
 despique/#nm//
 despir/#vt,I=3/YPLM/
+despistagem/#nf//
 despistar/#vt/XYPLM/
 desplantar/#vt/XYPL/
 desplante/#nm/p/
@@ -13870,6 +13879,8 @@ estádio/#nm/p/
 estadismo/#nm/p/
 estadista/#nn//
 estado-maior/#nm//
+estado-membro/#nm//
+estados-membros/$estado-membro$#nm$N=p//
 estado/#nm/pti/
 estada/#nf//
 estadual/#an/p/
@@ -15512,7 +15523,8 @@ fontela/#nf/p/
 fonte/#nf/pt/
 fontista/#nn//
 fora/#avl//
-fora-da-lei/#a//
+fora-da-lei/#hn//
+fora-de-jogo/#nm//
 foragido/#hn/fp/
 fora/#i//
 foraleiro/#a//
@@ -15755,6 +15767,7 @@ frenar/#vt/XYPL/
 frenesim/#nm//
 frenético/#a/pfH/
 frente/#nf/pi/
+frete-a-frente/#nm//
 frequência/#nf/p/
 frequencímetro/#nm/p/
 frequentar/#vt/XYPLcD/
@@ -20538,6 +20551,7 @@ londrino/#hm/fp/
 longa/#hf//
 longal/#an//
 longa-metragem/#nf//
+longas-metragens/$longa-metragem$N=p//
 longe/#an/p/
 longes/#nm,N=p//
 longevidade/#nf/p/
@@ -20854,7 +20868,7 @@ mais/#av//
 mais/CAT=pind,G=_,N=_//
 mais-que-perfeito/#a//
 mais-que-tudo/#nn//
-mais-valia/#nf//
+mais-valia/#nf/p/
 maiúscula/#nf/p/
 maiúsculo/#a/fp/
 majestade/#nf/p/
@@ -21293,7 +21307,8 @@ mártir/#nn/p/
 martirológio/#nm//
 marujada/#nf//
 marujar/#vi/XYL/
-marxismo-leninismo/#nm//
+marxismo/#nm//
+marxismo-leninismo/$marxismo$#nm//
 marxista/#hn/p/
 mascarada/#nf//
 máscara/#nf/p/
@@ -21532,6 +21547,7 @@ meias-medidas/#nf,N=p//
 meias/#nf,N=p//
 meias-palavras/#nf,N=p//
 meigo/#a/pGf/
+meio-campo/#nm//
 meio-dia/#nm//
 meio/#hm/fp/
 meio-irmão/#nm//
@@ -21889,6 +21905,7 @@ micrométrico/#a//
 micrómetro/#nm//
 microprocessador/#nm//
 micro/#nm//
+micro-ondas/#nmp//
 mícron/#nm//
 micronutriente/#nm/p/
 microrganismo/#nm/p/
@@ -22028,6 +22045,7 @@ ministral/#an//
 ministrante/#nn/p/
 ministrar/#vt/XYPLcDn/
 ministro/#nm/fpxV/
+ministro-adjunto/#nm/x/
 mi/#nm//
 minorada/#a//
 minorante/#nm/p/
@@ -23266,6 +23284,7 @@ noroestear/#vi/ZYL/
 noroeste/#nm//
 nortada/#nf//
 norte-americano/#a/fp/
+norte-coreano/#a/fp/
 nortear/#vt/ZYPLcS/
 nortenho/#a/fp/
 norte/#nm/tS/
@@ -24987,7 +25006,7 @@ penal/#an/d/
 penalidade/#nf/p/
 penalizante/#an/p/
 penalizar/#vt/XYPLcnDS/
-penalty/#nm/p/    		#grande penalidade é a forma correcta
+penalti/#nm/p/    		#grande penalidade é a forma correcta
 pena/#nf/p/
 penar/#vi/XYLc/
 pencada/#nf//
@@ -25524,6 +25543,8 @@ pilotagem/#nf//
 pilotar/#vt/XYPL/
 piloto/#nm/p/
 pílula/#nf/p/
+pimba/#i//
+pimba/#a//
 pimental/#nm//
 pimenta/#nf/p/
 pimentão/#nm/p/
@@ -26567,14 +26588,16 @@ primaveril/#an//
 primaz/#hm//
 primazia/#nf//
 primeiranista/#nn//
+primeira-ministra/$primeiro-ministro$G=f/x/
 primeiríssimo/#a//
 primeiro/#a/m/
 primeiro/#av//
 primeiro-cabo/#nm//
-primeiro-ministro/#nm/fxV/
+primeiro-ministro/#nm/x/
 primeiro/#o/fp/
 primeiro-sargento/#nm//
 primeiro-tenente/#nm//
+primeiros-ministros/$primeiro-ministro$N=p//
 primitiva/#nf//
 primitivo/#a/pfmid/
 primogénito/#hm/fp/
@@ -26640,6 +26663,7 @@ processão/#nf//
 processar/#vt/XYPLMDvER/
 processional/#an/m/
 processo/#nm/p/
+processo-crime/#nm//
 processual/#an/p/
 procissão/#nf/p/
 proclamador/#hm//
@@ -26747,6 +26771,7 @@ projéctil/#hm2/a/
 projectista/#nn//
 projectivo/#a//
 projecto/#nm/pt/
+projecto-lei/#nm//
 projector/#nm/p/
 projectura/#nf//
 prole/#nf//
@@ -26798,6 +26823,7 @@ prontidão/#nf//
 prontificar/#vt/XYPLc/
 pronto/#hm/fpm/
 pronto-socorro/#nm//
+pronto-a-vestir/#nm//
 prontuário/#nm//
 pronúncia/#nf/p/
 pronunciar/#vt/XYPLcMv/
@@ -29672,6 +29698,7 @@ sangrar/#vn/XYPLD/
 sangrento/#a/fp/
 sangria/#nf//
 sangue/#nm/h/
+sangue-frio/#nm//
 sanguessuga/#nf//
 sanguífero/#a//
 sanguificar/#vt/XYPL/
@@ -29984,6 +30011,7 @@ semântica/#nf//
 semântico/#a/fp/
 semblante/#nm/p/
 sem/CAT=prep//
+sem-abrigo/#nm//
 sem-cerimónia/#nf//
 semeada/#nf//
 semeadoiro/#a//
@@ -30495,7 +30523,7 @@ sismografia/#nf/pqr/
 sismologia/#nf/qr/
 sismo/#nm/pA/
 siso/#nm//
-sistema/#nm/p/
+sistema/#nm/pu/
 sistemático/#a/fpH/
 sistematizar/#vt/XYPLcD/
 sistémico/#a/fp/
@@ -31107,6 +31135,7 @@ sujeito/#hm/fp/
 sujo/#a/pfd/
 sul-africano/#hm/fp/
 sul-americano/#hm/fp/
+sul-coreano/#hm/fp/
 sulcador/#a//
 sulcar/#vt/XYPLD/
 sulco/#nm/p/

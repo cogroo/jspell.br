@@ -129,6 +129,7 @@ Almortão/#t/
 Alpes/#la,#tmp/
 Alpiarça/#t/
 Alportel/#t/
+Alqueva/#t/
 Alsácia/#tf/
 Aluísio/#np/
 Alvaiázere/#t/
@@ -550,12 +551,14 @@ Carminda/#npf/
 Carmona/#np/
 Carmo/#np/
 Carnaval/CAT=np,G=m/
+Carnaxide/#t/
 Carnegie/#t/
 Carolina/#npf/
 Carol/#np1/
 Cárpatos/#t/
 Carrazeda/#t/
 Carregal/#la,#t/
+Carrilho/#np/
 Carrol/#np1/
 Cartago/#t/
 Cartaxo/#t/
@@ -2257,6 +2260,7 @@ Senegal/#la,#tp/
 Sequeira/#t/
 Serafim/#npm/
 Serafins/CAT=np/
+Serralves/#np//
 Sérvia/#la,#tpf/
 Sérgio/#npm/
 Sergipe/#t/
@@ -2513,6 +2517,7 @@ Urais/#la,#tmp/
 Urbión/#t/
 Uruguai/#la,#tp/
 Uzbequistão/#npm/
+Valadares/#t/
 Valdemar/#npm/
 Valdevez/#t/
 Valença/#np/
@@ -2581,6 +2586,7 @@ Vigo/#tc/
 VII/CAT=np,SEM=n/
 VIII/CAT=np,SEM=n/
 Vilafranca/#t/
+Vilamoura/#t/
 Vilariça/CAT=np/
 Vilarinho/CAT=np/
 Vilar/#np/
@@ -2679,8 +2685,8 @@ Zeferino/#npm/
 Zelândia/#tpf/
 Zélia/#npf/
 Zé/#npm/
-Zéfiro/#np/
-Zeus/#np/
+Zéfiro/#mit/
+Zeus/#mit/
 Zêzere/#la,#tr/
 Zimbábue/#npm/
 Zodíaco/CAT=np,G=m/
