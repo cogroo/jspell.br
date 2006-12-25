@@ -403,7 +403,6 @@ Bill/CAT=np,G=m,SEM=p1/
 Birmânia/#tpf/
 Biscaia/#la,#t/
 Bismarck/#np1/
-Bismark/#np1/
 Bissau/#tc/
 Bizet/#np1/
 Boaventura/#npm/
@@ -1358,7 +1357,7 @@ Junho/#em/
 Juno/#npm/
 Junqueira/#np/
 Junqueiro/#np/
-Júpiter/CAT=np,G=m,SEM=pl/
+Júpiter/CAT=np,SEM=pl/
 Jurássico/CAT=np/
 Justiniano/#npm/
 Justino/#npm/
@@ -1589,7 +1588,7 @@ Marrocos/CAT=np/
 Marselha/#tc/
 Marselhesa/CAT=np/
 Marshall/#np1/
-Marte/CAT=np,G=m,SEM=pl/
+Marte/CAT=np, SEM=pl/
 Martim/#npm/
 Martinez/#np1/
 Martínez/#np1/
@@ -1639,6 +1638,7 @@ Menelau/CAT=np/
 Meneses/#np/
 Menezes/#np/
 Mercedes/#np/
+Mercúrio/CAT=np,G=m,SEM=pl/
 Mérida/#t/
 Meriterrâneo/CAT=np/
 Mértola/#t/
@@ -2007,6 +2007,7 @@ Platão/#npm/
 Plauto/#npm/
 Plínio/#npm/
 Plistocénico/CAT=np/
+Plutão/CAT=np,G=m,SEM=pl/
 Pneumática/CAT=np/
 Poiares/#t/
 Poincaré/#np1/
@@ -2420,6 +2421,7 @@ Teofrasto/CAT=np/
 Teotónio/#npm/
 Terêncio/#npm/
 Teresa/#npf/
+Terra/CAT=np,G=f,SEM=pl/
 Tertuliano/CAT=np/
 Tesauro/CAT=np/
 Teseu/CAT=np/
