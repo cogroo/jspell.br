@@ -2117,7 +2117,7 @@ Rioja/#t/
 Rita/#npf/
 Rivera/CAT=np/
 Riviera/#la,#t/
-Rivoli/CAT=np,SEM=intituicao/
+Rivoli/CAT=np,SEM=instituicao/
 Robert/#np1/
 Roberto/#npm/
 Robespierre/#np1/
@@ -2280,7 +2280,6 @@ Sião/CAT=np/
 Sibéria/#la,#t/
 Sicília/#la,#t/p/
 Sicrano/CAT=np,G=m/
-SIDA/CAT=np,SEM=s/
 Sidney/#tc/
 Sidónio/#npm/
 Sídon/#tc/
@@ -2370,6 +2369,7 @@ Tailândia/#la,#tpf/
 Taira/CAT=np/
 Taishi/CAT=np/
 Taiwan/#npm/
+Taizé/CAT=np,SEM=instituicao/
 Tales/#npm/
 Tallinn/#tc/
 Tamão/CAT=np/
@@ -2507,7 +2507,6 @@ Uíge/#t/
 Ulisses/#npm/
 Ulster/#npf/
 Umbria/#t/
-UNESCO/CAT=np,SEM=s/
 Universo/CAT=np,G=m/
 Urais/#la,#tmp/
 Úrano/CAT=np,G=m,SEM=pl/
