@@ -183,8 +183,8 @@ abrupto/#a/fpm/
 absentismo/#nm/p/
 absentista/#hn/p/
 abside/#nf/p/
-absíntio/#nm/p/     ; o m.q. absinto
-absinto/#nm/p/
+absíntio/#nm/p/
+absinto/$absíntio$#nm/p/
 absoluto/#hm/pfmti/
 absolutório/#a//
 absolver/#vt/XYPLM/
@@ -3112,7 +3112,7 @@ asperamente/$áspero$#a$#av//
 aspereza/#nf//
 áspero/#a/fp/
 aspérrimo/#a//
-aspersão/#nf//?
+aspersão/#nf//
 aspersor/#nm/p/
 aspiração/#nf/p/
 aspirador/#hm/p/
@@ -7010,7 +7010,7 @@ cerimonioso/#a/mfp/
 cerneira/#a//
 cernelha/#nf//
 cerne/#nm//
-cernir/#vi/XYL/i?
+cernir/#vn/XYL/
 ceroulas/#nf,N=p//
 cerqueiro/#hm//
 cerquinho/#nm//
@@ -12424,7 +12424,7 @@ ementar/#vt/XYPL/
 emérito/#a/fp/
 emergência/#nf/p/
 emergente/#an/p/
-emergir/#vi/XYL/i?
+emergir/#vi/XYL/
 emersão/#nf//
 emerso/#a/fp/
 emigrador/#a//
@@ -13267,7 +13267,7 @@ erva/#nf/p/
 ervilhal/#nm//
 ervilha/#nf/p/
 ervilheira/#nf//
-esbaforir/#vi/XYL/i?
+esbaforir/#vi/XYL/
 esbanjador/#hm//
 esbanjar/#vt/XYPLMD/
 esbarrar/#vn/XYPL/
@@ -15394,7 +15394,7 @@ florete/#nm/p/
 floricultura/#nf/prq/
 florífero/#a/p/
 florim/#nm/p/
-florir/#vn/XYL/i?
+florir/#vn/XYL/
 florista/#nn/p/
 flor/#nf/p/
 flostria/#nf//
@@ -16864,7 +16864,7 @@ guardear/#vt/ZYPLM/
 guardense/#hn/p/
 guardião/#nm/bp/
 guarida/#nf//
-guarir/#vn/XYL/i?
+guarir/$guarecer$#vn/XYL/
 guarnecer/#vt/XYPLSMD/
 guarnição/#nf/p/
 guatemalteco/#hm/fp/
@@ -18279,7 +18279,7 @@ indevido/#a/mfp/
 indevoção/#nf//
 indevoto/#a//
 indexada/#a//
-indexar/#v/XYcD/#o XY não foi verificado
+indexar/#v/XYcD/
 índex/#nm//
 indianismo/#nm/p/
 indianista/#hn//
@@ -28139,7 +28139,7 @@ reembolsar/#vt/XYPLv/
 reembolso/#nm/p/
 reemenda/#nf//
 reemendar/#vt/XYPL/
-reemergir/#vi/XYL/i?
+reemergir/#vi/XYL/
 reemigrar/#vi/XYL/
 reempossar/#vt/XYPL/
 reencarnação/#nf//
@@ -28190,7 +28190,7 @@ reflexivo/#a/pfdm/
 reflexo/#a/fp/
 reflorescência/#nf/p/
 reflorescente/#an//
-reflorir/#vi/XYL/i?
+reflorir/$reflorescer$#vi/XYL/
 refluir/#vi/KL/
 reflutuar/#vn/XYPLc/
 refluxo/#nm//
@@ -31628,6 +31628,7 @@ tela/#nf/p/
 telão/#nm//
 telecomandar/#vt/XYPL/
 telecomando/#nm/p/
+telecomunicação/#nf//
 telecomunicações/#nf,N=p//
 teledinâmica/#nf//
 teledinâmico/#a/fp/
