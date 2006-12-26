@@ -7487,7 +7487,7 @@ cinematografia/#nf/pqr/
 cinematoscópio/#nm//
 cinescopia/#nf//
 cinestesia/#nf//
-cine-teatro/#nm//
+cine-teatro/#nm/p/
 cinética/#nf//
 cinético/#a/f/
 cingir/#vt/XYPL/
@@ -8812,7 +8812,7 @@ consulente/#hn//
 consulesa/#nf//
 cônsul/#nm/xVe/
 consulta/#nf//
-colsultadoria/#nf//
+consultadoria/#nf//
 consultante/#hn/p/
 consultar/#vn/XYPLcDnv/
 consultivo/#a/fp/
@@ -15767,7 +15767,7 @@ frenar/#vt/XYPL/
 frenesim/#nm//
 frenético/#a/pfH/
 frente/#nf/pi/
-frete-a-frente/#nm//
+frente-a-frente/#nm//
 frequência/#nf/p/
 frequencímetro/#nm/p/
 frequentar/#vt/XYPLcD/
@@ -26666,6 +26666,7 @@ processar/#vt/XYPLMDvER/
 processional/#an/m/
 processo/#nm/p/
 processo-crime/#nm//
+processos-crime/$processo-crime$#nm$N=p//
 processual/#an/p/
 procissão/#nf/p/
 proclamador/#hm//
@@ -26774,6 +26775,7 @@ projectista/#nn//
 projectivo/#a//
 projecto/#nm/pt/
 projecto-lei/#nm//
+projectos-lei/$projecto-lei$#nm$N=p//
 projector/#nm/p/
 projectura/#nf//
 prole/#nf//
