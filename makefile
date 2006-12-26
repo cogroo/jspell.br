@@ -32,7 +32,6 @@ BASE= port.aff $(PTDIC) irregulares.txt aux_verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
       PERL/pos2iso PERL/jsp2isp.pl README jspell.port.spec irr2perl
 
-LINGUATECA_PUB=/home/www/htdocs/dics
 NATURA_PUB=/home/natura/download/sources/Dictionaries
 
 #-------------------------------------------------------------------
@@ -67,6 +66,11 @@ all:
 	@ echo -e "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
 	@ echo -e "\tmyspell-zip -- creates myspell distribution file (zip)"
 	@ echo
+	@ echo -e "wordlist:"
+	@ echo -e "\twordlist -- builds a simple word list"
+	@ echo -e "\twordlist-bz2 -- creates wordlist compressed file"
+	@ echo -e "\twordlist-diff -- calculates real differences on the dictionary since last release (needs a previous release)
+	@ echo -e
 	@ echo -e "chuveiro:"
 	@ echo -e "\tchuveiro -- build all available dictionaries"
 	@ echo -e "\tinstall -- online publish at natura"
@@ -195,6 +199,21 @@ myspell-clean:
 	cd MYSPELL; make clean
 
 #-------------------------------------------------------------------
+# wordlist rules
+#-------------------------------------------------------------------
+wordlist: port.dic
+	cd WORDLIST; make wl
+
+wordlist-bz2: wordlist
+	cd WORDLIST; make bz2
+	mv WORDLIST/word*$(DATE)*bz2 .
+wordlist-diff: wordlist
+	cd WORDLIST; make diff OLDWL=$D/misc/wordlist #IT has default file search!
+wordlist-clean:
+	cd WORDLIST; make clean
+
+
+#-------------------------------------------------------------------
 # jspell rules
 #-------------------------------------------------------------------
 
@@ -250,9 +269,9 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz ispell-tgz myspell-tgz myspell-zip aspell-tgz aspell6-tgz
+chuveiro: jspell-tgz ispell-tgz myspell-tgz myspell-zip aspell-tgz aspell6-tgz wordlist-tgz
 
-install:
+install: wordlist-diff
 	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
 	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABR)-0.1_$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell5.$(ABR)-latest.tar.bz2
 	cp my*.gz $(NATURA_PUB)/myspell
@@ -265,6 +284,8 @@ install:
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
 	cp aspell6*$(DATE)*bz2 $(NATURA_PUB)/aspell
 	ln -sf $(NATURA_PUB)/aspell/aspell6-$(ABRX)-0.1_$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell6.$(ABRX)-latest.tar.bz2
+	cp word*$(DATE)*bz2 $(NATURA_PUB)/misc/wordlist
+	ln -sf $(NATURA_PUB)/misc/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_PUB)/misc/wordlist.$(ABRX)-latest.tar.bz2
 	date >> $(NATURA_PUB)/CHANGELOG
 	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
 	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~
