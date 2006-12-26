@@ -269,7 +269,8 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell-tgz aspell6-tgz
+chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip 
+#aspell-tgz aspell6-tgz
 
 install: #wordlist-diff
 #	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
