@@ -13,8 +13,9 @@ bz2: #wl
 
 diff: wl
 	rm *bz2
-	cp $(OLDWL)/`ls -t1r $(OLDWL)/*20*bz2 |tail -n1` .
-	tar xfj `ls -t1 *20*bz2 |tail -n1`
+	cp $(OLDWL)/`ls -t1r $(OLDWL)/*20*bz2 |tail -n1` oldwl.tar.bz2
+	tar xfjO oldwl.tar.bz2 > oldwl.txt
+	diff oldwl.txt wordlist.$L-`$(DATE)`.txt > rawdiffwordlist.$L-`$(DATE)`.txt	perl -lne 'chomp; push @i if /^>/; push @o if /^</; print "Diferenças de palavras desde a última versão (FALTA ID DA VERSÃO ANTERIOR)"; print "\n\n**Removidas**"; map {print} @o; print "\n\n**Adicionadas**" map {print} @i' verbosediffwordlist.$L-`$(DATE)`.txt > wordlist.$L-`$(DATE)`.txt
 ../port.dic:
 	cd ..; make port.dic
 
