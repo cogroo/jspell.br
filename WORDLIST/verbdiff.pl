@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -l -w
 
 while(<>){
     chomp;
@@ -8,7 +8,7 @@ while(<>){
 
 print "Diferenças de palavras desde a última versão (FALTA ID DA VERSÃO ANTERIOR)"; 
 print "\n\n**Removidas**"; 
-map {print} @o; 
+map {s/[<>] //; print} @o; 
 print "\n\n**Adicionadas**"; 
 map {print} @i;
 

@@ -15,7 +15,7 @@ diff: #wl
 	rm -f *bz2
 	cp `ls -t1r $(OLDWL)/*20*bz2 |tail -n1` oldwl.tar.bz2
 	tar xfj oldwl.tar.bz2 -O > oldwl.txt
-	diff oldwl.txt wordlist.$L-`$(DATE)`.txt > rawdiffwordlist.$L-`$(DATE)`.txt
+#	diff oldwl.txt wordlist.$L-`$(DATE)`.txt > rawdiffwordlist.$L-`$(DATE)`.txt #???????
 	perl verbdiff.pl rawdiffwordlist.$L-`$(DATE)`.txt > verbdiffwordlist.$L-`$(DATE)`.txt
 ../port.dic:
 	cd ..; make port.dic
