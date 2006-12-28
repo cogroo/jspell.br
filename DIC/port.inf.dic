@@ -63,7 +63,6 @@ password/CAT=nc,G=f,N=s/a/
 PC/CAT=nc,G=m,N=s//
 PDF/CAT=np,G=f,N=s,SEM=sigla/p/
 Perl/CAT=nc,G=m,N=s//
-pipe/CAT=nc,G=f,N=s/p/
 pixel/CAT=nc,G=m,N=s//
 pixeis/$pixel$#nm$N=p//
 PostgreSQL/CAT=np//
@@ -77,7 +76,6 @@ scanner/CAT=nc,G=m,N=s/a/
 SGML/CAT=np,SEM=sigla//
 shell/CAT=nc,G=f,N=s//
 site/CAT=nc,G=m,N=s/p/
-slot/CAT=nc,G=m,N=s/a/
 socket/CAT=a_nc,N=s/a/
 software/CAT=nc,G=m,N=s//
 SQL/CAT=a_nc,N=s//
