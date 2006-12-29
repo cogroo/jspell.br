@@ -6,7 +6,7 @@ while(<>){
     push @o,$_ if /^</;
 }
 
-print "DiferenÃ§as de palavras desde a Ãºltima versÃ£o (FALTA ID DA VERSÃƒO ANTERIOR)"; 
+print "Diferenças de palavras desde a última versão (FALTA ID DA VERSÃO ANTERIOR)"; 
 print "\n\n**Removidas**"; 
 map {print} @o; 
 print "\n\n**Adicionadas**"; 
