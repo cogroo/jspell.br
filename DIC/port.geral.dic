@@ -3048,8 +3048,8 @@ artrópodes/#nm,N=p//
 artrose/#nf//
 artrozoário/#a/p/
 arvicultura/#nf/pq/
-arvoar/#vt/XYPLM/
-arvorar/#vt/XYPL/
+arvoar/#vt/XYPM/
+arvorar/#vn/YP/
 arvoredo/#nm/p/
 árvore/#nf/p/
 asa/#nf/p/
@@ -11200,6 +11200,7 @@ desrespeito/#nm//
 desrespeitoso/#a/pm/
 desrolhamento/#nm//
 desse/CAT=cp,Prep=de,Pdem=esse,G=m,N=s/fp/
+desseleccionar/#vt/XYP/ #inform
 destacar/#vt/XYPLMv/
 destaque/#nm//
 deste/CAT=cp,Prep=de,Pdem=este,G=m,N=s/fp/
@@ -32180,7 +32181,7 @@ toranja/#nf/p/
 toranjeira/#nf/p/
 torar/#vt/XYPL/
 tórax/#nm//
-torção/#nf//
+torção/#nf/p/
 torcedeira/#nf//
 torcedela/#nf/p/
 torcedor/#hm//
