@@ -3857,7 +3857,7 @@ azeitoneira/#nf//
 azeitoneiro/#nm/f/
 azenha/#nf/p/
 azenheiro/#nm/p/
-azerbaijano/#nm/fp/
+azerbaijanês/#nm/fp/
 azevinheiro/#nm/p/
 azevinho/#nm/p/
 azia/#nf//
@@ -6467,6 +6467,7 @@ cartaginense/#hn/p/
 cartaginês/#hm/fp/
 carta/#nf/pi/
 cartão/#nm/p/
+cartão-de-visita/#nm//
 cartaxeiro/#hm//
 cartaxense/#hn/p/
 cartaz/#nm/p/
@@ -6481,6 +6482,7 @@ cartilagem/#nf/p/
 cartilagíneo/#a//
 cartilaginoso/#a//
 cartilha/#nf/p/
+cartões-de-visita/$cartão-de-visita$N=p//
 cartografar/#vt/XYPL/
 cartografia/#nf/qr/
 cartolaço/#nm//
@@ -6491,14 +6493,13 @@ cartomancia/#nf/p/
 cartomante/#hn/p/
 cartonageiro/#nm//
 cartonagem/#nf//
-cartonar/#vt/XYPL/
-cartoon/#nm/p/
-cartoonista/#nm//
 cartorário/#hm//
 cartório/#nm//
 cartucheira/#nf//
 cartucheiro/#nm/f/
 cartucho/#hm/p/
+cartune/#nm/p/
+cartunista/#nm//
 cartuxo/#hm//
 caruja/#nf//
 carujar/#vi/XYL/
@@ -19637,7 +19638,7 @@ juncar/#vt/XYPL/
 junco/#nm/p/
 juncoso/#a/p/
 júnior/#an/xp/
-júniores/$júnior$#nm$N=p/x/
+juniores/$júnior$#nm$N=p/x/
 juntada/#nf//
 junta/#nf/p/
 juntar/#vt/XYPL/
@@ -21110,6 +21111,7 @@ manjar/#vn/XYPL/
 manjedoira/#nf/p/
 manjedoura/#nf/p/
 manjerico/#nm/p/
+manjerona/#nf//
 manobrador/#nm//
 manobra/#nf/pt/
 manobrar/#vt/XYPLD/
@@ -23885,7 +23887,6 @@ orgânica/#nf//
 organicismo/#nm/p/
 organicista/#nn//
 orgânico/#a/fp/
-organigrama/#nm/p/
 organismo/#nm/p/
 organista/#nn//
 organização/#nf//
@@ -23893,6 +23894,7 @@ organizacional/#an/p/
 organizador/#hm/fp/
 organizar/#vt/XYPLcDv/
 organizativo/#a/fp/
+organograma/#nm/p/
 órgão/#nm/a/
 orgasmo/#nm/p/
 orgíaco/#a//
@@ -30133,9 +30135,8 @@ senhor/#nm/fp/
 senil/#an/dp/
 senilidade/#nf/p/
 senilização/#nf//
-sénior/#an//
+sénior/#hn2//
 seniores/$sénior$#nm$N=p//
-sénior/#nm//
 seno/#nm//
 sensaborão/#hm//
 sensabor/#hm2//
@@ -34082,6 +34083,7 @@ zonzo/#a/p/
 zoolatria/#nf/p/
 zoologia/#nf/qtrp/
 zoológico/#a/fp/
+zoo/$zoológico$#nm//
 zuarte/#nm//
 zulu/#hm/p/
 zumba/#i//
