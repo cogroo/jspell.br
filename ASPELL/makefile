@@ -33,7 +33,10 @@ aspellv6:
 	cp $L_phonet.dat $P/$L_phonet.dat
 	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell6/g; s/LANG/$L/g' info > $P/info
 	perl -pe 's/LANG/$L/g' $L.dat > $P/$L.dat;
-	echo "special - -*-" >> $P/$L.dat
+#	echo "special - -*-" >> $P/$L.dat
+#falta Affix file
+#The affix file is expected to be named lang_affix.dat
+#O que é feito da compressão da wordlist
 	cd $P; perl proc create; ./configure
 	cd $P; make
 
@@ -45,7 +48,7 @@ aspellv5:
 	cp $L_phonet.dat $O/$K_phonet.dat
 	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell5/g; s/LANG/$K/g;' info > $O/info
 	perl -pe 's/LANG/$K/g' $L.dat > $O/$K.dat;
-	echo "special - -*-" >> $O/$K.dat
+#	echo "special - -*-" >> $O/$K.dat
 	cd $O; perl proc create; ./configure; 
 	cd $O; make
 

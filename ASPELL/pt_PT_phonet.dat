@@ -1,6 +1,6 @@
 #   phonetic_english.h - phonetic transformation rules for use with phonetic.c
 #   Copyright (C) 2000 Jose Joao Almeida
-#		  2006 Rui Vilela (reviwed, but still to see)
+#		  2006 Rui Vilela
 #
 #   This library is free software; you can redistribute it and/or
 #   modify it under the terms of the GNU Lesser General Public
@@ -18,7 +18,23 @@
 #   Jose Joao (jj@di.uminho.pt)
 #
 
+#feromona -> feronoma
+#pormovida -> promovida
+#solideriadade -> solidariedade
+#manuzeamento -> manuseamento
+#edíficios -> edifícios
+#prestacao -> prestação
+#«pregunta» (pergunta)
+#«questume» (costume)
+#ASSESSOR - acessor
+#CACHA "caxa"
+#CRÍQUETE "cricket".
+#XAPUTA  chaputa.
+
+
 version portugues 0.0000000002
+#collapse_result 0 ??
+followup 0
 
 ÇÁO                ÇAO
 SS                 Ç
