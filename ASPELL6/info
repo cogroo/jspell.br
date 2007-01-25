@@ -2,6 +2,7 @@ name_english Portuguese
 name_native português
 lang pt_PT
 data-file pt_PT_phonet.dat
+#data-file pt_PT_affix.dat
 author:
   name Jose Joao Almeida
   name-native José João Almeida

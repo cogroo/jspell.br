@@ -18,7 +18,7 @@ DATE=date +%Y%m%d
 all: aspell
 
 aspell: aspell-wl
-#	rm -rf $P
+	rm -rf $P
 	cd $T; perl pre $L iso-8859-1
 	cp $L.wl $P
 	cp Copyright $P
@@ -31,17 +31,17 @@ aspell: aspell-wl
 #	Copiar o dic e o aff do Jspell depois
 #	The affix file is expected to be named lang_affix.dat
 
-	LANG="pt_PT" perl genAff.pl $I > $P/pt_PT.aff
+#	LANG="pt_PT" perl genAff.pl $I > $P/pt_PT_affix.dat
 #	Preciso de contagem de elementos ?
 	cd $P; perl proc create; ./configure
 	cd $P; make
 
 aspell-wl: ../port.dic
-	if test ! -f ../ISPELL/$P/$P.dic ; then \
-		cd .. ; make ispell; \
-	fi;
-	cp $(ID) $L.wl
-#	perl gerarWordList ../port.dic > $L.wl
+#	if test ! -f ../ISPELL/$P/$P.dic ; then \
+#		cd .. ; make ispell; \
+#	fi;
+#	cp $(ID) $L.wl
+	perl gerarWordList ../port.dic > $L.wl
 
 dist: aspell
 	cd $P; make dist

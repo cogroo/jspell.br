@@ -12,10 +12,10 @@ bz2: #wl
 	tar cfj wordlist.$L-`$(DATE)`.tar.bz2  wordlist.$L-`$(DATE)`.txt
 
 diff: #wl
-	rm -f *bz2
-	cp `ls -t1r $(OLDWL)/*20*bz2 |tail -n1` oldwl.tar.bz2
-	tar xfj oldwl.tar.bz2 -O > oldwl.txt
-	perl -e '$$D=`date +%Y%m%d`; chomp $$D;eval {`diff oldwl.txt wordlist.$L-$$D.txt > rawdiffwordlist.$L-$$D.txt`}; die $$! if $$@>1;'
+#	rm -f *bz2
+#	cp `ls -t1r $(OLDWL)/*20*bz2 |head -n1` oldwl.tar.bz2
+#	tar xfj oldwl.tar.bz2 -O > oldwl.txt
+	perl -e '$$D=`date +%Y%m%d`; chomp $$D;eval {`diff oldwl.txt wordlist.$L-$$D.txt > rawdiffwordlist.$L-$$D.txt`}; die $$! if $$@>2;'
 	perl verbdiff.pl rawdiffwordlist.$L-`$(DATE)`.txt > verbdiffwordlist.$L-`$(DATE)`.txt
 ../port.dic:
 	cd ..; make port.dic
