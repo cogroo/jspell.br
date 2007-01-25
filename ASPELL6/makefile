@@ -1,75 +1,57 @@
-#Aspell Makefile for using official aspell Language Toolkit
+#Aspell 6 Makefile for using official aspell Language Toolkit
 
-#make (aspellX)
-#make (installX)
+#make (aspell)
+#make (install)
 
 #Do FIRST make
-#then make distX|installX
+#then make dist|install
 
 
-T=aspell-lang
-#Aspell6
+T=../ASPELL_TOOLKIT/aspell-lang
 L=pt_PT
 P=$T/$L
-#Aspell5
-K=pt
-O=$T/$K
+I=../ISPELL/portugues/portugues.aff
+ID=../ISPELL/portugues/portugues.dic
 
 DATE=date +%Y%m%d
 
-all: aspell5 aspell6
+all: aspell
 
-aspell6: aspell-wl aspellv6 dist6
-	mv $P/aspell6*`${DATE}`* .
-
-aspell5: aspell-wl aspellv5 dist5
-	mv $O/aspell5*`${DATE}`* .
-
-aspellv6: 
-	rm -rf $P
+aspell: aspell-wl
+#	rm -rf $P
 	cd $T; perl pre $L iso-8859-1
 	cp $L.wl $P
 	cp Copyright $P
 	cp $L_phonet.dat $P/$L_phonet.dat
-	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell6/g; s/LANG/$L/g' info > $P/info
+	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;' info > $P/info
 	perl -pe 's/LANG/$L/g' $L.dat > $P/$L.dat;
-#	echo "special - -*-" >> $P/$L.dat
-#falta Affix file
-#The affix file is expected to be named lang_affix.dat
-#O que é feito da compressão da wordlist
+	if test ! -f $I ; then \
+		cd .. ; make ispell; \
+	fi;
+#	Copiar o dic e o aff do Jspell depois
+#	The affix file is expected to be named lang_affix.dat
+
+	LANG="pt_PT" perl genAff.pl $I > $P/pt_PT.aff
+#	Preciso de contagem de elementos ?
 	cd $P; perl proc create; ./configure
 	cd $P; make
 
-aspellv5:
-	rm -rf $O
-	cd $T; perl pre $K iso-8859-1
-	cp $L.wl $O/$K.wl
-	cp Copyright $O
-	cp $L_phonet.dat $O/$K_phonet.dat
-	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;s/ASPELL/aspell5/g; s/LANG/$K/g;' info > $O/info
-	perl -pe 's/LANG/$K/g' $L.dat > $O/$K.dat;
-#	echo "special - -*-" >> $O/$K.dat
-	cd $O; perl proc create; ./configure; 
-	cd $O; make
-
-
 aspell-wl: ../port.dic
-	perl gerarWordList ../port.dic > $L.wl
+	if test ! -f ../ISPELL/$P/$P.dic ; then \
+		cd .. ; make ispell; \
+	fi;
+	cp $(ID) $L.wl
+#	perl gerarWordList ../port.dic > $L.wl
 
-dist5: aspell5
-	cd $O; make dist
-
-dist6: aspell6
+dist: aspell
 	cd $P; make dist
+	mv $P/aspell6*`${DATE}`* .
 
 ../port.dic:
 	cd ..; make port.dic
 
-install5: aspell5
-	cd $O; make install
-
-install6: aspell6
+install: aspell
 	cd $P; make install
 
 clean : 
-	rm -rf *~ $T/*~ $P $O $K.wl $L.wl a*bz2
+	rm -rf *~ $T/*~ $P $L.wl a*bz2

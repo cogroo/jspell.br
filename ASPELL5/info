@@ -1,7 +1,7 @@
 name_english Portuguese
 name_native português
-lang LANG
-data-file LANG_phonet.dat
+lang pt
+data-file pt_phonet.dat
 author:
   name Jose Joao Almeida
   name-native José João Almeida
@@ -22,8 +22,8 @@ version VERSAO-0
 source-version VERSAO
 accurate true
 complete true
-mode ASPELL
+mode aspell5
 dict:
   awli false
-  name LANG
-  add LANG
+  name pt
+  add pt

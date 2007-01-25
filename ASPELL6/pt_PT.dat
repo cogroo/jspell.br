@@ -1,6 +1,6 @@
-name LANG
+name pt_PT
 charset iso-8859-1
 special - -*-
-soundslike LANG
-#affix LANG
-#affix-compress true
+soundslike pt_PT
+affix pt_PT
+affix-compress true
