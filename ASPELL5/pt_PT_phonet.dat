@@ -1,0 +1,189 @@
+#   phonetic_english.h - phonetic transformation rules for use with phonetic.c
+#   Copyright (C) 2000 Jose Joao Almeida
+#                 2006 Rui Vilela
+#
+#   This library is free software; you can redistribute it and/or
+#   modify it under the terms of the GNU Lesser General Public
+#   License version 2.1 as published by the Free Software Foundation;
+#
+#   This library is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#   Lesser General Public License for more details.
+#
+#   You should have received a copy of the GNU Lesser General Public
+#   License along with this library; if not, write to the Free Software
+#   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+#   Jose Joao (jj@di.uminho.pt)
+#   Rui Vilela (ruivilela@di.uminho.pt)
+
+version portugues 0.0000000002
+
+followup 0
+remove_accents 0
+#collapse_result 0
+
+#pormovida -> promovida; pregunta -> pergunta; portecção -> protecção
+^POR PRO
+^PRE PER
+
+
+#solideriadade -> solidariedade
+ERIADADE$ ARIEDADE
+
+#edíficios -> edifícios
+ÍFI IFÍ
+IFÍ ÍFI
+ÍLI ILÍ
+ILÍ ÍLI
+ÍTI ITÍ
+ITÍ ÍTI
+
+#prestacao -> prestação
+CAO$ ÇÃO
+ÇAO$ ÇÃO
+
+#compreenção -> compreensão; cansão -> canção; 
+#torsão -> torção; extorção -> extorsão
+ÇÃO SÃO
+SÃO ÇÃO
+
+#questume -> costume
+^QUES COS
+
+#******************************************************
+#assessor -> acessor; nessecidade -> necessidade;
+#barcassa -> barcaça; imposssível -> impossível
+
+SS S
+S SS
+SS(AOU)- Ç
+Ç(EI)- SS
+SS(IE)- C
+C(AEIOU)- SS
+C(AOU)- Ç
+Ç C
+#*****************************************************
+
+#caxa -> cachaa; xaputa -> chaputa; chaile -> xaile; xávena -> chávena.
+CH X
+X CH
+
+#cricket -> críquete
+ÍCKE IQUE
+
+#kero -> quero; kom -> com; kilómetro -> quilómetro
+K(EI)- QU
+K(AOU)- C
+
+#senpre -> sempre; bonba -> bomba
+NP MP
+NB MP
+
+#encómudo -> incómodo
+^ENC INC
+^INC ENC
+
+#expectáculo -> espectáculo; esímio -> exímio; 
+^EX ES
+^ES EX
+
+#productivo -> produtivo
+C(ÇT)- _
+
+#analiza -> analisa; certesa -> certeza.
+AS(AEIOU)-          AZ
+ES(AEIOU)-          EZ
+IS(AEIOU)-          IZ
+OS(AEIOU)-          OZ
+US(AEIOU)-          UZ
+
+AZ(AEIOU)-          AS
+EZ(AEIOU)-          ES
+IZ(AEIOU)-          IS
+OZ(AEIOU)-          OS
+UZ(AEIOU)-          US
+
+#femenino-> feminino; defenição -> definição
+ENI INI
+
+#saliba -> saliva; bou -> vou.
+B(AO)- V
+
+#azuleijo -> azulejo; decaiem -> decaem; ODIEM -> ODEIEM
+EIJO EJO
+AIE AE
+DIE DEIE
+
+#bactriana -> bacteriana; bacharlato -> bacharelato;
+#utlizadores -> utilizadores; obececar -> obcecar.
+
+TRI TERI
+TLI TILI
+BECE BCE
+BCE BECE
+
+
+#sacrilegadamente -> sacrilegamente
+DAMENTE$ MENTE
+MENTE$ DAMENTE
+
+
+#deshonra -> desonra; desharmonia -> desarmonia
+^DESH(AEIOU)- DES
+
+#creem, crêm -> crêem
+#dêm (dêem)
+#contêem (contêm)
+(ÊE)M$ ÊEM
+ÊEM$ ÊM
+
+#falásteis -> falastes
+ÁSTEIS$ ASTES
+
+#entretiam -> entretinham
+ITIAM$ ITINHAM
+
+#intervido -> intervindo
+VIDO$ VINDO
+
+#discuberta -> descoberta
+ISCU ESCO
+
+#gravidês -> gravidez; actris -> actriz; dis -> diz
+ÊS$ EZ
+S$ Z
+
+#paiz -> país
+IZ$ ÍS
+
+#alforje -> alforge; arrange -> arranje.
+G(EI)- J
+J(EI)- G
+
+
+#garafão ->garrafão; rrato -> rato
+RR R
+R RR
+
+Á                  A
+À                  A
+Â                  A
+Ã                  A
+
+E                  E
+È                  E
+É                  E
+Ê                  E
+
+I                  I
+Í                  I
+
+O                  O
+Ô                  O
+Ó                  O
+Õ                  O
+
+U                  U
+Ú                  U

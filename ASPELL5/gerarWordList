@@ -1,0 +1,28 @@
+#!/usr/bin/perl -w
+
+#José João Almeida, 2001
+#Rui Vilela, 2006
+#Gera uma lista de palavras flexionadas dos lemas do dicionário
+
+#undef $/;
+#$/='';
+
+my $dict = shift or die;
+
+open(F,qq{awk -F / '{print \$1 "/" \$3}' $dict | jspell -e -o '' |}) or die;
+open(F1,"| grep -v '#' |grep '[a-zA-Zàéóáú]' | LANG=C sort -u") or die;
+
+my $i;
+while(<F>){
+    $i++;
+#    s/[-= ,\n]+/\n/g;
+    s/[= ,\n]+/\n/g;
+    next if m!^#!;
+    print F1 "$_\n";
+    print STDERR ".. $i" unless ($i % 5000);
+}
+print STDERR ".. $i";
+
+close F1;
+close F;
+
