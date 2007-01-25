@@ -18,10 +18,10 @@
 #   Jose Joao (jj@di.uminho.pt)
 #   Rui Vilela (ruivilela@di.uminho.pt)
 
-version portugues 0.0000000002
+version portugues 0.0000000003
 
 followup 0
-remove_accents 0
+#remove_accents 0
 #collapse_result 0
 
 #pormovida -> promovida; pregunta -> pergunta; portecção -> protecção
