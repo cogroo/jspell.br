@@ -76,12 +76,6 @@ To install :
     file has the following line:
 	  DICT pt PT pt_PT
 
-Latest versions at:
-	http://natura.di.uminho.pt/download/sources/Dictionaries/myspell/
-or
-	http://linguateca.di.uminho.pt/dics/dics.html
 
-
-Submit new words or custom dics on
-http://linguateca.di.uminho.pt/dics/dics_en.html
-
+Latest versions, suggestions, information at
+	http://natura.di.uminho.pt/wiki/index.cgi?Dictionary
