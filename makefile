@@ -50,14 +50,14 @@ all:
 	@ echo -e "\tispell-clean -- clears ispell generated dictionaries"
 	@ echo -e "\tispell-tgz -- creates ispell distribution file"
 	@ echo
-	@ echo -e "aspell:"
-	@ echo -e "\taspell -- builds aspell 0.50 dictionary"
-	@ echo -e "\taspell-install -- installs aspell"
-	@ echo -e "\taspell-tgz -- creates aspell 0.50 distribution file"
+	@ echo -e "aspell5:"
+	@ echo -e "\taspell5 -- builds aspell 0.50 dictionary"
+	@ echo -e "\taspell5-install -- installs aspell 0.50"
+	@ echo -e "\taspell5-tgz -- creates aspell 0.50 distribution file"
 	@ echo
 	@ echo -e "aspell6:"
 	@ echo -e "\taspell6 -- builds aspell 0.60 dictionary"
-	@ echo -e "\taspell6-install -- installs aspell"
+	@ echo -e "\taspell6-install -- installs aspell 0.60"
 	@ echo -e "\taspell6-tgz -- creates aspell 0.60 distribution file"
 	@ echo
 	@ echo -e "myspell:"
@@ -69,7 +69,7 @@ all:
 	@ echo -e "wordlist:"
 	@ echo -e "\twordlist -- builds a simple word list"
 	@ echo -e "\twordlist-bz2 -- creates wordlist compressed file"
-	@ echo -e "\twordlist-diff -- calculates real differences on the dictionary since last release (needs a previous release)
+	@ echo -e "\twordlist-diff -- calculates real differences on the dictionary since last release (needs a previous release)"
 	@ echo -e
 	@ echo -e "chuveiro:"
 	@ echo -e "\tchuveiro -- build all available dictionaries"
@@ -117,7 +117,8 @@ port.tgz: $(BASE)
 clean: 
 	cd IRR;    make clean
 	cd ISPELL; make clean
-	cd ASPELL; make clean
+	cd ASPELL5; make clean
+	cd ASPELL6; make clean
 	cd MYSPELL; make clean
 	rm -f *.stat *.cnt
 	rm -f *~
@@ -147,35 +148,35 @@ ispell-clean:
 # aspell 0.50 rules
 #-------------------------------------------------------------------
 #make clean first?
-aspell: port.dic port.aff ispell
-	cd ASPELL; make aspell5
+aspell5: port.dic port.aff ispell
+	cd ASPELL5; make aspell5
 
-aspell-install: aspell
-	cd ASPELL; make install
+aspell5-install: aspell
+	cd ASPELL5; make install
 
-aspell-tgz: aspell
-	cd ASPELL; make dist
-	mv ASPELL/aspell5*$(DATE)*bz2 .
+aspell5-tgz: aspell
+	cd ASPELL5; make dist
+	mv ASPELL5/aspell5*$(DATE)*bz2 .
 
-aspell-clean:
-	cd ASPELL; make clean
+aspell5-clean:
+	cd ASPELL5; make clean
 
 #-------------------------------------------------------------------
 # aspell 0.60 rules
 #-------------------------------------------------------------------
 
 aspell6: port.dic port.aff ispell
-	cd ASPELL; make aspell6
+	cd ASPELL6; make aspell6
 
 aspell6-install: aspell6
-	cd ASPELL; make install
+	cd ASPELL6; make install
 
 aspell6-tgz: aspell6
-	cd ASPELL; make dist
-	mv ASPELL/aspell6*$(DATE)*bz2 .
+	cd ASPELL6; make dist
+	mv ASPELL6/aspell6*$(DATE)*bz2 .
 
 aspell6-clean:
-	cd ASPELL; make clean
+	cd ASPELL6; make clean
 
 #-------------------------------------------------------------------
 # myspell rules
@@ -270,7 +271,7 @@ port.hash: port.dic port.aff
 #-------------------------------------------------------------------
 
 chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip 
-#aspell-tgz aspell6-tgz
+#aspell5-tgz aspell6-tgz
 
 install: #wordlist-diff
 #	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
@@ -292,5 +293,3 @@ install: #wordlist-diff
 	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~
 	perl gFeed.pl
 	@echo "Go edit $(NATURA_PUB)/CHANGELOG !"
-
-

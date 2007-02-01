@@ -1,6 +1,8 @@
 name pt_PT
 charset iso-8859-1
 special - -*-
-soundslike pt_PT
-#affix pt_PT
-#affix-compress true
+#soundslike pt_PT
+affix pt_PT
+affix-compress true
+repl-table pt_PT
+

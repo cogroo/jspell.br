@@ -23,6 +23,7 @@ aspell: aspell-wl
 	cp $L.wl $P
 	cp Copyright $P
 	cp $L_phonet.dat $P/$L_phonet.dat
+	cp $L_repl.dat $P/$L_repl.dat
 	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;' info > $P/info
 	perl -pe 's/LANG/$L/g' $L.dat > $P/$L.dat;
 	if test ! -f $I ; then \
@@ -31,17 +32,17 @@ aspell: aspell-wl
 #	Copiar o dic e o aff do Jspell depois
 #	The affix file is expected to be named lang_affix.dat
 
-#	LANG="pt_PT" perl genAff.pl $I > $P/pt_PT_affix.dat
+	LANG="$L" perl genAff.pl $I > $P/$L_affix.dat
 #	Preciso de contagem de elementos ?
 	cd $P; perl proc create; ./configure
 	cd $P; make
 
 aspell-wl: ../port.dic
-#	if test ! -f ../ISPELL/$P/$P.dic ; then \
-#		cd .. ; make ispell; \
-#	fi;
-#	cp $(ID) $L.wl
-	perl gerarWordList ../port.dic > $L.wl
+	if test ! -f ../ISPELL/$P/$P.dic ; then \
+		cd .. ; make ispell; \
+	fi;
+	cp $(ID) $L.wl
+#	perl gerarWordList ../port.dic > $L.wl
 
 dist: aspell
 	cd $P; make dist
