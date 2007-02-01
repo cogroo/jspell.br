@@ -270,8 +270,8 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip 
-#aspell5-tgz aspell6-tgz
+chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz
+#aspell5-tgz
 
 install: #wordlist-diff
 #	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
@@ -284,8 +284,8 @@ install: #wordlist-diff
 	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
-#	cp aspell6*$(DATE)*bz2 $(NATURA_PUB)/aspell
-#	ln -sf $(NATURA_PUB)/aspell/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell6.$(ABRX)-latest.tar.bz2
+	cp aspell6*$(DATE)*bz2 $(NATURA_PUB)/aspell
+	ln -sf $(NATURA_PUB)/aspell/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell6.$(ABRX)-latest.tar.bz2
 	cp word*$(DATE)*bz2 $(NATURA_PUB)/misc/wordlist
 	ln -sf $(NATURA_PUB)/misc/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_PUB)/misc/wordlist.$(ABRX)-latest.tar.bz2
 	date >> $(NATURA_PUB)/CHANGELOG
