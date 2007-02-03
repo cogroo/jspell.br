@@ -37,7 +37,7 @@ $feed->title("Dicionários Opensource para o português");
 my $mlink = XML::Atom::Link->new;
 $mlink->type('text/html');
 $mlink->rel('alternate');
-$mlink->href('http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios');
+$mlink->href('http://natura.di.uminho.pt/wiki/index.cgi?Dicion%E1rios');
 $feed->add_link($mlink);
 
 my $author = XML::Atom::Person->new;
@@ -98,7 +98,7 @@ foreach (`ls -1 $svn/*.dic`){
 $rsvn=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
 $rsvn=~s!(---|\+\+\+).+?([^/]+\n)!$1$2!g;
 $rsvn.="</code><p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
-$rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/natura/natura?topic=Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
+$rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/wiki/index.cgi?Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
 $rsvn=~s/\n/<br\/>\n/g;
 
 $entry->content($rsvn);
