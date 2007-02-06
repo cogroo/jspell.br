@@ -26,6 +26,5 @@ accurate true
 complete true
 mode aspell6
 dict:
-  awli false
   name pt_PT
   add pt_PT

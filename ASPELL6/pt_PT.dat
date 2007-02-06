@@ -1,6 +1,6 @@
 name pt_PT
 charset iso-8859-1
-special - -*-
+#special - -*-
 #soundslike pt_PT
 affix pt_PT
 affix-compress true
