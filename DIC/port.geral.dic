@@ -13931,7 +13931,7 @@ estandarte/#nm/p/
 estanhagem/#nf//
 estanhar/#vt/XYPLD/
 estanho/#nm//
-estanque/#hm2/p/
+estanque/#hm2/pd/
 estante/#hf2/p/
 estapafúrdico/#a//
 estapafúrdio/#a//
@@ -18279,6 +18279,7 @@ independente/#an/pmt/
 indescobrível/#an/p/
 indescritível/#an/p/
 indesculpável/#an//
+indesejado/#a/fp/
 indesfrutável/#an//
 indestrinçável/#an//
 indestronável/#an//
@@ -18899,8 +18900,6 @@ insusceptível/#an/m/
 insuspeição/#nf//
 insuspeitado/#a/fp/
 insuspeito/#a/fp/
-insustentabilidade/#nf/p/
-insustentável/#an/pd/
 intacto/#a/fp/
 intangibilidade/#nf/p/
 intangível/#an/pd/
@@ -31351,6 +31350,8 @@ sustenido/#hm/p/
 sustenizar/#vt/XYPL/
 sustentáculo/#nm//
 sustentador/#hm//
+sustentabilidade/#nf/pI/
+sustentável/#an/pdI/
 sustentante/#hn/p/
 sustentar/#vt/XYPLcMDnv/
 sustento/#nm//
@@ -32967,7 +32968,7 @@ ultimamente/#av//
 ultimar/#vt/XYPLcD/
 ultimato/#nm/p/
 último/#hm/fp/
-ultrajado/#a//
+ultrajado/#a/f/
 ultrajante/#an/p/
 ultrajar/#vt/XYPLDn/
 ultraje/#nm/p/
