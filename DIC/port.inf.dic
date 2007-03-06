@@ -33,7 +33,8 @@ Fortran/CAT=np//
 Fuzzy/CAT=adj,G=_,N=s//
 Google/CAT=np,G=m,N=s//
 hardware/CAT=nc,G=m,N=s//
-http/CAT=np//
+HTTP/CAT=np//
+HTML/CAT=np//
 IBM/CAT=np,G=f,N=s//
 input/CAT=nc,G=m,N=s/p/
 Intel/CAT=np,G=f,N=s//

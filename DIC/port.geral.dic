@@ -3699,6 +3699,7 @@ autopiano/#nm//
 autoplastia/#nf//
 autópsia/#nf/p/
 autopsiar/#vt/XYPL/
+autopsicografia/#nf/p/
 autóptico/#a/fp/
 auto-retrato/#nm/p/
 auto-rádio/#nm/p/
@@ -4513,7 +4514,7 @@ bem-querente/#an//
 bem-querer/#nm//
 bem-querer/#vt,I=3/PLn/
 bem-soante/#an/p/
-bem-vindo/#a/p/
+bem-vindo/#a/fp/
 bem-visto/#a//
 bênção/#nf/a/
 bendito/#a/fp/
@@ -7183,7 +7184,7 @@ charlatanismo/#nm/p/
 charlatão/#hm/e/
 charlatão/#nm//
 charlataria/#nf/p/
-charme/#nm/p/
+charme/#nm/pw/
 charneca/#nf//
 charneira/#nf/p/
 charro/#a/p/
@@ -13840,7 +13841,7 @@ esquadria/#nf//
 esquadrilha/#nf//
 esquadrilhar/#vt/XYPL/
 esquadrinhar/#vt/XYPLMD/
-esquadro/#nm//
+esquadro/#nm/p/
 esquartejar/#vt/XYPLM/
 esquartelar/#vt/XYPL/
 esquecer/#vn/XYPLMD/
@@ -19082,6 +19083,8 @@ intersectar/#vt/XYPL/
 interstelar/#an//
 intersticial/#an/p/
 interstício/#nm//
+intersubjectividade/#nf/p/
+intersubjectivo/#hm/pf/
 interuniversitário/#a//
 interurbano/#a/fp/
 intervaladamente/#av//
@@ -19755,7 +19758,7 @@ lactente/#hn/p/
 lácteo/#a/fp/
 lacticínio/#nm/p/
 lacticinoso/#a//
-láctico/#a//
+láctico/#a/f/
 lactífero/#a/fp/
 lactose/#nf//
 lactoso/#a//
@@ -20242,7 +20245,7 @@ levar/#vn/XYPLMn/
 leve/#an/pmds/
 levedadura/#nf//
 levedar/#vn/XYPLc/
-levedura/#nf//
+levedura/#nf/p/
 leveza/#nf//
 leviandade/#nf/p/
 leviano/#hn/fpm/
@@ -20335,6 +20338,7 @@ límbico/#a/f/
 limbo/#nm//
 limiar/#nm/p/
 liminar/#hm2/m/
+limitado/#a/fp/
 limitar/#vn/XYPLcnvDB/
 limitativo/#a/fp/
 limite/#nm/p/
@@ -20634,6 +20638,7 @@ lúcio/#nm/p/
 lucrar/#vn/XYPL/
 lucrativo/#a/fpm/
 lucro/#nm/p/
+lucubrar/#vi/XY/
 luculiano/#a/fp/
 ludibriante/#an/p/
 ludibriar/#vt/XYPLn/
@@ -23683,7 +23688,7 @@ olfactar/#vt/XYPL/
 olfáctico/#a/fp/
 olfactivo/#a/fp/
 olfacto/#nm//
-olhada/#nf//
+olhada/#nf/h/
 olhadela/#nf/p/
 olhador/#hm//
 olhadura/#nf//
@@ -25515,6 +25520,7 @@ picadela/#nf/p/
 picadete/#a//
 picador/#hm//
 picadura/#nf//
+picagem/#nf/p/
 pica/#nf//
 picanha/#nf/p/
 picante/#an/p/
@@ -26445,7 +26451,7 @@ premissa/#nf/p/
 premonição/#nf/p/
 premonitório/#a//
 premunir/#vt/XYPLc/
-prenda/#nf/p/
+prenda/#nf/ph/
 prendar/#vt/XYPL/
 prender/#vt/XYPL/
 prenhe/#an//
@@ -27072,7 +27078,7 @@ pubertário/#a//
 pubescência/#nf/p/
 pubescente/#an//
 pubescer/#vi/XYLn/
-púbico/#a//
+púbico/#a/p/
 púbis/#nf//
 publicador/#hm//
 publicamente/#av//
@@ -33260,7 +33266,7 @@ vaporizador/#hm//
 vaporizar/#vt/XYPLcD/
 vapor/#nm/p/
 vaporoso/#a/p/
-vaqueiro/#nm/p/
+vaqueiro/#nm/pf/
 varada/#hf//
 varadoiro/#nm//
 varadouro/#nm//
