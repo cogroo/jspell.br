@@ -1,6 +1,0 @@
-name LANG
-charset iso-8859-1
-special - -*-
-soundslike LANG
-#affix LANG
-#affix-compress true

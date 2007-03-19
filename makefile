@@ -149,12 +149,12 @@ ispell-clean:
 #-------------------------------------------------------------------
 #make clean first?
 aspell5: port.dic port.aff ispell
-	cd ASPELL5; make aspell5
+	cd ASPELL5; make aspell
 
-aspell5-install: aspell
+aspell5-install: aspell5
 	cd ASPELL5; make install
 
-aspell5-tgz: aspell
+aspell5-tgz: aspell5
 	cd ASPELL5; make dist
 	mv ASPELL5/aspell5*$(DATE)*bz2 .
 
@@ -166,7 +166,7 @@ aspell5-clean:
 #-------------------------------------------------------------------
 
 aspell6: port.dic port.aff ispell
-	cd ASPELL6; make aspell6
+	cd ASPELL6; make aspell
 
 aspell6-install: aspell6
 	cd ASPELL6; make install
@@ -198,6 +198,30 @@ myspell-zip: myspell
 
 myspell-clean:
 	cd MYSPELL; make clean
+
+
+#-------------------------------------------------------------------
+# hunspell rules (myspell backward compatible, to replace myspell?)
+#-------------------------------------------------------------------
+
+hunspell: port.dic port.aff
+	cd HUNSPELL; make
+
+hunspell-install: hunspell
+	cd HUNSPELL; make install
+
+hunspell-tgz: hunspell
+	cd HUNSPELL; make tgz
+	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).tar.gz .
+
+hunspell-zip: hunpell
+	cd HUNSPELL; make myspell-zip
+	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).zip .
+
+hunspell-clean:
+	cd HUNSPELL; make clean
+
+
 
 #-------------------------------------------------------------------
 # wordlist rules
@@ -270,24 +294,30 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz
-#aspell5-tgz
+chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz
 
 install: #wordlist-diff
-#	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
-#	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABR)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell5.$(ABR)-latest.tar.bz2
+	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
+	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABR)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell5.$(ABR)-latest.tar.bz2
+
 	cp my*.gz $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.tar.gz
+	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABRX)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABRX)-latest.tar.gz
+
 	cp my*.zip $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).zip $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.zip
+	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABRX)-$(DATE).zip $(NATURA_PUB)/myspell/myspell.$(ABRX)-latest.zip
+
 	cp i*.gz $(NATURA_PUB)/ispell
 	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
+
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
+
 	cp aspell6*$(DATE)*bz2 $(NATURA_PUB)/aspell
-	ln -sf $(NATURA_PUB)/aspell/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell6.$(ABRX)-latest.tar.bz2
+	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell6/aspell6.$(ABRX)-latest.tar.bz2
+
 	cp word*$(DATE)*bz2 $(NATURA_PUB)/misc/wordlist
 	ln -sf $(NATURA_PUB)/misc/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_PUB)/misc/wordlist.$(ABRX)-latest.tar.bz2
+
 	date >> $(NATURA_PUB)/CHANGELOG
 	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
 	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~

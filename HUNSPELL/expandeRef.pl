@@ -13,7 +13,6 @@ my $h = do shift;
 
 while(<>){
     next if /^\#/;
-    next if /\#noispell/;
     next if /^\s+$/;
     s/\#([\d\w]{1,4})([\,\$\/])/$h->{$1}$2/g;
     s/\#.+$//;

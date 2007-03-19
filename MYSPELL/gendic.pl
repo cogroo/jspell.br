@@ -16,7 +16,7 @@ while(<>){
     next if (/^wordchars/ || /^\s+$/ || /^\#/ || /^defstringtype/ || /^allaffixes/ );
     if (/^prefixes$/){$pri='PFX';next;}
     if (/^suffixes$/){$pri='SFX';next;}
-    if (/^flag ([\*\+]?)(\w)/) {    ##Flag data
+    if (/^flag ([\*\+])(\w)/) {    ##Flag data
 	$tmp=$2;
 	$tmp2=$1;
 	
@@ -49,7 +49,7 @@ while(<>){
     $qua[-1]=~s/\-/0/;
 }
 
-#Copypaste from upper lines
+#Copypaste from upper lines #última regra
 printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items
 	    for ($i=0;$i<@qui;$i++){
 		print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])."\n";
