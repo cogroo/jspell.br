@@ -14,7 +14,7 @@ my %h;
 while(<>){
     chomp;
     next if /^\#\#/;
-    next if /\#noispell/;
+    #next if /\#noispell/;
     $h{"$1"}="$2" if m!^\#([^/]+)/([^/]+)!;
 }
 
