@@ -29,7 +29,7 @@ while(<>){
 	if (defined($seg)){
 	    printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items at the end
 	    for ($i=0;$i<@qui;$i++){
-		print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])." " x (15-length($qui[$i]))."+".$morf[$i]."\n";
+		print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])." " x (15-length($qui[$i])).$morf[$i]."\n";
 	    }
 	    @ter=();@qua=();@qui=(); @morf=(); #clean buffer from previous flag
 	}
@@ -43,7 +43,7 @@ while(<>){
     push @qui, $1;
     $tmp2=$2;
     $tmp=$3;
-    push @morf, "$4";
+    push @morf, ($pri eq 'SFX' ? "+$4" : "$4+");
 	
     if (length($tmp)<1) {
 	push @ter, '0';
@@ -60,5 +60,5 @@ while(<>){
 #Copypaste from upper lines #Última regra
 printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items at the end
 for ($i=0;$i<@qui;$i++){
-    print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])." " x (15-length($qui[$i]))."+".$morf[$i]."\n";
+    print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])." " x (15-length($qui[$i])).$morf[$i]."\n";
 }
