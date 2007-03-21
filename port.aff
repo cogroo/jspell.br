@@ -1289,21 +1289,21 @@ D I Z E R   >   EM             ; "P=3,N=p,T=ip"
 #-------------------------------------------
 # conjugação pronominal (compl. indirecto)
 flag +L:     ; "CAT=v"             #-lho             #noispell
-            >      \-LHE    ; "DP=3,DG=_,DN=s"          #noispell
-            >      \-LHO    ; "DP=3,DG=m,DN=s"          #noispell
-            >      \-LHA    ; "DP=3,DG=f,DN=s"          #noispell
+.           >      \-LHE    ; "DP=3,DG=_,DN=s"          #noispell
+.           >      \-LHO    ; "DP=3,DG=m,DN=s"          #noispell
+.           >      \-LHA    ; "DP=3,DG=f,DN=s"          #noispell
 
-            >      \-LHES   ; "DP=3,DG=_,DN=p"          #noispell
-            >      \-LHOS   ; "DP=3,DG=m,DN=p"          #noispell
-            >      \-LHAS   ; "DP=3,DG=f,DN=p"          #noispell
+.           >      \-LHES   ; "DP=3,DG=_,DN=p"          #noispell
+.           >      \-LHOS   ; "DP=3,DG=m,DN=p"          #noispell
+.           >      \-LHAS   ; "DP=3,DG=f,DN=p"          #noispell
 
 # reflexividade dos verbos
-            >      \-ME     ; "AP=1,AN=s"          #noispell
-            >      \-TE     ; "AP=2,AN=s"          #noispell
-            >      \-SE     ; "AP=3,AN=_"          #noispell
-            >      \-NOS    ; "AP=1,AN=p"          #noispell
+.           >      \-ME     ; "AP=1,AN=s"          #noispell
+.           >      \-TE     ; "AP=2,AN=s"          #noispell
+.           >      \-SE     ; "AP=3,AN=_"          #noispell
+.           >      \-NOS    ; "AP=1,AN=p"          #noispell
 S           >   -S,\-NOS    ; "AP=1,AN=p"          #noispell
-            >      \-VOS    ; "AP=2,AN=p"          #noispell
+.           >      \-VOS    ; "AP=2,AN=p"          #noispell
 
 R     >        \-ME\-EI     ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
 R     >        \-TE\-ÁS     ; "AP=2,AN=s,P=2,N=s,T=f"          #noispell
