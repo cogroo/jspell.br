@@ -66,6 +66,12 @@ all:
 	@ echo -e "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
 	@ echo -e "\tmyspell-zip -- creates myspell distribution file (zip)"
 	@ echo
+	@ echo -e "hunspell:"
+	@ echo -e "\thunspell -- builds hunspell dictionary"
+	@ echo -e "\thunspell-install -- installs hunspell"
+	@ echo -e "\thunspell-tgz -- creates hunspell distribution file (tar.gz)"
+	@ echo -e "\thunspell-zip -- creates hunspell distribution file (zip)"
+	@ echo
 	@ echo -e "wordlist:"
 	@ echo -e "\twordlist -- builds a simple word list"
 	@ echo -e "\twordlist-bz2 -- creates wordlist compressed file"
@@ -120,6 +126,8 @@ clean:
 	cd ASPELL5; make clean
 	cd ASPELL6; make clean
 	cd MYSPELL; make clean
+#	cd HUNSPELL; make clean
+#	cd WORDLIST; make clean
 	rm -f *.stat *.cnt
 	rm -f *~
 	rm -f aux_all_irr.dic 
@@ -214,8 +222,8 @@ hunspell-tgz: hunspell
 	cd HUNSPELL; make tgz
 	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).tar.gz .
 
-hunspell-zip: hunpell
-	cd HUNSPELL; make myspell-zip
+hunspell-zip: hunspell
+	cd HUNSPELL; make hunspell-zip
 	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).zip .
 
 hunspell-clean:
@@ -295,6 +303,7 @@ port.hash: port.dic port.aff
 #-------------------------------------------------------------------
 
 chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz
+#hunspell-tgz
 
 install: #wordlist-diff
 	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
@@ -305,6 +314,12 @@ install: #wordlist-diff
 
 	cp my*.zip $(NATURA_PUB)/myspell
 	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABRX)-$(DATE).zip $(NATURA_PUB)/myspell/myspell.$(ABRX)-latest.zip
+
+#	cp my*.gz $(NATURA_PUB)/hunspell
+#	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).tar.gz $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.tar.gz
+
+#	cp my*.zip $(NATURA_PUB)/hunspell
+#	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).zip $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.zip
 
 	cp i*.gz $(NATURA_PUB)/ispell
 	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz

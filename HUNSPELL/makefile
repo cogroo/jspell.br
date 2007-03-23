@@ -26,22 +26,21 @@ hunspell: ../port.dic
 hunspell-tgz: tgz
 
 hunspell-zip: hunspell
-#	mkdir hunspell-$(P)-$(DATE)
-#	cp $D/$P.dic $D/README_pt_PT.txt $D/$P.aff hunspell-$(P)-$(DATE)
-#	cp ../COPYING hunspell.$(P)-$(DATE)
-#	zip -r hunspell-$(P)-$(DATE).zip hunspell.$(P)-$(DATE)
-#	rm -rf hunspell-$(P)-$(DATE)
+	mkdir hunspell-$(P)-$(DATE)
+	cp $D/$P.dic $D/README.txt $D/$P.aff hunspell-$(P)-$(DATE)
+	cp ../COPYING hunspell-$(P)-$(DATE)
+	zip -r hunspell-$(P)-$(DATE).zip hunspell-$(P)-$(DATE)
+	rm -rf hunspell-$(P)-$(DATE)
 
-# tgz: hunspell
-# 	mkdir hunspell.$(P)-$(DATE)
-# 	cp $D/$P.dic $D/README_pt_PT.txt $D/$P.aff hunspell-$(P)-$(DATE)
-# 	cp ../COPYING hunspell.$(P)-$(DATE)
-# 	tar -czf hunspell-$(P)-$(DATE).tar.gz hunspell.$(P)-$(DATE)
-# 	rm -rf hunspell-$(P)-$(DATE)
+tgz: hunspell
+	mkdir hunspell-$(P)-$(DATE)
+	cp $D/$P.dic $D/README.txt $D/$P.aff hunspell-$(P)-$(DATE)
+	cp ../COPYING hunspell-$(P)-$(DATE)
+	tar -czf hunspell-$(P)-$(DATE).tar.gz hunspell-$(P)-$(DATE)
+	rm -rf hunspell-$(P)-$(DATE)
 
-# install :
-# 	cd $P
-# 	./install.sh
+install :
+	echo "Manualmente"
 
 ../port.dic:
 	cd ..; make port.dic

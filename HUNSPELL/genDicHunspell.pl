@@ -13,5 +13,6 @@ use locale;
 while(<>){
     chomp;
     my ($word, $morf, $flags) = split m!/!;
-    print "$word/$flags\t[$morf]\n";
+    print "$word".($flags=~/^\s*$/ ? '':'/')."$flags\t[$morf]\n";
+#    print "$word/$flags\t[$morf]\n";
 }
