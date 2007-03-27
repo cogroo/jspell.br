@@ -42,7 +42,6 @@ aspell-wl: ../port.dic
 		cd .. ; make ispell; \
 	fi;
 	cp $(ID) $L.wl
-#	perl gerarWordList ../port.dic > $L.wl
 
 dist: aspell
 	cd $P; make dist
