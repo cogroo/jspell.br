@@ -5,6 +5,7 @@ backtracking/#nm//
 backup/CAT=nc,G=m/a/
 BASIC/CAT=np,G=m,N=s//
 bit/CAT=nc,G=m,N=s/p/
+Bluetooth/#nm//
 broadcast/CAT=nc,G=m,N=s//
 buffer/CAT=nc,G=m,N=s/a/
 bug/CAT=nc,G=m,N=s/a/
@@ -33,6 +34,7 @@ Fortran/CAT=np//
 Fuzzy/CAT=adj,G=_,N=s//
 Google/CAT=np,G=m,N=s//
 hardware/CAT=nc,G=m,N=s//
+hiperligação/#nf/p/
 HTTP/CAT=np//
 HTML/CAT=np//
 IBM/CAT=np,G=f,N=s//
@@ -91,6 +93,7 @@ VDM/CAT=np,G=m//
 webmaster/CAT=nc,G=m,N=s//
 web/CAT=nc,G=f,N=s//
 Windows/CAT=nc,G=m,N=s//
+wireless/#nm//
 www/CAT=np//
 XP/CAT=nc,G=m,N=s//
 XML/CAT=np//

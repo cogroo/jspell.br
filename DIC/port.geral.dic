@@ -9768,6 +9768,7 @@ croniqueiro/#nm//
 croniquizar/#vt/XYPL/
 cronista/#nn/p/
 cronografia/#nf/prq/
+cronograma/#nm/p/
 cronologia/#nf/pt/
 cronológico/#a/pfH/
 cronometragem/#nf//
@@ -10798,7 +10799,7 @@ desditoso/#a//
 desdizer/#vn/KL/
 desdobrar/#vt/XYPLMv/
 desejar/#vn/XYPLD/
-desejável/#a/pI/
+desejável/#a/pIm/
 desejo/#nm/p/
 desejoso/#a/fp/
 deselegância/#nf/p/
@@ -14673,6 +14674,7 @@ fácil/#an/a/
 facilidade/#nf/p/
 facílimo/#a//
 facilitar/#vt/XYPLcD/
+facilitismo/#nm/p/
 facilmente/#av//
 facínora/#nm//
 facinoroso/#a//
@@ -16299,7 +16301,7 @@ gelatiniforme/#an/p/
 gelatinizar/#vt/XYPLc/
 gelatinoso/#a/f/
 geleia/#nf/p/
-geleira/#nf//
+geleira/#nf/p/
 gélido/#a/fp/
 gelificar/#vt/XYPL/
 gel/#nm//
@@ -16311,7 +16313,7 @@ gemedoiro/#nm//
 gemedouro/#nm//
 gémeo/#hm/fp/
 gemer/#vn/XYPLDn/
-gemido/#nm//
+gemido/#nm/p/
 geminar/#vt/XYPLcv/
 genealogia/#nf/pr/
 genealogista/#nn/p/
@@ -16439,6 +16441,7 @@ giboso/#a/fp/
 gibraltino/#a/fp/
 giestal/#nm/p/
 giesta/#nf/p/
+gigahertz/#nm//
 gigantear/#vi/ZYL/
 gigante/#hm2/pi/
 gigantesco/#a/fp/
@@ -25724,6 +25727,7 @@ pito/#nm//
 pitoresco/#hm/fp/
 pitosga/#hn//
 pivete/#nm//
+pivô/#nm//
 piza/#nf//
 pizza/#nf/p/
 placa/#nf/p/
@@ -27351,6 +27355,8 @@ queimoso/#a//
 queixada/#nf//
 queixal/#hm2//
 queixa/#nf/p/
+queixa-crime/#nf//
+queixas-crime/$queixa-crime$N=p//
 queixar/#v/XYL/
 queixinhas/#nf,N=p//
 queixo/#nm/p/
@@ -28786,6 +28792,7 @@ resinar/#vt/XYPL/
 resineiro/#hm//
 resinento/#a//
 resinoso/#a/fp/
+resiliência/#nf//
 resistência/#nf/p/
 resistente/#an/pm/
 resistibilidade/#nf/p/
