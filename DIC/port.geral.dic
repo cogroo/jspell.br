@@ -2144,7 +2144,7 @@ antituberculoso/#a//
 antivariólico/#a/f/
 antiviril/#an//
 antivirulento/#a//
-antivírus/#nm//
+antivírus/#nmp//
 antologia/#nf/pq/
 antológico/#a/fp/
 antoniano/#a//
@@ -5236,7 +5236,7 @@ bramismo/#nm/p/
 brancacento/#a//
 brancal/#an//
 branca/#nf//
-branco/#hm/fp/
+branco/#hm/fps/
 brancor/#nm//
 brancura/#nf//
 brande/#nm//
@@ -6245,7 +6245,7 @@ caraça/#nf/p/
 caracará/#nm//
 caracolar/#vi/XYL/
 caracol/#nm/p/
-caracteres/$carácter$#nmp//
+caracteres/$carácter$#nm,N=p//
 caracterial/#an//
 característica/#nf//
 característico/#a/pfH/
@@ -16485,7 +16485,7 @@ gíria/#nf//
 girino/#nm/p/
 giro/#hn/fps/
 girondino/#nm//
-giro/#nm/p/
+giro/#nm/ps/
 giroscópio/#nm/p/
 giróstato/#nm//
 gizar/#vt/XYPLM/
@@ -16497,7 +16497,7 @@ glaciar/#a/pEO/
 glaciário/#a/fp/
 glaciar/#nm/p/
 glaciar/#vt/c/
-gladiador/#nm//
+gladiador/#nm/p/
 gladiar/#vi/XYLD/
 gladiatório/#a//
 gladiatura/#nf//
@@ -20590,7 +20590,7 @@ longo/#a/pfms/
 lontra/#nf/p/
 loquacidade/#nf/p/
 loquaz/#an/d/
-lorde/#nm//
+lorde/#nm/p/
 loreno/#hm//
 lorpa/#hn/p/
 lorpice/#nf//
@@ -25896,7 +25896,7 @@ poiso/#nm/p/
 pojar/#vn/XYPLn/
 polaco/#hm/fp/
 polaina/#nf/p/
-polar/#an/pdu/
+polar/#an/pu/
 polaridade/#nf/p/
 polarizador/#hm//
 polarizar/#vt/XYPLcDnv/
@@ -33809,7 +33809,7 @@ virtude/#nf/pS/
 virtuoso/#a/fpidS/
 virulência/#nf/p/
 virulento/#a/fpm/
-vírus/#nm//
+vírus/#nmp//
 vir/#vi,I=3/L/
 visada/#nf//
 visão/#nf/p/
