@@ -310,10 +310,10 @@ install: #wordlist-diff
 	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABR)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell5-$(ABR)-latest.tar.bz2
 
 	cp my*.gz $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABRX)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABRX)-latest.tar.gz
+	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.tar.gz
 
 	cp my*.zip $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABRX)-$(DATE).zip $(NATURA_PUB)/myspell/myspell.$(ABRX)-latest.zip
+	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).zip $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.zip
 
 #	cp my*.gz $(NATURA_PUB)/hunspell
 #	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).tar.gz $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.tar.gz
@@ -327,11 +327,11 @@ install: #wordlist-diff
 	cp j*.gz $(NATURA_PUB)/jspell
 	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
 
-	cp aspell6*$(DATE)*bz2 $(NATURA_PUB)/aspell
+	cp aspell6*$(DATE)*bz2 $(NATURA_PUB)/aspell6
 	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
 
 	cp word*$(DATE)*bz2 $(NATURA_PUB)/misc/wordlist
-	ln -sf $(NATURA_PUB)/misc/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_PUB)/misc/wordlist.$(ABRX)-latest.tar.bz2
+	ln -sf $(NATURA_PUB)/misc/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_PUB)/misc/wordlist/wordlist.$(ABRX)-latest.tar.bz2
 
 	date >> $(NATURA_PUB)/CHANGELOG
 	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
