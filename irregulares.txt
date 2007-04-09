@@ -365,17 +365,17 @@ truída    fs ppa
 truídos   mp ppa
 truídas   fp ppa
 
-#v obstruir/SL, instruir/PL
-truis     2s p
-truem     3p p
-trui      3s p
-trui       2s i
+#vX:u obstruir/SL, instruir/PL
+uXis     2s p
+uXem     3p p
+uXi      3s p
+uXi       2s i
 
-#v destruir/SL, construir/SL
-troem     3p p
-tróis    2s p
-trói     3s p
-trói      2s i
+#vX:u destruir/SL, construir/SL
+oXem      3p p
+óXis      2s p
+óXi       3s p     
+óXi       2s i
 
 #v pôr/PL           // ocur:1
 ponho      1s p
