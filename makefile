@@ -338,3 +338,6 @@ install: #wordlist-diff
 	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~
 	perl gFeed.pl
 	@echo "Go edit $(NATURA_PUB)/CHANGELOG !"
+
+test: port.hash
+	TESTS/test.pl
