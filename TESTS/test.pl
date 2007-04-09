@@ -9,11 +9,14 @@ my $DIC = jspell::new("./port.hash");
 my $port_dic_word_list = load_word_list("port.dic");
 my $port_dic_generated;
 
+my $i = 0;
 for my $w (@$port_dic_word_list) {
-  print STDERR "$w\n";
+  $i++;
+  print STDERR "." unless ($i%100);
   my @der = $DIC->der($w);
   $port_dic_generated->{$_}++ for (@der);
 }
+print STDERR "\n";
 
 printf "Number of words on port.dic: %d\n", scalar(@$port_dic_word_list);
 printf "Number of derived words: %d\n", scalar(keys %$port_dic_generated);
