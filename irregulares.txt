@@ -113,10 +113,10 @@ divergi    2p i
 divirjam   3p i
 
 #v *guar              // ocur:8
-gúe    1s p
-gúes   2s p
-gúe    3s p
-gúem   3p p
+gúe    1s pc
+gúes   2s pc
+gúe    3s pc
+gúem   3p pc
 gúe    3s i
 gúem   3p i
 
@@ -366,9 +366,9 @@ truídos   mp ppa
 truídas   fp ppa
 
 #vX:u obstruir/SL, instruir/PL
-uXis     2s p
-uXem     3p p
-uXi      3s p
+uXis      2s p
+uXem      3p p
+uXi       3s p
 uXi       2s i
 
 #vX:u destruir/SL, construir/SL
