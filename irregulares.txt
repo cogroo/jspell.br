@@ -491,7 +491,7 @@ oía         3s pi
 oíam        3p pi
 oí          1s pp
 ói          2s i
-oa          2s i
+oa          3s i
 oído        ms ppa
 oída        fs ppa
 oídos       mp ppa
@@ -507,7 +507,8 @@ sigais   2p pc
 sigam    3p pc
 siga     3s i
 sigamos  1p i
-sigam    2p i
+sigai    2p i
+sigam    3p i
 
 #v dar/PL, antedar
 dou      1s p
@@ -1172,10 +1173,10 @@ oiça    3s pc
 oiçamos 1p pc
 oiçais  2p pc
 oiçam   3p pc
-ouve     2s i
+ouve    2s i
 ouça    3s i
 ouçamos 1p i
-ouvi     2p i
+ouvi    2p i
 ouçam   3p i
 
 #v provir, advir, avir, convir, desavir, devir, intervir, revir
