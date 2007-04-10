@@ -379,7 +379,7 @@ struída    fs ppa
 struídos   mp ppa
 struídas   fp ppa
 
-#vX:u destruir/SL, construir/SL, zzzzzir
+#vX:u destruir/SL, construir/SL
 // uXo       1s p
 óXis      2s p
 óXi       3s p     
