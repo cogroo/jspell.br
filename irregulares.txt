@@ -490,6 +490,9 @@ siga     3s pc
 sigamos  1p pc
 sigais   2p pc
 sigam    3p pc
+siga     3s i
+sigamos  1p i
+sigam    2p i
 
 #v dar/PL, antedar
 dou      1s p
