@@ -335,47 +335,67 @@ peçamos  1p i
 pedi      2p i
 peçam    3p i
 
-#v *truir
-// construir/RPL, destruir/PL, instruir/PL, obstruir/SL
-truo      1s p
-truímos  1p p
-truís    2p p
-truía    1s pi
-truías   2s pi
-truía    3s pi
-truíam   3p pi
-truí     1s pp
-truíste  2s pp
-truímos  1p pp
-truístes 2p pp
-truíram  3p pp
-truíra   1s pmp
-truíras  2s pmp
-truíra   3s pmp
-truíram   3p pmp
-truísse   1s pic
-truísses  2s pic
-truísse   3s pic
-truíssem  3p pic
-truíres   2s fc
-truírem   3p fc
-truí      2p i
-truído    ms ppa
-truída    fs ppa
-truídos   mp ppa
-truídas   fp ppa
+#v obstruir/SL, instruir/PL
+struo      1s p
+struímos  1p p
+struís    2p p
+struía    1s pi
+struías   2s pi
+struía    3s pi
+struíam   3p pi
+struí     1s pp
+struíste  2s pp
+struímos  1p pp
+struístes 2p pp
+struíram  3p pp
+struíra   1s pmp
+struíras  2s pmp
+struíra   3s pmp
+struíram   3p pmp
+struísse   1s pic
+struísses  2s pic
+struísse   3s pic
+struíssem  3p pic
+struíres   2s fc
+struírem   3p fc
+struí      2p i
+struído    ms ppa
+struída    fs ppa
+struídos   mp ppa
+struídas   fp ppa
 
-#vX:u obstruir/SL, instruir/PL
-uXis      2s p
-uXem      3p p
-uXi       3s p
-uXi       2s i
-
-#vX:u destruir/SL, construir/SL
-oXem      3p p
+#vX:u destruir/SL, construir/SL, zzzzzir
+// uXo       1s p
 óXis      2s p
 óXi       3s p     
-óXi       2s i
+uXímos    1p p
+uXís      2p p
+oXem      3p p
+uXía    1s pi
+uXías   2s pi
+uXía    3s pi
+uXíam   3p pi
+uXí     1s pp
+uXíste  2s pp
+uXímos  1p pp
+uXístes 2p pp
+uXíram  3p pp
+uXíra   1s pmp
+uXíras  2s pmp
+uXíra   3s pmp
+uXíram   3p pmp
+uXísse   1s pic
+uXísses  2s pic
+uXísse   3s pic
+uXíssem  3p pic
+uXíres   2s fc
+uXírem   3p fc
+uXí      2p i
+óXi      2s i
+uXído    ms ppa
+uXída    fs ppa
+uXídos   mp ppa
+uXídas   fp ppa
 
 #v pôr/PL           // ocur:1
 ponho      1s p
@@ -468,7 +488,7 @@ siga     1s pc
 sigas    2s pc
 siga     3s pc
 sigamos  1p pc
-siguais  2p pc
+sigais   2p pc
 sigam    3p pc
 
 #v dar/PL, antedar
