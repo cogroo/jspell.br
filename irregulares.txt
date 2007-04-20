@@ -301,7 +301,7 @@ ugi      2p i
 ujam     3p i
 
 
-#vX:o abolir, demolir, engolir, rebolir, dormir, cobrir/SRL, encobrir/SL,
+#vX:o abolir, demolir, engolir, rebolir, dormir, descobrir/RL, cobrir/SRL, encobrir/SL,
        colorir/SL, multicolorir, espavorir, explodir, eclodir, tossir
 uXo    1s p
 uXa    1s pc
