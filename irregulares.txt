@@ -34,6 +34,56 @@ intamos 1p i
 enti    2p i
 intam   3p i
 
+#v abster/PL
+abstenho	1s p
+absténs		2s p
+abstém		3s p
+abstemos	1p p
+abstendes	2p p
+abstêm		3p p
+abstenha	1s pc
+abstenhas	2s pc
+abstenha	3s pc
+abstenhamos	1p pc
+abstenhais	2p pc
+abstenham	3p pc
+abstém		2s i
+abstenha	3s i
+abstenhamos	1p i
+abstende	2p i
+abstenham	3p i
+abstive		1s pp
+abstiveste	2s pp
+absteve		3s pp
+abstivemos	1p pp
+abstivestes	2p pp
+abstiveram	3p pp
+abstinha	1s pi
+abstinhas	2s pi
+abstinha	3s pi
+abstínhamos	1p pi
+abstínheis	2p pi
+abstinham	3p pi
+abstivera	1s pmp
+abstiveras	2s pmp
+abstivera	3s pmp
+abstivéramos	1p pmp
+abstivéreis	2p pmp
+abstiveram	3p pmp
+abstivesse	1s pic
+abstivesses	2s pic
+abstivesse	3s pic
+abstivéssemos	1p pic
+abstivésseis	2p pic
+abstivessem	3p pic
+abstiver	1s fc
+abstiveres	2s fc
+abstiver	3s fc
+abstivermos	1p fc
+abstiverdes	2p fc
+abstiverem	3p fc
+
+
 #v *vestir    // ocur:6
 visto    1s p
 vista    1s pc
