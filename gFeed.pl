@@ -72,7 +72,7 @@ my $rsvn="<img src='http://natura.di.uminho.pt/wiki/theme/eeng/css/logo.png'/>";
 $rsvn.="<h3>Departamento de Informática da Universidade do Minho</h3>";
 $rsvn.="<h4>Projecto <a href='http://natura.di.uminho.pt/'>Natura</a> - Dicionários de português europeu (pt_PT)</h4>";
 $rsvn.="<p>Disponíveis nos formatos: [";
-$rsvn.=" <a href='$url$_/$_$l.tar.gz'>$_</a> |" for (qw/jspell myspell aspell5 aspell6 ispell hunspell/);
+$rsvn.=" <a href='$url$_/'>$_</a> |" for (qw/jspell myspell aspell5 aspell6 ispell hunspell/);
 $rsvn=~s/\|$/\]/;
 $rsvn.="</p>";
 $rsvn.="<p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
