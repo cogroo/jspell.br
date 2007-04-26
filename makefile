@@ -302,8 +302,7 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz
-#hunspell-tgz
+chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz hunspell-tgz hunspell-zip
 
 install: #wordlist-diff
 	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
@@ -315,11 +314,11 @@ install: #wordlist-diff
 	cp my*.zip $(NATURA_PUB)/myspell
 	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).zip $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.zip
 
-#	cp my*.gz $(NATURA_PUB)/hunspell
-#	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).tar.gz $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.tar.gz
+	cp my*.gz $(NATURA_PUB)/hunspell
+	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).tar.gz $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.tar.gz
 
-#	cp my*.zip $(NATURA_PUB)/hunspell
-#	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).zip $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.zip
+	cp my*.zip $(NATURA_PUB)/hunspell
+	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).zip $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.zip
 
 	cp i*.gz $(NATURA_PUB)/ispell
 	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
