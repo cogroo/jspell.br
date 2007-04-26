@@ -1,8 +1,8 @@
 #!/usr/bin/perl -w
 
-#Rui Vilela, Linguateca 2006
+#Rui Vilela 2007
 #Gera um feed para o lançamento de novas versões do dicionário
-#USAR com makefile installweb
+#USAR com "makefile install"
 
 use strict;
 use warnings;
@@ -12,14 +12,14 @@ use Data::Dumper;
 use Date::Format qw(time2str);
 use encoding "utf-8";
 use Encode "decode";
-use XML::DT;
 use File::Spec;
 use File::Basename 'basename';
 use Cwd 'getcwd';
+use CGI 'escapeHTML';
 
 
-
-my $DIC='/home/natura/download/sources/Dictionaries';
+my $DIC='/home/ruivilela/t';
+#my $DIC='/home/natura/download/sources/Dictionaries';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
 #Assumir directoria da makefile
 my $svn=File::Spec->catdir(getcwd, "DIC");
@@ -30,6 +30,7 @@ my $feedfile=File::Spec->catfile($DIC,'atom.xml');
 $XML::Atom::DefaultVersion = "1.0";
 my $feed = XML::Atom::Feed->new(Version => 1.0);
 my $data=time2str("%Y-%m-%dT%XZ",time);
+my $data2=time2str("%Y%m%d",time);
 
 #$feed->version; # 1.0
 $feed->title("Dicionários Opensource para o português");
@@ -53,52 +54,55 @@ $feed->updated($data);
 
 #######################################################
 
-my $ultRev=0; #E se não houver entradas ?
-my @entry;
-
-my %h = ( -outputenc => 'UTF-8',
-	  -inputenc => 'UTF-8',
-	  "entry/id" => sub{ 
-	      if ($c=~/-(\d+)/) { 
-		  $ultRev=$1 if ($1 > $ultRev); #Não funciona se já houver uma entrada no mesmo dia
-	      };
-	      "<$q>$c</$q>"
-	  },
-	  "entry" => sub{ push @entry, "<$q>$c</$q>" }
-	  );
-
-pathdt($feedfile,%h) if (-e $feedfile);
-
-#######################################################
 my $entry = XML::Atom::Entry->new(Version => 1.0);;
 
 my $dd=File::Spec->catdir($DIC,'jspell');
-my $l=`ls -rt -c1 $dd |grep -v 'latest' |sed -e 's/\.tar\.gz//' |tail -n 1`; ##eval?
-chomp $l;
 
-$entry->title("Nova versão do dicionário: $l");
+my $ultRev=`ls -c1 $dd |grep -v 'latest' |sed -e 's/\.tar\.gz//' |sort |tail -n 2 |head -n 1`; ##eval?
+chomp $ultRev;
+#$ultData=$ultRev;
+$ultRev=~s/\D*?(\d{4})(\d{2})(\d{2})/$1-$2-$3/;
+$ultRev.=" 00:01:00 -2300"; #Mesmo assim é apenas uma aproximação
 
-my $rsvn="<p>Disponível nos formatos: [";
-$l=~s/^\w+//;
-$rsvn.=" <a href='$url$_/$_$l.tar.gz'>$_</a> |" for (qw/jspell myspell aspell aspell6 ispell/);
+my $l=time2str("%Y%m%d",time);
+
+$entry->title("Nova versão do dicionário: jspell.pt-$l");
+
+my $rsvn="<img src='http://natura.di.uminho.pt/wiki/theme/eeng/css/logo.png'/>";
+$rsvn.="<h3>Departamento de Informática da Universidade do Minho</h3>";
+$rsvn.="<h4>Projecto <a href='http://natura.di.uminho.pt/'>Natura</a> - Dicionários de português europeu (pt_PT)</h4>";
+$rsvn.="<p>Disponíveis nos formatos: [";
+$rsvn.=" <a href='$url$_/$_$l.tar.gz'>$_</a> |" for (qw/jspell myspell aspell5 aspell6 ispell hunspell/);
 $rsvn=~s/\|$/\]/;
 $rsvn.="</p>";
-my $lastUpdate=`svn log -r $ultRev |grep -e '^r' |awk '{print \$5,\$6}' `;
-$rsvn.="<p>Alterações efectuadas desde a última actualização : $lastUpdate</p>";
+
+my $lastUpdate=`svn log -r {\"$ultRev\"} |grep -e '^r' |awk '{print \$5,\$6}' `;
+$rsvn.="<p>Alterações efectuadas desde a última actualização(diff wordlist): $lastUpdate</p>";
+
 $rsvn.="\n\n<code>";
-
-foreach (`ls -1 $svn/*.dic`){
-    if ($ultRev!=0){
-	$rsvn.= Encode::decode('iso-8859-1',`cd $svn; svn diff -r $ultRev:$currentRevision --diff-cmd /usr/bin/diff -x -U1 $_`);
-    }else{
-	$rsvn.= "<p>Não foi possível obter as diferenças desde a última versão<p>"
-    }
+$dd=File::Spec->catdir(".",'WORDLIST');
+#print "$dd/verbdiffwordlist.pt_PT-$data2.txt";
+open my $F,"<$dd/verbdiffwordlist.pt_PT-$data2.txt" || warn $!;
+while (<$F>){
+    $rsvn.=escapeHTML(Encode::decode('iso-8859-1',$_));
 }
+close $F;
+$rsvn.="\n\n</code>";
 
-$rsvn=~s/Index:.+\//<b>Ficheiro<\/b>: /g;
-$rsvn=~s!(---|\+\+\+).+?([^/]+\n)!$1$2!g;
-$rsvn.="</code><p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
-$rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/wiki/index.cgi?Dicion%E1rios'>Dicionários no Natura</a> ou <a href='http://linguateca.di.uminho.pt/dics/dics.html'>Dicionários na Linguateca</a>.</p>\n";
+$rsvn.="<p>Alterações efectuadas desde a última actualização(SVN): $lastUpdate</p>";
+
+$rsvn.="\n\n<code>";
+foreach (`ls -1 $svn/*.dic`){
+    $rsvn.= escapeHTML(Encode::decode('iso-8859-1',`cd $svn; svn diff -r {\"$ultRev\"}:$currentRevision --diff-cmd /usr/bin/diff -x -U1 $_`));
+}
+$rsvn.= escapeHTML(Encode::decode('iso-8859-1',`svn diff -r {\"$ultRev\"}:$currentRevision --diff-cmd /usr/bin/diff -x -U1 irregulares.txt`));
+
+$rsvn=~s/Index:.+\//<br\/><b>Ficheiro<\/b>: /g;
+$rsvn=~s/Index: /<br\/><b>Ficheiro<\/b>: /g; #irregulares.txt
+#$rsvn=~s!(---|\+\+\+).+?([^/]+\n)!$1$2!g;
+$rsvn.="</code>\n";
+$rsvn.="<p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
+$rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/wiki/index.cgi?Dicion%E1rios'>Dicionários no Natura</a>.</p>\n";
 $rsvn=~s/\n/<br\/>\n/g;
 
 $entry->content($rsvn);
@@ -113,17 +117,7 @@ my $xml = $feed->as_xml;
 
 ######################################################
 
-my $c=10;
-my $d=substr($data,0,10);
-for (@entry){
-    next if (/$d/s); #Evitar mais do que uma entry por dia
-    $xml=~s/<\/entry>/"$&\n$_"/e;
-    last if (--$c==0);
-}
-
-#print Dumper \$xml;
-
-open my $F, ">:utf8",$feedfile or warn "Não foi possível criar o ficheiro $feedfile - $!";
+open $F, ">:utf8",$feedfile or warn "Não foi possível criar o ficheiro $feedfile - $!";
 print $F $xml;
 close $F;
 print basename($feedfile)." criado com sucesso!\n" if (-e $feedfile);
