@@ -12,7 +12,6 @@ LING=portugues
 ABR=pt
 #iso631 country code
 ABRX=pt_PT
-#Aspell fixed version (changes with date)
 DATE=`date +%Y%m%d`
 
 ## In case you change this, please let jspell maintainers know...
@@ -32,7 +31,7 @@ BASE= port.aff $(PTDIC) irregulares.txt aux_verb.dic \
       IRR/ge_verb.l IRR/ge_verb2.y makefile \
       PERL/pos2iso PERL/jsp2isp.pl README jspell.port.spec irr2perl
 
-NATURA_PUB=/home/natura/download/sources/Dictionaries
+NATURA_WWW=/home/natura/download/sources/Dictionaries
 
 #-------------------------------------------------------------------
 # Instructions
@@ -89,8 +88,6 @@ port.dic: $(PTDIC) aux_all_irr.dic
 	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
 	cat $(PTDIC) aux_all_irr.dic >> port.dic 
 
-
-
 port.irr: aux_all_irr.dic
 	./irr2perl aux_all_irr.dic > port.irr
 
@@ -126,8 +123,8 @@ clean:
 	cd ASPELL5; make clean
 	cd ASPELL6; make clean
 	cd MYSPELL; make clean
-#	cd HUNSPELL; make clean
-#	cd WORDLIST; make clean
+	cd HUNSPELL; make clean
+#	cd WORDLIST; make clean #No clean
 	rm -f *.stat *.cnt
 	rm -f *~
 	rm -f aux_all_irr.dic 
@@ -155,14 +152,13 @@ ispell-clean:
 #-------------------------------------------------------------------
 # aspell 0.50 rules
 #-------------------------------------------------------------------
-#make clean first?
-aspell5: port.dic port.aff ispell
+aspell5: port.dic port.aff
 	cd ASPELL5; make aspell
 
 aspell5-install: aspell5
 	cd ASPELL5; make install
 
-aspell5-tgz: aspell5
+aspell5-tgz:
 	cd ASPELL5; make dist
 	mv ASPELL5/aspell5*$(DATE)*bz2 .
 
@@ -173,13 +169,13 @@ aspell5-clean:
 # aspell 0.60 rules
 #-------------------------------------------------------------------
 
-aspell6: port.dic port.aff ispell
+aspell6: port.dic port.aff
 	cd ASPELL6; make aspell
 
 aspell6-install: aspell6
 	cd ASPELL6; make install
 
-aspell6-tgz: aspell6
+aspell6-tgz:
 	cd ASPELL6; make dist
 	mv ASPELL6/aspell6*$(DATE)*bz2 .
 
@@ -196,11 +192,11 @@ myspell: port.dic port.aff ispell
 myspell-install: myspell
 	cd MYSPELL; make install
 
-myspell-tgz: myspell
+myspell-tgz:
 	cd MYSPELL; make tgz
 	mv MYSPELL/myspell.$(ABR)-$(DATE).tar.gz .
 
-myspell-zip: myspell
+myspell-zip:
 	cd MYSPELL; make myspell-zip
 	mv MYSPELL/myspell.$(ABR)-$(DATE).zip .
 
@@ -218,11 +214,11 @@ hunspell: port.dic port.aff
 hunspell-install: hunspell
 	cd HUNSPELL; make install
 
-hunspell-tgz: hunspell
+hunspell-tgz:
 	cd HUNSPELL; make tgz
 	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).tar.gz .
 
-hunspell-zip: hunspell
+hunspell-zip:
 	cd HUNSPELL; make hunspell-zip
 	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).zip .
 
@@ -240,8 +236,8 @@ wordlist: port.dic
 wordlist-bz2: wordlist
 	cd WORDLIST; make bz2
 	mv WORDLIST/word*$(DATE)*bz2 .
-wordlist-diff: wordlist
-	cd WORDLIST; make diff OLDWL=$D/misc/wordlist #IT has default file search!
+#wordlist-diff: wordlist
+#	cd WORDLIST; make diff OLDWL=$D/misc/wordlist #IT has default file search!
 wordlist-clean:
 	cd WORDLIST; make clean
 
@@ -305,38 +301,38 @@ port.hash: port.dic port.aff
 chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz hunspell-tgz hunspell-zip
 
 install: #wordlist-diff
-	cp aspell5*$(DATE)*bz2 $(NATURA_PUB)/aspell
-	ln -sf $(NATURA_PUB)/aspell/aspell5-$(ABR)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell/aspell5-$(ABR)-latest.tar.bz2
+	cp aspell5*$(DATE)*bz2 $(NATURA_WWW)/aspell
+	ln -sf $(NATURA_WWW)/aspell/aspell5-$(ABR)-$(DATE)-0.tar.bz2 $(NATURA_WWW)/aspell/aspell5-$(ABR)-latest.tar.bz2
 
-	cp my*.gz $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.tar.gz
+	cp my*.gz $(NATURA_WWW)/myspell
+	ln -sf $(NATURA_WWW)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_WWW)/myspell/myspell.$(ABR)-latest.tar.gz
 
-	cp my*.zip $(NATURA_PUB)/myspell
-	ln -sf $(NATURA_PUB)/myspell/myspell.$(ABR)-$(DATE).zip $(NATURA_PUB)/myspell/myspell.$(ABR)-latest.zip
+	cp my*.zip $(NATURA_WWW)/myspell
+	ln -sf $(NATURA_WWW)/myspell/myspell.$(ABR)-$(DATE).zip $(NATURA_WWW)/myspell/myspell.$(ABR)-latest.zip
 
-	cp my*.gz $(NATURA_PUB)/hunspell
-	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).tar.gz $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.tar.gz
+	cp my*.gz $(NATURA_WWW)/hunspell
+	ln -sf $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-$(DATE).tar.gz $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-latest.tar.gz
 
-	cp my*.zip $(NATURA_PUB)/hunspell
-	ln -sf $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-$(DATE).zip $(NATURA_PUB)/hunspell/hunspell-$(ABRX)-latest.zip
+	cp my*.zip $(NATURA_WWW)/hunspell
+	ln -sf $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-$(DATE).zip $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-latest.zip
 
-	cp i*.gz $(NATURA_PUB)/ispell
-	ln -sf $(NATURA_PUB)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/ispell/ispell.$(ABR)-latest.tar.gz
+	cp i*.gz $(NATURA_WWW)/ispell
+	ln -sf $(NATURA_WWW)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_WWW)/ispell/ispell.$(ABR)-latest.tar.gz
 
-	cp j*.gz $(NATURA_PUB)/jspell
-	ln -sf $(NATURA_PUB)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_PUB)/jspell/jspell.$(ABR)-latest.tar.gz
+	cp j*.gz $(NATURA_WWW)/jspell
+	ln -sf $(NATURA_WWW)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_WWW)/jspell/jspell.$(ABR)-latest.tar.gz
 
-	cp aspell6*$(DATE)*bz2 $(NATURA_PUB)/aspell6
-	ln -sf $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_PUB)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
+	cp aspell6*$(DATE)*bz2 $(NATURA_WWW)/aspell6
+	ln -sf $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
 
-	cp word*$(DATE)*bz2 $(NATURA_PUB)/misc/wordlist
-	ln -sf $(NATURA_PUB)/misc/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_PUB)/misc/wordlist/wordlist.$(ABRX)-latest.tar.bz2
+	cp word*$(DATE)*bz2 $(NATURA_WWW)/misc/wordlist
+	ln -sf $(NATURA_WWW)/misc/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_WWW)/misc/wordlist/wordlist.$(ABRX)-latest.tar.bz2
 
-	date >> $(NATURA_PUB)/CHANGELOG
-	echo "* empty log *" >> $(NATURA_PUB)/CHANGELOG
-	cp $(NATURA_PUB)/atom.xml $(NATURA_PUB)/atom.xml~
+	date >> $(NATURA_WWW)/CHANGELOG
+	echo "* empty log *" >> $(NATURA_WWW)/CHANGELOG
+	cp $(NATURA_WWW)/atom.xml $(NATURA_WWW)/atom.xml~
 	perl gFeed.pl
-	@echo "Go edit $(NATURA_PUB)/CHANGELOG !"
+	@echo "Go edit $(NATURA_WWW)/CHANGELOG !"
 
 test: port.hash
 	TESTS/test.pl
