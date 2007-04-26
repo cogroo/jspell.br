@@ -18,8 +18,8 @@ use Cwd 'getcwd';
 use CGI 'escapeHTML';
 
 
-my $DIC='/home/ruivilela/t';
-#my $DIC='/home/natura/download/sources/Dictionaries';
+#my $DIC='/home/ruivilela/t';
+my $DIC='/home/natura/download/sources/Dictionaries';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
 #Assumir directoria da makefile
 my $svn=File::Spec->catdir(getcwd, "DIC");
@@ -75,7 +75,7 @@ $rsvn.="<p>Disponíveis nos formatos: [";
 $rsvn.=" <a href='$url$_/$_$l.tar.gz'>$_</a> |" for (qw/jspell myspell aspell5 aspell6 ispell hunspell/);
 $rsvn=~s/\|$/\]/;
 $rsvn.="</p>";
-
+$rsvn.="<p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
 my $lastUpdate=`svn log -r {\"$ultRev\"} |grep -e '^r' |awk '{print \$5,\$6}' `;
 $rsvn.="<p>Alterações efectuadas desde a última actualização(diff wordlist): $lastUpdate</p>";
 
@@ -101,7 +101,6 @@ $rsvn=~s/Index:.+\//<br\/><b>Ficheiro<\/b>: /g;
 $rsvn=~s/Index: /<br\/><b>Ficheiro<\/b>: /g; #irregulares.txt
 #$rsvn=~s!(---|\+\+\+).+?([^/]+\n)!$1$2!g;
 $rsvn.="</code>\n";
-$rsvn.="<p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
 $rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/wiki/index.cgi?Dicion%E1rios'>Dicionários no Natura</a>.</p>\n";
 $rsvn=~s/\n/<br\/>\n/g;
 
