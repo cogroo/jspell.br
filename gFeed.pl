@@ -72,30 +72,45 @@ my $rsvn="<img src='http://natura.di.uminho.pt/wiki/theme/eeng/css/logo.png'/>";
 $rsvn.="<h3>Departamento de Informática da Universidade do Minho</h3>";
 $rsvn.="<h4>Projecto <a href='http://natura.di.uminho.pt/'>Natura</a> - Dicionários de português europeu (pt_PT)</h4>";
 $rsvn.="<p>Disponíveis nos formatos: [";
-$rsvn.=" <a href='$url$_/'>$_</a> |" for (qw/jspell myspell aspell5 aspell6 ispell hunspell/);
+$rsvn.=" <a href='$url$_/'>$_</a> |" for (qw/jspell myspell aspell aspell6 ispell hunspell/);
 $rsvn=~s/\|$/\]/;
 $rsvn.="</p>";
-$rsvn.="<p>Ver o <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
-my $lastUpdate=`svn log -r {\"$ultRev\"} |grep -e '^r' |awk '{print \$5,\$6}' `;
-$rsvn.="<p>Alterações efectuadas desde a última actualização(diff wordlist): $lastUpdate</p>";
+open my $F,"<$DIC/CHANGELOG" || warn $!;
+my @LOG=<$F>;
+$rsvn.="<p>-------- Última entrada do CHANGELOG -------</p><code>";
+for (reverse @LOG){
+    $rsvn.=escapeHTML($_); #Já em UTF8
+    last if (/\d{2}:\d{2}:\d{2}/);
+}
+close $F;
+$rsvn.='<p>'.("-"x40).'</p>';
+$rsvn.="<p>Ver o resto do <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
 
-$rsvn.="\n\n<code>";
-$dd=File::Spec->catdir(".",'WORDLIST');
-#print "$dd/verbdiffwordlist.pt_PT-$data2.txt";
-open my $F,"<$dd/verbdiffwordlist.pt_PT-$data2.txt" || warn $!;
+my $lastUpdate=`svn log -r {\"$ultRev\"} |grep -e '^r' |awk '{print \$5,\$6}' `;
+$rsvn.="<h4>Alterações efectuadas desde a última actualização(diff wordlist): $lastUpdate</h4>";
+$rsvn.="<p><b>NOTA:</b> A possível sobregeração de formas verbais com clítico é um problema conhecido, apenas afecta alguns dicionários.</p>";
+
+$rsvn.="<code>";
+
+#print "$verbdiffwordlist.pt_PT-$data2.txt";
+open $F,"<verbdiffwordlist.pt_PT-$data2.txt" || warn $!;
 while (<$F>){
     $rsvn.=escapeHTML(Encode::decode('iso-8859-1',$_));
 }
 close $F;
-$rsvn.="\n\n</code>";
+$rsvn.="</code>\n";
 
-$rsvn.="<p>Alterações efectuadas desde a última actualização(SVN): $lastUpdate</p>";
+$rsvn.="<h4>Alterações efectuadas desde a última actualização(SVN): $lastUpdate</h4>";
 
-$rsvn.="\n\n<code>";
+$rsvn.="<code>";
 foreach (`ls -1 $svn/*.dic`){
     $rsvn.= escapeHTML(Encode::decode('iso-8859-1',`cd $svn; svn diff -r {\"$ultRev\"}:$currentRevision --diff-cmd /usr/bin/diff -x -U1 $_`));
 }
-$rsvn.= escapeHTML(Encode::decode('iso-8859-1',`svn diff -r {\"$ultRev\"}:$currentRevision --diff-cmd /usr/bin/diff -x -U1 irregulares.txt`));
+for (qw/irregulares.txt port.aff/){
+    $rsvn.= escapeHTML(Encode::decode('iso-8859-1',`svn diff -r {\"$ultRev\"}:$currentRevision --diff-cmd /usr/bin/diff -x -U1 $_`));
+}
+
+
 
 $rsvn=~s/Index:.+\//<br\/><b>Ficheiro<\/b>: /g;
 $rsvn=~s/Index: /<br\/><b>Ficheiro<\/b>: /g; #irregulares.txt

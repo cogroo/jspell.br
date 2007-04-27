@@ -231,13 +231,14 @@ hunspell-clean:
 # wordlist rules
 #-------------------------------------------------------------------
 wordlist: port.dic
-	cd WORDLIST; make wl
+	cd WORDLIST; make wl; make diff
 
 wordlist-bz2: wordlist
 	cd WORDLIST; make bz2
-	mv WORDLIST/word*$(DATE)*bz2 .
-#wordlist-diff: wordlist
-#	cd WORDLIST; make diff OLDWL=$D/misc/wordlist #IT has default file search!
+	cp WORDLIST/wordlist.$(ABRX)-$(DATE).tar.bz2 .
+	cp WORDLIST/rawdiffwordlist.$(ABRX)-$(DATE).txt .
+	cp WORDLIST/verbdiffwordlist.$(ABRX)-$(DATE).txt .
+
 wordlist-clean:
 	cd WORDLIST; make clean
 
@@ -310,10 +311,10 @@ install: #wordlist-diff
 	cp my*.zip $(NATURA_WWW)/myspell
 	ln -sf $(NATURA_WWW)/myspell/myspell.$(ABR)-$(DATE).zip $(NATURA_WWW)/myspell/myspell.$(ABR)-latest.zip
 
-	cp my*.gz $(NATURA_WWW)/hunspell
+	cp huns*.gz $(NATURA_WWW)/hunspell
 	ln -sf $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-$(DATE).tar.gz $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-latest.tar.gz
 
-	cp my*.zip $(NATURA_WWW)/hunspell
+	cp huns*.zip $(NATURA_WWW)/hunspell
 	ln -sf $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-$(DATE).zip $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-latest.zip
 
 	cp i*.gz $(NATURA_WWW)/ispell
@@ -325,14 +326,19 @@ install: #wordlist-diff
 	cp aspell6*$(DATE)*bz2 $(NATURA_WWW)/aspell6
 	ln -sf $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
 
+	cp rawdiff*$(DATE)*txt $(NATURA_WWW)/misc/rawdiff
+	cp verbdiff*$(DATE)*txt $(NATURA_WWW)/misc/verbdiff
 	cp word*$(DATE)*bz2 $(NATURA_WWW)/misc/wordlist
-	ln -sf $(NATURA_WWW)/misc/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_WWW)/misc/wordlist/wordlist.$(ABRX)-latest.tar.bz2
+	ln -sf $(NATURA_WWW)/misc/wordlist/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_WWW)/misc/wordlist/wordlist.$(ABRX)-latest.tar.bz2
 
 	date >> $(NATURA_WWW)/CHANGELOG
 	echo "* empty log *" >> $(NATURA_WWW)/CHANGELOG
+#é necessário editar o ficheiro para efeitos do Atom XML que vai ser gerado
+	vim $(NATURA_WWW)/CHANGELOG
+#precaução
 	cp $(NATURA_WWW)/atom.xml $(NATURA_WWW)/atom.xml~
 	perl gFeed.pl
-	@echo "Go edit $(NATURA_WWW)/CHANGELOG !"
+#	@echo "Go edit $(NATURA_WWW)/CHANGELOG !"
 
 test: port.hash
 	TESTS/test.pl

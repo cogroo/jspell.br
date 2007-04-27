@@ -12,4 +12,3 @@ map {print} @o;
 print "\n\n**Adicionadas**"; 
 map {print} @i;
 
-# rawdiffwordlist.$L-`$(DATE)`.txt > verbdiffwordlist.$L-`$(DATE)`.txt
