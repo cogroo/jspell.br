@@ -88,7 +88,7 @@ $rsvn.="<p>Ver o resto do <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
 
 my $lastUpdate=`svn log -r {\"$ultRev\"} |grep -e '^r' |awk '{print \$5,\$6}' `;
 $rsvn.="<h4>Alterações efectuadas desde a última actualização(diff wordlist): $lastUpdate</h4>";
-$rsvn.="<p><b>NOTA:</b> A possível sobregeração de formas verbais com clítico é um problema conhecido, apenas afecta alguns dicionários.</p>";
+$rsvn.="<p><b>NOTA:</b> A possível sobregeração de formas verbais com pronomes clíticos é um problema conhecido, apenas afecta alguns dicionários.</p>";
 
 $rsvn.="<code>";
 
