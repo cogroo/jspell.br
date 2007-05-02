@@ -78,7 +78,7 @@ all:
 	@ echo -e
 	@ echo -e "chuveiro:"
 	@ echo -e "\tchuveiro -- build all available dictionaries"
-	@ echo -e "\tinstall -- online publish at natura"
+	@ echo -e "\tchuveiro-install -- online publish at natura"
 	@ echo
 #-------------------------------------------------------------------
 # Generated files
@@ -301,7 +301,7 @@ port.hash: port.dic port.aff
 
 chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz hunspell-tgz hunspell-zip
 
-install: #wordlist-diff
+chuveiro-install: #wordlist-diff
 	cp aspell5*$(DATE)*bz2 $(NATURA_WWW)/aspell
 	ln -sf $(NATURA_WWW)/aspell/aspell5-$(ABR)-$(DATE)-0.tar.bz2 $(NATURA_WWW)/aspell/aspell5-$(ABR)-latest.tar.bz2
 
