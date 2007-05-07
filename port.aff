@@ -1,4 +1,4 @@
-#        Affix table for Portugues
+q#        Affix table for Portugues
 #           For JSpell and ISpell (3.1...)
 #
 # Copyright (C) 1995,96,97,98,99  Jose Joao de Almeida <jj@di.uminho.pt> 
@@ -1326,26 +1326,26 @@ R     >        \-TE\-Á      ; "AP=2,AN=s,P=3,N=s,T=f"          #noispell
 # conjugação pronominal (compl. directo)
 # os acabados em (Z) ex.condu-la são irreg.
 flag +P:     ; "CAT=v"                  #-o              #noispell
-#[AEIOUÁÉÊÔ]     >        \-O     ; "G=m,AN=s"          #noispell
-[AEIOU]         >        \-O     ; "G=m,AN=s"          #noispell
+[AEIOUÁÉÊÔ]     >        \-O     ; "G=m,AN=s"          #noispell
+[AEIOUÉÊ]         >        \-O     ; "G=m,AN=s"          #noispell
 N S             >     -NS,M\-LO  ; "G=m,AN=s"          #noispell
 [^NÁ] S          >     -S,\-LO    ; "G=m,AN=s"          #noispell
 M               >        \-NO    ; "G=m,AN=s"          #noispell
 
 #[AEIOUÁÉÊÔ]     >        \-A     ; "G=f,AN=s"          #noispell
-[AEIOU]     >        \-A     ; "G=f,AN=s"          #noispell
+[AEIOUÉÊ]     >        \-A     ; "G=f,AN=s"          #noispell
 N S             >     -NS,M\-LA  ; "G=f,AN=s"          #noispell
 [^NÁ] S          >     -S,\-LA    ; "G=f,AN=s"          #noispell
 M               >        \-NA    ; "G=f,AN=s"          #noispell
 
 #[AEIOUÁÉÊÔ]     >        \-OS    ; "G=m,AN=p"          #noispell
-[AEIOU]     >        \-OS    ; "G=m,AN=p"          #noispell
+[AEIOUÉÊ]     >        \-OS    ; "G=m,AN=p"          #noispell
 N S             >     -NS,M\-LOS ; "G=m,AN=p"          #noispell
 [^NÁ] S          >     -S,\-LOS   ; "G=m,AN=p"          #noispell
 M               >        \-NOS   ; "G=m,AN=p"          #noispell
 
 #[AEIOUÁÉÊÔ]     >        \-AS    ; "G=f,AN=p"          #noispell
-[AEIOU]     >        \-AS    ; "G=f,AN=p"          #noispell
+[AEIOUÉÊ]     >        \-AS    ; "G=f,AN=p"          #noispell
 N S             >     -NS,M\-LAS ; "G=f,AN=p"          #noispell
 [^NÁ] S          >     -S,\-LAS   ; "G=f,AN=p"          #noispell
 M               >        \-NAS   ; "G=f,AN=p"          #noispell
