@@ -126,7 +126,7 @@ clean:
 	cd HUNSPELL; make clean
 #	cd WORDLIST; make clean #No clean
 	rm -f *.stat *.cnt
-	rm -f *~
+	rm -f *~ *$(DATE)*txt
 	rm -f aux_all_irr.dic 
 	rm -f port.dic
 	rm -f *.gz *.zip *.bz2
