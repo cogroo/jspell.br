@@ -1,4 +1,4 @@
-q#        Affix table for Portugues
+#        Affix table for Portugues
 #           For JSpell and ISpell (3.1...)
 #
 # Copyright (C) 1995,96,97,98,99  Jose Joao de Almeida <jj@di.uminho.pt> 
@@ -1326,7 +1326,7 @@ R     >        \-TE\-Á      ; "AP=2,AN=s,P=3,N=s,T=f"          #noispell
 # conjugação pronominal (compl. directo)
 # os acabados em (Z) ex.condu-la são irreg.
 flag +P:     ; "CAT=v"                  #-o              #noispell
-[AEIOUÁÉÊÔ]     >        \-O     ; "G=m,AN=s"          #noispell
+#[AEIOUÁÉÊÔ]     >        \-O     ; "G=m,AN=s"          #noispell
 [AEIOUÉÊ]         >        \-O     ; "G=m,AN=s"          #noispell
 N S             >     -NS,M\-LO  ; "G=m,AN=s"          #noispell
 [^NÁ] S          >     -S,\-LO    ; "G=m,AN=s"          #noispell
