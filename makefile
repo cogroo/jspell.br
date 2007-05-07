@@ -124,7 +124,7 @@ clean:
 	cd ASPELL6; make clean
 	cd MYSPELL; make clean
 	cd HUNSPELL; make clean
-#	cd WORDLIST; make clean #No clean
+	cd WORDLIST; make clean
 	rm -f *.stat *.cnt
 	rm -f *~ *$(DATE)*txt
 	rm -f aux_all_irr.dic 
