@@ -1301,9 +1301,10 @@ flag +L:     ; "CAT=v"             #-lho             #noispell
 .           >      \-ME     ; "AP=1,AN=s"          #noispell
 .           >      \-TE     ; "AP=2,AN=s"          #noispell
 .           >      \-SE     ; "AP=3,AN=_"          #noispell
-# .           >      \-NOS    ; "AP=1,AN=p"          #noispell
 N S         >   -NS,M\-NOS  ; "AP=1,AN=p"          #noispell
-[^NÁ] S      >   -S,\-NOS    ; "AP=1,AN=p"          #noispell
+[^NÁ] S    >      \-NOS    ; "AP=1,AN=p"           #noispell
+M O S	    >   -S,\-NOS    ; "AP=1,AN=p"           #noispell
+[^SÁI]	    >      \-NOS    ; "AP=1,AN=p"           #noispell
 .           >      \-VOS    ; "AP=2,AN=p"          #noispell
 
 R     >        \-ME\-EI     ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
