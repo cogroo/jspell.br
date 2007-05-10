@@ -547,7 +547,7 @@ oída        fs ppa
 oídos       mp ppa
 oídas       fp ppa
 
-#v *seguir  //  ocur: 5
+#v *seguir  //  ocur: 4
 sigo     1s p
 siga     1s pc
 sigas    2s pc
@@ -557,7 +557,7 @@ sigais   2p pc
 sigam    3p pc
 siga     3s i
 sigamos  1p i
-sigai    2p i
+sigui    2p i
 sigam    3p i
 
 #v dar/PL, antedar

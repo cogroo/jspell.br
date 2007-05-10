@@ -128,7 +128,7 @@ clean:
 	rm -f *.stat *.cnt
 	rm -f *~ *$(DATE)*txt
 	rm -f aux_all_irr.dic 
-	rm -f port.dic
+	rm -f port.dic port.irr port.hash aux_verb.dic jspell-pt.1
 	rm -f *.gz *.zip *.bz2
 
 #-------------------------------------------------------------------
