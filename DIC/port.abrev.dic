@@ -7,7 +7,7 @@ exs/$exemplos$#nm$ABR=1//
 fac/$faculdade$#nf$ABR=1//
 fig/$figura$#nf$ABR=1//
 kg/$quilograma$$ABR=1//
-km/$kilómetro$$ABR=1/p/
+km/$quilómetro$$ABR=1/p/
 ln/$logaritmo$#nm$ABR=1//
 mm/$milimetro$$ABR=1//
 pág/$página$#nf$ABR=1//
@@ -17,5 +17,6 @@ sécs/$século$#nm$N=p,ABR=1//
 sr/$senhor$#nm$ABR=1/f/
 Sta/$santo$#nm$ABR=1,G=f//
 Lda/$limitado$#a$ABR=1,G=f//
+MHz/$megahertz$#nm$ABR=1,G=m//
 GHz/$gigahertz$#nm$ABR=1,G=m//
 

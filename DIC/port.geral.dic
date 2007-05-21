@@ -923,8 +923,8 @@ agrologia/#nf/qr/
 agromania/#nf/r/
 agronomia/#nm/pr/
 agrónomo/#hm/fp/
-agro-pecuária/#nf/p/
-agro-pecuário/#a/fp/
+agropecuária/#nf/p/
+agropecuário/#a/fp/
 agror/#nm//
 agrosseirado/#a//
 agrupar/#vt/XYPLRM/
@@ -1562,6 +1562,7 @@ amiudar/#vt,I=3/YPL/
 amiúde/#av//
 amizade/#nf/p/
 amnésia/#nf/p/
+amniótico/#nm//
 amnistia/#nf/p/
 amnistiar/#vt/XYPL/
 amoedar/#vt/XYPL/
@@ -4594,6 +4595,7 @@ berlinda/#nf//
 berlinde/#nm/p/
 berlinense/#hn/p/
 berma/#nf/p/
+bermudas/#nfp//
 bernardo/#hm//
 bernense/#hn/p/
 bernês/#hm//
@@ -4811,6 +4813,7 @@ biologismo/#nm/p/
 biologista/#nn//
 bioluminescência/#nf/p/
 biomagnetismo/#nm/p/
+biomassa/#nf//
 biombo/#nm/p/
 biomecânica/#nf//
 biomédico/#hm/pf/
@@ -5302,6 +5305,7 @@ breu/#nm//
 breve/#an/pmds/
 brevetar/#vt/XYPL/
 breviário/#nm/p/
+bricolage/#nf//
 brigada/#nf/p/
 brigadeiro/#nm/p/
 briga/#nf/p/
@@ -6429,6 +6433,7 @@ carpintaria/#nf/p/
 carpinteirar/#vn/XYPL/
 carpinteiro/#nm/p/
 carpir/#vn/XYPLMD/
+carqueja/#nf//
 carraça/#nf/p/
 carraçaria/#nf/p/
 carrada/#nf/p/
@@ -9453,7 +9458,7 @@ córtice/#nm//
 corticiforme/#an/p/
 corticite/#nf//
 cortícola/#an//
-cortiço/#nm//
+cortiço/#nm/p/
 cortiçoso/#a//
 corticotrofina/#nf//
 cortinado/#nm//
@@ -12853,6 +12858,7 @@ enfurecer/#vt/XYPLMD/
 engaiolar/#vt/XYPLM/
 engajador/#hm//
 engajar/#vt/XYPLMD/
+engalanar/#vt/XYP/
 engalfinhar/#vt/XYPLS/
 engalinhar/#vn/XYPL/
 enganadiço/#a//
@@ -13941,6 +13947,7 @@ estalidar/#vi/XYL/
 estalido/#nm//
 estalo/#nm/p/
 estame/#nm/p/
+estaminal/#nm/p/
 estampagem/#nf//
 estampa/#nf/p/
 estamparia/#nf/p/
@@ -17600,6 +17607,7 @@ imaculado/#a/fpm/
 imaculável/#an/d/
 imaculidade/#nf/p/
 imagem/#nf/p/
+imagético/#a/fp/
 imaginador/#hm//
 imaginante/#an/p/
 imaginária/#nf//
@@ -21384,6 +21392,7 @@ massaroco/#nm/f/
 masseira/#nf//
 mássico/#a//
 massificar/#v/c/
+massivamente/#avq//
 massudo/#a/fp/
 mastigada/#nf//
 mastigado/#hm//
@@ -21516,6 +21525,7 @@ mediana/#nf//
 medianeira/#nf//
 medianeiro/#nm/fp/
 média/#nf//
+mediamente/$médio$#hm$//
 mediania/#nf//
 medianismo/#nm/p/
 medianizar/#vt/XYPL/
@@ -21953,6 +21963,7 @@ micrómetro/#nm//
 microprocessador/#nm//
 micro/#nm//
 micro-ondas/#nmp//
+microonda/#nf/p/
 microorganismo/#nm/p/
 mícron/#nm//
 micronutriente/#nm/p/
@@ -22906,6 +22917,7 @@ namoro/#nm/pti/
 nana/#nf//
 nanar/#vi/XYL/
 nano/#a//
+nanotecnologia/#nf/p/
 não/#avn//
 não-te-rales/#nm//
 napalm/#nm//
@@ -23573,6 +23585,7 @@ ocaso/#nm//
 o/CAT=art,G=m,N=s//
 o/CAT=ppes,G=m,N=s,P=3,C=a//
 occipital/#an/p/
+oceanário/#nm//
 oceanicidade/#nf/p/
 oceânico/#a/fp/
 oceanografia/#nf/pqr/
@@ -23975,6 +23988,7 @@ ornar/#vt/XYPLMD/
 ornato/#nm//
 ornitologia/#nf/qrt/
 ornitorrinco/#nm/p/
+orografia/#nf//
 orquestral/#an/p/
 orquestra/#nf/p/
 orquestrar/#vt/XYPLc/
@@ -25825,6 +25839,7 @@ plebiscito/#nm/p/
 plêiade/#nf/p/
 plenário/#a/fp/
 plenidão/#nf//
+plenipotenciário/#hm/p/
 plenitude/#nf//
 pleno/#hm/pfm/
 pleonasmo/#nm//
@@ -30264,6 +30279,7 @@ sequestro/#nm/p/
 sequidão/#nf//
 sequioso/#a/p/
 séquito/#nm//
+sequóia/#nf/p/
 serão/#nm/p/
 serapilheira/#nf//
 sereia/#nf/p/
@@ -31909,7 +31925,7 @@ termodieléctrico/#nm//
 termodinâmica/#nf//
 termodinâmico/#a/fp/
 termoelectricidade/#nf/p/
-termoeléctrico/#a//
+termoeléctrico/#a/f/
 termométrico/#a//
 termómetro/#nm/p/
 termo/#nm/p/
@@ -32036,7 +32052,7 @@ tiflite/#nf//
 tifóide/#an//
 tifo/#nm/p/
 tifoso/#hm//
-tigelada/#nf//
+tigelada/#nf/p/
 tigela/#nf/p/
 tigre/#nm/p/
 tigrino/#a//
