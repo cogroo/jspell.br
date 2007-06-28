@@ -9,8 +9,8 @@ L=pt_PT
 DATE=`date +%Y%m%d`
 D=/home/natura/download/sources/Dictionaries/
 DS=$(D)misc/
-#OLDDATE=`ls -c1 $(DS)wordlist |grep -v 'latest' |sed -e 's/\.tar\.bz2//' |sed -e 's/[^0-9]\+//' |sort |tail -n 2 |head -n 1`
-#RCDATE=`ls -c1 $(DS)wordlist |grep -v 'latest' |sed -e 's/\.tar\.bz2//' |sed -e 's/[^0-9]\+//' |sort |tail -n 1`
+OLDDATE=`ls -c1 $(DS)wordlist |grep -v 'latest' |sed -e 's/\.tar\.bz2//' |sed -e 's/[^0-9]\+//' |sort |tail -n 2 |head -n 1`
+RCDATE=`ls -c1 $(DS)wordlist |grep -v 'latest' |sed -e 's/\.tar\.bz2//' |sed -e 's/[^0-9]\+//' |sort |tail -n 1`
 #RCDATE=20070504
 #OLDDATE=20070426
 
