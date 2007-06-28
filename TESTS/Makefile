@@ -28,7 +28,7 @@ versao:
 #Verificar estrutura dos ficheiros
 
 testarPalavrasErradasReEmergentes:
-	perl testarPalavrasErradasReEmergentes.pl $(DS) acceptWords
+	perl testarPalavrasErradasReEmergentes.pl $(DS)wordlist acceptWords
 
 ../port.dic:
 	cd ..; make port.dic
