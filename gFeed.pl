@@ -2,7 +2,7 @@
 
 #Rui Vilela 2007
 #Gera um feed para o lançamento de novas versões do dicionário
-#USAR com "makefile install"
+#USAR com "makefile chuveiro-install"
 
 use strict;
 use warnings;
@@ -17,7 +17,6 @@ use File::Basename 'basename';
 use Cwd 'getcwd';
 use CGI 'escapeHTML';
 
-
 #my $DIC='/home/ruivilela/t';
 my $DIC='/home/natura/download/sources/Dictionaries';
 my $url='http://natura.di.uminho.pt/download/sources/Dictionaries/';
@@ -28,6 +27,8 @@ my $feedfile=File::Spec->catfile($DIC,'atom.xml');
 #my $feedfile=File::Spec->catfile($DIC,'_atom.xml');
 
 $XML::Atom::DefaultVersion = "1.0";
+#$XML::Atom::ForceUnicode = 1;
+
 my $feed = XML::Atom::Feed->new(Version => 1.0);
 my $data=time2str("%Y-%m-%dT%XZ",time);
 my $data2=time2str("%Y%m%d",time);
@@ -105,6 +106,7 @@ $rsvn.="<h4>Alterações efectuadas desde a última actualização(SVN): $lastUp
 $rsvn.="<code>";
 foreach (`ls -1 $svn/*.dic`){
     $rsvn.= escapeHTML(Encode::decode('iso-8859-1',`cd $svn; svn diff -r {\"$ultRev\"}:$currentRevision --diff-cmd /usr/bin/diff -x -U1 $_`));
+
 }
 for (qw/irregulares.txt port.aff/){
     $rsvn.= escapeHTML(Encode::decode('iso-8859-1',`svn diff -r {\"$ultRev\"}:$currentRevision --diff-cmd /usr/bin/diff -x -U1 $_`));
@@ -131,7 +133,8 @@ my $xml = $feed->as_xml;
 
 ######################################################
 
-open $F, ">:utf8",$feedfile or warn "Não foi possível criar o ficheiro $feedfile - $!";
+#open $F, ">:utf8",$feedfile or warn "Não foi possível criar o ficheiro $feedfile - $!";
+open $F, ">",$feedfile or warn "Não foi possível criar o ficheiro $feedfile - $!";
 print $F $xml;
 close $F;
 print basename($feedfile)." criado com sucesso!\n" if (-e $feedfile);
