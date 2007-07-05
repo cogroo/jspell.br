@@ -383,7 +383,7 @@ acolher/#vt/XYPLSMD/
 acolhida/#nf//
 acolia/#nf//
 acólito/#nm/pf/
-acórdão/#nm/p/
+acórdão/#nm/a/
 acometer/#vt/XYPLMDv/
 acometida/#nf/p/
 acomodação/#nf/p/
@@ -2270,6 +2270,7 @@ apartadiço/#a//
 aparta/#nf//
 apartar/#vt/XYPLcMD/
 aparte/#nm/p/
+apart-hotel/#nm/p/
 aparvalhar/#vt/XYPL/
 aparvoar/#vt/XYPLM/
 apascentar/#vt/X/
@@ -3625,7 +3626,8 @@ autarcia/#nf//
 autarquia/#nf/pr/
 autenticar/#vt/XYPLcD/
 autenticidade/#nf/p/
-autêntico/#a/pfm/
+autêntico/#a/pf/
+autenticamente/$autêntico$#a//
 autentificar/#vt/XYPL/
 autismo/#nm/p/
 autista/#hm2/p/
@@ -4293,7 +4295,7 @@ barrado/#nf//
 barragem/#nf/p/
 barranco/#nm//
 barrancoso/#a//
-barra/#nf//
+barra/#nf/h/
 barraquim/#nm//
 barrar/#vt/XYPLM/
 barreiral/#nm//
@@ -5144,7 +5146,7 @@ borla/#nf/t/
 boroa/#nf//
 boro/#nm//
 borra-botas/#nm//
-borracha/#nf//
+borracha/#nf/p/
 borrachão/#nm//
 borracheira/#nf//
 borracho/#hm/pG/
@@ -7874,6 +7876,7 @@ co-delinquente/#nm//
 co-detentor/#nm//
 co-dialecto/#nm//
 coderniz/#nf/p/
+códex/#nm//
 códice/#nm/p/
 codificador/#nm/p/
 codificar/#vt/XYPLScDvR/
@@ -9006,7 +9009,7 @@ contraditar/#vt/XYPLv/
 contradito/#a/f/
 contraditor/#hm//
 contraditória/#nf//
-contraditório/#a/fp/
+contraditório/#a/fpH/
 contradizer/#vt/KPL/
 contradomínio/#nm/p/
 contra-espionagem/#nf//
@@ -10326,7 +10329,7 @@ deleite/#nm//
 deleitoso/#a//
 delével/#an//
 délfico/#a//
-delfim/#nm//
+delfim/#nm/p/
 delfina/#nf//
 delfinídeos/#nmp//
 delgadeza/#nf//
@@ -10480,7 +10483,7 @@ deportar/#vt/XYPLc/
 depor/#vt/KPL/
 deposição/#nf/p/
 depositante/#hn/p/
-depositário/#nm//
+depositário/#nm/fp/
 depositar/#vt/XYPLDn/
 depósito/#nm/p/
 deposto/#a/p/
@@ -10804,7 +10807,7 @@ descrença/#nf//
 descrente/#hn//
 descrever/#vt/XYPL/
 descrição/#nf/p/
-descriminar/#vt/XYPL/
+descriminar/#vt/XYPLc/
 descritível/#an//
 descritivo/#a/fp/
 descrito/#a/fp/
@@ -11013,13 +11016,11 @@ desgrenhar/#vt/XYPL/
 desgrilhoar/#vt/XYPL/
 desguedelhar/#vt/XYPL/
 desiderato/#nm/p/
-design/#nm//
 designação/#nf//
 designadamente/#av//
 designador/#hm//
 designar/#vt/XYPLcD/
 designativo/#a/fp/
-designer/#nm//
 desígnio/#nm/p/
 desigual/#an/pm/
 desiludir/#vt/XYPL/
@@ -13147,7 +13148,7 @@ enviar/#vn/XYPLRM/
 envidraçar/#vt/XYPLM/
 enviesar/#vn/XYPLM/
 envinagrar/#vn/XYPL/
-envio/#nm//
+envio/#nm/p/
 enviuvar/#vi,I=3/YL/
 envolta/#nf//
 envolto/#a/fp/
@@ -17284,7 +17285,7 @@ hipotensão/#nf//
 hipotensivo/#a//
 hipotenusa/#nf/p/
 hipótese/#nf/p/
-hipotético/#a/fp/
+hipotético/#a/fpH/
 hipotrofia/#nf//
 hirteza/#nf//
 hirto/#a/fp/
@@ -20655,6 +20656,7 @@ louceiro/#nm/fp/
 louco/#a/fpmG/
 loucura/#nf/p/
 louletano/#hm//
+loura/#nf/mp/
 louraça/#nn//
 lourar/#vn/XYPL/
 lourecer/#vn/XYPL/
@@ -21023,6 +21025,7 @@ malhadiço/#a//
 malhador/#hm/p/
 malha/#nf/p/
 malhar/#vn/XYPLD/
+malheiro/#an/pf/
 malho/#nm/p/
 mal-humorado/#a/fpm/
 maliano/#hm/fp/
@@ -23785,7 +23788,7 @@ ombro/#nm/p/
 omeleta/#nf/p/
 omelete/#nf/p/
 omissão/#nf/p/
-omisso/#a/f/
+omisso/#a/fp/
 omissório/#a//
 omitir/#vt/XYPL/
 omnímodo/#a//
@@ -23848,7 +23851,7 @@ opalizar/#vt/XYPLc/
 opção/#nf/p/
 opcional/#an/pmd/
 operação/#nf/p/
-operacional/#an/pmd/
+operacional/#an/pmdI/
 operacionalizar/#vt/XYPLnc/
 operador/#hm/fp/
 operando/#nm/p/
@@ -24465,7 +24468,7 @@ papalvice/#nf//
 papalvo/#nm/f/
 papança/#nf//
 papa/#nf/ph/
-papá/#nm//
+papá/#nm/p/
 papa/#nm/p/
 papão/#nm//
 paparicar/#vn/XYPL/
@@ -25006,7 +25009,7 @@ pedonal/#an/p/
 pedrada/#nf/p/
 pedrado/#a/fp/
 pedral/#an//
-pedra/#nf/pt/
+pedra/#nf/pth/
 pedra-pomes/#nf//
 pedregal/#nm//
 pedregoso/#a/fp/
@@ -26370,6 +26373,7 @@ praticar/#vn/XYPLDnv/
 prático/#a/fpH/
 prato/#nm/ph/
 praxe/#nf/pti/
+práxis/#nfp//
 praxismo/#nm/p/
 praxista/#hn//
 prazentear/#vn/ZYPL/
@@ -26759,7 +26763,7 @@ probatório/#a//
 problema/#nm/pu/
 problemática/#nf/p/
 problemático/#a/fHp/
-problematizar/#vt/XYPL/
+problematizar/#vt/XYPLc/
 procedência/#nf/p/
 procedente/#an//
 proceder/#vi/XYLMn/
@@ -27534,7 +27538,7 @@ quintalão/#nm//
 quintaleiro/#nm//
 quintalejo/#nm//
 quintal/#nm/p/
-quinta/#nf/p/
+quinta/#nf/ph/
 quintarola/#nf//
 quintar/#vt/XYPL/
 quinteto/#nm/p/
@@ -29465,7 +29469,7 @@ rotar/#vi/XYLcDn/
 rotativa/#hf//
 rotativismo/#nm/p/
 rotativista/#nn//
-rotativo/#a/ftid/
+rotativo/#a/ftidm/
 rotatório/#a//
 roteia/#nf//
 roteirista/#nn//
@@ -30113,6 +30117,7 @@ selectividade/#nf/p/
 selectivo/#a/fdp/
 selecto/#a/f/
 selector/#hm/p/
+selim/#nf/p/
 selo/#nm/p/
 selvagem/#hn/p/
 selvagismo/#nm/p/
@@ -31000,7 +31005,6 @@ soterrâneo/#hm//
 soterrar/#vt/XYPLcM/
 soturnidade/#nf/p/
 soturno/#a/d/
-soutien/#nf/p/
 souto/#nm/p/
 sovaco/#nm/p/
 sovadela/#nf/p/
@@ -31014,14 +31018,6 @@ sovinar/#vt/XYPL/
 sozinho/#a/fp/
 spin/#nm//
 sportinguista/#nn/p/
-spray/#nm//
-squash/#nm//
-staff/#nm//
-standard/#hm/p/
-stand/#nm/p/
-stock/#nm/p/
-stop/#nm/p/
-stress/#nm//
 sua/CAT=ppos,N=s,P=3,G=f/p/
 suadela/#nf/p/
 suadoiro/#nm//
@@ -31959,7 +31955,7 @@ terminante/#an/mp/
 terminar/#vn/XYPLcnDv/
 terminativo/#a/fp/
 terminologia/#nf/pr/
-término/#nm//
+término/#nm/p/
 termistor/#nm//
 térmita/#nf/p/
 termiteira/#nf//
@@ -32852,7 +32848,7 @@ tripa/#nf/p/
 tripartir/#vt/XYPLc/
 tripeirada/#nf//
 tripeiro/#nm//
-tripé/#nm//
+tripé/#nm/p/
 triplano/#nm//
 triplicar/#vt/XYPLc/
 tríplice/#an//
@@ -33794,7 +33790,6 @@ vigorante/#an/p/
 vigorar/#vn/XYPLn/
 vigor/#nm//
 vigoroso/#a/fpm/
-viking/#an//
 vila-condense/#hn/p/
 vilacondense/#hn/p/
 vila-franquense/#hn/p/
