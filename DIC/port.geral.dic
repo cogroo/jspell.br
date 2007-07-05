@@ -257,6 +257,7 @@ acariciante/#an/p/
 acariciar/#vt/XYPLDn/
 acariciativo/#a//
 acarinhar/#vt/XYPL/
+ácaro/#nm/p/
 acarretar/#vt/XYPL/
 acartar/#vt/XYPLM/
 acasalar/#vn/XYPLcM/
@@ -312,7 +313,7 @@ aceso/#a/fp/
 acessão/#nf//
 acessível/#an/pdI/
 acesso/#nm/p/
-acessório/#hm/fp/
+acessório/#hm/fpH/
 acetal/#nm/p/
 acetato/#nm/p/
 acético/#a//
@@ -469,7 +470,7 @@ actuação/#nf/p/
 actual/#an/pmd/
 actualismo/#nm/p/
 actualista/#hn/p/
-actualizar/#vt/XYPLRSDc/
+actualizar/#vt/XYPLRSDcv/
 actuante/#a/p/
 actuar/#vi/XYcnD/
 açucarar/#vt/XYPL/
@@ -1483,7 +1484,7 @@ ambicioso/#a/fp/
 ambidextro/CAT=a_nc,N=s/p/
 ambiência/#nf/p/
 ambiental/#an/ptm/
-ambientar/#vt/XYPL/
+ambientar/#vt/XYPLc/
 ambiente/#hn/p/
 ambiguamente/$ambíguo$#a//
 ambiguidade/#nf/p/
@@ -2615,7 +2616,7 @@ arborícula/#a//
 arboricultura/#nf/prq/
 arboriforme/#an/p/
 arborista/#nn//
-arborizar/#vt/XYPLSc/
+arborizar/#vt/XYPLScR/
 arbúscula/#nf//
 arbúsculo/#nm/fp/
 arbustáceo/#a//
@@ -4494,6 +4495,7 @@ beira/#nf/p/
 beirão/#nm/pb/
 beirar/#vt/XYPL/
 beirense/#hn/p/
+beirinha/#nf//
 bejense/#hn/p/
 belas-artes/#nfp//
 beldade/#nf/p/
@@ -5264,7 +5266,7 @@ bramismo/#nm/p/
 brancacento/#a//
 brancal/#an//
 branca/#nf//
-branco/#hm/fps/
+branco/#hm/fpsh/
 brancor/#nm//
 brancura/#nf//
 brande/#nm//
@@ -6472,7 +6474,7 @@ carrasco/#nm/fp/
 carrear/#vn/ZYPLM/
 carregadeira/#nf//
 carregador/#nm//
-carregar/#vn/XYPLcMD/
+carregar/#vn/XYPLcMDv/
 carrego/#nm//
 carreira-de-tiro/#nf//
 carreira/#nf/p/
@@ -6573,7 +6575,7 @@ casadouro/#a//
 casa-forte/#nf//
 casalar/#vt/XYPL/
 casaleiro/#hm//
-casal/#nm//
+casal/#nm/zp/
 casamentar/#vt/XYPLR/
 casamenteiro/#a/fp/
 casa/#nf/p/
@@ -7672,7 +7674,7 @@ civismo/#nm/p/
 clamante/#an/p/
 clamar/#vi/XYLcDn/
 clamor/#nm/p/
-clamoroso/#a/fp/
+clamoroso/#a/fpm/
 clandestinidade/#nf/p/
 clandestino/#a/fpmd/
 clã/#nm/p/
@@ -8257,7 +8259,7 @@ compensar/#vt/XYPLcDvS/
 compensativo/#a/fp/
 compensatório/#a/fp/
 competência/#nf/p/
-competente/#an/p/
+competente/#an/ps/
 competição/#nf//
 competir/#vi,I=3/YLcD/
 competitivo/#a/pfdm/
@@ -8508,7 +8510,7 @@ condescendente/#an//
 condescender/#vi/XYLMn/
 condição/#nf/pE/
 condicente/#an//
-condicional/#an/pidI/
+condicional/#an/pidIm/
 condicionalidade/#nf/p/
 condicionalismo/#nm/p/
 condicionar/#vt/XYPLMDn/
@@ -9134,7 +9136,7 @@ contributo/#nm/p/
 contrição/#nf//
 contristar/#vt/XYPLcD/
 contrito/#a//
-controlar/#vt/XYPLSDv/
+controlar/#vt/XYPLSDvB/
 controlo/#nm/p/
 controvérsia/#nf/p/
 controverso/#a/pft/
@@ -11264,7 +11266,7 @@ desrespeitoso/#a/pm/
 desrolhamento/#nm//
 desse/CAT=cp,Prep=de,Pdem=esse,G=m,N=s/fp/
 desseleccionar/#vt/XYP/ #inform
-destacar/#vt/XYPLMv/
+destacar/#vt/XYPLMvB/
 destaque/#nm//
 deste/CAT=cp,Prep=de,Pdem=este,G=m,N=s/fp/
 destemido/#a/m/
@@ -11553,7 +11555,7 @@ dignificador/#hm//
 dignificante/#an/p/
 dignificar/#vt/XYPLcDn/
 dignitário/#hn/fp/
-digno/#a/pfmd/
+digno/#a/pfmds/
 digressão/#nf/p/
 digressionar/#vi/XYL/
 digressionista/#hn//
@@ -13605,7 +13607,7 @@ esfíngico/#a//
 esfolar/#vt/XYPLMD/
 esfolhada/#nf//
 esfomear/#vt/ZYPL/
-esforçar/#vt/XYPLD/
+esforçar/#vt/XYPLDB/
 esforço/#nm/p/
 esforricar/#vt/XYPL/
 esfregadeira/#nf//
@@ -15153,7 +15155,7 @@ ferrolhar/#vt/XYPL/
 ferrolho/#nm/p/
 ferromagnético/#a/fp/
 ferromagnetismo/#nm/p/
-ferro/#nm/p/
+ferro/#nm/ph/
 ferroso/#a/fp/
 ferro-velho/#nm//
 ferrovial/#an//
@@ -15189,7 +15191,7 @@ festim/#nm/p/
 festival/#an/p/
 festival/#nm/p/
 festividade/#nf/p/
-festivo/#a/pdf/
+festivo/#a/pdfm/
 fetação/#nf//
 fetáceo/#a//
 fetal/#an/p/
@@ -15990,7 +15992,7 @@ funcionário/#nm/fpx/
 funcionar/#vi/XYLMn/
 functor/#nm/p/
 fundamental/#an/pmti/
-fundamentar/#vt/XYPLcn/
+fundamentar/#vt/XYPLcnB/
 fundamento/#nm/p/
 funda/#nf//
 fundão/#nm//
@@ -16237,7 +16239,7 @@ garagista/#nn//
 garanhão/#nm//
 garante/#nn/p/
 garantia/#nf/p/
-garantir/#vt/XYPLD/
+garantir/#vt/XYPLDB/
 garavetar/#vi/XYL/
 garaveto/#nm//
 garbo/#nm//
@@ -18005,7 +18007,7 @@ inaceitável/#an/p/
 inaciano/#a/fp/
 inacomodável/#an//
 inacostumado/#a//
-inacreditável/#an/p/
+inacreditável/#an/pm/
 inactivo/#a/pfd/
 inactual/#an//
 inacusável/#an/p/
@@ -19043,7 +19045,7 @@ intender/#vn/XYPLn/
 intensidade/#nf/p/
 intensificar/#vt/XYPLc/
 intensivo/#a/fpm/
-intenso/#a/pfmd/
+intenso/#a/pfmds/
 intentar/#vt/XYPL/
 intentona/#nf//
 intento/#nm/p/
@@ -19747,7 +19749,7 @@ juniores/$júnior$#nm$N=p/x/
 juntada/#nf//
 junta/#nf/p/
 juntar/#vt/XYPL/
-junto/#a/pfm/
+junto/#a/pfmh/
 jupiteriano/#a//
 juramentar/#vt/XYPL/
 jura/#nf/p/
@@ -19833,7 +19835,7 @@ lacete/#nm//
 lacónico/#a/pfH/
 laconismo/#nm/p/
 laconizar/#vt/XYPL/
-laço/#nm/p/
+laço/#nm/ph/
 lacrar/#vt/XYPLD/
 lacrau/#nm//
 lacreada/#nf//
@@ -19938,7 +19940,8 @@ lamecha/#a/i/
 lamechar/#vi/XYL/
 lamechismo/#nm/p/
 lameiral/#nm//
-lameira/#nf//
+lameira/#nf/p/
+lameiro/#nm/p/
 lameirento/#a//
 lamela/#nf/p/
 lamelar/#an//
@@ -20434,7 +20437,7 @@ límbico/#a/f/
 limbo/#nm//
 limiar/#nm/p/
 liminar/#hm2/m/
-limitado/#a/fp/
+limitado/#a/fps/
 limitar/#vn/XYPLcnvDB/
 limitativo/#a/fp/
 limite/#nm/p/
@@ -21227,7 +21230,7 @@ manjerico/#nm/p/
 manjerona/#nf//
 manobrador/#nm//
 manobra/#nf/pt/
-manobrar/#vt/XYPLD/
+manobrar/#vt/XYPLDv/
 manobreiro/#nm//
 manobrista/#nn//
 mano/#hm/fp/
@@ -24098,6 +24101,7 @@ os/$o$CAT=pind,G=m$N=p//
 os/$o$CAT=ppes,G=m$N=p,P=3,C=a//
 ossada/#nf/p/
 ossaria/#nf/p/
+ossário/$ossaria$#nm/p/
 ósseo/#a/fp/
 ossicular/#an//
 ossículo/#nm/p/
@@ -25515,7 +25519,7 @@ pertinácia/#nf//
 pertinaz/#an//
 pertinência/#nf/p/
 pertinente/#an/p/
-perto/#avl//
+perto/#avl/h/
 perturbabilidade/#nf/p/
 perturbação/#nf//
 perturbador/#hm//
@@ -26836,7 +26840,7 @@ processional/#an/m/
 processo-crime/#nm//
 processo/#nm/p/
 processos-crime/$processo-crime$#nm$N=p//
-processual/#an/p/
+processual/#an/pm/
 procissão/#nf/p/
 proclamador/#hm//
 proclamar/#vt/XYPLcD/
@@ -32100,7 +32104,7 @@ tesourada/#nf//
 tesoura/#nf/p/
 tesouraria/#nf/p/
 tesourar/#vt/XYPL/
-tesoureiro/#nm/p/
+tesoureiro/#nm/pf/
 tesourinha/#nf//
 tesouro/#nm/p/
 testaça/#nf//
@@ -32269,7 +32273,7 @@ titã/#nm/p/
 titubeante/#an/p/
 titubear/#vi/ZYLcn/
 titular/#an/pd/
-titular/#vt/XYPL/
+titular/#vt/XYPLc/
 título/#nm/up/
 tlim/#nm//
 tlintar/#vi/XYL/
@@ -33115,7 +33119,7 @@ turco/#hm/fp/
 turfeira/#nf/p/
 turismo/#nm/p/
 turista/#nn/p/
-turístico/#a/fp/
+turístico/#a/fpH/
 turmalina/#nf//
 turma/#nf/p/
 turno/#nm/p/
@@ -33259,7 +33263,7 @@ uranometria/#nf/pr/
 urbanidade/#nf/p/
 urbanismo/#nm/p/
 urbanista/#hn//
-urbanístico/#a/fp/
+urbanístico/#a/fpH/
 urbanizar/#vt/XYPLcv/
 urbano/#hm/fptid/
 urbe/#nf/p/
@@ -33495,7 +33499,7 @@ varredor/#hm//
 varredoura/#hf//
 varredouro/#nm/f/
 varredura/#nf//
-varrer/#vn/XYPLD/
+varrer/#vn/XYPLDM/
 varsoviano/#hm/fp/
 várzea/#nf//
 vasa/#nf/p/
@@ -33690,7 +33694,7 @@ vergastar/#vt/XYPL/
 vergonhaça/#nf//
 vergonhaço/#nm/f/
 vergonha/#nf/p/
-vergonhoso/#a/fp/
+vergonhoso/#a/fpm/
 veridicidade/#nf/p/
 verídico/#a/fp/
 verificação/#nf//
@@ -34309,3 +34313,52 @@ zurrar/#vi/XYLD/
 zurro/#nm/p/
 zurzidela/#nf/p/
 zurzir/#vt/XYPLD/
+leira/#nf//
+harmónio/#nm/p/
+inox/#nm//
+azinho/#nm/p/
+barrote/#nm/p/
+societário/#hm/p/
+intercomunicador/#nm/p/
+conquilha/#nf/p/
+espigueiro/#nm/p/
+validamente/#a//
+geotécnico/#a/p/
+notabilíssimo/#hm2/fp/
+quermesse/#nf//
+lagareiro/#hm/p/
+malhão/#nm//
+esquisso/#nm/p/
+rodízio/#nm/p/
+pendência/#nf/p/
+microfilmagem/#nf/p/
+interdepartamental/#a/p/
+estampido/#nm/p/
+descaminho/#nm//
+conga/#nf//
+beberete/#nm//
+endoscopia/#nf//
+álamo/#nm/p/
+selim/#nm/p/
+picheleiro/#nm/p/
+multissecular/#an//
+desagradavelmente/#a//
+arguente/#hn2/p/
+aipo/#nm/p/
+vezeiro/#hm/p/
+teixo/#nm/p/
+festeiro/#hm/fp/
+intermitentemente/#an//
+clarissa/#nf/p/
+historicismo/#nm//
+monólito/#nm/p/
+pensável/#an//
+pictograma/#nm/p/
+leprosaria/#nf//
+amieiro/#nm/p/
+turfa/#nf//
+basculante/#an//
+ébano/#nm/p/
+sobriamente/#av//
+optimamente/#nm//
+camaroeiro/#nm/p/
