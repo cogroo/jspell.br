@@ -195,5 +195,14 @@ rad: Lema
 PFSEM: Prefixo semântico
 PFSEM=outra: outra
 
+ORIG: Origem da palavra
+ORIG=ing: Inglesa
+ORIG=lat: Latina
+ORIG=fra: Francesa
+ORIG=esp: Espanhola
+ORIG=pol: Polaca
+ORIG=rus: Russa
+ORIG=ita: Italiana
+
 unknown: Palavra sugerida
 unknown=1:
