@@ -15,7 +15,7 @@ BEGIN {
 use POSIX qw(locale_h);
 use Data::Dumper;
 use Lingua::PT::PLNbase;
-use jspell;
+use Lingua::Jspell;
 setlocale(LC_CTYPE, "pt_PT");
 use locale;
 use strict;
@@ -25,7 +25,7 @@ our $data;
 
 our @ordem_verbos=qw/p pi pp pmp f c pc pic fc i ip inf g ppa/;
 
-our $dic = jspell::new("port");
+our $dic = Lingua::Jspell->new("port");
 
 ##########################################################################################################
 
