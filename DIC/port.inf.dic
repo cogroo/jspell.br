@@ -15,7 +15,6 @@ chip/CAT=nc,G=m,N=s/a/
 Cobol/CAT=np//
 copyright/#nm//
 CVS/#nm//
-daemon/CAT=nc,G=m,N=s/a/
 disquete/#nf/p/
 DOS/CAT=np,G=m,N=s//
 drive/CAT=nc,N=s/p/
