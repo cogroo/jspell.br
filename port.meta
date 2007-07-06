@@ -203,6 +203,11 @@ ORIG=esp: Espanhola
 ORIG=pol: Polaca
 ORIG=rus: Russa
 ORIG=ita: Italiana
+ORIG=ale: Alemã
+ORIG=jap: Japonesa
+ORIG=isl: Islandêsa
+ORIG=nor: Norueguesa
+ORIG=cor: Coreana
 
 unknown: Palavra sugerida
 unknown=1:
