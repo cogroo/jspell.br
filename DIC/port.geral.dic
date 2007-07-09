@@ -9391,7 +9391,7 @@ corporal/#an/pmd/
 corporalidade/#nf/p/
 corporalizar/#vt/XYPLc/
 corporal/#nm//
-corpora/#nm,N=p//
+corpora/$corpus$#nm,N=p//
 corporativismo/#nm/p/
 corporativista/#hn//
 corporativo/#a/ftip/
@@ -24126,7 +24126,7 @@ os/$o$CAT=pind,G=m$N=p//
 os/$o$CAT=ppes,G=m$N=p,P=3,C=a//
 ossada/#nf/p/
 ossaria/#nf/p/
-ossário/$ossaria$#nm/p/
+ossário/#nm/p/
 ósseo/#a/fp/
 ossicular/#an//
 ossículo/#nm/p/
@@ -24224,7 +24224,7 @@ ovuliforme/#an/p/
 óvulo/#nm/p/
 oxalá/#i//
 oxidabilidade/#nf/p/
-oxidante/#hm2/p/
+oxidante/#hm2/Ap/
 oxidar/#vt/XYPLcnv/
 óxido/#nm/p/
 oxidular/#vt/XYPL/
@@ -31511,7 +31511,7 @@ surdina/#nf/p/
 surdir/#vi/XYL/
 surdo/#hm/fpm/
 surdo-mudo/#hm/fp/
-surfe/$surf$#nm/t/
+surfe/#nm/t/
 surgir/#vi/XYLM/
 suricata/#nm/p/
 surpreendente/#an/pm/
@@ -32189,7 +32189,6 @@ textual/#an/pmt/
 textura/#nf/p/
 texugo/#nm/p/
 tez/#nf//
-thesaurus/#nm//
 tia-avó/#nf/p/
 tibetano/#hm/fp/
 tibial/#an//
@@ -33762,7 +33761,6 @@ versificador/#hm//
 versificar/#vn/XYPLcD/
 versilibrismo/#nm/p/
 verso/#nm/p/
-versus/CAT=prep//
 vertebrado/#a/p/
 vertebrados/#nmp//
 vertebral/#an/pd/
