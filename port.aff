@@ -240,7 +240,7 @@ flag *a:         ; "CAT=a_nc,N=s"      #plurais
 # deve ser posto em todos os que têm acento e acabam em il
 I L         >   -IL,EIS  ; "N=p"        # ex. ágil, ágeis  
 E N T O S   >	-OS,AS	 ; "G=f"	# duzentos -> duzentas (FIXME)
-[^AEIOUL]    >	S	 ; "N=p"	# buffers
+[^AEIOULS]  >	S	 ; "N=p"	# buffers
 
 flag *e:         ; "CAT=a_nc,N=s"      #plurais
 L           >    ES      ; "N=p"         # ex. mal, males cônsules
