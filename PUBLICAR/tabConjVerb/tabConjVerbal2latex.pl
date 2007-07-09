@@ -55,7 +55,7 @@ my $autor="Proj. Natura (DI-UM), http://natura.di.uminho.pt";
 
 my $tit="Tabelas de conjugação de verbos
 portugueses\\footnote{Documento gerado automaticamente a partir do
-dicionário para o Jspell.}\\\\";
+dicionário Jspell para português.}\\\\";
 
 my $out='\documentclass[10pt]{article}'."\n";
 $out.='\usepackage[latin1]{inputenc}'."\n";

@@ -30,7 +30,7 @@ my $autor="Proj. Natura (DI-UM), http://natura.di.uminho.pt";
 
 my $tit="Lista de estrangeirismos existentes no dicionário de
 português\\footnote{Documento gerado automaticamente a partir do
-dicionário português para o Jspell.}\\\\";
+dicionário português para Jspell.}\\\\";
 
 my $out='\documentclass[10pt]{article}'."\n";
 $out.='\usepackage[latin1]{inputenc}'."\n";
