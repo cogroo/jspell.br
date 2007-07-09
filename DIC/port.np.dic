@@ -25,7 +25,6 @@ Aalborg/#tc/
 Aarhus/#tc/
 Abecassis/#np/
 Abel/#npm/
-Abércio/#npm/
 Abílio/#npm/
 Abissínia/#la,#tpf/
 Aboim/#npm/
@@ -701,8 +700,6 @@ Crato/#t/
 Crespo/#np/
 Creta/#t/
 Crimeia/#t/
-Criologia/CAT=np/
-Criptófita/CAT=np/
 Cristiânia/CAT=np/
 Cristiano/#np/
 Cristina/#npf/
@@ -1217,6 +1214,7 @@ Horácia/#npf/
 Horácio/#npm/
 Horácios/CAT=np/
 Horn/#np1/
+Horofernes/CAT=np/
 Hortênsia/#np/
 Hortênsio/#np/
 Houdini/#np1/
@@ -1300,7 +1298,7 @@ Jane/#np1/
 Janet/#np1/
 Jansenistas/CAT=np/
 Janus/CAT=np/
-Jamuário/#npm/
+Januário/#npm/
 Japão/#la,#tp/
 Jaques/#np1/
 Jargal/CAT=np/
@@ -1649,7 +1647,6 @@ Menezes/#np/
 Mercedes/#np/
 Mercúrio/CAT=np,G=m,SEM=pl/
 Mérida/#t/
-Meriterrâneo/CAT=np/
 Mértola/#t/
 Mesopotâmia/CAT=np/
 Mesquita/#np/
@@ -1723,7 +1720,6 @@ Montemor-o-Novo/#t/
 Montemor-o-Velho/#t/
 Montenegro/#npm/
 Montenegro/#t/
-Monterverdi/#np1/
 Montesquieu/CAT=np/
 Monteverdi/#np1/
 Montevideu/#t/
@@ -1861,7 +1857,6 @@ Orfeu/CAT=np/
 Orlando/#npm/
 Orleães/#t/
 Ormuz/#t/
-Orofernes/CAT=np/
 Orontes/CAT=np/
 Ortega/#npm/
 Ortigão/#np/
@@ -1914,8 +1909,6 @@ Paquistão/CAT=np/
 Paraguai/#la,#tp/
 Paraíba/#t/
 Paraíso/CAT=np,G=m/
-Paramécidas/CAT=np,G=m,N=p/
-Paramecídeos/CAT=np,G=m,N=p/
 Paraná/CAT=np/
 Paraná/#t/
 Paranhos/#t/
@@ -2077,7 +2070,6 @@ Quixote/#npm/it/
 Rabagão/#tr/
 Rachel/#np1/
 Racine/CAT=np/
-Radagásio/CAT=np/
 Rafael/#npm/
 Raimundo/#npm/
 Ramadão/CAT=np,G=m/
@@ -2249,7 +2241,7 @@ Scarlatti/#np1/
 Schelling/#np1/
 Schengen/#tc/
 Schiller/#np1/
-Schlwesig-Holstein/#t/
+Schleswig-Holstein/#t/
 Schopenhauer/#np1/
 Schubert/#np1/
 Schumann/#np1/
@@ -2317,10 +2309,8 @@ Sinédrio/CAT=np/
 Sines/#t/
 Singapura/#tp/
 Sinopsis/CAT=np/
-Sinquião/CAT=np/
 Sintra/#t/
 Siracusa/CAT=np/
-Siracusanas/CAT=np/
 Sir/CAT=np/
 Síria/#la,#tpf/
 Siza/#np/
@@ -2341,7 +2331,7 @@ Sónia/#npf/
 Sorbona/CAT=np/
 Sortelha/#t/
 Sôr/#tr/
-Sotomaior/#np/
+Sotomayor/#np/
 Soure/#t/
 Sousa/#np/
 Sousel/#t/
@@ -2372,10 +2362,8 @@ Sullivan/#np1/
 Suriname/CAT=np/
 Susana/#np/
 Susan/#np1/
-Sutão/CAT=np/
 Sutra/CAT=np/
 Szabo/CAT=np/
-Taboritas/CAT=np/
 Tabuaço/#t/
 Tabula/CAT=np/
 Tadeu/#np/
@@ -2508,7 +2496,6 @@ Tunísia/#la,#tpf/
 Turcomenistão/#npm/
 Turim/#tc/
 Turíngia/CAT=np/
-Túrios/CAT=np/
 Turner/#np1/
 Turquestão/#la,#t/
 Turquia/#la,#tpf/
@@ -2568,7 +2555,6 @@ Vénus/CAT=np,SEM=pl/
 Venusino/CAT=np/
 Vera/#npf/
 Verão/CAT=np,G=m,N=s/p/
-Verdelete/CAT=np/
 Verdi/#np1/
 Vergara/CAT=np/
 Veríssimo/CAT=np/
