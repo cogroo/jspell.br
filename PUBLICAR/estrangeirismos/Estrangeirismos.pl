@@ -44,18 +44,33 @@ $out.='\title{'.$tit.'}'."\n";
 $out.='\author{'.$autor.'}'."\n";
 $out.='\date{\today}'."\n";
 $out.='\maketitle'."\n";
+$out.='Línguas de origem dos estrangeirismos:'."\n";
+$out.='RRRR'."\n";
+
 $out.='\newpage'."\n";
 
 $out.='\begin{multicols}{3}{'."\n";
 
+my %orig;
+
 while (<$G>){
     chomp;
     my $w=$_;
-    &informacaoMorfologica($_,$w) for ($dic->fea($_));
+    for my $c ($dic->fea($_)){
+	$orig{$c->{'ORIG'}}++;
+	&informacaoMorfologica($c,$w);
+    }
 }
 close $G;
-$out.="}\n".'\end{multicols}'."\n";
 
+my $orig;
+for (sort {$orig{$b} <=> $orig{$a}} keys %orig){
+    $orig .= $data->{ORIG}{$_}."(".$orig{$_}."), ";
+}
+$out=~s/RRRR/$orig/;
+$out=~s/,\n$/\n/;
+
+$out.="}\n".'\end{multicols}'."\n";
 $out.='\end{document}'."\n";
 
 open my $F, ">estrangeirismos.tex" || die $!;
