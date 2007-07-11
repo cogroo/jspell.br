@@ -1,0 +1,42 @@
+name_english Portuguese
+name_native português
+lang pt
+author:
+  name Jose Joao Almeida
+  name-native José João Almeida
+  email jj at di uminho pt
+  maintainer true
+author:
+  name Alberto Simoes
+  name-native Alberto Simões
+  email ambs at di uminho pt
+  maintainer false
+author:
+  name Rui Vilela
+  email ruivilela at di uminho pt
+  maintainer true
+author:
+   name Leonardo Ferreira Fontenelle
+   email leo fontenelle at gmail com
+   maintainer true
+author:
+   name Raimundo Santos Moura
+   email raimundomoura at openoffice org
+copyright GPL
+url http://natura.di.uminho.pt
+version VERSAO-0
+source-version VERSAO
+accurate true
+complete true
+mode aspell5
+alias pt_PT pt:awli portuguese
+alias pt_BR brazilian
+dict:
+  name pt_PT
+  add pt-only
+  add pt_PT-only
+dict:
+  name pt_BR
+  add pt-only
+  add pt_BR-only
+
