@@ -26,6 +26,7 @@ aspell: aspell-wl
 	cp Copyright $O
 #	cp $L_phonet.dat $O/$K_phonet.dat
 	perl -pe 'BEGIN{$$D=`${DATE}`;chomp $$D}; s/VERSAO/$$D/g;' info > $O/info
+	cp $K.dat $O/$K.dat;
 	cd $O; perl proc create; ./configure; 
 	cd $O; make
 
