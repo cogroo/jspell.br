@@ -32,9 +32,9 @@ aspell: aspell-wl
 aspell-wl: ../port.dic BRversion
 	perl gerarWordList ../port.dic > $L.wl
 	perl getCommonWords.pl $L.wl $J.wl
-	LANG=C cat $L-only.wl_ | sort -u > $L-only.wl
-	LANG=C cat $J-only.wl_ | sort -u > $J-only.wl
-	LANG=C cat $K-only.wl_ | sort -u > $K-only.wl
+	LC_ALL=C cat $L-only.wl_ | sort -u > $L-only.wl
+	LC_ALL=C cat $J-only.wl_ | sort -u > $J-only.wl
+	LC_ALL=C cat $K-only.wl_ | sort -u > $K-only.wl
 dist: aspell
 	cd $O; make dist
 	mv $O/aspell5*`${DATE}`* .

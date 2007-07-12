@@ -1,6 +1,5 @@
 name pt
 charset iso8859-1
-#special - -*-
-special ' -*-
+special - -*- ' -*-
 soundslike generic
 
