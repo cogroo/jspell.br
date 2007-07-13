@@ -1,6 +1,6 @@
 #Incluir licença em cada dic
 #Incluir README e LEIAME em cada dic
-#OS ENCODING VARIAM de ficheiro para ficheiro
+#CUIDADO: OS ENCODING PODEM VARIAR de ficheiro para ficheiro
 
 #Passar var do directório a copiar a documentação
 
@@ -13,12 +13,13 @@ l=LEIAME
 all:
 	@echo "Indicar dicionário!"
 
-jspell:
+jspell: innerClean
 	cp $(R) $(D)/$(r)
 	cp $(L) $(D)/$(l)
 	cat $(r).jspell >> $(D)/$(r)
 	cat $(l).jspell >> $(D)/$(l)
-	cp licence/license
+	cp license/license.txt $(D)
+	cp DEVEL.jspell $(D)
 
 ispell:
 
@@ -35,3 +36,6 @@ aspell5ptPTptBR:
 
 clean:
 	rm -f *~
+
+innerClean:
+	rm -f $(D)/*

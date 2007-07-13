@@ -29,4 +29,19 @@ Know applications that use Jspell:
 
 --
 
-Any information if any regarding development is contained in the DEVEL file
+Recent versions of Jspell already have the following adjustements, so
+probably you do not need to change nothing on the source code.
+
+The affix file uses both upper- and lower-case affix flags, so you
+must add: #define MASKBITS 64
+In your local.h file.  8 bits used (latin1) (please remove the #define
+NO8BIT line)
+
+available modes:
+   -T lat               (latin1)
+   -T tex
+   -T pre               (  'a 'e ,c ...)
+
+--
+
+

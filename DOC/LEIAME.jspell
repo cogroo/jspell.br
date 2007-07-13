@@ -29,4 +29,17 @@ Usos conhecidos do Jspell:
 
 --
 
-Qualquer informação relativa ao desenvolvimento, está contida no ficheiro DEVEL.
+As versões mais recentes do Jspell, já não necessitam dos seguintes
+ajustes no código fonte.
+
+The affix file uses both upper- and lower-case affix flags, so you
+must add: #define MASKBITS 64
+In your local.h file.  8 bits used (latin1) (please remove the #define
+NO8BIT line)
+
+available modes:
+   -T lat               (latin1)
+   -T tex
+   -T pre               (  'a 'e ,c ...)
+
+--
