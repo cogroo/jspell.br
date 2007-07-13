@@ -1,28 +1,32 @@
-port.np.dic      - dicionario de nomes proprios
-port.aff         - regras morfologicas do portugues
-port.geral.dic   - dicionario geral de portugues
-port.inf.dic     - termos informáticos
+The Jspell morphologic analyser and spell-checker program is available at:
 
-jspell.pt.pod	 - Documentação do formato do dicionário Jspell
-jspell.pt.spec.in - Especificação para a instalação do Jspell
+$URL_JSPELL
 
-auxi.all-irr.dic  - verbos irregulares 
-                     (gerado por "ge_verb" a partir de irregulares.txt)
-irregulares.txt  - verbos irregulares
+An online version can be used at:
 
-IRR              - processador de verbos irregulares
-     ge_verb     - traduz e-irr5.txt em all-irr.dic
-     ge_verb.l
-     ge_verb2.y
+$URL_WJS$
 
-port.dic         - dicionário que junta os dicionarios todos
+Current and Older dictionaries are maintained here:
 
-PERL/pos2iso     - converte acentuacao posfixa em latin1
-PERL/jspell2lista - ?
+$URL_REP_JSPELL$
 
-ISPELL           - para gerar dicionarios ispell
-JSPELL           - para gerar dicionarios jspell
-ASPELL           - para gerar dicionarios aspell
-MYSPELL		 - para gerar dicionarios myspell (hunspell)
-ASPELL6          - para gerar a versao 6 de dicionarios aspell
+--
 
+The Jspell dictionary has the following features:
+
+* Language: Portuguese from Portugal - (pt_PT, port, portugues, português);
+* Afix compression rules;
+* Contains most common words, proper names, abbreviations;
+* Words with hyphen;
+* Morphology and Semantic tagging;
+* Oficial (pelo menos para nós).
+
+--
+
+Know applications that use Jspell: 
+* Webjspell;
+* some Perl scripts.
+
+--
+
+Any information if any regarding development is contained in the DEVEL file

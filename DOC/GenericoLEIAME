@@ -1,6 +1,6 @@
-$DICTIONARY$ Portuguese dictionary
+Dicionário de português $DICTIONARY$
 
-Copyright (C) 1995-$YEAR$  Jose Joao de Almeida <jj@di.uminho.pt> 
+Copyright (C) 1995-$YEAR$  José João de Almeida <jj@di.uminho.pt> 
                            Ulisses Pinto
 
 Projecto Natura
@@ -9,44 +9,44 @@ Universidade do Minho
 4710-057 Braga, Campus de Gualtar
 Portugal
 
-URL: $URL$
+Web: $URL$
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+Este programa é software livre; você pode redistribuí-lo e/ou
+modificá-lo sob os termos da Licença Pública Geral GNU, conforme
+publicada pela Free Software Foundation; tanto a versão 3 da Licença
+como (a seu critério) qualquer versão mais actual.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+Este programa é distribuído na expectativa de ser útil, mas SEM
+QUALQUER GARANTIA; incluindo as garantias implícitas de
+COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM
+PARTICULAR. Consulte a Licença Pública Geral GNU para obter mais
+detalhes.
 
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Você deve ter recebido uma cópia da Licença Pública Geral GNU em
+conjunto com este programa; caso contrário, veja
+<http://www.gnu.org/licenses/>
 
-The full licence is in file $LICENCE$
+A licença oficial na língua inglesa está no ficheiro $LICENCE$
 
-Last update: $MONTH$ $YEAR$
+Última actualização: $MES$ $YEAR$
 
-			---------
+--
 
-Any comments, important new words, and errors, even regarding
-documentation, should can be sent by using the following address:
-$URL_MAINT$. In case of error, please email one of the following
-maintainers.
+Informação sobre todos os dicionários está disponível na seguinte
+página: $URL_DICS_PT$
 
-$DICTIONARY$ dictionary is currently maintain by the following
+Qualquer comentário, palavras novas, erros, e documentação, devem ser
+enviados usando o seguinte endereço: $URL_MAINT$. Em caso de erro, por
+favor envie-nos um email.
+
+O dicionário $DICTIONARY$ é mantido pelas seguintes pessoas:
 
 $MAINTAINERS$
 
-			---------
+--
 
-The folowing people have participated on the development of this
-specific dictionary:
+As seguintes pessoas participarem no desenvolvimento deste dicionário:
 
 $CONTRIB$
 
-			---------
-
-Any information from this point forward is specific to $DICTIONARY$
-dictionary:
+--

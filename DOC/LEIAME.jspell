@@ -1,0 +1,32 @@
+O analisador morfológico e corrector ortográfico Jspell está disponível em:
+
+$URL_JSPELL
+
+Uma versão online pode ser usada em:
+
+$URL_WJS$
+
+Dicionários actuais e mais antigos são mantidos em:
+
+$URL_REP_JSPELL$
+
+--
+
+O dicionário Jspell tem as seguintes características:
+
+* Língua: Português de Portugal - (pt_PT, port, portugues, português);
+* Regras de afixação para compressão;
+* Contêm palavras comuns, nomes próprios, siglas e abreviaturas;
+* Suporte de clíticos;
+* Etiquetação morfológica e semântica;
+* Oficial (at least for us).
+
+--
+
+Usos conhecidos do Jspell: 
+* Webjspell;
+* Alguns programas em Perl.
+
+--
+
+Qualquer informação relativa ao desenvolvimento, está contida no ficheiro DEVEL.

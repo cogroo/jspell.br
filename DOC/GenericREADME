@@ -9,7 +9,7 @@ Universidade do Minho
 4710-057 Braga, Campus de Gualtar
 Portugal
 
-URL: $URL$
+Web: $URL$
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -28,25 +28,23 @@ The full licence is in file $LICENCE$
 
 Last update: $MONTH$ $YEAR$
 
-			---------
+--
 
-Any comments, important new words, and errors, even regarding
-documentation, should can be sent by using the following address:
-$URL_MAINT$. In case of error, please email one of the following
-maintainers.
+Information about all dictionaries is available on the following page:
+$URL_DICS_EN$
 
-$DICTIONARY$ dictionary is currently maintain by the following
+Any comments, new words, errors, even regarding documentation,
+should can be sent by using the following address: $URL_MAINT$. In
+case of error, please email us.
 
-$MAINTAINERS$
+$DICTIONARY$ dictionary is currently maintain by the following persons:
 
-			---------
+$MAINTAINER$
 
-The folowing people have participated on the development of this
-specific dictionary:
+--
+
+The folowing people have participated on the development of this dictionary:
 
 $CONTRIB$
 
-			---------
-
-Any information from this point forward is specific to $DICTIONARY$
-dictionary:
+--
