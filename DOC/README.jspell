@@ -1,6 +1,6 @@
 The Jspell morphologic analyser and spell-checker program is available at:
 
-$URL_JSPELL
+$URL_JSPELL$
 
 An online version can be used at:
 
@@ -43,5 +43,3 @@ available modes:
    -T pre               (  'a 'e ,c ...)
 
 --
-
-

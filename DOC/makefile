@@ -4,7 +4,7 @@
 
 #Passar var do directório a copiar a documentação
 
-D=GeneratedDOC
+D=generatedDOC
 R=GenericREADME
 L=GenericoLEIAME
 r=README
@@ -14,13 +14,13 @@ all:
 	@echo "Indicar dicionário!"
 
 jspell: innerClean
-	cp $(R) $(D)/$(r)
-	cp $(L) $(D)/$(l)
-	cat $(r).jspell >> $(D)/$(r)
-	cat $(l).jspell >> $(D)/$(l)
+	cp $(R) $(D)/
+	cp $(L) $(D)/
+	cat $(r).jspell >> $(D)/$(R)
+	cat $(l).jspell >> $(D)/$(L)
 	cp license/license.txt $(D)
-	cp DEVEL.jspell $(D)
-
+	perl processarMeta.pl jspell $(D)/$(R) $(D)/$(r)
+	perl processarMeta.pl jspell $(D)/$(L) $(D)/$(l)
 ispell:
 
 myspell:

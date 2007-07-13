@@ -1,6 +1,6 @@
 $DICTIONARY$ Portuguese dictionary
 
-Copyright (C) 1995-$YEAR$  Jose Joao de Almeida <jj@di.uminho.pt> 
+Copyright (C) 1995-$YEAR$  José João de Almeida <jj@di.uminho.pt> 
                            Ulisses Pinto
 
 Projecto Natura
@@ -26,16 +26,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 The full licence is in file $LICENSE$
 
-Last update: $MONTH$ $YEAR$
+Last update: $DATE$
 
 --
 
 Information about all dictionaries is available on the following page:
 $URL_DICS_EN$
 
-Any comments, new words, errors, even regarding documentation,
-should can be sent by using the following address: $URL_MAINT$. In
-case of error, please email us.
+Any comments, new words, errors, even regarding documentation, can be
+sent by using the following address: $URL_MAINT$. In case of error,
+please email us.
 
 $DICTIONARY$ dictionary is currently maintain by the following persons:
 
