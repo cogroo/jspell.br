@@ -32,23 +32,21 @@ N=s: singular
 
 SEM: Semântica
 SEM=np1: ...
-SEM=rio:   
+SEM=rio: rio
 SEM=mes: mês
-SEM=livro:
-SEM=po: ...
-SEM=ter: ...
+SEM=livro: obra literária
+SEM=po: povo
+SEM=ter: localidade
 SEM=country: país
-SEM=n: ...
-SEM=mar:
-SEM=p1: ...
-SEM=pl: ...
-SEM=sigla: 
-SEM=s: ...
+SEM=n: número romano
+SEM=mar: referente a marca
+SEM=p1: nome próprio estrangeiro
+SEM=pl: planeta
+SEM=sigla: sigla
 SEM=mitol: seres mitológicos
-SEM=p: ...
-SEM=cont: ...
+SEM=cont: continente
 SEM=cid: cidade
-SEM=lingua: ...
+SEM=lingua: língua
 
 CAT: Categoria
 CAT=punct: pontuação
@@ -62,7 +60,7 @@ CAT=punctg: ponto de exclamação
 CAT=puncth: ponto de interrogação
 CAT=punct1a: vírgula
 CAT=in: interjeição
-CAT=npm: ...
+CAT=npm: nome próprio masculino
 CAT=con: conjunção
 CAT=pint: pronome interrogativo
 CAT=punct2e: abertura de parêntesis
@@ -76,7 +74,7 @@ CAT=a_nc: substantivo/adjectivo
 CAT=art: artigo
 CAT=prel: pronome relativo
 CAT=v: verbo
-CAT=cp: contracção de preposição
+CAT=cp: contracção
 CAT=punct2f: fecho de parêntesis
 CAT=ppes: pronome pessoal
 CAT=card: cardinal
@@ -85,7 +83,7 @@ CAT=nord: ordinal
 CAT=adv: advérbio
 
 F: Frequência
-F=0: quase inexistente
+F=0: pouco frequente
 F=1: razoavelmente frequente
 F=2: muito frequente
 
@@ -93,11 +91,9 @@ FSEM: Sufixo
 FSEM=vel:  exemplo -- lavar-lavável
 FSEM=dd:   exemplo -- feliz-felicidade
 
-Adv: Contracção com advérbio
+Adv: Advérbio (contracção)
 Adv=a: a
-Adv=aqu:
 Adv=onde: onde
-Adv=al:
 Adv=ali: ali
 Adv=algures: algures
 Adv=aqui: aqui
@@ -109,7 +105,7 @@ C=a: acusativo
 C=g: genitivo
 C=d: dativo
 
-Pdem2: Contracção com pronome demonstrativo
+Pdem2: Pronome demonstrativo (contracção)
 Pdem2=outro:
 
 TR: Transitividade
@@ -117,13 +113,12 @@ TR=_: transitivo/intransitivo
 TR=i: intransitivo
 TR=t: transitivo
 
-Pind: Contracção da preposição com pronome indefinido
-Pind=algo:
-Pind=outro:
-Pind=outrem:
-Pind=algum:
-Pind=algu:
-Pind=o:
+Pind: Pronome indefinido (contracção)
+Pind=algo: algo
+Pind=outro: outro
+Pind=outrem: outrem
+Pind=algum: algum
+Pind=o: o
 
 GR: Grau
 GR=sup: superlativo
@@ -141,7 +136,7 @@ ABR=1: Sim
 Verb: Do verbo
 Verb=haver: haver
 
-Pdem: Contracção com pronome demonstrativo
+Pdem: Pronome demonstrativo (contracção)
 Pdem=isto: isto
 Pdem=isso: isso
 Pdem=esse: esse
@@ -149,16 +144,16 @@ Pdem=aquele: aquele
 Pdem=aquilo: aquilo
 Pdem=este: este
 
-Prep2: Contracção com preposição
+Prep2: Preposição (contracção)
 Prep2=entre:
 
-Art: Contracção com artigo
+Art: Artigo (contracção)
 Art=as: as
 Art=a: a
 Art=um: um
 Art=o: o
 
-Ppes: Contracção com pronome pessoal
+Ppes: Pronome pessoal (contracção)
 Ppes=sigo: sigo
 Ppes=ele: ele
 Ppes=te: te

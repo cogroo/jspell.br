@@ -33,6 +33,8 @@ BASE= port.aff $(PTDIC) irregulares.txt aux_verb.dic \
 
 NATURA_WWW=/home/natura/download/sources/Dictionaries
 
+FDOC=DOC/generatedDOC
+
 #-------------------------------------------------------------------
 # Instructions
 #-------------------------------------------------------------------
@@ -270,10 +272,13 @@ install-man: jspell-pt.1
 jspell-pt.1: jspell.pt.pod
 	pod2man --center="jSpell Documentation" jspell.pt.pod jspell-pt.1
 
+jspell-doc:
+	cd DOC; make jspell;
 
 ################
-jspell-tgz: $(EXTRADIST)
+jspell-tgz: $(EXTRADIST) jspell-doc
 	mkdir -p $(DIST_DIR)/IRR
+	cp $(FDOC)/* $(DIST_DIR)
 	cp $(IRRFILES) $(DIST_DIR)/IRR
 
 	mkdir -p $(DIST_DIR)/DIC
