@@ -1,7 +1,7 @@
 LA: Necessita artigo
 LA=1: sim
 
-Prep: Preposição com
+Prep: Preposição (contracção)
 Prep=em: em
 Prep=por: por
 Prep=de: de
@@ -27,7 +27,7 @@ T=i: imperativo
 N: Número
 N=n: neutro
 N=p: plural
-N=_: neutro
+N=_: indefinido
 N=s: singular
 
 SEM: Semântica
@@ -182,7 +182,7 @@ G: Género
 G=n: neutro
 G=m: masculino
 G=2: ambos
-G=_: neutro
+G=_: indefinido
 G=f: feminino
 
 rad: Lema
