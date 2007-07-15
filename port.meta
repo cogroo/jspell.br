@@ -106,7 +106,7 @@ C=g: genitivo
 C=d: dativo
 
 Pdem2: Pronome demonstrativo (contracção)
-Pdem2=outro:
+Pdem2=outro: outro
 
 TR: Transitividade
 TR=_: transitivo/intransitivo
@@ -145,7 +145,7 @@ Pdem=aquilo: aquilo
 Pdem=este: este
 
 Prep2: Preposição (contracção)
-Prep2=entre:
+Prep2=entre: entre
 
 Art: Artigo (contracção)
 Art=as: as
@@ -177,6 +177,10 @@ SUBCAT=lugar: advérbio de lugar
 SUBCAT=tempo: advérbio de tempo
 SUBCAT=neg: advérbio de negação
 SUBCAT=quant: advérbio de quantidade
+
+CLA: Classificação
+CLA=def: definido
+CLA=indef: indefinido
 
 G: Género
 G=n: neutro

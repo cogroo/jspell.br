@@ -2213,7 +2213,7 @@ anuviar/#vt/XYPLD/
 anzolado/#a//
 anzoleiro/#nm/p/
 anzol/#nm/p/
-a/$o$CAT=art$G=f,N=s//
+a/$o$CAT=art,CLA=def,G=f,N=s//
 ao/CAT=cp,Prep=a,Art=o,G=m,N=s/p/
 a/$o$CAT=ppes,G=m,N=s,P=3,C=a$G=f,N=s//
 aonde/#avl//
@@ -3125,7 +3125,7 @@ asneirola/#nf//
 asnidade/#nf/p/
 ás/#nm//
 asno/#nm/pG/
-as/$o$CAT=art$G=f,N=p//
+as/$o$CAT=art,CLA=def,G=f,N=p//
 as/$o$CAT=ppes,G=m,N=s,P=3,C=a$G=f,N=p//
 aso/#nm//
 aspa/#nf/p/
@@ -23692,7 +23692,7 @@ ocasionalidade/#nf/p/
 ocasionalismo/#nm/p/
 ocasionar/#vt/XYPLD/
 ocaso/#nm//
-o/CAT=art,G=m,N=s//
+o/CAT=art,CLA=def,G=m,N=s//
 o/CAT=ppes,G=m,N=s,P=3,C=a//
 occipital/#an/p/
 oceanário/#nm//
@@ -24127,7 +24127,7 @@ oscilatório/#a/f/
 osciloscópio/#nm//
 osga/#nf/p/
 osmótico/#a/p/
-os/$o$CAT=art,G=m$N=p//
+os/$o$CAT=art,CLA=def,G=m$N=p//
 os/$o$CAT=pind,G=m$N=p//
 os/$o$CAT=ppes,G=m$N=p,P=3,C=a//
 ossada/#nf/p/
@@ -33221,7 +33221,7 @@ ultravioleta/#hm2/p/
 umbigo/#nm/p/
 umbilicado/#a//
 umbilical/#an/p/
-um/CAT=art,N=s,G=m/fp/
+um/CAT=art,CLA=indef,N=s,G=m/fp/
 um/CAT=card,N=s,G=m/f/
 um/CAT=pind,G=m,N=s/fp/
 úmero/#nm/p/
