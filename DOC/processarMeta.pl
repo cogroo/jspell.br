@@ -46,15 +46,10 @@ for (keys %mt){
 
 $o=~s/\$\$/ /g;
 $o=~s/\|/\n/g;
+$o=~s/\@/ \(email-a\) /g;
 
-print "$o\n";
+open my $G, ">$g" || die $!;
+print $G "$o\n";
+close $G;
 
-#open my $G, ">$g" || die $!;
-
-#while(<$G>){
-#
-#}
-
-#close $G;
-
-#unlink $f;
+unlink $f;
