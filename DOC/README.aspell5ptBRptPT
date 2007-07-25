@@ -11,7 +11,7 @@ $URL_REP_ASPELL$
 
 This Aspell5 dictionary has the following features:
 
-* Language: Portuguese from Portugal - (pt_PT, portuguese, português);
+* Language: Portuguese from Portugal - (pt_PT, portuguese, portugues);
 * Language: Portuguese from Brazil - (pt_BR, brazilian, brasileiro);
 * The pt_PT version contains most common words, proper names, acronyms, abbreviations, and a couple of adapted foreign words;
 * The pt_BR version has most of the previous and a lot more;
