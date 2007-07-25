@@ -1,0 +1,50 @@
+This files describes how the Brazilian Portuguese dictionary for GNU Aspell
+is automatically generated from a dictionary by BrOffice.org, the local
+OpenOffice.org development community. The idea is to avoid forking; we should
+get a new dictionary for GNU Aspell for every OpenOffice.org release, or so.
+Please refer to the README file for more information on how to contact the
+original dictionary developer.
+
+There are the "native" aspell-pt_BR files:
+1. The info file;
+2. pt_BR.dat;
+3. Copyright stuff; and
+4. Documentation (this file and the full list of contributors).
+
+The BrOffice.org files are:
+1. pt_BR.dic, which is almost the same as Aspell's pt_BR.wl; and
+2. pt_BR.aff, which is almost the same as Aspell's pt_BR_affix.dat.
+
+To package aspell-pt_BR, we need to get the "native" files together with
+BrOffice.org's ones after these two passed through some filters (see below).
+Then it's time for some aspell-lang magic!
+
+The main differences are the end-of-line and the character encoding.
+BrOffice.org's files come with Windows style end-of-line (\r\n, instead of
+Unix style \n), and are encoded in CP1252, not ISO-8859-1 -- the pt_BR.dic
+file has lots of "right single quotation marks" instead of common apostrophes.
+These issues can be easily corrected with any of the standard GNU line command
+interface tools. In example:
+
+sed -e "s/\r//g" myspell-pt_BR/pt_BR.aff > aspell-pt_BR/pt_BR_affix.dat
+sed -e "s/\r//g" -e "s/\x92/'/g" myspell-pt_BR/pt_BR.dic > aspell-pt_BR/pt_BR.wl
+
+There are other differences. The first line of pt_BR.dic is a word count; this
+is used by Myspell and Hunspell, but Aspell rejects the number as an invalid
+word. We can add an expression to the sed command: -e "1d".
+
+Aspell also doesn't need/use the MAP instructions contained in pt_BR.aff (to
+be released with OpenOffice.org 2.1). We can delete the MAP lines from
+pt_BR_affix.dat -- the original won't be affected anyway: -e "/^MAP/d".
+
+On the spell checker behavior, there are other differences, too. My/Hunspell
+doesn't recognize BrOffice.org's hyphened words as such, but Aspell can be
+told to do that (too good BrOffice.org's word list has a lot of them!). This
+is done through Aspell's pt_BR.dat file.
+
+On the other hand, if Aspell is told that a dot can be part of a word (in an
+abbreviation, for example), then misspelled words near dots will be considered
+to include the dot, and adopting Aspell's spell suggestion effectively removes
+the dot. Hunspell (and Myspell?) understand the dot isn't part part of the
+word, even if it could; accepting the spelling suggestion doesn't remove the
+dot. For now, we will just reject BrOffice.org's words with dots: -e "/\./d".

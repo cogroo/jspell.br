@@ -1,0 +1,13 @@
+DICTIONARY Jspell
+YEAR `date +%Y`
+URL http://natura.di.uminho.pt
+LICENSE license.txt
+DATE `date +%d/%m/%Y`
+URL_DICS_EN http://natura.di.uminho.pt/wiki/index.cgi?Dictionary
+URL_DICS_PT http://natura.di.uminho.pt/wiki/index.cgi?Dicion%C3%A1rios
+URL_MAINT http://linguateca.di.uminho.pt/webjspell/jsolmail.pl
+MAINTAINERS José João Almeida$$<jj@di.uminho.pt>|Alberto Simões$$<ambs@alfarrabio.di.uminho.pt>|Rui Vilela$$<ruivilela@di.uminho.pt>
+CONTRIB Alberto Simões|Rui Vilela
+URL_ASPELL http://aspell.net/
+URL_REP_ASPELL http://natura.di.uminho.pt/download/sources/Dictionaries/aspell
+

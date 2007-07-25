@@ -1,0 +1,10 @@
+Este é o léxico ("dicionário") de português do Brasil para o GNU Aspell. Ele
+é mantido por Leonardo Ferreira Fontenelle, mas é derivado automaticamente do
+léxico criado pelo BrOffice.org, a comunidade brasileira de desenvolvimento do
+OpenOffice.org. Para colaborar com a lista de palavras e os afixos, você deve
+entrar em contato com o coordenador do Verificador Ortográfico do
+BrOffice.org, Raimundo Santos Moura. A localização do projeto é:
+http://www.broffice.org/?q=verortografico. Você pode conferir a lista de
+colaboradores do léxico do BrOffice.org no arquivo colaboradores.txt. Para
+mais informações sobre a criação do léxico Aspell a partir do léxico
+BrOffice.org, leia o arquivo HACKING (em inglês).

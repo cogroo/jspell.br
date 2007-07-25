@@ -29,8 +29,8 @@ source-version VERSAO
 accurate true
 complete true
 mode aspell5
-alias pt_PT pt:awli portuguese
-alias pt_BR brazilian
+alias pt_PT pt:awli portuguese português
+alias pt_BR brazilian brasileiro
 dict:
   name pt_PT
   add pt-only

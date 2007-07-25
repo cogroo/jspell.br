@@ -12,18 +12,18 @@ $URL_REP_JSPELL$
 
 --
 
-The Jspell dictionary has the following features:
+This Jspell dictionary has the following features:
 
 * Language: Portuguese from Portugal - (pt_PT, port, portugues, português);
 * Afix compression rules;
 * Contains most common words, proper names, abbreviations;
 * Words with hyphen;
 * Morphology and Semantic tagging;
-* Oficial (at least for us).
+* Official (at least for us).
 
 --
 
-Know applications that use Jspell: 
+Known applications that use Jspell: 
 * Webjspell;
 * some Perl scripts.
 

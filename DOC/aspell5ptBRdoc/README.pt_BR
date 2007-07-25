@@ -1,0 +1,10 @@
+This is the Brazilian Portuguese dictionary for GNU Aspell. It is maintained
+by Leonardo Ferreira Fontenelle, but is automatically derived from the
+dictionary created by BrOffice.org, the Brazilian community for OpenOffice.org
+development. If you want to contribute with word lists and affixes, please
+contact the BrOffice.org "Verificador Ortográfico" (spell checker) project
+coordinator, Raimundo Santos Moura. The homepage is
+http://www.broffice.org/?q=verortografico. Read colaboradores.txt
+("contributors.txt") for a list of contributors to the "Verificador
+Ortográfico" project. For more information on making a dictionary for Aspell
+from a OpenOffice.org counterpart, please read HACKING.

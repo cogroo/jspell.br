@@ -31,11 +31,24 @@ aspell5ptPT:
 
 aspell6:
 
-aspell5ptPTptBR:
-
-
+aspell5ptBRptPT: innerClean
+#Common
+	cp Copyright.aspell5ptBRptPT $(D)/Copyright
+	cp license/license.txt $(D)/COPYING_
+	perl processarMeta.pl aspell5ptBRptPT $(D)/COPYING_ $(D)/COPYING
+#Portugal
+	mkdir -p $(D)/doc/pt_PT
+	cp $(R) $(D)/doc/pt_PT
+	cp $(L) $(D)/doc/pt_PT
+	cat $(r).aspell5ptBRptPT >> $(D)/doc/pt_PT/$(R)
+	cat $(l).aspell5ptBRptPT >> $(D)/doc/pt_PT/$(L)
+	perl processarMeta.pl aspell5ptBRptPT $(D)/doc/pt_PT/$(R) $(D)/doc/pt_PT/$(r)
+	perl processarMeta.pl aspell5ptBRptPT $(D)/doc/pt_PT/$(L) $(D)/doc/pt_PT/$(l)
+#Brasil (Dinamizar)
+	mkdir -p $(D)/doc/pt_BR
+	cp aspell5ptBRdoc/* $(D)/doc/pt_BR
 clean:
 	rm -f *~
 
 innerClean:
-	rm -f $(D)/*
+	rm -rf $(D)/*

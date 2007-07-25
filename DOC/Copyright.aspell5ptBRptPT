@@ -1,0 +1,15 @@
+This package (aspell-pt) is actually a combination of two different
+word lists.
+
+Portuguese (pt_PT) dictionary for GNU Aspell is freely available under the terms of
+the GNU GPL. 
+Copyright (c) $YEAR$ by José João Almeida; Alberto Simões; Rui Vilela
+
+Brazilian Portuguese (pt_BR) dictionary for GNU Aspell is freely available under the terms of the GNU GPL.
+Copyright (C) $YEAR$ by Leonardo Ferreira Fontenelle; Raimundo Santos Moura
+
+The doc folder contains specific information for each dictionary.
+
+See COPYING for full license.
+
+

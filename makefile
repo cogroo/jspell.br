@@ -278,7 +278,7 @@ jspell-doc:
 ################
 jspell-tgz: $(EXTRADIST) jspell-doc
 	mkdir -p $(DIST_DIR)/IRR
-	cp $(FDOC)/* $(DIST_DIR)
+	cp $(FDOC)/* $(DIST_DIR)    #documentação
 	cp $(IRRFILES) $(DIST_DIR)/IRR
 
 	mkdir -p $(DIST_DIR)/DIC
