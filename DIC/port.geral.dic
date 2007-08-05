@@ -4105,6 +4105,7 @@ baldio/#hm/fp/
 baldo/#a/f/
 baldroca/#nf//
 baldrocar/#vt/XYPL/
+balé/#nm//		### ballet
 balear/#hn//
 balear/#vt/ZYPLc/
 baleeira/#nf//
@@ -4119,7 +4120,6 @@ balizador/#hm//
 balizagem/#nf//
 baliza/#nf/p/
 balizar/#vt/XYPLMD/
-ballet/#nm//
 balnear/#an/pcv/
 balneário/#nm/fp/
 balneatório/#a//
@@ -4413,8 +4413,8 @@ baterista/#nn/p/
 bater/#vt/XYPLMD/
 bate-sola/#nm//
 batida/#nf/p/
+batom/#nm//     ### bâton
 batina/#nf/p/
-bâton/#nm/p/
 batoque/#nm//
 batota/#nf/p/
 batotar/#vn/XYPL/
@@ -6143,7 +6143,7 @@ canja/#nf//
 canoagem/#nf//
 canoa/#nf/p/
 canoeiro/#nm//
-cânone/#nm/p/
+cânone/#nm/p/    ### cânon
 canonical/#an//
 canonicidade/#nf/p/
 canónico/#a/pfH/
@@ -6151,7 +6151,6 @@ canónico-civil/#a//
 canonista/#nn//
 canonizar/#vt/XYPLcDv/
 cano/#nm/p/
-cânon/#nm//
 canoro/#a/fp/
 cansaço/#nm//
 cansar/#vt/XYPL/
@@ -17007,6 +17006,7 @@ guia/#nf/p/
 guia/#nm/p/
 guião/#nm/p/
 guiar/#vn/XYPLMD/
+guiché/#nm/p/
 guilhotina/#nf/p/
 guilhotinar/#vt/XYPLM/
 guinada/#nf/p/
@@ -18684,6 +18684,7 @@ infinitesimal/#an/p/
 infinitésimo/#hm/fp/
 infinitivo/#hm/fp/
 infinito/#a/pfm/
+inflacionar/#vt/XY/
 inflação/#nf/Spti/
 inflamabilidade/#nf/p/
 inflamador/#hm//
@@ -23570,7 +23571,6 @@ nutrir/#vt/XYPLcMDvu/
 nutritivo/#a/fp/
 nuvem/#nf/p/
 núveo/#a//
-nylon/#nm//
 ó/#i//
 oasiano/#a//
 oásico/#a//
@@ -25161,6 +25161,8 @@ peleja/#nf/p/
 pelejar/#vt/XYPL/
 pelém/#nm//
 pele/#nf/p/
+pelica/#nf//
+peliça/#nf//
 pelicano/#nm//
 película/#nf/p/
 pelicular/#an//
@@ -25908,7 +25910,6 @@ planáltico/#a/fp/
 planalto/#nm/p/
 plana/#nf//
 planar/#vi/XYLD/
-plâncton/#nm//
 planear/#vt/ZYPLME/
 planeta/#nm/p/
 planetário/#hm/fp/
@@ -26184,6 +26185,7 @@ pomo/#nm/p/
 pompa/#nf//
 pompeante/#an/p/
 pompear/#vn/ZYPLn/
+pompom/#nm/p/
 pomposidade/#nf/p/
 pomposo/#a/pdm/
 poncheira/#nf//
@@ -29428,7 +29430,6 @@ rocha/#nf/p/
 rochedo/#nm/p/
 rochoso/#a/fp/
 rocinante/#nm/p/
-rock/#nm//
 rococó/#a//
 rodada/#nf//
 rodagem/#nf//
@@ -31123,7 +31124,6 @@ sovina/#hn/G/
 sovinaria/#nf/p/
 sovinar/#vt/XYPL/
 sozinho/#a/fp/
-spin/#nm//
 sportinguista/#nn/p/
 sua/CAT=ppos,N=s,P=3,G=f/p/
 suadela/#nf/p/
@@ -31306,6 +31306,7 @@ sucessivo/#a/pfm/
 sucesso/#nm/pI/
 sucessor/#hm/fp/
 sucessório/#a/f/
+suchi/#nm// 	### sushi
 sucinto/#a/fmp/
 suco/#nm/p/
 sucosidade/#nf/p/
@@ -31831,7 +31832,7 @@ tecedeira/#nf//
 tecedor/#hm//
 tecedura/#nf//
 tecelagem/#nf/p/
-tecelão/#nm/p/
+tecelão/#nm/pb/
 tecer/#vt/XYPLD/
 tecido/#nm//
 teclado/#nm/p/
@@ -34261,7 +34262,7 @@ xistoso/#a/fpd/
 xivaísmo/#nm//
 xixi/#nm/h/
 xô/#i//
-yuan/#nm/p/
+yuan/#nm//
 zairense/#hn/p/
 zambiano/#hm/fp/
 zambujal/#nm//
