@@ -207,6 +207,7 @@ ORIG=jap: Japonesa
 ORIG=isl: Islandêsa
 ORIG=nor: Norueguesa
 ORIG=cor: Coreana
+ORIG=gre: Grega
 
 unknown: Palavra sugerida
 unknown=1:
