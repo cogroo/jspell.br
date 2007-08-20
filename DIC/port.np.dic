@@ -1,4 +1,4 @@
-#np/CAT=np,SEM=p
+#np/CAT=np,SEM=p,
 #np1/CAT=np,SEM=p1
 #npm/CAT=np,G=m,SEM=p
 #npf/CAT=np,G=f,SEM=p
@@ -607,6 +607,7 @@ César/#npm/
 Céu/#npf/
 Ceuta/#t/
 Cézanne/#np1/
+Chade/#tp/
 Chang/#np1/
 Chaplin/#np/
 Charles/#np/
@@ -1757,6 +1758,7 @@ Nádia/#np/
 Nadine/#np1/
 Nagasaki/#tc/
 Nagasáqui/#tc/
+Namíbia/#tpf/
 Nanci/#np1/
 Nancy/#np1/
 Nanquim/#tc/
