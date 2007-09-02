@@ -6707,6 +6707,7 @@ catálogo/#nm/p/
 catalografia/#nf//
 catanada/#nf/p/
 catana/#nf/p/
+cataplana/#nf/p/
 catapulta/#nf//
 catapultar/#vt/XYPL/
 catapus/#i//
@@ -11306,7 +11307,7 @@ destreza/#nf//
 destrinçador/#hm//
 destrinça/#nf//
 destrinçar/#vt/XYPLDv/
-destro/#a//
+destro/#a/p/
 destroçador/#hm//
 destroçar/#vt/XYPLD/
 destroço/#nm/p/
@@ -13333,7 +13334,7 @@ ermida/#nf/p/
 ermita/#nm/p/
 ermitão/#nm//
 ermo/#hm/p/
-erosão/#nf//
+erosão/#nf/p/
 erosivo/#a/fp/
 erótico/#a/fp/
 erotismo/#nm/p/
@@ -13960,7 +13961,7 @@ esquizofrenia/#nf//
 esquizofrénico/#hm//
 esquizóide/#hm//
 esse/CAT=pdem,N=s,G=m/fp/
-essencial/#hm2/pm/
+essencial/#hm2/pmt/
 essência/#nf/p/
 essoutro/CAT=cp,Pdem=esse,Pind=outro,G=m,N=s//
 estabelecer/#vt/XYPLMDER/
@@ -18506,7 +18507,7 @@ indocumentado/#a//
 indo-europeia/#a/p/
 indo-europeu/#a//
 indolência/#nf/p/
-índole/#nf//
+índole/#nf/p/
 indolente/#an/m/
 indolor/#a//
 indomado/#a//
