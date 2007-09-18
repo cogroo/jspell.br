@@ -1,4 +1,4 @@
-#n/CAT=nc//
+#n/CAT=nc///
 #nm/CAT=nc,G=m,N=s//
 #nmp/CAT=nc,G=m,N=p//
 #nf/CAT=nc,G=f,N=s//
@@ -19604,6 +19604,8 @@ jacaré/#nm//
 jacobeus/#nmp//
 jacobino/#hm/p/
 jacto/#nm/p/
+jaculatória/#nf/p/
+jaculatório/#nm/pf/
 jade/#nm//
 jaguar/#nm//
 jagunço/#nm//
@@ -25444,7 +25446,7 @@ peristáltico/#a//
 peristaltismo/#nm/p/
 perístoma/#nf//
 peritagem/#nf/p/
-perito/#hm/p/
+perito/#hm/pf/
 peritoneal/#an//
 peritoneu/#nm//
 peritonite/#nf//
@@ -26001,6 +26003,8 @@ pluvioso/#hm/fd/
 pneumático/#a/fp/
 pneumococo/#nm/p/
 pneumogástrico/#a//
+penumologia/#nf/p/
+pneumologista/#nm/p/
 pneumonia/#nf//
 pneumónica/#nf//
 pneumónico/#hm/f/
