@@ -1,4 +1,4 @@
-#n/CAT=nc///
+#n/CAT=nc//
 #nm/CAT=nc,G=m,N=s//
 #nmp/CAT=nc,G=m,N=p//
 #nf/CAT=nc,G=f,N=s//
@@ -16294,7 +16294,7 @@ garotito/#nm/p/
 garoto/#hm/fpG/
 garotote/#nm//
 garrafal/#an//
-garrafa/#nf/p/
+garrafa/#nf/ph/
 garrafão/#nm/p/
 garrafaria/#nf/p/
 garrafeira/#nf//
@@ -23623,7 +23623,8 @@ obreiro/#hm/fp/
 obrigação/#nf//
 obrigacionário/#nm//
 obrigacionista/#nn/p/
-obrigado/CAT=in/fs/
+obrigado/CAT=in/s/
+obrigada/$obrigado$CAT=in$G=f/s/
 obrigante/#an/p/
 obrigar/#vt/XYPLcDn/
 obrigatário/#nm//
@@ -26003,7 +26004,7 @@ pluvioso/#hm/fd/
 pneumático/#a/fp/
 pneumococo/#nm/p/
 pneumogástrico/#a//
-penumologia/#nf/p/
+pneumologia/#nf/p/
 pneumologista/#nm/p/
 pneumonia/#nf//
 pneumónica/#nf//
@@ -30538,7 +30539,7 @@ severizar/#vt/XYPL/
 severo/#a/fpdms/
 sevícia/#nf/p/
 sevilhana/#nf//
-sevilhano/#hm/f/
+sevilhano/#hm/fp/
 sexagenário/#hm/fp/
 sexagésima/#ca/p/
 sexagesimal/#an/p/
