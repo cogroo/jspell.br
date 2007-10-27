@@ -15100,7 +15100,7 @@ fêmeo/#a/f/
 feminidade/#nf/p/
 feminil/#an/d/
 feminilidade/#nf/p/
-feminino/#hm/fpi/
+feminino/#hm/fp/
 feminismo/#nm/p/
 feminista/#nn/p/
 femoral/#an/p/
@@ -16715,7 +16715,7 @@ gotear/#vi/ZYL/
 goteira/#nf/p/
 gotejante/#an/p/
 gotejar/#vi/XYLMn/
-gótico/#a/f/
+gótico/#a/fp/
 gotícula/#nf/p/
 goto/#nm//
 gotoso/#a//
@@ -17928,7 +17928,8 @@ impressionista/#hn//
 impressível/#an/d/
 impressivo/#a/m/
 impresso/#hm/pfR/
-impressor/#hm/f/
+impressor/#hm/fp/
+impressora/#nf/p/
 imprestável/#an//
 impreterível/#an/m/
 imprevidência/#nf/p/
@@ -21410,8 +21411,8 @@ mariquice/#nf//
 mariquinhas/#hn//
 mariscar/#vi/XYL/
 marisco/#nm/p/
-marisqueira/#nf//
-marisqueiro/#hm/f/
+marisqueira/#nf/p/
+marisqueiro/#hm/fp/
 maritabilidade/#nf/p/
 marital/#an/m/
 marítimo/#hm/fp/
@@ -23626,8 +23627,7 @@ obreiro/#hm/fp/
 obrigação/#nf//
 obrigacionário/#nm//
 obrigacionista/#nn/p/
-obrigado/CAT=in/s/
-obrigada/$obrigado$CAT=in$G=f/s/
+obrigado/CAT=in/sk/
 obrigante/#an/p/
 obrigar/#vt/XYPLcDn/
 obrigatário/#nm//
@@ -29599,8 +29599,8 @@ rótula/#nf/p/
 rotular/#an//
 rotular/#vt/XYPL/
 rótulo/#nm/p/
-rotunda/#nf//
-rotundo/#a/f/
+rotunda/#nf/p/
+rotundo/#a/fp/
 rotura/#nf/p/
 roubador/#hm//
 roubalheira/#nf//
@@ -31597,8 +31597,8 @@ tabacaria/#nf/p/
 tabaco/#nm/p/
 tabagismo/#nm/p/
 tabaquear/#vn/ZYPL/
-tabaqueira/#hf//
-tabaqueiro/#hm/f/
+tabaqueira/#nf/p/
+tabaqueiro/#hm/p/
 tabaquista/#nn//
 tabefe/#nm/p/
 tabela/#nf/p/
@@ -31934,8 +31934,8 @@ telhado/#nm/p/
 telha/#nf/p/
 telhão/#nm//
 telhar/#vt/XYPLD/
-telheira/#nf//
-telheiro/#nm/f/
+telheira/#nf/p/
+telheiro/#nm/p/
 telhudo/#a//
 telintar/#vi/XYL/
 telureto/#nm//
@@ -33209,7 +33209,7 @@ ultimamente/#av//
 ultimar/#vt/XYPLcD/
 ultimato/#nm/p/
 último/#hm/fp/
-ultrajado/#a/f/
+ultrajado/#a/fp/
 ultrajante/#an/p/
 ultrajar/#vt/XYPLDn/
 ultraje/#nm/p/
@@ -34340,7 +34340,6 @@ zonzo/#a/p/
 zoolatria/#nf/p/
 zoologia/#nf/qtrp/
 zoológico/#a/fp/
-zoom/#nm//
 zoo/$zoológico$#nm//
 zorro/#hm/fp/
 zuarte/#nm//
