@@ -219,6 +219,15 @@ flag *f:         ; "CAT=a_nc,G=m,N=s"  #femininos
 E           >    -E,A    ; "G=f"         # e -> a     ex. ele -> ela
 E           >    -E,AS   ; "G=f,N=p"     # e -> a     ex. ele -> elas
 
+# femininos - os mais habituais, mas sem plural
+flag *k:         ; "CAT=a_nc,G=m,N=s"  #femininos
+[^Ã] O      >    -O,A    ; "G=f"         # o -> a     ex. obrigado -> obrigada
+[^AEIOUSCN] >       A    ; "G=f"         # -> a       ex. cantor -> cantora
+[^Ê] S      >       A    ; "G=f"         # -> a       ex. deus   -> deusa
+Ê S         >   -ÊS,ESA  ; "G=f"         # ês -> esa   ex. japonês -> japonesa
+Ã O         >   -ÃO,ONA  ; "G=f"         # ão -> ona   ex. burlão -> burlona
+E           >    -E,A    ; "G=f"         # e -> a     ex. ele -> ela
+
 flag *b:         ; "CAT=a_nc,G=m,N=s"  #femininos
 Ã O	>	-O,-	; "G=f"		# alemão -> alemã
 Ã O	>	-O,S	; "G=f,N=p"	# alemão -> alemãs
@@ -1446,7 +1455,7 @@ E R     >  -ER,IDAMENTE  ; "CAT=adv"              # perdidamente
 #flag +h:  ; "CAT=a_nc,N=s"     #inho
 #flag *i:  ; "CAT=nc,N=s"   	#ismo
 #flag *j:  ; "CAT=adj"          #izar  ....?
-#k
+#flag *k   ; "CAT=a_nc,G=m,N=s" #feminino (sem plural)
 #l
 #flag +m:  ; "CAT=adj,N=s"      #mente
 #flag *n:  ; "CAT=v,T=inf"      #ente
