@@ -40,54 +40,54 @@ FDOC=DOC/generatedDOC
 #-------------------------------------------------------------------
 all:
 	@ echo
-	@ echo -e "jspell:"
-	@ echo -e "\tjspell -- builds jspell dictionary"
-	@ echo -e "\tjspell-install -- installs jspell"
-	@ echo -e "\tjspell-tgz -- creates jspell munged distribution file"
+	@ echo "jspell:"
+	@ echo "\tjspell -- builds jspell dictionary"
+	@ echo "\tjspell-install -- installs jspell"
+	@ echo "\tjspell-tgz -- creates jspell munged distribution file"
 	@ echo
-	@ echo -e "ispell:"
-	@ echo -e "\tispell -- builds ispell dictionary"
-	@ echo -e "\tispell-install -- installs ispell"
-	@ echo -e "\tispell-clean -- clears ispell generated dictionaries"
-	@ echo -e "\tispell-tgz -- creates ispell distribution file"
+	@ echo "ispell:"
+	@ echo "\tispell -- builds ispell dictionary"
+	@ echo "\tispell-install -- installs ispell"
+	@ echo "\tispell-clean -- clears ispell generated dictionaries"
+	@ echo "\tispell-tgz -- creates ispell distribution file"
 	@ echo
-	@ echo -e "aspell5:"
-	@ echo -e "\taspell5 -- builds aspell 0.50 dictionary"
-	@ echo -e "\taspell5-install -- installs aspell 0.50"
-	@ echo -e "\taspell5-tgz -- creates aspell 0.50 distribution file"
+	@ echo "aspell5:"
+	@ echo "\taspell5 -- builds aspell 0.50 dictionary"
+	@ echo "\taspell5-install -- installs aspell 0.50"
+	@ echo "\taspell5-tgz -- creates aspell 0.50 distribution file"
 	@ echo
-	@ echo -e "aspell6:"
-	@ echo -e "\taspell6 -- builds aspell 0.60 dictionary"
-	@ echo -e "\taspell6-install -- installs aspell 0.60"
-	@ echo -e "\taspell6-tgz -- creates aspell 0.60 distribution file"
+	@ echo "aspell6:"
+	@ echo "\taspell6 -- builds aspell 0.60 dictionary"
+	@ echo "\taspell6-install -- installs aspell 0.60"
+	@ echo "\taspell6-tgz -- creates aspell 0.60 distribution file"
 	@ echo
-	@ echo -e "myspell:"
-	@ echo -e "\tmyspell -- builds myspell dictionary (will make ispell if required)"
-	@ echo -e "\tmyspell-install -- installs myspell"
-	@ echo -e "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
-	@ echo -e "\tmyspell-zip -- creates myspell distribution file (zip)"
+	@ echo "myspell:"
+	@ echo "\tmyspell -- builds myspell dictionary (will make ispell if required)"
+	@ echo "\tmyspell-install -- installs myspell"
+	@ echo "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
+	@ echo "\tmyspell-zip -- creates myspell distribution file (zip)"
 	@ echo
-	@ echo -e "hunspell:"
-	@ echo -e "\thunspell -- builds hunspell dictionary"
-	@ echo -e "\thunspell-install -- installs hunspell"
-	@ echo -e "\thunspell-tgz -- creates hunspell distribution file (tar.gz)"
-	@ echo -e "\thunspell-zip -- creates hunspell distribution file (zip)"
+	@ echo "hunspell:"
+	@ echo "\thunspell -- builds hunspell dictionary"
+	@ echo "\thunspell-install -- installs hunspell"
+	@ echo "\thunspell-tgz -- creates hunspell distribution file (tar.gz)"
+	@ echo "\thunspell-zip -- creates hunspell distribution file (zip)"
 	@ echo
-	@ echo -e "wordlist:"
-	@ echo -e "\twordlist -- builds a simple word list"
-	@ echo -e "\twordlist-bz2 -- creates wordlist compressed file"
-	@ echo -e "\twordlist-diff -- calculates real differences on the dictionary since last release (needs a previous release)"
-	@ echo -e
-	@ echo -e "chuveiro:"
-	@ echo -e "\tchuveiro -- build all available dictionaries"
-	@ echo -e "\tchuveiro-install -- online publish at natura"
+	@ echo "wordlist:"
+	@ echo "\twordlist -- builds a simple word list"
+	@ echo "\twordlist-bz2 -- creates wordlist compressed file"
+	@ echo "\twordlist-diff -- calculates real differences on the dictionary since last release (needs a previous release)"
+	@ echo
+	@ echo "chuveiro:"
+	@ echo "\tchuveiro -- build all available dictionaries"
+	@ echo "\tchuveiro-install -- online publish at natura"
 	@ echo
 #-------------------------------------------------------------------
 # Generated files
 #-------------------------------------------------------------------
 
 port.dic: $(PTDIC) aux_all_irr.dic 
-	echo -e '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
+	echo '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
 	cat $(PTDIC) aux_all_irr.dic >> port.dic 
 
 port.irr: aux_all_irr.dic
