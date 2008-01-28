@@ -20,7 +20,7 @@ hunspell: ../port.dic
 	LANG="pt_PT" perl genAffHunspell.pl ../port.aff > $D/$P.aff
 	cat $P.replace >> $D/$P.aff
 
-	wc -l _.dic | cut -c 0-5 > $D/$P.dic
+	wc -l _.dic | cut -c 1-5 > $D/$P.dic
 	cat _.dic >> $D/$P.dic
 
 hunspell-tgz: tgz
