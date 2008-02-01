@@ -8,8 +8,8 @@ Dep. Informatica, Universidade do Minho
 Portugal
 
 Licensed under (check COPYING file for full license)
-  GPL version 3.0
-  LGPL version 3.0
+  GPL version 2.0 or later
+  LGPL version 2.1 or later
   MPL version 1.1
 
 
