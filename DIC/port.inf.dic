@@ -21,6 +21,7 @@ drive/#nf,ORIG=ing/p/
 driver/#nm,ORIG=ing/a/
 e-mail/#nm,ORIG=ing//
 email/#nm,ORIG=ing//
+escalável/#an/pd/
 Ethernet/CAT=np//
 Firefox/CAT=np,G=m,N=s//
 Fortran/CAT=np//
@@ -81,6 +82,6 @@ webmaster/#nm,ORIG=ing//
 web/#nf,ORIG=ing//
 Windows/CAT=nc,G=m,N=s//
 wireless/#nm,ORIG=ing//
-www/CAT=np//
+WWW/CAT=np//
 XP/CAT=nc,G=m,N=s//
 XML/CAT=np//

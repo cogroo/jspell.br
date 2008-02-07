@@ -11526,7 +11526,7 @@ diferença/#nf/p/
 diferençar/#vt/XYPLv/
 diferencial/#hf2/p/
 diferencial/#nm/p/
-diferenciar/#vt/XYPLc/
+diferenciar/#vt/XYPLcD/
 diferendo/#nm/p/
 diferente/#an/pm/
 diferir/#vn/ZYPLM/
@@ -13405,7 +13405,6 @@ escala/#nm/p/
 escalão/#nm/p/
 escalar/#an/p/
 escalar/#vt/XYPLRMD/
-escalável/#an/p/
 escaldadela/#nf/p/
 escaldadiço/#a//
 escaldadura/#nf//
@@ -14339,6 +14338,7 @@ etiqueta/#nf/p/
 etiquetar/#vt/XYPLc/
 etnia/#nf/p/
 etnicamente/$étnico$#a$#av//
+etnicidade/#nf//
 étnico/#a/fp/
 etnografia/#nf/pqr/
 etnologia/#nf/qtr/
@@ -15111,6 +15111,7 @@ feminilidade/#nf/p/
 feminino/#hm/fp/
 feminismo/#nm/p/
 feminista/#nn/p/
+feminizar/#vt/c/
 femoral/#an/p/
 fémur/#nm/p/
 fenação/#nf//
@@ -15269,7 +15270,7 @@ fidalgoso/#a//
 fidalgote/#nm/p/
 fidalguia/#nf//
 fidedignidade/#nf/p/
-fidedigno/#a/pd/
+fidedigno/#a/pdf/
 fidelidade/#nf/Ip/
 fidelíssimo/$fiel$#a$G=m,GR=sup/pf/
 fidelizar/#vt/XYPLcD/
@@ -17586,6 +17587,7 @@ identidade/#nf/p/
 identificação/#nf//
 identificar/#vt/XYPLcDv/
 identificativo/#a/fp/
+identitário/#a/fp/
 ideograma/#nf/p/
 ideologia/#nf/pq/
 ideológico/#a/fpH/
@@ -18950,6 +18952,7 @@ insonolência/#nf/p/
 insonoridade/#nf/p/
 insonorizar/#vt/XYPLc/
 insonoro/#a/d/
+insonso/$insosso$#a//
 insossar/#vt/XYPL/
 insosso/#a//
 inspecção/#nf/p/
@@ -19691,7 +19694,6 @@ jesus/CAT=in//
 jibóia/#nf//
 jigajoga/#nf//
 jipe/#nm/p/
-jiu-jitsu/#nm//
 joalharia/#nf/p/
 joalheiro/#hm/p/
 joanense/#hn/p/
@@ -21508,7 +21510,7 @@ masseira/#nf//
 mássico/#a//
 massificar/#v/c/
 massivamente/#avq//
-massivo/#a/m/
+massivo/#a/mf/
 massudo/#a/fp/
 mastigada/#nf//
 mastigado/#hm//
@@ -30870,6 +30872,7 @@ sobrepeso/#nm//
 sobrepor/#vn/KL/
 sobreposição/#nf/p/
 sobreposse/#nf//
+sobrepostos/#nmp//
 sobrepovoar/#vt/XYP/
 sobrepujar/#vt/XYP/
 sobrerrealismo/#nm/p/
@@ -30916,7 +30919,7 @@ sócio-cultural/#a/p/
 sócio-económica/#a/p/
 socioeconómico/#a/p/
 sócio/#hm/fp/
-sociologia/#nf/qtir/
+sociologia/#nf/qtirp/
 soçobrar/#vn/XYPL/
 soco/#nm/p/
 socorrer/#vt/XYPLMD/
@@ -33110,7 +33113,6 @@ trutífero/#a//
 truz/#i//
 truz-truz/#i//
 tsé-tsé/#nm//
-tsunami/#nm//
 tua/CAT=ppos,P=2,N=s,G=f/p/
 tuaregue/#hn/p/
 tubagem/#nf/p/
