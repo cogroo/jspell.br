@@ -61,8 +61,8 @@ $P/$D.aff $P/$D.dic: ../port.dic ../port.aff
 	munchlist -l $P/$D.aff $P/_$D.dic > $P/_.dic
 #	cp $P/_$D.dic $P/_.dic
 #	A seguinte linha serve para eliminar a regra K das terminações "GUIR" que o munchlist produz. 8 verbos são afectados. Afecta igualmente o Myspell
-	perl -i -npe 'if (m!guir/!) {s/K//}' $P/_.dic #K na word ?
-	LC_ALL=C sort $P/_.dic > $P/$D.dic
+#	perl -i -npe 'if (m!guir/!) {s/K//}' $P/_.dic #K na word ?
+	sort $P/_.dic > $P/$D.dic
 	rm -f $P/_$D.dic $P/_.dic
 	cp ver ispell.port.spec $P
 
