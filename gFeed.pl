@@ -78,14 +78,13 @@ $rsvn=~s/\|$/\]/;
 $rsvn.="</p>";
 open my $F,"<$DIC/CHANGELOG" || warn $!;
 my @LOG=<$F>;
-$rsvn.="<p>-------- Última entrada do CHANGELOG -------</p><code>";
+$rsvn.="<p>-------- Última entrada do <a href='".$url."CHANGELOG'>CHANGELOG</a> -------</p><code>";
 for (reverse @LOG){
     $rsvn.=escapeHTML($_); #Já em UTF8
     last if (/\d{2}:\d{2}:\d{2}/);
 }
 close $F;
 $rsvn.='<p>'.("-"x40).'</p>';
-$rsvn.="<p>Ver o resto do <a href='".$url."CHANGELOG'>CHANGELOG</a></p>";
 
 my $lastUpdate=`svn log -r {\"$ultRev\"} |grep -e '^r' |awk '{print \$5,\$6}' `;
 $rsvn.="<h4>Alterações efectuadas desde a última actualização(diff wordlist): $lastUpdate</h4>";
