@@ -1,7 +1,7 @@
 DICTIONARY Jspell
 YEAR `date +%Y`
 URL http://natura.di.uminho.pt
-LICENSE license.txt
+LICENSE COPYING
 DATE `date +%d/%m/%Y`
 URL_DICS_EN http://natura.di.uminho.pt/wiki/index.cgi?Dictionary
 URL_DICS_PT http://natura.di.uminho.pt/wiki/index.cgi?Dicion%C3%A1rios

@@ -9,6 +9,7 @@ R=GenericREADME
 L=GenericoLEIAME
 r=README
 l=LEIAME
+LIC=COPYING
 
 all:
 	@echo "Indicar dicionário!"
@@ -18,7 +19,7 @@ jspell: innerClean
 	cp $(L) $(D)/
 	cat $(r).jspell >> $(D)/$(R)
 	cat $(l).jspell >> $(D)/$(L)
-	cp license/license.txt $(D)
+	cp license/$(LIC) $(D)
 	perl processarMeta.pl jspell $(D)/$(R) $(D)/$(r)
 	perl processarMeta.pl jspell $(D)/$(L) $(D)/$(l)
 ispell:
@@ -34,7 +35,7 @@ aspell6:
 aspell5ptBRptPT: innerClean
 #Common
 	cp Copyright.aspell5ptBRptPT $(D)/Copyright
-	cp license/license.txt $(D)/COPYING_
+	cp license/$(LIC) $(D)/COPYING_
 	perl processarMeta.pl aspell5ptBRptPT $(D)/COPYING_ $(D)/COPYING
 #Portugal
 	mkdir -p $(D)/doc/pt_PT
