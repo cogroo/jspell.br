@@ -44,6 +44,7 @@ all:
 	@ echo "\tjspell -- builds jspell dictionary"
 	@ echo "\tjspell-install -- installs jspell"
 	@ echo "\tjspell-tgz -- creates jspell munged distribution file"
+	@ echo "\tjspell-bin -- creates jspell binary distribution file"
 	@ echo
 	@ echo "ispell:"
 	@ echo "\tispell -- builds ispell dictionary"
@@ -105,7 +106,7 @@ IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
 tgz:
 	make clean
 	cd .. ; tar -cvzf jspell.pt.tgz jspell.pt ; mv jspell.pt.tgz jspell.pt/dicionario.pt.tgz
-
+	
 jspell.port.tgz: $(BASE)
 	rm -rf jspell.port-`./ver`
 	mkdir -p jspell.port-`./ver`
@@ -275,6 +276,13 @@ jspell-pt.1: jspell.pt.pod
 jspell-doc:
 	cd DOC; make jspell;
 
+jspell-bin: jspell
+	mkdir -p $(DIST_DIR)-bin
+	cp port.hash port.meta port.irr $(DIST_DIR)-bin
+	tar zcvf $(DIST_DIR)-bin.tar.gz $(DIST_DIR)-bin
+	rm -fr $(DIST_DIR)-bin
+
+
 ################
 jspell-tgz: $(EXTRADIST) jspell-doc
 	mkdir -p $(DIST_DIR)/IRR
@@ -304,7 +312,7 @@ port.hash: port.dic port.aff
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz hunspell-tgz hunspell-zip
+chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz hunspell-tgz hunspell-zip jspell-bin
 
 chuveiro-install: #wordlist-diff
 	cp aspell5*$(DATE)*bz2 $(NATURA_WWW)/aspell
@@ -327,7 +335,8 @@ chuveiro-install: #wordlist-diff
 
 	cp j*.gz $(NATURA_WWW)/jspell
 	ln -sf $(NATURA_WWW)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_WWW)/jspell/jspell.$(ABR)-latest.tar.gz
-
+	ln -sf $(NATURA_WWW)/jspell/jspell.$(ABR)-$(DATE)-bin.tar.gz $(NATURA_WWW)/jspell/jspell.$(ABR)-bin-latest.tar.gz
+	
 	cp aspell6*$(DATE)*bz2 $(NATURA_WWW)/aspell6
 	ln -sf $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
 
