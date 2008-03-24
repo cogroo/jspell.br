@@ -14,9 +14,9 @@
 #avq/CAT=adv,SUBCAT=quant//
 #i/CAT=in//
 #hm/CAT=a_nc,G=m,N=s//
-#hm2/CAT=a_nc,G=2,N=s// Se for nc é masc. se for adj. é neutro
+#hm2/CAT=a_nc,G=2,N=s// Se for nc é masc. se for adj. é neutro.
 #hf/CAT=a_nc,G=f,N=s//
-#hf2/CAT=a_nc,G=2,N=s// Se for nc é fem. se for adj. é neutro
+#hf2/CAT=a_nc,G=2,N=s// Se for nc é fem. se for adj. é neutro.
 #hn/CAT=a_nc,N=s,G=_//
 #hn2/CAT=a_nc,N=_,G=_//
 #pr/CAT=pref//
