@@ -1,5 +1,6 @@
 ADSL/#nf//
 ASCII/#nm//
+aplicacional/#an/p/
 Apple/CAT=np,G=f,N=s//
 Assembler/CAT=np//
 backup/#nm,ORIG=ing/a/
@@ -65,8 +66,9 @@ plotter/CAT=nc,G=f,N=s/a/
 RAM/CAT=nc,G=f,N=s//
 ROM/CAT=nc,G=m,N=s//
 scanner/CAT=nc,G=m,N=s/a/
+sequenciamento/#nm//
 SGML/CAT=np,SEM=sigla//
-shell/CAT=nc,G=f,N=s//
+shell/#nf,ORIG=ing//
 site/#nm,ORIG=ing/p/
 socket/#nm,ORIG=ing/a/
 software/#nm,ORIG=ing//
@@ -78,6 +80,7 @@ Thunderbird/CAT=np,G=m,N=s//
 Unix/CAT=np,G=m//
 URL/CAT=np,G=m//
 VDM/CAT=np,G=m//
+virtualização/#nf//
 webmaster/#nm,ORIG=ing//
 web/#nf,ORIG=ing//
 Windows/CAT=nc,G=m,N=s//
