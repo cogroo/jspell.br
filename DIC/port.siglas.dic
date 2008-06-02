@@ -4,19 +4,17 @@
 #tsfp/CAT=np,G=f,N=p,SEM=sigla//
 
 AAC/#tsf//#Associação Académica de Coimbra
-ABC/#tsm//
+ABC/#tsm//#clube desportivo
 ACP/#tsm//#Automóvel Clube de Portugal
 ADN/#tsm//#ácido desóxido-ribo-nucleico
 AFP/#tsf//#Agência France-Press
 AD/#tsf//#Aliança Democrática
-AG/#tsf//#Assembleia Geral
 AML/#tsf//#Área Metropolitana de Lisboa
 AMP/#tsf//#Área Metropolitana do Porto
 ANACOM/#tsf//#Autoridade Nacional de Comunicações
 ANC/#tsm//#African National Congress (en)
 ANMP/#tsf//#Associação Nacional de Munícipios Portugueses
 APPACDM/#tsf//#Associação Portuguesa de Pais e Amigos do Cidação Deficiente Mental
-APDL/#tsf//#Administração dos Portos do Douro e Leixões
 APEL/#tsf//#Associação Portuguesa de Editores e Livreiros
 APL/#tsf//#Administração do Porto de Lisboa
 API/#tsf//#Aplication Prog. interface
@@ -41,7 +39,6 @@ BT/#tsf//#Brigada de Trânsito
 BVL/#tsf//#Bolsa de Valores de Lisboa
 BSE/#tsf//#BSE Doença Bovina
 CAP/#tsf//#Confederação dos Agricultores de Portugal
-CC/#tsm//#Comité Central
 CCB/#tsm//#Centro Cultural de Belém
 CCRN/#tsf//#Comissão de Coordenação Regional do Norte
 CD/#tsm//#Compact Disc (en) / Conselho Directivo
@@ -175,12 +172,12 @@ SIDA/#tsf//#Síndroma de imunodeficiência adquirida
 SLB/#tsm//#Sport Lisboa e Benfica
 SMAS/#tsmp//#Serviços Municipalizados de Água e Saneamento
 SME/#tsm//#Sistema Monetário Europeu
+SNS/#tsm//#Serviço Nacional de Saúde
 SOS/#tsm// #Save Our Souls
 SPA/#tsf//#Sociedade Portuguesa de Autores
 STCP/#tsmp//#Sociedade de Transportes Colectivos do Porto
 STJ/#tsm//#Supremo Tribunal de Justiça / Sociedade Tereziana de Jesus
 TAP/#tsf//#Transportes Aéreos Portugueses
-TC/#tsm//#Tribunal Constitucional
 TLP/#tsmp//#Telefones de Lisboa e Porto
 TPC/#tsm//#Trabalho Para Casa
 TSF/#tsf//#Rádio TSF
@@ -191,8 +188,6 @@ UDP/#tsf//#União Democrática Popular / User Datagram Protocol
 UDT/#tsf//#União Democrática Timorense
 UE/#tsf//#União Europeia
 UEFA/#tsf//#Union Européene de Football Association (fr)
-UEM/#tsf//#União Económica e Monetária
-UEO/#tsf//#União da Europa Ocidental
 UGT/#tsf//#União Geral de Trabalhadores
 UNESCO/#tsf//#United Nations
 UNICEF/#tsf//#United Nations 
@@ -201,4 +196,3 @@ URSS/#tsf/x/#União das Repúblicas Socialistas Soviéticas
 VCI/#tsf//#Via de Cintura Interna
 VIH/#tsm//#Vírus da Imunodeficiência Humana
 VW/#tsm//#VolksWagen (de)
-XHTML/#tsm//#XHTML
