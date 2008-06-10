@@ -4,11 +4,13 @@
 
 #uso: perl freqLema.pl dicionário lista_frequências
 
-#Rui Vilela, Linguateca 2006
+#Rui Vilela,2008
 
+use POSIX qw(locale_h);
+setlocale(LC_CTYPE, "pt_PT");
 use locale;
 use strict;
-use jspell;
+#use jspell;
 use Data::Dumper;
 
 my $dic=shift;
@@ -17,13 +19,13 @@ my @d;
 
 open my $F, "<$dic" || die $!;
 
-our $dc = jspell::new('port');
+#our $dc = jspell::new('port');
 
 my $ant=''; my $w='';
 while(<$F>){
     next unless length;
     next if /^\s*\#/;
-    if (/^(\w+)/){
+    if (/^([[:alpha:]\-]+)/){
 	$w=$1;
 	next if ($w eq $ant);
 	$ant=$w;
@@ -39,7 +41,7 @@ open $F, "<$freq" || die $!;
 
 my %f;
 while (<$F>){ #Put in hash
-    $f{$2}+=$1 if (/(\d+) (\S+)$/);
+    $f{$2}+=$1 if (/(\d+) ([[:alpha:]\-]+)$/);
 }
 close ($F);
 
@@ -48,10 +50,10 @@ my %h;
 my $soma;
 
 foreach (@d){
-    if (defined ($f{$_})){
-	$h{$_}=$f{$_};
-	#print $h{$_}."\n" if /^à$/;
-	$soma+=$f{$_};
+    if (defined ($f{"$_"})){
+	$h{"$_"}=$f{"$_"};
+	#print $h{"$_"}."\n" if /^à$/;
+	$soma+=$f{"$_"};
     }
 }
 

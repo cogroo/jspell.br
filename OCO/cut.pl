@@ -1,8 +1,12 @@
 #!/usr/bin/perl -w
 
-use locale;
 use strict;
 use warnings;
+use POSIX qw(locale_h);
+setlocale(LC_CTYPE, "pt_PT");
+use locale;
+
+
 
 while (<>){
     s/(.*)/\L$1/;
