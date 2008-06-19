@@ -6904,6 +6904,7 @@ cedilha/#nf//
 cedilhar/#vt/XYPL/
 cedo/#avt/h/
 cedro/#nm/p/
+cedro-do-mato/#nm/p/
 cédula/#nf//
 cefalálgico/#a//
 cefaleia/#nf/p/
@@ -6934,7 +6935,7 @@ celebridade/#nf/p/
 celebrizar/#vt/XYPLc/
 celeireiro/#nm//
 celeiro/#nm/p/
-célere/#an//
+célere/#an/p/
 celeremente/$célere$#a$#av//
 celeridade/#nf/p/
 celerímetro/#nm//
@@ -8371,7 +8372,7 @@ computador/#hm//
 computar/#vt/XYPLcDv/
 cômputo/#nm//
 computorizar/#vt/XYPLnc/
-comum/#an/pm/
+comum/#an/pmI/
 comunal/#an/ip/
 comuna/#nf/pti/
 comungante/#hn/p/
@@ -9758,6 +9759,7 @@ críptico/#a/fp/
 criptografia/#nf/pqr/
 criptograma/#nm//
 criptologia/#nf/qt/
+criptoméria/#nf//
 crípton/#nm//
 críquete/#nm//
 crisália/#nf//
@@ -14626,7 +14628,7 @@ exportador/#hm/fp/
 exportar/#vt/XYPLRcDv/
 expor/#vt/KPLRc/
 exposição/#nf/p/
-expositivo/#a//
+expositivo/#a/fp/
 expositor/#nm/p/
 exposto/#hm/fp/
 expressão/#nf/p/
@@ -15811,6 +15813,7 @@ fracção/#nf/p/
 fraccionário/#a//
 fraccionar/#vt/XYPLM/
 fraco/#hm/pfmh/
+fracote/#hn/p/		#Não definida em Dicionários!
 fractura/#nf/p/
 fracturar/#vt/XYPL/
 frade/#nm/p/
@@ -20242,6 +20245,7 @@ legatário/#nm//
 legatório/#a//
 legendagem/#nf//
 legenda/#nf/p/
+legendar/#vt/XYL/
 legendário/#a/fp/
 legião/#nf/p/
 legionário/#hn/p/
@@ -20395,6 +20399,7 @@ levantar/#vn/XYPLMD/
 levante/#nm/p/
 levar/#vn/XYPLMn/
 leve/#an/pmdsz/
+levezinha/$leve$CAT=adj$GR=dim$G=f$/p/
 levedadura/#nf//
 levedar/#vn/XYPLc/
 levedura/#nf/p/
@@ -23383,7 +23388,7 @@ nino/#nm/f/
 nipo-chinês/#a//
 nipónico/#a/fp/
 níquel/#nm//
-niquento/#a//
+niquento/#a/p/
 niquice/#nf//
 nirvana/#nm//
 nisso/CAT=cp,Prep=em,Pdem=isso,G=_,N=_//
@@ -32211,7 +32216,7 @@ testículo/#nm/p/
 testiculoso/#a//
 testificante/#hn/p/
 testificar/#vt/XYPLcDn/
-testo/#hm//
+testo/#hm/p/
 testosterona/#nf//
 testudo/#a//
 tesura/#nf//
@@ -33568,6 +33573,7 @@ variar/#vn/XYPLcnv/
 varicela/#nf/p/
 varicoso/#a//
 variedade/#nf/p/
+variegado/#a/fp/
 varinha/#nf/p/
 varino/#nm/fp/
 vário/#a/fpm/
