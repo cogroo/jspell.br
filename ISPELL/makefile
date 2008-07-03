@@ -58,8 +58,8 @@ $P/$D.hash: $P/$D.dic $P/$D.aff $P/README
 $P/$D.aff $P/$D.dic: ../port.dic ../port.aff 
 	perl jsp2isp.pl ../port.aff > $P/$D.aff 
 	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/_$D.dic
-	munchlist -l $P/$D.aff $P/_$D.dic > $P/_.dic
-#	cp $P/_$D.dic $P/_.dic
+#	munchlist -l $P/$D.aff $P/_$D.dic > $P/_.dic #a gerar formas inválidas!
+	cp $P/_$D.dic $P/_.dic
 #	A seguinte linha serve para eliminar a regra K das terminações "GUIR" que o munchlist produz. 8 verbos são afectados. Afecta igualmente o Myspell
 #	perl -i -npe 'if (m!guir/!) {s/K//}' $P/_.dic #K na word ?
 	sort $P/_.dic > $P/$D.dic
