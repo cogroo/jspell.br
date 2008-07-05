@@ -1,9 +1,5 @@
-#---------------------------------------------------------------------
-# Generates MYSPELL if required
-
-# make install
-# make myspell
-# make tgz
+# Gets MYSPELL
+# Requires Ispell, Jspell, updated port.hash 
 
 P=portugues
 ABR=pt
@@ -17,13 +13,14 @@ myspell:
 	fi;
 	cp ../ISPELL/$P/$P.dic $P/
 	cp ../ISPELL/$P/$P.aff $P/
-#	Gerar depois do Jspell	
 	LANG="pt_PT" perl gendic.pl $P/$P.aff > $P/pt_PT.aff
 	cat $P.replace >> $P/pt_PT.aff
 	wc -l $P/$P.dic | awk '{print $$1}' > $P/pt_PT.dic
 	cat $P/$P.dic >> $P/pt_PT.dic
+#	perl -i retiraRegra.pl PL $P/pt_PT.dic #Remove P and L RULE and extra /
+#	perl compact.pl $P/pt_PT.dic > pt_PT.dic #Remove lemas duplicados
+#	mv pt_PT.dic $P/
 	rm $P/$P.dic
-	rm $P/$P.aff
 
 myspell-tgz: tgz
 
