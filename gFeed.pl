@@ -57,7 +57,7 @@ my $entry = XML::Atom::Entry->new(Version => 1.0);;
 
 my $dd=File::Spec->catdir($DIC,'jspell');
 
-my $ultRev=`ls -c1 $dd |grep -v 'latest' |sed -e 's/\.tar\.gz//' |sort |tail -n 2 |head -n 1`; ##eval?
+my $ultRev=`ls -c1 $dd |grep -v 'latest' |grep -v 'bin' |sed -e 's/\.tar\.gz//' |sort |tail -n 2 |head -n 1`; ##eval?
 chomp $ultRev;
 #$ultData=$ultRev;
 $ultRev=~s/\D*?(\d{4})(\d{2})(\d{2})/$1-$2-$3/;
