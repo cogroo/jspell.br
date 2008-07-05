@@ -1,28 +1,12 @@
-
-#---------------------------------------------------------------------
-#  
-# This is   ISPELL/makefile
-#
-#---------------------------------------------------------------------
-
-
-# make install
-
-# make ispell
-# make tgz 
-# make ispell.tgz
+# Get ISPELL dict
 
 LIB=/usr/lib
 
 #ISPELLLIB=/usr/lib/ispell
 ISPELLLIB=`ispell -vv | grep 'LIBDIR' | sed -e 's/.*"\(.*\)"/\1/'`
 
-BASE= port.aff port.dic np.dic inf.dic irregulares.txt verb.dic \
-      makefile all-irr.dic pos2iso jsp2isp.pl README irr2perl
-
-#--------------------------------------------------------------------- 
-
-todo: ispell
+#BASE= port.aff port.dic np.dic inf.dic irregulares.txt verb.dic \
+      makefile all-irr.dic pos2iso jsp2isp.pl README irr2perl # NOT USED?
 
 #----------------------------------------------------------------------------
 # ispell
@@ -59,14 +43,11 @@ $P/$D.aff $P/$D.dic: ../port.dic ../port.aff
 	perl jsp2isp.pl ../port.aff > $P/$D.aff 
 	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/_$D.dic
 #	munchlist -l $P/$D.aff $P/_$D.dic > $P/_.dic #a gerar formas inválidas!
-	cp $P/_$D.dic $P/_.dic
-#	A seguinte linha serve para eliminar a regra K das terminações "GUIR" que o munchlist produz. 8 verbos são afectados. Afecta igualmente o Myspell
-#	perl -i -npe 'if (m!guir/!) {s/K//}' $P/_.dic #K na word ?
-	sort $P/_.dic > $P/$D.dic
+	perl -i retiraRegra.pl PL $P/_$D.dic #Remove P and L RULE and extra /
+	perl compact.pl $P/_$D.dic > $P/$D.dic #Remove lemas duplicados
+
 	rm -f $P/_$D.dic $P/_.dic
 	cp ver ispell.port.spec $P
-
-
 
 ../port.dic:
 	cd ..; make port.dic
