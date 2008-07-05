@@ -33,7 +33,12 @@ BASE= port.aff $(PTDIC) irregulares.txt aux_verb.dic \
 
 NATURA_WWW=/home/natura/download/sources/Dictionaries
 
+#Documentation
+
 FDOC=DOC/generatedDOC
+
+#Should prepare locale env ?
+
 
 #-------------------------------------------------------------------
 # Instructions
@@ -106,7 +111,7 @@ IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
 tgz:
 	make clean
 	cd .. ; tar -cvzf jspell.pt.tgz jspell.pt ; mv jspell.pt.tgz jspell.pt/dicionario.pt.tgz
-	
+
 jspell.port.tgz: $(BASE)
 	rm -rf jspell.port-`./ver`
 	mkdir -p jspell.port-`./ver`
@@ -336,7 +341,7 @@ chuveiro-install: #wordlist-diff
 	cp j*.gz $(NATURA_WWW)/jspell
 	ln -sf $(NATURA_WWW)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_WWW)/jspell/jspell.$(ABR)-latest.tar.gz
 	ln -sf $(NATURA_WWW)/jspell/jspell.$(ABR)-$(DATE)-bin.tar.gz $(NATURA_WWW)/jspell/jspell.$(ABR)-bin-latest.tar.gz
-	
+
 	cp aspell6*$(DATE)*bz2 $(NATURA_WWW)/aspell6
 	ln -sf $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
 
