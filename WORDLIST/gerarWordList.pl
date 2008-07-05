@@ -9,7 +9,8 @@
 
 my $dict = shift or die;
 
-open(F,qq{awk -F / '{print \$1 "/" \$3}' $dict | jspell -d ../port.hash -e -o '' |}) or die;
+#port.hash actualizado?
+open(F,qq{awk -F / '{print \$1 "/" \$3}' $dict | jspell -e -o '' |}) or die;
 open(F1,"| grep -v '#' |grep '[a-zA-Zайубъ]' | LANG=C sort -u") or die;
 
 my $i;
