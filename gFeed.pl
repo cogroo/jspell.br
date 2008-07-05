@@ -27,19 +27,17 @@ my $feedfile=File::Spec->catfile($DIC,'atom.xml');
 #my $feedfile=File::Spec->catfile($DIC,'_atom.xml');
 
 $XML::Atom::DefaultVersion = "1.0";
-#$XML::Atom::ForceUnicode = 1;
 
 my $feed = XML::Atom::Feed->new(Version => 1.0);
 my $data=time2str("%Y-%m-%dT%XZ",time);
 my $data2=time2str("%Y%m%d",time);
 
-#$feed->version; # 1.0
 $feed->title("Dicionários Opensource para o português");
 
 my $mlink = XML::Atom::Link->new;
 $mlink->type('text/html');
 $mlink->rel('alternate');
-$mlink->href('http://natura.di.uminho.pt/wiki/index.cgi?Dicion%E1rios');
+$mlink->href('http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main');
 $feed->add_link($mlink);
 
 my $author = XML::Atom::Person->new;
@@ -69,7 +67,7 @@ my $l=time2str("%Y%m%d",time);
 
 $entry->title("Nova versão do dicionário: jspell.pt-$l");
 
-my $rsvn="<img src='http://natura.di.uminho.pt/wiki/theme/eeng/css/logo.png'/>";
+my $rsvn="<img src='http://natura.di.uminho.pt/download/sources/Dictionaries/eeng.png'/>";
 $rsvn.="<h3>Departamento de Informática da Universidade do Minho</h3>";
 $rsvn.="<h4>Projecto <a href='http://natura.di.uminho.pt/'>Natura</a> - Dicionários de português europeu (pt_PT)</h4>";
 $rsvn.="<p>Disponíveis nos formatos: [";
@@ -117,7 +115,7 @@ $rsvn=~s/Index:.+\//<br\/><b>Ficheiro<\/b>: /g;
 $rsvn=~s/Index: /<br\/><b>Ficheiro<\/b>: /g; #irregulares.txt
 #$rsvn=~s!(---|\+\+\+).+?([^/]+\n)!$1$2!g;
 $rsvn.="</code>\n";
-$rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/wiki/index.cgi?Dicion%E1rios'>Dicionários no Natura</a>.</p>\n";
+$rsvn.="<p>Para mais informações consultar: <a href='http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main'>Dicionários no Natura</a>.</p>\n";
 $rsvn=~s/\n/<br\/>\n/g;
 
 $entry->content($rsvn);
@@ -132,7 +130,6 @@ my $xml = $feed->as_xml;
 
 ######################################################
 
-#open $F, ">:utf8",$feedfile or warn "Não foi possível criar o ficheiro $feedfile - $!";
 open $F, ">",$feedfile or warn "Não foi possível criar o ficheiro $feedfile - $!";
 print $F $xml;
 close $F;
