@@ -841,7 +841,7 @@ agemado/#a//
 agência/#nf/p/
 agenciar/#vt/LP/
 agenda/#nf/p/
-agendar/#vt/XYPLM/
+agendar/#vt/XYPLMR/
 agente/#nm/p/
 agigantar/#vt/XYPLM/
 ágil/#an/a/
@@ -6369,6 +6369,7 @@ cardioscopia/#nf//
 cardioscópio/#nm//
 cardiovascular/#a/p/
 cardioversão/#nf//
+cardioversor/#nm//
 cardo/#nm//
 cardume/#nm/p/
 careca/#hn/p/
@@ -12565,8 +12566,8 @@ empalhar/#vt/XYPLcMD/
 empalheirar/#vt/XYPL/
 empalidecer/#vn/XYPL/
 empanada/#nf//
-empanar/#vn/XYPLM/
-empancar/#vn/XYPLM/
+empanar/#vn/XYPLMS/
+empancar/#vn/XYPLMS/
 empandeirado/#a/fp/
 empantanar/#vt/XYPL/
 empantufar/#vt/XYPL/
@@ -15261,7 +15262,11 @@ fiar/#vn/XYPLcDv/
 fiasco/#nm/p/
 fiável/#a/d/
 fibra/#nf/p/
+fibrilação/$fibrilhar$#nf/S/    #med
 fibrilar/#an/c/
+fibrilar/$fibrilhar$#vt/S/   #med
+fibrilhar/#vt/S/     #med
+fibrilhação/#nf/S/   #med
 fibriloso/#a//
 fibrocitológico/#a/fp/
 fibróide/#an//
