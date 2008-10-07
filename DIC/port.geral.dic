@@ -128,6 +128,7 @@ abobadado/#a/fp/
 abóbada/#nf/p/
 abobar/#vt/XYPL/
 aboboral/#nm//
+aboborar/#vt/XY/
 abóbora/#nf/p/
 aboboreira/#nf/p/
 abocamento/#nm/p/
@@ -1708,6 +1709,7 @@ analista/#hn/p/
 analítico/#a/pfH/
 analogamente/#a//
 analogia/#nf/pr/
+analogicamente/$analogia$#av//
 analogismo/#nm/p/
 analogístico/#a//
 análogo/#a/fp/
@@ -5787,7 +5789,7 @@ calafetar/#vt/XYPLcMD/
 calafeto/#nm//
 calafrio/#nm/p/
 calamidade/#nf/p/
-calamitoso/#a//
+calamitoso/#a/f/
 cala/#nf//
 calão/#nm//
 calar/#vn/XYPLMD/
@@ -10908,7 +10910,7 @@ desempenho/#nm/p/
 desemprego/#nm//
 desencabelar/#vt/XYPL/
 desencachar/#vt/XYPL/
-desencadear/#vt/ZYPLMn/
+desencadear/#vt/ZYPLMnD/
 desencaixe/#nm//
 desencaixilhar/#vt/XYPL/
 desencalhe/#nm//
@@ -14515,7 +14517,7 @@ exemplar/#hn/pmd/
 exemplaridade/#nf/p/
 exemplarismo/#nm/p/
 exemplificar/#vt/XYPLc/
-exemplificativo/#a//
+exemplificativo/#a/fpm/
 exemplo/#nm/p/
 exequibilidade/#nf/p/
 exequível/#an/dpm/
@@ -25563,7 +25565,8 @@ perpetrar/#vt/XYPLcD/
 perpetuador/#hm//
 perpetuar/#vt/XYPLcBD/
 perpetuidade/#nf/p/
-perpétuo/#avt/fpm/
+perpétuo/#avt/fp/
+perpetuamente/$perpétuo$#av//   #Jspell dá perpétuamente, e não perpetuamente
 perplexo/#a/pdf/
 persa/#hm2/p/
 perscrutador/#hm//
@@ -29979,6 +29982,7 @@ sanativo/#a//
 sanatório/#nm//
 sanatorizar/#vt/XYPL/
 sanção/#nf/p/
+sanca/#nf//
 sancionador/#hm//
 sancionar/#vt/XYPLD/
 sancionatório/#a/p/
