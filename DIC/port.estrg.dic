@@ -16,6 +16,7 @@ croissant/#nm,ORIG=fra//
 czarina/#nf,ORIG=pol/p/
 czar/#nm,ORIG=pol/pti/
 designer/#nm,ORIG=ing//
+designers/$designer$CAT=nc,G=m,N=p,ORIG=ing//
 design/#nm,ORIG=ing//
 doping/#nm,ORIG=ing/A/
 download/#nm,ORIG=ing//
@@ -56,7 +57,8 @@ réveillon/#nm,ORIG=fra//
 rock/#nm,ORIG=ing//
 shiatsu/#nm,ORIG=jap//
 show/#nm,ORIG=ing//
-skate/#nm,ORIG=ing//
+shows/$show$G=m,CAT=nc,N=p,ORIG=ing//
+skate/#nm,ORIG=ing/p/
 slalom/#nm,ORIG=nor//
 slide/#nm,ORIG=ing/p/
 slogan/#nm,ORIG=ing/p/

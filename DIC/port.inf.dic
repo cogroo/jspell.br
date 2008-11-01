@@ -42,6 +42,7 @@ Internet/CAT=nc,N=s//
 Java/Cat=np,G=m//
 LaTeX/#tsm//
 link/#nm,ORIG=ing//
+links/$link$CAT=nc,N=p,G=s,ORIG=ing//
 Linux/CAT=np,G=m//
 LISP/#tsm//
 Macintosh/CAT=np,G=f,N=s//
@@ -75,7 +76,7 @@ SGML/#tsm//
 shell/#nf,ORIG=ing//
 site/#nm,ORIG=ing/p/
 socket/#nm,ORIG=ing/a/
-software/#nm,ORIG=ing//
+software/#nm,ORIG=ing/p/
 SQL/#tsm//
 string/#nf,ORIG=ing/p/
 supercomputador/#nm,N=s/p/
@@ -87,6 +88,7 @@ USB/#tsm//
 VDM/#tsm//
 virtualização/#nf//
 webmaster/#nm,ORIG=ing//
+webmasters/$webmaster$N=p,ORIG=ing//
 web/#nf,ORIG=ing//
 Windows/CAT=nc,G=m,N=s//
 wireless/#nm,ORIG=ing//
