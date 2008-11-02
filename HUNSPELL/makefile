@@ -11,17 +11,24 @@ D=$P
 DATE=`date +%Y%m%d`
 
 hunspell: ../port.dic
-#extrair do Jspell
+#extrair do Jspell a morfologia
 	perl obtemRef.pl ../port.dic > h.tmp
 	perl expandeRef.pl h.tmp ../port.dic > $P.dic
 	perl genDicHunspell.pl $P.dic > _.dic
 
 #converter formato do ficheiro de afixos
-	LANG="pt_PT" perl genAffHunspell.pl ../port.aff > $D/$P.aff
-	cat $P.replace >> $D/$P.aff
+	perl genAffHunspell.pl ../port.aff > _$P.aff
+	cat $P.replace >> _$P.aff
 
-	wc -l _.dic | cut -c 1-5 > $D/$P.dic
-	cat _.dic >> $D/$P.dic
+	wc -l _.dic | cut -c 1-5 > _$P.dic
+	cat _.dic >> _$P.dic
+
+#	mv _$P.dic $D/$P.dic
+#	mv _$P.aff $D/$P.aff
+
+#ISO-8859-1 > UTF-8
+	iconv -f iso8859-1 -t utf-8 _$P.dic > $D/$P.dic
+	iconv -f iso8859-1 -t utf-8 _$P.aff > $D/$P.aff
 
 hunspell-tgz: tgz
 
@@ -47,6 +54,6 @@ install :
 
 clean : 
 	rm -rf hunspell-$(P)-$(DATE)
-	rm -rf *~ $D/*~ $D/*aff *gz $D/*~ $D/*dic *zip *aff *dic *tmp
+	rm -rf *~ $D/*~ $D/*aff *gz $D/*~ $D/*dic *zip *aff *dic *tmp $D/_*
 
 
