@@ -17,7 +17,7 @@ hunspell: ../port.dic
 	perl genDicHunspell.pl $P.dic > _.dic
 
 #converter formato do ficheiro de afixos
-	perl genAffHunspell.pl ../port.aff > _$P.aff
+	LC_ALL=pt_PT.iso88591 perl genAffHunspell.pl ../port.aff > _$P.aff
 	cat $P.replace >> _$P.aff
 
 	wc -l _.dic | cut -c 1-5 > _$P.dic
