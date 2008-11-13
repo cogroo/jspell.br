@@ -8,7 +8,7 @@ URL_DICS_PT http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main
 URL_MAINT http://linguateca.di.uminho.pt/webjspell/jsolmail.pl
 MAINTAINERS José João Almeida$$<jj@di.uminho.pt>|Alberto Simões$$<ambs@alfarrabio.di.uminho.pt>|Rui Vilela$$<ruivilela@di.uminho.pt>
 CONTRIB Alberto Simões|Rui Vilela
-URL_JSPELL http://natura.di.uminho.pt/wiki/index.cgi?jspell
+URL_JSPELL http://natura.di.uminho.pt/wiki/doku.php?id=ferramentas:jspell
 URL_WJS http://linguateca.di.uminho.pt/webjspell
 URL_REP_JSPELL http://natura.di.uminho.pt/download/sources/Dictionaries/jspell
 
