@@ -20,4 +20,4 @@ To install :
 
 
 Latest versions, suggestions, information at
-	http://natura.di.uminho.pt/wiki/index.cgi?Dictionary
+	http://natura.di.uminho.pt/
