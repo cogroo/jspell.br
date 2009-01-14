@@ -291,106 +291,106 @@ D O R		>  AMENTE		; "CAT=adv"
 Á G I C O	>  -ÁGICO,AGICAMENTE	; "CAT=adv"	# tragicamente
 
 flag *q:	; "CAT=hn"
-O L O G I A	>	-OLOGIA,ÓLOGO	; "G=m,N=s"	# astrólogo
-O L O G I A	>	-OLOGIA,ÓLOGA	; "G=f,N=s"     # astróloga
-O L O G I A	>	-OLOGIA,ÓLOGOS	; "G=m,N=p"	# astrólogos
-O L O G I A	>	-OLOGIA,ÓLOGAS	; "G=f,N=p"	# astrólogas
+O L O G I A	>	-OLOGIA,ÓLOGO	; "CAT=a_nc,G=m,N=s"	# astrólogo
+O L O G I A	>	-OLOGIA,ÓLOGA	; "CAT=a_nc,G=f,N=s"     # astróloga
+O L O G I A	>	-OLOGIA,ÓLOGOS	; "CAT=a_nc,G=m,N=p"	# astrólogos
+O L O G I A	>	-OLOGIA,ÓLOGAS	; "CAT=a_nc,G=f,N=p"	# astrólogas
 
-A F I A		>       -AFIA,ÁFICO     ; "G=m,N=s"     # etnográfico
-A F I A		>	-AFIA,ÁFICA     ; "G=f,N=s"     # etnográfica
-A F I A		>       -AFIA,ÁFICOS    ; "G=m,N=p"     # etnográficos
-A F I A		>       -AFIA,ÁFICAS    ; "G=f,N=p"     # etnográficas
+A F I A		>       -AFIA,ÁFICO     ; "CAT=adj,G=m,N=s"     # etnográfico
+A F I A		>	-AFIA,ÁFICA     ; "CAT=adj,G=f,N=s"     # etnográfica
+A F I A		>       -AFIA,ÁFICOS    ; "CAT=adj,G=m,N=p"     # etnográficos
+A F I A		>       -AFIA,ÁFICAS    ; "CAT=adj,G=f,N=p"     # etnográficas
 
-O M A N I A	>	-OMANIA,ÓMANO   ; "G=m,N=s"	# melómano
-O M A N I A     >       -OMANIA,ÓMANA   ; "G=m,N=s"   	# melómana
-O M A N I A     >       -OMANIA,ÓMANOS  ; "G=m,N=s"   	# melómanos
-O M A N I A     >       -OMANIA,ÓMANAS  ; "G=m,N=s"	# melómanas
+O M A N I A	>	-OMANIA,ÓMANO   ; "CAT=a_nc,G=m,N=s"	# melómano
+O M A N I A     >       -OMANIA,ÓMANA   ; "CAT=a_nc,G=m,N=s"   	# melómana
+O M A N I A     >       -OMANIA,ÓMANOS  ; "CAT=a_nc,G=m,N=s"   	# melómanos
+O M A N I A     >       -OMANIA,ÓMANAS  ; "CAT=a_nc,G=m,N=s"	# melómanas
 
-O F O B I A	>	-OFOBIA,ÓFOBO	; "G=m,N=s"	# xenófobo
-O F O B I A     >       -OFOBIA,ÓFOBA   ; "G=f,N=s"     # xenófoba
-O F O B I A     >       -OFOBIA,ÓFOBOS	; "G=m,N=p"	# xenófobos
-O F O B I A     >       -OFOBIA,ÓFOBAS	; "G=f,N=p"	# xenófobas
+O F O B I A	>	-OFOBIA,ÓFOBO	; "CAT=adj,G=m,N=s"	# xenófobo
+O F O B I A     >       -OFOBIA,ÓFOBA   ; "CAT=adj,G=f,N=s"     # xenófoba
+O F O B I A     >       -OFOBIA,ÓFOBOS	; "CAT=adj,G=m,N=p"	# xenófobos
+O F O B I A     >       -OFOBIA,ÓFOBAS	; "CAT=adj,G=f,N=p"	# xenófobas
 
-O F I L I A	>	-OFILIA,ÓFILO	; "G=m,N=s"	# columbófilo
-O F I L I A     >       -OFILIA,ÓFILA   ; "G=f,N=s"     # columbófila
-O F I L I A     >       -OFILIA,ÓFILOS	; "G=m,N=p"     # columbófilos
-O F I L I A     >       -OFILIA,ÓFILAS	; "G=f,N=p"     # columbófilas
+O F I L I A	>	-OFILIA,ÓFILO	; "CAT=adj,G=m,N=s"	# columbófilo
+O F I L I A     >       -OFILIA,ÓFILA   ; "CAT=adj,G=f,N=s"     # columbófila
+O F I L I A     >       -OFILIA,ÓFILOS	; "CAT=adj,G=m,N=p"     # columbófilos
+O F I L I A     >       -OFILIA,ÓFILAS	; "CAT=adj,G=f,N=p"     # columbófilas
 
-C Í D I O	>	-ÍDIO,IDA	; "G=_,N=s"	# homicida
-C Í D I O	>	-ÍDIO,IDAS	; "G=_,N=p"	# homicidas
+C Í D I O	>	-ÍDIO,IDA	; "CAT=adj,G=_,N=s"	# homicida
+C Í D I O	>	-ÍDIO,IDAS	; "CAT=adj,G=_,N=p"	# homicidas
 
-P A T I A	>	-IA,A		; "G=_,N=s"	# telepata	
-P A T I A	>	-IA,AS		; "G=_,N=p"	# telepatas
+P A T I A	>	-IA,A		; "CAT=adj,G=_,N=s"	# telepata	
+P A T I A	>	-IA,AS		; "CAT=adj,G=_,N=p"	# telepatas
 
-C U L T U R A   >       -URA,OR         ; "G=m,N=s"     # escultor      
-C U L T U R A   >       -URA,ORA        ; "G=m,N=s"     # escultora  
-C U L T U R A   >       -URA,ORES       ; "G=m,N=s"     # escultores
-C U L T U R A   >       -URA,ORAS       ; "G=m,N=s"     # escultoras 
+C U L T U R A   >       -URA,OR         ; "CAT=a_nc,G=m,N=s"     # escultor      
+C U L T U R A   >       -URA,ORA        ; "CAT=a_nc,G=m,N=s"     # escultora  
+C U L T U R A   >       -URA,ORES       ; "CAT=a_nc,G=m,N=s"     # escultores
+C U L T U R A   >       -URA,ORAS       ; "CAT=a_nc,G=m,N=s"     # escultoras 
 
-C R A C I A     >       -CIA,TA         ; "G=_,N=s"     # democrata
-C R A C I A     >       -CIA,TAS        ; "G=_,N=p"     # democratas
+C R A C I A     >       -CIA,TA         ; "CAT=a_nc,G=_,N=s"     # democrata
+C R A C I A     >       -CIA,TAS        ; "CAT=a_nc,G=_,N=p"     # democratas
 
-E Í S M O	>	-SMO,STA	; "G=_,N=s"	# politeísta
-E Í S M O 	>	-SMO,STAS	; "G=_,N=p"	# politeístas
+E Í S M O	>	-SMO,STA	; "CAT=adj,G=_,N=s"	# politeísta
+E Í S M O 	>	-SMO,STAS	; "CAT=adj,G=_,N=p"	# politeístas
 
 flag *r:        ; "CAT=hn"
-L O G I A       >       -OGIA,ÓGICO     ; "G=m,N=s"     # astrólogico
-L O G I A       >       -OGIA,ÓGICA     ; "G=f,N=s"     # astrólogica
-L O G I A       >       -OGIA,ÓGICOS    ; "G=m,N=p"     # astrólogicos
-L O G I A       >       -OGIA,ÓGICAS    ; "G=f,N=p"     # astrólogicas
+L O G I A       >       -OGIA,ÓGICO     ; "CAT=adj,G=m,N=s"     # astrólogico
+L O G I A       >       -OGIA,ÓGICA     ; "CAT=adj,G=f,N=s"     # astrólogica
+L O G I A       >       -OGIA,ÓGICOS    ; "CAT=adj,G=m,N=p"     # astrólogicos
+L O G I A       >       -OGIA,ÓGICAS    ; "CAT=adj,G=f,N=p"     # astrólogicas
 
-O G R A F I A	>	-OGRAFIA,ÓGRAFO	 ; "G=m,N=s"	# geógrafo
-O G R A F I A   >       -OGRAFIA,ÓGRAFA  ; "G=f,N=s"    # geógrafa
-O G R A F I A   >       -OGRAFIA,ÓGRAFOS ; "G=m,N=p"    # geógrafo
-O G R A F I A   >       -OGRAFIA,ÓGRAFAS ; "G=f,N=p"    # geógrafas
+O G R A F I A	>	-OGRAFIA,ÓGRAFO	 ; "CAT=a_nc,G=m,N=s"	# geógrafo
+O G R A F I A   >       -OGRAFIA,ÓGRAFA  ; "CAT=a_nc,G=f,N=s"    # geógrafa
+O G R A F I A   >       -OGRAFIA,ÓGRAFOS ; "CAT=a_nc,G=m,N=p"    # geógrafo
+O G R A F I A   >       -OGRAFIA,ÓGRAFAS ; "CAT=a_nc,G=f,N=p"    # geógrafas
 
-N O M I A	>	-OMIA,ÓMICO	 ; "G=m,N=s"	# económico
-N O M I A       >       -OMIA,ÓMICA      ; "G=f,N=s"    # económica
-N O M I A       >       -OMIA,ÓMICOS     ; "G=m,N=p"    # económicos
-N O M I A       >       -OMIA,ÓMICAS     ; "G=f,N=p"    # económicas
+N O M I A	>	-OMIA,ÓMICO	 ; "CAT=adj,G=m,N=s"	# económico
+N O M I A       >       -OMIA,ÓMICA      ; "CAT=adj,G=f,N=s"    # económica
+N O M I A       >       -OMIA,ÓMICOS     ; "CAT=adj,G=m,N=p"    # económicos
+N O M I A       >       -OMIA,ÓMICAS     ; "CAT=adj,G=f,N=p"    # económicas
 
-M A N I A       >       -IA,ÍACO     	 ; "G=m,N=s"    # maníaco  
-M A N I A       >       -IA,ÍACA     	 ; "G=m,N=s"    # maníaca   
-M A N I A       >       -IA,ÍACOS        ; "G=m,N=s"    # maníacos    
-M A N I A       >       -IA,ÍACAS        ; "G=m,N=s"    # maníacas  
+M A N I A       >       -IA,ÍACO     	 ; "CAT=adj,G=m,N=s"    # maníaco  
+M A N I A       >       -IA,ÍACA     	 ; "CAT=adj,G=m,N=s"    # maníaca   
+M A N I A       >       -IA,ÍACOS        ; "CAT=adj,G=m,N=s"    # maníacos    
+M A N I A       >       -IA,ÍACAS        ; "CAT=adj,G=m,N=s"    # maníacas  
 
-C R A C I A	>	-ACIA,ÁTICO 	 ; "G=m,N=s"	# democrático
-C R A C I A     >       -ACIA,ÁTICA      ; "G=f,N=s"    # democrática
-C R A C I A     >       -ACIA,ÁTICOS     ; "G=m,N=p"    # democráticos
-C R A C I A     >       -ACIA,ÁTICAS     ; "G=f,N=p"    # democráticas
+C R A C I A	>	-ACIA,ÁTICO 	 ; "CAT=adj,G=m,N=s"	# democrático
+C R A C I A     >       -ACIA,ÁTICA      ; "CAT=adj,G=f,N=s"    # democrática
+C R A C I A     >       -ACIA,ÁTICOS     ; "CAT=adj,G=m,N=p"    # democráticos
+C R A C I A     >       -ACIA,ÁTICAS     ; "CAT=adj,G=f,N=p"    # democráticas
 
-I C U L T U R A	>	-ICULTURA,ÍCOLA	 ; "G=_,N=s"	# piscícola
-I C U L T U R A >       -ICULTURA,ÍCOLAS ; "G=_,N=p"    # piscícolas
+I C U L T U R A	>	-ICULTURA,ÍCOLA	 ; "CAT=adj,G=_,N=s"	# piscícola
+I C U L T U R A >       -ICULTURA,ÍCOLAS ; "CAT=adj,G=_,N=p"    # piscícolas
 
-A R Q U I A	>	-ARQUIA,ÁRQUICO	 ; "G=m,N=s"	# monárquico
-A R Q U I A     >       -ARQUIA,ÁRQUICA  ; "G=f,N=s"    # monárquica
-A R Q U I A     >       -ARQUIA,ÁRQUICOS ; "G=m,N=p"    # monárquicos
-A R Q U I A     >       -ARQUIA,ÁRQUICAS ; "G=f,N=p"    # monárquicas
+A R Q U I A	>	-ARQUIA,ÁRQUICO	 ; "CAT=adj,G=m,N=s"	# monárquico
+A R Q U I A     >       -ARQUIA,ÁRQUICA  ; "CAT=adj,G=f,N=s"    # monárquica
+A R Q U I A     >       -ARQUIA,ÁRQUICOS ; "CAT=adj,G=m,N=p"    # monárquicos
+A R Q U I A     >       -ARQUIA,ÁRQUICAS ; "CAT=adj,G=f,N=p"    # monárquicas
 
-F O B I A	>	-OBIA,ÓBICO	; "G=m,N=s"	# claustrofóbico
-F O B I A       >       -OBIA,ÓBICA	; "G=f,N=s"     # claustrofóbica
-F O B I A       >       -OBIA,ÓBICOS	; "G=m,N=p"     # claustrofóbicos
-F O B I A       >       -OBIA,ÓBICAS	; "G=f,N=p"     # claustrofóbicas
+F O B I A	>	-OBIA,ÓBICO	; "CAT=adj,G=m,N=s"	# claustrofóbico
+F O B I A       >       -OBIA,ÓBICA	; "CAT=adj,G=f,N=s"     # claustrofóbica
+F O B I A       >       -OBIA,ÓBICOS	; "CAT=adj,G=m,N=p"     # claustrofóbicos
+F O B I A       >       -OBIA,ÓBICAS	; "CAT=adj,G=f,N=p"     # claustrofóbicas
 
-P A T I A	>	-ATIA,ÁTICO	; "G=m,N=s"	# telepático
-P A T I A       >       -ATIA,ÁTICA     ; "G=f,N=s"     # telepática
-P A T I A       >       -ATIA,ÁTICOS    ; "G=m,N=p"     # telepáticos
-P A T I A       >       -ATIA,ÁTICAS    ; "G=f,N=p"     # telepáticas
+P A T I A	>	-ATIA,ÁTICO	; "CAT=adj,G=m,N=s"	# telepático
+P A T I A       >       -ATIA,ÁTICA     ; "CAT=adj,G=f,N=s"     # telepática
+P A T I A       >       -ATIA,ÁTICOS    ; "CAT=adj,G=m,N=p"     # telepáticos
+P A T I A       >       -ATIA,ÁTICAS    ; "CAT=adj,G=f,N=p"     # telepáticas
 
-M E T R I A	>	-ETRIA,ÉTRICO	; "G=m,N=s"	# isométrico
-M E T R I A     >       -ETRIA,ÉTRICA   ; "G=m,N=s"     # isométrica
-M E T R I A     >       -ETRIA,ÉTRICOS  ; "G=f,N=p"     # isométricos
-M E T R I A     >       -ETRIA,ÉTRICAS  ; "G=f,N=p"     # isométricas
+M E T R I A	>	-ETRIA,ÉTRICO	; "CAT=adj,G=m,N=s"	# isométrico
+M E T R I A     >       -ETRIA,ÉTRICA   ; "CAT=adj,G=m,N=s"     # isométrica
+M E T R I A     >       -ETRIA,ÉTRICOS  ; "CAT=adj,G=f,N=p"     # isométricos
+M E T R I A     >       -ETRIA,ÉTRICAS  ; "CAT=adj,G=f,N=p"     # isométricas
 
-M O R F I A	>	-ORFIA,ÓRFICO	; "G=m,N=s"	# isomórfico
-M O R F I A     >       -ORFIA,ÓRFICA   ; "G=f,N=s"     # isomórfica
-M O R F I A     >       -ORFIA,ÓRFICOS  ; "G=m,N=p"     # isomórficos
-M O R F I A     >       -ORFIA,ÓRFICAS  ; "G=f,N=p"     # isomórficas
+M O R F I A	>	-ORFIA,ÓRFICO	; "CAT=adj,G=m,N=s"	# isomórfico
+M O R F I A     >       -ORFIA,ÓRFICA   ; "CAT=adj,G=f,N=s"     # isomórfica
+M O R F I A     >       -ORFIA,ÓRFICOS  ; "CAT=adj,G=m,N=p"     # isomórficos
+M O R F I A     >       -ORFIA,ÓRFICAS  ; "CAT=adj,G=f,N=p"     # isomórficas
 
-M O R F I S M O	>	-MORFISMO,MÓRFICO  ; "G=m,N=s"	 # isomórfico
-M O R F I S M O >       -MORFISMO,MÓRFICA  ; "G=f,N=s"   # isomórfico
-M O R F I S M O >       -MORFISMO,MÓRFICOS ; "G=m,N=p"   # isomórfico
-M O R F I S M O >       -MORFISMO,MÓRFICAS ; "G=f,N=p"   # isomórfico
+M O R F I S M O	>	-MORFISMO,MÓRFICO  ; "CAT=adj,G=m,N=s"	 # isomórfico
+M O R F I S M O >       -MORFISMO,MÓRFICA  ; "CAT=adj,G=f,N=s"   # isomórfico
+M O R F I S M O >       -MORFISMO,MÓRFICOS ; "CAT=adj,G=m,N=p"   # isomórfico
+M O R F I S M O >       -MORFISMO,MÓRFICAS ; "CAT=adj,G=f,N=p"   # isomórfico
 
 #----------------------------------------
 # íssimo
@@ -493,31 +493,31 @@ M	>	-M,NISMOS	; "FSEM=ismo"	# latinismos
 #-----------------------------------------
 # ista
 flag *t:          ; "CAT=nc,N=s"      #ista
-[^CÇÃI]O    >     -O,ISTA       ; "FSEM=ista"  # porto->portista
-C O         >    -CO,QUISTA     ; "FSEM=ista"  # bloco->bloquista
-Ç O         >    -ÇO,CISTA      ; "FSEM=ista"  # adereço->aderecista
-Ç Ã O       >   -ÇÃO,CIONISTA   ; "FSEM=ista"  # abolição->abolicionista
-S Ã O	    >   -SÃO,SIONISTA	; "FSEM=ista"  # percussão->percussionista	
-I O		> -IO,ÍSTA	; "FSEM=ista"	# ensaísta
-[^IÇG] A    >     -A,ISTA       ; "FSEM=ista"  # bomba->bombista
-I A         >     -A,STA        ; "FSEM=ista"  # anarquia->anarquista
-Ç A         >    -ÇA,CISTA      ; "FSEM=ista"  # cobrança->cobrancista
-G A         >     -A,UISTA      ; "FSEM=ista"  # borga->borguista
-E           >     -E,ISTA       ; "FSEM=ista"  # alarme->alarmista
-[LR]        >        ISTA       ; "FSEM=ista"  # flor->florista
+[^CÇÃI]O    >     -O,ISTA       ; "CAT=a_nc,FSEM=ista"  # porto->portista
+C O         >    -CO,QUISTA     ; "CAT=a_nc,FSEM=ista"  # bloco->bloquista
+Ç O         >    -ÇO,CISTA      ; "CAT=a_nc,FSEM=ista"  # adereço->aderecista
+Ç Ã O       >   -ÇÃO,CIONISTA   ; "CAT=a_nc,FSEM=ista"  # abolição->abolicionista
+S Ã O	    >   -SÃO,SIONISTA	; "CAT=a_nc,FSEM=ista"  # percussão->percussionista	
+I O		> -IO,ÍSTA	; "CAT=a_nc,FSEM=ista"	# ensaísta
+[^IÇG] A    >     -A,ISTA       ; "CAT=a_nc,FSEM=ista"  # bomba->bombista
+I A         >     -A,STA        ; "CAT=a_nc,FSEM=ista"  # anarquia->anarquista
+Ç A         >    -ÇA,CISTA      ; "CAT=a_nc,FSEM=ista"  # cobrança->cobrancista
+G A         >     -A,UISTA      ; "CAT=a_nc,FSEM=ista"  # borga->borguista
+E           >     -E,ISTA       ; "CAT=a_nc,FSEM=ista"  # alarme->alarmista
+[LR]        >        ISTA       ; "CAT=a_nc,FSEM=ista"  # flor->florista
 
-[^CÇÃ]O     >     -O,ISTAS      ; "N=p,FSEM=ista"  # porto->portistas
-C O         >    -CO,QUISTAS    ; "N=p,FSEM=ista"  # bloco->bloquistas
-Ç O         >    -ÇO,CISTAS     ; "N=p,FSEM=ista"  # adereço->aderecistas
-Ç Ã O       >   -ÇÃO,CIONISTAS  ; "N=p,FSEM=ista"  # abolição->abolicionistas
-S Ã O	    >   -SÃO,SIONISTAS  ; "N=p,FSEM=ista"  # percussão->percussionistas
-I O		> -IO,ÍSTAS	; "N=p,FSEM=ista"	# ensaístas
-[^IÇG] A    >     -A,ISTAS      ; "N=p,FSEM=ista"  # bomba->bombistas
-I A         >     -A,STAS       ; "N=p,FSEM=ista"  # anarquia->anarquistas
-Ç A         >    -ÇA,CISTAS     ; "N=p,FSEM=ista"  # cobrança->cobrancistas
-G A         >     -A,UISTAS     ; "N=p,FSEM=ista"  # borga->borguistas
-E           >     -E,ISTAS      ; "N=p,FSEM=ista"  # alarme->alarmistas
-[LR]        >        ISTAS      ; "N=p,FSEM=ista"  # flor->floristas
+[^CÇÃ]O     >     -O,ISTAS      ; "CAT=a_nc,N=p,FSEM=ista"  # porto->portistas
+C O         >    -CO,QUISTAS    ; "CAT=a_nc,N=p,FSEM=ista"  # bloco->bloquistas
+Ç O         >    -ÇO,CISTAS     ; "CAT=a_nc,N=p,FSEM=ista"  # adereço->aderecistas
+Ç Ã O       >   -ÇÃO,CIONISTAS  ; "CAT=a_nc,N=p,FSEM=ista"  # abolição->abolicionistas
+S Ã O	    >   -SÃO,SIONISTAS  ; "CAT=a_nc,N=p,FSEM=ista"  # percussão->percussionistas
+I O		> -IO,ÍSTAS	; "CAT=a_nc,N=p,FSEM=ista"	# ensaístas
+[^IÇG] A    >     -A,ISTAS      ; "CAT=a_nc,N=p,FSEM=ista"  # bomba->bombistas
+I A         >     -A,STAS       ; "CAT=a_nc,N=p,FSEM=ista"  # anarquia->anarquistas
+Ç A         >    -ÇA,CISTAS     ; "CAT=a_nc,N=p,FSEM=ista"  # cobrança->cobrancistas
+G A         >     -A,UISTAS     ; "CAT=a_nc,N=p,FSEM=ista"  # borga->borguistas
+E           >     -E,ISTAS      ; "CAT=a_nc,N=p,FSEM=ista"  # alarme->alarmistas
+[LR]        >        ISTAS      ; "CAT=a_nc,N=p,FSEM=ista"  # flor->floristas
 
 #-----------------------------------------
 # inho
