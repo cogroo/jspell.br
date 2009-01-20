@@ -3445,7 +3445,7 @@ atijolar/#vt/XYPL/
 atilhos/#nm//
 atinar/#vn/XYPL/
 atinente/#an/p/
-atingir/#vt/XYPLv/
+atingir/#vt/XYPLvM/
 atino/#nm//
 atintar/#v/XY/
 atípico/#a/fp/
@@ -3584,6 +3584,7 @@ audiometria/#nf/pr/
 audiómetro/#nm/p/
 áudio/#nm/p/
 audiovisual/#an/p/
+auditar/#vt/X/    #não definido
 auditivo/#a/fp/
 auditoria/#nf/p/
 auditório/#nm/p/
@@ -9660,7 +9661,7 @@ cozinhado/#nm//
 cozinha/#nf/p/
 cozinhar/#vn/XYPLv/
 cozinheiro/#hm/fp/
-crachá/#nm//
+crachá/#nm/p/
 cracoviano/#hm//
 craniano/#a/fp/
 craniologia/#nf/qrt/
@@ -9765,6 +9766,7 @@ criminável/#an//
 criminologia/#nf/prqt/
 criminoso/#hm/fpm/
 criogenia/#nf//
+criogénico/#a/p/
 crioilo/#nm//
 crioulo/#hm/fp/
 cripta/#nf/p/
@@ -13372,6 +13374,7 @@ erotismo/#nm/p/
 erotização/#nf//
 erradicar/#vt/XYPLc/
 erradicativo/#a//
+errância/#nf/I/
 errante/#an/p/
 errar/#vn/XYPLnB/
 errata/#nf//
@@ -18142,6 +18145,7 @@ inavegável/#an//
 inaveriguável/#an//
 inçadoiro/#nm//
 inçadouro/#nm//
+inçar/#vn/XYL/
 incalcinável/#an/p/
 incalculável/#an/p/
 incandescência/#nf/p/
@@ -18624,7 +18628,6 @@ inerência/#nf/p/
 inerente/#an/p/
 inerme/#an/p/
 inermes/#nm,N=p//
-inerrância/#nf/p/
 inerrante/#an/p/
 inerte/#an/p/
 inervar/#vt/XYPLc/
@@ -27381,6 +27384,7 @@ pulmonados/#nmp//
 pulmonar/#an/p/
 pulmonária/#nf//
 pulo/#nm/p/
+pulular/#vi/XYL/
 púlpito/#nm/p/
 pulsão/#nf/p/
 pulsar/#vn/XYPLc/
