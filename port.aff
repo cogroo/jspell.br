@@ -242,36 +242,36 @@ flag *g:         ; "CAT=a_nc,G=m,N=s"  #femininos
 #----------------------------------------
 # mente
 flag +m:         ; "CAT=adj,N=s"       #mente
-O		>     -O,AMENTE    ; "CAT=adv"	# abertamente
-U		>	 AMENTE    ; "CAT=adv"	# cruamente
-[^V][^Q][^UO]	>       MENTE      ; "CAT=adv"	# anteriormente Q~-means any char
-Á V E L		>  -ÁVEL,AVELMENTE ; "CAT=adv"	# amavelmente
-Í V E L		>  -ÍVEL,IVELMENTE ; "CAT=adv"	# horrivelmente
+O			>     -O,AMENTE    ; "#avm"	# abertamente
+U			>	 AMENTE        ; "#avm"	# cruamente
+[^V][^Q][^UO]	>       MENTE      ; "#avm"	# anteriormente Q~-means any char
+Á V E L		>  -ÁVEL,AVELMENTE ; "#avm"	# amavelmente
+Í V E L		>  -ÍVEL,IVELMENTE ; "#avm"	# horrivelmente
 
 #----------------------------------------
 #mente
 flag +H:         ; "CAT=adj,N=s"       #mente
 
-D O R		>  AMENTE		; "CAT=adv"
-Ó R I O		>  -ÓRIO,ORIAMENTE	; "CAT=adv"
-Á R I O		>  -ÁRIO,ARIAMENTE	; "CAT=adv"
-Á T I C O	>  -ÁTICO,ATICAMENTE	; "CAT=adv"
-Á C T I C O	>  -ÁCTICO,ACTICAMENTE	; "CAT=adv"
-Ó N I C O	>  -ÓNiCO,ONICAMENTE	; "CAT=adv"
-Ó G I C O	>  -ÓGICO,OGICAMENTE	; "CAT=adv"
-Í F E R O	>  -ÍFERO,IFERAMENTE	; "CAT=adv"
-É T I C O	>  -ÉTICO,ETICAMENTE	; "CAT=adv"
-Í S T I C O	>  -ÍSTICO,ISTICAMENTE	; "CAT=adv"
-Í S S I M O	>  -ÍSSIMO,ISSIMAMENTE	; "CAT=adv"
-Í T I C O	>  -ÍTICO,ITICAMENTE	; "CAT=adv"
-Á F I C O	>  -ÁFICO,AFICAMENTE	; "CAT=adv"
-É T R I C O	>  -ÉTRICO,ETRICAMENTE	; "CAT=adv"
-Ó M I C O	>  -ÓMICO,OMICAMENTE	; "CAT=adv"
-É R I C O	>  -ÉRICO,ERICAMENTE	; "CAT=adv"
-Ó T I C O	>  -ÓTICO,OTICAMENTE	; "CAT=adv"
-Á C E O		>  -ÁCEO,ACEAMENTE	; "CAT=adv"
-Á S T I C O	>  -ÁSTICO,ASTICAMENTE	; "CAT=adv"
-Í C I O		>  -ÍCIO,ICIAMENTE	; "CAT=adv"
+D O R		>  AMENTE		    ; "#avm"
+Ó R I O		>  -ÓRIO,ORIAMENTE	; "#avm"
+Á R I O		>  -ÁRIO,ARIAMENTE	; "#avm"
+Á T I C O	>  -ÁTICO,ATICAMENTE	; "#avm"
+Á C T I C O	>  -ÁCTICO,ACTICAMENTE	; "#avm"
+Ó N I C O	>  -ÓNiCO,ONICAMENTE	; "#avm"
+Ó G I C O	>  -ÓGICO,OGICAMENTE	; "#avm"
+Í F E R O	>  -ÍFERO,IFERAMENTE	; "#avm"
+É T I C O	>  -ÉTICO,ETICAMENTE	; "#avm"
+Í S T I C O	>  -ÍSTICO,ISTICAMENTE	; "#avm"
+Í S S I M O	>  -ÍSSIMO,ISSIMAMENTE	; "#avm"
+Í T I C O	>  -ÍTICO,ITICAMENTE	; "#avm"
+Á F I C O	>  -ÁFICO,AFICAMENTE	; "#avm"
+É T R I C O	>  -ÉTRICO,ETRICAMENTE	; "#avm"
+Ó M I C O	>  -ÓMICO,OMICAMENTE	; "#avm"
+É R I C O	>  -ÉRICO,ERICAMENTE	; "#avm"
+Ó T I C O	>  -ÓTICO,OTICAMENTE	; "#avm"
+Á C E O		>  -ÁCEO,ACEAMENTE	; "#avm"
+Á S T I C O	>  -ÁSTICO,ASTICAMENTE	; "#avm"
+Í C I O		>  -ÍCIO,ICIAMENTE	; "#avm"
 Í F I C O	>  -ÍFICO,IFICAMENTE	; "CAT=adv"
 Í A C O		>  -ÍACO,IACAMENTE	; "CAT=adv"
 Ó L I C O	>  -ÓLICO,OLICAMENTE	; "CAT=adv"
@@ -527,32 +527,32 @@ C O         >    -CO,QUINHO       ; "GR=dim"  # porco->porquinho
 Ç O         >    -ÇO,CINHO        ; "GR=dim"  # mac,o->macinho
 G O         >     -O,UINHO        ; "GR=dim"  # antigo->antiguinho
 Ã O         >        ZINHO        ; "GR=dim"  # cão->cãozinho
-E           >     -E,INHO         ; "GR=dim"  # bigode->bigodinho
-[^Ê][SZ]    >        INHO         ; "GR=dim"  # arroz->arrozinho
+E           >     -E,INHO         ; "G=m,GR=dim"  # bigode->bigodinho
+[^Ê][SZ]    >        INHO         ; "G=m,GR=dim"  # arroz->arrozinho
 Ê S         >    -ÊS,ESINHO       ; "GR=dim"  # chinês->chinesinho
-[IRUN]      >        ZINHO        ; "GR=dim"  # bar->barzinho
+[IRUN]      >        ZINHO        ; "G=m,GR=dim"  # bar->barzinho
 Ó           >     -Ó,OZINHO       ; "GR=dim"  # pó->pozinho
 Ô           >     -Ô,OZINHO       ; "GR=dim"  # avô->avozinho
-É           >     -É,EZINHO       ; "GR=dim"  # pé->pezinho
+É           >     -É,EZINHO       ; "G=m,GR=dim"  # pé->pezinho
 Ú           >     -Ú,UZINHO       ; "GR=dim"  # baú->bauzinho
-M           >     -M,NZINHO       ; "GR=dim"  # homem->homenzinho
-L           >        ZINHO        ; "GR=dim"  # anel->anelzinho
+M           >     -M,NZINHO       ; "G=m,GR=dim"  # homem->homenzinho
+L           >        ZINHO        ; "G=m,GR=dim"  # anel->anelzinho
 
 [^CGÇÃI]O   >     -O,INHOS        ; "N=p,GR=dim"  # beijo->beijinhos
 C O         >    -CO,QUINHOS      ; "N=p,GR=dim"  # porco->porquinhos
 Ç O         >    -ÇO,CINHOS       ; "N=p,GR=dim"  # maço->macinhos
 G O         >     -O,UINHOS       ; "N=p,GR=dim"  # antigo->antiguinhos
 Ã O         >        ZINHOS       ; "N=p,GR=dim"  # cão->cãozinhos
-E           >     -E,INHOS        ; "N=p,GR=dim"  # bigode->bigodinhos
-[^Ê][SZ]    >        INHOS        ; "N=p,GR=dim"  # arroz->arrozinhos
+E           >     -E,INHOS        ; "G=m,N=p,GR=dim"  # bigode->bigodinhos
+[^Ê][SZ]    >        INHOS        ; "G=m,N=p,GR=dim"  # arroz->arrozinhos
 Ê S         >    -ÊS,ESINHOS      ; "N=p,GR=dim"  # chinês->chinesinhos
-[IRUN]      >        ZINHOS       ; "N=p,GR=dim"  # bar->barzinhos
+[IRUN]      >        ZINHOS       ; "G=m,N=p,GR=dim"  # bar->barzinhos
 Ó           >     -Ó,OZINHOS      ; "N=p,GR=dim"  # pó->pozinhos
 Ô           >     -Ô,OZINHOS      ; "N=p,GR=dim"  # avô->avozinhos
-É           >     -É,EZINHOS      ; "N=p,GR=dim"  # pé->pezinhos
+É           >     -É,EZINHOS      ; "G=m,N=p,GR=dim"  # pé->pezinhos
 Ú           >     -Ú,UZINHOS      ; "N=p,GR=dim"  # baú->bauzinhos
-M           >     -M,NZINHOS      ; "N=p,GR=dim"  # homem->homenzinhos
-L           >        ZINHOS       ; "N=p,GR=dim"  # anel->anelzinhos
+M           >     -M,NZINHOS      ; "G=m,N=p,GR=dim"  # homem->homenzinhos
+L           >        ZINHOS       ; "G=m,N=p,GR=dim"  # anel->anelzinhos
 
 [^CGÇÃI]O   >     -O,INHA         ; "G=f,GR=dim"  # maroto->marotinha
 [^ÇG]A      >     -A,INHA         ; "GR=dim"  # depressa->depressinha
@@ -1416,8 +1416,8 @@ O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 # adamente
 flag *B:  ; "CAT=v,T=inf"      #adamente
 
-[IA] R  >  -R,DAMENTE    ; "CAT=adv"              # acertadamente
-E R     >  -ER,IDAMENTE  ; "CAT=adv"              # perdidamente
+[IA] R  >  -R,DAMENTE    ; "FSEM=vmente,CAT=adv"              # acertadamente
+E R     >  -ER,IDAMENTE  ; "FSEM=vmente,CAT=adv"              # perdidamente
 
 #flag *A:  			# anti
 #flag *B:  ; "CAT=v,T=inf"      #adamente
@@ -1459,7 +1459,7 @@ E R     >  -ER,IDAMENTE  ; "CAT=adv"              # perdidamente
 #l
 #flag +m:  ; "CAT=adj,N=s"      #mente
 #flag *n:  ; "CAT=v,T=inf"      #ente
-#flag *o: ; "CAT=v,T=inf"       # dela
+#flag *o:  ; "CAT=v,T=inf"      # dela
 #flag *p:  ; "CAT=a_nc,N=s"     #plurais
 #flag *q:  ; "CAT=hn"		#ólogo,áfico,etc.
 #flag *r:  ; "CAT=hn"		#ológico,etc.
@@ -1480,9 +1480,9 @@ E R > -ER,IDELAS  ; "CAT=nc,G=f,N=p,FSEM=dela"
 
 flag *y: ; "CAT=nc"            # eira
 O > -O,EIRO  ; "G=m,N=s,FSEM=eiro"     # marmelo marmeleiro
-O > -O,EIROS  ; "G=m,N=o,FSEM=eiro"     # marmelo marmeleiros
+O > -O,EIROS  ; "G=m,N=p,FSEM=eiro"     # marmelo marmeleiros
 A > -A,EIRA  ; "G=f,N=s,FSEM=eiro"     # banana bananeira
-A > -A,EIRAS  ; "G=f,N=o,FSEM=eiro"     # banana bananeiras
+A > -A,EIRAS  ; "G=f,N=p,FSEM=eiro"     # banana bananeiras
 
 flag *w: ; "CAT=nc"            # oso
 O > SO  ; "CAT=adj,G=m,N=s,FSEM=oso"     # 

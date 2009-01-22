@@ -22,7 +22,7 @@ CVS/#tsm//
 disquete/#nf/p/
 DOS/#tsm//
 download/#nm,ORIG=ing//
-downloads/$download$CAT=nc,G=m,N=p,ORIG=ing//
+downloads/$download$#nm,ORIG=ing$N=p//
 drive/#nf,ORIG=ing/p/
 driver/#nm,ORIG=ing/a/
 e-mail/#nm,ORIG=ing//
@@ -41,10 +41,10 @@ IBM/#tsf//
 input/#nm,ORIG=ing/p/
 Intel/CAT=np,G=f,N=s//
 Internet/CAT=nc,N=s//
-Java/Cat=np,G=m//
+Java/CAT=np,G=m//
 LaTeX/#tsm//
 link/#nm,ORIG=ing//
-links/$link$CAT=nc,N=p,G=s,ORIG=ing//
+links/$link$#nm,ORIG=ing$N=p//
 Linux/CAT=np,G=m//
 LISP/#tsm//
 Macintosh/CAT=np,G=f,N=s//
@@ -90,7 +90,7 @@ USB/#tsm//
 VDM/#tsm//
 virtualização/#nf//
 webmaster/#nm,ORIG=ing//
-webmasters/$webmaster$N=p,ORIG=ing//
+webmasters/$webmaster$#nm,ORIG=ing$N=p//
 web/#nf,ORIG=ing//
 Windows/CAT=nc,G=m,N=s//
 wireless/#nm,ORIG=ing//
