@@ -50,6 +50,8 @@ all:
 	@ echo "\tjspell-install -- installs jspell"
 	@ echo "\tjspell-tgz -- creates jspell munged distribution file"
 	@ echo "\tjspell-bin -- creates jspell binary distribution file"
+	@ echo "\tjspell-publish -- creates jspell-tgz and jspell-bin, and"
+	@ echo "\t                  uploads to Natura"
 	@ echo
 	@ echo "ispell:"
 	@ echo "\tispell -- builds ispell dictionary"
@@ -281,12 +283,18 @@ jspell-pt.1: jspell.pt.pod
 jspell-doc:
 	cd DOC; make jspell;
 
+jspell-publish: jspell-bin jspell-tgz
+	scp $(DIST_DIR)-bin.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
+	scp $(DIST_DIR)-bin.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-bin-latest.tar.gz
+	scp $(DIST_DIR).tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
+	scp $(DIST_DIR).tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-latest.tar.gz	
+
+
 jspell-bin: jspell
 	mkdir -p $(DIST_DIR)-bin
 	cp port.hash port.meta port.irr $(DIST_DIR)-bin
 	tar zcvf $(DIST_DIR)-bin.tar.gz $(DIST_DIR)-bin
 	rm -fr $(DIST_DIR)-bin
-
 
 ################
 jspell-tgz: $(EXTRADIST) jspell-doc
