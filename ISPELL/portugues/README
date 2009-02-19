@@ -1,19 +1,2 @@
-This is a Portuguese dictionary for ispell:
+# Affix file for Jspell and Ispell
 
-Copyright (C) 2006-2008  Jose Joao de Almeida <jj@di.uminho.pt> , 
-	Rui Vilela <ruivilela@di.uminho.pt> ,
-	Alberto Simões <ambs@di.uminho.pt>
-
-Dep. Informatica, Universidade do Minho
-Portugal
-
-Licensed under (check COPYING file for full license)
-  GPL version 2.0 or later
-  LGPL version 2.1 or later
-  MPL version 1.1
-
-
-To install : make install
-
-Latest versions, suggestions, information at
-	http://natura.di.uminho.pt/wiki/index.cgi?Dictionary
