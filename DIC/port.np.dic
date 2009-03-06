@@ -262,6 +262,7 @@ Arraiolos/#t/
 Arronches/#t/
 Arruda/#t/
 Artur/#npm/
+Aruba/#tf/
 Ascenção/#npm/
 Ásia/#la,#tf,SEM=cont/
 Aspásia/#t/
@@ -308,6 +309,7 @@ Baco/#np/
 Badajoz/#tc/
 Bagdade/#tc/
 Bagdad/#tc/
+Bahamas/#la,#tpf,N=p/
 Baía/#np/
 Baião/#t/
 Baía/#la,#t/
@@ -490,6 +492,7 @@ Buenos/#tc/
 Bulgária/#la,#tpf/
 Burgenland/#t/
 Burgos/#t/
+Burquina/$Burquina Faso$#tpf$#la$/
 Bush/#np1/
 Byron/#np1/
 Cabanelas/#np/
@@ -501,6 +504,7 @@ Cadaval/#t/
 Cádis/#t/
 Caeiro/#npm/
 Caetano/#npm/
+Caicos/$Turcas e Caicos$#la$#tf$/    ;teste
 Caim/#npm/
 Caio/#npm/
 Cairo/#tc/
@@ -508,6 +512,7 @@ Calábria/#t/
 Calcedónia/#t/
 Calcutá/#t/
 Caldelas/#t/
+Caledónia/#la,#tf/
 Calheta/#t/
 Calheiro/#np/
 Calheiros/#np/
@@ -669,6 +674,7 @@ Colorado/#t/
 Columbano/#np/
 Colúmbia/#t/
 Comba/#t/
+Comores/#la,#tpf/
 Compostela/#tc/
 Conceição/#npf//
 Condeixa-a-Nova/#t/
@@ -787,6 +793,7 @@ Diu/#t/
 Dolores/#npf/
 Domingos/#npm/
 Domingues/#npm/
+Domínica/#la,#tpf/
 Donato/#np/
 Donetsk/#tc/
 Don/#np1/
@@ -931,12 +938,12 @@ Fahrenheit/#np/
 Fagundes/#np/
 Faial/#la,#tc/
 Falcão/#np/
-Falkland/#la,#t/
 Famagusta/#tc/
 Famalicão/#tf/
 Fanny/#np1/
 Faria/#np/
 Faro/#tc/
+Faso/$Burquina Faso$#tpf$#la$/    ;para testar
 Fátima/#npf/
 Faustino/#np/
 Fausto/#npm/
@@ -966,6 +973,7 @@ Fialho/#npm/
 Fibonacci/#np1/
 Figueiredo/#npm/
 Figueiró/#np/
+Fiji/#la,#tpf,N=p/
 Filadélfia/#tc/
 Filgueiras/#np/
 Filinto/#np/
@@ -1105,6 +1113,7 @@ Graciano/#npm/
 Gracinda/#npf/
 Graciosa/#npf/
 Gradiva/CAT=np,SEM=editora/
+Granadinas/$São Vicente e Granadinas$#tp$/
 Grândola/#t/
 Grão-Pará/#t/
 Graz/#tc/
@@ -1562,6 +1571,7 @@ Malheiro/#np/
 Mali/#tp/
 Malta/#tp/
 Malva/CAT=np/
+Malvinas/#la,#tfp/
 Mamede/#np/
 Manchester/#tc/
 Manchúria/#t/
@@ -1629,8 +1639,8 @@ Matosinhos/#t/
 Matos/#np/
 Matusalém/#npm/
 Maurício/#npm/
-Maurícias/#tpf/
-Mauritânia/#tp//
+Maurícia/#la,#tpf/p/          ;Por vezes com plural
+Mauritânia/#tp/
 Mauro/#npm/
 Mavilde/#npf/
 Maximiano/#npm/
@@ -1814,6 +1824,7 @@ Níger/#la,#tp/
 Nilo/#la,#tr/
 Nilsson/#np1/
 Nisa/#t/
+Niue/#t/
 Nobel/CAT=np/
 Nóbrega/#np/
 Noé/#npm/
@@ -1908,6 +1919,7 @@ Pádua/#np/
 Pai-Nosso/CAT=np,G=m/p/
 Paio/CAT=np/
 Paiva/#tr/
+Palau/#tp/
 Paleolítico/CAT=np/
 Palermo/#tc/
 Palestina/CAT=np/
@@ -1921,6 +1933,7 @@ Panamá/#la,#tp/
 Pandora/CAT=np/
 Pantagruel/CAT=np/
 Papas/CAT=np/
+Papua-Nova/$Papua-Nova Guiné$#la$#tpf$/			;para testar
 Paquistão/CAT=np/
 Paraguai/#la,#tp/
 Paraíba/#t/
@@ -2083,6 +2096,7 @@ Quental/#np/
 Quentin/#np1/
 Quibir/#t/
 Quirguistão/#la,#tp/
+Quiribati/#la,#tp/
 Quitéria/#npf/
 Quixote/#npm/it/
 Rabagão/#tr/
@@ -2392,6 +2406,7 @@ Taira/CAT=np/
 Taishi/CAT=np/
 Taiwan/#npm/
 Taizé/CAT=np,SEM=instituicao/
+Tajiquistão/#la,#tp/
 Tales/#npm/
 Tallinn/#tc/
 Tamão/CAT=np/
@@ -2482,6 +2497,7 @@ Tonga/#tp,G=n/
 Tónia/CAT=np/
 Toni/#npm/
 Tony/#npm/
+Toquelau/#t/
 Tóquio/#tc/
 Torcato/#np/
 Tordesilhas/#t/
@@ -2514,6 +2530,7 @@ Tudor/CAT=np/
 Tui/#t/
 Tunes/#t/
 Tunísia/#la,#tpf/
+Turcas/$Turcas e Caicos$#la$#tf$/    ;teste
 Turcomenistão/#npm/
 Turim/#tc/
 Turíngia/CAT=np/
@@ -2550,6 +2567,7 @@ Valpaços/#t/
 Valter/#np/
 Van/#np1/
 Vanessa/#npf/
+Vanuatu/#tp/
 Vânia/#npf/
 Varsóvia/#tc/
 Varzim/#tc/
@@ -2704,7 +2722,7 @@ Zé/#npm/
 Zéfiro/#mit/
 Zeus/#mit/
 Zêzere/#la,#tr/
-Zimbábue/#npm/
+Zimbabué/#la,#tp/
 Zita/#npf/
 Zodíaco/CAT=np,G=m/
 Zola/#np/
