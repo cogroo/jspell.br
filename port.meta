@@ -90,6 +90,7 @@ F=2: muito frequente
 FSEM: Sufixo 
 FSEM=vel:  exemplo -- lavar-lavável
 FSEM=dd:   exemplo -- feliz-felicidade
+FSEM=mente:   exemplo -- perdido-perdidamente
 
 Adv: Advérbio (contracção)
 Adv=a: a
@@ -177,6 +178,7 @@ SUBCAT=lugar: advérbio de lugar
 SUBCAT=tempo: advérbio de tempo
 SUBCAT=neg: advérbio de negação
 SUBCAT=quant: advérbio de quantidade
+SUBCAT=modo: advérbio de modo
 
 CLA: Classificação
 CLA=def: definido
