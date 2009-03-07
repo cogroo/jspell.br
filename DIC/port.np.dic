@@ -1,5 +1,5 @@
 #np/CAT=np,SEM=p
-#np1/CAT=np,SEM=p1
+#np1/CAT=np,SEM=np1
 #npm/CAT=np,G=m,SEM=p
 #npf/CAT=np,G=f,SEM=p
 #mit/CAT=np,SEM=mitol
