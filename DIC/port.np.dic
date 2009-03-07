@@ -1,5 +1,5 @@
 #np/CAT=np,SEM=p
-#np1/CAT=np,SEM=np1
+#np1/CAT=np,SEM=p1
 #npm/CAT=np,G=m,SEM=p
 #npf/CAT=np,G=f,SEM=p
 #mit/CAT=np,SEM=mitol
@@ -351,7 +351,7 @@ Basto/#np/
 Bastos/#np/
 Baudelaire/#np/
 Baviera/#la,#t/
-Beatles/CAT=np,SEM=np1,G=m,N=p//
+Beatles/CAT=np,SEM=p1,G=m,N=p//
 Beatriz/#npf/
 Beaumont/#np1/
 Becket/#np1/
