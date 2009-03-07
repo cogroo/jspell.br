@@ -1,17 +1,20 @@
-This is a Portuguese dictionary for hunspell:
+This is a Portuguese (Portugal) dictionary for Hunspell:
 
-Copyright (C) 2006-2008  Jose Joao de Almeida <jj@di.uminho.pt> , 
+Copyright (C) 2006-2009  José João de Almeida <jj@di.uminho.pt> , 
 	Rui Vilela <ruivilela@di.uminho.pt> ,
 	Alberto Simões <ambs@di.uminho.pt>
 
-Dep. Informatica, Universidade do Minho
+Dep. Informática, Universidade do Minho
 Portugal
 
-Licensed under (check COPYING file for full license)
-  GPL version 2.0 or later
-  LGPL version 2.1 or later
-  MPL version 1.1
+All dictionary files and associated programs are currently covered by
+the (GPL/LGPL/MPL), by this order. See also COPYING file for more
+details, if available.
 
+Regarding license versions: 
+     1. GPL Version 2
+     2. LGPL Version 2.1
+     3. MPL Version 1.1
 
 To install : Find a suitable application that uses myspell
     dictionaries like openoffice, or hunspell terminal aplication. Use
@@ -19,6 +22,11 @@ To install : Find a suitable application that uses myspell
     dictionaries.  For openoffice, you should make sure that the
     dictionary.lst file has the following line: DICT pt PT pt_PT
 
+Automatic instalation: You can automatically download our dictionary
+using the available plugins, either from mozilla, or OpenOffice. See
+our site for details.
 
-Latest versions, suggestions, information at
+Latest versions, suggestions, automatic install, informations at
        http://natura.di.uminho.pt/
+
+#This readme will change on next release
