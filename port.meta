@@ -31,7 +31,6 @@ N=_: indefinido
 N=s: singular
 
 SEM: Semântica
-SEM=np1: nome próprio estrangeiro
 SEM=rio: rio
 SEM=mes: mês
 SEM=livro: obra literária
@@ -40,7 +39,8 @@ SEM=ter: localidade
 SEM=country: país
 SEM=n: número romano
 SEM=mar: referente a marca
-SEM=p1: nome próprio estrangeiro
+SEM=p: nome português
+SEM=p1: nome estrangeiro
 SEM=pl: planeta
 SEM=sigla: sigla
 SEM=mitol: seres mitológicos
@@ -49,6 +49,7 @@ SEM=cid: cidade
 SEM=lingua: língua
 SEM=instituicao: instituição
 SEM=servico: serviço
+SEM=proj: Projecto
 
 CAT: Categoria
 CAT=punct: pontuação
