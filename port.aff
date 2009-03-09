@@ -242,53 +242,53 @@ flag *g:         ; "CAT=a_nc,G=m,N=s"  #femininos
 #----------------------------------------
 # mente
 flag +m:         ; "CAT=adj,N=s"       #mente
-O			>     -O,AMENTE    ; "#avm"	# abertamente
-U			>	 AMENTE        ; "#avm"	# cruamente
-[^V][^Q][^UO]	>       MENTE      ; "#avm"	# anteriormente Q~-means any char
-Á V E L		>  -ÁVEL,AVELMENTE ; "#avm"	# amavelmente
-Í V E L		>  -ÍVEL,IVELMENTE ; "#avm"	# horrivelmente
+O		>     -O,AMENTE    ; "FSEM=mente,CAT=adv,SUBCAT=modo"	# abertamente
+U		>	 AMENTE    ; "FSEM=mente,CAT=adv,SUBCAT=modo"	# cruamente
+[^V][^Q][^UO]	>       MENTE      ; "FSEM=mente,CAT=adv,SUBCAT=modo"	# anteriormente Q~-means any char
+Á V E L		>  -ÁVEL,AVELMENTE ; "FSEM=mente,CAT=adv,SUBCAT=modo"	# amavelmente
+Í V E L		>  -ÍVEL,IVELMENTE ; "FSEM=mente,CAT=adv,SUBCAT=modo"	# horrivelmente
 
 #----------------------------------------
 #mente
 flag +H:         ; "CAT=adj,N=s"       #mente
 
-D O R		>  AMENTE		    ; "#avm"
-Ó R I O		>  -ÓRIO,ORIAMENTE	; "#avm"
-Á R I O		>  -ÁRIO,ARIAMENTE	; "#avm"
-Á T I C O	>  -ÁTICO,ATICAMENTE	; "#avm"
-Á C T I C O	>  -ÁCTICO,ACTICAMENTE	; "#avm"
-Ó N I C O	>  -ÓNiCO,ONICAMENTE	; "#avm"
-Ó G I C O	>  -ÓGICO,OGICAMENTE	; "#avm"
-Í F E R O	>  -ÍFERO,IFERAMENTE	; "#avm"
-É T I C O	>  -ÉTICO,ETICAMENTE	; "#avm"
-Í S T I C O	>  -ÍSTICO,ISTICAMENTE	; "#avm"
-Í S S I M O	>  -ÍSSIMO,ISSIMAMENTE	; "#avm"
-Í T I C O	>  -ÍTICO,ITICAMENTE	; "#avm"
-Á F I C O	>  -ÁFICO,AFICAMENTE	; "#avm"
-É T R I C O	>  -ÉTRICO,ETRICAMENTE	; "#avm"
-Ó M I C O	>  -ÓMICO,OMICAMENTE	; "#avm"
-É R I C O	>  -ÉRICO,ERICAMENTE	; "#avm"
-Ó T I C O	>  -ÓTICO,OTICAMENTE	; "#avm"
-Á C E O		>  -ÁCEO,ACEAMENTE	; "#avm"
-Á S T I C O	>  -ÁSTICO,ASTICAMENTE	; "#avm"
-Í C I O		>  -ÍCIO,ICIAMENTE	; "#avm"
-Í F I C O	>  -ÍFICO,IFICAMENTE	; "CAT=adv"
-Í A C O		>  -ÍACO,IACAMENTE	; "CAT=adv"
-Ó L I C O	>  -ÓLICO,OLICAMENTE	; "CAT=adv"
-Ó R I C O	>  -ÓRICO,ORICAMENTE	; "CAT=adv"
-É N I C O	>  -ÉNICO,ENICAMENTE	; "CAT=adv"
-Ó D I C O	>  -ÓDICO,ODICAMENTE	; "CAT=adv"
-Ó P I C O	>  -ÓPICO,OPICAMENTE	; "CAT=adv"
-Á L I C O	>  -ÁLICO,ALICAMENTE	; "CAT=adv"
-É R M I C O	>  -ÉRMICO,ERMICAMENTE	; "CAT=adv"
-Í V O R O	>  -ÍVORO,IVORAMENTE	; "CAT=adv"
-Á B I C O	>  -ÁBICO,ABICAMENTE	; "CAT=adv"
-Ó F I L O	>  -ÓFILO,OFILAMENTE	; "CAT=adv"
-É L I C O	>  -ÉLICO,ELICAMENTE	; "CAT=adv"
-É M I C O	>  -ÉMICO,EMICAMENTE	; "CAT=adv"
-Ó N I O		>  -ÓNIO,ONIAMENTE	; "CAT=adv"
-Á S I C O	>  -ÁSICO,ASICAMENTE	; "CAT=adv"
-Á G I C O	>  -ÁGICO,AGICAMENTE	; "CAT=adv"	# tragicamente
+D O R		>  AMENTE	        ; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó R I O		>  -ÓRIO,ORIAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á R I O		>  -ÁRIO,ARIAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á T I C O	>  -ÁTICO,ATICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á C T I C O	>  -ÁCTICO,ACTICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó N I C O	>  -ÓNiCO,ONICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó G I C O	>  -ÓGICO,OGICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Í F E R O	>  -ÍFERO,IFERAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+É T I C O	>  -ÉTICO,ETICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Í S T I C O	>  -ÍSTICO,ISTICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Í S S I M O	>  -ÍSSIMO,ISSIMAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Í T I C O	>  -ÍTICO,ITICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á F I C O	>  -ÁFICO,AFICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+É T R I C O	>  -ÉTRICO,ETRICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó M I C O	>  -ÓMICO,OMICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+É R I C O	>  -ÉRICO,ERICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó T I C O	>  -ÓTICO,OTICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á C E O		>  -ÁCEO,ACEAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á S T I C O	>  -ÁSTICO,ASTICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Í C I O		>  -ÍCIO,ICIAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Í F I C O	>  -ÍFICO,IFICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Í A C O		>  -ÍACO,IACAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó L I C O	>  -ÓLICO,OLICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó R I C O	>  -ÓRICO,ORICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+É N I C O	>  -ÉNICO,ENICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó D I C O	>  -ÓDICO,ODICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó P I C O	>  -ÓPICO,OPICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á L I C O	>  -ÁLICO,ALICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+É R M I C O	>  -ÉRMICO,ERMICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Í V O R O	>  -ÍVORO,IVORAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á B I C O	>  -ÁBICO,ABICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó F I L O	>  -ÓFILO,OFILAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+É L I C O	>  -ÉLICO,ELICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+É M I C O	>  -ÉMICO,EMICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Ó N I O		>  -ÓNIO,ONIAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á S I C O	>  -ÁSICO,ASICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"
+Á G I C O	>  -ÁGICO,AGICAMENTE	; "FSEM=mente,CAT=adv,SUBCAT=modo"	# tragicamente
 
 flag *q:	; "CAT=hn"
 O L O G I A	>	-OLOGIA,ÓLOGO	; "CAT=a_nc,G=m,N=s"	# astrólogo
@@ -439,7 +439,7 @@ Z           >     -Z,CÍSSIMAS  ; "GR=sup,G=f,N=p"   # feliz->felicíssimas
 # idade
 flag +d:         ; "CAT=adj,N=s"       #idade
 [^ÇG]O      >     -O,IDADE     ; "CAT=nc,G=f,FSEM=dd" # activo->actividade
-Ç O         >    -ÇO,CIDADE    ; "CAT=nc,G=f,FSEM=dd" # castic,o->casticidade
+Ç O         >    -ÇO,CIDADE    ; "CAT=nc,G=f,FSEM=dd" # castiço->casticidade
 G O         >    -GO,GUIDADE   ; "CAT=nc,G=f,FSEM=dd" # antigo->antiguidade
 E           >     -E,IDADE     ; "CAT=nc,G=f,FSEM=dd" # breve->brevidade
 R           >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # angular->angularidade
@@ -451,7 +451,7 @@ R           >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # angular->angularidade
 Z           >     -Z,CIDADE    ; "CAT=nc,G=f,FSEM=dd" # feroz->ferocidade
 
 [^ÇG]O      >     -O,IDADES     ; "CAT=nc,G=f,N=p,FSEM=dd" # activo->actividade 
-Ç O         >    -ÇO,CIDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # castic,o->casticidade
+Ç O         >    -ÇO,CIDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # castiço->casticidade
 G O         >    -GO,GUIDADES   ; "CAT=nc,G=f,N=p,FSEM=dd" # antigo->antiguidade
 E           >     -E,IDADES     ; "CAT=nc,G=f,N=p,FSEM=dd" # breve->brevidade
 R           >        IDADES     ; "CAT=nc,G=f,N=p,FSEM=dd" # angular->angularidade   
@@ -1416,8 +1416,8 @@ O R     >  -R,\-LO\-IAM   ; "P=3,N=p,T=c"          #noispell
 # adamente
 flag *B:  ; "CAT=v,T=inf"      #adamente
 
-[IA] R  >  -R,DAMENTE    ; "FSEM=vmente,CAT=adv"              # acertadamente
-E R     >  -ER,IDAMENTE  ; "FSEM=vmente,CAT=adv"              # perdidamente
+[IA] R  >  -R,DAMENTE    ; "FSEM=vmente,CAT=adv,SUBCAT=modo"   # acertadamente
+E R     >  -ER,IDAMENTE  ; "FSEM=vmente,CAT=adv,SUBCAT=modo"   # perdidamente
 
 #flag *A:  			# anti
 #flag *B:  ; "CAT=v,T=inf"      #adamente
