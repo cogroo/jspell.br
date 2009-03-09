@@ -85,15 +85,18 @@ CAT=adj: adjectivo
 CAT=nord: ordinal
 CAT=adv: advérbio
 
-F: Frequência
+F: Ocorrências (Frequência)
 F=0: pouco frequente
 F=1: razoavelmente frequente
 F=2: muito frequente
 
-FSEM: Sufixo
-FSEM=vel: exemplo -- lavar-lavável
-FSEM=dd: exemplo -- feliz-felicidade
-FSEM=mente: exemplo -- perdido-perdidamente
+FSEM: Função semântica do sufixo
+FSEM=vel: -vel
+FSEM=dd: -idade
+FSEM=mente: -mente (forma adjectival como lema)
+FSEM=vmente: -mente (forma verbal como lema)
+FSEM=ismo: -ismo
+FSEM=ista: -ista
 
 Adv: Advérbio (contracção)
 Adv=a: a
@@ -196,8 +199,8 @@ G=f: feminino
 
 rad: Lema
 
-PFSEM: Prefixo semântico
-PFSEM=outra: outra
+PFSEM: Função semântica do prefixo
+PFSEM=outra: re-
 
 ORIG: Origem
 ORIG=ing: Inglesa
