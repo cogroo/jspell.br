@@ -494,7 +494,7 @@ Buenos/#tc/
 Bulgária/#la,#tpf/
 Burgenland/#t/
 Burgos/#t/
-Burquina/$Burquina Faso$#tpf$#la$/
+Burquina/$Burquina Faso$#tpf,#la/
 Burúndi/#tp/
 Bush/#np1/
 Byron/#np1/
@@ -507,7 +507,7 @@ Cadaval/#t/
 Cádis/#t/
 Caeiro/#npm/
 Caetano/#npm/
-Caicos/$Turcas e Caicos$#la$#tf$/
+Caicos/$Turcas e Caicos$#la,#tf/
 Caim/#npm/
 Caio/#npm/
 Cairo/#tc/
@@ -947,7 +947,7 @@ Famalicão/#tf/
 Fanny/#np1/
 Faria/#np/
 Faro/#tc/
-Faso/$Burquina Faso$#tpf$#la$/
+Faso/$Burquina Faso$#tpf,#la/
 Fátima/#npf/
 Faustino/#np/
 Fausto/#npm/
@@ -1117,7 +1117,7 @@ Graciano/#npm/
 Gracinda/#npf/
 Graciosa/#npf/
 Gradiva/CAT=np,SEM=editora/
-Granadinas/$São Vicente e Granadinas$#tp$/
+Granadinas/$São Vicente e Granadinas$#tp/
 Grândola/#t/
 Grão-Pará/#t/
 Graz/#tc/
@@ -1941,7 +1941,7 @@ Panamá/#la,#tp/
 Pandora/CAT=np/
 Pantagruel/CAT=np/
 Papas/CAT=np/
-Papua-Nova/$Papua-Nova Guiné$#la$#tpf$/
+Papua-Nova/$Papua-Nova Guiné$#la,#tpf/
 Paquistão/CAT=np/
 Paraguai/#la,#tp/
 Paraíba/#t/
@@ -2496,7 +2496,7 @@ Titânia/CAT=np/
 Titanic/CAT=np/
 Tito/#npm/
 Toarciano/CAT=np/
-Tobago/$Trindade e Tobago$#tpf$/
+Tobago/$Trindade e Tobago$#tpf/
 Tobias/#npm/
 Tocantins/#t/
 Togo/#la,#tpf/
@@ -2529,7 +2529,7 @@ Trento/CAT=np/
 Trevis/#np1/
 Trigueiros/CAT=np/
 Trindade/CAT=np/
-Trindade/$Trindade e Tobago$#tpf$/
+Trindade/$Trindade e Tobago$#tpf/
 Trinitá/#np/
 Tripoli/#tc/
 Tristão/#npm/
@@ -2543,7 +2543,7 @@ Tudor/CAT=np/
 Tui/#t/
 Tunes/#t/
 Tunísia/#la,#tpf/
-Turcas/$Turcas e Caicos$#la$#tf$/
+Turcas/$Turcas e Caicos$#la,#tf/
 Turcomenistão/#npm/
 Turim/#tc/
 Turíngia/CAT=np/
