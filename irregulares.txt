@@ -751,7 +751,7 @@ terem      3p ip
 
 #v conter, deter/PL, entreter, manter/PL, obter/PL, reter/PL, suster
 tenho      1s p
-tens       2s p
+téns       2s p
 tém        3s p
 temos      1p p
 tendes     2p p
