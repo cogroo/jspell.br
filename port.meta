@@ -171,14 +171,14 @@ Ppes=vosco: vosco
 Ppes=lhe: lhe
 Ppes=migo: migo
 
-BRAS: Origem Brasileira
+BRAS: Origem brasileira
 BRAS=1: sim
 
 I: Nível de irregularidade
 I=4: 4
 I=3: 3
 
-SUBCAT: Sub categoria
+SUBCAT: Sub-categoria
 SUBCAT=lug: advérbio de lugar
 SUBCAT=lugar: advérbio de lugar
 SUBCAT=tempo: advérbio de tempo
