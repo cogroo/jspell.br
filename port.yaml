@@ -2,9 +2,11 @@ META:
  IDS: [port, pt, pt_PT]
  TAG:
    CAT:
-     N: [G, N, GR]
-     Adj: [G, N, GR]
-     Adv: [SUBCAT]
+     nc: [G, N, GR]
+     adj: [G, N, GR]
+     a_nc: [G, N, GR]
+     adv: [SUBCAT]
+     '-': [G, N]
  PROPS:
   LA: Necessita artigo
   T: Tempo
@@ -91,6 +93,11 @@ SEM:
  servico: serviço
  proj: Projecto
 
+CAT-TAG:
+ np: NP
+ nc: NC
+ v: V
+ adj: AJ
 CAT:
  punct: pontuação
  punct2d: aspas
