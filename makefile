@@ -269,7 +269,6 @@ jspell-install: port.hash port.irr
 	mkdir -p $(LIB)
 	cp port.hash  $(LIB)
 	cp port.irr   $(LIB)
-	cp port.meta  $(LIB)
 	cp port.yaml  $(LIB)
 
 
@@ -293,7 +292,7 @@ jspell-publish: jspell-bin jspell-tgz
 
 jspell-bin: jspell
 	mkdir -p $(DIST_DIR)-bin
-	cp port.hash port.meta port.irr $(DIST_DIR)-bin
+	cp port.hash port.yaml port.irr $(DIST_DIR)-bin
 	tar zcvf $(DIST_DIR)-bin.tar.gz $(DIST_DIR)-bin
 	rm -fr $(DIST_DIR)-bin
 
@@ -309,7 +308,7 @@ jspell-tgz: $(EXTRADIST) jspell-doc
 	cp $(EXTRADIST) $(DIST_DIR)
 
 	cp dist_makefile $(DIST_DIR)/makefile
-	cp port.meta $(DIST_DIR)/port.meta
+	cp port.yaml $(DIST_DIR)/port.yaml
 	perl -pi -e 's/DISTDATE/chomp($$a=`date +%Y%m%d`);$$a/e;' $(DIST_DIR)/makefile
 	perl -pi -e 's!DICFILES!$(PTDIC)!'                        $(DIST_DIR)/makefile
 

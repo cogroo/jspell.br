@@ -19,7 +19,7 @@ install: build
 	mkdir -p $(LIB)
 	cp port.hash $(LIB)
 	cp port.irr  $(LIB)
-	cp port.meta $(LIB)
+	cp port.yaml $(LIB)
 
 port.hash: port.dic port.aff
 	jbuild port.dic port.aff port.hash
