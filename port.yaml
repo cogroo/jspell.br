@@ -1,6 +1,10 @@
 META:
  IDS: [port, pt, pt_PT]
- TAG: [CAT, N, G, T]
+ TAG:
+   CAT:
+     N: [G, N, GR]
+     Adj: [G, N, GR]
+     Adv: [SUBCAT]
  PROPS:
   LA: Necessita artigo
   T: Tempo
