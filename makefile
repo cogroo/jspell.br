@@ -267,9 +267,10 @@ jspell: port.hash port.irr
 
 jspell-install: port.hash port.irr
 	mkdir -p $(LIB)
-	cp port.hash $(LIB)
-	cp port.irr  $(LIB)
+	cp port.hash  $(LIB)
+	cp port.irr   $(LIB)
 	cp port.meta  $(LIB)
+	cp port.yaml  $(LIB)
 
 
 # Jspell port man
