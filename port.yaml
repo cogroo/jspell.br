@@ -2,11 +2,16 @@ META:
  IDS: [port, pt, pt_PT]
  TAG:
    CAT:
+     card:
      nc: [G, N, GR]
      adj: [G, N, GR]
      a_nc: [G, N, GR]
      adv: [SUBCAT]
-     '-': [G, N]
+     v: 
+       T:
+         vpp: [G, P, N]
+         '-': [P, N]
+     "-": [C, G, P, N]
  PROPS:
   LA: Necessita artigo
   T: Tempo
@@ -49,21 +54,37 @@ Prep:
  a: a
  com: com
 
+T-TAG:
+ inf: N
+ ppa: PP
+ g:   G
+ p:   IH
+ pp:  IP
+ pi:  II
+ pmp: IM
+ f:   IF
+ pc:  SH
+ pic: SI
+ fc:  PI
+ i:   MH
+ c:   CH
+ ip:  PI
+
 T:
- ip: infinitivo pessoal
+ ip:  infinitivo pessoal
  inf: infinitivo
- pp: pretérito perfeito
+ pp:  pretérito perfeito
  ppa: particípio passado
- pc: presente do conjuntivo
+ pc:  presente do conjuntivo
  pic: pretérito imperfeito do conjuntivo
- c: condicional
- p: presente
- fc: futuro do conjuntivo
- g: gerúndio
+ c:   condicional
+ p:   presente
+ fc:  futuro do conjuntivo
+ g:   gerúndio
  pmp: pretérito mais que perfeito
- pi: pretérito imperfeito
- f: futuro
- i: imperativo
+ pi:  pretérito imperfeito
+ f:   futuro
+ i:   imperativo
 
 N-TAG: { n: N, p: P, _: I, s: S }
 N:
@@ -94,41 +115,51 @@ SEM:
  proj: Projecto
 
 CAT-TAG:
- np: NP
- nc: NC
- v: V
- adj: AJ
+ np:   NP
+ nc:   NC
+ v:    V
+ adj:  AJ
+ card: DNCNP
+ nord: DNO
+ ppes: PS
+ prel: PR
+ ppos: PP
+ pdem: PD
+ pint: PI
+ pind: PF
+
 CAT:
  punct: pontuação
  punct2d: aspas
- np: nome próprio
- ppos: pronome possessivo
- punctj: reticências
- punct1c: dois pontos
- prep: preposição
  punctg: ponto de exclamação
  puncth: ponto de interrogação
  punct1a: vírgula
- in: interjeição
- npm: nome próprio masculino
- con: conjunção
- pint: pronome interrogativo
+ punctj: reticências
+ punct1c: dois pontos
  punct2e: abertura de parêntesis
  punct1b: ponto e vírgula
- pdem: pronome demonstrativo
  puncti: ponto final
- nc: substantivo comum
+ ppos: pronome possessivo
  pind: pronome indefinido
- pass: partícula apassivante
+ pdem: pronome demonstrativo
+ pint: pronome interrogativo
+ ppes: pronome pessoal
+ prel: pronome relativo
+ prep: preposição
+ in: interjeição
+ con: conjunção
+ nc: substantivo comum
+ np: nome próprio
+# nao me parece... duvidoso
+ npm: nome próprio masculino  
+ adj: adjectivo
  a_nc: substantivo/adjectivo
  art: artigo
- prel: pronome relativo
+ pass: partícula apassivante
  v: verbo
  cp: contracção
  punct2f: fecho de parêntesis
- ppes: pronome pessoal
  card: cardinal
- adj: adjectivo
  nord: ordinal
  adv: advérbio
 
@@ -174,14 +205,15 @@ Pind:
  algum: algum
  o: o
 
+GR-TAG: { sup: s, dim: d }
 GR:
  sup: superlativo
  dim: diminutivo
 
 P:
- 1: primeira
- 3: terceira
- 2: segunda
+ 1:   primeira
+ 3:   terceira
+ 2:   segunda
  1_3: primeira/terceira
 
 ABR:
@@ -208,15 +240,15 @@ Art:
  o: o
 
 Ppes:
- sigo: sigo
- ele: ele
- te: te
- tigo: tigo
+ sigo:  sigo
+ ele:   ele
+ te:    te
+ tigo:  tigo
  nosco: nosco
- me: me
+ me:    me
  vosco: vosco
- lhe: lhe
- migo: migo
+ lhe:   lhe
+ migo:  migo
 
 BRAS:
  1: sim
