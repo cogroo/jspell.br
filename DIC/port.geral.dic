@@ -1747,7 +1747,7 @@ ancoradoiro/#nm/p/
 ancoradouro/#nm/p/
 ancoragem/#nf//
 âncora/#nf/p/
-ancorar/#vi/XYLSc/
+ancorar/#vi/XYLPSc/
 ancudo/#a//
 andada/#nf//
 andadeira/#nf//
@@ -2472,6 +2472,8 @@ apreçar/#vt/XYPLMD/
 apreciador/#hm//
 apreciar/#vt/XYPLScMDvR/
 apreciativo/#a/p/
+apreciável/#an/p/
+apreciavelmente/$apreciável$#an$#avm//
 apreço/#nm//
 apreendedor/#hm//
 apreender/#vn/XYPLD/
@@ -3822,7 +3824,7 @@ averiguador/#hm//
 averiguar/#vt,I=3/YPLcDv/
 avermelhar/#vt/XYPL/
 averrugar/#vt/XYPL/
-aversão/#nf//
+aversão/#nf/p/
 avessar/#vt/XYPL/
 avessas/#nf,N=p//
 avessia/#nf//
@@ -9609,6 +9611,7 @@ cote/#nm/p/
 cotilédone/#nn/p/
 cotilóide/#an//
 cotizar/#vt/XYPLcv/
+cotonete/#nm/p/
 cotonicultura/#nf/pq/
 coto/#nm/p/
 cotovelada/#nf//
@@ -9957,7 +9960,7 @@ cumprimenteiro/#a//
 cumprimento/#nm/Ip/
 cumprir/#vn/XYPLSMD/
 cumular/#vt/XYPLc/
-cumulativo/#a/m/
+cumulativo/#a/mp/
 cúmulo/#nm/p/
 cuneiforme/#an/p/
 cunhada/#nf//
@@ -10263,6 +10266,7 @@ dedáleo/#a//
 dedálica/#nf//
 dedálico/#a/f/
 dedal/#nm/p/
+dedão/#nm//
 dedicado/#a/fps/
 dedicar/#vt/XYPLcD/
 dedicatória/#nf/p/
@@ -10502,7 +10506,7 @@ dental/#a//
 dentário/#a/fp/
 dentar/#vn/XYPL/
 dente/#nm/pt/
-dentição/#nf//
+dentição/#nf/p/
 denticular/#an//
 dentículo/#nm/p/
 dentiforme/#an/p/
@@ -12350,7 +12354,7 @@ electrolítico/#a/f/
 electrólito/#nm/p/
 electroluminescência/#nf/p/
 electromagnete/#nm/i/
-electromagnético/#a/f/
+electromagnético/#a/fp/
 electromagnetismo/#nm/p/
 electromecânica/#nf//
 electromecânico/#a/fp/
@@ -13422,6 +13426,7 @@ esbofeteador/#nm//
 esbofetear/#vt/ZYPLD/
 esbordar/#vn/XYPLMn/
 esboroar/#vt/XYPLM/
+esborrachar/#vt/XYPL/
 esborratar/#vn/XYPL/
 esbracejar/#vi/XYL/
 esbranquiçar/#vt/XYPL/
@@ -14746,6 +14751,7 @@ extras/#nmp//
 extraterrestre/#an/p/
 extraterritorial/#an/d/
 extraterritorialidade/#nf/p/
+extra-sensorial/#a/p/
 extra-uterino/#a//
 extravagância/#nf/p/
 extravaganciar/#vn/XYPL/
@@ -17006,7 +17012,7 @@ grossura/#nf/p/
 grotesco/#a/fpm/
 grou/#nm/p/
 grua/#nf/p/
-grudar/#vn/XYPLD/
+grudar/#vn/XYPLDS/
 grude/#nf//
 grugulejar/#vi/XYL/
 grugulejo/#nm//
@@ -17440,6 +17446,8 @@ hitita/#a/p/
 hoje/#avt//
 holandês/#hm/fp/
 holandizar/#vt/XYPL/
+holiganismo/#nm//
+holístico/#a/k/
 holismo/#nm/p/
 holocausto/#nm/p/
 holofote/#nm/p/
@@ -18152,7 +18160,7 @@ inatacável/#an/d/
 inatendível/#an//
 inatingível/#an//
 inatismo/#nm/p/
-inato/#a/fpi/
+inato/#a/fpim/
 inaudito/#a//
 inaudível/#an//
 inauferível/#an//
@@ -18447,7 +18455,7 @@ indefeso/#a/fp/
 indefesso/#a//
 indeficiente/#an//
 indefinido/#a/pfm/
-indefinível/#an//
+indefinível/#an/m/
 indelebilidade/#nf/p/
 indelével/#an/pd/
 indelevelmente/#an//
@@ -18543,7 +18551,7 @@ indispensável/#hm2/pmd/
 indisponibilidade/#nf/p/
 indisponível/#an/dp/
 indispor/#vt/KPL/
-indisposição/#nf//
+indisposição/#nf/p/
 indisposto/#a//
 indisputabilidade/#nf/p/
 indisputado/#a//
@@ -21170,7 +21178,7 @@ malfazente/#an//
 malfazer/#vi/KLn/
 malfeito/#hm//
 malfeitoria/#nf/p/
-malfeitor/#nm/p/
+malfeitor/#nm/fp/
 malferido/#a//
 malformação/#nf/p/
 malga/#nf/p/
@@ -23295,6 +23303,7 @@ neoclássico/#a/fp/
 neocolonialismo/#nm/p/
 neocolonialista/#a//
 neocriticismo/#nm/p/
+neodímio/#nm//
 neófito/#nm//
 neogótico/#a/fp/
 neokantismo/#nm/p/
@@ -24048,7 +24057,7 @@ opinar/#vn/XYPLnv/
 opinativo/#a//
 opinião/#nf/p/
 opiniático/#a/fp/
-opinioso/#a//
+opinioso/#a/p/
 opiologia/#nf//
 opiómano/#hm/fp/
 ópio/#nm//
@@ -24749,6 +24758,7 @@ paranormal/#hm2/p/
 par/#an/pd/
 parapeitar/#vt/XYPL/
 parapeito/#nm/p/
+parapente/#nm//
 paraplegia/#nf//
 paraplégico/#a//
 parapsicologia/#nf/qr/
@@ -26025,6 +26035,7 @@ plantão/#nm//
 plantar/#vt/XYPLRcD/
 plantel/#nm/p/
 plantio/#nm//
+plântula/#nf//
 planura/#nf/p/
 plaqueta/#nf/p/
 plasma/#nm/p/
@@ -26620,6 +26631,7 @@ precognição/#nf//
 pré-colombiano/#a/fp/
 preconceber/#vt/XYPL/
 preconceito/#nm/p/
+preconceituoso/#nm/fp/
 preconcepção/#nf//
 preconizador/#hm//
 preconizar/#vt/XYPLcD/
@@ -33982,7 +33994,7 @@ vibrante/#an/p/
 vibrar/#vn/XYPLcDn/
 vibrátil/#an//
 vibratilidade/#nf/p/
-vibratório/#a//
+vibratório/#a/fp/
 vicariato/#nm/p/
 vicentino/#hm/fp/
 vicentista/#an/p/
@@ -34310,7 +34322,7 @@ volumoso/#a/fp/
 voluntariado/#nm//
 voluntariedade/#nf/p/
 voluntário/#hm/fpH/
-voluntarioso/#a/d/
+voluntarioso/#a/dp/
 voluntarismo/#nm/p/
 voluntarista/#hn//
 volúpia/#nf//
