@@ -25,6 +25,8 @@ IRRFILES=IRR/ge_verb.l IRR/ge_verb2.y IRR/makefile
 
 
 PTDIC = DIC/port.geral.dic DIC/port.inf.dic DIC/port.np.dic DIC/port.siglas.dic DIC/port.abrev.dic DIC/port.estrg.dic DIC/port.jurid.dic
+PTDICEXTRA = DIC/port.zool.dic DIC/port.botanica.dic
+
 EXTRADIST = irregulares.txt irr2perl port.aff jspell-pt.1
 
 BASE= port.aff $(PTDIC) irregulares.txt aux_verb.dic \
@@ -46,7 +48,7 @@ FDOC=DOC/generatedDOC
 all:
 	@ echo
 	@ echo "jspell:"
-	@ echo "\tjspell -- builds jspell dictionary"
+	@ echo "\tjspell -- builds jspell dictionary (jspell-big)"
 	@ echo "\tjspell-install -- installs jspell"
 	@ echo "\tjspell-tgz -- creates jspell munged distribution file"
 	@ echo "\tjspell-bin -- creates jspell binary distribution file"
@@ -93,6 +95,9 @@ all:
 #-------------------------------------------------------------------
 # Generated files
 #-------------------------------------------------------------------
+
+port-big.dic: port.dic $(PTDICEXTRA)
+	cat port.dic $(PTDICEXTRA) > port-big.dic
 
 port.dic: $(PTDIC) aux_all_irr.dic 
 	echo '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
@@ -265,6 +270,14 @@ jspell-rpm: jspell-tgz
 
 jspell: port.hash port.irr
 
+jspell-big: port-big.hash port.irr
+
+jspell-big-install: port-big.hash port.irr
+	mkdir -p $(LIB)
+	cp port-big.hash  $(LIB)/port.hash
+	cp port.irr   $(LIB)
+	cp port.yaml  $(LIB)
+
 jspell-install: port.hash port.irr
 	mkdir -p $(LIB)
 	cp port.hash  $(LIB)
@@ -317,6 +330,9 @@ jspell-tgz: $(EXTRADIST) jspell-doc
 
 
 ################
+
+port-big.hash: port-big.dic port.aff
+	jbuild port-big.dic port.aff port-big.hash
 
 port.hash: port.dic port.aff
 	jbuild port.dic port.aff port.hash

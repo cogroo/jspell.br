@@ -6,6 +6,7 @@
 #nn/CAT=nc,G=_,N=s//
 #a/CAT=adj,N=s,G=m// na realidade N=?? G=??
 #af/CAT=adj,N=s,G=f//
+#am/CAT=adj,N=s,G=m//
 #an/CAT=adj,N=s,G=_//
 #av/CAT=adv//
 #avl/CAT=adv,SUBCAT=lugar//
