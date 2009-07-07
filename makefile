@@ -25,7 +25,7 @@ IRRFILES=IRR/ge_verb.l IRR/ge_verb2.y IRR/makefile
 
 
 PTDIC = DIC/port.geral.dic DIC/port.inf.dic DIC/port.np.dic DIC/port.siglas.dic DIC/port.abrev.dic DIC/port.estrg.dic DIC/port.jurid.dic
-PTDICEXTRA = DIC/port.zool.dic DIC/port.botanica.dic
+PTDICEXTRA = DIC/port.zool.dic DIC/port.botanica.dic DIC/port.vnfreq.dic
 
 EXTRADIST = irregulares.txt irr2perl port.aff jspell-pt.1
 
