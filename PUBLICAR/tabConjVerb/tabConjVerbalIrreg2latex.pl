@@ -19,18 +19,14 @@ use Lingua::Jspell;
 setlocale(LC_CTYPE, "pt_PT");
 use locale;
 use strict;
-
-our $cats = {};
-our $data;
-
-our @ordem_verbos=qw/p pi pp pmp f c pc pic fc i ip inf g ppa/;
+use Encode qw/decode/;
 
 our $dic = Lingua::Jspell->new("port");
 
-##########################################################################################################
+our $cats = $dic->{yaml}{META}{PROPS};
+our $data = $dic->{yaml};
 
-$cats = $dic->{meta}{_};
-$data = $dic->{meta};
+our @ordem_verbos=qw/p pi pp pmp f c pc pic fc i ip inf g ppa/;
 
 ################################################################################################
 
@@ -150,10 +146,10 @@ sub gerarTabelaVerbos{
 	unless ($c % 3){
 	    if (!$c || !($c % 3)){
 		$o.=($c?"\\\\":'')."\n".'\hline'."\n";
-		$o.="\n".'\textbf{'.ucfirst($data->{'T'}{$ordem_verbos[$c]})."}";
-		$o.='&\textbf{'.ucfirst($data->{'T'}{$ordem_verbos[$c+1]})."}";
+		$o.="\n".'\textbf{'.decode ("UTF-8", ucfirst($data->{'T'}{$ordem_verbos[$c]}))."}";
+		$o.='&\textbf{'.decode ("UTF-8", ucfirst($data->{'T'}{$ordem_verbos[$c+1]}))."}";
 		if (defined ($ordem_verbos[$c+2])){
-		    $o.='&\textbf{'.ucfirst($data->{'T'}{$ordem_verbos[$c+2]})."}";
+		    $o.='&\textbf{'.decode ("UTF-8", ucfirst($data->{'T'}{$ordem_verbos[$c+2]}))."}";
 		}else{
 		    $o.='&-';
 		}
