@@ -16,11 +16,12 @@ setlocale(LC_CTYPE, "pt_PT");
 use locale;
 use warnings;
 use strict;
+use Encode qw/decode/;
 
 our $dic = Lingua::Jspell->new('port');
 
-my $cats = $dic->{meta}{_};
-my $data = $dic->{meta};
+my $cats = $dic->{yaml}{META}{PROPS};
+my $data = $dic->{yaml};
 
 my $lista=shift;
 
@@ -65,7 +66,7 @@ close $G;
 
 my $orig;
 for (sort {$orig{$b} <=> $orig{$a}} keys %orig){
-    $orig .= $data->{ORIG}{$_}."(".$orig{$_}."), ";
+    $orig .= decode ("utf-8", $data->{ORIG}{$_})."(".$orig{$_}."), ";
 }
 $out=~s/RRRR/$orig/;
 $out=~s/,\n$/\n/;
@@ -84,8 +85,8 @@ sub informacaoMorfologica{
     $out.="\n\n".'\begin{Verbatim}[commandchars=\\\\\{\}]'."\n";
     $out.="\\emph{\\textbf{$w}}\n";
     for (keys %$fea) {
-       my $data = (exists($data->{$_})&&exists($data->{$_}{$fea->{$_}})?$data->{$_}{$fea->{$_}}:$fea->{$_});
-       my $key = (exists($cats->{$_}))?$cats->{$_}:$_;
+       my $data = decode ("UTF-8", (exists($data->{$_})&&exists($data->{$_}{$fea->{$_}})?$data->{$_}{$fea->{$_}}:$fea->{$_}));
+       my $key = decode ("UTF-8", (exists($cats->{$_}))?$cats->{$_}:$_);
        next if (/^rad$/); #ignorar lema
        $out.=" $key: $data"."\n";
     }
