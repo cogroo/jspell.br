@@ -8,7 +8,7 @@ use Data::Dumper;
 
 $Data::Dumper::Indent = 0;
 
-my $dic = new Lingua::Jspell "Port";
+my $dic = new Lingua::Jspell "port";
 my @words = qw.Europa cavalo grande comido eu dez sexto.;
 
 for $a (@words) {

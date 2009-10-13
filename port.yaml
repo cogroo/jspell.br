@@ -281,19 +281,19 @@ PFSEM:
  outra: re-
 
 ORIG:
- ing: Inglesa
- lat: Latina
- fra: Francesa
- esp: Espanhola
- pol: Polaca
- rus: Russa
- ita: Italiana
- ale: Alemã
- jap: Japonesa
- isl: Islandêsa
- nor: Norueguesa
- cor: Coreana
- gre: Grega
+ ing: inglesa
+ lat: latina
+ fra: francesa
+ esp: espanhola
+ pol: polaca
+ rus: russa
+ ita: italiana
+ ale: alemã
+ jap: japonesa
+ isl: islandêsa
+ nor: norueguesa
+ cor: coreana
+ gre: grega
 
 unknown:
  1: sugerida

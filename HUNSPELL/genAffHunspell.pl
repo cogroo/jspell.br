@@ -8,7 +8,7 @@
 use strict;
 use locale;
 
-my ($pri, $seg, @ter, @qua, @qui, $i, $tmp, $tmp2, $flg, @morf);
+our ($pri, $seg, @ter, @qua, @qui, $i, $tmp, $tmp2, $flg, @morf);
 
 print "SET UTF-8\n";
 #print "SET ISO8859-1\n";
@@ -21,25 +21,27 @@ print "\n";
 
 #NOSUGGEST flag - can be for bad words
 
+sub printRegra{
+    printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items at the end
+    for ($i=0;$i<@qui;$i++){
+	print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])." " x (15-length($qui[$i])).$morf[$i]."\n";
+    }
+    @ter=();@qua=();@qui=(); @morf=();
+}
+
+
 while(<>){
     next if (/^wordchars/ || /^\s+$/ || /^\#/ || /^defstringtype/ || /^allaffixes/ || /boundarychars/);
     s/\s*\#noispell\s*//;
     s/\\-/-/g;
-    if (/^prefixes$/){$pri='PFX';next;}
-    if (/^suffixes$/){$pri='SFX';next;}
+    if (/^prefixes$/){ $pri='PFX'; next; }
+    if (/^suffixes$/){ &printRegra; $pri='SFX'; undef $seg; next; }
     if (/^flag ([\*\+])(\w)/) {    ##Flag data
-	$tmp=$2;
-	$tmp2=$1;
-	
-	if (defined($seg)){
-	    printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items at the end
-	    for ($i=0;$i<@qui;$i++){
-		print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])." " x (15-length($qui[$i])).$morf[$i]."\n";
-	    }
-	    @ter=();@qua=();@qui=(); @morf=(); #clean buffer from previous flag
-	}
+	$tmp=$2; $tmp2=$1;
+	&printRegra if (defined($seg));
 	$seg=$tmp;
 	$flg=$tmp2;
+
 	next;
     }
     s/\#.*//;   #Strip Comments
@@ -62,8 +64,5 @@ while(<>){
     $qua[-1]=~s/^-$/0/;
 }
 
-#Copypaste from upper lines #Última regra
-printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items at the end
-for ($i=0;$i<@qui;$i++){
-    print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])." " x (15-length($qui[$i])).$morf[$i]."\n";
-}
+&printRegra;
+
