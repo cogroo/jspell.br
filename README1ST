@@ -1,0 +1,7 @@
+#Como executar o chuveiro.
+
+
+1. Verificar se todos os requisitos se verificam.
+   - Jspell instalado com o último dicionário. 
+   - O jspell TEM DE TER o dicionário português na última versão nocturna do .aff, .irr, .yaml. Ou seja primeiro instalar o dicionário do svn no próprio host!
+  
