@@ -1,0 +1,17 @@
+Script para converter o dicionário para o AOLP 1990
+
+
+Notas:
+	O .aff e .irr não mudam.
+	O port.yaml tem etiquetas semânticas para palavras afe(c)tas ao acordo
+
+TODO:
+	Testar items não tratados ...
+	Listar modificações ...
+	Apanhar os lemas entre $ $
+	Anotar as alterações da grafia nas etiquetas
+
+O Ficheiro com as substituições "regras.pt-ptao" é da autoria de:
+  André Santos ( catamorfismo at gmail.com )
+  Sob orientação de José João de Almeida ( jj at di.uminho.pt )
+
