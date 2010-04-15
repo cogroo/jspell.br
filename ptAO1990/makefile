@@ -9,7 +9,7 @@ DAO=jspell.$(ABR)-AO90.dic
 
 #PTDIC = DIC/port.geral.dic DIC/port.inf.dic DIC/port.np.dic DIC/port.siglas.dic DIC/port.abrev.dic DIC/port.estrg.dic DIC/port.jurid.dic
 
-PTDIC = ../DIC/port.geral.dic
+PTDIC = ../port.dic
 
 DIRAO = DIC/AO
 DIRMIXAO = ../DIC/MixAO
