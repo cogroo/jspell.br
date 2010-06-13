@@ -50,10 +50,8 @@ all:
 	@ echo "jspell:"
 	@ echo "\tjspell -- builds jspell dictionary (jspell-big)"
 	@ echo "\tjspell-install -- installs jspell"
-	@ echo "\tjspell-tgz -- creates jspell munged distribution file"
-	@ echo "\tjspell-bin -- creates jspell binary distribution file"
-	@ echo "\tjspell-publish -- creates jspell-tgz and jspell-bin, and"
-	@ echo "\t                  uploads to Natura"
+	@ echo "\tjspell-dist -- creates jspell munged distribution file"
+	@ echo "\tjspell-publish -- creates jspell-dist and -bin and uploads"
 	@ echo
 	@ echo "ispell:"
 	@ echo "\tispell -- builds ispell dictionary"
@@ -262,6 +260,14 @@ wordlist-clean:
 # jspell rules
 #-------------------------------------------------------------------
 
+jspell-dist: port.irr port.aff port.yaml $(PTDIC)
+	mkdir -p $(DIST_DIR)
+	cp -v port.irr port.aff port.yaml $(PTDIC) $(DIST_DIR)
+	ls -1 $(DIST_DIR) > $(DIST_DIR)/MANIFEST
+	tar zcvf $(DIST_DIR).tar.gz $(DIST_DIR)
+	rm -frv $(DIST_DIR)
+	echo DONE
+
 jspell-rpm: jspell-tgz
 	mv $(DIST_DIR).tar.gz ~/rpms/SOURCES/jspell.$(ABR).tgz
 	perl -pe 's/VERSION/chomp($$a=`date +%Y%m%d`);$$a/e;' jspell.pt.spec.in > jspell.pt.spec
@@ -297,18 +303,18 @@ jspell-pt.1: jspell.pt.pod
 jspell-doc:
 	cd DOC; make jspell;
 
-jspell-publish: jspell-bin jspell-tgz
-	scp $(DIST_DIR)-bin.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
-	scp $(DIST_DIR)-bin.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-bin-latest.tar.gz
+jspell-publish: jspell-dist jspell-bin
+	scp $(DIST_DIR)-bin32.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
+	scp $(DIST_DIR)-bin32.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-bin32-latest.tar.gz
 	scp $(DIST_DIR).tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
 	scp $(DIST_DIR).tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-latest.tar.gz	
 
 
 jspell-bin: jspell
-	mkdir -p $(DIST_DIR)-bin
-	cp port.hash port.yaml port.irr $(DIST_DIR)-bin
-	tar zcvf $(DIST_DIR)-bin.tar.gz $(DIST_DIR)-bin
-	rm -fr $(DIST_DIR)-bin
+	mkdir -p $(DIST_DIR)-bin32
+	cp port.hash port.yaml port.irr $(DIST_DIR)-bin32
+	tar zcvf $(DIST_DIR)-bin32.tar.gz $(DIST_DIR)-bin32
+	rm -fr $(DIST_DIR)-bin32
 
 ################
 jspell-tgz: $(EXTRADIST) jspell-doc
