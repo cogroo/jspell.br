@@ -304,10 +304,10 @@ jspell-doc:
 	cd DOC; make jspell;
 
 jspell-publish: jspell-dist jspell-bin
-	scp $(DIST_DIR)-bin32.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
-	scp $(DIST_DIR)-bin32.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-bin32-latest.tar.gz
-	scp $(DIST_DIR).tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
-	scp $(DIST_DIR).tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-latest.tar.gz	
+	scp -C $(DIST_DIR)-bin32.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
+	scp -C $(DIST_DIR)-bin32.tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-bin32-latest.tar.gz
+	scp -C $(DIST_DIR).tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell
+	scp -C $(DIST_DIR).tar.gz natura.di.uminho.pt:/home/natura/download/sources/Dictionaries/jspell/jspell.pt-latest.tar.gz	
 
 
 jspell-bin: jspell
