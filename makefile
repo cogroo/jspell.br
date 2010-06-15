@@ -260,7 +260,7 @@ wordlist-clean:
 # jspell rules
 #-------------------------------------------------------------------
 
-jspell-dist: port.irr port.aff port.yaml $(PTDIC)
+jspell-dist: port.irr port.aff port.yaml $(PTDIC) aux_all_irr.dic
 	mkdir -p $(DIST_DIR)
 	cp -v port.irr port.aff port.yaml $(PTDIC) $(DIST_DIR)
 	ls -1 $(DIST_DIR) > $(DIST_DIR)/MANIFEST
