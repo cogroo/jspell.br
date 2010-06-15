@@ -262,7 +262,7 @@ wordlist-clean:
 
 jspell-dist: port.irr port.aff port.yaml $(PTDIC) aux_all_irr.dic
 	mkdir -p $(DIST_DIR)
-	cp -v port.irr port.aff port.yaml $(PTDIC) $(DIST_DIR)
+	cp -v aux_all_irr.dic port.irr port.aff port.yaml $(PTDIC) $(DIST_DIR)
 	ls -1 $(DIST_DIR) > $(DIST_DIR)/MANIFEST
 	tar zcvf $(DIST_DIR).tar.gz $(DIST_DIR)
 	rm -frv $(DIST_DIR)
