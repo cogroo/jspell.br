@@ -2,6 +2,7 @@ META:
  LANG: Português
  VARIANT: Europeu
  IDS: [port, pt, pt_PT]
+ SNDCLASSES: [[x,ch],[ss,ç]]
  TAG:
    CAT:
      card:
