@@ -1,4 +1,4 @@
-#n/CAT=nc//
+en/CAT=nc//
 #nm/CAT=nc,G=m,N=s//
 #nmp/CAT=nc,G=m,N=p//
 #nf/CAT=nc,G=f,N=s//
@@ -26642,7 +26642,7 @@ preceptor/#nm/fp/
 precessão/#nf//
 preciosidade/#nf/p/
 preciosismo/#nm/p/
-preciosista/#a//
+preciosista/#a/p/
 precioso/#a/pfidms/
 precipício/#nm/p/
 precipitação/#nf//
