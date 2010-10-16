@@ -45,8 +45,7 @@ while(<F>){
 		} 
 	    }
 	    unless (defined ($ng[1])){ #Dupla grafia
-		$o=$ng[0]."/AO90=$AO90,$cg"
-;
+		$o=$ng[0]."/AO90=$AO90,$cg";
 		print "$e/$cg/$ra\n";
 	    }else{
 

@@ -1,0 +1,32 @@
+
+
+ - ACORDO ORTOGRÁFICO 1990 -
+ ---------------------------
+
+==> Plano de Ataque
+
+ 1. Criar um único dicionário do qual se possam extrair:
+    1.1. um dicionário pós-AO
+    1.2. um dicionário pré-AO
+    1.3. um dicionário MIXED
+
+ 2. As palavras inalteradas mantêm-se inalteradas no dicionário
+
+ 3. As palavras que deixam de existir passam a ter uma flag que
+    indique a nova grafia:
+
+        acto/AO90=ato,#nm/p
+
+ 4. As novas palavras, passam a ter uma flag que indiquem a grafia
+    anterior
+
+        ato/PREAO90=acto,#nm/p
+
+ 5. As palavras com multiplas grafias entram no dicionário como
+    entradas diferentes, como já acontecia com
+
+         ouro/#nm/p/
+         oiro/#nm/p/
+
+ 6. Será preciso também rever regras de afixação!?
+
