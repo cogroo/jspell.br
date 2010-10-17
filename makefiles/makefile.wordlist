@@ -1,0 +1,15 @@
+
+#-------------------------------------------------------------------
+# wordlist rules
+#-------------------------------------------------------------------
+wordlist: port.dic
+	cd WORDLIST; make wl; make diff
+
+wordlist-bz2: wordlist
+	cd WORDLIST; make bz2
+	cp WORDLIST/wordlist.$(ABRX)-$(DATE).tar.bz2 .
+	cp WORDLIST/rawdiffwordlist.$(ABRX)-$(DATE).txt .
+	cp WORDLIST/verbdiffwordlist.$(ABRX)-$(DATE).txt .
+
+wordlist-clean:
+	@ cd WORDLIST; make -s clean 

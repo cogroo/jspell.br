@@ -1,0 +1,46 @@
+# -*- makefile -*-
+#-------------------------------------------------------------------
+# chuveiro rules
+#-------------------------------------------------------------------
+
+chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz hunspell-tgz hunspell-zip jspell-bin
+
+chuveiro-install: #wordlist-diff
+	cp aspell5*$(DATE)*bz2 $(NATURA_WWW)/aspell
+	ln -sf $(NATURA_WWW)/aspell/aspell5-$(ABR)-$(DATE)-0.tar.bz2 $(NATURA_WWW)/aspell/aspell5-$(ABR)-latest.tar.bz2
+
+	cp my*.gz $(NATURA_WWW)/myspell
+	ln -sf $(NATURA_WWW)/myspell/myspell.$(ABR)-$(DATE).tar.gz $(NATURA_WWW)/myspell/myspell.$(ABR)-latest.tar.gz
+
+	cp my*.zip $(NATURA_WWW)/myspell
+	ln -sf $(NATURA_WWW)/myspell/myspell.$(ABR)-$(DATE).zip $(NATURA_WWW)/myspell/myspell.$(ABR)-latest.zip
+
+	cp huns*.gz $(NATURA_WWW)/hunspell
+	ln -sf $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-$(DATE).tar.gz $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-latest.tar.gz
+
+	cp huns*.zip $(NATURA_WWW)/hunspell
+	ln -sf $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-$(DATE).zip $(NATURA_WWW)/hunspell/hunspell-$(ABRX)-latest.zip
+
+	cp i*.gz $(NATURA_WWW)/ispell
+	ln -sf $(NATURA_WWW)/ispell/ispell.$(ABR)-$(DATE).tar.gz $(NATURA_WWW)/ispell/ispell.$(ABR)-latest.tar.gz
+
+	cp j*.gz $(NATURA_WWW)/jspell
+	ln -sf $(NATURA_WWW)/jspell/jspell.$(ABR)-$(DATE).tar.gz $(NATURA_WWW)/jspell/jspell.$(ABR)-latest.tar.gz
+	ln -sf $(NATURA_WWW)/jspell/jspell.$(ABR)-$(DATE)-bin.tar.gz $(NATURA_WWW)/jspell/jspell.$(ABR)-bin-latest.tar.gz
+
+	cp aspell6*$(DATE)*bz2 $(NATURA_WWW)/aspell6
+	ln -sf $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-$(DATE)-0.tar.bz2 $(NATURA_WWW)/aspell6/aspell6-$(ABRX)-latest.tar.bz2
+
+	cp rawdiff*$(DATE)*txt $(NATURA_WWW)/misc/rawdiff
+	cp verbdiff*$(DATE)*txt $(NATURA_WWW)/misc/verbdiff
+	cp word*$(DATE)*bz2 $(NATURA_WWW)/misc/wordlist
+	ln -sf $(NATURA_WWW)/misc/wordlist/wordlist.$(ABRX)-$(DATE).tar.bz2 $(NATURA_WWW)/misc/wordlist/wordlist.$(ABRX)-latest.tar.bz2
+
+	date >> $(NATURA_WWW)/CHANGELOG
+	echo "* empty log *" >> $(NATURA_WWW)/CHANGELOG
+#é necessário editar o ficheiro para efeitos do Atom XML que vai ser gerado
+	vim $(NATURA_WWW)/CHANGELOG
+#precaução
+	cp $(NATURA_WWW)/atom.xml $(NATURA_WWW)/atom.xml~
+	perl gFeed.pl
+#	@echo "Go edit $(NATURA_WWW)/CHANGELOG !"

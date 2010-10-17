@@ -7,7 +7,7 @@ all:
 	@ echo '------------------------------'
 	@ echo
 	@ echo ' NOTE: to install and build jspell you need a recent'
-	@ echo '       jspell release (1.1.3 or later)'
+	@ echo '       jspell release (Lingua::Jspell 1.60 or later)'
 	@ echo
 	@ echo  make install - installs jspell dictionary
 	@ echo  make build   - creates hash files, but do not install
