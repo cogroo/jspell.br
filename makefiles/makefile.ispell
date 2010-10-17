@@ -1,0 +1,17 @@
+
+#-------------------------------------------------------------------
+# ispell rules
+#-------------------------------------------------------------------
+
+ispell: port.dic port.aff
+	cd ISPELL; make
+
+ispell-install: ispell
+	cd ISPELL; make install
+
+ispell-tgz:
+	cd ISPELL; make tgz
+	mv ISPELL/ispell.$(ABR)-$(DATE).tar.gz .
+
+ispell-clean:
+	@ cd ISPELL; make -s clean

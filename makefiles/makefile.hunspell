@@ -1,0 +1,21 @@
+
+#-------------------------------------------------------------------
+# hunspell rules (myspell backward compatible, to replace myspell?)
+#-------------------------------------------------------------------
+
+hunspell: port.dic port.aff
+	cd HUNSPELL; make
+
+hunspell-install: hunspell
+	cd HUNSPELL; make install
+
+hunspell-tgz:
+	cd HUNSPELL; make tgz
+	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).tar.gz .
+
+hunspell-zip:
+	cd HUNSPELL; make hunspell-zip
+	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).zip .
+
+hunspell-clean:
+	@ cd HUNSPELL; make -s clean
