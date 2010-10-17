@@ -1,8 +1,8 @@
+# -*- makefile -*- # instruct emacs
 
 #-------------------------------------------------------------------
 # Generated files
 #-------------------------------------------------------------------
-
 port-big.dic: port.dic $(PTDICEXTRA)
 	cat port.dic $(PTDICEXTRA) > port-big.dic
 
@@ -11,7 +11,7 @@ port.dic: $(PTDIC) aux_all_irr.dic
 	cat $(PTDIC) aux_all_irr.dic >> port.dic 
 
 port.irr: aux_all_irr.dic
-	./irr2perl aux_all_irr.dic > port.irr
+	./$(IRR2PERL) aux_all_irr.dic > port.irr
 
 aux_verb.dic: DIC/port.geral.dic
 	egrep 'CAT=v|\#v' DIC/port.geral.dic > aux_verb.dic
@@ -22,30 +22,8 @@ aux_all_irr.dic: irregulares.txt aux_verb.dic IRR/ge_verb
 IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
 	cd IRR; make
 
-jspell.port.tgz: $(BASE)
-	rm -rf jspell.port-`./ver`
-	mkdir -p jspell.port-`./ver`
-	cp COPYING jspell.port-`./ver`
-	cp $(BASE) jspell.port-`./ver`
-	tar -cvzf jspell.port.tgz jspell.port-`./ver`
 
-port.tgz: $(BASE)
-	tar -czf dic.tgz $(BASE)
-
-#-------------------------------------------------------------------
-# Garbage collecting :)
-#-------------------------------------------------------------------
-clean: ispell-clean aspell5-clean aspell6-clean myspell-clean hunspell-clean wordlist-clean
-	@ printf " Removing temporary files..."
-	@ rm -f *.stat *.cnt
-	@ rm -f *~ *$(DATE)*txt
-	@ rm -f aux_all_irr.dic 
-	@ rm -f port.dic port.irr port.hash aux_verb.dic jspell-pt.1
-	@ rm -f *.gz *.zip *.bz2
-	@ printf " DONE\n"
-
-
-
+jspell: port.hash port.irr
 
 #-------------------------------------------------------------------
 # jspell rules
@@ -65,7 +43,7 @@ jspell-rpm: jspell-tgz
 	rpmbuild -ba jspell.pt.spec 
 
 
-jspell: port.hash port.irr
+
 
 jspell-big: port-big.hash port.irr
 

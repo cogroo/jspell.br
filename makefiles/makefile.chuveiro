@@ -3,7 +3,26 @@
 # chuveiro rules
 #-------------------------------------------------------------------
 
-chuveiro: jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz hunspell-tgz hunspell-zip jspell-bin
+chuveiro-warn:
+	@ echo
+	@ echo "---------------------------------------------------------------"
+	@ echo "Verificar se todos os requisitos se verificam."
+	@ echo " - Jspell instalado com o último dicionário."
+	@ echo " - O jspell TEM DE TER o dicionário português na última versão"
+	@ echo "   nocturna do .aff, .irr, .yaml. Ou seja primeiro instalar o"
+	@ echo "   dicionário do svn no próprio host!"
+	@ echo "---------------------------------------------------------------"
+	@ echo
+	@ printf "** Will continue in 15 seconds,"
+	@ sleep 5
+	@ printf " 10 seconds,"
+	@ sleep 5
+	@ printf " 5 seconds,"
+	@ sleep 5
+	@ printf " NOW **"
+	@ echo
+
+chuveiro: chuveiro-warn jspell-tgz wordlist-bz2 ispell-tgz myspell-tgz myspell-zip aspell6-tgz aspell5-tgz hunspell-tgz hunspell-zip jspell-bin
 
 chuveiro-install: #wordlist-diff
 	cp aspell5*$(DATE)*bz2 $(NATURA_WWW)/aspell
@@ -42,5 +61,5 @@ chuveiro-install: #wordlist-diff
 	vim $(NATURA_WWW)/CHANGELOG
 #precaução
 	cp $(NATURA_WWW)/atom.xml $(NATURA_WWW)/atom.xml~
-	perl gFeed.pl
+	perl scripts/gFeed.pl
 #	@echo "Go edit $(NATURA_WWW)/CHANGELOG !"

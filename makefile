@@ -83,3 +83,16 @@ include makefiles/makefile.myspell
 include makefiles/makefile.hunspell
 include makefiles/makefile.wordlist
 include makefiles/makefile.chuveiro
+
+
+#-------------------------------------------------------------------
+# Garbage collecting :)
+#-------------------------------------------------------------------
+clean: ispell-clean aspell5-clean aspell6-clean myspell-clean hunspell-clean wordlist-clean
+	@ printf " Removing temporary files..."
+	@ rm -f *.stat *.cnt *$(DATE)*txt
+	@ rm -f *~ */*~ */*/*~
+	@ rm -f aux_all_irr.dic 
+	@ rm -f port.dic port.irr port.hash aux_verb.dic jspell-pt.1
+	@ rm -f *.gz *.zip *.bz2
+	@ printf " DONE\n"
