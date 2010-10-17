@@ -95,27 +95,6 @@ aspell6-tgz:
 aspell6-clean:
 	@ cd ASPELL6; make -s clean
 
-#-------------------------------------------------------------------
-# myspell rules
-#-------------------------------------------------------------------
-
-myspell: port.dic port.aff ispell
-	cd MYSPELL; make
-
-myspell-install: myspell
-	cd MYSPELL; make install
-
-myspell-tgz:
-	cd MYSPELL; make tgz
-	mv MYSPELL/myspell.$(ABR)-$(DATE).tar.gz .
-
-myspell-zip:
-	cd MYSPELL; make myspell-zip
-	mv MYSPELL/myspell.$(ABR)-$(DATE).zip .
-
-myspell-clean:
-	@ cd MYSPELL; make -s clean
-
 
 #-------------------------------------------------------------------
 # hunspell rules (myspell backward compatible, to replace myspell?)

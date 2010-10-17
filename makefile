@@ -77,5 +77,6 @@ aspell6-help:
 
 include makefiles/makefile.vars
 include makefiles/makefile.jspell
+include makefiles/makefile.myspell
 include makefiles/makefile.wordlist
 include makefiles/makefile.chuveiro
