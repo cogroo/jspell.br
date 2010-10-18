@@ -35,14 +35,14 @@ hunspell-tgz: tgz
 hunspell-zip: hunspell
 	mkdir hunspell-$(P)-$(DATE)
 	cp $D/$P.dic $D/README_$(P).txt $D/$P.aff hunspell-$(P)-$(DATE)
-	cp ../COPYING hunspell-$(P)-$(DATE)
+	cp ../DOC/COPYING hunspell-$(P)-$(DATE)
 	zip -r hunspell-$(P)-$(DATE).zip hunspell-$(P)-$(DATE)
 	rm -rf hunspell-$(P)-$(DATE)
 
 tgz: hunspell
 	mkdir hunspell-$(P)-$(DATE)
 	cp $D/$P.dic $D/README_$(P).txt $D/$P.aff hunspell-$(P)-$(DATE)
-	cp ../COPYING hunspell-$(P)-$(DATE)
+	cp ../DOC/COPYING hunspell-$(P)-$(DATE)
 	tar -czf hunspell-$(P)-$(DATE).tar.gz hunspell-$(P)-$(DATE)
 	rm -rf hunspell-$(P)-$(DATE)
 

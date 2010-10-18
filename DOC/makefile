@@ -35,7 +35,7 @@ aspell6:
 aspell5ptBRptPT: innerClean
 #Common
 	cp Copyright.aspell5ptBRptPT $(D)/Copyright
-	cp license/$(LIC) $(D)/COPYING_
+	cp $(LIC) $(D)/COPYING_
 	perl processarMeta.pl aspell5ptBRptPT $(D)/COPYING_ $(D)/COPYING
 #Portugal
 	mkdir -p $(D)/doc/pt_PT
