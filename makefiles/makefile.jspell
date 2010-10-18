@@ -1,8 +1,23 @@
 # -*- makefile -*- # instruct emacs
 
-#-------------------------------------------------------------------
-# Generated files
-#-------------------------------------------------------------------
+jspell-big: port-big.hash port.irr
+
+jspell-mix: port-mix.hash port.irr
+
+jspell: port.hash port.irr
+
+jspell-ao: port-ao.hash port.irr
+
+jspell-preao: port-preao.hash port.irr
+
+#'''''''''''''''''''''''''''''''''''''''''''''''''''''#
+# DICS:                                               #
+#   port-big.dic   (mix, big) -- for now              #
+#   port.dic       (mix)                              #
+#   port-ao.dic    (ao1990)                           #
+#   port-preao.dic (pre-ao1990)                       #
+#.....................................................#
+
 port-big.dic: port.dic $(PTDICEXTRA)
 	cat port.dic $(PTDICEXTRA) > port-big.dic
 
@@ -10,24 +25,51 @@ port.dic: $(PTDIC) aux_all_irr.dic
 	echo '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
 	cat $(PTDIC) aux_all_irr.dic >> port.dic 
 
+port-ao.dic: port.dic
+	perl -ne 'print unless /(?<!PRE)AO90/' port.dic > port-ao.dic
+
+port-preao.dic: port.dic
+	perl -ne 'print unless /PREAO90/' port.dic > port-preao.dic
+
+aux_all_irr.dic: irregulares.txt aux_verb.dic IRR/ge_verb
+	IRR/ge_verb aux_verb.dic < irregulares.txt > aux_all_irr.dic
+
 port.irr: aux_all_irr.dic
 	./$(IRR2PERL) aux_all_irr.dic > port.irr
 
 aux_verb.dic: DIC/port.geral.dic
 	egrep 'CAT=v|\#v' DIC/port.geral.dic > aux_verb.dic
 
-aux_all_irr.dic: irregulares.txt aux_verb.dic IRR/ge_verb
-	IRR/ge_verb aux_verb.dic < irregulares.txt > aux_all_irr.dic
-
 IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
-	cd IRR; make
+	@ cd IRR; make
 
 
-jspell: port.hash port.irr
+#'''''''''''''''''''''''''''''''''''''''''''''''''''''#
+# DICS:                                               #
+#   port-big.hash   (mix, big) -- for now             #
+#   port-mix.hash   (mix)                             #
+#   port-ao.hash    (ao1990)                          #
+#   port-preao.hash (pre-ao1990)                      #
+#.....................................................#
 
-#-------------------------------------------------------------------
-# jspell rules
-#-------------------------------------------------------------------
+port-big.hash: port-big.dic port.aff
+	jbuild port-big.dic port.aff port-big.hash
+
+port.hash: port-mix.hash
+	cp port-mix.hash port.hash
+
+port-mix.hash: port.dic port.aff
+	jbuild port.dic port.aff port-mix.hash
+
+port-ao.hash: port-ao.dic port.aff
+	jbuild port-ao.dic port.aff port-ao.hash
+
+port-preao.hash: port-preao.dic port.aff
+	jbuild port-preao.dic port.aff port-preao.hash
+
+#'''''''''''''''''''''''''''''''''''''''''''''''''''''#
+# Distribution packages...                            # XXX FIXME
+#.....................................................#
 
 jspell-dist: port.irr port.aff port.yaml $(PTDIC) aux_all_irr.dic
 	mkdir -p $(DIST_DIR)
@@ -37,16 +79,6 @@ jspell-dist: port.irr port.aff port.yaml $(PTDIC) aux_all_irr.dic
 	rm -fr $(DIST_DIR)
 	echo DONE
 
-jspell-rpm: jspell-tgz
-	mv $(DIST_DIR).tar.gz ~/rpms/SOURCES/jspell.$(ABR).tgz
-	perl -pe 's/VERSION/chomp($$a=`date +%Y%m%d`);$$a/e;' jspell.pt.spec.in > jspell.pt.spec
-	rpmbuild -ba jspell.pt.spec 
-
-
-
-
-jspell-big: port-big.hash port.irr
-
 jspell-big-install: port-big.hash port.irr
 	mkdir -p $(LIB)
 	cp port-big.hash                $(LIB)/port.hash
@@ -55,14 +87,6 @@ jspell-big-install: port-big.hash port.irr
 jspell-install: port.hash port.irr
 	mkdir -p $(LIB)
 	cp port.hash port.irr port.yaml port.aff  $(LIB)
-
-# Jspell port man
-
-install-man: jspell-pt.1
-	cp jspell.pt.1  /usr/local/man/man1/
-
-jspell-pt.1: jspell.pt.pod
-	pod2man --center="jSpell Documentation" jspell.pt.pod jspell-pt.1
 
 jspell-doc:
 	cd DOC; make jspell;
@@ -112,11 +136,21 @@ jspell-tgz: $(EXTRADIST) jspell-doc
 
 ################
 
-port-big.hash: port-big.dic port.aff
-	jbuild port-big.dic port.aff port-big.hash
-
-port.hash: port.dic port.aff
-	jbuild port.dic port.aff port.hash
-
 test: port.hash
 	TESTS/test.pl
+
+#'''''''''''''''''''''''''''''''''''''''''#
+# Man pages, creation and installation(?) # XXX FIXME
+#.........................................#
+install-man: jspell-pt.1
+	cp jspell.pt.1  /usr/local/man/man1/
+
+jspell-pt.1: jspell.pt.pod
+	pod2man --center="jSpell Documentation" jspell.pt.pod jspell-pt.1
+
+
+
+# jspell-rpm: jspell-tgz
+# 	mv $(DIST_DIR).tar.gz ~/rpms/SOURCES/jspell.$(ABR).tgz
+# 	perl -pe 's/VERSION/chomp($$a=`date +%Y%m%d`);$$a/e;' jspell.pt.spec.in > jspell.pt.spec
+# 	rpmbuild -ba jspell.pt.spec 
