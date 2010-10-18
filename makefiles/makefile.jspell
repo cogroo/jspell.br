@@ -94,7 +94,7 @@ jspell-tgz: $(EXTRADIST) jspell-doc
 	@ cp $(IRRFILES)   $(DIST_DIR)/IRR
 	@ cp $(PTDIC)      $(DIST_DIR)/DIC
 	@ cp $(EXTRADIST)  $(DIST_DIR)
-	@ cp dist_makefile $(DIST_DIR)/makefile
+	@ cp JSPELL/makefile $(DIST_DIR)/makefile
 	@ cp port.yaml     $(DIST_DIR)/port.yaml
 
 	@ echo " - Updating makefile"
