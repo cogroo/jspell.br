@@ -2221,7 +2221,7 @@ anti-realismo/AO90=antirrealismo,#nm//
 antirrealismo/PREAO90=anti-realismo,#nm//
 anti-rugas/AO90=antirrugas,#an//
 antirrugas/PREAO90=anti-rugas,#an//
-anti-séptico/EQAO90=antissético+antisséptico,#hm/fp/
+anti-séptico/AO90=antissético+antisséptico,#hm/fp/
 antissético/PREAO90=anti-séptico,#hm/fp/
 antisséptico/PREAO90=anti-séptico,#hm/fp/
 antiteatro/#nm//
@@ -16296,7 +16296,7 @@ foto/#nf/p/
 fotoquímica/#nf//
 fotoquímico/#a/f/
 fotoquinese/#nf//
-foto-receptor/EQAO90=fotorrecetor+fotorreceptor,#nm//
+foto-receptor/AO90=fotorrecetor+fotorreceptor,#nm//
 fotorrecetor/PREAO90=foto-receptor,#nm//
 fotorreceptor/PREAO90=foto-receptor,#nm//
 fotossensível/#an/p/
