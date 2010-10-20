@@ -6,6 +6,10 @@
 hunspell: port.dic port.aff
 	cd HUNSPELL; make
 
+hunspell-ao: port-ao.dic port.aff
+	cd HUNSPELL; make hunspell-ao
+
+
 hunspell-install: hunspell
 	cd HUNSPELL; make install
 

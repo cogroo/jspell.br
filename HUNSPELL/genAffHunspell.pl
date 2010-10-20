@@ -21,9 +21,10 @@ print "\n";
 
 #NOSUGGEST flag - can be for bad words
 
-sub printRegra{
-    printf ("\n%s %s %s %d\n",$pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1); ##number of items at the end
-    for ($i=0;$i<@qui;$i++){
+sub printRegra {
+    printf "\n%s %s %s %d\n",
+      $pri,$seg,$flg=~/[\*\+]/ ? 'Y' : 'N',$#ter+1; ##number of items at the end
+    for ($i = 0; $i < @qui; $i++) {
 	print "$pri $seg   ".lc($ter[$i])." " x (15-length($ter[$i])).lc($qua[$i])." " x (15-length($qua[$i])).lc($qui[$i])." " x (15-length($qui[$i])).$morf[$i]."\n";
     }
     @ter=();@qua=();@qui=(); @morf=();
@@ -31,7 +32,7 @@ sub printRegra{
 
 
 while(<>){
-    next if (/^wordchars/ || /^\s+$/ || /^\#/ || /^defstringtype/ || /^allaffixes/ || /boundarychars/);
+    next if /^\s+$/ || /^\#/ || /^(wordchars|defstringtype|allaffixes|boundarychars)/;
     s/\s*\#noispell\s*//;
     s/\\-/-/g;
     if (/^prefixes$/){ $pri='PFX'; next; }
