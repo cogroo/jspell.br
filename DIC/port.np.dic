@@ -1284,7 +1284,8 @@ Inglaterra/#tpf/
 Ingmar/#np1/
 Innsbruck/#tc/
 Inocêncio/#npm/
-Inverno/CAT=np,G=m,N=s/p
+Inverno/AO90=inverno,#npm/p
+inverno/PREAO90=Inverno,#npm/p
 Iorque/#tc/
 Iowa/#t/
 Ipanema/#t/
@@ -1928,7 +1929,8 @@ Otília/#npf/
 Ourém/#t/
 Ourense/#t/
 Ourique/#t/
-Outono/CAT=np,G=m,N=s/
+Outono/AO90=outono,#npm/
+outono/PREAO90=Outuno,#npm/
 Outubro/AO90=outubro,#em/
 outubro/PREAO90=Outubro,#em/
 Ovar/#t/
@@ -2093,7 +2095,8 @@ Póvoa/#la,#tc/
 Prado/#t/
 Praga/#tc/
 Preciosa/#npf/
-Primavera/CAT=np,G=f,N=s//
+Primavera/AO90=primavera,#npf//
+primavera/PREAO90=Primavera,#npf//
 Prince/#np1/
 Proença-a-Nova/#t/
 Proença/#np/
@@ -2627,7 +2630,8 @@ Venezuela/#la,#tpf/
 Vénus/CAT=np,SEM=pl/
 Venusino/CAT=np/
 Vera/#npf/
-Verão/CAT=np,G=m,N=s/p/
+Verão/AO90=verão,#npm/p/
+verão/PREAO90=Verão,#npm/p/
 Verdi/#np1/
 Vergara/CAT=np/
 Veríssimo/CAT=np/
