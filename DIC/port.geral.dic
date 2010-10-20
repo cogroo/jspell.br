@@ -23839,7 +23839,6 @@ necrológio/#nm//
 necrópole/#nf/p/
 necrose/#nf//
 necrotério/#nm/p/
-nectáreo/#a//
 nectarífero/#a//
 nectário/#nm//
 nectarizar/#vt/XYPL/
@@ -24951,7 +24950,6 @@ ovoide/PREAO90=ovóide,#an/p/
 ovologia/#nf//
 ovo/#nm/p/
 ovolactovegetariano/#hm/fp/
-ovo-lacto-vegetariano/$ovolactovegetariano$#hm$/fp/ #ver isto
 ovovíparo/#a//
 ovovivíparo/#a//
 ovular/#an/c/
@@ -27790,7 +27788,6 @@ projecto/AO90=projeto,#nm/pt/
 projeto/PREAO90=projecto,#nm/pt/
 projector/AO90=projetor,#nm/p/
 projetor/PREAO90=projector,#nm/p/
-projectos-lei/$projecto-lei$#nm$N=p//
 projectura/AO90=projetura,#nf//
 projetura/PREAO90=projectura,#nf//
 prole/#nf//
@@ -28148,7 +28145,8 @@ puma/#nm/p/
 pumba/#i//
 pum/#i//
 punção/#nf/p/
-punctiforme/#an/p/
+punctiforme/EQAO90=puntiforme,#an/p/
+puntiforme/PREAO90=punctiforme,#an/p/
 punctura/EQAO90=puntura,#nf/p/
 puntura/PREAO90=punctura,#nf/p/
 pungente/#an/p/
@@ -28859,7 +28857,8 @@ reaccionário/AO90=reacionário,#a/fp/
 reacionário/PREAO90=reaccionário,#a/fp/
 reaccionarismo/AO90=reacionarismo,#nm/p/
 reacionarismo/PREAO90=reaccionarismo,#nm/p/
-reactância/#nf/p/
+reactância/EQAO90=reatância,#nf/p/
+reatância/PREAO90=reactância,#nf/p/
 reactividade/AO90=reatividade,#nf/p/
 reatividade/PREAO90=reactividade,#nf/p/
 reactivo/AO90=reativo,#hm/fp/
@@ -29053,7 +29052,8 @@ recobrar/#vt/XYPLv/
 recognição/#nf//
 recognitivo/#a//
 recognoscível/#an//
-recolector/#nm/fp/
+recolector/AO90=recoletor,#nm/fp/
+recoletor/PREAO90=recolector,#nm/fp/
 recolha/#nf//
 recolheita/#nf//
 recolher/#vn/XYPLM/
@@ -34154,7 +34154,8 @@ turbilhão/#nm/p/
 turbina/#nf/p/
 turbinoso/#a//
 turbo/#nm/p/
-turbo-reactor/#nm//
+turbo-reactor/AO90=turbo-reator,#nm//
+turbo-reator/PREAO90=turbo-reactor,#nm//
 turbulência/#nf/p/
 turbulento/#hm/fp/
 turco/#hm/fp/
