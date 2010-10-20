@@ -26,7 +26,7 @@ port.dic: $(PTDIC) aux_all_irr.dic
 	cat $(PTDIC) aux_all_irr.dic >> port.dic 
 
 port-ao.dic: port.dic
-	perl -ne 'print unless /(?<!PRE)AO90/' port.dic > port-ao.dic
+	perl -ne 'print unless /(?<!RE|EQ)AO90/' port.dic > port-ao.dic
 
 port-preao.dic: port.dic
 	perl -ne 'print unless /PREAO90/' port.dic > port-preao.dic

@@ -46,9 +46,10 @@ META:
   PFSEM: Função semântica do prefixo
   ORIG: Origem
   unknown: Palavra sugerida
-  AO90: Acordo Ortográfico 1990
-  grafAlt: Grafia alternativa
-  grafFut: Grafia Futura (AOLP 1990)
+  AO90: Apontador para a palavra no Acordo Ortográfico de 1990
+  PREAO90: Apontador para a palavra pré Acordo Ortográfico de 1990
+  EQ90: Apontador para grafia alternativa no Acordo Ortográfico de 1990
+  PT: apontador para a versão portuguesa (estrangeirismos)
 
 LA:
  1: sim
@@ -301,9 +302,4 @@ ORIG:
 
 unknown:
  1: sugerida
-
-AO90:
- 1: Nova grafia
- dupla: Nova grafia (com dupla grafia)
- tr: Nova grafia (supressão do traço)
 

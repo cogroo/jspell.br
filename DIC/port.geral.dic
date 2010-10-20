@@ -5401,6 +5401,7 @@ braganção/#hm//
 bragancês/#a//
 braguês/#hm//
 braguilha/#nf//
+braile/#nm//
 brâmane/#nm/p/
 brama/#nf/ti/
 bramânico/#a/fp/
@@ -6287,7 +6288,7 @@ canja/#nf//
 canoagem/#nf//
 canoa/#nf/p/
 canoeiro/#nm//
-cânone/#nm/p/    ### cânon
+cânone/#nm/p/    ### cânon em port.estrg.dic
 canonical/#an//
 canonicidade/#nf/p/
 canónico/#a/pfH/
@@ -6465,6 +6466,7 @@ caranguejola/#nf/p/
 caranguejo/#nm/p/
 carantonha/#nf//
 carão/#nm//
+caraoque/#nm/p/
 carapaça/#nf//
 carapau/#nm/p/
 carapeta/#nf//
@@ -6477,6 +6479,7 @@ carapuça/#nf/p/
 carapução/#nm/p/
 carapuceiro/#nm//
 carapuço/#nm/p/
+caraté/#nm//
 caravana/#nf/pi/
 caravela/#nf/p/
 caraveleiro/#nm//
@@ -6672,6 +6675,7 @@ cartão/#nm/p/
 cartaxeiro/#hm//
 cartaxense/#hn/p/
 cartaz/#nm/p/
+carte/#nm/p
 carteira/#nf/pt/
 carteiro/#nm/p/
 cartela/#nf/p/
@@ -9552,6 +9556,7 @@ copulativo/#a/fpm/
 coqueiral/#nm/p/
 coqueiro/#nm/p/
 coqueluche/#nf//
+coquetel/#nm//   # cocktail
 coração/#nm/hp/
 coracóide/AO90=coracoide,#hn//
 coracoide/PREAO90=coracóide,#hn//
@@ -16920,6 +16925,7 @@ gazua/#nf/p/
 geada/#nf/p/
 gear/#vn/ZYPL/
 geento/#a//
+géiser/#nm//
 gelada/#nf//
 geladeira/#nf/p/
 geladiço/#a//
@@ -27135,6 +27141,7 @@ postal/#nm/p/
 posta/#nf/p/
 postar/#vt/XYPL/
 poste/#nm/p/
+póster/#nm/p/
 postergar/#vt/XYPL/
 posteridade/#nf/p/
 posterior/#hm/pmd/
@@ -28473,6 +28480,7 @@ quixotada/#nf//
 quixotesco/#a/fp/
 quixotice/#nf//
 quociente/#nm/p/
+quórum/#nm/p/
 quota/#nf/p/
 quota-parte/#nf//
 quotidiano/#a/fpm/
@@ -33273,6 +33281,7 @@ tlintlim/#nm//
 toada/#nf//
 toalha/#nf/ph/
 toalheiro/#nm//
+toalete/#nf/p/
 toalhete/#nm/p/
 toa/#nf//
 toante/#an/p/
@@ -34137,6 +34146,7 @@ turista/#nn/p/
 turístico/#a/fpH/
 turmalina/#nf//
 turma/#nf/p/
+turné/#nf/p/
 turno/#nm/p/
 turquesa/#nf/p/
 turra/#nf/p/
@@ -34990,6 +35000,7 @@ violista/#nn//
 violoncelista/#nn//
 violoncelo/#nm/tp/
 violonista/#nn//
+víquingue/#nm/p/
 vira-casaca/#nm//
 virada/#hf//
 viradela/#nf/p/
@@ -35142,6 +35153,7 @@ você/CAT=ppes,P=3,N=s,C=n/p/
 vociferador/#hm//
 vociferante/#an/p/
 vociferar/#vn/XYPLcDn/
+vodca/#nm/p/
 voejante/#an/p/
 voejar/#vi/XYLn/
 vogal/#hn/p/
