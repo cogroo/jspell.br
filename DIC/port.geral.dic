@@ -18349,7 +18349,7 @@ impaciência/#nf/p/
 impacientar/#vt/XYPLD/
 impaciente/#an/p/
 impactar/#vt/XYP/
-impacte/#nm//
+impacte/ORIG=ing,PT=impacto,#nm//
 impacto/#hm/p/
 impagável/#an/p/
 ímpar/#an/p/
@@ -18684,7 +18684,8 @@ incapacidade/#nf/p/
 incapacitante/#an/p/
 incapacitar/#vt/XYPLvc/
 incapaz/#an/dp/
-incaracterístico/#a//
+incaracterístico/EQAO90=incaraterístico,#a//
+incaraterístico/PREAO90=incaracterístico,#a//
 incarnar/#vi/XYLc/
 incasto/#a//
 incauto/#a/pf/
@@ -19241,7 +19242,8 @@ infectar/AO90=infetar,#vt/XYPLn/
 infetar/PREAO90=infectar,#vt/XYPLn/
 infecto/EQAO90=infeto,#a/f/
 infeto/PREAO90=infecto,#a/f/
-infectuoso/#a//
+infectuoso/EQAO90=infetuoso,#a//
+infetuoso/PREAO90=infectuoso,#a//
 infecundar/#vt/XYPL/
 infecundidade/#nf/p/
 infecundo/#a/pfd/
@@ -20526,8 +20528,10 @@ lactário/#hm//
 lactar/#vn/XYPLcn/
 lactente/#hn/p/
 lácteo/#a/fp/
-lacticínio/#nm/p/
-lacticinoso/#a//
+lacticínio/EQAO90=laticínio,#nm/p/
+laticínio/PREAO90=lacticínio,#nm/p/
+lacticinoso/EQAO90=laticinoso,#a//
+laticinoso/PREAO90=lacticinoso,#a//
 láctico/EQAO90=lático,#a/f/
 lático/PREAO90=láctico,#a/f/
 lactífero/#a/fp/
