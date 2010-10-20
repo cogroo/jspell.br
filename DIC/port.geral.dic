@@ -8427,7 +8427,6 @@ comovedor/#a//
 comovente/#an//
 comover/#vn/XYPLDn/
 compactar/#v/XYcS/
-compactidade/#nf/p/
 compacto/#a/fpd/
 compactuar/#vt/XYPL/
 compadecer/#vn/XYPLMD/
@@ -8783,8 +8782,10 @@ condutivo/#a/d/
 conduto/#nm/i/
 condutor/#hm/fp/
 conduzir/#vn/ZYPLRc/
-conectar/#vt/XYPLS/
-conectivo/#hm/pfd/
+conectar/EQAO90=conetar,#vt/XYPLS/
+conetar/PREAO90=conectar,#vt/XYPLS/
+conectivo/EQAO90=conetivo,#hm/pfd/
+conetivo/PREAO90=conectivo,#hm/pfd/
 conector/EQAO90=conetor,#nm/p/
 conetor/PREAO90=conector,#nm/p/
 cónego/#nm/p/
@@ -9277,8 +9278,10 @@ contractivo/EQAO90=contrativo,#a//
 contrativo/PREAO90=contractivo,#a//
 contracto/EQAO90=contrato,#a/up/
 contrato/PREAO90=contracto,#a/up/
-contractual/#an/m/
-contractuante/#an/p/
+contractual/EQAO90=contratual,#an/m/
+contratual/PREAO90=contractual,#an/m/
+contractuante/EQAO90=contratuante,#an/p/
+contratuante/PREAO90=contractuante,#an/p/
 contractura/EQAO90=contratura,#nf//
 contratura/PREAO90=contractura,#nf//
 contracunhar/#vt/XYPL/
@@ -11062,7 +11065,8 @@ descampar/#vi/XYL/
 descansar/#vn/XYPLB/
 descanso/#nm/p/
 descapotável/#an/p/
-descaracterizar/#vt/XYPLc/
+descaracterizar/EQAO90=descaraterizar,#vt/XYPLc/
+descaraterizar/PREAO90=descaracterizar,#vt/XYPLc/
 descarado/#a/pfm/
 descarar/#vt/XYPLM/
 descarga/#nf/p/
@@ -12139,7 +12143,8 @@ dissabor/#nm/p/
 dissecador/#hm//
 dissecante/#an/p/
 dissecar/#vt/XYPLcDn/
-dissector/#nm//
+dissector/EQAO90=dissetor,#nm//
+dissetor/PREAO90=dissector,#nm//
 dissemelhante/#a/p/
 disseminador/#hm//
 disseminar/#vt/XYPLcD/
