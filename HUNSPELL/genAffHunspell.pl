@@ -27,7 +27,10 @@ while(<>){
     s/\\-/-/g;
 
     # Automata. Decide current section.
-    ($section = 'PFX') and next if /^prefixes\s*$/;
+    if (/^prefixes\s*$/) {
+        $section = 'PFX';
+        next;
+    }
 
     if (/^suffixes\s*$/) {
         printRegra();
