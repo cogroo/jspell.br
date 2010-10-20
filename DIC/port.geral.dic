@@ -2661,9 +2661,10 @@ arabizar/#vt/XYPL/
 aracnídeo/#nm/p/
 aracnismo/#nm/p/
 aracnofilia/#nf/q/
-aracnóide/AO90=aracnoide,#nf//
-aracnoide/PREAO90=aracnóide,#nf//
-aracnóideo/#a//
+aracnóide/AO90=aracnoide,#nf/p/
+aracnoide/PREAO90=aracnóide,#nf/p/
+aracnóideo/#a/p/
+aracnoídeo/#a/p/
 arada/#nf//
 aradar/#vt/XYPL/
 arado/#hm//
@@ -17715,9 +17716,10 @@ hemolítico/#a/p/
 hemorragia/#nf/p/
 hemorrágico/#a/fp/
 hemorroidal/#an//
-hemorróidas/#nfp//
-hemorróides/#nfp//
-hemorroidoso/#a//
+hemorróida/AO90=hemorroida,#nf/p/
+hemorroida/PREAO90=hemorróida,#nf/p/
+hemorróide/AO90=hemorroide,#nf/p/
+hemorroide/PREAO90=hemorróide,#nf/p/
 hemotoxina/#nf//
 henriquino/#a//
 henry/#nm//
@@ -22548,7 +22550,8 @@ mesmíssimo/#a//
 mesmo/#a/pfmds/
 mês/#nm/p/
 mesopotâmico/#a/f/
-mesozóico/#a/fp/
+mesozóico/AO90=mesozoico,#a/fp/
+mesozoico/PREAO90=mesozóico,#a/fp/
 mesquinharia/#nf/p/
 mesquinhar/#vt/XYPL/
 mesquinhez/#nf//
@@ -25081,7 +25084,8 @@ paleografia/#nf/pqr/
 paleolítico/#nm/fp/
 paleologia/#nf/qt/
 paleontologia/#nf/prqt/
-paleozóico/#hm/fp/
+paleozóico/AO90=paleozoico,#hm/fp/
+paleozoico/PREAO90=paleozóico,#hm/fp/
 paleozoologia/#nf/qt/
 palerma/#hn/pG/
 palestiniano/#a/fp/
