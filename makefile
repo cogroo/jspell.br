@@ -1,4 +1,5 @@
 all:
+	@ echo " hunspell - Build hunspell everything"
 	@ echo
 	@ echo "chuveiro:"
 	@ echo "\tchuveiro -- build all available dictionaries"
@@ -10,7 +11,7 @@ all:
 	@ echo "  - aspell5-help \t for aspell v5"
 	@ echo "  - aspell6-help \t for aspell v6"
 	@ echo "  - myspell-help \t for myspell"
-	@ echo "  - hunspell-help\t for hunspell"
+	# @ echo "  - hunspell-help\t for hunspell"
 	@ echo "  - wordlist-help\t for word-lists"
 	@ echo
 
@@ -88,7 +89,7 @@ include makefiles/makefile.chuveiro
 #-------------------------------------------------------------------
 # Garbage collecting :)
 #-------------------------------------------------------------------
-clean: ispell-clean aspell5-clean aspell6-clean myspell-clean hunspell-clean wordlist-clean
+clean: ispell-clean aspell5-clean aspell6-clean myspell-clean wordlist-clean
 	@ printf " Removing temporary files..."
 	@ rm -f *.stat *.cnt *$(DATE)*txt
 	@ rm -f *~ */*~ */*/*~
@@ -96,3 +97,5 @@ clean: ispell-clean aspell5-clean aspell6-clean myspell-clean hunspell-clean wor
 	@ rm -f port.dic port.irr port.hash aux_verb.dic jspell-pt.1
 	@ rm -f *.gz *.zip *.bz2
 	@ printf " DONE\n"
+
+realclean :: clean

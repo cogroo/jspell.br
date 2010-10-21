@@ -16,8 +16,11 @@ RCDATE=`ls -c1 $(DS)wordlist |grep -v 'latest' |sed -e 's/\.tar\.bz2//' |sed -e 
 
 all: wl diff
 
-wl: ../port.dic
-	perl gerarWordList.pl ../port.dic > wordlist.$L-$(DATE).txt
+wl-mix: ../port-mix.dic
+	perl gerarWordList.pl ../port-mix.dic > wordlist-mix.$L-$(DATE).txt
+
+wl-ao: ../port-ao.dic
+	perl gerarWordList.pl ../port-ao.dic > wordlist-ao.$L-$(DATE).txt
 
 bz2: #wl
 	tar cfj wordlist.$L-$(DATE).tar.bz2  wordlist.$L-$(DATE).txt

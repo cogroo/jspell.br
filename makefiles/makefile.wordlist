@@ -1,9 +1,12 @@
-
+# -*- makefile -*-
 #-------------------------------------------------------------------
 # wordlist rules
 #-------------------------------------------------------------------
-wordlist: port.dic
-	cd WORDLIST; make wl; make diff
+wordlist-mix: port-mix.dic
+	cd WORDLIST; make wl-mix; #makfde diff
+
+wordlist-ao: port-ao.dic
+	cd WORDLIST; make wl-ao; #makfde diff
 
 wordlist-bz2: wordlist
 	cd WORDLIST; make bz2

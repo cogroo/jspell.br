@@ -1,25 +1,70 @@
-
+# -*- makefile -*-
 #-------------------------------------------------------------------
 # hunspell rules (myspell backward compatible, to replace myspell?)
 #-------------------------------------------------------------------
 
-hunspell: port.dic port.aff
-	cd HUNSPELL; make
+HTOOLS=./HUNSPELL
+ICONV=iconv -f iso8859-1 -t utf-8
+HAODIST=hunspell-PT_pt-$(DATE)
+HPREAODIST=hunspell-PT_pt-preao-$(DATE)
 
-hunspell-ao: port-ao.dic port.aff
-	cd HUNSPELL; make hunspell-ao
+hunspell: hunspell-ao hunspell-preao hunspell-ao-tgz hunspell-preao-tgz
 
+hunspell-ao: hunspell-ao/pt_PT.dic hunspell-ao/pt_PT.aff
 
-hunspell-install: hunspell
-	cd HUNSPELL; make install
+hunspell-ao/pt_PT.aff: hunspell-ao/pt_PT.dic
+	@ echo "  - affix file conversion"
+	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl port.aff | $(ICONV) > hunspell-ao/pt_PT.aff
+	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> hunspell-ao/pt_PT.aff
 
-hunspell-tgz:
-	cd HUNSPELL; make tgz
-	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).tar.gz .
+hunspell-preao/pt_PT-preao.aff: hunspell-preao/pt_PT-preao.dic
+	@ echo "  - affix file conversion"
+	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl port.aff | $(ICONV) > hunspell-preao/pt_PT-preao.aff
+	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> hunspell-preao/pt_PT-preao.aff
 
-hunspell-zip:
-	cd HUNSPELL; make hunspell-zip
-	mv HUNSPELL/hunspell-$(ABRX)-$(DATE).zip .
+hunspell-ao/pt_PT.dic: port-ao.dic port.aff
+	@ echo " * Building hunspell-ao"
+	mkdir hunspell-ao
+	@ echo "  - expanding dictionaries morphology and converting formats"
+	$(HTOOLS)/obtemRef.pl       port-ao.dic > _.pl
+	$(HTOOLS)/expandeRef.pl     _.pl port-ao.dic > _.dic
+	$(HTOOLS)/genDicHunspell.pl _.dic > __.dic
+	wc -l < __.dic > hunspell-ao/pt_PT.dic
+	cat __.dic | $(ICONV) > hunspell-ao/pt_PT.dic
+	rm -f _.pl _.dic __.dic
 
-hunspell-clean:
-	@ cd HUNSPELL; make -s clean
+hunspell-preao/pt_PT-preao.dic: port-preao.dic port.aff
+	@ echo " * Building hunspell-preao"
+	mkdir hunspell-preao
+	@ echo "  - expanding dictionaries morphology and converting formats"
+	$(HTOOLS)/obtemRef.pl       port-preao.dic > _.pl
+	$(HTOOLS)/expandeRef.pl     _.pl port-preao.dic > _.dic
+	$(HTOOLS)/genDicHunspell.pl _.dic > __.dic
+	wc -l < __.dic > hunspell-preao/pt_PT-preao.dic
+	cat __.dic | $(ICONV) > hunspell-preao/pt_PT-preao.dic
+	rm -f _.pl _.dic __.dic
+
+hunspell-preao: hunspell-preao/pt_PT-preao.dic hunspell-preao/pt_PT-preao.aff
+
+hunspell-ao-tgz: hunspell-ao
+	@ echo " * Creating hunspell-ao tarball"
+	mkdir $(HAODIST)
+	cp hunspell-ao/* $(HAODIST)
+	cp DOC/COPYING $(HAODIST)
+	cp $(HTOOLS)/README_PT_pt.txt $(HAODIST)
+	tar zcf $(HAODIST).tar.gz $(HAODIST)
+	rm -fr $(HAODIST)
+
+hunspell-preao-tgz: hunspell-preao
+	@ echo " * Creating hunspell-ao tarball"
+	mkdir $(HPREAODIST)
+	cp hunspell-preao/* $(HPREAODIST)
+	cp DOC/COPYING $(HPREAODIST)
+	cp $(HTOOLS)/README_PT_pt.txt $(HPREAODIST)
+	tar zcf $(HPREAODIST).tar.gz $(HPREAODIST)
+	rm -fr $(HPREAODIST)
+
+realclean ::
+	rm -fr hunspell-preao
+	rm -fr hunspell-ao
+	rm -fr hunspell-PT_pt*
