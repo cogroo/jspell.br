@@ -1,0 +1,18 @@
+
+#-------------------------------------------------------------------
+# aspell 0.50 rules
+#-------------------------------------------------------------------
+aspell5: port.dic port.aff
+	cd ASPELL5; make aspell
+
+aspell5-install: aspell5
+	cd ASPELL5; make install
+
+aspell5-tgz:
+	cd ASPELL5; make dist
+	mv ASPELL5/aspell5*$(DATE)*bz2 .
+
+aspell5-clean:
+	@ cd ASPELL5; make -s clean
+
+

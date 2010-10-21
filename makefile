@@ -79,7 +79,8 @@ aspell6-help:
 include makefiles/makefile.vars
 include makefiles/makefile.jspell
 include makefiles/makefile.ispell
-include makefiles/makefile.aspell
+include makefiles/makefile.aspell50
+include makefiles/makefile.aspell60
 include makefiles/makefile.myspell
 include makefiles/makefile.hunspell
 include makefiles/makefile.wordlist
