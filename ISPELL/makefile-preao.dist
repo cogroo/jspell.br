@@ -1,0 +1,14 @@
+#-*- makefile -*- ----------------------------------------------------
+
+ISPELLLIB=`ispell -vv | grep 'LIBDIR' | sed -e 's/.*"\(.*\)"/\1/'`
+
+portugues-preao.hash: portugues-preao.dic portugues-preao.aff
+	buildhash portugues-preao.dic portugues-preao.aff portugues-preao.hash
+
+install : portugues-preao.hash 
+	cp portugues-preao.hash $(ISPELLLIB)/
+	cp portugues-preao.aff $(ISPELLLIB)/portugues-reao.aff
+	-rm $(ISPELLLIB)/pt_PT-preao.hash $(ISPELLLIB)/pt-preao.hash $(ISPELLLIB)/port-preao.hash
+	ln -s $(ISPELLLIB)/portugues-preao.hash $(ISPELLLIB)/pt_PT-preao.hash
+	ln -s $(ISPELLLIB)/portugues-preao.hash $(ISPELLLIB)/pt-preao.hash
+	ln -s $(ISPELLLIB)/portugues-preao.hash $(ISPELLLIB)/port-preao.hash

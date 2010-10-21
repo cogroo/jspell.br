@@ -1,6 +1,0 @@
-#!/usr/bin/perl
-
-$a=`grep -i '^version' ispell.port.spec`;
-chop $a;
-$a =~ s/.*?(\d.*)/$1/;
-print $a;

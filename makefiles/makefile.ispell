@@ -1,17 +1,79 @@
-
+# -*- makefile -*-
 #-------------------------------------------------------------------
 # ispell rules
 #-------------------------------------------------------------------
 
-ispell: port.dic port.aff
-	cd ISPELL; make
+ITOOLS=./ISPELL
+JSP2ISP=$(ITOOLS)/jsp2isp.pl
+ISPELLPKG=ispell.pt-$(DATE)
+ISPELLPPKG=ispell.pt-preao-$(DATE)
 
-ispell-install: ispell
-	cd ISPELL; make install
+ispell-all: ispell ispell-ao-tgz ispell-preao-tgz
 
-ispell-tgz:
-	cd ISPELL; make tgz
-	mv ISPELL/ispell.$(ABR)-$(DATE).tar.gz .
+ispell: ispell-dics
 
-ispell-clean:
-	@ cd ISPELL; make -s clean
+ispell-dics: ispellao ispellpreao
+
+ispell-ao-tgz: ispellao
+	@ echo "$(ISPELLPKG).tar.gz"
+	mkdir -p $(ISPELLPKG)
+	cp ispell-ao/* $(ISPELLPKG)
+	tar czf $(ISPELLPKG).tar.gz $(ISPELLPKG)
+	rm -fr $(ISPELLPKG)
+
+
+ispell-preao-tgz: ispellpreao
+	@ echo "$(ISPELLPPKG).tar.gz"
+	mkdir -p $(ISPELLPPKG)
+	cp ispell-preao/* $(ISPELLPPKG)
+	tar czf $(ISPELLPPKG).tar.gz $(ISPELLPPKG)
+	rm -fr $(ISPELLPPKG)
+
+ispellao: ispell-ao-dir ispell-ao/portugues.aff ispell-ao/portugues.dic ispell-ao/portugues.hash
+	cp DOC/COPYING ispell-ao
+	cp $(ITOOLS)/makefile-ao.dist ispell-ao/makefile
+
+ispellpreao: ispell-preao-dir ispell-preao/portugues-preao.aff ispell-preao/portugues-preao.dic \
+             ispell-preao/portugues-preao.hash
+	cp DOC/COPYING ispell-preao
+	cp $(ITOOLS)/makefile-preao.dist ispell-preao/makefile
+
+ispell-ao/portugues.hash: ispell-ao/portugues.dic ispell-ao/portugues.aff
+	buildhash ispell-ao/portugues.dic ispell-ao/portugues.aff ispell-ao/portugues.hash
+	rm -f ispell-ao/portugues.stat
+
+ispell-preao/portugues-preao.hash: ispell-preao/portugues-preao.dic ispell-preao/portugues-preao.aff
+	buildhash ispell-preao/portugues-preao.dic ispell-preao/portugues-preao.aff ispell-preao/portugues-preao.hash
+	rm -f ispell-preao/portugues-preao.stat
+
+ispell-ao/portugues.dic: port-ao.dic
+	@ echo "Creating ispell-ao/portugues.dic"
+	$(JSP2ISP) port-ao.dic | grep -v '[#-]' > _.dic
+	$(ITOOLS)/retiraRegra.pl PL _.dic | $(ITOOLS)/compact.pl > ispell-ao/portugues.dic
+	rm _.dic
+
+ispell-ao/portugues.aff: port.aff
+	@ echo "Creating ispell-ao/portugues.aff"
+	$(JSP2ISP) port.aff > ispell-ao/portugues.aff
+
+ispell-preao/portugues-preao.aff: port.aff
+	@ echo "Creating ispell-preao/portugues-preao.aff"
+	$(JSP2ISP) port.aff > ispell-preao/portugues-preao.aff
+
+ispell-preao/portugues-preao.dic: port-preao.dic
+	@ echo "Creating ispell-ao/portugues-preao.dic"
+	$(JSP2ISP) port-preao.dic | grep -v '[#-]' > _.dic
+	$(ITOOLS)/retiraRegra.pl PL _.dic | $(ITOOLS)/compact.pl > ispell-preao/portugues-preao.dic
+	rm _.dic
+
+ispell-ao-dir:
+	mkdir -p ispell-ao
+
+ispell-preao-dir:
+	mkdir -p ispell-preao
+
+realclean ::
+	@ echo "Cleaning ispell files"
+	rm -fr ispell-ao
+	rm -fr ispell-preao
+	rm -fr ispell.pt-preao* jspell.pt*

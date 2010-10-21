@@ -31,26 +31,6 @@ tgz: ispell
 	tar -czf ispell.$(ABR)-$(DATE).tar.gz ispell.$(ABR)-$(DATE)
 	rm -fr ispell.$(ABR)-$(DATE)
 
-ispell : $P/$D.hash $P/README
-
-$P/README: ../port.aff
-	perl -e '$$/ = ""; $$a=<>; print $$a;' ../port.aff > $P/README
-
-$P/$D.hash: $P/$D.dic $P/$D.aff $P/README
-	cd $P; buildhash $D.dic $D.aff $D.hash
-
-$P/$D.aff $P/$D.dic: ../port.dic ../port.aff 
-	perl jsp2isp.pl ../port.aff > $P/$D.aff 
-	perl jsp2isp.pl ../port.dic | grep -v '[#-]'  > $P/_$D.dic
-#	munchlist -l $P/$D.aff $P/_$D.dic > $P/_.dic #a gerar formas inválidas!
-	perl -i retiraRegra.pl PL $P/_$D.dic #Remove P and L RULE and extra /
-	perl compact.pl $P/_$D.dic > $P/$D.dic #Remove lemas duplicados
-
-	rm -f $P/_$D.dic $P/_.dic
-	cp ver ispell.port.spec $P
-
-../port.dic:
-	cd ..; make port.dic
 
 #---------------------------------------------------------------------
 # instalations

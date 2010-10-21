@@ -8,9 +8,9 @@ ICONV=iconv -f iso8859-1 -t utf-8
 HAODIST=hunspell-PT_pt-$(DATE)
 HPREAODIST=hunspell-PT_pt-preao-$(DATE)
 
-hunspell: hunspell-ao hunspell-preao hunspell-ao-tgz hunspell-preao-tgz
+hunspell-all: hunspell hunspell-ao-tgz hunspell-preao-tgz
 
-hunspell-ao: hunspell-ao/pt_PT.dic hunspell-ao/pt_PT.aff
+hunspell: hunspellao hunspellpreao 
 
 hunspell-ao/pt_PT.aff: hunspell-ao/pt_PT.dic
 	@ echo "  - affix file conversion"
@@ -44,14 +44,18 @@ hunspell-preao/pt_PT-preao.dic: port-preao.dic port.aff
 	cat __.dic | $(ICONV) > hunspell-preao/pt_PT-preao.dic
 	rm -f _.pl _.dic __.dic
 
-hunspell-preao: hunspell-preao/pt_PT-preao.dic hunspell-preao/pt_PT-preao.aff
+hunspellpreao: hunspell-preao/pt_PT-preao.dic hunspell-preao/pt_PT-preao.aff
+	cp DOC/COPYING hunspell-preao
+	cp $(HTOOLS)/README_PT_pt.txt hunspell-preao
+
+hunspellao: hunspell-ao/pt_PT.dic hunspell-ao/pt_PT.aff
+	cp DOC/COPYING hunspell-ao
+	cp $(HTOOLS)/README_PT_pt.txt hunspell-ao
 
 hunspell-ao-tgz: hunspell-ao
 	@ echo " * Creating hunspell-ao tarball"
 	mkdir $(HAODIST)
 	cp hunspell-ao/* $(HAODIST)
-	cp DOC/COPYING $(HAODIST)
-	cp $(HTOOLS)/README_PT_pt.txt $(HAODIST)
 	tar zcf $(HAODIST).tar.gz $(HAODIST)
 	rm -fr $(HAODIST)
 
@@ -59,12 +63,11 @@ hunspell-preao-tgz: hunspell-preao
 	@ echo " * Creating hunspell-ao tarball"
 	mkdir $(HPREAODIST)
 	cp hunspell-preao/* $(HPREAODIST)
-	cp DOC/COPYING $(HPREAODIST)
-	cp $(HTOOLS)/README_PT_pt.txt $(HPREAODIST)
 	tar zcf $(HPREAODIST).tar.gz $(HPREAODIST)
 	rm -fr $(HPREAODIST)
 
 realclean ::
+	@ echo "Cleaning hunspell files"
 	rm -fr hunspell-preao
 	rm -fr hunspell-ao
 	rm -fr hunspell-PT_pt*

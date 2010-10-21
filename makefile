@@ -1,5 +1,12 @@
 all:
-	@ echo " hunspell - Build hunspell everything"
+	@ echo " dicts          - Build all dicts"
+	@ echo " tarballs       - Build all dicts and tarballs"
+	@ echo
+	@ echo " ispell-all     - Build ispell folders and tarballs"
+	@ echo " ispell         - Build ispell folders only"
+	@ echo
+	@ echo " hunspell-all   - Build hunspell folders and tarballs"
+	@ echo " hunspell       - Build ispell folders only"
 	@ echo
 	@ echo "chuveiro:"
 	@ echo "\tchuveiro -- build all available dictionaries"
@@ -7,13 +14,15 @@ all:
 	@ echo
 	@ echo " For specific targets documentation:"
 	@ echo "  - jspell-help  \t for jspell"
-	@ echo "  - ispell-help  \t for ispell"
 	@ echo "  - aspell5-help \t for aspell v5"
 	@ echo "  - aspell6-help \t for aspell v6"
 	@ echo "  - myspell-help \t for myspell"
-	# @ echo "  - hunspell-help\t for hunspell"
 	@ echo "  - wordlist-help\t for word-lists"
 	@ echo
+
+dicts: ispell hunspell
+
+tarballs: ispell-all hunspell-all
 
 wordlist-help:
 	@ echo
@@ -22,15 +31,6 @@ wordlist-help:
 	@ echo "\twordlist-bz2 -- creates wordlist compressed file"
 	@ echo "\twordlist-diff -- calculates real differences on the dictionary since last release"
 	@ echo "\t                 (needs a previous release)"
-	@ echo
-
-hunspell-help:
-	@ echo
-	@ echo "hunspell:"
-	@ echo "\thunspell -- builds hunspell dictionary"
-	@ echo "\thunspell-install -- installs hunspell"
-	@ echo "\thunspell-tgz -- creates hunspell distribution file (tar.gz)"
-	@ echo "\thunspell-zip -- creates hunspell distribution file (zip)"
 	@ echo
 
 myspell-help:
@@ -89,7 +89,7 @@ include makefiles/makefile.chuveiro
 #-------------------------------------------------------------------
 # Garbage collecting :)
 #-------------------------------------------------------------------
-clean: ispell-clean aspell5-clean aspell6-clean myspell-clean wordlist-clean
+clean: aspell5-clean aspell6-clean myspell-clean wordlist-clean
 	@ printf " Removing temporary files..."
 	@ rm -f *.stat *.cnt *$(DATE)*txt
 	@ rm -f *~ */*~ */*/*~
