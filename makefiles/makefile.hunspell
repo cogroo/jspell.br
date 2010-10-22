@@ -24,33 +24,35 @@ hunspell-preao/pt_PT-preao.aff: hunspell-preao/pt_PT-preao.dic
 
 hunspell-ao/pt_PT.dic: port-ao.dic port.aff
 	@ echo " * Building hunspell-ao"
-	mkdir hunspell-ao
+	mkdir -p hunspell-ao
 	@ echo "  - expanding dictionaries morphology and converting formats"
 	$(HTOOLS)/obtemRef.pl       port-ao.dic > _.pl
 	$(HTOOLS)/expandeRef.pl     _.pl port-ao.dic > _.dic
 	$(HTOOLS)/genDicHunspell.pl _.dic > __.dic
 	wc -l < __.dic > hunspell-ao/pt_PT.dic
-	cat __.dic | $(ICONV) > hunspell-ao/pt_PT.dic
+	cat __.dic | $(ICONV) >> hunspell-ao/pt_PT.dic
 	rm -f _.pl _.dic __.dic
 
 hunspell-preao/pt_PT-preao.dic: port-preao.dic port.aff
 	@ echo " * Building hunspell-preao"
-	mkdir hunspell-preao
+	mkdir -p hunspell-preao
 	@ echo "  - expanding dictionaries morphology and converting formats"
 	$(HTOOLS)/obtemRef.pl       port-preao.dic > _.pl
 	$(HTOOLS)/expandeRef.pl     _.pl port-preao.dic > _.dic
 	$(HTOOLS)/genDicHunspell.pl _.dic > __.dic
 	wc -l < __.dic > hunspell-preao/pt_PT-preao.dic
-	cat __.dic | $(ICONV) > hunspell-preao/pt_PT-preao.dic
+	cat __.dic | $(ICONV) >> hunspell-preao/pt_PT-preao.dic
 	rm -f _.pl _.dic __.dic
 
 hunspellpreao: hunspell-preao/pt_PT-preao.dic hunspell-preao/pt_PT-preao.aff
 	cp DOC/COPYING hunspell-preao
 	cp $(HTOOLS)/README_PT_pt.txt hunspell-preao
+	cp $(HTOOLS)/makefile-preao.dist hunspell-preao/makefile
 
 hunspellao: hunspell-ao/pt_PT.dic hunspell-ao/pt_PT.aff
 	cp DOC/COPYING hunspell-ao
 	cp $(HTOOLS)/README_PT_pt.txt hunspell-ao
+	cp $(HTOOLS)/makefile-ao.dist hunspell-ao/makefile
 
 hunspell-ao-tgz: hunspell-ao
 	@ echo " * Creating hunspell-ao tarball"

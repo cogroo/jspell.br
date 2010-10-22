@@ -53,7 +53,7 @@ while(<>){
     # $2 -> deletion part
     # $3 -> addition part
     # $4 -> Morphology changes
-    /^(.+) > \s+ ([\-\w]*) ,? ([\-\w]*) \s* ; \s* " ([^"]+) " /x or die;
+    /^(.+) > \s+ ([\-\w]*) ,? ([\-\w]+) \s* ; \s* " ([^"]+) " /x or die;
 
     push @qui, $1;
     my ($del_part, $add_part, $morf) = ($2, $3, $4);
@@ -62,7 +62,7 @@ while(<>){
 
     push @morf, ($section eq 'SFX' ? "+$morf" : "$morf+");
 
-    if (!$del_part) {
+    if (!length($del_part)) {
 	push @ter, '0';
 	push @qua, $add_part;
     }else{
