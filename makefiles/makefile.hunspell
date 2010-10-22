@@ -7,69 +7,70 @@ HTOOLS=./HUNSPELL
 ICONV=iconv -f iso8859-1 -t utf-8
 HAODIST=hunspell-PT_pt-$(DATE)
 HPREAODIST=hunspell-PT_pt-preao-$(DATE)
+HOUT=out/hunspell
 
 hunspell-all: hunspell hunspell-ao-tgz hunspell-preao-tgz
 
 hunspell: hunspellao hunspellpreao 
 
-hunspell-ao/pt_PT.aff: hunspell-ao/pt_PT.dic
+$(HOUT)-ao/pt_PT.aff: $(HOUT)-ao/pt_PT.dic
 	@ echo "  - affix file conversion"
-	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl port.aff | $(ICONV) > hunspell-ao/pt_PT.aff
-	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> hunspell-ao/pt_PT.aff
+	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl port.aff | $(ICONV) > $(HOUT)-ao/pt_PT.aff
+	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> $(HOUT)-ao/pt_PT.aff
 
-hunspell-preao/pt_PT-preao.aff: hunspell-preao/pt_PT-preao.dic
+$(HOUT)-preao/pt_PT-preao.aff: $(HOUT)-preao/pt_PT-preao.dic
 	@ echo "  - affix file conversion"
-	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl port.aff | $(ICONV) > hunspell-preao/pt_PT-preao.aff
-	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> hunspell-preao/pt_PT-preao.aff
+	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl port.aff | $(ICONV) > $(HOUT)-preao/pt_PT-preao.aff
+	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> $(HOUT)-preao/pt_PT-preao.aff
 
-hunspell-ao/pt_PT.dic: port-ao.dic port.aff
+$(HOUT)-ao/pt_PT.dic: port-ao.dic port.aff
 	@ echo " * Building hunspell-ao"
-	mkdir -p hunspell-ao
+	mkdir -p $(HOUT)-ao
 	@ echo "  - expanding dictionaries morphology and converting formats"
 	$(HTOOLS)/obtemRef.pl       port-ao.dic > _.pl
 	$(HTOOLS)/expandeRef.pl     _.pl port-ao.dic > _.dic
 	$(HTOOLS)/genDicHunspell.pl _.dic > __.dic
-	wc -l < __.dic > hunspell-ao/pt_PT.dic
-	cat __.dic | $(ICONV) >> hunspell-ao/pt_PT.dic
+	wc -l < __.dic > $(HOUT)-ao/pt_PT.dic
+	cat __.dic | $(ICONV) >> $(HOUT)-ao/pt_PT.dic
 	rm -f _.pl _.dic __.dic
 
-hunspell-preao/pt_PT-preao.dic: port-preao.dic port.aff
+$(HOUT)-preao/pt_PT-preao.dic: port-preao.dic port.aff
 	@ echo " * Building hunspell-preao"
-	mkdir -p hunspell-preao
+	mkdir -p $(HOUT)-preao
 	@ echo "  - expanding dictionaries morphology and converting formats"
 	$(HTOOLS)/obtemRef.pl       port-preao.dic > _.pl
 	$(HTOOLS)/expandeRef.pl     _.pl port-preao.dic > _.dic
 	$(HTOOLS)/genDicHunspell.pl _.dic > __.dic
-	wc -l < __.dic > hunspell-preao/pt_PT-preao.dic
-	cat __.dic | $(ICONV) >> hunspell-preao/pt_PT-preao.dic
+	wc -l < __.dic > $(HOUT)-preao/pt_PT-preao.dic
+	cat __.dic | $(ICONV) >> $(HOUT)-preao/pt_PT-preao.dic
 	rm -f _.pl _.dic __.dic
 
-hunspellpreao: hunspell-preao/pt_PT-preao.dic hunspell-preao/pt_PT-preao.aff
-	cp DOC/COPYING hunspell-preao
-	cp $(HTOOLS)/README_PT_pt.txt hunspell-preao
-	cp $(HTOOLS)/makefile-preao.dist hunspell-preao/makefile
+hunspellpreao: $(HOUT)-preao/pt_PT-preao.dic $(HOUT)-preao/pt_PT-preao.aff
+	cp DOC/COPYING $(HOUT)-preao
+	cp $(HTOOLS)/README_PT_pt.txt $(HOUT)-preao
+	cp $(HTOOLS)/makefile-preao.dist $(HOUT)-preao/makefile
 
-hunspellao: hunspell-ao/pt_PT.dic hunspell-ao/pt_PT.aff
-	cp DOC/COPYING hunspell-ao
-	cp $(HTOOLS)/README_PT_pt.txt hunspell-ao
-	cp $(HTOOLS)/makefile-ao.dist hunspell-ao/makefile
+hunspellao: $(HOUT)-ao/pt_PT.dic $(HOUT)-ao/pt_PT.aff
+	cp DOC/COPYING $(HOUT)-ao
+	cp $(HTOOLS)/README_PT_pt.txt $(HOUT)-ao
+	cp $(HTOOLS)/makefile-ao.dist $(HOUT)-ao/makefile
 
-hunspell-ao-tgz: hunspell-ao
+hunspell-ao-tgz: hunspellao
 	@ echo " * Creating hunspell-ao tarball"
 	mkdir $(HAODIST)
-	cp hunspell-ao/* $(HAODIST)
-	tar zcf $(HAODIST).tar.gz $(HAODIST)
+	cp $(HOUT)-ao/* $(HAODIST)
+	tar zcf out/$(HAODIST).tar.gz $(HAODIST)
 	rm -fr $(HAODIST)
 
-hunspell-preao-tgz: hunspell-preao
+hunspell-preao-tgz: hunspellpreao
 	@ echo " * Creating hunspell-ao tarball"
 	mkdir $(HPREAODIST)
-	cp hunspell-preao/* $(HPREAODIST)
-	tar zcf $(HPREAODIST).tar.gz $(HPREAODIST)
+	cp $(HOUT)-preao/* $(HPREAODIST)
+	tar zcf out/$(HPREAODIST).tar.gz $(HPREAODIST)
 	rm -fr $(HPREAODIST)
 
 realclean ::
 	@ echo "Cleaning hunspell files"
-	rm -fr hunspell-preao
-	rm -fr hunspell-ao
-	rm -fr hunspell-PT_pt*
+	rm -fr $(HOUT)-preao
+	rm -fr $(HOUT)-ao
+	rm -fr $(HOUT)-PT_pt*
