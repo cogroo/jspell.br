@@ -1753,7 +1753,7 @@ anafrodítico/#a//
 anagrama/#nm/p/
 anal/#an/p/
 analepse/#nf//
-analéptico/#hm/pf/
+analéptico/#hm/pf/   ## dúvida analético
 analfabético/#a/pf/
 analfabeto/#hm/fip/
 analgesia/#nf/p/
@@ -3331,7 +3331,7 @@ assimilar/#vt/XYPLcv/
 assimilativo/#a//
 assimptota/EQAO90=assintota,#nf/p/
 assintota/PREAO90=assimptota,#nf/p/
-assimptótico/#a/fp/
+assimptótico/#a/fp/           ### dúvida assimtótico
 assimulação/#nf/p/
 assinado/#nm/p/
 assinalante/#an/p/
@@ -7641,7 +7641,7 @@ ciclo/#nm/ptiu/
 ciclope/#nm/p/
 ciclópeo/#a//
 ciclópico/#a/fp/
-ciclóptico/#a/fp/
+ciclóptico/#a/fp/   ## dúvida
 ciclóstomo/#a/p/
 ciclotrão/#nm//
 ciclovia/#nf/p/
@@ -24703,7 +24703,8 @@ opróbrio/#nm/p/
 optante/#hn/p/
 optar/#vi/XYLcn/
 optativo/#a/fp/
-opticamente/#av//
+opticamente/AO90=oticamente,#av//
+oticamente/PREAO90=opticamente,#av//
 óptica/AO90=ótica,#nf//
 ótica/PREAO90=óptica,#nf//
 opticidade/EQAO90=oticidade,#nf/p/
@@ -31668,7 +31669,7 @@ sinonimizar/#vt/XYPL/
 sinónimo/#hm/fp/
 sino/#nm/py/
 sinopse/#nf/p/
-sinóptico/#a/fp/
+sinóptico/#a/fp/   ### dúvida sinótico
 sintáctico/AO90=sintático,#a/pfH/
 sintático/PREAO90=sintáctico,#a/pfH/
 sintagma/#nm/p/
