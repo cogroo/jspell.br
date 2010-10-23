@@ -5,8 +5,8 @@
 
 HTOOLS=./HUNSPELL
 ICONV=iconv -f iso8859-1 -t utf-8
-HAODIST=hunspell-PT_pt-$(DATE)
-HPREAODIST=hunspell-PT_pt-preao-$(DATE)
+HAODIST=hunspell-pt_PT-$(DATE)
+HPREAODIST=hunspell-pt_PT-preao-$(DATE)
 HOUT=out/hunspell
 
 hunspell-all: hunspell hunspell-ao-tgz hunspell-preao-tgz
@@ -47,12 +47,12 @@ $(HOUT)-preao/pt_PT-preao.dic: port-preao.dic port.aff
 
 hunspellpreao: $(HOUT)-preao/pt_PT-preao.dic $(HOUT)-preao/pt_PT-preao.aff
 	cp DOC/COPYING $(HOUT)-preao
-	cp $(HTOOLS)/README_PT_pt.txt $(HOUT)-preao
+	cp $(HTOOLS)/README_pt_PT.txt $(HOUT)-preao
 	cp $(HTOOLS)/makefile-preao.dist $(HOUT)-preao/makefile
 
 hunspellao: $(HOUT)-ao/pt_PT.dic $(HOUT)-ao/pt_PT.aff
 	cp DOC/COPYING $(HOUT)-ao
-	cp $(HTOOLS)/README_PT_pt.txt $(HOUT)-ao
+	cp $(HTOOLS)/README_pt_PT.txt $(HOUT)-ao
 	cp $(HTOOLS)/makefile-ao.dist $(HOUT)-ao/makefile
 
 hunspell-ao-tgz: hunspellao
@@ -73,4 +73,4 @@ realclean ::
 	@ echo "Cleaning hunspell files"
 	rm -fr $(HOUT)-preao
 	rm -fr $(HOUT)-ao
-	rm -fr $(HOUT)-PT_pt*
+	rm -fr $(HOUT)-pt_PT*
