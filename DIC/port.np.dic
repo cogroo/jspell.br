@@ -844,7 +844,8 @@ Efésio/CAT=np/
 Egas/#npm/
 Egeu/#tm/
 Egídio/#npm/
-Egipto/#la,#tp/
+Egipto/#la,#tp,AO90=Egito/
+Egito/#la,#tp,PREAO90=Egipto/
 Einstein/#np1/
 Eisenberg/#np1/
 Eisenhower/#np1/
