@@ -19,20 +19,11 @@ aspell5-preao-tgz: aspell5preao
 	cd $(AO50)-preao; make dist
 	mv $(AO50)-preao/*.bz2 out/aspell5.pt-preao-$(DATE).tar.bz2
 
-aspell5-ao.wl: port-ao.dic  ## FIXME - Take advantage of wordlist rules
-	@ echo "Generating port-ao wordlist"
-	TOOLS/gerarWordList.pl port-ao.dic > aspell5-ao.wl
-
-aspell5-preao.wl: port-preao.dic  ## FIXME - Take advantage of wordlist rules
-	@ echo "Generating port-preao wordlist"
-	TOOLS/gerarWordList.pl port-preao.dic > aspell5-preao.wl
-
-
-aspell5ao: aspell5-dirs a5clean-toolkit aspell5-ao.wl
+aspell5ao: aspell5-dirs a5clean-toolkit aspell5-ao.wl $(WLDIR)/wl-ao.txt
 	@ echo "Creating aspell5 empty dictionary"
 	cd $(AKIT); perl pre pt iso-8859-1
 	@ echo "Filling with computed files"
-	mv aspell5-ao.wl $(AKIT)/pt/pt.wl
+	cp $(WLDIR)/wl-ao.txt $(AKIT)/pt/pt.wl
 	cp $(A50)/Copyright $(AKIT)/pt
 	@ echo "Replacing variables"
 	perl -pe 'BEGIN{ $$D=$(DATE);chomp $$D}; s/VERSAO/$$D/g;' $(A50)/info > $(AKIT)/pt/info
@@ -46,11 +37,11 @@ aspell5ao: aspell5-dirs a5clean-toolkit aspell5-ao.wl
 	@ echo "Moving files"
 	mv $(AKIT)/pt/* $(AO50)-ao
 
-aspell5preao: aspell5-dirs a5clean-preao-toolkit aspell5-preao.wl
+aspell5preao: aspell5-dirs a5clean-preao-toolkit $(WLDIR)/wl-preao.txt
 	@ echo "Creating aspell5 empty dictionary"
 	cd $(AKIT); perl pre pt-preao iso-8859-1
 	@ echo "Filling with computed files"
-	mv aspell5-preao.wl $(AKIT)/pt-preao/pt.wl
+	cp $(WLDIR)/wl-preao.txt $(AKIT)/pt-preao/pt.wl
 	cp $(A50)/Copyright $(AKIT)/pt-preao
 	@ echo "Replacing variables"
 	perl -pe 'BEGIN{ $$D=$(DATE);chomp $$D}; s/VERSAO/$$D/g;' $(A50)/info > $(AKIT)/pt-preao/info

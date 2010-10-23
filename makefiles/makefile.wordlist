@@ -2,17 +2,34 @@
 #-------------------------------------------------------------------
 # wordlist rules
 #-------------------------------------------------------------------
-wordlist-mix: port-mix.dic
-	cd WORDLIST; make wl-mix; #makfde diff
 
-wordlist-ao: port-ao.dic
-	cd WORDLIST; make wl-ao; #makfde diff
 
-wordlist-bz2: wordlist
-	cd WORDLIST; make bz2
-	cp WORDLIST/wordlist.$(ABRX)-$(DATE).tar.bz2 .
-	cp WORDLIST/rawdiffwordlist.$(ABRX)-$(DATE).txt .
-	cp WORDLIST/verbdiffwordlist.$(ABRX)-$(DATE).txt .
+wordlist-all: wordlist
 
-wordlist-clean:
-	@ cd WORDLIST; make -s clean 
+wordlist: wordlist-ao wordlist-preao wordlist-mix
+
+
+wordlist-mix: wordlist-dir $(WLDIR)/wl-mix.txt
+
+$(WLDIR)/wl-mix.txt: port-mix.dic port-mix.hash
+	TOOLS/gerarWordList.pl port-mix.dic ./port-mix.hash > $(WLDIR)/wl-mix.txt
+
+
+wordlist-ao: wordlist-dir $(WLDIR)/wl-ao.txt
+
+$(WLDIR)/wl-ao.txt: port-ao.dic port-ao.hash
+	TOOLS/gerarWordList.pl port-ao.dic ./port-ao.hash > $(WLDIR)/wl-ao.txt
+
+
+wordlist-preao: wordlist-dir $(WLDIR)/wl-preao.txt
+
+$(WLDIR)/wl-preao.txt: port-preao.dic port-preao.hash
+	TOOLS/gerarWordList.pl port-preao.dic ./port-preao.hash > $(WLDIR)/wl-preao.txt
+
+
+wordlist-dir:
+	mkdir -p $(WLDIR)
+
+realclean ::
+	rm -fr $(WLDIR)-ao
+	rm -fr $(WLDIR)-preao

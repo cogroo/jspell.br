@@ -5,6 +5,8 @@
 
 #A olddate obtém sempre a data YYYYMMDD da penúltima wordlist do directório.
 
+############# TODO - Rever codigo do diff... ################################
+
 L=pt_PT
 DATE=`date +%Y%m%d`
 D=/home/natura/download/sources/Dictionaries/
@@ -13,17 +15,6 @@ OLDDATE=`ls -c1 $(DS)wordlist |grep -v 'latest' |sed -e 's/\.tar\.bz2//' |sed -e
 RCDATE=`ls -c1 $(DS)wordlist |grep -v 'latest' |sed -e 's/\.tar\.bz2//' |sed -e 's/[^0-9]\+//' |sort |tail -n 1`
 #RCDATE=20070504
 #OLDDATE=20070426
-
-all: wl diff
-
-wl-mix: ../port-mix.dic
-	perl gerarWordList.pl ../port-mix.dic > wordlist-mix.$L-$(DATE).txt
-
-wl-ao: ../port-ao.dic
-	perl gerarWordList.pl ../port-ao.dic > wordlist-ao.$L-$(DATE).txt
-
-bz2: #wl
-	tar cfj wordlist.$L-$(DATE).tar.bz2  wordlist.$L-$(DATE).txt
 
 diff: #wl
 	rm -f *bz2
@@ -35,8 +26,3 @@ diff: #wl
 	tar xfj wordlist.$L-$(RCDATE).tar.bz2
 	-diff wordlist.$L-$(RCDATE).txt wordlist.$L-$(DATE).txt > rawdiffwordlist.$L-$(DATE).txt
 	perl verbdiff.pl rawdiffwordlist.$L-$(DATE).txt > verbdiffwordlist.$L-$(DATE).txt
-../port.dic:
-	cd ..; make port.dic
-
-clean : 
-	rm -rf *~ *.txt *bz2

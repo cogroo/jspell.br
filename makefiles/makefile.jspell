@@ -13,23 +13,23 @@ jspell-preao: port-preao.hash port.irr
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''#
 # DICS:                                               #
 #   port-big.dic   (mix, big) -- for now              #
-#   port.dic       (mix)                              #
+#   port-mix.dic   (mix)                              #
 #   port-ao.dic    (ao1990)                           #
 #   port-preao.dic (pre-ao1990)                       #
 #.....................................................#
 
-port-big.dic: port.dic $(PTDICEXTRA)
-	cat port.dic $(PTDICEXTRA) > port-big.dic
+port-big.dic: port-mix.dic $(PTDICEXTRA)
+	cat port-mix.dic $(PTDICEXTRA) > port-big.dic
 
-port.dic: $(PTDIC) aux_all_irr.dic 
-	echo '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port.dic
-	cat $(PTDIC) aux_all_irr.dic >> port.dic 
+port-mix.dic: $(PTDIC) aux_all_irr.dic 
+	echo '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port-mix.dic
+	cat $(PTDIC) aux_all_irr.dic >> port-mix.dic 
 
-port-ao.dic: port.dic
-	perl -ne 'print unless /(?<!RE|EQ)AO90/' port.dic > port-ao.dic
+port-ao.dic: port-mix.dic
+	perl -ne 'print unless /(?<!RE|EQ)AO90/' port-mix.dic > port-ao.dic
 
-port-preao.dic: port.dic
-	perl -ne 'print unless /PREAO90/' port.dic > port-preao.dic
+port-preao.dic: port-mix.dic
+	perl -ne 'print unless /PREAO90/' port-mix.dic > port-preao.dic
 
 aux_all_irr.dic: irregulares.txt aux_verb.dic IRR/ge_verb
 	IRR/ge_verb aux_verb.dic < irregulares.txt > aux_all_irr.dic
@@ -55,17 +55,45 @@ IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
 port-big.hash: port-big.dic port.aff
 	jbuild port-big.dic port.aff port-big.hash
 
-port.hash: port-mix.hash
-	cp port-mix.hash port.hash
+port.hash: port-ao.hash
+	cp port-ao.hash port.hash
 
-port-mix.hash: port.dic port.aff
-	jbuild port.dic port.aff port-mix.hash
+port-mix.hash: port-mix.dic port.aff
+	jbuild port-mix.dic port.aff port-mix.hash
 
 port-ao.hash: port-ao.dic port.aff
 	jbuild port-ao.dic port.aff port-ao.hash
 
 port-preao.hash: port-preao.dic port.aff
 	jbuild port-preao.dic port.aff port-preao.hash
+
+
+#'''''''''''''''''''''''''''''''''''''''''''''''''''''#
+# install dictionaries... all                         # 
+#.....................................................#
+
+jspell-install: jspell-ao-install jspell-preao-install jspell-mix-install jspell-big-install
+
+jspell-ao-install: port.irr port.yaml port-ao.hash port.hash
+	cp port.irr port.yaml port.hash $(LIB)
+	cp port-ao.hash $(LIB)
+	cp port.irr  $(LIB)/port-ao.irr
+	cp port.yaml $(LIB)/port-ao.yaml
+
+jspell-preao-install: port.irr port.yaml port-preao.hash
+	cp port-preao.hash $(LIB)
+	cp port.irr  $(LIB)/port-preao.irr
+	cp port.yaml $(LIB)/port-preao.yaml
+
+jspell-mix-install: port.irr port.yaml port-mix.hash
+	cp port-mix.hash $(LIB)
+	cp port.irr  $(LIB)/port-mix.irr
+	cp port.yaml $(LIB)/port-mix.yaml
+
+jspell-big-install: port.irr port.yaml port-big.hash
+	cp port-big.hash $(LIB)
+	cp port.irr  $(LIB)/port-big.irr
+	cp port.yaml $(LIB)/port-big.yaml
 
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''#
 # Distribution packages...                            # XXX FIXME
@@ -78,15 +106,6 @@ jspell-dist: port.irr port.aff port.yaml $(PTDIC) aux_all_irr.dic
 	tar zcf $(DIST_DIR).tar.gz $(DIST_DIR)
 	rm -fr $(DIST_DIR)
 	echo DONE
-
-jspell-big-install: port-big.hash port.irr
-	mkdir -p $(LIB)
-	cp port-big.hash                $(LIB)/port.hash
-	cp port.irr  port.yaml port.aff $(LIB)
-
-jspell-install: port.hash port.irr
-	mkdir -p $(LIB)
-	cp port.hash port.irr port.yaml port.aff  $(LIB)
 
 jspell-doc:
 	cd DOC; make jspell;

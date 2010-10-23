@@ -11,6 +11,8 @@ all:
 	@ echo " aspell5-all    - Build aspell v0.50 folders and tarballs"
 	@ echo " aspell5        - Build aspell v0.50 folders only"
 	@ echo
+	@ echo " wordlist       - Build wordlist folders only"
+	@ echo
 	@ echo "chuveiro:"
 	@ echo "\tchuveiro -- build all available dictionaries"
 	@ echo "\tchuveiro-install -- online publish at natura"
@@ -19,21 +21,11 @@ all:
 	@ echo "  - jspell-help  \t for jspell"
 	@ echo "  - aspell6-help \t for aspell v6"
 	@ echo "  - myspell-help \t for myspell"
-	@ echo "  - wordlist-help\t for word-lists"
 	@ echo
 
-dicts: ispell hunspell aspell5
+dicts: ispell hunspell aspell5 wordlist
 
-tarballs: ispell-all hunspell-all aspell5-all
-
-wordlist-help:
-	@ echo
-	@ echo "wordlist:"
-	@ echo "\twordlist -- builds a simple word list"
-	@ echo "\twordlist-bz2 -- creates wordlist compressed file"
-	@ echo "\twordlist-diff -- calculates real differences on the dictionary since last release"
-	@ echo "\t                 (needs a previous release)"
-	@ echo
+tarballs: ispell-all hunspell-all aspell5-all wordlist-all
 
 myspell-help:
 	@ echo
@@ -75,7 +67,7 @@ include makefiles/makefile.chuveiro
 #-------------------------------------------------------------------
 # Garbage collecting :)
 #-------------------------------------------------------------------
-clean: aspell6-clean myspell-clean wordlist-clean
+clean: aspell6-clean myspell-clean 
 	@ printf " Removing temporary files..."
 	@ rm -f *.stat *.cnt *$(DATE)*txt
 	@ rm -f *~ */*~ */*/*~
