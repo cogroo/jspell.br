@@ -1,18 +1,74 @@
-
-#-------------------------------------------------------------------
+# -*- makefile -*- _________________________________________________
+#
 # aspell 0.50 rules
-#-------------------------------------------------------------------
-aspell5: port.dic port.aff
-	cd ASPELL5; make aspell
+#___________________________________________________________________
 
-aspell5-install: aspell5
-	cd ASPELL5; make install
+AKIT=ASPELL_TOOLKIT/aspell-lang
+A50=ASPELL5
+AO50=out/aspell5
 
-aspell5-tgz:
-	cd ASPELL5; make dist
-	mv ASPELL5/aspell5*$(DATE)*bz2 .
+aspell5-all: aspell5 aspell5-ao-tgz aspell5-preao-tgz
 
-aspell5-clean:
-	@ cd ASPELL5; make -s clean
+aspell5: aspell5ao aspell5preao
 
+aspell5-ao.wl: port-ao.dic
+	TOOLS/gerarWordList.pl port-ao.dic > aspell5-ao.wl
+
+aspell5-preao.wl: port-preao.dic
+	TOOLS/gerarWordList.pl port-preao.dic > aspell5-preao.wl
+
+aspell5ao: aspell5-dirs a5clean-toolkit aspell5-ao.wl
+	@ echo "Creating aspell5 empty dictionary"
+	cd $(AKIT); perl pre pt iso-8859-1
+	@ echo "Filling with computed files"
+	mv aspell5-ao.wl $(AKIT)/pt/pt.wl
+	cp $(A50)/Copyright $(AKIT)/pt
+	@ echo "Replacing variables"
+	perl -pe 'BEGIN{ $$D=$(DATE);chomp $$D}; s/VERSAO/$$D/g;' $(A50)/info > $(AKIT)/pt/info
+	perl -pe 's/LANG/pt/g' $(A50)/pt.dat > $(AKIT)/pt/pt.dat
+	@ echo "Running aspell toolkit: create"
+	cd $(AKIT)/pt; perl proc create
+	@ echo "Running aspell toolkit: configure"
+	cd $(AKIT)/pt; ./configure
+	@ echo "Running aspell toolkit: make"
+	cd $(AKIT)/pt; make
+	@ echo "Moving files"
+	mv $(AKIT)/pt/* $(AO50)-ao
+
+aspell5preao: aspell5-dirs a5clean-preao-toolkit aspell5-preao.wl
+	@ echo "Creating aspell5 empty dictionary"
+	cd $(AKIT); perl pre pt-preao iso-8859-1
+	@ echo "Filling with computed files"
+	mv aspell5-preao.wl $(AKIT)/pt-preao/pt.wl
+	cp $(A50)/Copyright $(AKIT)/pt-preao
+	@ echo "Replacing variables"
+	perl -pe 'BEGIN{ $$D=$(DATE);chomp $$D}; s/VERSAO/$$D/g;' $(A50)/info > $(AKIT)/pt-preao/info
+	perl -pe 's/LANG/pt-preao/g' $(A50)/pt.dat > $(AKIT)/pt-preao/pt.dat
+	@ echo "Running aspell toolkit: create"
+	cd $(AKIT)/pt-preao; perl proc create
+	@ echo "Running aspell toolkit: configure"
+	cd $(AKIT)/pt-preao; ./configure
+	@ echo "Running aspell toolkit: make"
+	cd $(AKIT)/pt-preao; make
+	@ echo "Moving files"
+	mv $(AKIT)/pt-preao/* $(AO50)-preao
+
+
+
+
+a5clean-toolkit:
+	rm -fr $(AKIT)/pt
+
+a5clean-preao-toolkit:
+	rm -fr $(AKIT)/pt-preao
+
+aspell5-dirs:
+	mkdir -p $(AO50)-ao
+	mkdir -p $(AO50)-preao
+
+
+realclean :: a5clean-toolkit a5clean-preao-toolkit
+	@ echo "Cleaning aspell .5 files"
+	rm -fr $(AO50)-ao
+	rm -fr $(AO50)-preao
 

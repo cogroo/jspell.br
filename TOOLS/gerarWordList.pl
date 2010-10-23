@@ -9,8 +9,10 @@
 
 my $dict = shift or die;
 
+#port.hash actualizado?
 open(F,qq{awk -F / '{print \$1 "/" \$3}' $dict | jspell -e -o '' |}) or die;
-open(F1,"| grep -v '#' |grep '[a-zA-Zàéóáú]' | LANG=C sort -u") or die;
+open(F1,"| grep -v '#' |grep '[a-zA-Zàéóáú]' | LC_ALL=C sort -u") or die;
+#open F1, ">tmp";
 
 my $i;
 while(<F>){
@@ -19,9 +21,9 @@ while(<F>){
     s/[= ,\n]+/\n/g;
     next if m!^#!;
     print F1 "$_\n";
-    print STDERR ".. $i" unless ($i % 5000);
+    print STDERR "$i.." unless ($i % 1000);
 }
-print STDERR ".. $i";
+print STDERR "$i\n";
 
 close F1;
 close F;

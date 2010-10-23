@@ -6,7 +6,10 @@ all:
 	@ echo " ispell         - Build ispell folders only"
 	@ echo
 	@ echo " hunspell-all   - Build hunspell folders and tarballs"
-	@ echo " hunspell       - Build ispell folders only"
+	@ echo " hunspell       - Build hunspell folders only"
+	@ echo
+	@ echo " aspell5-all    - Build aspell v0.50 folders and tarballs"
+	@ echo " aspell5        - Build aspell v0.50 folders only"
 	@ echo
 	@ echo "chuveiro:"
 	@ echo "\tchuveiro -- build all available dictionaries"
@@ -14,15 +17,14 @@ all:
 	@ echo
 	@ echo " For specific targets documentation:"
 	@ echo "  - jspell-help  \t for jspell"
-	@ echo "  - aspell5-help \t for aspell v5"
 	@ echo "  - aspell6-help \t for aspell v6"
 	@ echo "  - myspell-help \t for myspell"
 	@ echo "  - wordlist-help\t for word-lists"
 	@ echo
 
-dicts: ispell hunspell
+dicts: ispell hunspell aspell5
 
-tarballs: ispell-all hunspell-all
+tarballs: ispell-all hunspell-all aspell5-all
 
 wordlist-help:
 	@ echo
@@ -51,23 +53,6 @@ jspell-help:
 	@ echo "\tjspell-publish -- creates jspell-dist and -bin and uploads"
 	@ echo
 
-ispell-help:
-	@ echo
-	@ echo "ispell:"
-	@ echo "\tispell -- builds ispell dictionary"
-	@ echo "\tispell-install -- installs ispell"
-	@ echo "\tispell-clean -- clears ispell generated dictionaries"
-	@ echo "\tispell-tgz -- creates ispell distribution file"
-	@ echo
-
-aspell5-help:
-	@ echo
-	@ echo "aspell5:"
-	@ echo "\taspell5 -- builds aspell 0.50 dictionary"
-	@ echo "\taspell5-install -- installs aspell 0.50"
-	@ echo "\taspell5-tgz -- creates aspell 0.50 distribution file"
-	@ echo
-
 aspell6-help:
 	@ echo
 	@ echo "aspell6:"
@@ -90,7 +75,7 @@ include makefiles/makefile.chuveiro
 #-------------------------------------------------------------------
 # Garbage collecting :)
 #-------------------------------------------------------------------
-clean: aspell5-clean aspell6-clean myspell-clean wordlist-clean
+clean: aspell6-clean myspell-clean wordlist-clean
 	@ printf " Removing temporary files..."
 	@ rm -f *.stat *.cnt *$(DATE)*txt
 	@ rm -f *~ */*~ */*/*~
