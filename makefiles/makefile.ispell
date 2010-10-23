@@ -78,4 +78,4 @@ realclean ::
 	@ echo "Cleaning ispell files"
 	rm -fr $(IOUT)-ao
 	rm -fr $(IOUT)-preao
-	rm -fr $(IOUT).pt-preao*
+	rm -fr $(IOUT).pt*

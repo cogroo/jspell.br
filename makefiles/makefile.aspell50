@@ -11,11 +11,22 @@ aspell5-all: aspell5 aspell5-ao-tgz aspell5-preao-tgz
 
 aspell5: aspell5ao aspell5preao
 
-aspell5-ao.wl: port-ao.dic
+aspell5-ao-tgz: aspell5ao
+	cd $(AO50)-ao; make dist
+	mv $(AO50)-ao/*.bz2 out/aspell5.pt-$(DATE).tar.bz2
+
+aspell5-preao-tgz: aspell5preao
+	cd $(AO50)-preao; make dist
+	mv $(AO50)-preao/*.bz2 out/aspell5.pt-preao-$(DATE).tar.bz2
+
+aspell5-ao.wl: port-ao.dic  ## FIXME - Take advantage of wordlist rules
+	@ echo "Generating port-ao wordlist"
 	TOOLS/gerarWordList.pl port-ao.dic > aspell5-ao.wl
 
-aspell5-preao.wl: port-preao.dic
+aspell5-preao.wl: port-preao.dic  ## FIXME - Take advantage of wordlist rules
+	@ echo "Generating port-preao wordlist"
 	TOOLS/gerarWordList.pl port-preao.dic > aspell5-preao.wl
+
 
 aspell5ao: aspell5-dirs a5clean-toolkit aspell5-ao.wl
 	@ echo "Creating aspell5 empty dictionary"
@@ -71,4 +82,4 @@ realclean :: a5clean-toolkit a5clean-preao-toolkit
 	@ echo "Cleaning aspell .5 files"
 	rm -fr $(AO50)-ao
 	rm -fr $(AO50)-preao
-
+	rm -fr $(AO50).pt*
