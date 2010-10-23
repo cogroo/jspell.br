@@ -15,31 +15,31 @@ hunspell: hunspellao hunspellpreao
 
 $(HOUT)-ao/pt_PT.aff: $(HOUT)-ao/pt_PT.dic
 	@ echo "  - affix file conversion"
-	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl port.aff | $(ICONV) > $(HOUT)-ao/pt_PT.aff
+	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl $(JOUT)/port.aff | $(ICONV) > $(HOUT)-ao/pt_PT.aff
 	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> $(HOUT)-ao/pt_PT.aff
 
 $(HOUT)-preao/pt_PT-preao.aff: $(HOUT)-preao/pt_PT-preao.dic
 	@ echo "  - affix file conversion"
-	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl port.aff | $(ICONV) > $(HOUT)-preao/pt_PT-preao.aff
+	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl $(JOUT)/port.aff | $(ICONV) > $(HOUT)-preao/pt_PT-preao.aff
 	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> $(HOUT)-preao/pt_PT-preao.aff
 
-$(HOUT)-ao/pt_PT.dic: port-ao.dic port.aff
+$(HOUT)-ao/pt_PT.dic: $(JOUT)/port-ao.dic $(JOUT)/port.aff
 	@ echo " * Building hunspell-ao"
 	mkdir -p $(HOUT)-ao
 	@ echo "  - expanding dictionaries morphology and converting formats"
-	$(HTOOLS)/obtemRef.pl       port-ao.dic > _.pl
-	$(HTOOLS)/expandeRef.pl     _.pl port-ao.dic > _.dic
+	$(HTOOLS)/obtemRef.pl       $(JOUT)/port-ao.dic > _.pl
+	$(HTOOLS)/expandeRef.pl     _.pl $(JOUT)/port-ao.dic > _.dic
 	$(HTOOLS)/genDicHunspell.pl _.dic > __.dic
 	wc -l < __.dic > $(HOUT)-ao/pt_PT.dic
 	cat __.dic | $(ICONV) >> $(HOUT)-ao/pt_PT.dic
 	rm -f _.pl _.dic __.dic
 
-$(HOUT)-preao/pt_PT-preao.dic: port-preao.dic port.aff
+$(HOUT)-preao/pt_PT-preao.dic: $(JOUT)/port-preao.dic $(JOUT)/port.aff
 	@ echo " * Building hunspell-preao"
 	mkdir -p $(HOUT)-preao
 	@ echo "  - expanding dictionaries morphology and converting formats"
-	$(HTOOLS)/obtemRef.pl       port-preao.dic > _.pl
-	$(HTOOLS)/expandeRef.pl     _.pl port-preao.dic > _.dic
+	$(HTOOLS)/obtemRef.pl       $(JOUT)/port-preao.dic > _.pl
+	$(HTOOLS)/expandeRef.pl     _.pl $(JOUT)/port-preao.dic > _.dic
 	$(HTOOLS)/genDicHunspell.pl _.dic > __.dic
 	wc -l < __.dic > $(HOUT)-preao/pt_PT-preao.dic
 	cat __.dic | $(ICONV) >> $(HOUT)-preao/pt_PT-preao.dic

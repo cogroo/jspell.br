@@ -7,7 +7,6 @@ ITOOLS=./ISPELL
 JSP2ISP=$(ITOOLS)/jsp2isp.pl
 ISPELLPKG=ispell.pt-$(DATE)
 ISPELLPPKG=ispell.pt-preao-$(DATE)
-IOUT=out/ispell
 
 ispell-all: ispell ispell-ao-tgz ispell-preao-tgz
 
@@ -48,23 +47,23 @@ $(IOUT)-preao/portugues-preao.hash: $(IOUT)-preao/portugues-preao.dic \
 	buildhash $(IOUT)-preao/portugues-preao.dic $(IOUT)-preao/portugues-preao.aff $(IOUT)-preao/portugues-preao.hash
 	rm -f $(IOUT)-preao/portugues-preao.stat
 
-$(IOUT)-ao/portugues.dic: port-ao.dic
+$(IOUT)-ao/portugues.dic: $(JOUT)/port-ao.dic
 	@ echo "Creating ispell-ao/portugues.dic"
-	$(JSP2ISP) port-ao.dic | grep -v '[#-]' > _.dic
+	$(JSP2ISP) $(JOUT)/port-ao.dic | grep -v '[#-]' > _.dic
 	$(ITOOLS)/retiraRegra.pl PL _.dic | $(ITOOLS)/compact.pl > $(IOUT)-ao/portugues.dic
 	rm _.dic
 
-$(IOUT)-ao/portugues.aff: port.aff
+$(IOUT)-ao/portugues.aff: $(JOUT)/port.aff
 	@ echo "Creating ispell-ao/portugues.aff"
-	$(JSP2ISP) port.aff > $(IOUT)-ao/portugues.aff
+	$(JSP2ISP) $(JOUT)/port.aff > $(IOUT)-ao/portugues.aff
 
-$(IOUT)-preao/portugues-preao.aff: port.aff
+$(IOUT)-preao/portugues-preao.aff: $(JOUT)/port.aff
 	@ echo "Creating ispell-preao/portugues-preao.aff"
-	$(JSP2ISP) port.aff > $(IOUT)-preao/portugues-preao.aff
+	$(JSP2ISP) $(JOUT)/port.aff > $(IOUT)-preao/portugues-preao.aff
 
-$(IOUT)-preao/portugues-preao.dic: port-preao.dic
+$(IOUT)-preao/portugues-preao.dic: $(JOUT)/port-preao.dic
 	@ echo "Creating ispell-ao/portugues-preao.dic"
-	$(JSP2ISP) port-preao.dic | grep -v '[#-]' > _.dic
+	$(JSP2ISP) $(JOUT)/port-preao.dic | grep -v '[#-]' > _.dic
 	$(ITOOLS)/retiraRegra.pl PL _.dic | $(ITOOLS)/compact.pl > $(IOUT)-preao/portugues-preao.dic
 	rm _.dic
 

@@ -1,14 +1,18 @@
 # -*- makefile -*- # instruct emacs
 
-jspell-big: port-big.hash port.irr
+jspell-big: jdir $(JOUT)/port-big.hash $(JOUT)/port.irr $(JOUT)/port.yaml $(JOUT)/port.aff
 
-jspell-mix: port-mix.hash port.irr
+jspell-mix: jdir $(JOUT)/port-mix.hash $(JOUT)/port.irr $(JOUT)/port.yaml $(JOUT)/port.aff
 
-jspell: port.hash port.irr
+jspell: jdir jspell-big jspell-mix jspell-ao jspell-preao
 
-jspell-ao: port-ao.hash port.irr
+jdir:
+	mkdir -p $(JOUT)
 
-jspell-preao: port-preao.hash port.irr
+jspell-ao: jdir $(JOUT)/port.hash $(JOUT)/port-ao.hash \
+                $(JOUT)/port.irr  $(JOUT)/port.yaml $(JOUT)/port.aff
+
+jspell-preao: jdir $(JOUT)/port-preao.hash $(JOUT)/port.irr $(JOUT)/port.yaml $(JOUT)/port.aff
 
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''#
 # DICS:                                               #
@@ -18,27 +22,27 @@ jspell-preao: port-preao.hash port.irr
 #   port-preao.dic (pre-ao1990)                       #
 #.....................................................#
 
-port-big.dic: port-mix.dic $(PTDICEXTRA)
-	cat port-mix.dic $(PTDICEXTRA) > port-big.dic
+$(JOUT)/port-big.dic: $(JOUT)/port-mix.dic $(PTDICEXTRA)
+	cat $(JOUT)/port-mix.dic $(PTDICEXTRA) > $(JOUT)/port-big.dic
 
-port-mix.dic: $(PTDIC) aux_all_irr.dic 
-	echo '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > port-mix.dic
-	cat $(PTDIC) aux_all_irr.dic >> port-mix.dic 
+$(JOUT)/port-mix.dic: $(PTDIC) $(JOUT)/aux_all_irr.dic 
+	echo '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > $(JOUT)/port-mix.dic
+	cat $(PTDIC) $(JOUT)/aux_all_irr.dic >> $(JOUT)/port-mix.dic 
 
-port-ao.dic: port-mix.dic
-	perl -ne 'print unless /(?<!RE|EQ)AO90/' port-mix.dic > port-ao.dic
+$(JOUT)/port-ao.dic: $(JOUT)/port-mix.dic
+	perl -ne 'print unless /(?<!RE|EQ)AO90/' $(JOUT)/port-mix.dic > $(JOUT)/port-ao.dic
 
-port-preao.dic: port-mix.dic
-	perl -ne 'print unless /PREAO90/' port-mix.dic > port-preao.dic
+$(JOUT)/port-preao.dic: $(JOUT)/port-mix.dic
+	perl -ne 'print unless /PREAO90/' $(JOUT)/port-mix.dic > $(JOUT)/port-preao.dic
 
-aux_all_irr.dic: irregulares.txt aux_verb.dic IRR/ge_verb
-	IRR/ge_verb aux_verb.dic < irregulares.txt > aux_all_irr.dic
+$(JOUT)/aux_all_irr.dic: DIC/irregulares.txt $(JOUT)/aux_verb.dic IRR/ge_verb
+	IRR/ge_verb $(JOUT)/aux_verb.dic < DIC/irregulares.txt > $(JOUT)/aux_all_irr.dic
 
-port.irr: aux_all_irr.dic
-	./$(IRR2PERL) aux_all_irr.dic > port.irr
+$(JOUT)/port.irr: $(JOUT)/aux_all_irr.dic
+	./$(IRR2PERL) $(JOUT)/aux_all_irr.dic > $(JOUT)/port.irr
 
-aux_verb.dic: DIC/port.geral.dic
-	egrep 'CAT=v|\#v' DIC/port.geral.dic > aux_verb.dic
+$(JOUT)/aux_verb.dic: DIC/port.geral.dic
+	egrep 'CAT=v|\#v' DIC/port.geral.dic > $(JOUT)/aux_verb.dic
 
 IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
 	@ cd IRR; make
@@ -52,48 +56,58 @@ IRR/ge_verb: IRR/ge_verb.l IRR/ge_verb2.y
 #   port-preao.hash (pre-ao1990)                      #
 #.....................................................#
 
-port-big.hash: port-big.dic port.aff
-	jbuild port-big.dic port.aff port-big.hash
+$(JOUT)/port-big.hash: $(JOUT)/port-big.dic $(JOUT)/port.aff
+	jbuild $(JOUT)/port-big.dic $(JOUT)/port.aff $(JOUT)/port-big.hash
+	rm -f $(JOUT)/port-big.dic.stat $(JOUT)/port-big.dic.cnt
 
-port.hash: port-ao.hash
-	cp port-ao.hash port.hash
+$(JOUT)/port.yaml: DIC/port.yaml
+	cp DIC/port.yaml $(JOUT)/port.yaml
 
-port-mix.hash: port-mix.dic port.aff
-	jbuild port-mix.dic port.aff port-mix.hash
+$(JOUT)/port.aff: jdir DIC/port.aff
+	cp DIC/port.aff $(JOUT)/port.aff
 
-port-ao.hash: port-ao.dic port.aff
-	jbuild port-ao.dic port.aff port-ao.hash
+$(JOUT)/port.hash: $(JOUT)/port-ao.hash
+	cp $(JOUT)/port-ao.hash $(JOUT)/port.hash
 
-port-preao.hash: port-preao.dic port.aff
-	jbuild port-preao.dic port.aff port-preao.hash
+$(JOUT)/port-mix.hash: $(JOUT)/port-mix.dic $(JOUT)/port.aff
+	jbuild $(JOUT)/port-mix.dic $(JOUT)/port.aff $(JOUT)/port-mix.hash
+	rm -f $(JOUT)/port-mix.dic.stat $(JOUT)/port-mix.dic.cnt
+
+$(JOUT)/port-ao.hash: $(JOUT)/port-ao.dic $(JOUT)/port.aff
+	jbuild $(JOUT)/port-ao.dic $(JOUT)/port.aff $(JOUT)/port-ao.hash
+	rm -f $(JOUT)/port-ao.dic.stat $(JOUT)/port-ao.dic.cnt
+
+$(JOUT)/port-preao.hash: $(JOUT)/port-preao.dic $(JOUT)/port.aff
+	jbuild $(JOUT)/port-preao.dic $(JOUT)/port.aff $(JOUT)/port-preao.hash
+	rm -f $(JOUT)/port-preao.dic.stat $(JOUT)/port-preao.dic.cnt
 
 
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''#
 # install dictionaries... all                         # 
 #.....................................................#
 
-jspell-install: jspell-ao-install jspell-preao-install jspell-mix-install jspell-big-install
+# jspell-install: jspell-ao-install jspell-preao-install jspell-mix-install jspell-big-install
 
-jspell-ao-install: port.irr port.yaml port-ao.hash port.hash
-	cp port.irr port.yaml port.hash $(LIB)
-	cp port-ao.hash $(LIB)
-	cp port.irr  $(LIB)/port-ao.irr
-	cp port.yaml $(LIB)/port-ao.yaml
+# jspell-ao-install: port.irr port.yaml port-ao.hash port.hash
+# 	cp port.irr port.yaml port.hash $(LIB)
+# 	cp port-ao.hash $(LIB)
+# 	cp port.irr  $(LIB)/port-ao.irr
+# 	cp port.yaml $(LIB)/port-ao.yaml
 
-jspell-preao-install: port.irr port.yaml port-preao.hash
-	cp port-preao.hash $(LIB)
-	cp port.irr  $(LIB)/port-preao.irr
-	cp port.yaml $(LIB)/port-preao.yaml
+# jspell-preao-install: port.irr port.yaml port-preao.hash
+# 	cp port-preao.hash $(LIB)
+# 	cp port.irr  $(LIB)/port-preao.irr
+# 	cp port.yaml $(LIB)/port-preao.yaml
 
-jspell-mix-install: port.irr port.yaml port-mix.hash
-	cp port-mix.hash $(LIB)
-	cp port.irr  $(LIB)/port-mix.irr
-	cp port.yaml $(LIB)/port-mix.yaml
+# jspell-mix-install: port.irr port.yaml port-mix.hash
+# 	cp port-mix.hash $(LIB)
+# 	cp port.irr  $(LIB)/port-mix.irr
+# 	cp port.yaml $(LIB)/port-mix.yaml
 
-jspell-big-install: port.irr port.yaml port-big.hash
-	cp port-big.hash $(LIB)
-	cp port.irr  $(LIB)/port-big.irr
-	cp port.yaml $(LIB)/port-big.yaml
+# jspell-big-install: port.irr port.yaml port-big.hash
+# 	cp port-big.hash $(LIB)
+# 	cp port.irr  $(LIB)/port-big.irr
+# 	cp port.yaml $(LIB)/port-big.yaml
 
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''#
 # Distribution packages...                            # XXX FIXME
@@ -152,6 +166,9 @@ jspell-tgz: $(EXTRADIST) jspell-doc
 
 	@ echo "DONE [$(DIST_DIR).tar.gz]"
 
+realclean ::
+	@ echo "Cleaning jspell files"
+	rm -fr $(JOUT)
 
 ################
 
