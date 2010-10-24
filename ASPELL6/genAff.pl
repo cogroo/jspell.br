@@ -17,7 +17,7 @@ sub printRegra {
       $pri, $seg, $flg=~/[\*\+]/ ? 'Y' : 'N', $#ter+1;
 
     for ( $i = 0; $i < @qui; $i++) {
-	print "%s %s   %-15s %-15s %-15s\n",
+	printf "%s %s   %-15s %-15s %-15s\n",
           $pri, $seg, lc($ter[$i]), lc($qua[$i]), lc($qui[$i]);
     }
     @ter=();  #clean buffer from previous flag
@@ -26,7 +26,9 @@ sub printRegra {
 }
 
 while(<>){
-    next if /^(\s+$|\#|wordchars|allaffixes|defstringtype)/;
+    next if /^(\s+$|\#|wordchars|allaffixes|defstringtype|boundary)/;
+    s/\#.*//;   #Strip Comments
+    next unless /\S/;
 
     if (/^prefixes$/) {
         $pri = 'PFX';
@@ -45,8 +47,9 @@ while(<>){
 	$flg=$tmp2;
 	next;
     }
-    s/\#.*//;   #Strip Comments
-    /^ (.+) \s* > \s+ ([\-\w]*) ,? ([\-\w]+)  /x or die "Strange rule not matching";   ##Takeoff data
+
+    s/\\-/-/g;
+    /^ (.+) \s* > \s+ (?:([\-\w]+) ,)? ([\-\w]+) \s* ;  /x or die "Strange rule not matching";   ##Takeoff data
     push @qui, $1;
     $tmp2=$2;
     $tmp=$3;
@@ -59,7 +62,7 @@ while(<>){
     }
     $ter[-1]=~s/\-//;       ##Cleaning
     $qui[-1]=~s/\s//g;
-    $qua[-1]=~s/\-/0/;
+    $qua[-1]=~s/^\-$/0/;
 }
 
 printRegra();

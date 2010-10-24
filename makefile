@@ -1,22 +1,16 @@
 all:
 	@ echo " dicts          - Build all dicts"
 	@ echo " tarballs       - Build all dicts and tarballs"
-	@ echo
 	@ echo " jspell-all     - Build jspell folders and tarballs"
 	@ echo " jspell         - Build jspell folders only"
-	@ echo
 	@ echo " ispell-all     - Build ispell folders and tarballs"
 	@ echo " ispell         - Build ispell folders only"
-	@ echo
 	@ echo " hunspell-all   - Build hunspell folders and tarballs"
 	@ echo " hunspell       - Build hunspell folders only"
-	@ echo
 	@ echo " aspell5-all    - Build aspell v0.50 folders and tarballs"
 	@ echo " aspell5        - Build aspell v0.50 folders only"
-	@ echo
 	@ echo " aspell6-all    - Build aspell v0.60 folders and tarballs"
 	@ echo " aspell6        - Build aspell v0.60 folders only"
-	@ echo
 	@ echo " wordlist       - Build wordlist folders only"
 	@ echo
 	@ echo "chuveiro:"

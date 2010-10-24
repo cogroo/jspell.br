@@ -53,7 +53,7 @@ while(<>){
     # $2 -> deletion part
     # $3 -> addition part
     # $4 -> Morphology changes
-    /^(.+) > \s+ ([\-\w]*) ,? ([\-\w]+) \s* ; \s* " ([^"]+) " /x or die;
+    /^(.+) > \s+ (?:([\-\w]+) ,)? ([\-\w]+) \s* ; \s* " ([^"]+) " /x or die;
 
     push @qui, $1;
     my ($del_part, $add_part, $morf) = ($2, $3, $4);
