@@ -25,7 +25,8 @@ aspell6-preao: dirs a5clean-toolkit $(WLDIR)/wl-preao.txt
 	cd $(AKIT)/pt_PT; perl proc create
 	cd $(AKIT)/pt_PT; ./configure
 	cd $(AKIT)/pt_PT; make
-	mv $(AKIT)/pt_PT $(AO60)-preao
+	mv $(AKIT)/pt_PT/* $(AO60)-preao
+	rm -fr $(AKIT)/pt_PT
 
 aspell6-ao: dirs a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cd $(AKIT); perl pre pt_PT iso-8859-1
@@ -39,7 +40,8 @@ aspell6-ao: dirs a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cd $(AKIT)/pt_PT; perl proc create
 	cd $(AKIT)/pt_PT; ./configure
 	cd $(AKIT)/pt_PT; make
-	mv $(AKIT)/pt_PT $(AO60)-ao
+	mv $(AKIT)/pt_PT/* $(AO60)-ao
+	rm -fr $(AKIT)/pt_PT
 
 dirs ::
 	mkdir -p $(AO60)-ao
