@@ -36,6 +36,7 @@ aspell5ao: aspell5-dirs a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cd $(AKIT)/pt; make
 	@ echo "Moving files"
 	mv $(AKIT)/pt/* $(AO50)-ao
+	rm -fr $(AKIT)/pt
 
 aspell5preao: aspell5-dirs a5clean-toolkit $(WLDIR)/wl-preao.txt
 	@ echo "Creating aspell5 empty dictionary"
@@ -54,6 +55,7 @@ aspell5preao: aspell5-dirs a5clean-toolkit $(WLDIR)/wl-preao.txt
 	cd $(AKIT)/pt-preao; make
 	@ echo "Moving files"
 	mv $(AKIT)/pt-preao/* $(AO50)-preao
+	rm -fr $(AKIT)/pt-preao
 
 a5clean-toolkit:
 	rm -fr $(AKIT)/pt
