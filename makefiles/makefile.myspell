@@ -1,21 +1,13 @@
+# -*- makefile -*- 
 
-#-------------------------------------------------------------------
-# myspell rules
-#-------------------------------------------------------------------
+myspell-all: myspell myspell-ao-tgz myspell-preao-tgz
 
-myspell: port.dic port.aff ispell
-	cd MYSPELL; make
+myspell: myspell-ao myspell-preao
 
-myspell-install: myspell
-	cd MYSPELL; make install
 
-myspell-tgz:
-	cd MYSPELL; make tgz
-	mv MYSPELL/myspell.$(ABR)-$(DATE).tar.gz .
 
-myspell-zip:
-	cd MYSPELL; make myspell-zip
-	mv MYSPELL/myspell.$(ABR)-$(DATE).zip .
 
-myspell-clean:
-	@ cd MYSPELL; make -s clean
+
+realclean ::
+	rm -fr $(MYOUT)-ao
+	rm -fr $(MYOUT)-preao
