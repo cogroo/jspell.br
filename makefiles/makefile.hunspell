@@ -23,9 +23,8 @@ $(HOUT)-preao/pt_PT-preao.aff: $(HOUT)-preao/pt_PT-preao.dic
 	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl $(JOUT)-preao/port-preao.aff | $(ICONV) > $(HOUT)-preao/pt_PT-preao.aff
 	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> $(HOUT)-preao/pt_PT-preao.aff
 
-$(HOUT)-ao/pt_PT.dic: $(JOUT)-ao/port.dic $(JOUT)-ao/port.aff
+$(HOUT)-ao/pt_PT.dic: dirs $(JOUT)-ao/port.dic $(JOUT)-ao/port.aff
 	@ echo " * Building hunspell-ao"
-	mkdir -p $(HOUT)-ao
 	@ echo "  - expanding dictionaries morphology and converting formats"
 	$(HTOOLS)/obtemRef.pl       $(JOUT)-ao/port.dic > _.pl
 	$(HTOOLS)/expandeRef.pl     _.pl $(JOUT)-ao/port.dic > _.dic
@@ -34,9 +33,8 @@ $(HOUT)-ao/pt_PT.dic: $(JOUT)-ao/port.dic $(JOUT)-ao/port.aff
 	cat __.dic | $(ICONV) >> $(HOUT)-ao/pt_PT.dic
 	rm -f _.pl _.dic __.dic
 
-$(HOUT)-preao/pt_PT-preao.dic: $(JOUT)-preao/port-preao.dic $(JOUT)-preao/port-preao.aff
+$(HOUT)-preao/pt_PT-preao.dic: dirs $(JOUT)-preao/port-preao.dic $(JOUT)-preao/port-preao.aff
 	@ echo " * Building hunspell-preao"
-	mkdir -p $(HOUT)-preao
 	@ echo "  - expanding dictionaries morphology and converting formats"
 	$(HTOOLS)/obtemRef.pl       $(JOUT)-preao/port-preao.dic > _.pl
 	$(HTOOLS)/expandeRef.pl     _.pl $(JOUT)-preao/port-preao.dic > _.dic
@@ -74,3 +72,7 @@ realclean ::
 	rm -fr $(HOUT)-preao
 	rm -fr $(HOUT)-ao
 	rm -fr $(HOUT)-pt_PT*
+
+dirs ::
+	mkdir -p $(HOUT)-ao
+	mkdir -p $(HOUT)-preao

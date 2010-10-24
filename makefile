@@ -1,4 +1,5 @@
 all:
+	@ echo
 	@ echo " dicts          - Build all dicts"
 	@ echo " tarballs       - Build all dicts and tarballs"
 	@ echo " jspell-all     - Build jspell folders and tarballs"
@@ -11,27 +12,17 @@ all:
 	@ echo " aspell5        - Build aspell v0.50 folders only"
 	@ echo " aspell6-all    - Build aspell v0.60 folders and tarballs"
 	@ echo " aspell6        - Build aspell v0.60 folders only"
+	@ echo " myspell-all    - Build myspel folders and tarballs"
+	@ echo " myspell        - Build aspell v0.60 folders only"
 	@ echo " wordlist       - Build wordlist folders only"
 	@ echo
-	@ echo "chuveiro:"
-	@ echo "\tchuveiro -- build all available dictionaries"
-	@ echo "\tchuveiro-install -- online publish at natura"
-	@ echo
-	@ echo "  - myspell-help \t for myspell"
+	@ echo " chuveiro         -- build all available dictionaries"
+	@ echo " chuveiro-install -- online publish at natura"
 	@ echo
 
-dicts: jspell wordlist ispell hunspell aspell5 aspell6
+dicts: jspell wordlist ispell myspell hunspell aspell5 aspell6
 
-tarballs: ispell-all hunspell-all  wordlist-all aspell5-all aspell6-all
-
-myspell-help:
-	@ echo
-	@ echo "myspell:"
-	@ echo "\tmyspell -- builds myspell dictionary (will make ispell if required)"
-	@ echo "\tmyspell-install -- installs myspell"
-	@ echo "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
-	@ echo "\tmyspell-zip -- creates myspell distribution file (zip)"
-	@ echo
+tarballs: ispell-all hunspell-all myspell-all wordlist-all aspell5-all aspell6-all
 
 include makefiles/makefile.vars
 include makefiles/makefile.jspell
@@ -43,11 +34,7 @@ include makefiles/makefile.hunspell
 include makefiles/makefile.wordlist
 include makefiles/makefile.chuveiro
 
-
-#-------------------------------------------------------------------
-# Garbage collection :)
-#-------------------------------------------------------------------
-clean: myspell-clean 
+clean: 
 	@ rm -f *~ */*~ */*/*~
 
 realclean :: clean

@@ -13,7 +13,7 @@ aspell6-preao-tgz: aspell6-preao
 	cd $(AO60)-preao; make dist
 	mv $(AO60)-preao/*.bz2 out/aspell6.pt-preao-$(DATE).tar.bz2
 
-aspell6-preao: aspell6dir a5clean-toolkit $(WLDIR)/wl-preao.txt
+aspell6-preao: dirs a5clean-toolkit $(WLDIR)/wl-preao.txt
 	cd $(AKIT); perl pre pt_PT iso-8859-1
 	cp $(WLDIR)/wl-preao.txt   $(AKIT)/pt_PT/pt_PT.wl
 	cp $(A60)/Copyright        $(AKIT)/pt_PT
@@ -27,7 +27,7 @@ aspell6-preao: aspell6dir a5clean-toolkit $(WLDIR)/wl-preao.txt
 	cd $(AKIT)/pt_PT; make
 	mv $(AKIT)/pt_PT $(AO60)-preao
 
-aspell6-ao: aspell6dir a5clean-toolkit $(WLDIR)/wl-ao.txt
+aspell6-ao: dirs a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cd $(AKIT); perl pre pt_PT iso-8859-1
 	cp $(WLDIR)/wl-ao.txt      $(AKIT)/pt_PT/pt_PT.wl
 	cp $(A60)/Copyright        $(AKIT)/pt_PT
@@ -41,7 +41,7 @@ aspell6-ao: aspell6dir a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cd $(AKIT)/pt_PT; make
 	mv $(AKIT)/pt_PT $(AO60)-ao
 
-aspell6dir:
+dirs ::
 	mkdir -p $(AO60)-ao
 	mkdir -p $(AO60)-preao
 
