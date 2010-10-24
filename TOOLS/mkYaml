@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+use strict;
+my $suffix = shift;
+
+while (<>) {
+    if (m!^(\s+)IDS:\s*\[([^\]]+)\]!) {
+        my ($indent, $miolo) = ($1,$2);
+        my @langs = split /\s*,\s*/, $miolo;
+        print "${indent}IDS: [".join(", ", map { "$_-$suffix" } @langs )."]\n";
+    } else {
+        print;
+    }
+}

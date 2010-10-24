@@ -37,7 +37,7 @@ aspell5ao: aspell5-dirs a5clean-toolkit $(WLDIR)/wl-ao.txt
 	@ echo "Moving files"
 	mv $(AKIT)/pt/* $(AO50)-ao
 
-aspell5preao: aspell5-dirs a5clean-preao-toolkit $(WLDIR)/wl-preao.txt
+aspell5preao: aspell5-dirs a5clean-toolkit $(WLDIR)/wl-preao.txt
 	@ echo "Creating aspell5 empty dictionary"
 	cd $(AKIT); perl pre pt-preao iso-8859-1
 	@ echo "Filling with computed files"
@@ -57,16 +57,15 @@ aspell5preao: aspell5-dirs a5clean-preao-toolkit $(WLDIR)/wl-preao.txt
 
 a5clean-toolkit:
 	rm -fr $(AKIT)/pt
-
-a5clean-preao-toolkit:
 	rm -fr $(AKIT)/pt-preao
+	rm -fr $(AKIT)/pt_PT
 
 aspell5-dirs:
 	mkdir -p $(AO50)-ao
 	mkdir -p $(AO50)-preao
 
 
-realclean :: a5clean-toolkit a5clean-preao-toolkit
+realclean :: a5clean-toolkit
 	@ echo "Cleaning aspell .5 files"
 	rm -fr $(AO50)-ao
 	rm -fr $(AO50)-preao

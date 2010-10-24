@@ -2,6 +2,9 @@ all:
 	@ echo " dicts          - Build all dicts"
 	@ echo " tarballs       - Build all dicts and tarballs"
 	@ echo
+	@ echo " jspell-all     - Build jspell folders and tarballs"
+	@ echo " jspell         - Build jspell folders only"
+	@ echo
 	@ echo " ispell-all     - Build ispell folders and tarballs"
 	@ echo " ispell         - Build ispell folders only"
 	@ echo
@@ -17,13 +20,10 @@ all:
 	@ echo "\tchuveiro -- build all available dictionaries"
 	@ echo "\tchuveiro-install -- online publish at natura"
 	@ echo
-	@ echo " For specific targets documentation:"
-	@ echo "  - jspell-help  \t for jspell"
-	@ echo "  - aspell6-help \t for aspell v6"
 	@ echo "  - myspell-help \t for myspell"
 	@ echo
 
-dicts: ispell hunspell aspell5 wordlist
+dicts: ispell hunspell aspell5 wordlist jspell
 
 tarballs: ispell-all hunspell-all aspell5-all wordlist-all
 
@@ -34,23 +34,6 @@ myspell-help:
 	@ echo "\tmyspell-install -- installs myspell"
 	@ echo "\tmyspell-tgz -- creates myspell distribution file (tar.gz)"
 	@ echo "\tmyspell-zip -- creates myspell distribution file (zip)"
-	@ echo
-
-jspell-help:
-	@ echo
-	@ echo "jspell:"
-	@ echo "\tjspell -- builds jspell dictionary (jspell-big)"
-	@ echo "\tjspell-install -- installs jspell"
-	@ echo "\tjspell-dist -- creates jspell munged distribution file"
-	@ echo "\tjspell-publish -- creates jspell-dist and -bin and uploads"
-	@ echo
-
-aspell6-help:
-	@ echo
-	@ echo "aspell6:"
-	@ echo "\taspell6 -- builds aspell 0.60 dictionary"
-	@ echo "\taspell6-install -- installs aspell 0.60"
-	@ echo "\taspell6-tgz -- creates aspell 0.60 distribution file"
 	@ echo
 
 include makefiles/makefile.vars
@@ -65,9 +48,9 @@ include makefiles/makefile.chuveiro
 
 
 #-------------------------------------------------------------------
-# Garbage collecting :)
+# Garbage collection :)
 #-------------------------------------------------------------------
-clean: aspell6-clean myspell-clean 
+clean: myspell-clean 
 	@ printf " Removing temporary files..."
 	@ rm -f *.stat *.cnt *$(DATE)*txt
 	@ rm -f *~ */*~ */*/*~

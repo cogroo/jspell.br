@@ -37,12 +37,6 @@ aspell: aspell-wl
 	cd $P; perl proc create; ./configure
 	cd $P; make
 
-aspell-wl: ../port.dic
-	if test ! -f ../ISPELL/$P/$P.dic ; then \
-		cd .. ; make ispell; \
-	fi;
-	cp $(ID) $L.wl
-
 dist: aspell
 	cd $P; make dist
 	mv $P/aspell6*`${DATE}`* .

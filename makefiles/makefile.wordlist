@@ -9,21 +9,21 @@ wordlist-all: wordlist
 wordlist: wordlist-ao wordlist-preao wordlist-mix
 
 
-wordlist-mix: wordlist-dir $(WLDIR)/wl-mix.txt
+wordlist-mix: $(WLDIR)/wl-mix.txt
 
-$(WLDIR)/wl-mix.txt: $(JOUT)/port-mix.dic $(JOUT)/port-mix.hash
+$(WLDIR)/wl-mix.txt: wordlist-dir  $(JOUT)/port-mix.dic $(JOUT)/port-mix.hash
 	TOOLS/gerarWordList.pl $(JOUT)/port-mix.dic $(JOUT)/port-mix.hash > $(WLDIR)/wl-mix.txt
 
 
-wordlist-ao: wordlist-dir $(WLDIR)/wl-ao.txt
+wordlist-ao: $(WLDIR)/wl-ao.txt
 
-$(WLDIR)/wl-ao.txt: $(JOUT)/port-ao.dic $(JOUT)/port-ao.hash
+$(WLDIR)/wl-ao.txt: wordlist-dir $(JOUT)/port-ao.dic $(JOUT)/port-ao.hash
 	TOOLS/gerarWordList.pl $(JOUT)/port-ao.dic $(JOUT)/port-ao.hash > $(WLDIR)/wl-ao.txt
 
 
-wordlist-preao: wordlist-dir $(WLDIR)/wl-preao.txt
+wordlist-preao: $(WLDIR)/wl-preao.txt
 
-$(WLDIR)/wl-preao.txt: $(JOUT)/port-preao.dic $(JOUT)/port-preao.hash
+$(WLDIR)/wl-preao.txt: wordlist-dir $(JOUT)/port-preao.dic $(JOUT)/port-preao.hash
 	TOOLS/gerarWordList.pl $(JOUT)/port-preao.dic $(JOUT)/port-preao.hash > $(WLDIR)/wl-preao.txt
 
 
