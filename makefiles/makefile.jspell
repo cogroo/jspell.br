@@ -41,7 +41,7 @@ jspell-mix: dirs \
 	$(JOUT)-mix/port-mix.yaml $(JOUT)-mix/port-mix.aff
 	touch $(JOUT)-mix/MANIFEST
 	ls $(JOUT)-mix/* | grep -v hash |sed -e 's!.*/!!'> $(JOUT)-mix/MANIFEST
-	cp JSPELL/README $(JOUT)-mix
+	cp JSPELL/makefile $(JOUT)-mix
 
 $(JOUT)-mix/port-mix.hash: $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.aff
 	jbuild $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.aff $(JOUT)-mix/port-mix.hash
@@ -77,7 +77,7 @@ jspell-big: dirs \
 	 $(JOUT)-big/port-big.yaml $(JOUT)-big/port-big.aff
 	touch $(JOUT)-big/MANIFEST
 	ls $(JOUT)-big/* | grep -v hash |sed -e 's!.*/!!'> $(JOUT)-big/MANIFEST
-	cp JSPELL/README $(JOUT)-big
+	cp JSPELL/makefile $(JOUT)-big
 
 $(JOUT)-big/port-big.hash: $(JOUT)-big/port-big.dic $(JOUT)-big/port-big.aff
 	jbuild $(JOUT)-big/port-big.dic $(JOUT)-big/port-big.aff $(JOUT)-big/port-big.hash
@@ -109,7 +109,7 @@ jspell-preao: dirs $(JOUT)-preao/port-preao.hash $(JOUT)-preao/port-preao.irr \
                     $(JOUT)-preao/port-preao.yaml $(JOUT)-preao/port-preao.aff
 	touch $(JOUT)-preao/MANIFEST
 	ls $(JOUT)-preao/* | grep -v hash |sed -e 's!.*/!!'> $(JOUT)-preao/MANIFEST
-	cp JSPELL/README $(JOUT)-preao
+	cp JSPELL/makefile $(JOUT)-preao
 
 $(JOUT)-preao/port-preao.hash: $(JOUT)-preao/port-preao.dic $(JOUT)-preao/port-preao.aff
 	jbuild $(JOUT)-preao/port-preao.dic $(JOUT)-preao/port-preao.aff $(JOUT)-preao/port-preao.hash
@@ -141,7 +141,7 @@ jspell-ao: dirs $(JOUT)-ao/port.hash $(JOUT)-ao/port.irr \
                  $(JOUT)-ao/port.yaml $(JOUT)-ao/port.aff
 	touch $(JOUT)-ao/MANIFEST
 	ls $(JOUT)-ao/* | grep -v hash |sed -e 's!.*/!!'> $(JOUT)-ao/MANIFEST
-	cp JSPELL/README $(JOUT)-ao
+	cp JSPELL/makefile $(JOUT)-ao
 
 $(JOUT)-ao/port.hash: $(JOUT)-ao/port.dic $(JOUT)-ao/port.aff
 	jbuild $(JOUT)-ao/port.dic $(JOUT)-ao/port.aff $(JOUT)-ao/port.hash

@@ -22,7 +22,7 @@ all:
 
 dicts: jspell wordlist ispell myspell hunspell aspell5 aspell6
 
-tarballs: ispell-all hunspell-all myspell-all wordlist-all aspell5-all aspell6-all
+tarballs: jspell-all ispell-all hunspell-all myspell-all wordlist-all aspell5-all aspell6-all
 
 include makefiles/makefile.vars
 include makefiles/makefile.jspell
