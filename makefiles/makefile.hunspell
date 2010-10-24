@@ -7,7 +7,7 @@ HTOOLS=./HUNSPELL
 ICONV=iconv -f iso8859-1 -t utf-8
 HAODIST=hunspell-pt_PT-$(DATE)
 HPREAODIST=hunspell-pt_PT-preao-$(DATE)
-HOUT=out/hunspell
+
 
 hunspell-all: hunspell hunspell-ao-tgz hunspell-preao-tgz
 

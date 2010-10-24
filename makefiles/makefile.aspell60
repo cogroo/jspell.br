@@ -1,15 +1,35 @@
 # -*- makefile -*- ----------------------------------------
 
-A60=ASPELL6
-AO60=$(OUT)/aspell6
 
 aspell6-all: aspell6 aspell6-ao-tgz aspell6-preao-tgz
 
 aspell6: aspell6-ao aspell6-preao
 
+aspell6-ao-tgz: aspell6-ao
+	cd $(AO60)-ao; make dist
+	mv $(AO60)-ao/*.bz2 out/aspell6.pt-$(DATE).tar.bz2
+
+aspell6-preao-tgz: aspell6-preao
+	cd $(AO60)-preao; make dist
+	mv $(AO60)-preao/*.bz2 out/aspell6.pt-preao-$(DATE).tar.bz2
+
+aspell6-preao: aspell6dir a5clean-toolkit $(WLDIR)/wl-preao.txt
+	cd $(AKIT); perl pre pt_PT iso-8859-1
+	cp $(WLDIR)/wl-preao.txt   $(AKIT)/pt_PT/pt_PT.wl
+	cp $(A60)/Copyright        $(AKIT)/pt_PT
+	cp $(A60)/pt_PT_phonet.dat $(AKIT)/pt_PT
+	cp $(A60)/pt_PT_repl.dat   $(AKIT)/pt_PT
+	perl -pe 'BEGIN{$$D=$(DATE);chomp$$D};s/VERSAO/$$D/g;' $(A60)/info > $(AKIT)/pt_PT/info
+	perl -pe 's/LANG/pt_PT/g' $(A60)/pt_PT.dat > $(AKIT)/pt_PT/pt_PT.dat
+	LC_ALL=pt_PT.iso8859-1 perl $(A60)/genAff.pl $(JOUT)-preao/port-preao.aff > $(AKIT)/pt_PT/pt_PT_affix.dat
+	cd $(AKIT)/pt_PT; perl proc create
+	cd $(AKIT)/pt_PT; ./configure
+	cd $(AKIT)/pt_PT; make
+	mv $(AKIT)/pt_PT $(AO60)-preao
+
 aspell6-ao: aspell6dir a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cd $(AKIT); perl pre pt_PT iso-8859-1
-	cp $(WLDIR)/wl-ao.txt      $(AKIT)/pt_PT
+	cp $(WLDIR)/wl-ao.txt      $(AKIT)/pt_PT/pt_PT.wl
 	cp $(A60)/Copyright        $(AKIT)/pt_PT
 	cp $(A60)/pt_PT_phonet.dat $(AKIT)/pt_PT
 	cp $(A60)/pt_PT_repl.dat   $(AKIT)/pt_PT
@@ -25,8 +45,7 @@ aspell6dir:
 	mkdir -p $(AO60)-ao
 	mkdir -p $(AO60)-preao
 
-
-realclean ::
+realclean :: a5clean-toolkit
 	@ echo "Cleaning aspell .6 files"
 	rm -fr $(AO60)-ao
 	rm -fr $(AO60)-preao

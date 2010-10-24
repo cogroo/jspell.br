@@ -14,6 +14,9 @@ all:
 	@ echo " aspell5-all    - Build aspell v0.50 folders and tarballs"
 	@ echo " aspell5        - Build aspell v0.50 folders only"
 	@ echo
+	@ echo " aspell6-all    - Build aspell v0.60 folders and tarballs"
+	@ echo " aspell6        - Build aspell v0.60 folders only"
+	@ echo
 	@ echo " wordlist       - Build wordlist folders only"
 	@ echo
 	@ echo "chuveiro:"
@@ -23,9 +26,9 @@ all:
 	@ echo "  - myspell-help \t for myspell"
 	@ echo
 
-dicts: ispell hunspell aspell5 wordlist jspell
+dicts: jspell wordlist ispell hunspell aspell5 aspell6
 
-tarballs: ispell-all hunspell-all aspell5-all wordlist-all
+tarballs: ispell-all hunspell-all  wordlist-all aspell5-all aspell6-all
 
 myspell-help:
 	@ echo
@@ -51,12 +54,6 @@ include makefiles/makefile.chuveiro
 # Garbage collection :)
 #-------------------------------------------------------------------
 clean: myspell-clean 
-	@ printf " Removing temporary files..."
-	@ rm -f *.stat *.cnt *$(DATE)*txt
 	@ rm -f *~ */*~ */*/*~
-	@ rm -f aux_all_irr.dic 
-	@ rm -f port.dic port.irr port.hash aux_verb.dic jspell-pt.1
-	@ rm -f *.gz *.zip *.bz2
-	@ printf " DONE\n"
 
 realclean :: clean
