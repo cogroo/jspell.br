@@ -12,24 +12,21 @@ all:
 	@ echo " aspell5        - Build aspell v0.50 folders only"
 	@ echo " aspell6-all    - Build aspell v0.60 folders and tarballs"
 	@ echo " aspell6        - Build aspell v0.60 folders only"
-	@ echo " myspell-all    - Build myspel folders and tarballs"
-	@ echo " myspell        - Build aspell v0.60 folders only"
 	@ echo " wordlist       - Build wordlist folders only"
 	@ echo
 	@ echo " chuveiro         -- build all available dictionaries"
 	@ echo " chuveiro-install -- online publish at natura"
 	@ echo
 
-dicts: jspell wordlist ispell myspell hunspell aspell5 aspell6
+dicts: jspell wordlist ispell hunspell aspell5 aspell6
 
-tarballs: jspell-all ispell-all hunspell-all myspell-all wordlist-all aspell5-all aspell6-all
+tarballs: jspell-all ispell-all hunspell-all wordlist-all aspell5-all aspell6-all
 
 include makefiles/makefile.vars
 include makefiles/makefile.jspell
 include makefiles/makefile.ispell
 include makefiles/makefile.aspell50
 include makefiles/makefile.aspell60
-include makefiles/makefile.myspell
 include makefiles/makefile.hunspell
 include makefiles/makefile.wordlist
 include makefiles/makefile.chuveiro
