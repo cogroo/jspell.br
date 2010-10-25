@@ -15,6 +15,15 @@ aspell5-preao-tgz: aspell5preao
 	cd $(AO50)-preao; make dist
 	mv $(AO50)-preao/*.bz2 out/aspell5.pt-preao-$(DATE).tar.bz2
 
+publish :: aspell5-ao-tgz aspell5-preao-tgz
+	@ echo "Publishing JSPELL 0.50"
+	rsync -aASPvz out/aspell5.pt-$(DATE).tar.bz2 out/aspell5.pt-preao-$(DATE).tar.bz2\
+               $(NATURA):$(NATURA_WWW)/aspell5/
+	ssh $(NATURA) rm -f $(NATURA_WWW)/aspell5/LATEST/*.bz2
+	rsync -aASPvz out/aspell5.pt-$(DATE).tar.bz2 out/aspell5.pt-preao-$(DATE).tar.bz2\
+               $(NATURA):$(NATURA_WWW)/aspell5/LATEST
+
+
 aspell5ao: dirs a5clean-toolkit $(WLDIR)/wl-ao.txt
 	@ echo "Creating aspell5 empty dictionary"
 	cd $(AKIT); perl pre pt iso-8859-1

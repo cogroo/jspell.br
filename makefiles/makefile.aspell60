@@ -13,6 +13,15 @@ aspell6-preao-tgz: aspell6-preao
 	cd $(AO60)-preao; make dist
 	mv $(AO60)-preao/*.bz2 out/aspell6.pt-preao-$(DATE).tar.bz2
 
+publish :: aspell6-ao-tgz aspell6-preao-tgz
+	@ echo "Publishing JSPELL 0.60"
+	rsync -aASPvz out/aspell6.pt-$(DATE).tar.bz2 out/aspell6.pt-preao-$(DATE).tar.bz2\
+               $(NATURA):$(NATURA_WWW)/aspell6/
+	ssh $(NATURA) rm -f $(NATURA_WWW)/aspell6/LATEST/*.bz2
+	rsync -aASPvz out/aspell6.pt-$(DATE).tar.bz2 out/aspell6.pt-preao-$(DATE).tar.bz2\
+               $(NATURA):$(NATURA_WWW)/aspell6/LATEST
+
+
 aspell6-preao: dirs a5clean-toolkit $(WLDIR)/wl-preao.txt
 	cd $(AKIT); perl pre pt_PT iso-8859-1
 	cp $(WLDIR)/wl-preao.txt   $(AKIT)/pt_PT/pt_PT.wl
