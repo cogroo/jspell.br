@@ -3,6 +3,8 @@
 # aspell 0.50 rules
 #___________________________________________________________________
 
+DIRS+=$(AO50)-ao $(AO50)-preao
+
 aspell5-all: aspell5 aspell5-ao-tgz aspell5-preao-tgz
 
 aspell5: aspell5ao aspell5preao
@@ -24,7 +26,7 @@ publish :: aspell5-ao-tgz aspell5-preao-tgz
                $(NATURA):$(NATURA_WWW)/aspell5/LATEST
 
 
-aspell5ao: dirs a5clean-toolkit $(WLDIR)/wl-ao.txt
+aspell5ao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-ao.txt
 	@ echo "Creating aspell5 empty dictionary"
 	cd $(AKIT); perl pre pt iso-8859-1
 	@ echo "Filling with computed files"
@@ -43,7 +45,7 @@ aspell5ao: dirs a5clean-toolkit $(WLDIR)/wl-ao.txt
 	mv $(AKIT)/pt/* $(AO50)-ao
 	rm -fr $(AKIT)/pt
 
-aspell5preao: dirs a5clean-toolkit $(WLDIR)/wl-preao.txt
+aspell5preao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-preao.txt
 	@ echo "Creating aspell5 empty dictionary"
 	cd $(AKIT); perl pre pt iso-8859-1
 	@ echo "Filling with computed files"
@@ -66,8 +68,10 @@ a5clean-toolkit:
 	rm -fr $(AKIT)/pt
 	rm -fr $(AKIT)/pt_PT
 
-dirs ::
+$(AO50)-ao:
 	mkdir -p $(AO50)-ao
+
+$(AO50)-preao:
 	mkdir -p $(AO50)-preao
 
 

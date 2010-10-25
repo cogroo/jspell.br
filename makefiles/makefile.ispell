@@ -8,6 +8,8 @@ JSP2ISP=$(ITOOLS)/jsp2isp.pl
 ISPELLPKG=ispell.pt-$(DATE)
 ISPELLPPKG=ispell.pt-preao-$(DATE)
 
+DIRS+=$(IOUT)-ao $(IOUT)-preao
+
 ispell-all: ispell ispell-ao-tgz ispell-preao-tgz
 
 ispell: ispell-dics
@@ -40,11 +42,11 @@ ispell-preao-tgz: ispellpreao
 	tar czf out/$(ISPELLPPKG).tar.gz $(ISPELLPPKG)
 	rm -fr $(ISPELLPPKG)
 
-ispellao: dirs $(IOUT)-ao/portugues.aff $(IOUT)-ao/portugues.dic $(IOUT)-ao/portugues.hash
+ispellao: $(DIRS) $(IOUT)-ao/portugues.aff $(IOUT)-ao/portugues.dic $(IOUT)-ao/portugues.hash
 	cp DOC/COPYING $(IOUT)-ao
 	cp $(ITOOLS)/makefile-ao.dist $(IOUT)-ao/makefile
 
-ispellpreao: dirs $(IOUT)-preao/portugues-preao.aff $(IOUT)-preao/portugues-preao.dic \
+ispellpreao: $(DIRS) $(IOUT)-preao/portugues-preao.aff $(IOUT)-preao/portugues-preao.dic \
 	          $(IOUT)-preao/portugues-preao.hash
 	cp DOC/COPYING $(IOUT)-preao
 	cp $(ITOOLS)/makefile-preao.dist $(IOUT)-preao/makefile
@@ -78,8 +80,10 @@ $(IOUT)-preao/portugues-preao.dic: $(JOUT)-preao/port-preao.dic
 	$(ITOOLS)/retiraRegra.pl PL _.dic | $(ITOOLS)/compact.pl > $(IOUT)-preao/portugues-preao.dic
 	rm _.dic
 
-dirs ::
+$(IOUT)-ao:
 	mkdir -p $(IOUT)-ao
+
+$(IOUT)-preao:
 	mkdir -p $(IOUT)-preao
 
 realclean ::

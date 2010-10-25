@@ -3,6 +3,7 @@
 # wordlist rules
 #-------------------------------------------------------------------
 
+DIRS += $(WLDIR)
 
 wordlist-all: wordlist
 
@@ -11,22 +12,21 @@ wordlist: wordlist-ao wordlist-preao wordlist-mix
 
 wordlist-mix: $(WLDIR)/wl-mix.txt
 
-$(WLDIR)/wl-mix.txt: dirs  $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.hash
+$(WLDIR)/wl-mix.txt: $(DIRS)  $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.hash
 	TOOLS/gerarWordList.pl $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.hash > $(WLDIR)/wl-mix.txt
 
 wordlist-ao: $(WLDIR)/wl-ao.txt
 
-$(WLDIR)/wl-ao.txt: dirs $(JOUT)-ao/port.dic $(JOUT)-ao/port.hash
+$(WLDIR)/wl-ao.txt: $(DIRS) $(JOUT)-ao/port.dic $(JOUT)-ao/port.hash
 	TOOLS/gerarWordList.pl $(JOUT)-ao/port.dic $(JOUT)-ao/port.hash > $(WLDIR)/wl-ao.txt
 
 
 wordlist-preao: $(WLDIR)/wl-preao.txt
 
-$(WLDIR)/wl-preao.txt: dirs $(JOUT)-preao/port-preao.dic $(JOUT)-preao/port-preao.hash
+$(WLDIR)/wl-preao.txt: $(DIRS) $(JOUT)-preao/port-preao.dic $(JOUT)-preao/port-preao.hash
 	TOOLS/gerarWordList.pl $(JOUT)-preao/port-preao.dic $(JOUT)-preao/port-preao.hash > $(WLDIR)/wl-preao.txt
 
-
-dirs ::
+$(WLDIR):
 	mkdir -p $(WLDIR)
 
 realclean ::

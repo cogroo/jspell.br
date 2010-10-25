@@ -1,8 +1,11 @@
 # -*- makefile -*- # instruct emacs
 
+DIRS+=$(JOUT)-big $(JOUT)-ao $(JOUT)-preao $(JOUT)-mix
+
 jspell-all: jspell jspell-ao-tgz jspell-preao-tgz jspell-mix-tgz jspell-big-tgz
 
-jspell: dirs jspell-big jspell-mix jspell-ao jspell-preao
+.PHONY: jspell
+jspell: $(DIRS) jspell-big jspell-mix jspell-ao jspell-preao
 
 publish :: jspell-ao-tgz jspell-preao-tgz jspell-mix-tgz jspell-big-tgz
 	@ echo "Publishing JSPELL"
@@ -14,11 +17,7 @@ publish :: jspell-ao-tgz jspell-preao-tgz jspell-mix-tgz jspell-big-tgz
                       out/$(DIST_DIR_MIX).tar.gz out/$(DIST_DIR_BIG).tar.gz \
                $(NATURA):$(NATURA_WWW)/jspell/LATEST
 
-dirs ::
-	mkdir -p $(JOUT)-big
-	mkdir -p $(JOUT)-ao
-	mkdir -p $(JOUT)-preao
-	mkdir -p $(JOUT)-mix
+
 
 jspell-ao-tgz: jspell-ao
 	mkdir $(DIST_DIR)
@@ -46,7 +45,9 @@ jspell-big-tgz: jspell-big
 
 ########### MIX #############################################
 
-jspell-mix: dirs \
+.INTERMEDIATE :: $(JOUT)-mix/aux_all_irr.dic $(JOUT)-mix/aux_verb.dic
+
+jspell-mix: $(DIRS) \
 	$(JOUT)-mix/port-mix.hash $(JOUT)-mix/port-mix.irr \
 	$(JOUT)-mix/port-mix.yaml $(JOUT)-mix/port-mix.aff
 	touch $(JOUT)-mix/MANIFEST
@@ -63,7 +64,7 @@ $(JOUT)-mix/port-mix.irr: $(JOUT)-mix/aux_all_irr.dic
 $(JOUT)-mix/port-mix.yaml: DIC/port.yaml
 	TOOLS/mkYaml mix DIC/port.yaml > $(JOUT)-mix/port-mix.yaml
 
-$(JOUT)-mix/port-mix.aff: dirs DIC/port.aff
+$(JOUT)-mix/port-mix.aff: $(DIRS) DIC/port.aff
 	cp DIC/port.aff $(JOUT)-mix/port-mix.aff
 
 $(JOUT)-mix/port-mix.dic: $(PTDIC) $(JOUT)-mix/aux_all_irr.dic $(JOUT)-mix/port-mix.irr
@@ -71,7 +72,7 @@ $(JOUT)-mix/port-mix.dic: $(PTDIC) $(JOUT)-mix/aux_all_irr.dic $(JOUT)-mix/port-
 	cat $(PTDIC) $(JOUT)-mix/aux_all_irr.dic >> $(JOUT)-mix/port-mix.dic 
 	rm -f $(JOUT)-mix/aux_all_irr.dic
 
-$(JOUT)-mix/aux_all_irr.dic: dirs DIC/irregulares.txt $(JOUT)-mix/aux_verb.dic IRR/ge_verb
+$(JOUT)-mix/aux_all_irr.dic: $(DIRS) DIC/irregulares.txt $(JOUT)-mix/aux_verb.dic IRR/ge_verb
 	IRR/ge_verb $(JOUT)-mix/aux_verb.dic < DIC/irregulares.txt > $(JOUT)-mix/aux_all_irr.dic
 	rm -f $(JOUT)-mix/aux_verb.dic
 
@@ -81,8 +82,9 @@ $(JOUT)-mix/aux_verb.dic: $(PTDIC)
 
 ########### BIG #############################################
 
+.INTERMEDIATE :: $(JOUT)-big/aux_all_irr.dic $(JOUT)-big/aux_verb.dic
 
-jspell-big: dirs \
+jspell-big: $(DIRS) \
 	 $(JOUT)-big/port-big.hash $(JOUT)-big/port-big.irr \
 	 $(JOUT)-big/port-big.yaml $(JOUT)-big/port-big.aff
 	touch $(JOUT)-big/MANIFEST
@@ -97,13 +99,13 @@ $(JOUT)-big/port-big.dic: $(JOUT)-mix/port-mix.dic $(PTDICEXTRA) $(JOUT)-big/por
 	cat $(JOUT)-mix/port-mix.dic $(PTDICEXTRA) > $(JOUT)-big/port-big.dic
 	rm -f $(JOUT)-big/aux_all_irr.dic
 
-$(JOUT)-big/port-big.aff: dirs DIC/port.aff
+$(JOUT)-big/port-big.aff: $(DIRS) DIC/port.aff
 	cp DIC/port.aff $(JOUT)-big/port-big.aff
 
 $(JOUT)-big/port-big.irr: $(JOUT)-big/aux_all_irr.dic
 	./$(IRR2PERL) $(JOUT)-big/aux_all_irr.dic > $(JOUT)-big/port-big.irr
 
-$(JOUT)-big/aux_all_irr.dic: dirs DIC/irregulares.txt $(JOUT)-big/aux_verb.dic IRR/ge_verb
+$(JOUT)-big/aux_all_irr.dic: $(DIRS) DIC/irregulares.txt $(JOUT)-big/aux_verb.dic IRR/ge_verb
 	IRR/ge_verb $(JOUT)-big/aux_verb.dic < DIC/irregulares.txt > $(JOUT)-big/aux_all_irr.dic
 	rm -f $(JOUT)-big/aux_verb.dic
 
@@ -115,7 +117,9 @@ $(JOUT)-big/port-big.yaml: DIC/port.yaml
 
 ########### PREAO #############################################
 
-jspell-preao: dirs $(JOUT)-preao/port-preao.hash $(JOUT)-preao/port-preao.irr \
+.INTERMEDIATE :: $(JOUT)-preao/aux_all_irr.dic $(JOUT)-preao/aux_verb.dic
+
+jspell-preao: $(DIRS) $(JOUT)-preao/port-preao.hash $(JOUT)-preao/port-preao.irr \
                     $(JOUT)-preao/port-preao.yaml $(JOUT)-preao/port-preao.aff
 	touch $(JOUT)-preao/MANIFEST
 	ls $(JOUT)-preao/* | grep -v hash |sed -e 's!.*/!!'> $(JOUT)-preao/MANIFEST
@@ -132,14 +136,14 @@ $(JOUT)-preao/port-preao.dic: $(JOUT)-mix/port-mix.dic $(JOUT)-preao/port-preao.
 $(JOUT)-preao/port-preao.irr: $(JOUT)-preao/aux_all_irr.dic
 	./$(IRR2PERL) $(JOUT)-preao/aux_all_irr.dic > $(JOUT)-preao/port-preao.irr
 
-$(JOUT)-preao/aux_all_irr.dic: dirs DIC/irregulares.txt $(JOUT)-preao/aux_verb.dic IRR/ge_verb
+$(JOUT)-preao/aux_all_irr.dic: $(DIRS) DIC/irregulares.txt $(JOUT)-preao/aux_verb.dic IRR/ge_verb
 	IRR/ge_verb $(JOUT)-preao/aux_verb.dic < DIC/irregulares.txt > $(JOUT)-preao/aux_all_irr.dic
 	rm -f $(JOUT)-preao/aux_verb.dic
 
 $(JOUT)-preao/aux_verb.dic: $(PTDIC) 
 	egrep 'CAT=v|\#v' $(PTDIC) > $(JOUT)-preao/aux_verb.dic
 
-$(JOUT)-preao/port-preao.aff: dirs DIC/port.aff
+$(JOUT)-preao/port-preao.aff: $(DIRS) DIC/port.aff
 	cp DIC/port.aff $(JOUT)-preao/port-preao.aff
 
 $(JOUT)-preao/port-preao.yaml: DIC/port.yaml
@@ -147,7 +151,9 @@ $(JOUT)-preao/port-preao.yaml: DIC/port.yaml
 
 ########### AO #############################################
 
-jspell-ao: dirs $(JOUT)-ao/port.hash $(JOUT)-ao/port.irr \
+.INTERMEDIATE :: $(JOUT)-ao/aux_all_irr.dic $(JOUT)-ao/aux_verb.dic
+
+jspell-ao: $(DIRS) $(JOUT)-ao/port.hash $(JOUT)-ao/port.irr \
                  $(JOUT)-ao/port.yaml $(JOUT)-ao/port.aff
 	touch $(JOUT)-ao/MANIFEST
 	ls $(JOUT)-ao/* | grep -v hash |sed -e 's!.*/!!'> $(JOUT)-ao/MANIFEST
@@ -164,14 +170,14 @@ $(JOUT)-ao/port.dic: $(JOUT)-mix/port-mix.dic $(JOUT)-ao/port.irr
 $(JOUT)-ao/port.irr: $(JOUT)-ao/aux_all_irr.dic
 	./$(IRR2PERL) $(JOUT)-ao/aux_all_irr.dic > $(JOUT)-ao/port.irr
 
-$(JOUT)-ao/aux_all_irr.dic: dirs DIC/irregulares.txt $(JOUT)-ao/aux_verb.dic IRR/ge_verb
+$(JOUT)-ao/aux_all_irr.dic: $(DIRS) DIC/irregulares.txt $(JOUT)-ao/aux_verb.dic IRR/ge_verb
 	IRR/ge_verb $(JOUT)-ao/aux_verb.dic < DIC/irregulares.txt > $(JOUT)-ao/aux_all_irr.dic
 	rm -f $(JOUT)-ao/aux_verb.dic
 
 $(JOUT)-ao/aux_verb.dic: $(PTDIC)
 	egrep 'CAT=v|\#v' $(PTDIC) > $(JOUT)-ao/aux_verb.dic
 
-$(JOUT)-ao/port.aff: dirs DIC/port.aff
+$(JOUT)-ao/port.aff: $(DIRS) DIC/port.aff
 	cp DIC/port.aff $(JOUT)-ao/port.aff
 
 $(JOUT)-ao/port.yaml: DIC/port.yaml
@@ -237,3 +243,17 @@ jspell-pt.1: jspell.pt.pod
 # 	mv $(DIST_DIR).tar.gz ~/rpms/SOURCES/jspell.$(ABR).tgz
 # 	perl -pe 's/VERSION/chomp($$a=`date +%Y%m%d`);$$a/e;' jspell.pt.spec.in > jspell.pt.spec
 # 	rpmbuild -ba jspell.pt.spec 
+
+
+
+$(JOUT)-big:
+	mkdir -p $(JOUT)-big
+
+$(JOUT)-ao:
+	mkdir -p $(JOUT)-ao
+
+$(JOUT)-preao:
+	mkdir -p $(JOUT)-preao
+
+$(JOUT)-mix:
+	mkdir -p $(JOUT)-mix
