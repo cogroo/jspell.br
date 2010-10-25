@@ -2,6 +2,7 @@ all:
 	@ echo
 	@ echo " dicts          - Build all dicts"
 	@ echo " tarballs       - Build all dicts and tarballs"
+	@ echo
 	@ echo " jspell-all     - Build jspell folders and tarballs"
 	@ echo " jspell         - Build jspell folders only"
 	@ echo " ispell-all     - Build ispell folders and tarballs"

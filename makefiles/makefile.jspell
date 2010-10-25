@@ -4,6 +4,16 @@ jspell-all: jspell jspell-ao-tgz jspell-preao-tgz jspell-mix-tgz jspell-big-tgz
 
 jspell: dirs jspell-big jspell-mix jspell-ao jspell-preao
 
+publish :: jspell-ao-tgz jspell-preao-tgz jspell-mix-tgz jspell-big-tgz
+	@ echo "Publishing JSPELL"
+	rsync -aASPvz out/$(DIST_DIR).tar.gz out/$(DIST_DIR_PRE).tar.gz \
+                      out/$(DIST_DIR_MIX).tar.gz out/$(DIST_DIR_BIG).tar.gz \
+               $(NATURA):$(NATURA_WWW)/jspell/
+	ssh $(NATURA) rm -f $(NATURA_WWW)/jspell/LATEST/*.gz
+	rsync -aASPvz out/$(DIST_DIR).tar.gz out/$(DIST_DIR_PRE).tar.gz \
+                      out/$(DIST_DIR_MIX).tar.gz out/$(DIST_DIR_BIG).tar.gz \
+               $(NATURA):$(NATURA_WWW)/jspell/LATEST
+
 dirs ::
 	mkdir -p $(JOUT)-big
 	mkdir -p $(JOUT)-ao

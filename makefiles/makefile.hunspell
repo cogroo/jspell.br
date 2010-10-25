@@ -13,6 +13,15 @@ hunspell-all: hunspell hunspell-ao-tgz hunspell-preao-tgz
 
 hunspell: hunspellao hunspellpreao 
 
+publish :: hunspell-ao-tgz hunspell-preao-tgz
+	@ echo "Publishing HUNSPELL"
+	rsync -aASPvz out/$(HAODIST).tar.gz out/$(HPREAODIST).tar.gz\
+               $(NATURA):$(NATURA_WWW)/hunspell/
+	ssh $(NATURA) rm -f $(NATURA_WWW)/hunspell/LATEST/*.gz
+	rsync -aASPvz out/$(HAODIST).tar.gz out/$(HPREAODIST).tar.gz\
+               $(NATURA):$(NATURA_WWW)/hunspell/LATEST
+
+
 $(HOUT)-ao/pt_PT.aff: $(HOUT)-ao/pt_PT.dic
 	@ echo "  - affix file conversion"
 	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl $(JOUT)-ao/port.aff | $(ICONV) > $(HOUT)-ao/pt_PT.aff

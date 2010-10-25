@@ -14,10 +14,20 @@ ispell: ispell-dics
 
 ispell-dics: ispellao ispellpreao
 
+publish :: ispell-ao-tgz ispell-preao-tgz
+	@ echo "Publishing ISPELL"
+	rsync -aASPvz out/$(ISPELLPKG).tar.gz out/$(ISPELLPPKG).tar.gz\
+               $(NATURA):$(NATURA_WWW)/ispell/
+	ssh $(NATURA) rm -f $(NATURA_WWW)/ispell/LATEST/*.gz
+	rsync -aASPvz out/$(ISPELLPKG).tar.gz out/$(ISPELLPPKG).tar.gz\
+               $(NATURA):$(NATURA_WWW)/ispell/LATEST
+
+
 ispell-ao-tgz: ispellao
 	@ echo "$(ISPELLPKG).tar.gz"
 	mkdir -p $(ISPELLPKG)
 	cp $(IOUT)-ao/* $(ISPELLPKG)
+	rm $(ISPELLPKG)/*.hash
 	tar czf out/$(ISPELLPKG).tar.gz $(ISPELLPKG)
 	rm -fr $(ISPELLPKG)
 
@@ -26,6 +36,7 @@ ispell-preao-tgz: ispellpreao
 	@ echo "$(ISPELLPPKG).tar.gz"
 	mkdir -p $(ISPELLPPKG)
 	cp $(IOUT)-preao/* $(ISPELLPPKG)
+	rm $(ISPELLPPKG)/*.hash
 	tar czf out/$(ISPELLPPKG).tar.gz $(ISPELLPPKG)
 	rm -fr $(ISPELLPPKG)
 
