@@ -4655,6 +4655,7 @@ beliscar/#vt/XYPL/
 belisco/#nm//
 belo/#hm/pfs/
 bel-prazer/#av//
+beltrano/#nm/pf/
 beluca/#nf//
 beluga/#nf/p/
 belzebútico/#a//
@@ -13778,7 +13779,7 @@ erário/#nm//
 erasmismo/#nm/p/
 erecção/AO90=ereção,#nf//
 ereção/PREAO90=erecção,#nf//
-eréctil/EQAO90=erétil,#an/a/
+eréctil/AO90=erétil,#an/a/
 erétil/PREAO90=eréctil,#an/a/
 erectilidade/EQAO90=eretilidade,#nf/p/
 eretilidade/PREAO90=erectilidade,#nf/p/
@@ -24707,7 +24708,7 @@ opticamente/AO90=oticamente,#av//
 oticamente/PREAO90=opticamente,#av//
 óptica/AO90=ótica,#nf//
 ótica/PREAO90=óptica,#nf//
-opticidade/EQAO90=oticidade,#nf/p/
+opticidade/AO90=oticidade,#nf/p/
 oticidade/PREAO90=opticidade,#nf/p/
 óptico/AO90=ótico,#hm/fp/
 ótico/PREAO90=óptico,#hm/fp/
@@ -31507,6 +31508,7 @@ sibilantizar/#vn/XYPL/
 sibilar/#vn/XYPLcn/
 si/CAT=ppes,P=3,N=s,C=d//
 siciliano/#hm/fp/
+sicrano/#nm/fp/
 sideral/#an//
 siderar/#vt/XYPL/
 siderurgia/#nf/p/

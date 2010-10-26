@@ -315,8 +315,7 @@ Bacon/#np1/
 Baco/#np/
 Badajoz/#tc/
 Bagdade/#tc/
-Bagdad/#tc/
-Bahamas/#la,#tpf,N=p/
+Baamas/#la,#tpf,N=p/
 Baía/#np/
 Baião/#t/
 Baía/#la,#t/
@@ -331,7 +330,8 @@ Báltico/#la,#t/
 Baltimore/#tc/
 Balzac/#np1/
 Bangladeche/#la,#tp/
-Baptista/#npm/
+Baptista/AO90=Batista,#npm/
+Batista/PREAO90=Baptista,#npm/
 Baptiste/#np1/
 Barahona/#np/
 Bárbara/#npf/
@@ -375,7 +375,6 @@ Belinda/#npf/
 Belize/#tp/
 Belmiro/#npm/
 Belmonte/#t/
-Beltrano/CAT=np,G=m/
 Beltrão/#np/
 Belzebu/#mit,G=m/
 Benavente/#t/
@@ -450,7 +449,7 @@ Bósnia/#la,#tpf/
 Bósnia-Herzegovina/#tpf//
 Boston/#tc/
 Botelho/#np/
-Botswana/#la,#tp/
+Botsuana/#la,#tp/
 Boulevard/#t/
 Bouro/#t/
 Bouvet/#la,#tf/
@@ -531,7 +530,8 @@ Calisto/#npm/
 Calvino/#npm/it/
 Calvin/#np1//
 Camacho/#np//
-Cambodja/#tp/
+Cambodja/AO90=Camboja,#tp/
+Camboja/PREAO90=Cambodja,#tp/
 Cambra/#t/
 Cambridge/#t/
 Camelot/#t/
@@ -791,7 +791,7 @@ Diana/#npf/
 Diáspora/CAT=np,G=f,N=s/
 Didier/#np1/
 Diego/#np1/
-Dili/#tc/
+Díli/#tc/
 Dinamarca/#la,#tpf/
 Dinis/#np/
 Diocleciano/#np/
@@ -800,7 +800,8 @@ Diogo/#npm/
 Dionísio/#npm/
 Dirac/#np1/
 Dirceu/#npm/
-Direcção-Geral/#nf/
+Direcção-Geral/AO90=Direção-Geral,#nf/
+Direção-Geral/PREAO90=Direcção-Geral/#nf/
 Diu/#t/
 Dolores/#npf/
 Domingos/#npm/
@@ -816,7 +817,7 @@ Dostoievski/#np1/
 Douglas/#np1/
 Douro/#la,#tr/
 Drake/#np1/
-Dresden/#tc/
+Dresda/#tc/
 Duarte/#npm/
 Dublin/#tc/
 Duke/#np1/
@@ -1118,7 +1119,7 @@ González/#np/
 Gordon/#np1/
 Górgias/#np/
 Gorki/#t/
-Gotland/#t/
+Gotlândia/#t/
 Gouveia/#np/
 Gouveias/CAT=np/
 Gouveia/#t/
@@ -1588,7 +1589,8 @@ Malaia/#t/
 Malanje/#t/
 Malaquias/#npm/
 Malásia/#la,#tpf/
-Malawi/#tp/
+Malawi/PT=Malavi,#tp/
+Malavi/#tp/
 Maldivas/#la,#tpf,N=p/
 Malheiro/#np/
 Mali/#tp/
@@ -1875,9 +1877,9 @@ Nuremberga/#tc/
 Oakland/#t/
 Obélix/#npm/
 Óbidos/#t/
-Oceania/#la,#t,SEM=cont/
-Oceânia/#t/
-Octaviano/CAT=np/
+Oceânia/#t,SEM=cont/
+Octaviano/AO90=Otaviano,CAT=np/
+Otaviano/PREAO90=Octaviano,CAT=np/
 Octávio/#npm/
 Odemira/#t/
 Odense/#tc/
@@ -1985,7 +1987,7 @@ Páscoa/CAT=np,G=f/
 Pascoal/CAT=np/
 Pascoal/#npm/
 Pascoela/CAT=np,G=f/
-Pas-de-Calais/#t/
+Passo-de-Calais/#t/
 Pasolini/#np1/
 Passau/CAT=np/
 Passos/#np/
@@ -2283,7 +2285,7 @@ São/CAT=np/
 Saragoça/#tc/
 Sarah/#np1/
 Saraiva/#np/
-Sarajevo/#tc/
+Saraievo/#tc/
 Saramago/#npm/
 Sara/#npf/
 Sardenha/#la,#t/
@@ -2345,7 +2347,7 @@ Seul/#tc/
 Severino/#npm/
 Sever/#t/
 Sevilha/#tc/
-Seychelles/#tpf/
+Seicheles/#tpf/
 Shakespeare/#np1/
 Shangai/#tc/
 Shapiro/#np1/
@@ -2353,8 +2355,6 @@ Shaw/#np1/
 Sião/CAT=np/
 Sibéria/#la,#t/
 Sicília/#la,#t/p/
-Sicrano/CAT=np,G=m/
-Sicrana/CAT=np,G=f/
 Sidney/#tc/
 Sidónio/#npm/
 Sídon/#tc/
@@ -2444,7 +2444,7 @@ Taiwan/#npm/
 Taizé/CAT=np,SEM=instituicao/
 Tajiquistão/#la,#tp/
 Tales/#npm/
-Tallinn/#tc/
+Talin/#tc/
 Tamão/CAT=np/
 Tâmega/CAT=np/
 Tamisa/#la,#tr/
@@ -2542,7 +2542,8 @@ Torga/#np/
 Toronto/#tc/
 Torres/#np/
 Toscana/#t/
-Toulouse/#t/
+Toulouse/PT=Tolosa,#t/
+Tolosa/#t/
 Tracy/#np1/
 Trancoso/#t/
 Transcaucásia/CAT=np/
@@ -2559,7 +2560,7 @@ Trinitá/#np/
 Tripoli/#tc/
 Tristão/#npm/
 Trofa/#la,#t/
-Tróia/#t/
+Troia/#t/
 Trondheim/#tc/
 Trotski/#np1/  #it
 Tsé/#npm/
@@ -2588,7 +2589,7 @@ Urais/#la,#tmp/
 Úrano/CAT=np,G=m,SEM=pl/
 Urbión/#t/
 Uruguai/#la,#tp/
-Uzbequistão/#npm/
+Usbequistão/#npm/
 Valadares/#t/
 Valdemar/#npm/
 Valdevez/#t/
@@ -2746,7 +2747,7 @@ Yoga/CAT=np/
 Yorkshire/#t/
 York/#tc/
 Zacarias/#np/
-Zagreb/#tc/
+Zagrebe/#tc/
 Zaire/#la,#tp/
 Zambeze/#la,#tr/
 Zambézia/#la,#tpf/
