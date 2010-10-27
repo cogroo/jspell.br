@@ -50,6 +50,8 @@ META:
   PREAO90: Apontador para a palavra pré Acordo Ortográfico de 1990
   EQ90: Apontador para grafia alternativa no Acordo Ortográfico de 1990
   PT: apontador para a versão portuguesa (estrangeirismos)
+  AP: ??
+  AN: ??
 
 LA:
  1: sim
