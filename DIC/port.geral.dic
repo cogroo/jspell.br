@@ -4910,7 +4910,8 @@ bigodeira/#nf//
 bigode/#nm/pfh/
 bigorna/#nf/p/
 bigrama/#nm/p/
-bijectiva/#af//
+bijectiva/EQAO90=bijetiva,#af//
+bijetiva/PREAO90=bijectiva,#af//
 bijutaria/#nf/p/
 bijuteria/#nf/p/
 bilabiado/#a/f/
@@ -28428,7 +28429,7 @@ quilociclo/#nm/p/
 quilograma/#nm/p/
 quilograma-padrão/#nm//
 quilograma-peso/#nm//
-quilohertz/#nm//
+quilo-hertz/#nm//
 quilojoule/#nm/p/
 quilolitro/#nm/p/
 quilometragem/#nf//
@@ -32719,7 +32720,8 @@ tanto/#av/pfs/
 tanto/CAT=pind,G=m,N=s/fp/
 tanzaniano/#a/fp/
 tão/#av//
-taoísta/#hn/p/
+taoísta/AO90=taoista,#hn/p/
+taoista/PREAO90=taoísta,#hn/p/
 tão-pouco/#av//
 tão-só/#av//
 tão-somente/#av//

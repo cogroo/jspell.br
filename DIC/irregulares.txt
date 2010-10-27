@@ -99,8 +99,8 @@ vesti    2p i
 vistam   3p i
 
 #vX:e advertir, divertir, delir, compelir, expelir, impelir/PL, repelir, 
-      competir, repetir, concernir, discernir, empedernir/SL, defletir, 
-      fletir, infletir, refletir, fremir, servir/PL, serzir, despir
+      competir, repetir, concernir, discernir, empedernir/SL, deflectir, 
+      defletir, fletir, infletir, refletir, fremir, servir/PL, serzir, despir
 iXo    1s p
 iXa    1s pc
 iXas   2s pc
@@ -803,18 +803,18 @@ terdes     2p ip
 terem      3p ip
 
 #v boiar
-bóio       1s p
-bóias      2s p
-bóia       3s p
-bóiam      3p p
-bóie       1s pc
-bóies      2s pc
-bóie       3s pc
-bóiem      3p pc
-bóia       2s i
-bóie       3s i
+boio       1s p
+boias      2s p
+boia       3s p
+boiam      3p p
+boie       1s pc
+boies      2s pc
+boie       3s pc
+boiem      3p pc
+boia       2s i
+boie       3s i
 boiai       2p i
-bóiem      3p i
+boiem      3p i
 
 #v trazer/PL
 trago        1s p
@@ -1449,9 +1449,9 @@ ride   2p i
 riam   3p i
 
 #v parir
-pára  1s pc
-pára  3s pc
-pára  3s i
+para  1s pc
+para  3s pc
+para  3s i
 
 #v ser/PL
 sou        1s p
