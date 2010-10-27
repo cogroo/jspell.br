@@ -5653,7 +5653,8 @@ burro/#hm/fphG/
 buscador/#hm//
 busca/#nf/p/
 buscante/#nm/p/
-busca-pólos/#nm//
+busca-pólos/AO90=busca-polos,#nm//
+busca-polos/PREAO90=busca-pólos,#nm//
 buscar/#vt/XYPLDn/
 busílis/#nmp//
 bus/#nm//

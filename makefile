@@ -36,3 +36,7 @@ clean:
 	@ rm -f *~ */*~ */*/*~
 
 realclean :: clean
+
+test:
+	perl -MTest::Harness -e 'runtests(<t/*t>);'
+
