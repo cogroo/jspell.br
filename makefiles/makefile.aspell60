@@ -18,9 +18,10 @@ publish :: aspell6-ao-tgz aspell6-preao-tgz
 	@ echo "Publishing JSPELL 0.60"
 	rsync -aASPvz out/aspell6.pt-$(DATE).tar.bz2 out/aspell6.pt-preao-$(DATE).tar.bz2\
                $(NATURA):$(NATURA_WWW)/aspell6/
-	ssh $(NATURA) rm -f $(NATURA_WWW)/aspell6/LATEST/*.bz2
-	rsync -aASPvz out/aspell6.pt-$(DATE).tar.bz2 out/aspell6.pt-preao-$(DATE).tar.bz2\
-               $(NATURA):$(NATURA_WWW)/aspell6/LATEST
+	rsync -aASPvz out/aspell6.pt-$(DATE).tar.bz2  \
+               $(NATURA):$(NATURA_WWW)/aspell6/LATEST/aspell6.pt-latest.tar.bz2
+	rsync -aASPvz out/aspell6.pt-preao-$(DATE).tar.bz2\
+               $(NATURA):$(NATURA_WWW)/aspell6/LATEST/aspell6.pt-preao-latest.tar.bz2
 
 
 aspell6-preao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-preao.txt

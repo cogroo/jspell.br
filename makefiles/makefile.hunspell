@@ -18,9 +18,10 @@ publish :: hunspell-ao-tgz hunspell-preao-tgz
 	@ echo "Publishing HUNSPELL"
 	rsync -aASPvz out/$(HAODIST).tar.gz out/$(HPREAODIST).tar.gz\
                $(NATURA):$(NATURA_WWW)/hunspell/
-	ssh $(NATURA) rm -f $(NATURA_WWW)/hunspell/LATEST/*.gz
-	rsync -aASPvz out/$(HAODIST).tar.gz out/$(HPREAODIST).tar.gz\
-               $(NATURA):$(NATURA_WWW)/hunspell/LATEST
+	rsync -aASPvz out/$(HAODIST).tar.gz \
+               $(NATURA):$(NATURA_WWW)/hunspell/LATEST/hunspell-pt_PT-latest.tar.gz
+	rsync -aASPvz out/$(HPREAODIST).tar.gz\
+               $(NATURA):$(NATURA_WWW)/hunspell/LATEST/hunspell-pt_PT-preao-latest.tar.gz
 
 
 $(HOUT)-ao/pt_PT.aff: $(HOUT)-ao/pt_PT.dic

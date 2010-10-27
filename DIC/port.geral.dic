@@ -7726,7 +7726,8 @@ cinematografia/#nf/pqr/
 cinematoscópio/#nm//
 cinescopia/#nf//
 cinestesia/#nf//
-cine-teatro/#nm/p/
+cine-teatro/AO90=cineteatro,#nm/p/
+cineteatro/PREAO90=cine-teatro,#nm/p/
 cinética/#nf//
 cinético/#a/f/
 cingir/#vt/XYPL/
@@ -8014,7 +8015,8 @@ coalheira/#nf//
 coalho/#nm//
 co-aluno/AO90=coaluno,#nm//
 coaluno/PREAO90=co-aluno,#nm//
-côa/#nf//
+côa/#nf,AO90=coa/
+coa/#nf,PREAO90=côa/
 coaptidão/#nf//
 coaquisição/#nf//
 co-arrendar/AO90=coarrendar,#vt/XYPL/
@@ -9915,8 +9917,7 @@ couveira/#nf//
 couveiro/#hm/f/
 couve-nabiça/#nf//
 couve/#nf/p/
-co-valência/#nf/p/
-co-valente/#an//
+covalência/#nf/p/
 covalente/#an/p/
 coval/#nm//
 cova/#nf//
@@ -22368,7 +22369,7 @@ medusa/#nf/p/
 megaciclo/#nm//
 megadine/#nm//
 megafone/#nm/p/
-megahertz/#nm//
+mega-hertz/#nm//
 megajoule/#nm//
 megalítico/#a/fp/
 megalomania/#nf/pqr/
@@ -22745,8 +22746,7 @@ micrómetro/#nm//
 micro/#nm/p/
 mícron/#nm/p/
 micronutriente/#nm/p/
-microonda/#nf/p/
-micro-ondas/#nmp//
+micro-onda/#nm/p/
 microorganismo/AO90=micro-organismo,#nm/p/
 micro-organismo/PREAO90=microorganismo,#nm/p/
 microprocessador/#nm//

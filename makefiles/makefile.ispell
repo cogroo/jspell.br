@@ -20,10 +20,10 @@ publish :: ispell-ao-tgz ispell-preao-tgz
 	@ echo "Publishing ISPELL"
 	rsync -aASPvz out/$(ISPELLPKG).tar.gz out/$(ISPELLPPKG).tar.gz\
                $(NATURA):$(NATURA_WWW)/ispell/
-	ssh $(NATURA) rm -f $(NATURA_WWW)/ispell/LATEST/*.gz
-	rsync -aASPvz out/$(ISPELLPKG).tar.gz out/$(ISPELLPPKG).tar.gz\
-               $(NATURA):$(NATURA_WWW)/ispell/LATEST
-
+	rsync -aASPvz out/$(ISPELLPKG).tar.gz \
+               $(NATURA):$(NATURA_WWW)/ispell/LATEST/ispell.pt-latest.tar.gz
+	rsync -aASPvz out/$(ISPELLPPKG).tar.gz \
+               $(NATURA):$(NATURA_WWW)/ispell/LATEST/ispell.pt-preao-latest.tar.gz
 
 ispell-ao-tgz: ispellao
 	@ echo "$(ISPELLPKG).tar.gz"
