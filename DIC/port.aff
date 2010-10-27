@@ -1276,13 +1276,16 @@ M O S	    >   -S,\-NOS    ; "AP=1,AN=p"          #noispell
 .           >      \-VOS    ; "AP=2,AN=p"          #noispell
 
 R     >        \-ME\-EI     ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
+R     >        \-ME\-EIS    ; "AP=1,AN=s,P=2,N=p,T=f"          #noispell
+R     >        \-ME\-EMOS   ; "AP=1,AN=s,P=1,N=p,T=f"          #noispell
+R     >        \-ME\-Á      ; "AP=1,AN=s,P=3,N=s,T=f"          #noispell
+R     >        \-ME\-ÁS     ; "AP=1,AN=s,P=2,N=s,T=f"          #noispell
+R     >        \-ME\-ÃO     ; "AP=1,AN=s,P=3,N=p,T=f"          #noispell
 
-#ALBIE|45# R     >        \-ME\-EIS    ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
-#ALBIE|45# R     >        \-ME\-EMOS   ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
-#ALBIE|46# R     >        \-ME\-IAM    ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
-#ALBIE|46# R     >        \-ME\-IAS    ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
-#ALBIE|48# R     >        \-ME\-Á      ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
-#ALBIE|48# R     >        \-ME\-ÁS     ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
+R     >        \-ME\-IAM    ; "AP=1,AN=s,P=3,N=p,T=c"          #noispell
+R     >        \-ME\-IAMOS  ; "AP=1,AN=s,P=1,N=p,T=c"          #noispell
+R     >        \-ME\-IA     ; "AP=1,AN=s,P=1_3,N=s,T=c"          #noispell
+R     >        \-ME\-IAS    ; "AP=1,AN=s,P=2,N=s,T=c"          #noispell
 
 R     >        \-TE\-ÁS     ; "AP=2,AN=s,P=2,N=s,T=f"          #noispell
 R     >        \-SE\-Á      ; "AP=3,AN=s,P=3,N=s,T=f"          #noispell
