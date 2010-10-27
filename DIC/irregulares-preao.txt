@@ -99,8 +99,8 @@ vesti    2p i
 vistam   3p i
 
 #vX:e advertir, divertir, delir, compelir, expelir, impelir/PL, repelir, 
-      competir, repetir, concernir, discernir, empedernir/SL, defletir, 
-      fletir, infletir, refletir, fremir, servir/PL, serzir, despir
+      competir, repetir, concernir, discernir, empedernir/SL, deflectir, 
+      flectir, inflectir, reflectir, fremir, servir/PL, serzir, despir
 iXo    1s p
 iXa    1s pc
 iXas   2s pc
@@ -163,12 +163,12 @@ divergi    2p i
 divirjam   3p i
 
 #v *guar              // ocur:8  .. desaguar
-gue    1s pc
-gues   2s pc
-gue    3s pc
-guem   3p pc
-gue    3s i
-guem   3p i
+gúe    1s pc
+gúes   2s pc
+gúe    3s pc
+gúem   3p pc
+gúe    3s i
+gúem   3p i
 
 #vX:u abaular, amiudar, desmiudar, aunar, viuvar, enviuvar, faulhar, gauchar,
     saudar/RL      //  2.2 *u?ar  ou  *u??ar
@@ -185,11 +185,11 @@ guem   3p i
 úXem  3p i
 
 #v adequar, obliquar, antiquar
-que   1s pc
-ques  2s pc
-que   3s pc
-quem  3p pc
-que   3s i
+qúe   1s pc
+qúes  2s pc
+qúe   3s pc
+qúem  3p pc
+qúe   3s i
 quém  3p i
 
 #v esmiuçar
@@ -212,10 +212,10 @@ esmiúcem   3p i
 
 #v arguir
 arguo   1s p
-arguis  2s p
-argui   3s p
-arguem  3p p
-argui   2s i
+argúis  2s p
+argúi   3s p
+argúem  3p p
+argúi   2s i
 
 
 #v reunir
@@ -369,8 +369,8 @@ prazerem     3p ip
 jaz      3s p
 
 #v parar/PL
-para      3s p
-para      2s i
+pára      3s p
+pára      2s i
 
 #v *medir    //   ocur:4
 meço     1s p
@@ -582,7 +582,7 @@ dês      2s pc
 dê       3s pc
 dêmos    1p pc
 deis     2p pc
-deem     3p pc
+dêem     3p pc
 desse    1s pic
 desses   2s pic
 desse    3s pic
@@ -595,11 +595,11 @@ der      3s fc
 dermos   1p fc
 derdes   2p fc
 derem    3p fc
-dá       2s i
-dê       3s i
-dêmos    1p i
+dá      2s i
+dê      3s i
+dêmos   1p i
 dai      2p i
-deem     3p i
+dêem    3p i
 dando    0 g
 dado     ms ppa
 dada     fs ppa
@@ -614,7 +614,7 @@ darem    3p ip
 vejo     1s p
 vês      2s p
 vê       3s p
-veem     3p p
+vêem     3p p
 vi       1s pp
 viste    2s pp
 viu      3s pp
@@ -792,7 +792,7 @@ tiver      3s fc
 tivermos   1p fc
 tiverdes   2p fc
 tiverem    3p fc
-tém        2s i
+tém       2s i
 tenha      3s i
 tenhamos   1p i
 tende      2p i
@@ -976,7 +976,7 @@ crês        2s p
 crê         3s p
 cremos      1p p
 credes      2p p
-creem       3p p
+crêem       3p p
 creia       1s pc
 creias      2s pc
 creia       3s pc
@@ -1081,7 +1081,7 @@ estiver      3s fc
 estivermos   1p fc
 estiverdes   2p fc
 estiverem    3p fc
-está         2s i
+está        2s i
 esteja       3s i
 estejamos    1p i
 estai        2p i
@@ -1179,15 +1179,15 @@ for      3s fc
 formos   1p fc
 fordes   2p fc
 forem    3p fc
-vai      2s i
+vai       2s i
 vá       3s i
-vamos    1p i
-ide      2p i
+vamos     1p i
+ide       2p i
 vão      3p i
-ires     2s ip
-irmos    1p ip
-irdes    2p ip
-irem     3p ip
+ires      2s ip
+irmos     1p ip
+irdes     2p ip
+irem      3p ip
 
 #v ler/PL, rer
 eio    1s p
@@ -1195,7 +1195,7 @@ eio    1s p
 ê      3s p
 emos   1p p
 edes   2p p
-eem    3p p
+êem    3p p
 eia    1s pc
 eias   2s pc
 eia    3s pc
@@ -1399,7 +1399,7 @@ poderem    3p ip
 provejo     1s p
 provês      2s p
 provê       3s p
-proveem     3p p
+provêem     3p p
 proveja     1s pc
 provejas    2s pc
 proveja     3s pc

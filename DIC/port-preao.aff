@@ -125,9 +125,7 @@ prefixes
 
 flag *A:                   # anti
 [^HIRS]	>	ANTI       ; "PFSEM=anti"	# antivenenoso
-R       >       ANTIR      ; "PFSEM=anti"       # antirracismo
-S       >       ANTIS      ; "PFSEM=anti"       # antissemita
-[HI]	>	ANTI\-     ; "PFSEM=anti"	# anti-semita #noispell
+[HIRS]	>	ANTI\-     ; "PFSEM=anti"	# anti-semita #noispell
 
 flag *S:                   # des
 [^H]	>	DES	; "PFSEM=not"       # amarrar -> desamarrar

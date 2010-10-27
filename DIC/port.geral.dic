@@ -1137,7 +1137,8 @@ alcaide/#nm/p/
 alcaiotar/#vn/XYPL/
 alcalinizar/#vt/XYPL/
 alcalino/#a/pfd/
-alcalino-terroso/#a//
+alcalino-terroso/AO90=alcalinoterroso,#a//
+alcalinoterroso/PREAO90=alcalino-terroso,#a//
 alcaloide/#nm/p/
 alcançar/#vn/XYPLMv/
 alcance/#nm//

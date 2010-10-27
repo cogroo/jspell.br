@@ -29,7 +29,7 @@ $(HOUT)-ao/pt_PT.aff: $(HOUT)-ao/pt_PT.dic
 	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl $(JOUT)-ao/port.aff | $(ICONV) > $(HOUT)-ao/pt_PT.aff
 	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> $(HOUT)-ao/pt_PT.aff
 
-$(HOUT)-preao/pt_PT-preao.aff: $(HOUT)-preao/pt_PT-preao.dic
+$(HOUT)-preao/pt_PT-preao.aff: $(JOUT)-preao/port-preao.aff
 	@ echo "  - affix file conversion"
 	LC_ALL=pt_PT.iso8859-1 $(HTOOLS)/genAffHunspell.pl $(JOUT)-preao/port-preao.aff | $(ICONV) > $(HOUT)-preao/pt_PT-preao.aff
 	cat $(HTOOLS)/pt_PT.replace | $(ICONV) >> $(HOUT)-preao/pt_PT-preao.aff

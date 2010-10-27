@@ -9,30 +9,27 @@ wordlist-all: wordlist
 
 publish :: wlgzs
 	@ echo "Publishing WORDLISTS"
-	rsync -aASPvz $(OUT)/wordlist-mix-$(DATE).txt.gz \
-	              $(OUT)/wordlist-ao-$(DATE).txt.gz \
+	rsync -aASPvz $(OUT)/wordlist-ao-$(DATE).txt.gz \
                       $(OUT)/wordlist-preao-$(DATE).txt.gz \
                $(NATURA):$(NATURA_WWW)/wordlists/
-	rsync -aASPvz $(OUT)/wordlist-mix-$(DATE).txt.gz \
-               $(NATURA):$(NATURA_WWW)/wordlists/LATEST/wordlist-mix-latest.txt.gz
 	rsync -aASPvz $(OUT)/wordlist-ao-$(DATE).txt.gz \
                $(NATURA):$(NATURA_WWW)/wordlists/LATEST/wordlist-ao-latest.txt.gz
 	rsync -aASPvz $(OUT)/wordlist-preao-$(DATE).txt.gz \
                $(NATURA):$(NATURA_WWW)/wordlists/LATEST/wordlist-preao-latest.txt.gz
 
-wlgzs: $(WLDIR)/wl-mix.txt $(WLDIR)/wl-ao.txt $(WLDIR)/wl-preao.txt
-	gzip -c $(WLDIR)/wl-mix.txt > $(OUT)/wordlist-mix-$(DATE).txt.gz
+wlgzs: $(WLDIR)/wl-ao.txt $(WLDIR)/wl-preao.txt
 	gzip -c $(WLDIR)/wl-ao.txt > $(OUT)/wordlist-ao-$(DATE).txt.gz
 	gzip -c $(WLDIR)/wl-preao.txt > $(OUT)/wordlist-preao-$(DATE).txt.gz
 
 
-wordlist: wordlist-ao wordlist-preao wordlist-mix
+.PHONY: wordlist wordlist-ao wordlist-preao # wordlist-mix
+wordlist: wordlist-ao wordlist-preao # wordlist-mix
 
 
-wordlist-mix: $(WLDIR)/wl-mix.txt
+# wordlist-mix: $(WLDIR)/wl-mix.txt
 
-$(WLDIR)/wl-mix.txt: $(DIRS)  $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.hash
-	TOOLS/gerarWordList.pl $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.hash > $(WLDIR)/wl-mix.txt
+# $(WLDIR)/wl-mix.txt: $(DIRS)  $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.hash
+# 	TOOLS/gerarWordList.pl $(JOUT)-mix/port-mix.dic $(JOUT)-mix/port-mix.hash > $(WLDIR)/wl-mix.txt
 
 wordlist-ao: $(WLDIR)/wl-ao.txt
 
