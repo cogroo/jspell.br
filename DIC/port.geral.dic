@@ -424,6 +424,7 @@ aconsoantar/#vt/XYPL/
 acontecer/#vi/XYLM/
 acontecimento/#nm/p/
 acoplamento/#nm/p/
+acoplagem/#nm/p/
 acoplar/#vt/XYPLcDR/
 açor/#nm/p/
 açorda/#nf/p/
@@ -12009,6 +12010,7 @@ diplomata/#nn/p/
 diplomático/#a/fpH/
 diplopia/#nf//
 dipolo/#nm/p/
+díptico/#hm/p/
 dique/#nm/p/
 direcção/AO90=direção,#nf/pI/
 direção/PREAO90=direcção,#nf/pI/
@@ -12100,6 +12102,7 @@ disfónico/#a//
 disformar/#vt/XYPL/
 disforme/#an/pd/
 disformidade/#nf/p/
+disfrutar/#vt/XYPL/
 disfunção/#nf/p/
 disjunção/#nf/p/
 disjuntar/#vt/XYPL/
@@ -19787,10 +19790,11 @@ intermitência/#nf/p/
 intermitente/#an/p/
 intermitentemente/#an//
 intermitir/#vi/XYL/
+intermodal/#an/p/
 intermodalidade/#nf//
 intermolecular/#an/p/
 intermural/#an//
-intermuscular/#an//
+intermuscular/#an/p/
 internacional/#an/pmtid/
 internacionalidade/#nf/p/
 internacionalista/#hn//
@@ -24864,6 +24868,7 @@ oscilatória/#nf//
 oscilatório/#a/f/
 osciloscópio/#nm//
 ósculo/#nm/p/
+óscar/#nm/p/
 osga/#nf/p/
 osmótico/#a/p/
 os/$o$CAT=art,CLA=def,G=m$N=p//
@@ -32916,6 +32921,7 @@ telescópio/#nm/p/
 telespectador/EQAO90=telespetador,#nm/fp/
 telespetador/PREAO90=telespectador,#nm/fp/
 teletexto/#nm//
+teletrabalho/#nm//
 televisão/#nf/p/
 televisivo/#a/fp/
 televisor/#nm/p/
@@ -32985,6 +32991,7 @@ tendencioso/#a/pdf/
 tendente/#an//
 tender/#vn/XYPLn/
 tendinoso/#a//
+tendinite/#nf/p/
 tendola/#nf//
 tenebrosidade/#nf/p/
 tenebroso/#a/dpf/
@@ -33046,6 +33053,7 @@ terapêutico/#a/fp/
 terapia/#nf/p/
 teratologia/#nf/prq/
 terça-feira/#nf//
+terças-feiras/$terça-feira$#nf$N=p//
 terça/#hf//
 terçar/#vt/XYPL/
 terceiro/#o/fp/
