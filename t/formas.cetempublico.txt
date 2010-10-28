@@ -668,7 +668,6 @@ acústica
 acústicas
 acústico
 acústicos
-ad
 adapta
 adaptada
 adaptadas
@@ -1697,7 +1696,6 @@ amostragem
 amostras
 amotinados
 amou
-amp
 ampla
 amplamente
 amplas
@@ -2179,7 +2177,7 @@ aplicou
 aplicáveis
 aplicável
 aplique
-apocalipse
+Apocalipse
 apocalíptica
 apocalíptico
 apoderado
@@ -2784,7 +2782,6 @@ ascendiam
 ascendido
 ascendência
 ascensão
-ascenção
 ases
 asfalto
 asfixia
@@ -3818,7 +3815,6 @@ bazar
 baço
 baía
 baú
-be
 beatificação
 bebe
 bebedeira
@@ -4518,7 +4514,7 @@ camponesas
 camponeses
 camponês
 campos
-campus
+Campus
 camuflada
 camuflado
 camuflar
@@ -4630,7 +4626,6 @@ canudo
 canção
 canções
 caos
-cap
 capa
 capacete
 capacetes
@@ -4967,9 +4962,9 @@ cavalo
 cavalos
 cavaqueira
 cavaquinho
-cavaquismo
-cavaquista
-cavaquistas
+Cavaquismo
+Cavaquista
+Cavaquistas
 cavar
 cave
 caveira
@@ -11354,7 +11349,6 @@ empurrou
 empurrão
 empurrões
 empírica
-en
 enaltecer
 enalteceu
 encabeçada
@@ -11600,7 +11594,6 @@ enfrentará
 enfrentava
 enfrentou
 enfureceu
-eng
 engana
 enganada
 enganado
@@ -11641,7 +11634,6 @@ engraçado
 engrenagem
 engrossar
 enguias
-engº
 enigma
 enigmas
 enigmático
@@ -12572,9 +12564,9 @@ estalagem
 estalar
 estaleiro
 estaleiros
-estalinismo
-estalinista
-estalinistas
+Estalinismo
+Estalinista
+Estalinistas
 estalou
 estamos
 estampa
@@ -12900,7 +12892,7 @@ etíopes
 eu
 eucalipto
 eucaliptos
-eucaristia
+Eucaristia
 eufemismo
 euforia
 euforias
@@ -15412,7 +15404,6 @@ haitiana
 haitianos
 haja
 hajam
-hall
 halterofilismo
 hangar
 hardware
@@ -17705,7 +17696,7 @@ islâmica
 islâmicas
 islâmico
 islâmicos
-islão
+Islão
 isola
 isolacionismo
 isolada
@@ -18234,7 +18225,7 @@ lendária
 lendário
 lendários
 lenha
-leninista
+Leninista
 lenta
 lentamente
 lentas
@@ -19128,8 +19119,8 @@ marcava
 marcavam
 marcação
 marcações
-marcelismo
-marcelista
+Marcelismo
+Marcelista
 marcha
 marchar
 marchas
@@ -19155,7 +19146,7 @@ marginalizados
 marginalizar
 marginalização
 marginalmente
-maria
+Maria
 marido
 maridos
 marijuana
@@ -20835,7 +20826,6 @@ nutrição
 nuvem
 nuvens
 nylon
-nº
 nádegas
 náufragos
 náusea
@@ -21538,7 +21528,6 @@ ovócitos
 oxigénio
 ozono
 oásis
-p.
 pacata
 pacatez
 pacato
@@ -22056,7 +22045,7 @@ patética
 patético
 pau
 paulatinamente
-paulista
+Paulista
 paus
 pausa
 pause
@@ -22703,7 +22692,7 @@ pico
 picos
 pictórica
 pictórico
-pide
+PIDE
 piedade
 pijama
 pilar
@@ -22940,7 +22929,7 @@ politécnico
 politécnicos
 polivalente
 polivalentes
-polo
+Polo
 poluente
 poluentes
 polui
@@ -27093,8 +27082,8 @@ saladas
 salariais
 salarial
 salas
-salazarismo
-salazarista
+Salazarismo
+Salazarista
 saldar
 saldo
 saldos
@@ -27161,15 +27150,15 @@ salários
 salão
 salões
 samba
-sampaísta
-sampaístas
+Sampaísta
+Sampaístas
 sanado
 sanar
 sanatório
 sancionada
 sancionado
 sancionar
-sandinistas
+Sandinistas
 sandálias
 saneamento
 sanear
@@ -27727,7 +27716,6 @@ sexualmente
 show
 shows
 si
-sic
 siciliana
 siciliano
 sida
@@ -30140,7 +30128,6 @@ tutelar
 tutelares
 tutelas
 tutor
-tv
 tá
 tábua
 tábuas
@@ -30466,7 +30453,6 @@ valências
 vamos
 vampiro
 vampiros
-van
 vandalismo
 vanguarda
 vanguardas
@@ -31241,7 +31227,6 @@ volvidos
 voláteis
 volúpia
 vomitar
-von
 vontade
 vontades
 voo
@@ -31358,8 +31343,8 @@ zangada
 zangado
 zangados
 zangas
-zapatista
-zapatistas
+Zapatista
+Zapatistas
 zelar
 zelo
 zeloso
