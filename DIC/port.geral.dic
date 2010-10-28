@@ -12292,7 +12292,7 @@ doar/#vt/XYPLcD/
 dobadeira/#nf//
 dobagem/#nf//
 dobar/#vn/XYPL/
-dobrada/#nf//
+dobrada/#nf/hp/
 dobradeira/#nf//
 dobradiça/#nf//
 dobradiço/#a/f/
@@ -16504,6 +16504,7 @@ fruir/#vn/KLc/
 frustração/#nf//
 frustrar/#vt/XYPLcDn/
 fruta/#nf/p/
+frutado/#hm/fp/
 fruteira/#nf//
 fruteiro/#nm/f/
 fruticultura/#nf/prq/
@@ -17784,7 +17785,7 @@ heroicizar/#vt/XYPL/
 heróico/AO90=heroico,#a/fp/
 heroico/PREAO90=heróico,#a/fp/
 heroificar/#vt/XYPL/
-heroína/#nf/p/
+heroína/$herói$#nm$G=f/p/
 herói/#nm/pA/
 heroísmo/#nm/p/
 herpes/#nm//
@@ -32409,6 +32410,8 @@ superfino/#a/fp/
 superfluido/#nm//
 supérfluo/#hm/fp/
 superfortaleza/#nf//
+super-herói/#nm/p/
+super-heroína/$super-herói$#nm$G=f/p/
 super-homem/#nm/p/
 super-humano/#a/fp/
 superintendência/#nf/p/
