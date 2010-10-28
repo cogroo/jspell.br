@@ -9124,7 +9124,7 @@ constritivo/#a//
 constrito/#a//
 constritor/#hm//
 construção/#nf/pRS/
-construir/#vt,I=3/PLRS/
+construir/#vt,I=3/PLRSY/
 construtivo/#a/pfm/
 construtor/#hm/pfR/
 construtura/#nf//
@@ -10541,6 +10541,7 @@ decrescer/#vi/XYLMn/
 decréscimo/#nm/p/
 decretar/#vt/XYPLc/
 decreto-lei/#nm//
+decretos-lei/$decreto-lei$#nm$N=p//
 decreto/#nm/p/
 decretório/#a/pfH/
 decúbito/#nm/p/
@@ -13314,6 +13315,7 @@ enérgico/#a/pf/
 energitismo/#nm/p/
 enervante/#an/p/
 enervar/#vt/XYPLcMn/
+enésimo/#am/pf/
 enevoar/#vt/XYPLS/
 enfadadiço/#a//
 enfadar/#vt/XYPLM/
@@ -14249,8 +14251,8 @@ espectaculosidade/AO90=espetaculosidade,#nf/p/
 espetaculosidade/PREAO90=espectaculosidade,#nf/p/
 espectaculoso/AO90=espetaculoso,#a/d/
 espetaculoso/PREAO90=espectaculoso,#a/d/
-espectador/AO90=espetador,#hm//
-espetador/PREAO90=espectador,#hm//
+espectador/AO90=espetador,#hm/pf/
+espetador/PREAO90=espectador,#hm/pf/
 espectral/EQAO90=espetral,#an/p/
 espetral/PREAO90=espectral,#an/p/
 espectrografia/EQAO90=espetrografia,#nf/pr/
@@ -15005,6 +15007,7 @@ exemplificativo/#a/fpm/
 exemplo/#nm/p/
 exequibilidade/#nf/p/
 exequível/#an/dpm/
+exéquia/#nf/p/
 exercer/#vn/XYPL/
 exercício/#nm/p/
 exercitante/#hn/p/
@@ -18642,7 +18645,7 @@ inalienabilidade/#nf/p/
 inalienação/#nf//
 inalienável/#an/pd/
 inalterabilidade/#nf/p/
-inalterado/#a/p/
+inalterado/#a/pf/
 inalterável/#an/pmd/
 inamissibilidade/#nf/p/
 inamissível/#an/d/
@@ -22759,7 +22762,7 @@ micronutriente/#nm/p/
 micro-onda/#nm/p/
 microorganismo/AO90=micro-organismo,#nm/p/
 micro-organismo/PREAO90=microorganismo,#nm/p/
-microprocessador/#nm//
+microprocessador/#nm/p/
 microrganismo/#nm/p/
 microrradiografia/#nf/pqr/
 microscopia/#nf//
@@ -22884,12 +22887,14 @@ miniatura/#nm/pt/
 miniaturar/#vt/XYPL/
 miniaturista/#nn/p/
 minifúndio/#nm//
+minimal/#am/p/
 minimalista/#hn/p/
 minimamente/#av//
 minimidade/#nf/p/
 minimizar/#vt/XYPLc/
 mínimo/#hm/fp/
 mini/#pr//
+mini-saia/#nm/p/
 ministerial/#hn/pti/
 ministerialismo/#nm/p/
 ministeriável/#an//
@@ -23281,6 +23286,7 @@ monotonamente/#av//
 monotonia/#nf//
 monótono/#a/fp/
 monovalente/#an//
+monovolume/#nm/p/
 monóxido/#nm//
 monsenhorado/#nm//
 monsenhoria/#nf//
@@ -23551,7 +23557,7 @@ multicelular/#an//
 multicolor/#an//
 multicolorir/#vt,I=3/YPL/
 multicor/#an//
-multicultor/#hm//
+multicultural/#am/p/
 multidão/#nf/p/
 multidimensional/#an//
 multidisciplinar/#a/p/
@@ -23566,6 +23572,7 @@ multilingue/#an/p/
 multimédia/#hf//
 multímetro/#nm//
 multimilionário/#hm/fp/
+multimodal/#am/p/
 multinacional/#an/p/
 multipartidário/#an/fp/
 multiplamente/#av//
@@ -24204,7 +24211,7 @@ notório/#a/fpH/
 noutro/CAT=cp,Prep=em,Pind=outro,G=m,N=s/fp/
 noutrora/#av//
 nova/#hf//
-nova-iorquino/#hm//
+nova-iorquino/#hm/pf/
 novato/#hm/p/
 nove/#ca/s/
 novecentista/#an/p/
@@ -24897,6 +24904,7 @@ ostentativo/#a//
 ostentoso/#a/pm/
 osteoclasto/#nm//
 osteopatia/#nf/pqr/
+osteoporose/#nm//
 ostráceo/#a//
 ostracismo/#nm/p/
 ostracizar/#vt/XYPLn/
@@ -25098,7 +25106,8 @@ palatalizar/#vt/XYPLc/
 palatino/#hm/f/
 palatizar/#vt/XYPLc/
 palato/#nm//
-palavra-chave/#nm/p/
+palavra-chave/#nm//
+palavras-chave/$palavra-chave$#nm$N=p//
 palavrada/#nf//
 palavra/#nf/ph/
 palavrão/#nm/p/
@@ -25363,6 +25372,7 @@ paradouro/#nm//
 paradoxal/#an/pm/
 paradoxar/#vi/XYL/
 paradoxo/#hm/p/
+parafernália/#nf/p/
 parafina/#nf/p/
 parafinar/#vt/XYPL/
 parafínico/#a/fp/
@@ -25415,8 +25425,8 @@ pára-quedas/AO90=paraquedas,#nm//
 paraquedas/PREAO90=pára-quedas,#nm//
 pára-quedismo/AO90=paraquedismo,#nm//
 paraquedismo/PREAO90=pára-quedismo,#nm//
-pára-quedista/AO90=paraquedista,#nn//
-paraquedista/PREAO90=pára-quedista,#nn//
+pára-quedista/AO90=paraquedista,#nn/p/
+paraquedista/PREAO90=pára-quedista,#nn/p/
 pára-raios/AO90=para-raios,#nm//
 para-raios/PREAO90=pára-raios,#nm//
 parar/#vn,I=3/YPLMv/
@@ -26888,6 +26898,7 @@ policromia/#nf//
 policultura/#nf/pq/
 polidamente/#av//
 polidez/#nf//
+polidesportivo/#nm/p/
 polidura/#nf//
 poliédrico/#a//
 poliedro/#hm/p/
@@ -27802,7 +27813,9 @@ projetista/PREAO90=projectista,#nn//
 projectivo/AO90=projetivo,#a/f/
 projetivo/PREAO90=projectivo,#a/f/
 projecto-lei/AO90=projeto-lei,#nm//
+projectos-lei/$projecto-lei$AO90=projeto-lei,#nm$N=p//
 projeto-lei/PREAO90=projecto-lei,#nm//
+projetos-lei/$projeto-lei$PREAO90=projecto-lei,#nm$N=p//
 projecto/AO90=projeto,#nm/pt/
 projeto/PREAO90=projecto,#nm/pt/
 projector/AO90=projetor,#nm/p/
@@ -28313,6 +28326,7 @@ quaresma/#nf/p/
 quaresmar/#vi/XYL/
 quartado/#a//
 quarta-feira/#nf//
+quartas-feiras/$quarta-feira$#nf$N=p//
 quarta/#nf//
 quartanista/#nn/p/
 quartear/#vt/ZYPL/
@@ -28325,6 +28339,7 @@ quarteto/#nm/p/
 quartil/#a/p/
 quartilho/#nm/p/
 quarto-de-final/#nm//
+quarto-de-hora/#nm//
 quarto/#o/pfh/
 quartos-de-final/$quarto-de-final$#nm$N=p//
 quartzito/#nm/p/
@@ -28484,6 +28499,7 @@ quinquénio/#nm//
 quinta-coluna/#nf//
 quinta-essência/#nf/p/
 quinta-feira/#nf//
+quintas-feiras/$quinta-feira$#nf$N=p//
 quintalada/#nf//
 quintalão/#nm//
 quintaleiro/#nm//
@@ -31129,6 +31145,7 @@ seguido/#a/p/
 seguinte/#hm2/pm/
 seguir/#vn,I=3/YPLMDn/
 segunda-feira/#nf//
+segundas-feiras/$segunda-feira$#nf#N=p/
 segundanista/#nn/p/
 segundar/#vt/XYPL/
 segundo/CAT=prep//
@@ -31503,6 +31520,7 @@ sexagésimo/#o/fp/
 sexologia/#nf/prq/
 sexo/#nm/p/
 sexta-feira/#nf//
+sextas-feiras/$sexta-feira$#nf$N=p//
 sexta/#nf//
 sextante/#nm/p/
 sexteto/#nm/p/

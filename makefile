@@ -1,3 +1,4 @@
+
 all:
 	@ echo
 	@ echo " dicts          - Build all dicts"
@@ -38,5 +39,5 @@ clean:
 realclean :: clean
 
 test:
-	perl -MTest::Harness -e 'runtests(<t/*t>);'
+	perl -MTest::Harness -e 'runtests(<t/*.t>);'
 
