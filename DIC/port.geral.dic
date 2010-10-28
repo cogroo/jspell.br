@@ -10299,6 +10299,7 @@ curtidura/#nf//
 curtir/#vt/XYPLMD/
 curto/#a/pfmsh/
 curto-circuito/#nm//
+curto-prazo/#nm//
 curtume/#nm/p/
 curva/#nf//
 curvar/#vn/XYPL/
@@ -23684,6 +23685,8 @@ nada/#avq//
 nada/CAT=pind,G=_,N=_//
 nadadeira/#nf//
 nadador/#hm/fp/
+nadador-salvador/#nm//
+nadadores-salvadores/$nadador-salvador$#nm$N=p//
 nadadura/#nf//
 nadante/#an/p/
 nadar/#vi/XYLDn/
@@ -27077,6 +27080,7 @@ porrete/#nm//
 porta-aviões/#nm//
 porta-bandeira/#nm//
 portabilidade/#nf/p/
+porta-chaves/#n//
 portada/#nf/p/
 portador/#hm/fp/
 porta-estandarte/#nm/p/
@@ -30618,7 +30622,7 @@ sabático/#a/fp/
 sabedor/#hm/p/
 sabedoria/#nf//
 saber/#nm//
-saber/#vn,I=3/LD/
+saber/#vn,I=3/LD/    #comer/#vt/XYP/
 sabiamente/#av//
 sabiá/#nm//
 sabichão/#hm/fp/
@@ -34912,6 +34916,7 @@ vidência/#nf/p/
 vide/#nf/p/
 vidente/#hn/p/
 videoconferência/#nf//
+videogravador/#nm/p/
 videojogo/#nm/p/
 vídeo/#nm/p/
 vidraça/#nf/p/
