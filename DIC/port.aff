@@ -1273,6 +1273,7 @@ N S         >   -NS,M\-NOS  ; "AP=1,AN=p"          #noispell
 M O S	    >   -S,\-NOS    ; "AP=1,AN=p"          #noispell
 [^NÁO]S     >      \-NOS    ; "AP=1,AN=p"          #noispell
 [^SÁ]       >      \-NOS    ; "AP=1,AN=p"          #noispell
+[^SÁ]       >      \-NO     ; "AP=1,AN=p"          #noispell
 .           >      \-VOS    ; "AP=2,AN=p"          #noispell
 
 R     >        \-ME\-EI     ; "AP=1,AN=s,P=1,N=s,T=f"          #noispell
