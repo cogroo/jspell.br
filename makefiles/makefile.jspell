@@ -1,6 +1,6 @@
 # -*- makefile -*- # instruct emacs
 
-DIRS+=$(JOUT)-big $(JOUT)-ao $(JOUT)-preao $(JOUT)-mix
+DIRS+=$(JOUT)-ao $(JOUT)-preao # -- $(JOUT)-big $(JOUT)-mix
 
 jspell-all: jspell jspell-ao-tgz jspell-preao-tgz # jspell-mix-tgz jspell-big-tgz
 
