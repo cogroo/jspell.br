@@ -1286,7 +1286,7 @@ algoz/#nm/p/
 alguém/CAT=pind,G=_,N=_//
 alguidar/#nm/p/
 algum/CAT=pind,G=m,N=s/fp/
-algures/#avl,SUBCAT=lug//
+algures/#avl//
 alhada/#nf/p/
 alheamento/#nm/p/
 alhear/#vi/XY/
@@ -15249,7 +15249,8 @@ extrema-esquerda/#nf/p/
 extremar/#vt/XYPLv/
 extremidade/#nf/p/
 extremismo/#nm/p/
-extremo/#hm/pfmtid/
+extremo/#hm/pftid/
+extremamente/#avq//
 extremoso/#a/mfp/
 extrínseco/#a/fp/
 extrospecção/AO90=extrospeção,#nf//
