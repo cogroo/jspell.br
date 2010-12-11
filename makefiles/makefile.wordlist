@@ -48,3 +48,4 @@ $(WLDIR):
 realclean ::
 	@ echo "Cleaning wordlists"
 	rm -fr $(WLDIR)
+	rm -fr $(OUT)/wordlist-*gz
