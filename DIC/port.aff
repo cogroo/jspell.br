@@ -558,12 +558,13 @@ M           >     -M,NZINHOS      ; "G=m,N=p,GR=dim"  # homem->homenzinhos
 L           >        ZINHOS       ; "G=m,N=p,GR=dim"  # anel->anelzinhos
 
 [^CGÇÃI]O   >     -O,INHA         ; "G=f,GR=dim"  # maroto->marotinha
-[^ÇG]A      >     -A,INHA         ; "GR=dim"  # depressa->depressinha
-C A         >    -CA,QUINHA       ; "GR=dim"  # vaca->vaquinha
-Ç A         >    -ÇA,CINHA        ; "GR=dim"  # cabeça->cabecinha
-G A         >     -A,UINHA        ; "GR=dim"  # carga->carguinha
-Á           >     -Á,AZINHA       ; "GR=dim"  # pá->pazinha
-Ã           >     -Ã,AZINHA       ; "GR=dim"  # mamã->mamazinha
+[^ÇG]A      >     -A,INHA         ; "G=f,GR=dim"  # depressa->depressinha
+C A         >    -CA,QUINHA       ; "G=f,GR=dim"  # vaca->vaquinha
+Ç A         >    -ÇA,CINHA        ; "G=f,GR=dim"  # cabeça->cabecinha
+G A         >     -A,UINHA        ; "G=f,GR=dim"  # carga->carguinha
+Á           >     -Á,AZINHA       ; "G=f,GR=dim"  # pá->pazinha
+Ã           >     -Ã,AZINHA       ; "G=f,GR=dim"  # mamã->mamazinha
+Ã E         >        ZINHA        ; "G=f,GR=dim"  # mãe->mãezinha
 
 [^CGÇÃI]O   >     -O,INHAS        ; "G=f,N=p,GR=dim"  # maroto->marotinhas
 [^ÇG]A      >     -A,INHAS        ; "N=p,GR=dim"  # depressa->depressinhas
@@ -573,9 +574,12 @@ G A         >     -A,UINHAS       ; "N=p,GR=dim"  # carga->carguinhas
 Á           >     -Á,AZINHAS      ; "N=p,GR=dim"  # pá->pazinhas
 Ã           >     -Ã,AZINHAS      ; "N=p,GR=dim"  # mamã->mamazinhas
 
-flag *z:                               #inho
+flag *z:         ; "CAT=a_nc,N=s"      #inho
 [^Ã][EO]	>        ZINHO        ; "GR=dim"  # pobre->pobrezinho
 L	>	INHO	; "GR=dim"	# casal->casalinho
+
+[^Ã][EO]	>        ZINHA        ; "G=f,GR=dim"  # pobre->pobrezinho
+L	>	INHA	; "G=f,GR=dim"	# 
 
 [^Ã][EO]        >        ZINHOS       ; "N=p,GR=dim"  # pobre->pobrezinhos
 L           >        INHOS        ; "N=p,GR=dim"  # casal->casalinhos

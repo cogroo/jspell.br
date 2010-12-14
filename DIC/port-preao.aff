@@ -556,12 +556,13 @@ M           >     -M,NZINHOS      ; "G=m,N=p,GR=dim"  # homem->homenzinhos
 L           >        ZINHOS       ; "G=m,N=p,GR=dim"  # anel->anelzinhos
 
 [^CGÇÃI]O   >     -O,INHA         ; "G=f,GR=dim"  # maroto->marotinha
-[^ÇG]A      >     -A,INHA         ; "GR=dim"  # depressa->depressinha
-C A         >    -CA,QUINHA       ; "GR=dim"  # vaca->vaquinha
-Ç A         >    -ÇA,CINHA        ; "GR=dim"  # cabeça->cabecinha
-G A         >     -A,UINHA        ; "GR=dim"  # carga->carguinha
-Á           >     -Á,AZINHA       ; "GR=dim"  # pá->pazinha
-Ã           >     -Ã,AZINHA       ; "GR=dim"  # mamã->mamazinha
+[^ÇG]A      >     -A,INHA         ; "G=F,GR=dim"  # depressa->depressinha
+C A         >    -CA,QUINHA       ; "G=F,GR=dim"  # vaca->vaquinha
+Ç A         >    -ÇA,CINHA        ; "G=F,GR=dim"  # cabeça->cabecinha
+G A         >     -A,UINHA        ; "G=F,GR=dim"  # carga->carguinha
+Á           >     -Á,AZINHA       ; "G=F,GR=dim"  # pá->pazinha
+Ã           >     -Ã,AZINHA       ; "G=F,GR=dim"  # mamã->mamazinha
+Ã E         >        ZINHA        ; "G=f,GR=dim"  # maroto->marotinha
 
 [^CGÇÃI]O   >     -O,INHAS        ; "G=f,N=p,GR=dim"  # maroto->marotinhas
 [^ÇG]A      >     -A,INHAS        ; "N=p,GR=dim"  # depressa->depressinhas
@@ -571,12 +572,17 @@ G A         >     -A,UINHAS       ; "N=p,GR=dim"  # carga->carguinhas
 Á           >     -Á,AZINHAS      ; "N=p,GR=dim"  # pá->pazinhas
 Ã           >     -Ã,AZINHAS      ; "N=p,GR=dim"  # mamã->mamazinhas
 
-flag *z:                               #inho
-[^Ã][EO]	>        ZINHO        ; "GR=dim"  # pobre->pobrezinho
-L	>	INHO	; "GR=dim"	# casal->casalinho
+
+flag *z:         ; "CAT=a_nc,N=s"      #inho
+[^Ã][EO]    >        ZINHO        ; "GR=dim"  # pobre->pobrezinho
+L   >   INHO    ; "GR=dim"  # casal->casalinho
+
+[^Ã][EO]    >        ZINHA        ; "G=f,GR=dim"  # pobre->pobrezinho
+L   >   INHA    ; "G=f,GR=dim"  # 
 
 [^Ã][EO]        >        ZINHOS       ; "N=p,GR=dim"  # pobre->pobrezinhos
 L           >        INHOS        ; "N=p,GR=dim"  # casal->casalinhos
+
 
 #---------------------------------------
 # ção
