@@ -112,7 +112,7 @@ abespinhar/#vt/XYPL/
 abeto/#nm/p/
 abetumar/#vt/XYPL/
 abismal/#an/p/
-abismar/#vt/XYPL/
+abismar/#vt/XYPLN/
 abismo/#nm/p/
 abissal/#an/p/
 abissínio/#an/fp/
@@ -144,6 +144,7 @@ abolitivo/#a//
 abominar/#vt/XYPLcDv/
 abonar/#vt/XYPLD/
 abonatório/#a/fp/
+abonecado/#a/pf/
 abono/#nm/p/
 abordagem/#nf/p/
 abordar/#vt/XYPLDv/
@@ -316,13 +317,14 @@ acender/#vt/XYPLMDvR/
 aceno/#nm/p/
 acento/#nm/p/
 acentual/#an//
-acentuar/#vt/XYPLSBc/
+acentuar/#vt/XYPLSBcN/
 acepção/AO90=aceção,#nf/p/
 aceção/PREAO90=acepção,#nf/p/
 acepipe/#nm/p/
 acerbar/#vt/XYPL/
 acerca/#av//
 acercar/#vt/XYPL/
+aceroso/#a/p/
 acerrimamente/#av//
 acérrimo/$acre$#a$GR=sup/fp/
 acertar/#vt/XYPLSB/
@@ -516,6 +518,7 @@ atuar/PREAO90=actuar,#vi/XYcnD/
 açucarar/#vt/XYPL/
 açucareiro/#hm//
 açúcar/#nm/p/
+açucena/#nf/p/
 açudar/#vt/XYPL/
 açude/#nm/p/
 acudir/#vi,I=3/YL/
@@ -550,6 +553,7 @@ adagial/#an//
 adagiário/#nm//
 adagiar/#vi/XYL/
 adágio/#nm/p/
+adamado/#a/pf/
 adamascar/#vt/XYPL/
 adamastor/#nm/p/
 adaptabilidade/#nf/Ip/
@@ -626,8 +630,8 @@ adjuvar/#vt/XYPLn/
 administrar/#vt/XYPLcDn/
 administrativo/#a/pfmt/
 admirabilidade/#nf/p/
-admirar/#vt/XYPLcDB/
-admirativo/#a//
+admirar/#vt/XYPLcDBN/
+admirativo/#a/pf/
 admirável/#hn/pm/
 admissão/#nf/p/
 admissível/#an/pd/
@@ -725,6 +729,7 @@ aerodinâmico/#a/fp/
 aeródromo/#nm/p/
 aeroduto/#nm/p/
 aeroespacial/#an/p/
+aerogerador/#nm/p/
 aerograma/#nm/p/
 aeromodelismo/#nm/p/
 aeromotor/#nm/p/
@@ -786,12 +791,14 @@ aferrar/#vt/XYPL/
 aferroar/#vt/XYPLD/
 aferrolhar/#vt/XYPLS/
 afiadeira/#nf/p/
-afiador/#hm/p/
+afiador/#hm/pf/
 afiambrar/#vt/XYPL/
 afiançar/#vt/XYPLD/
 afiar/#vt/XYPLcD/
+afia-lápis/#nn/
 aficionado/#a/fp/
 afidalgar/#vt/XYPL/
+afifar/#vt/XYPLcD/
 afigurar/#vt/XYPLc/
 afigurativo/#a//
 afilar/#vt/XYPLMD/

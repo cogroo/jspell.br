@@ -395,6 +395,17 @@ M O R F I S M O >       -MORFISMO,MÓRFICA  ; "CAT=adj,G=f,N=s"   # isomórfico
 M O R F I S M O >       -MORFISMO,MÓRFICOS ; "CAT=adj,G=m,N=p"   # isomórfico
 M O R F I S M O >       -MORFISMO,MÓRFICAS ; "CAT=adj,G=f,N=p"   # isomórfico
 
+# íssimo a partir de verbos
+flag *N:         ; "CAT=V"      #issimo
+[IA]R     >   -R,DÍSSIMO  ; "CAT=adj;GR=sup,G=m,N=s" # admirar => admiradíssimo
+[IA]R     >   -R,DÍSSIMA  ; "CAT=adj;GR=sup,G=f,N=s" # admirar => admiradíssima
+[IA]R     >   -R,DÍSSIMAS ; "CAT=adj;GR=sup,G=f,N=p" # admirar => admiradíssimas
+[IA]R     >   -R,DÍSSIMOS ; "CAT=adj;GR=sup,G=m,N=p" # admirar => admiradíssimos
+E R       > -ER,IDÍSSIMO  ; "CAT=adj;GR=sup,G=m,N=s" # encarecer => encarecidíddimo
+E R       > -ER,IDÍSSIMA  ; "CAT=adj;GR=sup,G=f,N=s" # encarecer => encarecidíddima
+E R       > -ER,IDÍSSIMAS ; "CAT=adj;GR=sup,G=f,N=p" # encarecer => encarecidíddimas
+E R       > -ER,IDÍSSIMOS ; "CAT=adj;GR=sup,G=m,N=p" # encarecer => encarecidíddimos
+
 #----------------------------------------
 # íssimo
 flag *s:         ; "CAT=adj,N=s"       #issimo
@@ -1474,59 +1485,6 @@ flag *B:  ; "CAT=v,T=inf"      #adamente
 [IA] R  >  -R,DAMENTE    ; "FSEM=vmente,CAT=adv,SUBCAT=modo"   # acertadamente
 E R     >  -ER,IDAMENTE  ; "FSEM=vmente,CAT=adv,SUBCAT=modo"   # perdidamente
 
-#flag *A:  			# anti
-#flag *B:  ; "CAT=v,T=inf"      #adamente
-#flag *C:  ; "CAT=v,T=inf" 	#cao
-#flag *D:  ; "CAT=v,T=inf"     	#dor
-#flag *E:  			#pre
-#flag *F:  			#ultra
-#flag *G:  ;"CAT=adj"           #ice 
-#flag +H:  ;"CAT=adj,N=s"       #mente
-#flag *I:  			#in
-#flag *J   ;                    #experimental adivinhar ómetros ódromos
-#flag *K:  ; "CAT=v,T=inf"   	# Todos Irregulares (frequente [au]ir)
-#flag +L:  ; "CAT=v"            #-lho             #noispell
-#flag *M:  ; "CAT=v,T=inf"      #mento
-#N
-#flag *O:  			#pos
-#flag +P:  ; "CAT=v"            #-o              #noispell
-#Q
-#flag *R:  			#re
-#flag *S:  			#des
-#flag *T:			# bi-,tricampeão
-#flag *U:  		
-#flag  V:                       # vice
-#flag *X:  ; "CAT=v,T=inf" 	# deve ser posta nos verbos regulares
-#W
-#flag *Y:  ; "CAT=v,T=inf"  	# Deve ser posta nos verbos regulares
-#flag *Z:  ; "CAT=v,T=inf" 	#(p,Pc,I) Irregulares (frequente erir)
-#flag *a:  ; "CAT=a_nc,N=s"     #plurais
-#flag *b:  ; "CAT=a_nc,G=m,N=s" #femininos
-#flag *c:  ; "CAT=v,T=inf"      # çao
-#flag +d:  ; "CAT=adj,N=s"      #idade
-#flag *e:  ; "CAT=a_nc,N=s"     #plurais
-#flag *f:  ; "CAT=a_nc,G=m,N=s" #femininos
-#flag *g:  ; "CAT=a_nc,G=m,N=s" #femininos
-#flag +h:  ; "CAT=a_nc,N=s"     #inho
-#flag *i:  ; "CAT=nc,N=s"   	#ismo
-#flag *j:  ; "CAT=adj"          #izar  ....?
-#flag *k   ; "CAT=a_nc,G=m,N=s" #feminino (sem plural)
-#l
-#flag +m:  ; "CAT=adj,N=s"      #mente
-#flag *n:  ; "CAT=v,T=inf"      #ente
-#flag *o:  ; "CAT=v,T=inf"      # dela
-#flag *p:  ; "CAT=a_nc,N=s"     #plurais
-#flag *q:  ; "CAT=hn"		#ólogo,áfico,etc.
-#flag *r:  ; "CAT=hn"		#ológico,etc.
-#flag *s:  ; "CAT=adj,N=s"      #issimo
-#flag *t:  ; "CAT=nc,N=s"      	#ista
-#flag *u:  ; "PFSEM=u"		#sub
-#flag *v:  ; "CAT=v,T=inf"    	#ável
-#flag *w: ; "CAT=nc"            # oso
-#flag *x:	;		# ex-
-#flag *y:	; "CAT=nc"	# eira
-#flag *z: ;   			#inho
-
 flag *o: ; "CAT=v,T=inf" # dela
 [AI] R > -R,DELA  ; "CAT=nc,G=f,N=s,FSEM=dela"
 [AI] R > -R,DELAS  ; "CAT=nc,G=f,N=p,FSEM=dela"
@@ -1636,3 +1594,59 @@ A R         > -AR,ÓDROMO     ;  "CAT=nc,FSEM=odromo"   #
 A           > -A,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
 O           > -O,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
 E           > -E,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
+
+
+
+
+#flag *A:  			# anti
+#flag *B:  ; "CAT=v,T=inf"      #adamente
+#flag *C:  ; "CAT=v,T=inf" 	#cao
+#flag *D:  ; "CAT=v,T=inf"     	#dor
+#flag *E:  			#pre
+#flag *F:  			#ultra
+#flag *G:  ;"CAT=adj"           #ice 
+#flag +H:  ;"CAT=adj,N=s"       #mente
+#flag *I:  			#in
+#flag *J   ;                    #experimental adivinhar ómetros ódromos
+#flag *K:  ; "CAT=v,T=inf"   	# Todos Irregulares (frequente [au]ir)
+#flag +L:  ; "CAT=v"            #-lho             #noispell
+#flag *M:  ; "CAT=v,T=inf"      #mento
+#flag *N   ; "CAT=v,T=inf"      "issimo a partir de verbos
+#flag *O:  			#pos
+#flag +P:  ; "CAT=v"            #-o              #noispell
+#Q
+#flag *R:  			#re
+#flag *S:  			#des
+#flag *T:			# bi-,tricampeão
+#flag *U:  		
+#flag  V:                       # vice
+#W
+#flag *X:  ; "CAT=v,T=inf" 	# deve ser posta nos verbos regulares
+#flag *Y:  ; "CAT=v,T=inf"  	# Deve ser posta nos verbos regulares
+#flag *Z:  ; "CAT=v,T=inf" 	#(p,Pc,I) Irregulares (frequente erir)
+#flag *a:  ; "CAT=a_nc,N=s"     #plurais
+#flag *b:  ; "CAT=a_nc,G=m,N=s" #femininos
+#flag *c:  ; "CAT=v,T=inf"      # çao
+#flag +d:  ; "CAT=adj,N=s"      #idade
+#flag *e:  ; "CAT=a_nc,N=s"     #plurais
+#flag *f:  ; "CAT=a_nc,G=m,N=s" #femininos
+#flag *g:  ; "CAT=a_nc,G=m,N=s" #femininos
+#flag +h:  ; "CAT=a_nc,N=s"     #inho
+#flag *i:  ; "CAT=nc,N=s"   	#ismo
+#flag *j:  ; "CAT=adj"          #izar  ....?
+#flag *k   ; "CAT=a_nc,G=m,N=s" #feminino (sem plural)
+#l
+#flag +m:  ; "CAT=adj,N=s"      #mente
+#flag *n:  ; "CAT=v,T=inf"      #ente
+#flag *o:  ; "CAT=v,T=inf"      # dela
+#flag *p:  ; "CAT=a_nc,N=s"     #plurais
+#flag *q:  ; "CAT=hn"		#ólogo,áfico,etc.
+#flag *r:  ; "CAT=hn"		#ológico,etc.
+#flag *s:  ; "CAT=adj,N=s"      #issimo
+#flag *t:  ; "CAT=nc,N=s"      	#ista
+#flag *u:  ; "PFSEM=u"		#sub
+#flag *v:  ; "CAT=v,T=inf"    	#ável
+#flag *w: ; "CAT=nc"            # oso
+#flag *x:	;		# ex-
+#flag *y:	; "CAT=nc"	# eira
+#flag *z: ;   			#inho
