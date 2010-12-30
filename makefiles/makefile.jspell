@@ -67,7 +67,7 @@ $(JOUT)-big/port-big.hash: $(JOUT)-big/port-big.dic $(JOUT)-big/port-big.aff
 $(JOUT)-big/port-big.dic: $(PTDIC) $(PTDICEXTRA) \
                           $(JOUT)-big/aux_all_irr.dic $(JOUT)-big/port-big.irr
 	echo '## THIS IS A GENERATED FILE!! DO NOT EDIT!!\n\n' > $(JOUT)-big/port-big.dic
-	cat $(PTDIC) $(JOUT)-big/aux_all_irr.dic | \
+	cat $(PTDIC) $(PTDICEXTRA) $(JOUT)-big/aux_all_irr.dic | \
                  perl -ne 'print unless /(?<!RE|EQ)AO90/' > $(JOUT)-big/port-big.dic
 	rm -f $(JOUT)-big/aux_all_irr.dic
 

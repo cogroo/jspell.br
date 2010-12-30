@@ -406,6 +406,18 @@ E R       > -ER,IDÍSSIMA  ; "CAT=adj;GR=sup,G=f,N=s" # encarecer => encarecidídd
 E R       > -ER,IDÍSSIMAS ; "CAT=adj;GR=sup,G=f,N=p" # encarecer => encarecidíddimas
 E R       > -ER,IDÍSSIMOS ; "CAT=adj;GR=sup,G=m,N=p" # encarecer => encarecidíddimos
 
+
+# inho a partir de verbos
+flag *W:         ; "CAT=V"      #inho
+[IA]R     >   -R,DINHO  ; "CAT=adj;GR=dim,G=m,N=s" # admirar => admiradinho
+[IA]R     >   -R,DINHA  ; "CAT=adj;GR=dim,G=f,N=s" # admirar => 
+[IA]R     >   -R,DINHAS ; "CAT=adj;GR=dim,G=f,N=p" # admirar => 
+[IA]R     >   -R,DINHOS ; "CAT=adj;GR=dim,G=m,N=p" # admirar => 
+E R       > -ER,IDINHO  ; "CAT=adj;GR=dim,G=m,N=s" # encarecer => encarecidinho
+E R       > -ER,IDINHA  ; "CAT=adj;GR=dim,G=f,N=s" # encarecer => 
+E R       > -ER,IDINHAS ; "CAT=adj;GR=dim,G=f,N=p" # encarecer => 
+E R       > -ER,IDINHOS ; "CAT=adj;GR=dim,G=m,N=p" # encarecer => 
+
 #----------------------------------------
 # íssimo
 flag *s:         ; "CAT=adj,N=s"       #issimo
@@ -587,10 +599,9 @@ G A         >     -A,UINHAS       ; "N=p,GR=dim"  # carga->carguinhas
 
 flag *z:         ; "CAT=a_nc,N=s"      #inho
 [^Ã][EO]	>        ZINHO        ; "GR=dim"  # pobre->pobrezinho
-L	>	INHO	; "GR=dim"	# casal->casalinho
-
+L	        >    	INHO	; "GR=dim"	# casal->casalinho
 [^Ã][EO]	>        ZINHA        ; "G=f,GR=dim"  # pobre->pobrezinho
-L	>	INHA	; "G=f,GR=dim"	# 
+L	        >	INHA	; "G=f,GR=dim"	# 
 
 [^Ã][EO]        >        ZINHOS       ; "N=p,GR=dim"  # pobre->pobrezinhos
 L           >        INHOS        ; "N=p,GR=dim"  # casal->casalinhos
@@ -1620,7 +1631,7 @@ E           > -E,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
 #flag *T:			# bi-,tricampeão
 #flag *U:  		
 #flag  V:                       # vice
-#W
+#flag *W:                       # INHO em verbos
 #flag *X:  ; "CAT=v,T=inf" 	# deve ser posta nos verbos regulares
 #flag *Y:  ; "CAT=v,T=inf"  	# Deve ser posta nos verbos regulares
 #flag *Z:  ; "CAT=v,T=inf" 	#(p,Pc,I) Irregulares (frequente erir)

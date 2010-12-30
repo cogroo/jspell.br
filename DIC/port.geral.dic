@@ -810,7 +810,7 @@ afim/#nm/p/
 afinador/#hm//
 afinagem/#nf//
 afinal/#av//
-afinar/#vt/XYPLcMD/
+afinar/#vt/XYPLcMDW/
 afincar/#vt/XYPLMB/
 afinco/#nm/sp/
 afinfar/#vn/XYLDn/
@@ -896,7 +896,7 @@ agaiatar/#vt/XYL/
 agargalado/#a//
 agarotar/#vt/XYL/
 agarra/#a//
-agarrar/#vn/XYPLD/
+agarrar/#vn/XYPLDW/
 agasalhar/#vt/XYPLD/
 agasalho/#nm/p/
 agastar/#vt/XYPLM/
@@ -968,6 +968,7 @@ agredir/#vt,I=3/YPL/
 agregado/#hm//
 agregar/#vt/DXYPLSc/
 agregativo/#a/p/
+agrela/#nf/p/
 agremiação/#nm/p/
 agressão/#nf/p/
 agressivo/#a/fpdm/
@@ -986,6 +987,8 @@ agrimensura/#nf//
 agrisalhar/#vt/XYPL/
 agrografia/#nf//
 agro/#hm//
+agro-alimentar/AO90=agroalimentar,#an/p
+agroalimentar/PREAO90=agro-alimentar,#an/p
 agrologia/#nf/qr/
 agromania/#nf/r/
 agronomia/#nm/pr/
@@ -1002,11 +1005,13 @@ aguaça/#nf//
 aguaceiro/#nm/fp/
 água-chilra/#nf//
 aguada/#nf/p/
+aguadeiro/#hm/p/
 água-de-colónia/#nf/p/
 água-forte/#nf//
 água-furtada/#nf//
 água/#nf/p/
-água-oxigenada/#nf/p/
+água-marinha/#nf//
+água-oxigenada/#nf//
 água-pé/#nf/p/
 aguardar/#vt/XYPLD/
 aguardenteiro/#nm//
@@ -1111,6 +1116,7 @@ alastradeira/#hf//
 alastrar/#vt/XYPLMD/
 alaúde/#nm/p/
 alavanca/#nf/p/
+alavancar/#vt/XYPLcMD/
 albanês/#hm/fp/
 alba/#nf/p/
 albano/#hm//
@@ -1158,6 +1164,7 @@ alçapão/#nm/p/
 alçar/#vt/XYPLMD/
 alcateia/#nf/p/
 alcatifar/#vt/XYPL/
+alcatra/#nf/p/
 alcatrão/#nm/p/
 alcatraz/#nm/p/
 alcatroar/#vt/XYPLM/
@@ -1210,6 +1217,7 @@ aleluia/#nf//
 alemânico/#a//
 alemão/#hm/eb/
 além/#avl//
+além-fronteira/#avl/p/
 além-mar/#nm//
 além-mundo/#nm//
 além/#nm//
@@ -1263,6 +1271,7 @@ alfinetada/#nf/p/
 alfinetar/#vt/XYPL/
 alfineteira/#nf/p/
 alfinete/#nm/p/
+alfobre/#nm/p/
 alforge/#nm/p/
 alforjada/#nf//
 alforjar/#vt/XYPL/
@@ -1286,6 +1295,8 @@ algibeira/#nf/p/
 algo/#av//
 algo/CAT=pind,G=_,N=_//
 algodão/#nm/p/
+algodão-doce/#nm//
+algodoeiro/#nm/pf/
 algoritmia/#nf/p/
 algorítmico/#a/p/
 algoritmo/#nm/p/
@@ -1302,6 +1313,8 @@ alheio/#nm/fp/
 alheira/#nf/p/
 alheiro/#nm//
 alho/#nm/p/
+alho-porro/#nm//
+alhos-porros/$alho-porro$#nm$N=f//
 aliança/#nf/p/
 aliar/#vt/XYPLv/
 aliás/#av//
@@ -1357,6 +1370,7 @@ almiscarar/#nm//
 almiscareiro/#nm/f/
 almíscar/#nm//
 almoçar/#vi/XYL/
+almoçadeira/#hf/p/
 almoço/#nm/p/
 almocrevar/#vt/XYPL/
 almocreve/#nm/p/
@@ -1366,6 +1380,7 @@ almofadar/#vt/XYPL/
 almofadilha/#nf//
 almofariz/#nm/p/
 almôndega/#nf/p/
+almotolia/#nf/p/
 almude/#nm/p/
 alocar/#vt/XYPLc/
 alocução/#nf//
@@ -1377,6 +1392,7 @@ alombar/#vt/XYPL/
 alongar/#vt/XYPLM/
 aloucar/#vi/XYL/
 alourar/#vt/XYPL/
+aloirar/#vt/XYPL/
 alousar/#vt/XYPL/
 alpaca/#nf/p/
 alparca/#nf//
@@ -1399,6 +1415,7 @@ alquimiar/#vi/XYL/
 alquímico/#a//
 alsaciano/#a/fp/
 alta/#nf//
+altaneiro/#am/pf/
 altar-mor/#nm//
 altar/#nm/p/
 alterabilidade/#nf/p/
@@ -1803,6 +1820,7 @@ anciã/#nf/p/
 ancião/#nm/a/
 ancinhar/#vt/XYPL/
 ancinho/#nm/p/
+anchova/#nf/p/
 ancoradoiro/#nm/p/
 ancoradouro/#nm/p/
 ancoragem/#nf//
@@ -1849,7 +1867,7 @@ anedotista/#nn//
 anedotizar/#vt/XYPL/
 anéis/#nm,N=p//
 anelação/#nf//
-anelado/#a/fp/
+anelar/#vn/XYPL/
 anelados/#nm,N=p//
 aneladura/#nf//
 anelídeo/#a/p/
@@ -1954,7 +1972,7 @@ animalista/#hn//
 animalizar/#vt/XYPLc/
 animalogia/#nf//
 animante/#an/p/
-animar/#vt/XYPLcDnvB/
+animar/#vt/XYPLcDnvBN/
 animatógrafo/#nm/p/
 anímico/#a/fp/
 animismo/#nm/p/
@@ -2212,7 +2230,7 @@ antipedagógico/#a//
 antiperiódico/#a//
 antiperistáltico/#a//
 antiplástico/#a//
-antípodas/#nn,N=p//
+antípoda/#nn/p/
 antípodes/#nn//
 antipódico/#a//
 antipoético/#a//
@@ -2439,7 +2457,7 @@ apertadoiro/#nm//
 apertador/#nm/p/
 apertadouro/#nm//
 apertão/#nm/p/
-apertar/#vt/XYPLSMDB/
+apertar/#vt/XYPLSMDBW/
 aperto/#nm/p/
 aperuado/#a//
 apesar/CAT=prep//
@@ -2819,6 +2837,7 @@ argaço/#nm//
 argamassa/#nf//
 argamassar/#vt/XYPLD/
 argelino/#hm/fp/
+argênteo/#am/fp/
 argentífero/#a//
 argentino/#hm/fp/
 argila/#nf/p/
@@ -2974,6 +2993,7 @@ arrasto/#nm//
 arreador/#nm//
 arrearia/#nf/p/
 arrear/#vt/ZYPLcMD/
+arreata/#nf/p/
 arrebanhadura/#nf//
 arrebanhar/#vt/XYPLD/
 arrebanho/#nm//
@@ -3125,7 +3145,7 @@ arrumaços/#nm,N=p//
 arrumadeira/#hf//
 arrumadela/#nf/p/
 arrumador/#hm//
-arrumar/#vt/XYPLScD/
+arrumar/#vt/XYPLScDW/
 arrumo/#nm//
 arsenal/#nm/p/
 arsénico/#nm//
@@ -3227,6 +3247,7 @@ asnático/#a/fp/
 asnear/#vi/ZYL/
 asneirada/#nf//
 asneira/#nf/p/
+asneirar/#vt/XYPLcMD/
 asneirão/#nm//
 asneirento/#a//
 asneirola/#nf//
@@ -3548,7 +3569,7 @@ atiçar/#vt/XYPLcMD/
 atiçoar/#vt/XYPL/
 atigrado/#a//
 atijolar/#vt/XYPL/
-atilhos/#nm//
+atilho/#nm/p/
 atinar/#vn/XYPL/
 atinente/#an/p/
 atingir/#vt/XYPLvM/
@@ -3765,6 +3786,12 @@ autêntico/#a/pf/
 autentificar/#vt/XYPL/
 autismo/#nm/p/
 autista/#hm2/p/
+auto-ajuda/AO90=autoajuda,#nf/
+autoajuda/PREAO90=auto-ajuda,#nf//
+auto-aprendizagem/AO90=autoaprendizagem,#nf/
+autoaprendizagem/PREAO90=auto-aprendizagem,#nf//
+auto-avaliar/AO90=autoavaliar,#vt/
+autoavaliar/PREAO90=auto-avaliar,#vt//
 auto-avaliação/AO90=autoavaliação,#nf/p/
 autoavaliação/PREAO90=auto-avaliação,#nf/p/
 autobiografia/#nf/pq/
@@ -3780,6 +3807,9 @@ autocolante/#hm2/p/
 autocombustão/#nf//
 autocondução/#nf/p/
 autoconfiança/#nf//
+autocontrolo/#nm/p/
+autocorrecção/#nf/p/
+autocorrectivo/#am/p/
 autoconsciência/#nf/p/
 autocontrole/#nm//
 autocópia/#nf//
@@ -3815,6 +3845,7 @@ autoestrada/PREAO90=auto-estrada,#nf/p/
 autoestrada/#nf/p/
 autofecundação/#nf//
 autofotografia/#nf//
+autoformação/#nf/p/
 autogamia/#nf//
 autógamo/#a//
 autogéneo/#a//
@@ -3874,6 +3905,8 @@ auto-sugestão/AO90=autossugestão,#nf//
 autossugestão/PREAO90=auto-sugestão,#nf//
 auto-sugestionar/AO90=autossugestionar,#v/XYL/
 autossugestionar/PREAO90=auto-sugestionar,#v/XYL/
+auto-tanque/AO90=autotanque,#nm/p/
+autotanque/PREAO90=auto-tanque,#nm/p/
 autotrófico/#a//
 autoviação/#nf//
 autuar/#vt/XYPLc/
@@ -3907,7 +3940,7 @@ avaro/#hm/fp/
 avassalador/#hm//
 avassalante/#an/p/
 avassalar/#vt/XYPLDn/
-ave/#hf/pt/
+ave/#hf/ptz/
 aveia/#nf//
 aveirense/#hn/p/
 avelanado/#a//
@@ -4043,10 +4076,18 @@ azotoso/#nm//
 azuláceo/#a//
 azular/#vt/XYPLMD/
 azul-de-metileno/#nm//
+azul-celeste/#am//
+azuis-celestes/$azul-celeste$#hm$N=p/
+azul-claro/#hm//
+azuis-claros/$azul-claro$#hm$N=p/
+azul-escuro/#hm//
+azuis-escuros/$azul-escuro$#hm$N=p/
+azul-marinho/#hm//
+azuis-marinhos/$azul-marinhos$#hm$N=p/
 azulejador/#hm//
 azulejar/#vt/XYPLD/
 azulejo/#nm/p/
-azul/#hm2/p/
+azul/#hm2/pz/
 babado/#hm/pfh/
 babadouro/#nm//
 babadura/#nf//
