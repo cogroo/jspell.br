@@ -74,10 +74,12 @@ pixeis/$pixel$#nm$N=p//
 Postscript/CAT=np//
 Prolog/CAT=np//
 plotter/CAT=nc,G=f,N=s/a/
+roteamento/#nm,FSEM=mento/p/
+roteador/#nm/p/
 RAM/#tsf//
 ROM/#tsf//
 scanner/CAT=nc,G=m,N=s/a/
-sequenciamento/#nm/p/
+sequenciamento/#nm,FSEM=mento/p/
 SGML/#tsm//
 shell/#nf,ORIG=ing//
 site/#nm,PT=sítio,ORIG=ing/p/
