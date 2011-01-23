@@ -69,22 +69,23 @@ sub feed_for {
     my $feed = XML::Atom::Feed->new;
     $feed->title("Dicionários Natura - $tipo");
     $feed->id("$tipo-$time");
-    for my $file (sort @files) {
+    for my $file (reverse sort @files) {
         my $entry = XML::Atom::Entry->new;
         my $entry_time = $file;
-        $entry_time =~ s/\S//g;
+        $entry_time =~ s/\D//g;
         $entry_time = localtime($entry_time);
         $entry->title("Actualizações: $entry_time");
         $entry->id($file);
-        $entry->content(url_html() . slurp($file, binmode => ':utf8'));
+        my $string = "" . urlhtml() . slurp($file, binmode => ':utf8');
+        $entry->content( $string );
         $feed->add_entry($entry);
     }
-    open FEED, ">:utf8", "feed-$tipo.xml" or die;
+    open FEED, ">", "feed-$tipo.xml" or die;
     print FEED $feed->as_xml;
     close FEED;
 }
 
-sub url_html {
+sub urlhtml {
     return <<EOH;
 <p>Download a partir de: <a href="http://natura.di.uminho.pt/download/sources/Dictionaries/">http://natura.di.uminho.pt/download/sources/Dictionaries/</a>.</p>
 EOH
@@ -105,5 +106,5 @@ sub diff_to_html {
             ();
         }
     } split /\n/ => $diff;
-    return join "<br/>" => @diff;
+    return join "<br/>\n" => @diff;
 }
