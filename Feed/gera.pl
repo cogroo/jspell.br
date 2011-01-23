@@ -9,6 +9,7 @@ use LWP::Simple;
 use File::Copy;
 use strict;
 use warnings;
+use utf8;
 
 our $date = scalar(localtime);
 our $dicbase = 'http://natura.di.uminho.pt/download/sources/Dictionaries';
@@ -70,7 +71,8 @@ sub feed_for {
     $feed->id("$tipo-$time");
     for my $file (sort @files) {
         my $entry = XML::Atom::Entry->new;
-        my $entry_time = ($file =~ /(\d+)/);
+        my $entry_time = $file;
+        $entry_time =~ s/\S//g;
         $entry_time = localtime($entry_time);
         $entry->title("Actualizações: $entry_time");
         $entry->id($file);
