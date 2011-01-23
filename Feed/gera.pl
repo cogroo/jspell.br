@@ -76,7 +76,7 @@ sub feed_for {
         $entry_time = localtime($entry_time);
         $entry->title("Actualizações: $entry_time");
         $entry->id($file);
-        my $string = "" . urlhtml() . slurp($file, binmode => ':utf8');
+        my $string = "<div>" . urlhtml() . slurp($file, binmode => ':utf8') . "</div>";
         $entry->content( $string );
         $feed->add_entry($entry);
     }
