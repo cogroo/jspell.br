@@ -64,7 +64,7 @@ sub feed_for {
 
     # 8. Gerar feed
     _DEBUG_ "Generating feed";
-    open FEED, ">:utf8", "feed-$tipo.xml" or die;
+    open FEED, ">", "feed-$tipo.xml" or die;
     select FEED;
     print qq{<?xml version="1.0" encoding="UTF-8"?>\n};
     print qq{<feed xmlns="http://www.w3.org/2005/Atom">\n};
