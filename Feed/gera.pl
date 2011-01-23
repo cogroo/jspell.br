@@ -1,8 +1,6 @@
 #!/usr/bin/perl
 
 use File::Slurp 'slurp';
-use XML::Atom::Feed;
-use XML::Atom::Entry;
 use Text::Diff;
 use IO::Uncompress::Gunzip 'gunzip';
 use LWP::Simple;
@@ -66,22 +64,27 @@ sub feed_for {
 
     # 8. Gerar feed
     _DEBUG_ "Generating feed";
-    my $feed = XML::Atom::Feed->new;
-    $feed->title("Dicionários Natura - $tipo");
-    $feed->id("$tipo-$time");
+    open FEED, ">:utf8", "feed-$tipo.xml" or die;
+    select FEED;
+    print qq{<?xml version="1.0" encoding="UTF-8"?>\n};
+    print qq{<feed xmlns="http://www.w3.org/2005/Atom">\n};
+    print qq{<title>Dicionários Natura - $tipo</title>\n};
+    print qq{<id>$tipo-$time</id>\n};
+
     for my $file (reverse sort @files) {
-        my $entry = XML::Atom::Entry->new;
+        print qq{<entry>\n};
         my $entry_time = $file;
         $entry_time =~ s/\D//g;
         $entry_time = localtime($entry_time);
-        $entry->title("Actualizações: $entry_time");
-        $entry->id($file);
+        print qq{<title>Actualizações: $entry_time</title>\n};
+        print qq{<id>$file</id>\n};
+        print qq{<summary type="html"><![CDATA[};
         my $string = "<div>" . urlhtml() . slurp($file, binmode => ':utf8') . "</div>";
-        $entry->content( $string );
-        $feed->add_entry($entry);
+        print $string;
+        print qq{]]></summary>\n};
+        print qq{</entry>\n};
     }
-    open FEED, ">", "feed-$tipo.xml" or die;
-    print FEED $feed->as_xml;
+    print qq{</feed>\n};
     close FEED;
 }
 
