@@ -41,3 +41,9 @@ realclean :: clean
 test:
 	perl -MTest::Harness -e 'runtests(<t/*.t>);'
 
+feeds:
+	perl Feed/gera.pl
+	rsync -aASPvz feed-ao.xml $(NATURA):$(NATURA_WWW)/feed-ao.xml
+	rsync -aASPvz feed-preao.xml $(NATURA):$(NATURA_WWW)/feed-preao.xml
+	rsync -aASPvz feed-ao.xml $(NATURA):$(NATURA_WWW)/atom.xml
+

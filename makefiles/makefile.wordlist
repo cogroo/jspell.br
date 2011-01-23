@@ -7,7 +7,7 @@ DIRS += $(WLDIR)
 
 wordlist-all: wordlist
 
-publish :: wlgzs
+publish :: feeds wlgzs
 	@ echo "Publishing WORDLISTS"
 	rsync -aASPvz $(OUT)/wordlist-ao-$(DATE).txt.gz \
                       $(OUT)/wordlist-preao-$(DATE).txt.gz \

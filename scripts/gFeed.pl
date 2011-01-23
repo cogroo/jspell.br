@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
 #Rui Vilela 2007
 #Gera um feed para o lançamento de novas versões do dicionário
