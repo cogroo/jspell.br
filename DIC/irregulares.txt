@@ -659,7 +659,7 @@ vermos   1p ip
 verdes   2p ip
 verem    3p ip
 
-#v comerciar, negociar, licenciar
+#v comerciar, negociar/R, licenciar
 cio      1s p
 ceio     1s p
 cias     2s p
