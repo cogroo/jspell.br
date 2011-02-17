@@ -11,6 +11,7 @@
 #tfp/CAT=np,SEM=ter,G=f,N=p
 #tn/CAT=np,SEM=ter,G=n,N=s
 #tr/CAT=np,SEM=rio
+#te/CAT=np,SEM=marca //// de empresa
 #tm/CAT=np,SEM=mar
 #tp/CAT=np,SEM=country,G=m,N=s
 #tpf/CAT=np,SEM=country,G=f,N=s
@@ -2690,6 +2691,7 @@ Vladivostok/#tc/
 Volga/#la,#tr/
 Voltaire/#np1/
 Volta/#tr/
+Volvo/#te/
 Von/#np1/
 Vorarlberg/#t/
 Vouga/#la,#tr/

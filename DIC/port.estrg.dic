@@ -35,6 +35,7 @@ karaté/#nm,PT=caraté,ORIG=jap//
 kart/#nm,ORIG=ing,PT=carte//
 ketchup/#nm,ORIG=ing//
 kit/#nm,ORIG=ing/p/
+kitsch/#a,ORIG=ale//
 kiwi/#nm,PT=quivi,ORIG=ing/p/
 laser/#nm,ORIG=ing//
 lasers/$laser$CAT=nm,N=p,G=m,ORIG=ing//
@@ -51,9 +52,11 @@ posters/$poster$,#nm,PT=póster,ORIG=ing$N=p//
 posteriori/#av,ORIG=lat//
 práxis/#nfp,ORIG=gre//
 priori/#av,ORIG=lat//
+punk/#a,ORIG=ing/p/
 puzzle/#nm,ORIG=ing/p/
 leasing/#nm,ORIG=ing/p/
 rap/#nm,ORIG=ing//
+reggae/#nm,ORIG=ing//
 réveillon/#nm,ORIG=fra//
 rock/#nm,ORIG=ing//
 shiatsu/#nm,ORIG=jap//

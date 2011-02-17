@@ -563,14 +563,17 @@ G A         >     -A,UINHA        ; "G=F,GR=dim"  # carga->carguinha
 Á           >     -Á,AZINHA       ; "G=F,GR=dim"  # pá->pazinha
 Ã           >     -Ã,AZINHA       ; "G=F,GR=dim"  # mamã->mamazinha
 Ã E         >        ZINHA        ; "G=f,GR=dim"  # maroto->marotinha
+[^Ã] E      >     -E,INHA         ; "G=f,GR=dim"  # carne->carninha
 
 [^CGÇÃI]O   >     -O,INHAS        ; "G=f,N=p,GR=dim"  # maroto->marotinhas
-[^ÇG]A      >     -A,INHAS        ; "N=p,GR=dim"  # depressa->depressinhas
-C A         >    -CA,QUINHAS      ; "GR=dim"      # vaca->vaquinhas
-Ç A         >    -ÇA,CINHAS       ; "N=p,GR=dim"  # cabeça->cabecinhas
-G A         >     -A,UINHAS       ; "N=p,GR=dim"  # carga->carguinhas
-Á           >     -Á,AZINHAS      ; "N=p,GR=dim"  # pá->pazinhas
-Ã           >     -Ã,AZINHAS      ; "N=p,GR=dim"  # mamã->mamazinhas
+[^ÇG]A      >     -A,INHAS        ; "G=f,N=p,GR=dim"  # depressa->depressinhas
+C A         >    -CA,QUINHAS      ; "G=f,N=p,GR=dim"      # vaca->vaquinhas
+Ç A         >    -ÇA,CINHAS       ; "G=f,N=p,GR=dim"  # cabeça->cabecinhas
+G A         >     -A,UINHAS       ; "G=f,N=p,GR=dim"  # carga->carguinhas
+Á           >     -Á,AZINHAS      ; "G=f,N=p,GR=dim"  # pá->pazinhas
+Ã           >     -Ã,AZINHAS      ; "G=f,N=p,GR=dim"  # mamã->mamazinhas
+[^Ã] E      >     -E,INHAS        ; "G=f,N=p,GR=dim"  # carne->carninha
+
 
 
 flag *z:         ; "CAT=a_nc,N=s"      #inho
@@ -1634,3 +1637,11 @@ A R         > -AR,ÓDROMO     ;  "CAT=nc,FSEM=odromo"   #
 A           > -A,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
 O           > -O,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
 E           > -E,ÓDROMO      ;  "CAT=nc,FSEM=odromo"   #
+
+[^Ã] E      > -E,ITA         ;  "CAT=nc,G=f,GR=dimito"
+[^Ã] A      > -A,ITA         ;  "CAT=nc,G=f,GR=dimito"
+Ã O         >  ZITA          ;  "CAT=nc,G=f,GR=dimito"
+Ã E         >  ZITA          ;  "CAT=nc,G=f,GR=dimito"
+[^Ã] E      > -E,ITO         ;  "CAT=nc,GR=dimito"
+[^Ã] O      > -O,ITO         ;  "CAT=nc,GR=dimito"
+Ã O         >  ZITO          ;  "CAT=nc,GR=dimito"

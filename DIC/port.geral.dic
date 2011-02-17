@@ -3925,7 +3925,8 @@ avalista/#nn//
 avalizador/#nm//
 avalizar/#vt/XYPLD/
 aval/#nm/te/
-avançada/#nf//
+avançada/#nf/p/
+avançado/#nm/p/
 avançar/#vn/XYPLMD/
 avanço/#nm/p/
 avantajar/#vn/XYPL/
@@ -6502,12 +6503,12 @@ caracol/#nm/p/
 caracteres/$carácter$#nm,EQAO90=carateres$N=p//
 carateres/$carater$#nm,PREAO90=caracteres$N=p//
 caracterial/#an//
-característica/#nf,EQAO90=caraterística//
-caraterística/#nf,PREAO90=característica//
+característica/#nf,EQAO90=caraterística/p/
+caraterística/#nf,PREAO90=característica/p/
 característico/#a,EQAO90=caraterístico/pfH/
 caraterístico/#a,PREAO90=característico/pfH/
 caracterização/EQAO90=caraterização,#nf//
-caraterização/PREAO90=caracterização,#nf//
+caraterização/PREAO90=caracterização,#nf/p/
 caracterizante/EQAO90=caraterizante,#an/p/
 caraterizante/PREAO90=caracterizante,#an/p/
 caracterizar/EQAO90=caraterizar,#vt/XYPLcDnS/
@@ -7998,8 +7999,8 @@ climatizar/#vt/XYPLc/
 climatologia/#nf/qrt/
 clímax/#nm//
 clinicamente/$clínico$#a$#avm//
-clínica/#nf//
-clínico/#a/fp/
+clínica/#nf/p/
+clínico/#hm/fp/
 clique/#nm/p/
 clisterizar/#vn/XYPLc/
 clister/#nm//
@@ -11903,6 +11904,7 @@ diapasão/#nm//
 diapositivo/#nm/p/
 diária/#nf//
 diário/#a/pfH/
+diário/#nm/p/
 diarreia/#nf/p/
 diarreico/#a/fp/
 diáspora/#nm/
@@ -20626,7 +20628,7 @@ ladeirento/#a//
 ladeiro/#hm/f/
 lado/#nm/p/
 ladra/#hf//
-ladrão/#a/fp/
+ladrão/#hm/fp/
 ladrar/#vi/XYLD/
 ladrilhador/#hm//
 ladrilhar/#vt/XYPLD/
@@ -23828,7 +23830,7 @@ nariz/#nm/p/
 narração/#nf//
 narrador/#hm//
 narrar/#vt/XYPLcDv/
-narrativa/#nf//
+narrativa/#nf/p/
 narrativo/#a/fp/
 nasal/#an/pd/
 nasalar/#vt/XYPLc/
@@ -24214,7 +24216,7 @@ nominalismo/#nm/p/
 nominalista/#hn/p/
 nominativo/#hm/fp/
 nonagenário/#hm//
-nonagésimo/#o//
+nonagésimo/#o/f/
 nona/#nf//
 nó/#nm/p/
 nono/#o/f/
@@ -24514,7 +24516,7 @@ octano/#nm/f/
 octante/#nm/p/
 octeto/#nm/p/
 octogenário/#hm//
-octogésimo/#o//
+octogésimo/#o/f/
 octogonal/#an/p/
 octógono/#hm//
 octostilo/#a//
@@ -25863,7 +25865,7 @@ pecado/#nm/p/
 pecadoraço/#nm//
 pecador/#hm/pf/
 pecaminoso/#a/mfp/
-peça/#nf//
+peça/#nf/p/
 pecante/#hn/p/
 pecar/#vi/XYLDnv/
 pecha/#nf//
@@ -26830,6 +26832,7 @@ plebiscito/#nm/p/
 plêiade/#nf/p/
 pleito/#nm/p/
 plenário/#a/fp/
+plenário/#nm/p/
 plenidão/#nf//
 plenipotenciário/#hm/p/
 plenitude/#nf//
@@ -28404,6 +28407,7 @@ quartil/#a/p/
 quartilho/#nm/p/
 quarto-de-final/#nm//
 quarto-de-hora/#nm//
+quarto/#nm/p/
 quarto/#o/pfh/
 quartos-de-final/$quarto-de-final$#nm$N=p//
 quartzito/#nm/p/
@@ -29958,7 +29962,7 @@ residente/#hm2/p/
 residir/#vi/XYL/
 residual/#an/p/
 residuário/#a//
-resíduo/#a/p/
+resíduo/#nm/p/
 resignante/#hn/p/
 resignar/#vt/XYPLcnvB/
 resignatário/#hm/p/
@@ -30218,6 +30222,8 @@ retrospecção/AO90=retrospeção,#nf//
 retrospeção/PREAO90=retrospecção,#nf//
 retrospectividade/AO90=retrospetividade,#nf/p/
 retrospetividade/PREAO90=retrospectividade,#nf/p/
+retrospectiva/AO90=retrospetiva,#nf/p/
+retrospetiva/PREAO90=retrospectiva,#nf/p/
 retrospectivo/AO90=retrospetivo,#a/fdm/
 retrospetivo/PREAO90=retrospectivo,#a/fdm/
 retroversão/#nf//
@@ -31216,6 +31222,7 @@ segundanista/#nn/p/
 segundar/#vt/XYPL/
 segundo/CAT=prep//
 segundo/#o/fp/
+segundo/#nm/f/
 segundo-sargento/#nm//
 segundo-tenente/#nm//
 segurado/#nm/p/
@@ -31542,7 +31549,7 @@ ser/#vi,I=3/PLn/
 servil/#an/i/
 servilismo/#nm/p/
 servilizar/#vt/XYPL/
-sérvio/#a/fp/
+sérvio/#hm/fp/
 servir/#vn,I=3/YPLDv/
 servocomando/#nm//
 servo-croata/#nm//
