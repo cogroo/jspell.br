@@ -2,7 +2,8 @@
 
 use File::Slurp 'slurp';
 use Text::Diff;
-use IO::Uncompress::Gunzip 'gunzip';
+use IO::Uncompress::UnXz 'unxz';
+
 use LWP::Simple;
 use File::Copy;
 use strict;
@@ -15,6 +16,7 @@ sub _DEBUG_ { print STDERR "[$date] ", @_, "\n" }
 
 feed_for('ao');
 feed_for('preao');
+feed_for('big');
 
 sub feed_for {
     my $tipo = shift;
@@ -23,9 +25,9 @@ sub feed_for {
 
     # 1. Fetch current wordlist
     _DEBUG_ "Fetching old wordlist";
-    getstore "$dicbase/wordlists/LATEST/wordlist-$tipo-latest.txt.gz" => "old.gz";
-    gunzip "old.gz" => "old.txt";
-    unlink "old.gz";
+    getstore "$dicbase/wordlists/LATEST/wordlist-$tipo-latest.txt.xz" => "old.xz";
+    unxz "old.xz" => "old.txt";
+    unlink "old.xz";
 
     # 2. Fetch new wordlist
     _DEBUG_ "Copying current wordlist";
@@ -51,9 +53,9 @@ sub feed_for {
 
     # 6. Remove if we have too many files there
     _DEBUG_ "Cleaning up";
-    my @files = <Feed/$tipo-*.html>;
+    my @files = sort <Feed/$tipo-*.html>;
     while (@files > 6) {
-        my ($file_to_delete) = sort @files;
+        my $file_to_delete = shift @files;
         unlink $file_to_delete;
         `svn rm $file_to_delete`;
     }

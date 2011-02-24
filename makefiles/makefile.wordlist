@@ -9,21 +9,25 @@ wordlist-all: wordlist
 
 publish :: feeds wlgzs
 	@ echo "Publishing WORDLISTS"
-	rsync -aASPvz $(OUT)/wordlist-ao-$(DATE).txt.gz \
-                      $(OUT)/wordlist-preao-$(DATE).txt.gz \
+	rsync -aASPvz $(OUT)/wordlist-ao-$(DATE).txt.xz \
+                      $(OUT)/wordlist-preao-$(DATE).txt.xz \
+                      $(OUT)/wordlist-big-$(DATE).txt.xz \
                $(NATURA):$(NATURA_WWW)/wordlists/
-	rsync -aASPvz $(OUT)/wordlist-ao-$(DATE).txt.gz \
-               $(NATURA):$(NATURA_WWW)/wordlists/LATEST/wordlist-ao-latest.txt.gz
-	rsync -aASPvz $(OUT)/wordlist-preao-$(DATE).txt.gz \
-               $(NATURA):$(NATURA_WWW)/wordlists/LATEST/wordlist-preao-latest.txt.gz
+	rsync -aASPvz $(OUT)/wordlist-ao-$(DATE).txt.xz \
+               $(NATURA):$(NATURA_WWW)/wordlists/LATEST/wordlist-ao-latest.txt.xz
+	rsync -aASPvz $(OUT)/wordlist-big-$(DATE).txt.xz \
+               $(NATURA):$(NATURA_WWW)/wordlists/LATEST/wordlist-big-latest.txt.xz
+	rsync -aASPvz $(OUT)/wordlist-preao-$(DATE).txt.xz \
+               $(NATURA):$(NATURA_WWW)/wordlists/LATEST/wordlist-preao-latest.txt.xz
 
-wlgzs: $(WLDIR)/wl-ao.txt $(WLDIR)/wl-preao.txt
-	gzip -c $(WLDIR)/wl-ao.txt > $(OUT)/wordlist-ao-$(DATE).txt.gz
-	gzip -c $(WLDIR)/wl-preao.txt > $(OUT)/wordlist-preao-$(DATE).txt.gz
+wlgzs: $(WLDIR)/wl-ao.txt $(WLDIR)/wl-preao.txt $(WLDIR)/wl-big.txt
+	xz -c $(WLDIR)/wl-ao.txt > $(OUT)/wordlist-ao-$(DATE).txt.xz
+	xz -c $(WLDIR)/wl-preao.txt > $(OUT)/wordlist-preao-$(DATE).txt.xz
+	xz -c $(WLDIR)/wl-big.txt > $(OUT)/wordlist-big-$(DATE).txt.xz
 
 
 .PHONY: wordlist wordlist-ao wordlist-preao # wordlist-mix
-wordlist: wordlist-ao wordlist-preao # wordlist-mix
+wordlist: wordlist-ao wordlist-preao wordlist-big # wordlist-mix
 
 
 # wordlist-mix: $(WLDIR)/wl-mix.txt
@@ -36,6 +40,10 @@ wordlist-ao: $(WLDIR)/wl-ao.txt
 $(WLDIR)/wl-ao.txt: $(DIRS) $(JOUT)-ao/port.dic $(JOUT)-ao/port.hash
 	TOOLS/gerarWordList.pl $(JOUT)-ao/port.dic $(JOUT)-ao/port.hash > $(WLDIR)/wl-ao.txt
 
+$(WLDIR)/wl-big.txt: $(DIRS) $(JOUT)-big/port-big.dic $(JOUT)-big/port-big.hash
+	TOOLS/gerarWordList.pl $(JOUT)-big/port-big.dic $(JOUT)-big/port-big.hash > $(WLDIR)/wl-big.txt
+
+wordlist-big: $(WLDIR)/wl-big.txt
 
 wordlist-preao: $(WLDIR)/wl-preao.txt
 
@@ -49,3 +57,4 @@ realclean ::
 	@ echo "Cleaning wordlists"
 	rm -fr $(WLDIR)
 	rm -fr $(OUT)/wordlist-*gz
+	rm -fr $(OUT)/wordlist-*xz
