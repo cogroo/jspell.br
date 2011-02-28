@@ -4,6 +4,11 @@ DIRS+=$(JOUT)-ao $(JOUT)-preao $(JOUT)-big # --  $(JOUT)-mix
 
 jspell-all: jspell jspell-ao-tgz jspell-preao-tgz jspell-big-tgz # jspell-mix-tgz
 
+jspell-install: jspell
+	cd $(JOUT)-ao;    sudo jspell-installdic .
+	cd $(JOUT)-preao; sudo jspell-installdic .
+	cd $(JOUT)-big;   sudo jspell-installdic .
+
 .PHONY: jspell
 jspell: $(DIRS)  jspell-ao jspell-preao jspell-big # jspell-mix
 

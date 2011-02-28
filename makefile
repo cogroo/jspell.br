@@ -16,8 +16,9 @@ all:
 	@ echo " aspell6        - Build aspell v0.60 folders only"
 	@ echo " wordlist       - Build wordlist folders only"
 	@ echo
-	@ echo " chuveiro         -- build all available dictionaries"
-	@ echo " chuveiro-install -- online publish at natura"
+	@ echo " jspell-install - installs the 3 PT jspell dicts"
+	@ echo
+	@ echo " publish        - online publish at natura"
 	@ echo
 
 dicts: jspell wordlist ispell hunspell aspell5 aspell6
