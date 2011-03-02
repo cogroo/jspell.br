@@ -77,8 +77,8 @@ $(JOUT)-big/port-big.dic: $(PTDIC) $(PTDICEXTRA) \
 	rm -f $(JOUT)-big/aux_all_irr.dic
 
 
-$(JOUT)-big/port-big.aff: $(DIRS) DIC/port.aff
-	cp DIC/port.aff $(JOUT)-big/port-big.aff
+$(JOUT)-big/port-big.aff: $(DIRS) DIC/port-cpp.aff
+	perl -pe 's/#AO90=//; s/#PREAO90=.*//' DIC/port-cpp.aff > $(JOUT)-big/port-big.aff
 
 $(JOUT)-big/port-big.irr: $(JOUT)-big/aux_all_irr.dic
 	./$(IRR2PERL) $(JOUT)-big/aux_all_irr.dic > $(JOUT)-big/port-big.irr
@@ -125,8 +125,8 @@ $(JOUT)-preao/aux_all_irr.dic: $(DIRS) \
 $(JOUT)-preao/aux_verb.dic: $(PTDIC) 
 	egrep -h 'CAT=v|\#v' $(PTDIC) > $(JOUT)-preao/aux_verb.dic
 
-$(JOUT)-preao/port-preao.aff: $(DIRS) DIC/port-preao.aff
-	cp DIC/port-preao.aff $(JOUT)-preao/port-preao.aff
+$(JOUT)-preao/port-preao.aff: $(DIRS) DIC/port-cpp.aff
+	perl -pe 's/#AO90=.*//; s/#PREAO90=//' DIC/port-cpp.aff > $(JOUT)-preao/port-preao.aff
 
 $(JOUT)-preao/port-preao.yaml: DIC/port.yaml
 	TOOLS/mkYaml preao DIC/port.yaml > $(JOUT)-preao/port-preao.yaml
@@ -161,8 +161,8 @@ $(JOUT)-ao/aux_all_irr.dic: $(DIRS) DIC/irregulares-preao.txt $(JOUT)-ao/aux_ver
 $(JOUT)-ao/aux_verb.dic: $(PTDIC)
 	egrep -h 'CAT=v|\#v' $(PTDIC) > $(JOUT)-ao/aux_verb.dic
 
-$(JOUT)-ao/port.aff: $(DIRS) DIC/port.aff
-	cp DIC/port.aff $(JOUT)-ao/port.aff
+$(JOUT)-ao/port.aff: $(DIRS) DIC/port-cpp.aff
+	perl -pe 's/#AO90=//; s/#PREAO90=.*//' DIC/port-cpp.aff > $(JOUT)-ao/port.aff
 
 $(JOUT)-ao/port.yaml: DIC/port.yaml
 	cp DIC/port.yaml $(JOUT)-ao/port.yaml
