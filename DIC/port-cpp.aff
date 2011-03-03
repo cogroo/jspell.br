@@ -125,7 +125,6 @@ wordchars        [v-z]        [V-Z]
 prefixes
 
 flag *A:                   # anti
-flag *A:                   # anti
 [^HIRS]	>	ANTI       ; "PFSEM=anti"	# antivenenoso
 #AO90=R       >       ANTIR      ; "PFSEM=anti"       # antirracismo
 #AO90=S       >       ANTIS      ; "PFSEM=anti"       # antissemita
