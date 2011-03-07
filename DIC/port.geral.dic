@@ -17825,6 +17825,7 @@ hebreu/#nm/p/
 hectare/#nm/p/
 hectograma/#nm/p/
 hectolitro/#nm/p/
+hectométrico/#am/p/
 hectómetro/#nm/p/
 hediondo/#a/fp/
 hedónico/#a//
@@ -17890,6 +17891,7 @@ heráldico/#a/fp/
 herança/#nf/p/
 hera/#nf/p/
 herbáceo/#a/f/
+herbário/#nm/p/
 herbanário/#nm//
 herbicida/#nm/p/
 herbívoro/#hm/p/
@@ -17978,6 +17980,7 @@ hidrólise/#nf//
 hidrologia/#nf/pqr/
 hidroplano/#nm//
 hidrostática/#nf//
+hidrosfera/#nf//
 hidróxido/#nm/p/
 hiena/#nf/p/
 hierarquia/#nf/pr/
@@ -18325,6 +18328,7 @@ idóneo/#a/fp/
 idoso/#a/fp/
 iemenita/#a/p/
 iene/#nm/p/
+iglu/#nm/p/
 ígnea/#a/p/
 ignição/#nf//
 ignóbil/#an//
@@ -19373,6 +19377,8 @@ infantil/#an/pid/
 infantilidade/#nf/p/
 infantilismo/#nm/p/
 infantilizar/#vt/XYPL/
+infantojuvenil/PREAO90=infanto-juvenil,#an/p/
+infanto-juvenil/AO90=infantojuvenil,#an/p/
 infatigabilidade/#nf/p/
 infatigável/#an/dm/
 infecção/AO90=infeção,#nf/p/
@@ -19382,6 +19388,9 @@ infecionar/PREAO90=infeccionar,#vt/XYPLR/
 infeccioso/EQAO90=infecioso,#a/fp/
 infecioso/PREAO90=infeccioso,#a/fp/
 infectante/AO90=infetante,#an/p/
+infectocontagioso/EQAO90=infetocontagioso,PREAO90=infecto-contagioso,#am/pf
+infetocontagioso/EQAO90=infectocontagioso,PREAO90=infecto-contagioso,#am/pf
+infecto-contagioso/AO90=infectocontagioso,#am/pf
 infetante/PREAO90=infectante,#an/p/
 infectar/AO90=infetar,#vt/XYPLn/
 infetar/PREAO90=infectar,#vt/XYPLn/
@@ -19861,12 +19870,14 @@ interceptor/AO90=intercetor,#nm/p/
 intercetor/PREAO90=interceptor,#nm/p/
 intercessão/#nf//
 intercessor/#hm/p/
+intercidades/#an//
 interclavicular/#an//
 intercomunicação/#nf//
 intercomunicador/#nm/p/
 interconexão/#nf/p/
 intercontinental/#an/p/
 intercósmico/#a//
+intercultural/#an/p/
 interdepartamental/#a/p/
 interdependência/#nf/p/
 interdependente/#an//
@@ -19877,6 +19888,7 @@ interdisciplinar/#an/p/
 interditar/#vt/XYPL/
 interdito/#hm/fp/
 interdizer/#vt/KPL/
+interescolar/#an/p/
 interessante/#an/pSs/
 interessar/#vn/XYPLSnB/
 interesseiro/#hm/fpSm/
@@ -19946,6 +19958,7 @@ interpelante/#an/p/
 interpelar/#vt/XYPLcDn/
 interpenetrar/#v/XYLc/
 interpeninsular/#an/p/
+interpessoal/#an/p/
 interplanetário/#a/pf/
 interpolação/#nf/p/
 interpolar/#an//
