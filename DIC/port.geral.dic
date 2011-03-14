@@ -23952,6 +23952,7 @@ nascente/#nf/p/
 nascer/#vi/XYLRMnv/
 nascida/#nf//
 nascituro/#hm/p/
+nastro/#nm/p/
 natação/#nf//
 natadeira/#nf//
 natado/#a//
@@ -24009,12 +24010,15 @@ navegante/#hm/p/
 navegar/#vn/XYPLcDnv/
 nave/#nf/p/
 navio/#nm/p/
+navio-escola/#nm//
+navios-escola/$navio-escola$#nm$N=p/
 nazareno/#hm/fp/
 nazi/#nn/pA/
 nazismo/#nm/pA/
 nazista/#hn/pA/
 neblina/#nf/p/
 nebulização/#nf/p/
+nebulizador/#nm/p/
 nebulosa/#nf/p/
 nebulosidade/#nf/p/
 nebuloso/#a/fdm/
@@ -24621,11 +24625,13 @@ octangular/#an//
 octano/#nm/f/
 octante/#nm/p/
 octeto/#nm/p/
+octingentésimo/#am/f/
 octogenário/#hm//
 octogésimo/#o/f/
 octogonal/#an/p/
 octógono/#hm//
 octostilo/#a//
+óctuplo/#am/pf/
 ocular/#an/pd/
 ocularidade/#nf/p/
 ocular/#nf/p/
@@ -24925,6 +24931,7 @@ orada/#nf//
 orador/#nm/p/
 oral/#an/pmd/
 oralidade/#nf/p/
+oralização/#nm/p/
 orangotango/#nm/p/
 orar/#vi/XYLcDn/
 oratória/#nf//
@@ -24958,7 +24965,8 @@ orelhada/#nf//
 orelhado/#a/f/
 orelha/#nf/p/
 orelhão/#nm//
-orelheira/#nf//
+orelheira/#nf/p/
+orelhudo/#hm/pf/
 orfanado/#nm//
 orfanar/#vt/XYPL/
 orfanato/#nm/p/
@@ -25087,6 +25095,7 @@ ostricultura/#nf/pq/
 ostrífero/#a//
 otólito/#nm/p/
 otomano/#hm/fp/
+otorrino/#nm/p/
 otorrinolaringologia/#nf/tp/
 ou/CAT=con//
 ougar/#vn/XY/
@@ -25145,6 +25154,7 @@ ovoide/PREAO90=ovóide,#an/p/
 ovologia/#nf//
 ovo/#nm/p/
 ovolactovegetariano/#hm/fp/
+ovos-moles/#nmp//
 ovovíparo/#a//
 ovovivíparo/#a//
 ovular/#an/c/
@@ -25513,7 +25523,7 @@ papista/#nn//
 papoila/#nf//
 papo/#nm/ti/
 papoula/#nf//
-papudo/#a//
+papudo/#a/p/
 paquete/#nm/p/
 paquiderme/#an/p/
 paquidermes/#nmp//
