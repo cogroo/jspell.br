@@ -44,6 +44,7 @@ kiwi/#nm,PT=quivi,ORIG=ing/p/
 koala/#nm/p/
 laser/#nm,ORIG=ing//
 lasers/$laser$CAT=nm,N=p,G=m,ORIG=ing//
+leasing/#nm,ORIG=ing/p/
 marketing/#nm,ORIG=ing//
 maxwell/#nm,ORIG=ing//
 napalm/#nm,ORIG=ing//
@@ -52,6 +53,8 @@ nylon/#nm,ORIG=ing//
 pizza/#nf,PT=piza,ORIG=ita/p/
 pickle/#nmp,ORIG=ing/p/
 piercing/#nm,ORIG=ing/p/
+playstation/#nm,ORIG=ing/p/
+portfólio/#nm,PT=portefólio/p/
 poster/#nm,PT=póster,ORIG=ing//
 posters/$poster$,#nm,PT=póster,ORIG=ing$N=p//
 posteriori/#av,ORIG=lat//
@@ -59,7 +62,6 @@ práxis/#nfp,ORIG=gre//
 priori/#av,ORIG=lat//
 punk/#a,ORIG=ing/p/
 puzzle/#nm,ORIG=ing/p/
-leasing/#nm,ORIG=ing/p/
 rap/#nm,ORIG=ing//
 reggae/#nm,ORIG=ing//
 réveillon/#nm,ORIG=fra//
