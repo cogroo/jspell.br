@@ -28879,9 +28879,9 @@ raivento/#a//
 raivoso/#a/fpm/
 raízes/$raiz$#nf$N=p//
 raiz/#nf//
-rajada/#nf/p/
-ralador/#hm//
-raladura/#nf//
+rajado/#hm/fp/
+ralador/#hm/fp/
+raladura/#nf/p/
 ralar/#vt/XYPLcD/
 raleadura/#nf//
 ralear/#vn/ZYPLM/
@@ -28890,9 +28890,8 @@ raleiro/#nm/f/
 ralé/#nf//
 ralhão/#hm//
 ralhar/#vi/XYLcD/
-ralheta/#hn//
+ralheta/#hn/p/
 ralho/#nm//
-rali/#nm//
 rali/#nm/p/
 ralo/#nm/p/
 ramada/#nf//
@@ -28911,7 +28910,7 @@ rama/#nf/p/
 rameira/#nf//
 rameiro/#hm/f/
 ramela/#nf/p/
-rameloso/#a//
+rameloso/#a/pf/
 ramificação/#nf//
 ramificar/#vn/XYPLc/
 ramiforme/#an/p/
@@ -29037,6 +29036,7 @@ raspa/#nf//
 raspão/#nm//
 raspar/#vn/XYPLD/
 rastear/#vn/ZYPL/
+rasteirar/#vt/XY/
 rasteira/#nf/p/
 rasteiro/#a/f/
 rastejadura/#nf//
@@ -29065,6 +29065,7 @@ ratear/#vt/ZYPLcMD/
 rateiro/#a//
 raticida/#hm2//
 ratificar/#vt/XYPLcvD/
+ratito/$rato$#nm$GR=dim/pf/
 rato-almiscareiro/#nm//
 ratoeira/#nf/p/
 rato/#hm/pfhG/
@@ -29679,6 +29680,7 @@ regueifa/#nf//
 regueifeiro/#nm//
 regueiro/#nm//
 reguengo/#hm/p/
+reguila/#an/p/
 regulação/#nf//
 regulado/#a/fp/
 regulador/#hm/fp/
@@ -30354,6 +30356,8 @@ retrogradar/#vi/XYP/
 retrógrado/#a/f/
 retrogressão/#nf//
 retrogressivo/#a//
+retroprojector/AO90=retroprojetor,#nm/p/
+retroprojetor/PREAO90=retroprojector,#nm/p/
 retrosaria/#nf/p/
 retrospecção/AO90=retrospeção,#nf//
 retrospeção/PREAO90=retrospecção,#nf//
@@ -30781,6 +30785,7 @@ rubor/#nm//
 rubrica/#nf/p/
 rubricar/#vt/XYPLD/
 rubro/#a/fp/
+ruço/#am/fp/
 rúcula/#nf/p/
 rude/#an/mp/
 rudeza/#nf/p/
