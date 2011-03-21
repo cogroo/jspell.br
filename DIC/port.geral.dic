@@ -171,8 +171,8 @@ abrasão/#nf//
 abrasar/#vt/XYPLMn/
 abrasileirar/#vt/XYPL/
 abrasivo/#nm/fp/
-abreacção/AO90=abreação,#nf/p/
-abreação/PREAO90=abreacção,#nf/p/
+ab-reacção/AO90=ab-reação,#nf/p/
+ab-reação/PREAO90=ab-reacção,#nf/p/
 abre-latas/#nm,N=_//
 abrenunciar/#vt/XYPLc/
 abreviar/#vt/XYPLcBMD/
@@ -3809,8 +3809,10 @@ autocombustão/#nf//
 autocondução/#nf/p/
 autoconfiança/#nf//
 autocontrolo/#nm/p/
-autocorrecção/#nf/p/
-autocorrectivo/#am/p/
+autocorrecção/AO90=autocorreção,#nf/p/
+autocorreção/PREAO90=autocorrecção,#nf/p/
+autocorrectivo/AO90=autocorretivo,#am/p/
+autocorretivo/PREAO90=autocorrectivo,#am/p/
 autoconsciência/#nf/p/
 autocontrole/#nm//
 autocópia/#nf//
@@ -5967,7 +5969,7 @@ cair/#vi/KLM/
 cais/#nm//
 caixa-de-ar/#nf//
 caixa-de-óculos/#nn//
-caixa-dos-pirulitos/#nf//
+caixa-dos-pirolitos/#nf//
 caixa/#nf/pt/
 caixão/#nm/p/
 caixaria/#nf/p/
@@ -6073,7 +6075,7 @@ caleidoscópio/#nm/p/
 caleidoscópico/#am/p/
 caleira/#nf/p/
 calejar/#vn/XYPLMD/
-calenda/#nf/p/
+calendas/#nfp//
 calendário/#nm/p/
 calendarizar/#vt/XYPLnc/
 cale/#nf//
@@ -8679,7 +8681,6 @@ comuna/#nf/pti/
 comungante/#hn/p/
 comungar/#vn/XYPLn/
 comunhão/#nf/p/
-comunial/#an//
 comunicabilidade/#nf/p/
 comunicação/#nf/p/
 comunicado/#nm/p/
@@ -13387,7 +13388,7 @@ endividar/#vt/XYPLM/
 endocárdio/#nm//
 endocardite/#nf/p/
 endócrino/#a/pf/
-endócrinologista/#nm/p/
+endocrinologista/#nm/p/
 endógeno/#a/fp/
 endoidar/#vn/XYPL/
 endoidecer/#vn/XYPLMD/
@@ -15738,7 +15739,6 @@ feitorizar/#vt/XYPL/
 feitura/#nf/p/
 feixe/#nm/p/
 felação/#nf//
-felcro/#nm//
 felicidade/#nf/p/
 felicíssimo/$feliz$#a$G=m,GR=sup/pf/
 felicitar/#vt/XYPLcD/
@@ -15778,7 +15778,6 @@ fenómeno/#nm/p/
 feno/#nm/p/
 feracidade/#nf/p/
 fera/#nf/p/
-ferente/#an//
 féretro/#nm//
 fereza/#nf//
 ferial/#an//
@@ -23060,7 +23059,8 @@ minimidade/#nf/p/
 minimizar/#vt/XYPLc/
 mínimo/#hm/fp/
 mini/#pr//
-mini-saia/#nm/p/
+mini-saia/AO90=minissaia,#nm/p/
+minissaia/PREAO90=mini-saia,#nm/p/
 ministerial/#hn/pti/
 ministerialismo/#nm/p/
 ministeriável/#an//
@@ -33707,7 +33707,7 @@ torpor/#nm//
 torrada/#hf/p/
 torradeira/#nf/p/
 torralhão/#nm//
-torrão-de-açucar/#nm//
+torrão-de-açúcar/#nm//
 torrão/#nm/p/
 torrar/#vt/XYPLcD/
 torreame/#nm//

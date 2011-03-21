@@ -1,20 +1,21 @@
 ﻿erro Natura	Correção
-caixa-dos-pirulitos	caixa dos pirolitos
+-------------------------------------------
+caixa-dos-pirolitos	caixa dos pirolitos
 cor-de-laranja	cor de laranja
 assumpção	assunção
-abreação	ab-reação
+#abreação	ab-reação           [ALB] Corrigido
 alcalinoterroso	alcalino-terroso
 anjo-da-guarda	anjo da guarda
-autocorrecção	autocorreção
-autocorrectivo	autocorretivo
+#autocorrecção	autocorreção        [ALB] Corrigido
+#autocorrectivo	autocorretivo       [ALB] Corrigido
 auto-de-fé	auto de fé
 bicha-de-sete-cabeças	bicha de sete cabeças
-Bicho-de-sete-cabeças	bicho de sete cabeças
+#Bicho-de-sete-cabeças	bicho de sete cabeças  [ALB] não existe com maiúscula no nosso dic
 bicho-do-buraco	bicho do buraco
 bicho-do-mato	bicho do mato
 bico-de-obra	bico de obra
-Bilhete-de-visita	bilhete de visita
-bissectar	bissetar – bissectar (PB)
+bilhete-de-visita	bilhete de visita
+bissectar	bissetar – bissectar (PB) --> a priberam diz que é bissecção :S
 boca-de-fogo	boca de fogo
 boca-de-incêndio	boca de incêndio
 boca-de-sino	boca de sino
@@ -53,11 +54,11 @@ energitismo	energetismo
 fora-da-lei	fora da lei
 frente-a-frente	frente a frente
 géiser	geiser ou guéiser
-felcro	velcro ? feltro ?
-ferente	
+# felcro	velcro ? feltro ?        [ALB] Removido
+# ferente	                         [ALB] Removido
 abstusa	abstrusa
 amiudamente	amiudadamente ou miudamente.
-comunial	comunal?
+#comunial	comunal?                 [ALB] Removido
 germinibilidade	germinabilidade
 há-de	há de
 hão-de	hão de
@@ -76,7 +77,7 @@ antimonóxido	antimonióxido (antimónio+óxido)
 aracnoídeo	aracnóideo
 arborícula	grafia correta arborícola
 aterraplanar	apenas temos atestado aterraplenar
-boite	boîte
+#boite	boîte                             [ALB] Removido já há tempos
 cavernícula	cavernícola
 cineastra	cineasta
 coderniz	codorniz
@@ -87,7 +88,7 @@ correlegionário	correligionário
 dendolatria	dendrolatria
 descompustura	descompostura
 disfrutar	desfrutar
-endócrinologista	endocrinologista
+#endócrinologista	endocrinologista  [ALB] corrigido
 gadanheirro	gadanheiro
 haraquiri	haraquíri
 hebraista	hebraísta
@@ -98,14 +99,14 @@ oitavos-de-final	oitavos de final
 quilo-hertz	quilohertz
 silíqua	síliqua
 termistor	termístor
-torrão-de-açucar	torrão-de-açúcar
+#torrão-de-açucar	torrão-de-açúcar   [ALB] Adicionado o acento, embora me pareça que isto é erro deles, a nova versão não deve ter hífen.
 dia-a-dia	dia a dia
 extra-uterino	extrauterino
 farinha-de-pau	farinha de pau
 fim-de-semana	fim de semana
 fio-de-prumo	fio de prumo
 fogo-de-artifício	fogo de artifício
-fora-de-jogo	for a de jogo
+fora-de-jogo	fora de jogo
 gaita-de-foles	gaita de foles
 interrelacionar	inter-relacionar
 língua-de-gato	língua de gato
@@ -115,8 +116,7 @@ mão-de-obra	mão de obra
 mesa-de-cabeceira	mesa de cabeceira
 mestre-de-cerimónias	mestre de cerimónias
 mestre-de-obras	mestre de obras
-mini-saia	minissaia
-mulher-a-dias	mulher a dias
+#mini-saia	minissaia                [ALB] Corrigido
 mulher-a-dias	mulher a dias
 onomatopéico	onomatopeico
 pão-de-ló	pão de ló
@@ -132,6 +132,6 @@ rés-do-chão	rés do chão
 rosa-dos-ventos	rosa dos ventos
 fins-de-semana	fins de semana, plural de fim de semana
 terferência	não atestado
-calenda	plurale tantum – apenas calendas
+#calenda	plurale tantum – apenas calendas - corrigido para "calendas/#nfp"
 autos-de-fé	autos de fé
 co-orientador	coorientador
