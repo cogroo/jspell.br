@@ -1,38 +1,38 @@
 ﻿erro Natura	Correção
 -------------------------------------------
-caixa-dos-pirolitos	caixa dos pirolitos
-cor-de-laranja	cor de laranja
+#caixa-dos-pirolitos	caixa dos pirolitos
+#cor-de-laranja	cor de laranja                 [ALB] Corrigido
 assumpção	assunção
-#abreação	ab-reação           [ALB] Corrigido
+#abreação	ab-reação                      [ALB] Corrigido
 alcalinoterroso	alcalino-terroso
-anjo-da-guarda	anjo da guarda
-#autocorrecção	autocorreção        [ALB] Corrigido
-#autocorrectivo	autocorretivo       [ALB] Corrigido
-auto-de-fé	auto de fé
-bicha-de-sete-cabeças	bicha de sete cabeças
+#anjo-da-guarda	anjo da guarda                 [ALB] Corrigido
+#autocorrecção	autocorreção                   [ALB] Corrigido
+#autocorrectivo	autocorretivo                  [ALB] Corrigido
+#auto-de-fé	auto de fé                     [ALB] Corrigido
+#bicha-de-sete-cabeças	bicha de sete cabeças  [ALB] Corrigido
 #Bicho-de-sete-cabeças	bicho de sete cabeças  [ALB] não existe com maiúscula no nosso dic
-bicho-do-buraco	bicho do buraco
-bicho-do-mato	bicho do mato
-bico-de-obra	bico de obra
-bilhete-de-visita	bilhete de visita
-bissectar	bissetar – bissectar (PB) --> a priberam diz que é bissecção :S
-boca-de-fogo	boca de fogo
-boca-de-incêndio	boca de incêndio
-boca-de-sino	boca de sino
-bota-de-elástico	bota de elástico
-cabeça-de-alho-chocho	cabeça de alho chocho
-cabeça-de-série	cabeça de série
-cabeça-de-vento	cabeça de vento
-cabeça-no-ar	cabeça no ar
-caixa-de-ar	caixa de ar
-caixa-de-óculos	caixa de óculos
-câmara-de-ar	câmaras de ar
-caminho-de-ferro	caminho de ferro
-camisa-de-forças	camisa de forças
-canto-de-cisne	canto de cisne
+#bicho-do-buraco	bicho do buraco        [ALB] Corrigido
+#bicho-do-mato	bicho do mato                  [ALB] Corrigido
+#bico-de-obra	bico de obra                   [ALB] Corrigido
+#bilhete-de-visita	bilhete de visita      [ALB] REMOVIDO (nao acho que faça sentido)
+bissectar	bissetar – bissectar (PB) --> a priberam diz que é bissectar :S
+#boca-de-fogo	boca de fogo                   [ALB] Corrigido
+#boca-de-incêndio	boca de incêndio       [ALB] Corrigido
+#boca-de-sino	boca de sino                   [ALB] Corrigido
+#bota-de-elástico	bota de elástico       [ALB] Corrigido
+#cabeça-de-alho-chocho	cabeça de alho chocho  [ALB] Corrigido
+#cabeça-de-série	cabeça de série        [ALB] Corrigido
+#cabeça-de-vento	cabeça de vento        [ALB] Corrigido
+#cabeça-no-ar	cabeça no ar                   [ALB] Corrigido
+#caixa-de-ar	caixa de ar                    [ALB] Corrigido
+#caixa-de-óculos	caixa de óculos        [ALB] Corrigido
+#câmara-de-ar	câmaras de ar                  [ALB] Corrigido
+#caminho-de-ferro	caminho de ferro       [ALB] Corrigido
+#camisa-de-forças	camisa de forças       [ALB] Corrigido
+#canto-de-cisne	canto de cisne                 [ALB] Corrigido
 caraterologia	caraterologia (PB) caracterologia (PE)
-carreira-de-tiro	carreira de tiro
-cartão-de-visita	cartão de visita
+#carreira-de-tiro	carreira de tiro       [ALB] Corrigido
+#cartão-de-visita	cartão de visita       [ALB] Corrigido
 casca-de-noz	casca de noz
 cavalo-de-batalha	cavalo de batalha
 céu-da-boca	céu da boca
