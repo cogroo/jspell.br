@@ -229,7 +229,7 @@ absurdeza/#nf//
 absurdez/#nf//
 absurdo/#a/fpidm/
 abulia/#nf//
-abulíco/#a//
+abúlico/#a//
 abundância/#nf/p/
 abundante/#an/pm/
 abundar/#vi/XYLn/
@@ -2779,7 +2779,7 @@ arco-celeste/#nm//
 arco-da-velha/#nm//
 arco-irisar/#vn/XYPL/
 arco-íris/#nm//
-ar-condicionado/#nm//
+ar-condicionado/AO90=,#nm//
 arco/#nm/p/
 arcoso/#a//
 árctico/AO90=ártico,#a/pfu/
@@ -6835,7 +6835,7 @@ casaredo/#nm//
 casaria/#nf/p/
 casario/#nm/f/
 casar/#vt/XYPLSMv/
-casca-de-noz/#nf//
+casca-de-noz/AO90=,#nf//
 casca-grossa/#nn//
 cascalhada/#nf//
 cascalhar/#vi/XYL/
@@ -7100,7 +7100,7 @@ cavalheiro/#nm/ip/
 cavalheiroso/#a//
 cavalidade/#nf/p/
 cavalitas/#nfp//
-cavalo-de-batalha/#nm//
+cavalo-de-batalha/AO90=,#nm//
 cavalo-marinho/#nm//
 cavalo/#nm/ph/
 cavalório/#nm//
@@ -7380,7 +7380,7 @@ cetinoso/#a//
 cetona/#nf/p/
 cetónico/#a//
 cetra/#nf//
-céu-da-boca/#nm//
+céu-da-boca/AO90=,#nm//
 céu/#nm/p/
 cevada/#nf//
 cevadeira/#nf//
@@ -7465,8 +7465,8 @@ chapeleira/#nf//
 chapeleiro/#nm/p/
 chapeleta/#nf//
 chapelete/#nm//
-chapéu-de-chuva/#nm//
-chapéu-de-sol/#nm//
+chapéu-de-chuva/AO90=,#nm//
+chapéu-de-sol/AO90=,#nm//
 chapéu/#nm/ph/
 chapim/#nm//
 chapinar/#vn/XYPL/
@@ -8326,7 +8326,7 @@ coleira/#nf/p/
 cólera/#nf//
 colérico/#a/pfH/
 colesterol/#nm//
-colete-de-forças/#nm//
+colete-de-forças/AO90=,#nm//
 coleteiro/#nm//
 colete/#nm/p/
 colheita/#nf/p/
@@ -11884,7 +11884,7 @@ dez/#ca//
 dezena/#nf/p/
 dezoito/#ca//
 dez-réis/#nm//
-dia-a-dia/#nm//
+dia-a-dia/AO90=,#nm//
 diabete/#nf/p/
 diabetes/#nf//
 diabético/#hm/fp/
@@ -13412,7 +13412,7 @@ energético/#a/fp/
 energia/#nf/p/
 energicamente/$enérgico$#a$#avm//
 enérgico/#a/pf/
-energitismo/#nm/p/
+energetismo/#nm/p/
 enervante/#an/p/
 enervar/#vt/XYPLcMn/
 enésimo/#am/pf/
@@ -15571,7 +15571,7 @@ farfalhudo/#a/fp/
 farináceo/#a/p/
 faringe/#nf/p/
 faringite/#nf/p/
-farinha-de-pau/#nf//
+farinha-de-pau/AO90=,#nf//
 farinha/#nf/p/
 farinheiro/#nm/p/
 farinhento/#a/fp/
@@ -16008,7 +16008,7 @@ filtragem/#nm/p/
 filtrar/#vt/XYPLcMDn/
 filtro/#nm/p/
 fímbria/#nf//
-fim-de-semana/#nm//
+fim-de-semana/AO90=,#nm//
 fim/#nm/p/
 final/#hm2/pmtids/
 finalidade/#nf/p/
@@ -16033,12 +16033,12 @@ finito/#hm/pfm/
 finlandês/#hm/fp/
 fino/#a/pfhms/
 finório/#hm//
-fins-de-semana/$fim-de-semana$#nm$N=p//
+fins-de-semana/$fim-de-semana$AO90=,#nm$N=p//
 finta/#nf/p/
 fintar/#vt/XYPL/
 finto/#hm//
 finura/#nf//
-fio-de-prumo/#nm//
+fio-de-prumo/AO90=,#nm//
 fio/#nm/p/
 fiorde/#nm/p/
 firmal/#nm//
@@ -16210,7 +16210,7 @@ fogaceira/#nf//
 fogacho/#nm//
 fogão/#nm/p/
 fogareiro/#nm/p/
-fogo-de-artifício/#nm//
+fogo-de-artifício/AO90=,#nm//
 fogo-fátuo/#nm//
 fogo/#nm/pA/
 fogosidade/#nf/p/
@@ -16300,8 +16300,8 @@ fontela/#nf/p/
 fonte/#nf/pt/
 fontista/#nn//
 fora/#avl//
-fora-da-lei/#hn//
-fora-de-jogo/#nm//
+fora-da-lei/AO90=,#hn//
+fora-de-jogo/AO90=,#nm//
 foragido/#hn/fp/
 fora/#i//
 foraleiro/#a//
@@ -16819,7 +16819,8 @@ gaiato/#hm/pf/
 gaiense/#hn/p/
 gaiola/#nf/p/
 gaiolim/#nm//
-gaita-de-foles/#nf//
+gaita-de-foles/AO90=,#nf//
+gaitas-de-foles/$gaita-de-foles$AO90=,#nf$N=p//
 gaita/#nf/p/
 gaiteirice/#nf//
 gaiteiro/#hm/fp/
@@ -21583,7 +21584,7 @@ louvado/#hm//
 louvar/#vt/XYPLcMDv/
 louvavelmente/#av//
 louvor/#nm/p/
-lua-de-mel/#nf//
+lua-de-mel/AO90=,#nf//
 luandense/#hn/p/
 lua/#nf/p/
 luarento/#a//
@@ -21701,7 +21702,6 @@ macambúzio/#a//
 maçaneta/#nf//
 maca/#nf/p/
 maçã/#nf/p/
-macanicismo/#nm/p/
 mação/#nm//
 macaqueador/#hm//
 macaquear/#vt/ZYPLcD/
@@ -22144,7 +22144,7 @@ manusear/#vt/ZYPLcMv/
 manuseio/#nm//
 manutenção/#nf/p/
 manutenível/#an//
-mão-de-obra/#nf//
+mão-de-obra/AO90=,#nf//
 mão-cheia/#nf//
 maoista/#hf/p/
 maometa/#an/i/
@@ -23706,16 +23706,15 @@ muletada/#nf//
 muleta/#nf/p/
 muleteiro/#nm//
 mulheraça/#nf//
-mulher-a-dias/#nf//
+mulher-a-dias/AO90=,#nf//
 mulherão/#nm//
-mulherengo/#hm//
+mulherengo/#hm/p/
 mulherico/#a/f/
 mulheril/#an//
 mulherinha/#nf//
 mulherio/#nm//
 mulher/#nf/px/
-mulher-a-dias/#nf//
-mulherzinha/#nf//
+mulherzinha/#nf/p/
 multa/#nf/p/
 multar/#vt/XYPL/
 multiangular/#an//
@@ -23904,7 +23903,7 @@ nano/#a//
 nanotecnologia/#nf/p/
 não/#avn//
 não/#nm/a/
-não-te-rales/#nm//
+não-te-rales/AO90=,#nm//
 napoleão/#nm//
 napoleónico/#hm/f/
 napoleonismo/#nm/p/
@@ -24822,8 +24821,7 @@ onomástico/#a/fp/
 onomatologia/#nf//
 onomatopaico/#a//
 onomatopeia/#nf//
-onomatopeico/AO90=onomatopéico,#a//
-onomatopéico/PREAO90=onomatopeico,#a//
+onomatopeico/#a/p/
 ontem/#avt//
 ontogénese/#nf//
 ontogenia/#nf//
@@ -25973,7 +25971,7 @@ pavor/#nm/p/
 pavoroso/#a/fp/
 paxá/#nm//
 pazada/#nf//
-paz-de-alma/#nn//
+paz-de-alma/AO90=,#nn//
 paz/#nf/p/
 peão/#nm/p/
 pecabilidade/#nf/p/
@@ -26304,7 +26302,7 @@ percevejo/#nm/p/
 perclorato/#nm//
 perclórico/#a//
 percorrer/#vt/XYPL/
-percursionista/#an/p/
+percussionista/#an/p/
 percurso/#nm/p/
 percursor/#hm/p/
 percussão/#hf/pt/
@@ -27205,7 +27203,7 @@ ponderoso/#a//
 pónei/#nm/p/
 pó/#nm/h/
 pontada/#nf/p/
-ponta-de-lança/#nm//
+ponta-de-lança/AO90=,#nm//
 pontal/#hm//
 ponta/#nf/p/
 pontão/#nm/p/
@@ -28540,11 +28538,11 @@ quarternidade/#nf/p/
 quarteto/#nm/p/
 quartil/#a/p/
 quartilho/#nm/p/
-quarto-de-final/#nm//
-quarto-de-hora/#nm//
+quarto-de-final/AO90=,#nm//
+quarto-de-hora/AO90=,#nm//
 quarto/#nm/p/
 quarto/#o/pfh/
-quartos-de-final/$quarto-de-final$#nm$N=p//
+quartos-de-final/$quarto-de-final$AO90=,#nm$N=p//
 quartzito/#nm/p/
 quartzo/#nm//
 quase/#av//
@@ -30070,7 +30068,7 @@ rescisório/#a/pf/
 rescrever/#vt/XYPL/
 rescrição/#nf//
 rescrito/#nm//
-rés-do-chão/#nm//
+rés-do-chão/AO90=,#nm//
 resenha/#nf/p/
 resenhar/#vt/XYP/
 reservadamente/#av//
@@ -30700,7 +30698,7 @@ rosa/#an/p/
 rosácea/#nf/p/
 rosáceo/#a/f/
 rosado/#a/fp/
-rosa-dos-ventos/#nf//
+rosa-dos-ventos/AO90=,#nf//
 rosal/#nm/p/
 rosa/#nf/p/
 rosário/#nm//
@@ -33385,7 +33383,7 @@ tesoureiro/#hm/pf/
 tesourinha/#nf//
 tesouro/#nm/p/
 testaça/#nf//
-testa-de-ferro/#nm//
+testa-de-ferro/AO90=,#nm//
 testador/#hm//
 testamental/#an//
 testamentaria/#nf/p/
@@ -33773,7 +33771,7 @@ toucado/#hm//
 toucador/#hm//
 touca/#nf/p/
 toucar/#vt/XYPLD/
-toucinho-do-céu/#nm//
+toucinho-do-céu/AO90=,#nm//
 toucinho/#nm/p/
 toupeira/#nf/p/
 tourada/#nf/p/
@@ -34415,8 +34413,8 @@ turbilhão/#nm/p/
 turbina/#nf/p/
 turbinoso/#a//
 turbo/#nm/p/
-turbo-reactor/AO90=turbo-reator,#nm//
-turbo-reator/PREAO90=turbo-reactor,#nm//
+turbo-reactor/AO90=turborreator,#nm//
+turborreator/PREAO90=turbo-reactor,#nm//
 turbulência/#nf/p/
 turbulento/#hm/fp/
 turco/#hm/fp/
@@ -34519,7 +34517,7 @@ ungir/#vt/XYPL/
 unhada/#nf/p/
 unha/#nf/p/
 unhar/#vn/XYPL/
-unhas-de-fome/#nn//
+unhas-de-fome/AO90=,#nn//
 união/#nf/p/
 unicamente/#av//
 unicarpelar/#an//

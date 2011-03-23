@@ -33,25 +33,25 @@ bissectar	bissetar – bissectar (PB) --> a priberam diz que é bissectar :S
 caraterologia	caraterologia (PB) caracterologia (PE)
 #carreira-de-tiro	carreira de tiro       [ALB] Corrigido
 #cartão-de-visita	cartão de visita       [ALB] Corrigido
-casca-de-noz	casca de noz
-cavalo-de-batalha	cavalo de batalha
-céu-da-boca	céu da boca
-chapéu-de-chuva	chapéu de chuva
-chapéu-de-sol	chapéu de sol
-colete-de-forças	colete de forças
-conto-do-vigário	conto do vigário
-testa-de-ferro	testa de ferro
-toucinho-do-céu	toucinho do céu
-turbo-reator	turborreator
-unhas-de-fome	unhas de fome
+#casca-de-noz	casca de noz                   [ALB] Corrigido
+#cavalo-de-batalha	cavalo de batalha      [ALB] Corrigido
+#céu-da-boca	céu da boca                    [ALB] Corrigido
+#chapéu-de-chuva	chapéu de chuva        [ALB] Corrigido
+#chapéu-de-sol	chapéu de sol                  [ALB] Corrigido
+#colete-de-forças	colete de forças       [ALB] Corrigido
+#conto-do-vigário	conto do vigário       [ALB] Corrigido
+#testa-de-ferro	testa de ferro                 [ALB] Corrigido
+#toucinho-do-céu	toucinho do céu        [ALB] Corrigido
+#turbo-reator	turborreator                   [ALB] Corrigido
+#unhas-de-fome	unhas de fome                  [ALB] Corrigido
 vilacondense	vila-condense
 vilafranquense	vila-franquense
 vilanovense	vila-novense
-ar-condicionado	ar condicionado
-não-te-rales	não te rales
+#ar-condicionado	ar condicionado        [ALB] Corrigido
+#não-te-rales	não te rales                   [ALB] Corrigido
 landegrave	apenas atestadas landgrave e landegrávio
-energitismo	energetismo
-fora-da-lei	fora da lei
+#energitismo	energetismo                    [ALB] Corrigido
+#fora-da-lei	fora da lei                    [ALB] Corrigido
 frente-a-frente	frente a frente
 géiser	geiser ou guéiser
 # felcro	velcro ? feltro ?        [ALB] Removido
@@ -63,14 +63,14 @@ germinibilidade	germinabilidade
 há-de	há de
 hão-de	hão de
 lúgrebe	lúgubre
-macanicismo	mecanicismo
+#macanicismo	mecanicismo              [ALB] Removido
 maleficientíssimo	maleficentíssimo?
-percursionista	percussionista
+#percursionista	percussionista           [ALB] Corrigido
 pusilâmine	pusilânime
-quarto-de-hora	quarto de hora
+#quarto-de-hora	quarto de hora           [ALB] Corrigido
 telequinesia	telecinesia
 tempestoso	tempestuoso
-abulíco	abúlico
+#abulíco	abúlico                  [ALB] Corrigido
 além-fronteira	apenas atestado além-fronteiras
 alucinogéno	alucinogénio
 antimonóxido	antimonióxido (antimónio+óxido)
@@ -99,38 +99,38 @@ oitavos-de-final	oitavos de final
 quilo-hertz	quilohertz
 silíqua	síliqua
 termistor	termístor
-#torrão-de-açucar	torrão-de-açúcar   [ALB] Adicionado o acento, embora me pareça que isto é erro deles, a nova versão não deve ter hífen.
-dia-a-dia	dia a dia
+#torrão-de-açucar	torrão-de-açúcar   [ALB] Adicionado o acento
+#dia-a-dia	dia a dia                  [ALB] Corrigido
 extra-uterino	extrauterino
-farinha-de-pau	farinha de pau
-fim-de-semana	fim de semana
-fio-de-prumo	fio de prumo
-fogo-de-artifício	fogo de artifício
-fora-de-jogo	fora de jogo
-gaita-de-foles	gaita de foles
+#farinha-de-pau	farinha de pau             [ALB] Corrigido
+#fim-de-semana	fim de semana              [ALB] corrigido
+#fio-de-prumo	fio de prumo               [ALB] Corrigido
+#fogo-de-artifício	fogo de artifício  [ALB] Corrigido
+#fora-de-jogo	fora de jogo               [ALB] Corrigido
+#gaita-de-foles	gaita de foles             [ALB] Corrigido
 interrelacionar	inter-relacionar
 língua-de-gato	língua de gato
-lua-de-mel	lua de mel
+#lua-de-mel	lua de mel                 [ALB] corrigido
 maçã-de-adão	maçã de Adão
-mão-de-obra	mão de obra
+#mão-de-obra	mão de obra               [ALB] corrigido
 mesa-de-cabeceira	mesa de cabeceira
 mestre-de-cerimónias	mestre de cerimónias
 mestre-de-obras	mestre de obras
 #mini-saia	minissaia                [ALB] Corrigido
-mulher-a-dias	mulher a dias
-onomatopéico	onomatopeico
+#mulher-a-dias	mulher a dias            [ALB] Corrigido
+#onomatopéico	onomatopeico             [ALB] great
 pão-de-ló	pão de ló
 pau-de-cabeleira	pau de cabeleira
-paz-de-alma	paz de alma
+#paz-de-alma	paz de alma              [ALB] Corrigido
 pé-de-cabra	pé de cabra
 pé-de-vento	pé de vento
 pó-de-arroz	pó de arroz
-ponta-de-lança	ponta de lança
-quarto-de-final	quarto de final
-quartos-de-final	quartos de final
-rés-do-chão	rés do chão
-rosa-dos-ventos	rosa dos ventos
-fins-de-semana	fins de semana, plural de fim de semana
+#ponta-de-lança	ponta de lança              [ALB] Corrigido
+#quarto-de-final	quarto de final     [ALB] corrigido 
+#quartos-de-final	quartos de final    [ALB] corrigido
+#rés-do-chão	rés do chão                 [ALB] corrigido
+#rosa-dos-ventos	rosa dos ventos     [ALB] corrigido
+#fins-de-semana	fins de semana, plural de fim de semana [ALB] corrigido
 terferência	não atestado
 #calenda	plurale tantum – apenas calendas - corrigido para "calendas/#nfp"
 autos-de-fé	autos de fé
