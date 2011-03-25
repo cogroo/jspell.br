@@ -224,7 +224,7 @@ abstrativo/PREAO90=abstractivo,#a//
 abstracto/AO90=abstrato,#hm/pfmi/
 abstrato/PREAO90=abstracto,#hm/pfmi/
 abstrair/#vt/KPL/
-abstusa/#a/p/
+abstruso/#am/fp/
 absurdeza/#nf//
 absurdez/#nf//
 absurdo/#a/fpidm/
@@ -1151,8 +1151,7 @@ alcaide/#nm/p/
 alcaiotar/#vn/XYPL/
 alcalinizar/#vt/XYPL/
 alcalino/#a/pfd/
-alcalino-terroso/AO90=alcalinoterroso,#a//
-alcalinoterroso/PREAO90=alcalino-terroso,#a//
+alcalino-terroso/#a//
 alcaloide/#nm/p/
 alcançar/#vn/XYPLMv/
 alcance/#nm//
@@ -1457,7 +1456,7 @@ aluar/#vi/XYLM/
 alucinante/#an/p/
 alucinar/#vt/XYPLcn/
 alucinatório/#a/fp/
-alucinogéno/#a/fp/
+alucinogénio/#a/fp/
 aludir/#vn/XYPL/
 alugador/#nm//
 alugar/#vt/XYPLMDvu/
@@ -1652,7 +1651,6 @@ amimar/#vt/XYPLD/
 amimia/#nf//
 aminoácido/#nm/p/
 amistoso/#a/fp/
-amiudamente/#av//
 amiudar/#vt,I=3/YPL/
 amiúde/#av//
 amizade/#nf/p/
@@ -2206,7 +2204,7 @@ antimilitarismo/#nm/p/
 antimilitarista/#hn//
 antimónico/#a//
 antimónio/#nm//
-antimonóxido/#nm//
+antimonióxido/#nm//
 antimoral/#an//
 antinacional/#an//
 antinarcótico/#a//
@@ -2695,7 +2693,6 @@ aracnofilia/#nf/q/
 aracnóide/AO90=aracnoide,#nf/p/
 aracnoide/PREAO90=aracnóide,#nf/p/
 aracnóideo/#a/p/
-aracnoídeo/#a/p/
 arada/#nf//
 aradar/#vt/XYPL/
 arado/#hm//
@@ -2733,7 +2730,7 @@ arborescência/#nf/p/
 arborescente/#an//
 arborescer/#vi/XYLn/
 arboricídio/#nm/pq/
-arborícula/#a//
+arborícola/#a/p/
 arboricultura/#nf/prq/
 arboriforme/#an/p/
 arborista/#nn//
@@ -3434,8 +3431,8 @@ assossego/#nm//
 assotar/#vt/XYPL/
 assovinar/#vt/XYPL/
 assumir/#vt/XYPLRB/
-assunção/#nf//
-assumpção/#nf/p/
+assunção/#nf/p/
+assumpção/AO90=assunção,#nf/p/
 assumptível/#an//
 assumptivo/#a//
 assunto/#nm/p/
@@ -3554,7 +3551,7 @@ atérmico/#a//
 aterosclerótico/#a/fp/
 aterrador/#hm//
 aterragem/#nf//
-aterraplanar/#vt/XYPL/
+aterraplenar/#vt/XYPL/
 aterrar/#vn/XYPLD/
 aterroar/#vt/XYPL/
 aterro/#nm/p/
@@ -3902,7 +3899,7 @@ autorizar/#vt/XYPLcDv/
 autor/#nm/pf/
 autoscopia/#nf//
 autoscópio/#nm//
-autos-de-fé/$auto-de-fé$#nm$N=p//
+autos-de-fé/$auto-de-fé$AO90=,#nm$N=p//
 auto-suficiência/AO90=autossuficiência,#nf/p/
 autossuficiência/PREAO90=auto-suficiência,#nf/p/
 auto-sugestão/AO90=autossugestão,#nf//
@@ -6536,8 +6533,7 @@ caracterizar/EQAO90=caraterizar,#vt/XYPLcDnS/
 caraterizar/PREAO90=caracterizar,#vt/XYPLcDnS/
 carácter/EQAO90=caráter,#nm//
 caráter/PREAO90=carácter,#nm//
-caracterologia/EQAO90=caraterologia,#nf/pr/
-caraterologia/PREAO90=caracterologia,#nf/pr/
+caracterologia/#nf/pr/
 carago/#i//
 caraíba/#hn/p/
 caramba/#i//
@@ -7117,7 +7113,7 @@ cave/#nf/p/
 cavernal/#an//
 caverna/#nf/p/
 cavernar/#vi/XYL/
-cavernícula/#hn//
+cavernícola/#hn//
 cavernoso/#a/fp/
 caviar/#nm//
 cavidade/#nf/p/
@@ -7793,7 +7789,6 @@ cinco/#ca//
 cinco-réis/#nm//
 cindir/#vt/XYPLv/
 cineasta/#nn/p/
-cineastra/#nn//
 cineclube/#nm/pti/
 cinefilia/#nf/pt/
 cinéfilo/#hm/fp/
@@ -9618,7 +9613,8 @@ coordenadas/#nfp//
 coordenador/#hm//
 coordenar/#vt/XYPLScDn/
 coordenativo/#a/fp/
-co-orientador/#hm/pf/
+co-orientador/AO90=coorientador,#hm/pf/
+coorientador/PREAO90=co-orientador,#hm/pf/
 copada/#nf//
 copado/#a/f/
 copa/#nf//
@@ -12200,7 +12196,6 @@ disfónico/#a//
 disformar/#vt/XYPL/
 disforme/#an/pd/
 disformidade/#nf/p/
-disfrutar/#vt/XYPL/
 disfunção/#nf/p/
 disjunção/#nf/p/
 disjuntar/#vt/XYPL/
@@ -15334,9 +15329,9 @@ extraterritorial/#an/d/
 extraterritorialidade/#nf/p/
 extra-sensorial/AO90=extrassensorial,#a/p/
 extrassensorial/PREAO90=extra-sensorial,#a/p/
-extra-solar/AO90=extrauterino,#a/p/
+extra-solar/#a//
 extrauterino/PREAO90=extra-solar,#a/p/
-extra-uterino/#a//
+extra-uterino/AO90=extrauterino,#a/p/
 extravagância/#nf/p/
 extravaganciar/#vn/XYPL/
 extravagante/#an/p/
@@ -16562,7 +16557,7 @@ frémito/#nm//
 frenar/#vt/XYPL/
 frenesim/#nm//
 frenético/#a/pfH/
-frente-a-frente/#nm//
+frente-a-frente/AO90=,#nm//
 frente/#nf/pi/
 frequência/#nf/p/
 frequencímetro/#nm/p/
@@ -16802,8 +16797,8 @@ gabinete/#nm/p/
 gabiru/#nm/p/
 gadanha/#nf//
 gadanhar/#vt/XYPL/
-gadanheirro/#nm//
-gadanho/#nm//
+gadanheiro/#nm/p/
+gadanho/#nm/p/
 gado/#nm/p/
 gafanhotada/#nf//
 gafanhoto/#nm/p/
@@ -17078,7 +17073,8 @@ gazua/#nf/p/
 geada/#nf/p/
 gear/#vn/ZYPL/
 geento/#a//
-géiser/#nm//
+géiser/AO90=geiser,#nm//
+geiser/PREAO90=géiser,#nm//
 gelada/#nf//
 geladeira/#nf/p/
 geladiço/#a//
@@ -17214,7 +17210,7 @@ germinal/#an//
 germinante/#an/p/
 germinar/#vn/XYPLcDn/
 germinativo/#a/p/
-germinibilidade/#nf/p/
+germinabilidade/#nf/p/
 gerundial/#an//
 gerúndio/#nm/p/
 gerundivo/#nm/f/
@@ -19975,7 +19971,7 @@ interpretativo/#a/fp/
 intérprete/#nn/p/
 inter-regional/#an//
 interregno/#nm/p/
-interrelacionar/#vt/XYPL/
+inter-relacionar/#vt/XYPL/
 interrogador/#hm/p/
 interrogante/#hn/p/
 interrogar/#vt/XYPLcDn/
@@ -20852,7 +20848,7 @@ lancil/#nm//
 lancinante/#an/p/
 lancinar/#vn/XYPLn/
 lanço/#nm/pu/
-landegrave/#nm//
+landgrave/#nm//
 lã/#nf/p/
 languidez/#nf//
 lânguido/#a/fp/
@@ -21338,7 +21334,7 @@ linfócito/#nm/p/
 linfose/#nf//
 lingote/#nm/p/
 lingrinhas/CAT=nc,G=_,N=_//
-língua-de-gato/#nf//
+língua-de-gato/AO90=,#nf//
 linguado/#nm/p/
 linguagem/#nf/p/
 lingual/#an//
@@ -21446,6 +21442,7 @@ lixívia/#nf//
 lixivioso/#a//
 lixo/#nm/p/
 lixoso/#a//
+ló/nm//              # dá jeito por causa do pão de ló do AO
 lobacho/#nm//
 lobado/#a/fp/
 lobal/#an//
@@ -21619,7 +21616,6 @@ lugarejo/#nm/p/
 lugares-comuns/$lugar-comum$#nm$N=p//
 lugar/#nm/p/
 lugar-tenente/#nm//
-lúgrebe/#an//
 lúgubre/#a/p/
 lugubridade/#nf/p/
 lula/#nf/p/
@@ -21689,7 +21685,7 @@ macacão/#nm//
 macacaria/#nf/p/
 macaco/#hm/fphG/
 maçada/#nf//
-maçã-de-adão/#nf//
+maçã-de-adão/AO90=,#nf//
 maçadiço/#a//
 maçadoiro/#nm//
 maçador/#hm//
@@ -21915,7 +21911,6 @@ maledicência/#nf/p/
 maledicente/#hn//
 maleita/#nf/p/
 maleficência/#nf/p/
-maleficientíssimo/#a//
 malefício/#nm/p/
 maléfico/#a/fp/
 mal-empregado/#i//
@@ -22729,7 +22724,7 @@ meritório/#a/fp/
 mero/#hm/pfm/
 mertolense/#hn/p/
 mesada/#nf//
-mesa-de-cabeceira/#nf//
+mesa-de-cabeceira/AO90=,#nf//
 mesa/#nf/ph/
 mesão/#nm/p/
 mescal/#nm//
@@ -22769,8 +22764,8 @@ mestra/#hf/p/
 mestral/#an//
 mestrança/#nf//
 mestrão/#nm//
-mestre-de-cerimónias/#nm//
-mestre-de-obras/#nm//
+mestre-de-cerimónias/AO90=,#nm//
+mestre-de-obras/AO90=,#nm//
 mestre-escola/#nm//
 mestre/#nm/p/
 mestria/#nf//
@@ -25470,7 +25465,7 @@ pantufada/#nf//
 pantufa/#nf//
 pantufo/#nm/f/
 pão-de-leite/#nm//
-pão-de-ló/#nm//
+pão-de-ló/AO90=,#nm//
 pão/#nm/eh/
 pãozeiro/#a//
 papa-açorda/#nn//
@@ -25937,7 +25932,7 @@ patuscada/#nf//
 patuscar/#vi/XYL/
 patusco/#hm//
 patusqueiro/#a//
-pau-de-cabeleira/#nm//
+pau-de-cabeleira/AO90=,#nm//
 paulada/#nf//
 paulatino/#a/fm/
 paulismo/#nm/p/
@@ -26021,7 +26016,7 @@ pedantear/#vi/ZYL/
 pedante/#hn/piG/
 pedantismo/#nm/p/
 pedantocracia/#nf//
-pé-de-cabra/#nm//
+pé-de-cabra/AO90=,#nm//
 pé-de-meia/#nm//
 pederasta/#nm//
 pederastia/#nf//
@@ -26029,7 +26024,7 @@ pedernal/#hm2//
 pederneira/#nf//
 pedestal/#nm//
 pedestre/#an/p/
-pé-de-vento/#nf//
+pé-de-vento/AO90=,#nf//
 pediatra/#nm/p/
 pediatria/#nf//
 pediátrico/#a//
@@ -27026,7 +27021,7 @@ podal/#an//
 poda/#nf/p/
 podão/#nm//
 podar/#vt/XYPLD/
-pó-de-arroz/#nm//
+pó-de-arroz/AO90=,#nm//
 poderio/#nm//
 poder/#nm/p/
 poderoso/#a/pfms/
@@ -28419,8 +28414,8 @@ púrpura/#nf/p/
 purpurar/#vt/XYPL/
 purpúreo/#a/fp/
 purulência/#nf/p/
-purulento/#a//
-pusilâmine/#hn//
+purulento/#a/pf/
+pusilânime/#hn/p/
 pusilanimidade/#nf/p/
 pus/#nm//
 puto/#nm/p/
@@ -33142,7 +33137,7 @@ telepatia/#nf/pqr/
 telepático/#a/fpH/
 teleprojéctil/AO90=teleprojétil,#nm//
 teleprojétil/PREAO90=teleprojéctil,#nm//
-telequinesia/#nf//
+telecinesia/#nf//
 tele-receptor/AO90=telerrecetor,#nm//
 telerrecetor/PREAO90=tele-receptor,#nm//
 telescola/#nf//
@@ -33191,7 +33186,6 @@ tempero/#nm/p/
 tempestade/#nf/p/
 tempestear/#vn/ZYPL/
 tempestivo/#a//
-tempestoso/#a//
 tempestuar/#vi/XYL/
 tempestuosidade/#nf/p/
 tempestuoso/#a/mpf/
@@ -33293,7 +33287,6 @@ terciário/#a/fp/
 tercina/#nf/p/
 terço/#nm/p/
 teres/#nm,N=p//
-terferência/#nf/p/
 tergiversar/#vi/XYPLv/
 termal/#an/pidt/
 termalidade/#nf/p/
@@ -33310,7 +33303,7 @@ terminar/#vn/XYPLcnDv/
 terminativo/#a/fp/
 terminologia/#nf/pr/
 término/#nm/p/
-termistor/#nm//
+termístor/#nm//
 térmita/#nf/p/
 termiteira/#nf//
 termiteiro/#nm/f/
@@ -35197,13 +35190,13 @@ vigorar/#vn/XYPLn/
 vigor/#nm//
 vigoroso/#a/fpm/
 vila-condense/#hn/p/
-vilacondense/#hn/p/
+vilacondense/AO90=vila-condense,#hn/p/
 vila-franquense/#hn/p/
-vilafranquense/#hn/p/
+vilafranquense/AO90=vila-franquense,#hn/p/
 vilanagem/#nf//
 vila/#nf/p/
 vila-novense/#hn/p/
-vilanovense/#hn/p/
+vilanovense/AO90=vila-novense,#hn/p/
 vilão/#hm/bp/
 vila-realense/#hn/p/
 vilarejo/#nm/p/

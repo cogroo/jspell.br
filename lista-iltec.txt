@@ -2,9 +2,9 @@
 -------------------------------------------
 #caixa-dos-pirolitos	caixa dos pirolitos
 #cor-de-laranja	cor de laranja                 [ALB] Corrigido
-assumpção	assunção
+#assumpção	assunção                       [ALB] OK
 #abreação	ab-reação                      [ALB] Corrigido
-alcalinoterroso	alcalino-terroso
+#alcalinoterroso	alcalino-terroso       [ALB] Great
 #anjo-da-guarda	anjo da guarda                 [ALB] Corrigido
 #autocorrecção	autocorreção                   [ALB] Corrigido
 #autocorrectivo	autocorretivo                  [ALB] Corrigido
@@ -30,7 +30,7 @@ bissectar	bissetar – bissectar (PB) --> a priberam diz que é bissectar :S
 #caminho-de-ferro	caminho de ferro       [ALB] Corrigido
 #camisa-de-forças	camisa de forças       [ALB] Corrigido
 #canto-de-cisne	canto de cisne                 [ALB] Corrigido
-caraterologia	caraterologia (PB) caracterologia (PE)
+#caraterologia	caraterologia (PB) caracterologia (PE)    [ALB] Great
 #carreira-de-tiro	carreira de tiro       [ALB] Corrigido
 #cartão-de-visita	cartão de visita       [ALB] Corrigido
 #casca-de-noz	casca de noz                   [ALB] Corrigido
@@ -44,42 +44,42 @@ caraterologia	caraterologia (PB) caracterologia (PE)
 #toucinho-do-céu	toucinho do céu        [ALB] Corrigido
 #turbo-reator	turborreator                   [ALB] Corrigido
 #unhas-de-fome	unhas de fome                  [ALB] Corrigido
-vilacondense	vila-condense
-vilafranquense	vila-franquense
-vilanovense	vila-novense
+#vilacondense	vila-condense                  [ALB] whatever
+#vilafranquense	vila-franquense                [ALB] whatever
+#vilanovense	vila-novense                   [ALB] whatever
 #ar-condicionado	ar condicionado        [ALB] Corrigido
 #não-te-rales	não te rales                   [ALB] Corrigido
-landegrave	apenas atestadas landgrave e landegrávio
+#landegrave	apenas atestadas landgrave e landegrávio   [ALB] Fixed - até tirava e pronto...
 #energitismo	energetismo                    [ALB] Corrigido
 #fora-da-lei	fora da lei                    [ALB] Corrigido
-frente-a-frente	frente a frente
-géiser	geiser ou guéiser
+#frente-a-frente	frente a frente
+#géiser	geiser ou guéiser                    [ALB] Whatever
 # felcro	velcro ? feltro ?        [ALB] Removido
 # ferente	                         [ALB] Removido
-abstusa	abstrusa
-amiudamente	amiudadamente ou miudamente.
+# abstusa	abstrusa                 [ALB] corrigido
+#amiudamente	amiudadamente ou miudamente.   [ALB] removido
 #comunial	comunal?                 [ALB] Removido
-germinibilidade	germinabilidade
+#germinibilidade	germinabilidade    [ALB] corrigido
 há-de	há de
 hão-de	hão de
-lúgrebe	lúgubre
+#lúgrebe	lúgubre            [ALB] removido o primeiro
 #macanicismo	mecanicismo              [ALB] Removido
-maleficientíssimo	maleficentíssimo?
+#maleficientíssimo	maleficentíssimo?  [ALB] removido e pronto
 #percursionista	percussionista           [ALB] Corrigido
-pusilâmine	pusilânime
+#pusilâmine	pusilânime               [ALB] corrigido
 #quarto-de-hora	quarto de hora           [ALB] Corrigido
-telequinesia	telecinesia
-tempestoso	tempestuoso
+#telequinesia	telecinesia              [ALB] Corrigido
+#tempestoso	tempestuoso              [ALB] removido o 1o
 #abulíco	abúlico                  [ALB] Corrigido
 além-fronteira	apenas atestado além-fronteiras
-alucinogéno	alucinogénio
-antimonóxido	antimonióxido (antimónio+óxido)
-aracnoídeo	aracnóideo
-arborícula	grafia correta arborícola
-aterraplanar	apenas temos atestado aterraplenar
+#alucinogéno	alucinogénio             [ALB] corrigido
+#antimonóxido	antimonióxido (antimónio+óxido)    [ALB] corrigido
+#aracnoídeo	aracnóideo               [ALB] removido o errado
+#arborícula	grafia correta arborícola    [ALB] corrigido
+#aterraplanar	apenas temos atestado aterraplenar [ALB] corrigido
 #boite	boîte                             [ALB] Removido já há tempos
-cavernícula	cavernícola
-cineastra	cineasta
+#cavernícula	cavernícola            [ALB] Corrigido
+#cineastra	cineasta                [ALB] removido o 1o
 coderniz	codorniz
 conetar	conectar (PE)
 conglumerativo	conglomerativo
@@ -87,9 +87,9 @@ coreáceo	coriáceo
 correlegionário	correligionário
 dendolatria	dendrolatria
 descompustura	descompostura
-disfrutar	desfrutar
+#disfrutar	desfrutar          [ALB] removido o 1o
 #endócrinologista	endocrinologista  [ALB] corrigido
-gadanheirro	gadanheiro
+#gadanheirro	gadanheiro                [ALB] fixed.. ops
 haraquiri	haraquíri
 hebraista	hebraísta
 imprescritabilidade	imprescritibilidade
@@ -98,40 +98,40 @@ micrólite	microlite
 oitavos-de-final	oitavos de final
 quilo-hertz	quilohertz
 silíqua	síliqua
-termistor	termístor
+#termistor	termístor                    [ALB] corrigido
 #torrão-de-açucar	torrão-de-açúcar   [ALB] Adicionado o acento
 #dia-a-dia	dia a dia                  [ALB] Corrigido
-extra-uterino	extrauterino
+#extra-uterino	extrauterino               [ALB] oops, fixed
 #farinha-de-pau	farinha de pau             [ALB] Corrigido
 #fim-de-semana	fim de semana              [ALB] corrigido
 #fio-de-prumo	fio de prumo               [ALB] Corrigido
 #fogo-de-artifício	fogo de artifício  [ALB] Corrigido
 #fora-de-jogo	fora de jogo               [ALB] Corrigido
 #gaita-de-foles	gaita de foles             [ALB] Corrigido
-interrelacionar	inter-relacionar
-língua-de-gato	língua de gato
+#interrelacionar	inter-relacionar      [ALB] acho que melhorou
+#língua-de-gato	língua de gato                [fixed]
 #lua-de-mel	lua de mel                 [ALB] corrigido
-maçã-de-adão	maçã de Adão
+#maçã-de-adão	maçã de Adão             [ALB] fixed
 #mão-de-obra	mão de obra               [ALB] corrigido
-mesa-de-cabeceira	mesa de cabeceira
-mestre-de-cerimónias	mestre de cerimónias
-mestre-de-obras	mestre de obras
+#mesa-de-cabeceira	mesa de cabeceira      [ALB] corrigido
+#mestre-de-cerimónias	mestre de cerimónias    [ALB] corrigido
+#mestre-de-obras	mestre de obras     [ALB] corrigido
 #mini-saia	minissaia                [ALB] Corrigido
 #mulher-a-dias	mulher a dias            [ALB] Corrigido
 #onomatopéico	onomatopeico             [ALB] great
-pão-de-ló	pão de ló
-pau-de-cabeleira	pau de cabeleira
+#pão-de-ló	pão de ló                 [ALB] Corrigido
+#pau-de-cabeleira	pau de cabeleira [ALB] Corrigido
 #paz-de-alma	paz de alma              [ALB] Corrigido
-pé-de-cabra	pé de cabra
-pé-de-vento	pé de vento
-pó-de-arroz	pó de arroz
+#pé-de-cabra	pé de cabra             [ALB] Corrigido
+#pé-de-vento	pé de vento            [ALB] Corrigido
+#pó-de-arroz	pó de arroz            [ALB] Corrigido
 #ponta-de-lança	ponta de lança              [ALB] Corrigido
 #quarto-de-final	quarto de final     [ALB] corrigido 
 #quartos-de-final	quartos de final    [ALB] corrigido
 #rés-do-chão	rés do chão                 [ALB] corrigido
 #rosa-dos-ventos	rosa dos ventos     [ALB] corrigido
 #fins-de-semana	fins de semana, plural de fim de semana [ALB] corrigido
-terferência	não atestado
+#terferência	não atestado                   [ALB] removido e pronto
 #calenda	plurale tantum – apenas calendas - corrigido para "calendas/#nfp"
-autos-de-fé	autos de fé
-co-orientador	coorientador
+#autos-de-fé	autos de fé                  [ALB] fixed
+#co-orientador	coorientador        [ALB] fixed
