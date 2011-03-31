@@ -1216,7 +1216,7 @@ aleluia/#nf//
 alemânico/#a//
 alemão/#hm/eb/
 além/#avl//
-além-fronteira/#avl/p/
+além-fronteiras/#avl//
 além-mar/#nm//
 além-mundo/#nm//
 além/#nm//
@@ -5117,7 +5117,8 @@ bispal/#an//
 bispável/#a//
 bispo/#nm/p/
 bissecção/#nf//
-bissectar/#vt/XYPL/
+bissectar/AO90=bissetar,#vt/XYPL/
+bissetar/PREAO90=bissectar,#vt/XYPL/
 bissector/AO90=bissetor,#hm//
 bissetor/PREAO90=bissector,#hm//
 bissectriz/AO90=bissetriz,#nf/p/
