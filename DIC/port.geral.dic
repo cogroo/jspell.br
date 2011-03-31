@@ -8175,7 +8175,7 @@ co-delinquência/AO90=codelinquência,#nf/p/
 codelinquência/PREAO90=co-delinquência,#nf/p/
 co-delinquente/AO90=codelinquente,#nm//
 codelinquente/PREAO90=co-delinquente,#nm//
-coderniz/#nf/p/
+codorniz/#nf/p/
 co-detentor/AO90=codetentor,#nm//
 codetentor/PREAO90=co-detentor,#nm//
 co-dialecto/AO90=codialeto,#nm//
@@ -8870,8 +8870,7 @@ condutivo/#a/d/
 conduto/#nm/i/
 condutor/#hm/fp/
 conduzir/#vn/ZYPLRc/
-conectar/EQAO90=conetar,#vt/XYPLS/
-conetar/PREAO90=conectar,#vt/XYPLS/
+conectar/#vt/XYPLS/
 conectivo/EQAO90=conetivo,#hm/pfd/
 conetivo/PREAO90=conectivo,#hm/pfd/
 conector/EQAO90=conetor,#nm/p/
@@ -9005,7 +9004,7 @@ conglobar/#vt/XYPLc/
 conglomerado/#hm//
 conglomerar/#vi/XYLc/
 conglomerático/#a/fp/
-conglumerativo/#a//
+conglomerativo/#a/p/
 conglutinante/#an/p/
 conglutinar/#vt/XYPLcn/
 conglutinativo/#a//
@@ -9700,7 +9699,7 @@ cordilheira/#nf/p/
 cordoaria/#nf/p/
 cordoar/#vt/XYPL/
 cordoeiro/#nm//
-coreáceo/#a/pf/
+coriáceo/#a/pf/
 coreano/#a/fp/
 co-redactor/AO90=corredator,#nm//
 corredator/PREAO90=co-redactor,#nm//
@@ -9823,7 +9822,7 @@ correlatar/#vt/XYPL/
 correlatividade/#nf/p/
 correlativo/#hm/fd/
 correlato/#a/p/
-correlegionário/#a/fp/
+correligionário/#a/fp/
 corrente/#an/pm/
 corrente/#nf/p/
 correnteza/#nf//
@@ -10873,7 +10872,7 @@ demorar/#vn/XYPLB/
 demoroso/#a//
 demostrativo/#a//
 demover/#vt/XYPLMv/
-dendolatria/#nf/p/
+dendrolatria/#nf/p/
 dendrites/#nfp//
 denegar/#vt/XYPLc/
 denegridor/#hm/pdf/
@@ -11218,7 +11217,7 @@ descompressão/#nf//
 descompressivo/#a//
 descomprimir/#vt/XYPL/
 descomprometido/#a/fp/
-descompustura/#nf/p/
+descompostura/#nf/p/
 descomunal/#an/pd/
 descomunalidade/#nf/p/
 desconceito/#nm//
@@ -17768,7 +17767,7 @@ habitual/#an/pmi/
 habitualismo/#nm/p/
 habituar/#vt/XYPLSc/
 hã/CAT=in//
-há-de/CAT=cp,Verb=haver,Prep=de,G=_,N=s,P=3//
+há-de/AO90=,CAT=cp,Verb=haver,Prep=de,G=_,N=s,P=3//
 haitiano/#hm/fp/
 halação/#nf//
 hálito/#nm/p/
@@ -17785,10 +17784,9 @@ hamburguês/#hm//
 handebol/#nm/t/
 hangar/#nm/p/
 hanoveriano/#a//
-hão-de/CAT=cp,Verb=haver,Prep=de,G=_,N=p,P=3//
+hão-de/AO90=,CAT=cp,Verb=haver,Prep=de,G=_,N=p,P=3//
 haplóide/AO90=haploide,#an/p/
 haploide/PREAO90=haplóide,#an/p/
-haraquiri/#nm//
 harém/#nm/p/
 harmonia/#nf/pS/
 harmónica/#hf//
@@ -17816,7 +17814,7 @@ haver/#vn,I=3/PL/
 haxixe/#nm//
 hebraico/#hm/fp/
 hebraísmo/#nm/p/
-hebraista/#nn//
+hebraísta/#nn//
 hebraizar/#vi,I=3/YL/
 hebreu/#nm/p/
 hectare/#nm/p/
@@ -18637,7 +18635,7 @@ impremeditado/#a//
 imprensa/#nf//
 imprensar/#vt/XYPLD/
 imprescindível/#an/p/
-imprescritabilidade/#nf/p/
+imprescritibilidade/#nf/p/
 imprescritível/#an//
 impressão/#nf/p/
 impressibilidade/#nf/p/
@@ -20057,7 +20055,7 @@ intransitado/#a/fp/
 intransitável/#an/p/
 intransitivo/#a/pmf/
 intransmissibilidade/#nf/p/
-intransmissível/#an/d/
+intransmissível/#an/dp/
 intransponível/#an/p/
 intransportável/#an//
 intrapélvico/#a/fp/
@@ -21166,7 +21164,7 @@ lesmento/#a//
 lés/#nm//
 lestada/#nf//
 leste/#nm//
-lesto/#a//
+lesto/#a/pf/
 letal/#an/pd/
 letalidade/#nf/p/
 letão/#nm/pb/
@@ -22540,7 +22538,7 @@ medusa/#nf/p/
 megaciclo/#nm//
 megadine/#nm//
 megafone/#nm/p/
-mega-hertz/#nm//
+megahertz/#nm//
 megajoule/#nm//
 megalítico/#a/fp/
 megalomania/#nf/pqr/
@@ -22912,7 +22910,7 @@ micrófono/#nm//
 microfotografia/#nf/pqr/
 micrograma/#nm/p/
 microgravar/#vt/XYPLc/
-micrólite/#nf//
+microlite/#nf/p/
 microlítico/#nm//
 microlitro/#nm//
 micrométrico/#a//
@@ -24709,9 +24707,9 @@ oídio/#nm//
 oirar/#nf//
 oiro/#nm/p/
 oitava/#nf/p/
-oitavo-de-final/#nm//
+oitavo-de-final/AO90=,#nm//
 oitavo/#o/fp/
-oitavos-de-final/$oitavo-de-final$#nm$N=p//
+oitavos-de-final/AO90=,$oitavo-de-final$#nm$N=p//
 oitenta/#ca//
 oito/#ca//
 oitocentista/#a/p/
@@ -28653,7 +28651,7 @@ quilociclo/#nm/p/
 quilograma/#nm/p/
 quilograma-padrão/#nm//
 quilograma-peso/#nm//
-quilo-hertz/#nm//
+quilohertz/#nm//
 quilojoule/#nm/p/
 quilolitro/#nm/p/
 quilometragem/#nf//
@@ -31614,6 +31612,7 @@ sequela/#nf/p/
 sequenciação/#nf//
 sequencial/#hm2/pm/
 sequência/#nf/p/
+sequenciar/#vt/XY/
 sequer/#av//
 sequestrador/#hm//
 sequestrar/#vt/XYPLcDv/
@@ -31636,6 +31635,7 @@ seriação/#nf//
 serial/#an//
 seriamente/#av//
 seriar/#vt/XYP/
+sericaia/#nf//
 sérico/#a//
 seriedade/#nf/p/
 série/#nf/p/
@@ -31698,6 +31698,7 @@ servofreio/#nm//
 servo/#hm/fp/
 servomecanismo/#nm/p/
 servomotor/#nm//
+sésamo/#nm//
 sesimbrão/#hm//
 sesmaria/#nf/p/
 sessão/#nf/p/
@@ -31717,6 +31718,7 @@ sete-e-meio/#nm//
 seteira/#hf//
 seteiro/#hm/f/
 setenta/#ca//
+setentrião/#nm//
 setentrional/#hn/p/
 sétimo/#o/fp/
 setubalense/#hn/p/
@@ -31792,19 +31794,19 @@ silencioso/#hm/fpm/
 silepse/#nf//
 sílex/#nm//
 silhueta/#nf/p/
-sílica/#nf//
+sílica/#nf/p/
 silicatado/#a//
 silicato/#nm/p/
 silício/#a//
-silicioso/#a//
-silicone/#nf//
+silicioso/#a/p/
+silicone/#nf/p/
 silicose/#nf//
-silíqua/#nf//
+síliqua/#nf//
 silogismo/#nm/p/
 silogístico/#a//
 silo/#nm/p/
 siltoso/#a/pf/
-silvado/#hm//
+silvado/#hm/p/
 silva/#nf/p/
 silvar/#vi/XYL/
 silvestre/#an/p/
@@ -31971,7 +31973,8 @@ sitiador/#hm//
 sitiante/#hn/p/
 sitiar/#vt/XYPLDn/
 sítio/#nm/p/
-situação/#nf//
+sito/#hm/p/
+situação/#nf/p/
 situacionismo/#nm/p/
 situacionista/#nn//
 situar/#vt/XYPLc/
@@ -32094,7 +32097,7 @@ socializar/#vt/XYPLcn/
 sociável/#an/d/
 sociedade/#nf/p/
 societário/#hm/pf/
-sócio-cultural/#a/p/
+sóciocultural/#a/p/
 sócio-económica/#a/p/
 socioeconómico/#a/p/
 sócio/#hm/fp/
@@ -32130,6 +32133,8 @@ sofrivelmente/#av//
 sogro/#nm/fp/
 soja/#nf//
 sola/#nf/p/
+sol-posto/#nm//
+sóis-postos/$sol-posto$#nm$N=p/
 solapadamente/#av//
 solar/#an/p/
 solarengo/#hm/f/
@@ -32534,6 +32539,7 @@ sudeste/#nm//
 sudoeste/#nm//
 sudorífero/#a/pfA/
 sudorífico/#a/pfA/
+sudoríparo/#a/p/
 sueca/#nf//
 sueco/#hm/fp/
 suestada/#nf//
@@ -32548,6 +32554,8 @@ sufixal/#an//
 sufixar/#vn/XYPLc/
 sufixativo/#a//
 sufixo/#nm/p/
+suflé/#nm/p/
+suflê/#nm/p/
 sufocante/#an/p/
 sufocar/#vn/XYPLcMDn/
 sufocativo/#a//

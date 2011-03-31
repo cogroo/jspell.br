@@ -15,7 +15,7 @@
 #bicho-do-mato	bicho do mato                  [ALB] Corrigido
 #bico-de-obra	bico de obra                   [ALB] Corrigido
 #bilhete-de-visita	bilhete de visita      [ALB] REMOVIDO (nao acho que faça sentido)
-bissectar	bissetar – bissectar (PB) --> a priberam diz que é bissectar :S
+--bissectar	bissetar – bissectar (PB) --> a priberam diz que é bissectar :S
 #boca-de-fogo	boca de fogo                   [ALB] Corrigido
 #boca-de-incêndio	boca de incêndio       [ALB] Corrigido
 #boca-de-sino	boca de sino                   [ALB] Corrigido
@@ -60,8 +60,8 @@ bissectar	bissetar – bissectar (PB) --> a priberam diz que é bissectar :S
 #amiudamente	amiudadamente ou miudamente.   [ALB] removido
 #comunial	comunal?                 [ALB] Removido
 #germinibilidade	germinabilidade    [ALB] corrigido
-há-de	há de
-hão-de	hão de
+#há-de	há de
+#hão-de	hão de
 #lúgrebe	lúgubre            [ALB] removido o primeiro
 #macanicismo	mecanicismo              [ALB] Removido
 #maleficientíssimo	maleficentíssimo?  [ALB] removido e pronto
@@ -71,7 +71,7 @@ hão-de	hão de
 #telequinesia	telecinesia              [ALB] Corrigido
 #tempestoso	tempestuoso              [ALB] removido o 1o
 #abulíco	abúlico                  [ALB] Corrigido
-além-fronteira	apenas atestado além-fronteiras
+--além-fronteira	apenas atestado além-fronteiras
 #alucinogéno	alucinogénio             [ALB] corrigido
 #antimonóxido	antimonióxido (antimónio+óxido)    [ALB] corrigido
 #aracnoídeo	aracnóideo               [ALB] removido o errado
@@ -80,24 +80,24 @@ além-fronteira	apenas atestado além-fronteiras
 #boite	boîte                             [ALB] Removido já há tempos
 #cavernícula	cavernícola            [ALB] Corrigido
 #cineastra	cineasta                [ALB] removido o 1o
-coderniz	codorniz
-conetar	conectar (PE)
-conglumerativo	conglomerativo
-coreáceo	coriáceo
-correlegionário	correligionário
-dendolatria	dendrolatria
-descompustura	descompostura
+#coderniz	codorniz         [FIXED]
+#conetar	conectar (PE)            Great
+#conglumerativo	conglomerativo
+#coreáceo	coriáceo
+#correlegionário	correligionário
+#dendolatria	dendrolatria
+#descompustura	descompostura
 #disfrutar	desfrutar          [ALB] removido o 1o
 #endócrinologista	endocrinologista  [ALB] corrigido
 #gadanheirro	gadanheiro                [ALB] fixed.. ops
-haraquiri	haraquíri
-hebraista	hebraísta
-imprescritabilidade	imprescritibilidade
-mega-hertz	megahertz
-micrólite	microlite
-oitavos-de-final	oitavos de final
-quilo-hertz	quilohertz
-silíqua	síliqua
+#haraquiri	haraquíri
+#hebraista	hebraísta
+#imprescritabilidade	imprescritibilidade
+#mega-hertz	megahertz
+#micrólite	microlite
+#oitavos-de-final	oitavos de final
+#quilo-hertz	quilohertz
+#silíqua	síliqua
 #termistor	termístor                    [ALB] corrigido
 #torrão-de-açucar	torrão-de-açúcar   [ALB] Adicionado o acento
 #dia-a-dia	dia a dia                  [ALB] Corrigido
