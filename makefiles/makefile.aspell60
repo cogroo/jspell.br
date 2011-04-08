@@ -25,19 +25,19 @@ publish :: aspell6-ao-tgz aspell6-preao-tgz
 
 
 aspell6-preao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-preao.txt
-	cd $(AKIT); perl pre pt_PT iso-8859-1
-	cp $(WLDIR)/wl-preao.txt   $(AKIT)/pt_PT/pt_PT.wl
-	cp $(A60)/Copyright        $(AKIT)/pt_PT
-	cp $(A60)/pt_PT_phonet.dat $(AKIT)/pt_PT
-	cp $(A60)/pt_PT_repl.dat   $(AKIT)/pt_PT
-	perl -pe 'BEGIN{$$D=$(DATE);chomp$$D};s/VERSAO/$$D/g;' $(A60)/info > $(AKIT)/pt_PT/info
-	perl -pe 's/LANG/pt_PT/g' $(A60)/pt_PT.dat > $(AKIT)/pt_PT/pt_PT.dat
-	LC_ALL=pt_PT.iso8859-1 perl $(A60)/genAff.pl $(JOUT)-preao/port-preao.aff > $(AKIT)/pt_PT/pt_PT_affix.dat
-	cd $(AKIT)/pt_PT; perl proc create
-	cd $(AKIT)/pt_PT; ./configure
-	cd $(AKIT)/pt_PT; make
-	mv $(AKIT)/pt_PT/* $(AO60)-preao
-	rm -fr $(AKIT)/pt_PT
+	cd $(AKIT); perl pre pt_PT-preao iso-8859-1
+	cp $(WLDIR)/wl-preao.txt   $(AKIT)/pt_PT-preao/pt_PT-preao.wl
+	cp $(A60)/Copyright        $(AKIT)/pt_PT-preao
+	cp $(A60)/pt_PT_phonet.dat $(AKIT)/pt_PT-preao/pt_PT-preao_phonet.dat
+	cp $(A60)/pt_PT_repl.dat   $(AKIT)/pt_PT-preao/pt_PT-preao_repl.dat
+	perl -pe 'BEGIN{$$D=$(DATE);chomp$$D};s/VERSAO/$$D/g;' $(A60)/info-preao > $(AKIT)/pt_PT-preao/info
+	perl -pe 's/LANG/pt_PT/g' $(A60)/pt_PT-preao.dat > $(AKIT)/pt_PT-preao/pt_PT-preao.dat
+	LC_ALL=pt_PT.iso8859-1 perl $(A60)/genAff.pl $(JOUT)-preao/port-preao.aff > $(AKIT)/pt_PT-preao/pt_PT-preao_affix.dat
+	cd $(AKIT)/pt_PT-preao; perl proc create
+	cd $(AKIT)/pt_PT-preao; ./configure
+	cd $(AKIT)/pt_PT-preao; make
+	mv $(AKIT)/pt_PT-preao/* $(AO60)-preao
+	rm -fr $(AKIT)/pt_PT-preao
 
 aspell6-ao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cd $(AKIT); perl pre pt_PT iso-8859-1
