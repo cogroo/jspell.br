@@ -31,7 +31,7 @@ aspell6-preao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-preao.txt
 	cp $(A60)/pt_PT_phonet.dat $(AKIT)/pt_PT-preao/pt_PT-preao_phonet.dat
 	cp $(A60)/pt_PT_repl.dat   $(AKIT)/pt_PT-preao/pt_PT-preao_repl.dat
 	perl -pe 'BEGIN{$$D=$(DATE);chomp$$D};s/VERSAO/$$D/g;' $(A60)/info-preao > $(AKIT)/pt_PT-preao/info
-	perl -pe 's/LANG/pt_PT/g' $(A60)/pt_PT-preao.dat > $(AKIT)/pt_PT-preao/pt_PT-preao.dat
+	perl -pe 's/LANG/pt_PT-preao/g' $(A60)/pt_PT-preao.dat > $(AKIT)/pt_PT-preao/pt_PT-preao.dat
 	LC_ALL=pt_PT.iso8859-1 perl $(A60)/genAff.pl $(JOUT)-preao/port-preao.aff > $(AKIT)/pt_PT-preao/pt_PT-preao_affix.dat
 	cd $(AKIT)/pt_PT-preao; perl proc create
 	cd $(AKIT)/pt_PT-preao; ./configure
