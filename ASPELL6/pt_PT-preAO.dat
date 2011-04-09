@@ -1,0 +1,8 @@
+name pt_PT-preAO
+charset iso-8859-1
+special - -*-
+#soundslike pt_PT-preAO
+affix pt_PT-preAO
+affix-compress true
+repl-table pt_PT-preAO
+
