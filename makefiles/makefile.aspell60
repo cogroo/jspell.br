@@ -31,6 +31,7 @@ aspell6-preao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-preao.txt
 	cp $(A60)/pt_PT_phonet.dat $(AKIT)/pt_PT-preao/pt_PT-preao_phonet.dat
 	cp $(A60)/pt_PT_repl.dat   $(AKIT)/pt_PT-preao/pt_PT-preao_repl.dat
 	perl -pe 'BEGIN{$$D=$(DATE);chomp$$D};s/VERSAO/$$D/g;' $(A60)/info-preao > $(AKIT)/pt_PT-preao/info
+	perl -pe 'BEGIN{$$D=$(FULLDATE);chomp$$D};s/DATE/$$D/g;' $(A60)/LEIA-ME-preao.txt > $(AKIT)/pt_PT-preao/LEIAME-preao.txt
 	perl -pe 's/LANG/pt_PT-preao/g' $(A60)/pt_PT-preao.dat > $(AKIT)/pt_PT-preao/pt_PT-preao.dat
 	LC_ALL=pt_PT.iso8859-1 perl $(A60)/genAff.pl $(JOUT)-preao/port-preao.aff > $(AKIT)/pt_PT-preao/pt_PT-preao_affix.dat
 	cd $(AKIT)/pt_PT-preao; perl proc create
@@ -46,6 +47,7 @@ aspell6-ao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cp $(A60)/pt_PT_phonet.dat $(AKIT)/pt_PT
 	cp $(A60)/pt_PT_repl.dat   $(AKIT)/pt_PT
 	perl -pe 'BEGIN{$$D=$(DATE);chomp$$D};s/VERSAO/$$D/g;' $(A60)/info > $(AKIT)/pt_PT/info
+	perl -pe 'BEGIN{$$D=$(FULLDATE);chomp$$D};s/DATE/$$D/g;' $(A60)/LEIA-ME.txt > $(AKIT)/pt_PT/LEIAME.txt
 	perl -pe 's/LANG/pt_PT/g' $(A60)/pt_PT.dat > $(AKIT)/pt_PT/pt_PT.dat
 	LC_ALL=pt_PT.iso8859-1 perl $(A60)/genAff.pl $(JOUT)-ao/port.aff > $(AKIT)/pt_PT/pt_PT_affix.dat
 	cd $(AKIT)/pt_PT; perl proc create

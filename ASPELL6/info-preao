@@ -1,9 +1,9 @@
 name_english Portuguese
 name_native português
-lang pt_PT-preAO
-#data-file pt_PT-preAO_phonet.dat
-data-file pt_PT-preAO_repl.dat
-data-file pt_PT-preAO_affix.dat
+lang pt_PT-preao
+#data-file pt_PT-preao_phonet.dat
+data-file pt_PT-preao_repl.dat
+data-file pt_PT-preao_affix.dat
 author:
   name Jose Joao Almeida
   name-native José João Almeida
@@ -26,5 +26,5 @@ accurate true
 complete true
 mode aspell6
 dict:
-  name pt_PT-preAO
-  add pt_PT-preAO
+  name pt_PT-preao
+  add pt_PT-preao

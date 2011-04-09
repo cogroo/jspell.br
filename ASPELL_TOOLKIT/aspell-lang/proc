@@ -1163,7 +1163,7 @@ sub README() {
   chop $dict_list;
   my $extra_info;
   $extra_info .= "Wordlist URL: $info->{url}\n" if exists $info->{url};
-  $extra_info .= "Source Verson: $info->{source_version}\n" if exists $info->{source_version};
+  $extra_info .= "Source Version: $info->{source_version}\n" if exists $info->{source_version};
   $extra_info .= "Source URL: $info->{source_url}\n" if exists $info->{source_url};
 
   if ($info->{complete} eq 'true' && $info->{accurate} eq 'true') {

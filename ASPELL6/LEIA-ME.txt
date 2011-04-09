@@ -1,0 +1,44 @@
+ Dicionário de português para GNU Aspell 0.60
+
+ Versão de DATE
+
+ Mantido por: 
+   - José João Almeida <jj at di uminho pt>
+   - Alberto Simões    <ambs at di uminho pt>
+ Também com a colaboração de:
+   - Rui Vilela <ruivil at gmail com>
+   - Paulo Rocha
+   - Ulisses Pinto
+
+ Licença GPLv2
+
+ Versões actualizadas regularmente em:
+  - http://natura.di.uminho.pt/download/sources/Dictionaries/
+
+
+ Este dicionário, mantido pelo Projecto Natura, pretende cobrir o
+ actual léxico português, de acordo com o acordo ortográfico de 1990,
+ tendo tido a colaboração especial da equipa do Portal da Língua
+ Portuguesa, que mantém o actual léxico oficializado da língua
+ portuguesa.
+
+
+ Este dicionário é construído com os seguintes compromissos:
+
+ - não adicionar palavras não usadas actualmente (um dicionário
+   convencional tem milhares de palavras que já não se usam, e que a
+   maioria dos Portugueses não reconhece nem usa);
+
+ - não adicionar palavras que embora se possam usar (raramente),
+   colidem com palavras usadas diariamente, e tornariam o dicionário
+   menos útil. Como exemplo, a palavra "arvore" do verbo "arvorar" não
+   é contemplada no nosso dicionário já que iria mascarar o erro comum
+   de esquecimento do acento na palavra "árvore";
+
+ - embora defendamos a nossa língua, o dicionário inclui uma secção
+   pequena de estrangeirismos. Na versão do dicionário disponibilizada
+   para análise morfológica (jSpell) essa informação está
+   explícita. No caso do dicionário ASPELL, que serve apenas para
+   correcção ortográfica, o único inconveniente desta decisão é que
+   palavras como "download" não aparecerão marcadas como erro.
+

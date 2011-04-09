@@ -1,4 +1,4 @@
-2007-10-24
+2010-11-21
 
 This is an experimental version of the Aspell language toolkit
 (temporary name).  It can be used to create dictionaries for Aspell
@@ -472,7 +472,7 @@ Since there is the possibility of two different dictionaries providing
 the same charset file, DO NOT modify the mappings or the charset files.
 If you wish to customize it for your language rename it to l-<lang>.cset.
 
-There are like the base character set except that the C0 and C1
+These are like the base character set except that the C0 and C1
 control areas were remapped to include any decomposed letter found the
 unicode blocks "Latin-1 Supplement" and "Latin Extended-A" and any
 combining marks used in any of the latin unicode code blocks "Latin-1
@@ -489,7 +489,7 @@ Additional".
   iso-8859-15-u
   iso-8859-16-u
 
-There are identical to the base character set except that latin
+These are identical to the base character set except that latin
 letters are not used so that Aspell won't flag words written using
 the Latin script as incorrect.
   cp1251-nl
@@ -537,8 +537,9 @@ Special mappings using private use characters:
 
 The latin letters are not used in any of the above unicode mappings.
 
-Language specific mappings.  If you use any of these you should rename
-them as the exact details may change without notice.
+Language specific mappings.  Unlike the other mappings, it is
+permissible to modify these.  However to avoid future problems,
+please let me know about the changes at kevina@gnu.org.
   l-az - Azerbaijani
   l-fa - Persian
   l-ky - Kirghiz
@@ -546,3 +547,7 @@ them as the exact details may change without notice.
   l-tg - Tajik 
   l-tr - Turkish (iso-8859-9 with special case rules for dotless I)
   l-uz - Uzbek
+
+Some other language specific mappings are also available which I
+created for various people, most have not been used in an official
+dictionary yet and might still be incomplete.
