@@ -60,9 +60,11 @@ aspell6-ao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-ao.txt
 	rm -fr $(AKIT)/pt_PT
 
 $(AO60)-ao:
+	rm -fr $(AO60)-ao
 	mkdir -p $(AO60)-ao
 
 $(AO60)-preao:
+	rm -fr $(AO60)-preao
 	mkdir -p $(AO60)-preao
 
 realclean :: a5clean-toolkit

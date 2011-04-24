@@ -34699,6 +34699,7 @@ vagabundo/#nn/fp/
 vagalhão/#nm//
 vagância/#nf/p/
 vaga/#nf/p/
+vaga-lume/#nm/p/
 vagão-cama/#nm//
 vagão/#nm/p/
 vagão-restaurante/#nm/p/
@@ -34901,6 +34902,7 @@ vegetariano/#hm/fp/
 vegetar/#vi/XYLcv/
 vegetativo/#a/fp/
 veia/#nf/p/
+velcro/#nm//
 veicular/#an//
 veicular/#vt/XYPLDc/
 veículo/#nm/p/
@@ -35006,9 +35008,11 @@ verboso/#a/dfp/
 verdadeiro/#hm/pfm/
 verdade/#nf/p/
 verdadíssima/#nf//
-verde-escuro/#nm//
+verde-alface/#hm//
+verde-claro/#hm//
+verde-escuro/#hm//
 verde-esmeralda/#hm//
-verde-garrafa/#nm//
+verde-garrafa/#hm//
 verde/#hm2/p/
 verdejância/#nf/p/
 verdejante/#an/p/
@@ -35177,7 +35181,8 @@ videira/#hf/p/
 vidência/#nf/p/
 vide/#nf/p/
 vidente/#hn/p/
-videoconferência/#nf//
+videocassete/#nf/p/
+videoconferência/#nf/p/
 videogravador/#nm/p/
 videojogo/#nm/p/
 vídeo/#nm/p/
@@ -35187,6 +35192,7 @@ vidraceiro/#nm//
 vidracento/#a//
 vidrador/#nm//
 vidragem/#nf//
+vidrão/#nm//
 vidraria/#nf/p/
 vidrar/#vn/XYPLMD/
 vidreiro/#hm/fp/
@@ -35404,6 +35410,7 @@ viuvez/#nf/p/
 viuvinha/#nf//
 viúvo/#hm/fp/
 vivacíssimo/#a//
+vivaço/#hm/pf/
 viva/#i//
 vivalma/#nf//
 vivaz/#a/pds/
@@ -35468,6 +35475,7 @@ volátil/#hm2/a/
 volatilidade/#nf/p/
 volatilizante/#an/p/
 volatilizar/#vt/XYPLcnv/
+vólei/#nm//
 voleibol/#nm/t/
 volfrâmio/#nm//
 volframista/#nn/p/
@@ -35542,6 +35550,8 @@ wagneriano/#a/fp/
 washingtoniano/#a/fp/
 watt-hora/#nm//
 watt/#nm/p/
+x-acto/AO90=x-ato,#nm//
+x-ato/PREAO90=x-acto,#nm//
 xadrezista/#nn/p/
 xadrez/#nm//
 xaile/#nm/p/
@@ -35588,7 +35598,8 @@ zambiano/#hm/fp/
 zambujal/#nm//
 zambujeiro/#nm//
 zanga/#nf/p/
-zângão/#hm//
+zângão/#hm/p/
+zangão/#hm/p/
 zangar/#vn/XYPLD/
 zaragata/#nf/p/
 zaragatear/#vi/ZYL/
