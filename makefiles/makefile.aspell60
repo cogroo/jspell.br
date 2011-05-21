@@ -38,6 +38,7 @@ aspell6-preao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-preao.txt
 	cd $(AKIT)/pt_PT-preao; perl proc create
 	cd $(AKIT)/pt_PT-preao; ./configure
 	cd $(AKIT)/pt_PT-preao; make
+	rm -fr $(AO60)-preao/*
 	mv $(AKIT)/pt_PT-preao/* $(AO60)-preao
 	rm -fr $(AKIT)/pt_PT-preao
 
@@ -56,6 +57,7 @@ aspell6-ao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-ao.txt
 	cd $(AKIT)/pt_PT; ./configure
 	cd $(AKIT)/pt_PT; make
 	cd $(AKIT)/pt_PT; perl -i -pe 's/^extra_files =/extra_files = LEIAME.txt/' Makefile
+	rm -fr $(AO60)-ao/*
 	mv $(AKIT)/pt_PT/* $(AO60)-ao
 	rm -fr $(AKIT)/pt_PT
 
