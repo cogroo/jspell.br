@@ -9367,10 +9367,8 @@ contractivo/EQAO90=contrativo,#a//
 contrativo/PREAO90=contractivo,#a//
 contracto/EQAO90=contrato,#a/up/
 contrato/PREAO90=contracto,#a/up/
-contractual/EQAO90=contratual,#an/m/
-contratual/PREAO90=contractual,#an/m/
-contractuante/EQAO90=contratuante,#an/p/
-contratuante/PREAO90=contractuante,#an/p/
+contratual/#an/m/
+contratuante/#an/p/
 contractura/EQAO90=contratura,#nf//
 contratura/PREAO90=contractura,#nf//
 contracunhar/#vt/XYPL/
@@ -14362,8 +14360,8 @@ espectrografia/EQAO90=espetrografia,#nf/pr/
 espetrografia/PREAO90=espectrografia,#nf/pr/
 espectrometria/EQAO90=espetrometria,#nf/pr/
 espetrometria/PREAO90=espectrometria,#nf/pr/
-espectrómetro/EQAO90=espetrômetro,#nm/p/
-espetrômetro/PREAO90=espectrómetro,#nm/p/
+espectrómetro/EQAO90=espetrómetro,#nm/p/
+espetrómetro/PREAO90=espectrómetro,#nm/p/
 espectro/EQAO90=espetro,#nm/p/
 espetro/PREAO90=espectro,#nm/p/
 espectroscopia/EQAO90=espetroscopia,#nf//
@@ -26189,7 +26187,7 @@ penhorista/#nn//
 penhor/#nm//
 penicar/#vt/XYPL/
 penicheiro/#hm//
-penichence/#hn/p/
+penichense/#hn/p/
 penicilina/#nf/p/
 penico/#nm/p/
 péni/#nm/p/
@@ -26243,7 +26241,7 @@ penumbrar/#vt/XYPL/
 penumbroso/#a//
 penúria/#nf//
 penurioso/#a//
-pepeliço/#nm//
+papeliço/#nm//
 pepinal/#nm//
 pepineira/#nf//
 pepineiro/#nm/f/
@@ -29091,8 +29089,7 @@ reaccionário/AO90=reacionário,#a/fp/
 reacionário/PREAO90=reaccionário,#a/fp/
 reaccionarismo/AO90=reacionarismo,#nm/p/
 reacionarismo/PREAO90=reaccionarismo,#nm/p/
-reactância/EQAO90=reatância,#nf/p/
-reatância/PREAO90=reactância,#nf/p/
+reactância/#nf/p/
 reactividade/AO90=reatividade,#nf/p/
 reatividade/PREAO90=reactividade,#nf/p/
 reactivo/AO90=reativo,#hm/fp/
@@ -31131,7 +31128,7 @@ são/#a/ab/
 são-bernardo/#nm//
 são-joanense/#hn/p/
 são-joanino/#hm//
-são-tircence/#hn//
+são-tircense/#hn//
 são-tomense/#hn/p/
 sapador/#nm/p/
 sapal/#nm/p/
@@ -31979,7 +31976,7 @@ situação/#nf/p/
 situacionismo/#nm/p/
 situacionista/#nn//
 situar/#vt/XYPLc/
-snobe/#nm/i/
+snob/#nm/i/
 snobismo/#nm/p/
 soada/#nf/p/
 soalhado/#hm//
@@ -32098,7 +32095,7 @@ socializar/#vt/XYPLcn/
 sociável/#an/d/
 sociedade/#nf/p/
 societário/#hm/pf/
-sóciocultural/#a/p/
+sociocultural/#a/p/
 sócio-económica/#a/p/
 socioeconómico/#a/p/
 sócio/#hm/fp/
@@ -34671,7 +34668,7 @@ utopista/#hn//
 uvaça/#nf//
 uval/#an//
 uva/#nf/p/
-uzbeque/#a/p/
+usbeque/#a/p/
 vacação/#nf//
 vacada/#nf//
 vaca-fria/#nf//
