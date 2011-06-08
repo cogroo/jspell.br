@@ -7858,6 +7858,7 @@ circulatório/#a/fp/
 círculo/#nm/p/
 circum-navegador/#nm//
 circum-navegar/#vn/XYPLD/
+circum-navegação/#nf//
 circuncidar/#vt/XYPL/
 circuncisão/#nf//
 circunciso/#hm//
@@ -9600,6 +9601,8 @@ convulso/#a/fp/
 coobrigar/#vt/XYPLc/
 co-ocupante/AO90=coocupante,#nm/p/
 coocupante/PREAO90=co-ocupante,#nm/p/
+co-ocorrência/AO90=coocorrência,#nf/p/
+coocorrência/PREAO90=co-ocorrência,#nf/p/
 cooperador/#hm//
 cooperar/#vi/XYLcDn/
 cooperativa/#nf//
@@ -22025,7 +22028,8 @@ manchete/#nf/p/
 manchinha/#nf//
 manchu/#hn/p/
 manco/#hm/pf/
-manda-chuva/#nm//
+manda-chuva/AO90=mandachuva,#nm/p/
+mandachuva/PREAO90=manda-chuva,#nm/p/
 mandado/#hm//
 mandador/#hm//
 mandante/#hn/p/
@@ -25394,6 +25398,7 @@ panaceia/#nf//
 panal/#hm//
 panamense/#hn/p/
 pan-americanismo/#nm//
+pan-africano/#am/fp/
 panamiano/#hn/fp/
 panar/#an//
 panar/#vt/XYPL/
