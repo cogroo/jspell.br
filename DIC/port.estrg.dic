@@ -31,7 +31,7 @@ holding/#nf,ORIG=ing//
 ibidem/#av,ORIG=lat//
 jacuzzi/#nm,ORIG=ita//
 jean/CAT=nc,N=s,G=_,ORIG=ing//
-jeans/$jean$,CAT=nc,N=s,G=_,ORIG=ing$N=p//
+jeans/$jean$CAT=nc,N=s,G=_,ORIG=ing$N=p//
 jiu-jitsu/#nm,ORIG=jap//
 karaoke/#nm,ORIG=jap,PT=caraoque//
 karaté/#nm,PT=caraté,ORIG=jap//
