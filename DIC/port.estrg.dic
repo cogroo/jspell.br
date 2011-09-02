@@ -56,7 +56,7 @@ piercing/#nm,ORIG=ing/p/
 playstation/#nm,ORIG=ing/p/
 portfólio/#nm,PT=portefólio/p/
 poster/#nm,PT=póster,ORIG=ing//
-posters/$poster$,#nm,PT=póster,ORIG=ing$N=p//
+posters/$poster$#nm,PT=póster,ORIG=ing$N=p//
 posteriori/#av,ORIG=lat//
 práxis/#nfp,ORIG=gre//
 priori/#av,ORIG=lat//
