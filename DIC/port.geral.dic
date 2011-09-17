@@ -497,8 +497,8 @@ acto/AO90=ato,#nm/p/
 ato/PREAO90=acto,#nm/p/
 actor/AO90=ator,#nm/p/
 ator/PREAO90=actor,#nm/p/
-actriz/AO90=atriz,$actor$#nf/p/
-atriz/PREAO90=actriz,$ator$#nf/p/
+actriz/$actor$AO90=atriz,#nf/p/
+atriz/$ator$PREAO90=actriz,#nf/p/
 actuação/AO90=atuação,#nf/p/
 atuação/PREAO90=actuação,#nf/p/
 actual/AO90=atual,#an/pmd/
@@ -12792,8 +12792,8 @@ electrão-volt/AO90=eletrão-volt,#nm//
 eletrão-volt/PREAO90=electrão-volt,#nm//
 electrencefalograma/AO90=eletrencefalograma,#nm//
 eletrencefalograma/PREAO90=electrencefalograma,#nm//
-electricamente/AO90=eletricamente,$eléctrico$#a$#avm//
-eletricamente/PREAO90=electricamente,$elétrico$#a$#avm//
+electricamente/$eléctrico$AO90=eletricamente,#a$#avm//
+eletricamente/$elétrico$PREAO90=electricamente,#a$#avm//
 electricidade/AO90=eletricidade,#nf/p/
 eletricidade/PREAO90=electricidade,#nf/p/
 electricismo/AO90=eletricismo,#nm/p/
@@ -24722,7 +24722,7 @@ oiro/#nm/p/
 oitava/#nf/p/
 oitavo-de-final/AO90=,#nm//
 oitavo/#o/fp/
-oitavos-de-final/AO90=,$oitavo-de-final$#nm$N=p//
+oitavos-de-final/$oitavo-de-final$AO90=,#nm$N=p//
 oitenta/#ca//
 oito/#ca//
 oitocentista/#a/p/
