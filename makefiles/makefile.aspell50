@@ -28,40 +28,42 @@ publish :: aspell5-ao-tgz aspell5-preao-tgz
 
 
 aspell5ao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-ao.txt
-	@ echo "Creating aspell5 empty dictionary"
+	@ echo "[AS-ao 5] Creating aspell5 empty dictionary"
 	cd $(AKIT); perl pre pt iso-8859-1
-	@ echo "Filling with computed files"
+	@ echo "[AS-ao 5] Filling with computed files"
 	cp $(WLDIR)/wl-ao.txt $(AKIT)/pt/pt.wl
 	cp $(A50)/Copyright $(AKIT)/pt
-	@ echo "Replacing variables"
+	@ echo "[AS-ao 5] Replacing variables"
 	perl -pe 'BEGIN{ $$D=$(DATE);chomp $$D}; s/VERSAO/$$D/g;' $(A50)/info > $(AKIT)/pt/info
 	perl -pe 's/LANG/pt/g' $(A50)/pt.dat > $(AKIT)/pt/pt.dat
-	@ echo "Running aspell toolkit: create"
+	@ echo "[AS-ao 5] Running aspell toolkit: create"
 	cd $(AKIT)/pt; perl proc create
-	@ echo "Running aspell toolkit: configure"
+	@ echo "[AS-ao 5] Running aspell toolkit: configure"
 	cd $(AKIT)/pt; ./configure
-	@ echo "Running aspell toolkit: make"
+	@ echo "[AS-ao 5] Running aspell toolkit: make"
 	cd $(AKIT)/pt; make
-	@ echo "Moving files"
-	mv $(AKIT)/pt/* $(AO50)-ao
+	@ echo "[AS-ao 5] Moving files"
+	rm -f $(AO50)-ao/proc
+	mv -f $(AKIT)/pt/* $(AO50)-ao
 	rm -fr $(AKIT)/pt
 
 aspell5preao: $(DIRS) a5clean-toolkit $(WLDIR)/wl-preao.txt
-	@ echo "Creating aspell5 empty dictionary"
+	@ echo "[AS-preao 5] Creating aspell5 empty dictionary"
 	cd $(AKIT); perl pre pt iso-8859-1
-	@ echo "Filling with computed files"
+	@ echo "[AS-preao 5] Filling with computed files"
 	cp $(WLDIR)/wl-preao.txt $(AKIT)/pt/pt.wl
 	cp $(A50)/Copyright $(AKIT)/pt
-	@ echo "Replacing variables"
+	@ echo "[AS-preao 5] Replacing variables"
 	perl -pe 'BEGIN{ $$D=$(DATE);chomp $$D}; s/VERSAO/$$D/g;' $(A50)/info > $(AKIT)/pt/info
 	perl -pe 's/LANG/pt/g' $(A50)/pt.dat > $(AKIT)/pt/pt.dat
-	@ echo "Running aspell toolkit: create"
+	@ echo "[AS-preao 5] Running aspell toolkit: create"
 	cd $(AKIT)/pt; perl proc create
-	@ echo "Running aspell toolkit: configure"
+	@ echo "[AS-preao 5] Running aspell toolkit: configure"
 	cd $(AKIT)/pt; ./configure
-	@ echo "Running aspell toolkit: make"
+	@ echo "[AS-preao 5] Running aspell toolkit: make"
 	cd $(AKIT)/pt; make
-	@ echo "Moving files"
+	@ echo "[AS-preao 5] Moving files"
+	rm -f $(AO50)-preao/proc
 	mv $(AKIT)/pt/* $(AO50)-preao
 	rm -fr $(AKIT)/pt
 
