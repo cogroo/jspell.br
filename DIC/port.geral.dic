@@ -2630,7 +2630,7 @@ aproveitar/#vt/XYPLRScMDnvu/
 aprovisionar/#vt/XYPLM/
 aproximação/#nf//
 aproximadamente/#av//
-aproximar/#vt/XYPLcBR/
+aproximar/#vt/XYPLcBRv/
 aproximativo/#a/fp/
 aprumar/#vt/XYPLc/
 aptidão/#nf/p/
@@ -3385,6 +3385,7 @@ assiriologia/#nf/qt/
 assírio/#nm/fp/
 assisado/#a//
 assísmico/#a//
+assistemático/#a/fpH/
 assistencial/#an/p/
 assistência/#nf/p/
 assistente/#hn/p/
@@ -7447,6 +7448,7 @@ chanfana/#nf//
 chanfaneiro/#nm//
 chanfrado/#a/fp/
 chanfradura/#nf//
+chantagear/#vt/ZYPL/
 chá/#nm/p/
 chanqueiro/#hm//
 chantagem/#nf/p/
@@ -9617,7 +9619,8 @@ co-opositor/AO90=coopositor,#nm//
 coopositor/PREAO90=co-opositor,#nm//
 cooptar/#vt/XYPLc/
 coordenação/#nf//
-coordenadas/#nfp//
+coordenada/#nf/p/
+coordenado/#am/pfm/
 coordenador/#hm//
 coordenar/#vt/XYPLScDn/
 coordenativo/#a/fp/
@@ -10469,7 +10472,7 @@ dançar/#vn/XYPLDnv/
 danificar/#vt/XYPLcD/
 daninho/#a/fp/
 dano/#nm/p/
-danoso/#a//
+danoso/#a/p/
 dantes/#av//
 dantesco/#a/fp/
 dântico/#a//
@@ -11760,7 +11763,7 @@ destronar/#vt/XYPLM/
 destruir/#vn,I=3/PLcDv/
 destrutível/#a//
 destrutividade/#nf/p/
-destrutivo/#a/fd/
+destrutivo/#a/fdp/
 destrutor/#hm//
 desumano/#a/fp/
 desumidificador/#nm/p/
@@ -14642,7 +14645,7 @@ estardalhar/#vi/XYL/
 estarola/#nn//
 estarrecer/#vn/XYPL/
 estar/#vi,I=3/Lv/
-estatal/#an/p/
+estatal/#an/pm/
 estateladamente/#av//
 estatelar/#vt/XYPL/
 estática/#nf//
@@ -30124,6 +30127,7 @@ resignante/#hn/p/
 resignar/#vt/XYPLcnvB/
 resignatário/#hm/p/
 resiliência/#nf//
+resiliente/#an/p/
 resinagem/#nf//
 resina/#nf/p/
 resinar/#vt/XYPL/
