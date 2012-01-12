@@ -8118,8 +8118,8 @@ co-associado/AO90=coassociado,#nm//
 coassociado/PREAO90=co-associado,#nm//
 co-autoria/AO90=coautoria,#nf//
 coautoria/PREAO90=co-autoria,#nf//
-co-autor/AO90=coautor,#nm//
-coautor/PREAO90=co-autor,#nm//
+co-autor/AO90=coautor,#nm/p/
+coautor/PREAO90=co-autor,#nm/p/
 coaxante/#an/p/
 coaxar/#vi/XYLcn/
 coaxial/#a//
