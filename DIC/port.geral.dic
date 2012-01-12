@@ -6483,7 +6483,7 @@ capitoa/#nf//
 capitólio/#nm//
 capitulante/#an/p/
 capitular/#vi/XYLcn/
-capítulo/#nm/p/
+capítulo/#nm/up/
 capoeira/#nf/p/
 capoeiro/#a/fp/
 capota/#nf/p/
@@ -17022,7 +17022,7 @@ garrir/#vi/XYL/
 garrotar/#vt/XYPL/
 garrote/#nm/p/
 garupada/#nf//
-gasear/#vt/ZYPL/
+gasear/#vt/ZYPLM/
 gaseificar/#vn/XYPLcD/
 gaseiforme/#an/p/
 gasganete/#nm//
@@ -18959,7 +18959,7 @@ incompetência/#nf/p/
 incompetente/#an/p/
 incomplacência/#nf/p/
 incomplacente/#an//
-incompleto/#a/pfm/
+incompleto/#a/pfms/
 incompletude/#nf//
 incomportável/#an/p/
 incompreendido/#a/pf/
@@ -22395,6 +22395,7 @@ matar/#vn/XYPLD/
 mate/#hm//
 matemática/#nf/p/
 matemático/#a/fpH/
+matematizar/#vt/XYPLc/
 material/#an/mtid/
 materialidade/#nf/p/
 materialismo/#nm/p/
@@ -24132,6 +24133,7 @@ neo-realista/AO90=neorrealista,#nn/p/
 neorrealista/PREAO90=neo-realista,#nn/p/
 neo-romantismo/AO90=neorromantismo,#nm//
 neorromantismo/PREAO90=neo-romantismo,#nm//
+neonazi/#hm/p/
 neotropical/#an//
 neozelandês/#hm/fp/
 nepalês/#hm/fp/
@@ -34788,6 +34790,7 @@ valioso/#a/pfms/
 valongueiro/#hm//
 valoração/#nf/p/
 valorar/#vt/XYPL/
+valorativo/#nm/pf/
 valorizar/#vt/XYPLScRun/
 valor/#nm/p/
 valorosidade/#nf/p/
