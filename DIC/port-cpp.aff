@@ -1287,13 +1287,35 @@ D I Z E R   >   EM             ; "P=3,N=p,T=ip"
 #-------------------------------------------
 # conjugação pronominal (compl. indirecto)
 flag +L:     ; "CAT=v"             #-lho                #noispell
-.           >      \-LHE    ; "DP=3,DG=_,DN=s"          #noispell
-.           >      \-LHO    ; "DP=3,DG=m,DN=s"          #noispell
-.           >      \-LHA    ; "DP=3,DG=f,DN=s"          #noispell
+.           >      \-LHE    ; "DP=3,DN=s"          #noispell
+.           >      \-LHO    ; "DP=3,DN=s,AP=3,AN=s,AG=m"          #noispell
+.           >      \-LHA    ; "DP=3,DN=s,AP=3,AN=s,AG=f"          #noispell
 
-.           >      \-LHES   ; "DP=3,DG=_,DN=p"          #noispell
-.           >      \-LHOS   ; "DP=3,DG=m,DN=p"          #noispell
-.           >      \-LHAS   ; "DP=3,DG=f,DN=p"          #noispell
+.           >      \-LHES   ; "DP=3,DN=p"          #noispell
+.           >      \-LHOS   ; "DP=3,DN=s,AP=3,AN=p,AG=m"          #noispell
+.           >      \-LHAS   ; "DP=3,DN=s,AP=3,AN=p,AG=f"          #noispell
+
+R     >        \-LHE\-EI     ; "DP=3,DN=s,P=1,N=s,T=f"          #noispell
+R     >        \-LHE\-EIS    ; "DP=3,DN=s,P=2,N=p,T=f"          #noispell
+R     >        \-LHE\-EMOS   ; "DP=3,DN=s,P=1,N=p,T=f"          #noispell
+R     >        \-LHE\-Á      ; "DP=3,DN=s,P=3,N=s,T=f"          #noispell
+R     >        \-LHE\-ÁS     ; "DP=3,DN=s,P=2,N=s,T=f"          #noispell
+R     >        \-LHE\-ÃO     ; "DP=3,DN=s,P=3,N=p,T=f"          #noispell
+R     >        \-LHE\-IAM    ; "DP=3,DN=s,P=3,N=p,T=c"          #noispell
+R     >        \-LHE\-ÍAMOS  ; "DP=3,DN=s,P=1,N=p,T=c"          #noispell
+R     >        \-LHE\-IA     ; "DP=3,DN=s,P=1_3,N=s,T=c"        #noispell
+R     >        \-LHE\-IAS    ; "DP=3,DN=s,P=2,N=s,T=c"          #noispell
+
+R     >        \-LHES\-EI     ; "DP=3,DN=p,P=1,N=s,T=f"          #noispell
+R     >        \-LHES\-EIS    ; "DP=3,DN=p,P=2,N=p,T=f"          #noispell
+R     >        \-LHES\-EMOS   ; "DP=3,DN=p,P=1,N=p,T=f"          #noispell
+R     >        \-LHES\-Á      ; "DP=3,DN=p,P=3,N=s,T=f"          #noispell
+R     >        \-LHES\-ÁS     ; "DP=3,DN=p,P=2,N=s,T=f"          #noispell
+R     >        \-LHES\-ÃO     ; "DP=3,DN=p,P=3,N=p,T=f"          #noispell
+R     >        \-LHES\-IAM    ; "DP=3,DN=p,P=3,N=p,T=c"          #noispell
+R     >        \-LHES\-ÍAMOS  ; "DP=3,DN=p,P=1,N=p,T=c"          #noispell
+R     >        \-LHES\-IA     ; "DP=3,DN=p,P=1_3,N=s,T=c"        #noispell
+R     >        \-LHES\-IAS    ; "DP=3,DN=p,P=2,N=s,T=c"          #noispell
 
 # reflexividade dos verbos
 .           >      \-ME     ; "AP=1,AN=s"          #noispell
