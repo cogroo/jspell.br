@@ -1,13 +1,41 @@
-## -*- makefile -*0
+## -*- makefile -*-
 
 DIRS+=$(OOUT)-ao $(OOUT)-preao
 
 ooo-all: ooo-ao ooo-preao
 
+ooo-zips: ooo-ao-zip ooo-preao-zip
+
 ooo-ao: $(DIRS) $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic
-	# cp -a OOO/model OOO/ao
-        # interpolate OOO/ao/description.xml
-        #cp $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic OOO/ao/dictionaries
+	cp -a OOO/model/* $(OOUT)-ao
+	rm -fr $(OOUT)-ao/.svn $(OOUT)-ao/*/.svn
+	cp $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic $(OOUT)-ao/dictionaries
+	version=$$(OOO/compute_version.pl); \
+	sed -e "s/<% version %>/$$version/" $(OOUT)-ao/description.xml > _ ;\
+	sed -e "s/<% prefix %>//" _ > $(OOUT)-ao/description.xml; rm -f _ ;
+
+ooo-preao: $(OOUT)-ao/description.xml $(DIRS) $(HOUT)-preao/pt_PT-preao.aff $(HOUT)-preao/pt_PT-preao.dic
+	cp -a OOO/model/* $(OOUT)-preao
+	rm -fr $(OOUT)-preao/.svn $(OOUT)-preao/*/.svn
+	cp $(HOUT)-preao/pt_PT-preao.aff $(OOUT)-preao/dictionaries/pt_PT.aff
+	cp $(HOUT)-preao/pt_PT-preao.dic $(OOUT)-preao/dictionaries/pt_PT.dic
+	version=$$(OOO/compute_version.pl -last); \
+	sed -e "s/<% version %>/$$version/" $(OOUT)-ao/description.xml > _ ;\
+	sed -e "s/<% prefix %>/-preao/" _ > $(OOUT)-ao/description.xml; rm -f _ ;
+
+$(OOUT)-ao/description.xml: ooo-ao
+
+$(OOUT)-preao/description.xml: ooo-preao
+
+ooo-ao-zip: $(OOUT)-ao/description.xml
+	version=$$(OOO/compute_version.pl -last); \
+	cd $(OOUT)-ao; zip -r oo3x-pt-PT-$$version.oxt -9 dictionaries* description.xml META-INF LICENSES.txt
+	mv $(OOUT)-ao/*.oxt $(OUT)
+
+ooo-preao-zip: $(OOUT)-preao/description.xml
+	version=$$(OOO/compute_version.pl -last); \
+	cd $(OOUT)-preao; zip -r oo3x-pt-PT-preao-$$version.oxt -9 dictionaries* description.xml META-INF LICENSES.txt
+	mv $(OOUT)-preao/*.oxt $(OUT)
 
 $(OOUT)-ao:
 	mkdir -p $(OOUT)-ao
@@ -15,7 +43,3 @@ $(OOUT)-ao:
 
 $(OOUT)-preao:
 	mkdir -p $(OOUT)-preao
-
-xpto:
-	dia=$$(($$(date +%d) * 1)); mes=$$(($$(date +%m))); ano=$$(date +%y); \
-	echo $$dia.$$mes.$$ano
