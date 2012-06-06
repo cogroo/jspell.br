@@ -34,6 +34,8 @@ include makefiles/makefile.hunspell
 include makefiles/makefile.wordlist
 include makefiles/makefile.chuveiro
 
+include makefiles/makefile.ooo
+
 clean: 
 	@ rm -f *~ */*~ */*/*~
 

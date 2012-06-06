@@ -1,0 +1,21 @@
+## -*- makefile -*0
+
+DIRS+=$(OOUT)-ao $(OOUT)-preao
+
+ooo-all: ooo-ao ooo-preao
+
+ooo-ao: $(DIRS) $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic
+	# cp -a OOO/model OOO/ao
+        # interpolate OOO/ao/description.xml
+        #cp $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic OOO/ao/dictionaries
+
+$(OOUT)-ao:
+	mkdir -p $(OOUT)-ao
+
+
+$(OOUT)-preao:
+	mkdir -p $(OOUT)-preao
+
+xpto:
+	dia=$$(($$(date +%d) * 1)); mes=$$(($$(date +%m))); ano=$$(date +%y); \
+	echo $$dia.$$mes.$$ano
