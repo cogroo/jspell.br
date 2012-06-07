@@ -1,0 +1,11 @@
+## -*- makefile -*-
+
+DIRS+=$(OOUT)-ao $(OOUT)-preao
+
+
+$(MOUT)-ao:
+	mkdir -p $(MOUT)-ao
+
+
+$(MOUT)-preao:
+	mkdir -p $(MOUT)-preao

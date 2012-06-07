@@ -6,6 +6,14 @@ ooo-all: ooo-ao ooo-preao
 
 ooo-zips: ooo-ao-zip ooo-preao-zip
 
+ooo-publish: ooo-zips
+	version=$$(OOO/compute_version.pl -last); \
+	scp $(OUT)/oo3x-pt-PT-$$version.oxt natura:/home/natura/download/sources/Dictionaries/openoffice/Pos-AO; \
+	scp $(OUT)/oo3x-pt-PT-preao-$$version.oxt natura:/home/natura/download/sources/Dictionaries/openoffice/Pre-AO; \
+	ssh ambs@natura 'rm -f /home/natura/download/sources/Dictionaries/openoffice/oo3x*'; \
+	ssh ambs@natura "ln -s /home/natura/download/sources/Dictionaries/openoffice/Pos-AO/oo3x-pt-PT-$$version.oxt /home/natura/download/sources/Dictionaries/openoffice/oo3x-pt_PT.oxt"; \
+	ssh ambs@natura "ln -s /home/natura/download/sources/Dictionaries/openoffice/Pre-AO/oo3x-pt-PT-preao-$$version.oxt /home/natura/download/sources/Dictionaries/openoffice/oo3x-pt_PT-preao.oxt"
+
 ooo-ao: $(DIRS) $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic
 	cp -a OOO/model/* $(OOUT)-ao
 	rm -fr $(OOUT)-ao/.svn $(OOUT)-ao/*/.svn

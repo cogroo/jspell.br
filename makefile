@@ -35,6 +35,7 @@ include makefiles/makefile.wordlist
 include makefiles/makefile.chuveiro
 
 include makefiles/makefile.ooo
+include makefiles/makefile.mozilla
 
 clean: 
 	@ rm -f *~ */*~ */*/*~
