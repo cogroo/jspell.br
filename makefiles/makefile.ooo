@@ -20,8 +20,8 @@ ooo-preao: $(OOUT)-ao/description.xml $(DIRS) $(HOUT)-preao/pt_PT-preao.aff $(HO
 	cp $(HOUT)-preao/pt_PT-preao.aff $(OOUT)-preao/dictionaries/pt_PT.aff
 	cp $(HOUT)-preao/pt_PT-preao.dic $(OOUT)-preao/dictionaries/pt_PT.dic
 	version=$$(OOO/compute_version.pl -last); \
-	sed -e "s/<% version %>/$$version/" $(OOUT)-ao/description.xml > _ ;\
-	sed -e "s/<% prefix %>/-preao/" _ > $(OOUT)-ao/description.xml; rm -f _ ;
+	sed -e "s/<% version %>/$$version/" $(OOUT)-preao/description.xml > _ ;\
+	sed -e "s/<% prefix %>/-preao/" _ > $(OOUT)-preao/description.xml; rm -f _ ;
 
 $(OOUT)-ao/description.xml: ooo-ao
 
