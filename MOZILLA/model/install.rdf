@@ -7,16 +7,16 @@
 
     <em:id>pt-PT@dictionaries.addons.mozilla.org</em:id>
     <em:type>2</em:type>
-    <em:version>12.3.12.1</em:version>
+    <em:version><% version %></em:version>
     <em:name>Corretor para Português de Portugal</em:name>
-    <em:description>Portuguese, Portugal (pt-PT) Dictionary</em:description>
+    <em:description>Portuguese, Portugal (pt-PT<% prefix %>) Dictionary</em:description>
     <em:unpack>true</em:unpack>
 
-    <em:creator>Maracujá</em:creator>
-    <em:developer>António Manuel Dias</em:developer>
-    <em:homepageURL>http://maracujah.net/software/dict</em:homepageURL>
+    <em:creator>Projecto Natura</em:creator>
+    <em:developer>Alberto Simões</em:developer>
+    <em:homepageURL>http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main</em:homepageURL>
 
-    <em:contributor>Alberto Simões</em:contributor>
+    <em:contributor>António Manuel Dias</em:contributor>
     <em:contributor>José João de Almeida</em:contributor>
     <em:contributor>Rui Vilela</em:contributor>
 
@@ -24,13 +24,13 @@
       <RDF:Description>
         <em:locale>pt-PT</em:locale>
         <em:name>Corretor para Português de Portugal</em:name>
-        <em:description>Corretor ortográfico para português de Portugal (pt-PT)</em:description>
-        <em:creator>Maracujá</em:creator>
-        <em:developer>António Manuel Dias</em:developer>
-        <em:contributor>Alberto Simões</em:contributor>
+        <em:description>Corretor ortográfico para português de Portugal (pt-PT<% prefix %>)</em:description>
+        <em:creator>Projecto Natura</em:creator>
+        <em:developer>ALberto Simões</em:developer>
+        <em:contributor>António Manuel Dias</em:contributor>
         <em:contributor>José João de Almeida</em:contributor>
         <em:contributor>Rui Vilela</em:contributor>
-        <em:homepageURL>http://maracujah.net/software/dict</em:homepageURL>
+        <em:homepageURL>http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main</em:homepageURL>
       </RDF:Description>
     </em:localized>
 
@@ -39,7 +39,7 @@
       <RDF:Description>
         <em:id>toolkit@mozilla.org</em:id>
         <em:minVersion>1.9</em:minVersion>
-        <em:maxVersion>14.*</em:maxVersion>
+        <em:maxVersion><% toolkit_maxversion %></em:maxVersion>
       </RDF:Description>
     </em:targetApplication>
 
@@ -48,7 +48,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>14.0a1</em:maxVersion>
+        <em:maxVersion><% firefox_maxversion %></em:maxVersion>
       </Description>
     </em:targetApplication>
 
@@ -57,7 +57,7 @@
       <Description>
         <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
         <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>14.0a1</em:maxVersion>
+        <em:maxVersion><% thunder_maxversion %></em:maxVersion>
       </Description>
     </em:targetApplication>
 

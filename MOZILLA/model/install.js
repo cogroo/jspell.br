@@ -1,5 +1,5 @@
 var err = initInstall("Corretor para Portugues de Portugal",
-                      "pt-PT@dictionaries.addons.mozilla.org", "12.3.12.1");
+                      "pt-PT@dictionaries.addons.mozilla.org", "<% version %>");
 if (err != SUCCESS)
     cancelInstall();
 
