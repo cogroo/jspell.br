@@ -41,8 +41,8 @@
         entry for each language it implements and one default English entry.
         The default entry is the one listed first. -->
     <display-name>
-        <name lang="en">Portuguese, Portugal spelling and hyphenation dictionaries and thesaurus.</name>
-        <name lang="pt">Corretor ortográfico, hifenizador e dicionário de sinónimos para português de Portugal.</name>
+        <name lang="en">Portuguese, Portugal spelling and hyphenation dictionaries and thesaurus<% note %>.</name>
+        <name lang="pt">Corretor ortográfico, hifenizador e dicionário de sinónimos para português de Portugal<% note %>.</name>
     </display-name>
     
     <!-- Dictionaries should work with all platforms... -->

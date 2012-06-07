@@ -20,7 +20,8 @@ ooo-ao: $(DIRS) $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic
 	cp $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic $(OOUT)-ao/dictionaries
 	version=$$(OOO/compute_version.pl); \
 	sed -e "s/<% version %>/$$version/" $(OOUT)-ao/description.xml > _ ;\
-	sed -e "s/<% prefix %>//" _ > $(OOUT)-ao/description.xml; rm -f _ ;
+	sed -e "s/<% note %>//" _ > _2; rm -f _; 
+	sed -e "s/<% prefix %>//" _2 > $(OOUT)-ao/description.xml; rm -f _2 ;
 
 ooo-preao: $(OOUT)-ao/description.xml $(DIRS) $(HOUT)-preao/pt_PT-preao.aff $(HOUT)-preao/pt_PT-preao.dic
 	cp -a OOO/model/* $(OOUT)-preao
@@ -29,7 +30,8 @@ ooo-preao: $(OOUT)-ao/description.xml $(DIRS) $(HOUT)-preao/pt_PT-preao.aff $(HO
 	cp $(HOUT)-preao/pt_PT-preao.dic $(OOUT)-preao/dictionaries/pt_PT.dic
 	version=$$(OOO/compute_version.pl -last); \
 	sed -e "s/<% version %>/$$version/" $(OOUT)-preao/description.xml > _ ;\
-	sed -e "s/<% prefix %>/-preao/" _ > $(OOUT)-preao/description.xml; rm -f _ ;
+	sed -e "s/<% note %>/ (Pre-AO)/" _ > _2; rm -f _; 
+	sed -e "s/<% prefix %>/-preao/" _2 > $(OOUT)-preao/description.xml; rm -f _2 ;
 
 $(OOUT)-ao/description.xml: ooo-ao
 

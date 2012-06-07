@@ -9,3 +9,8 @@ $(MOUT)-ao:
 
 $(MOUT)-preao:
 	mkdir -p $(MOUT)-preao
+
+
+# 1. copiar ficheiros
+#   pt-PT-AO.{aff,dic} }
+#   pt-PT-preAO.{aff,dic} }
