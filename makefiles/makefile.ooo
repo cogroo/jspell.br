@@ -52,3 +52,9 @@ $(OOUT)-ao:
 
 $(OOUT)-preao:
 	mkdir -p $(OOUT)-preao
+
+realclean ::
+	@ echo "Cleaning OOo files"
+	rm -fr $(OOUT)-ao
+	rm -fr $(OOUT)-preao
+	rm -fr $(OUT)/oo*oxt

@@ -67,3 +67,8 @@ $(MOUT)-ao:
 $(MOUT)-preao:
 	mkdir -p $(MOUT)-preao
 
+realclean ::
+	@ echo "Cleaning Mozilla files"
+	rm -fr $(MOUT)-ao
+	rm -fr $(MOUT)-preao
+	rm -fr $(OUT)/pt-PT*xpi
