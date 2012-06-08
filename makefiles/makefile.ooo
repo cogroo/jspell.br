@@ -50,6 +50,5 @@ ooo-preao-zip: $(OOUT)-preao/description.xml
 $(OOUT)-ao:
 	mkdir -p $(OOUT)-ao
 
-
 $(OOUT)-preao:
 	mkdir -p $(OOUT)-preao

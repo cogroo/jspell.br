@@ -5,7 +5,7 @@
   <RDF:Description about="urn:mozilla:install-manifest">
   <!-- https://developer.mozilla.org/en/Install.rdf -->
 
-    <em:id>pt-PT@dictionaries.addons.mozilla.org</em:id>
+    <em:id>pt-PT<% prefix %>@dictionaries.addons.mozilla.org</em:id>
     <em:type>2</em:type>
     <em:version><% version %></em:version>
     <em:name>Corretor para Português de Portugal</em:name>
@@ -26,7 +26,7 @@
         <em:name>Corretor para Português de Portugal</em:name>
         <em:description>Corretor ortográfico para português de Portugal (pt-PT<% prefix %>)</em:description>
         <em:creator>Projecto Natura</em:creator>
-        <em:developer>ALberto Simões</em:developer>
+        <em:developer>Alberto Simões</em:developer>
         <em:contributor>António Manuel Dias</em:contributor>
         <em:contributor>José João de Almeida</em:contributor>
         <em:contributor>Rui Vilela</em:contributor>

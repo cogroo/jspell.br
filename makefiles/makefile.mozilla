@@ -1,16 +1,69 @@
 ## -*- makefile -*-
 
-DIRS+=$(OOUT)-ao $(OOUT)-preao
+DIRS+=$(MOUT)-ao $(MOUT)-preao
+
+moz-all: moz-ao moz-preao
+
+moz-zips: moz-ao-zip moz-preao-zip
+
+moz-ao: $(DIRS) $(HOUT)-ao/pt_PT.aff $(HOUT)-ao/pt_PT.dic
+	cp -a MOZILLA/model/* $(MOUT)-ao
+	rm -fr $(MOUT)-ao/.svn $(MOUT)-ao/*/.svn
+	cp $(HOUT)-ao/pt_PT.aff $(MOUT)-ao/dictionaries/pt-PT-AO.aff
+	cp $(HOUT)-ao/pt_PT.dic $(MOUT)-ao/dictionaries/pt-PT-AO.dic
+	version=$$(MOZILLA/compute_version.pl); \
+	mozversion=$$(MOZILLA/guess-latest.pl); \
+	sed -e "s/<% version %>/$$version/" $(MOUT)-ao/install.rdf > _; \
+	sed -e "s/<% prefix %>//" _ > _2; rm -f _; \
+	sed -e "s/<% toolkit_maxversion %>/$$mozversion/" _2 > _3; rm -f _2; \
+	sed -e "s/<% firefox_maxversion %>/$$mozversion/" _3 > _4; rm -f _3; \
+	sed -e "s/<% thunder_maxversion %>/$$mozversion/" _4 > $(MOUT)-ao/install.rdf; rm -f _4; \
+	sed -e "s/<% version %>/$$version/" $(MOUT)-ao/install.js > _; \
+	sed -e "s/<% prefix %>//" _ > $(MOUT)-ao/install.js; rm -f _;
+
+moz-preao: $(DIRS) $(HOUT)-preao/pt_PT-preao.aff $(HOUT)-preao/pt_PT-preao.dic
+	cp -a MOZILLA/model/* $(MOUT)-preao
+	rm -fr $(MOUT)-preao/.svn $(MOUT)-preao/*/.svn
+	cp $(HOUT)-preao/pt_PT-preao.aff $(MOUT)-preao/dictionaries/pt-PT-preAO.aff
+	cp $(HOUT)-preao/pt_PT-preao.dic $(MOUT)-preao/dictionaries/pt-PT-preAO.dic
+	version=$$(MOZILLA/compute_version.pl -last); \
+	mozversion=$$(MOZILLA/guess-latest.pl); \
+	sed -e "s/<% version %>/$$version/" $(MOUT)-preao/install.rdf > _; \
+	sed -e "s/<% prefix %>/-preao/" _ > _2; rm -f _; \
+	sed -e "s/<% toolkit_maxversion %>/$$mozversion/" _2 > _3; rm -f _2; \
+	sed -e "s/<% firefox_maxversion %>/$$mozversion/" _3 > _4; rm -f _3; \
+	sed -e "s/Corretor/Corrector/" _4 > _5; rm -f _4; \
+	sed -e "s/<% thunder_maxversion %>/$$mozversion/" _5 > $(MOUT)-preao/install.rdf; rm -f _5;\
+	sed -e "s/<% version %>/$$version/" $(MOUT)-preao/install.js > _; \
+	sed -e "s/Corretor/Corrector/" _ > _2; rm -f _; \
+	sed -e "s/<% prefix %>/-preao/" _2 > $(MOUT)-preao/install.js; rm -f _2;
+
+$(MOUT)-ao/install.rdf: moz-ao
+
+$(MOUT)-preao/install.rdf: moz-preao
+
+moz-ao-zip: $(MOUT)-ao/install.rdf
+	version=$$(MOZILLA/compute_version.pl -last); \
+	cd $(MOUT)-ao; zip -r9 pt-PT-dictionary-$$version.xpi install.rdf install.js dictionaries
+	mv $(MOUT)-ao/*.xpi $(OUT)
+
+moz-preao-zip: $(MOUT)-preao/install.rdf
+	version=$$(MOZILLA/compute_version.pl -last); \
+	cd $(MOUT)-preao; zip -r9 pt-PT-preao-dictionary-$$version.xpi install.rdf install.js dictionaries
+	mv $(MOUT)-preao/*.xpi $(OUT)
+
+moz-publish: moz-zips
+	version=$$(MOZILLA/compute_version.pl -last); \
+	scp $(OUT)/pt-PT-dictionary-$$version.xpi natura:/home/natura/download/sources/Dictionaries/mozilla/Pos-AO; \
+	scp $(OUT)/pt-PT-preao-dictionary-$$version.xpi natura:/home/natura/download/sources/Dictionaries/mozilla/Pre-AO; \
+	ssh ambs@natura 'rm -f /home/natura/download/sources/Dictionaries/mozilla/pt-*xpi'; \
+	ssh ambs@natura "ln -s /home/natura/download/sources/Dictionaries/mozilla/Pos-AO/pt-PT-dictionary-$$version.xpi /home/natura/download/sources/Dictionaries/mozilla/pt-PT-dictionary.xpi"; \
+	ssh ambs@natura "ln -s /home/natura/download/sources/Dictionaries/mozilla/Pre-AO/pt-PT-preao-dictionary-$$version.xpi /home/natura/download/sources/Dictionaries/mozilla/pt-PT-preao-dictionary.xpi"
 
 
 $(MOUT)-ao:
 	mkdir -p $(MOUT)-ao
 
-
 $(MOUT)-preao:
 	mkdir -p $(MOUT)-preao
 
-
-# 1. copiar ficheiros
-#   pt-PT-AO.{aff,dic} }
-#   pt-PT-preAO.{aff,dic} }
