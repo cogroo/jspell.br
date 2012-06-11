@@ -1006,7 +1006,7 @@ aguaceiro/#nm/fp/
 água-chilra/#nf//
 aguada/#nf/p/
 aguadeiro/#hm/p/
-água-de-colónia/AO90=,#nf/p/
+água-de-colónia/AO90=,#nf//
 água-forte/#nf//
 água-furtada/#nf//
 água/#nf/p/
@@ -1022,7 +1022,7 @@ aguarelar/#vt/XYPL/
 aguarelista/#nn//
 aguarrás/#nf//
 aguar/#vt,I=3/YPLM/
-águas-furtadas/$água-furtada$#nfp//
+águas-furtadas/$água-furtada$#nf$N=p//
 água-tinta/#nf//
 aguçadeira/#nf/p/
 aguçador/#nm/p/
