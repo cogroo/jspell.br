@@ -24386,7 +24386,7 @@ norte/#nm/tS/
 norueguês/#hm/fp/
 nos/CAT=ppes,N=p,P=1,C=a//
 nós/CAT=ppes,N=p,P=1,C=n//
-nosso/CAT=ppos,N=p,P=1,G=m/fp/
+nosso/CAT=ppos,N=s,P=1,G=m/fp/
 nostalgia/#nf/p/
 nostálgico/#hm/fp/
 notabilidade/#nf/p/
@@ -35575,7 +35575,7 @@ vos/CAT=ppes,N=p,P=2,C=a//
 vós/CAT=ppes,N=p,P=2,C=n//
 vosmecê/CAT=ppes//
 vossemecê/CAT=ppes//
-vosso/CAT=ppos,P=2,N=p,G=m/fp/
+vosso/CAT=ppos,P=2,N=s,G=m/fp/
 votação/#nf//
 votante/#hn/p/
 votar/#vn/XYPLcn/
