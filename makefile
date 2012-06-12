@@ -21,9 +21,10 @@ all:
 	@ echo " publish        - online publish at natura"
 	@ echo
 
-dicts: jspell wordlist ispell hunspell aspell5 aspell6
+# disabled some because it takes too long
+dicts: jspell hunspell # wordlist ispell aspell5 aspell6
 
-tarballs: jspell-all ispell-all hunspell-all wordlist-all aspell5-all aspell6-all
+tarballs: jspell-all hunspell-all # ispell-all wordlist-all aspell5-all aspell6-all
 
 include makefiles/makefile.vars
 include makefiles/makefile.jspell
