@@ -2432,7 +2432,7 @@ apelidar/#vt/XYPLc/
 apelido/#nm/p/
 apelo/#nm/p/
 apenas/#av//
-apenas/CAT=con//
+apenas/CAT=conj-s//
 apendicectomia/#nf//
 apêndice/#nm/p/
 apendiciado/#a//
@@ -2651,7 +2651,7 @@ apuro/#nm/p/
 apurpurado/#a//
 aquadrelar/#vt/XYPL/
 aquadrilhar/#vt/XYPLM/
-aquando/CAT=con//
+# aquando/CAT=con//
 aquário/#nm/p/
 aquartelar/#vt/XYPLM/
 aquartilhar/#vt/XYPL/
@@ -3523,7 +3523,7 @@ ateador/#hm//
 atear/#vt/ZYPLD/
 atear/#v/XYLn/
 ateatrado/#a//
-até/CAT=con//
+até/CAT=conj-s//
 até/CAT=prep//
 atediar/#vt/XYPL/
 ateia/$ateu$#nm$G=f/p/
@@ -8511,7 +8511,7 @@ comissionista/#nn//
 comité/#nm/p/
 comitiva/#nf/p/
 comoção/#nf/p/
-como/CAT=con//
+como/CAT=conj-s//
 comocional/#an//
 comocionar/#vt/XYPL/
 comodamente/#hm//
@@ -9080,7 +9080,7 @@ conoide/PREAO90=conóide,#hm2//
 conotação/#nf//
 conotar/#vt/XYPLcD/
 conotativo/#a/fp/
-conquanto/CAT=con//
+conquanto/CAT=conj-s//
 conquífero/#a//
 conquiforme/#an/p/
 conquilha/#nf/p/
@@ -9521,7 +9521,7 @@ controlo/#nm/p/
 controvérsia/#nf/p/
 controverso/#a/pft/
 controverter/#vt/XYPLv/
-contudo/CAT=con//
+contudo/CAT=conj-c//
 contumácia/#nf//
 contumaz/#a//
 contumélia/#nf//
@@ -12657,7 +12657,7 @@ ebriedade/#nf/p/
 ebulição/#nf//
 ebuliente/#an//
 ébulo/#nm//
-e/CAT=con//
+e/CAT=conj-c//
 ecléctico/AO90=eclético,#hm/fp/
 eclético/PREAO90=ecléctico,#hm/fp/
 eclesial/#a/p/
@@ -13038,7 +13038,7 @@ embolismo/#nm/p/
 embolsar/#vt/XYPL/
 embolso/#nm//
 embora/#av//
-embora/CAT=con//
+embora/CAT=conj-s//
 emborcar/#vt/XYPLc/
 emborrachar/#vt/XYPL/
 emborrar/#vt/XYPL/
@@ -13580,7 +13580,7 @@ enorme/#an/pmds/
 enormidade/#nf/p/
 enovelar/#vt/XYPLM/
 enquadrar/#vn/XYPLMR/
-enquanto/CAT=con//
+enquanto/CAT=conj-s//
 enquistar/#vi/XYL/
 enrabichar/#vt/XYPL/
 enraivar/#vt/XYPL/
@@ -22354,7 +22354,7 @@ máscara/#nf/p/
 mascarar/#vt/SXYPL/
 mascarilha/#nf/p/
 mascar/#vn/XYPLD/
-mas/CAT=con//
+mas/CAT=conj-c//
 mascote/#nf/p/
 masculinidade/#nf/p/
 masculinizar/#vt/XYPL/
@@ -24112,7 +24112,7 @@ negrura/#nf//
 nele/CAT=cp,Prep=em,Ppes=ele,G=m,N=s/fp/
 nematóide/AO90=nematoide,#an//
 nematoide/PREAO90=nematóide,#an//
-nem/CAT=con//
+nem/CAT=conj-c//
 nené/#nm/p/
 nenhum/CAT=pind,G=m,N=s/fp/
 nenhures/#av//
@@ -24958,7 +24958,7 @@ opulentar/#vt/XYPL/
 opulento/#a/f/
 opúsculo/#nm//
 oração/#nf/p/
-ora/CAT=con//
+ora/CAT=conj-c//
 oracional/#a//
 oracular/#an/p/
 oraculizar/#vi/XYL/
@@ -25133,7 +25133,7 @@ otólito/#nm/p/
 otomano/#hm/fp/
 otorrino/#nm/p/
 otorrinolaringologia/#nf/tp/
-ou/CAT=con//
+ou/CAT=conj-c//
 ougar/#vn/XY/
 ourar/#vn/XYPL/
 ouriço-cacheiro/#nm//
@@ -27096,7 +27096,7 @@ poisadia/#nf//
 poisadoiro/#nm//
 poisa/#nf//
 poisar/#vt/XYPL/
-pois/CAT=con//
+pois/CAT=conj-s//
 poisio/#nm/p/
 poiso/#nm/p/
 pojar/#vn/XYPLn/
@@ -27301,7 +27301,7 @@ porcino/#a/fp/
 porco-espinho/#nm//
 porco/#hm/fpmh/
 pôr-do-sol/AO90=,#nm//
-porém/CAT=con//
+porém/CAT=conj-c//
 porfiada/#nf//
 porfiar/#vn/XYPLD/
 porfioso/#a//
@@ -27316,9 +27316,11 @@ pornografismo/#nm/p/
 poro/#nm/p/
 porosidade/#nf/p/
 poroso/#a/fpd/
-porquanto/CAT=con//
+porquanto/CAT=conj-c//
+porquanto/CAT=conj-s//
 porquê/#av/p/
-porque/CAT=con//
+porque/CAT=conj-s//
+porque/CAT=conj-c//
 porqueira/#hf//
 porqueiro/#hm/f/
 porquice/#nf//
@@ -27346,7 +27348,7 @@ portalegrense/#hn/p/
 portal/#nm/p/
 porta-moedas/#nm//
 porta/#nf/p/
-portanto/CAT=con//
+portanto/CAT=conj-c//
 portão/#nm/p/
 portaria/#nf/p/
 portar/#vt/XYPLDn/
@@ -28541,7 +28543,7 @@ qualificativo/#hm/fp/
 qualitativo/#a/fmp/
 qualquer/CAT=pind,G=_,N=s//
 quando/#avt//
-quando/CAT=con//
+quando/CAT=conj-s//
 quanta/#nm//
 quantia/#nf/p/
 quântico/#a/fp/
@@ -28610,7 +28612,8 @@ quebra-nozes/#nm//
 quebrantar/#vt/XYPLMD/
 quebrar/#vt/XYPLcM/
 quebreira/#nf//
-que/CAT=con//
+que/CAT=conj-s//
+que/CAT=conj-c//
 quê/CAT=pint//
 que/CAT=prel,G=n,N=n,C=a//
 queda/#nf//
@@ -28656,7 +28659,7 @@ quentura/#nf//
 queque/#nm//
 queratina/#nf/p/
 quer/#av//
-quer/CAT=con//
+quer/CAT=conj-c//
 querela/#nf/p/
 querelante/#hn/p/
 querelar/#vi/XYLDn/
@@ -28681,7 +28684,7 @@ quezilento/#a/pf/
 quezília/#nf/p/
 quiáltera/#nf/p/
 quiasma/#nf//
-quiçá/CAT=con//
+quiçá/#av//
 quico/#nm/p/
 quiescente/#an//
 quietar/#vt/XYPLc/
@@ -31327,7 +31330,7 @@ secagem/#nf//
 seca/#nf/p/
 secante/#hm2/p/
 secar/#vn/XYPLDn/
-se/CAT=con//
+se/CAT=conj-s//
 se/CAT=pind//
 se/CAT=pass//
 se/CAT=ppes,N=_,P=3,C=a/p/
@@ -31432,7 +31435,7 @@ seiva/#nf//
 seivoso/#a//
 seixal/#nm//
 seixo/#nm/p/
-seja/CAT=con//
+seja/CAT=conj-c//
 seja/CAT=in//
 selada/#hf//
 selado/#hm//
@@ -31570,7 +31573,7 @@ senado/#nm/p/
 senadoria/#nf//
 senador/#nm/fpx/
 sena/#nf/p/
-senão/CAT=con//
+senão/CAT=conj-c//
 senão/#nm/a/
 senatorial/#an//
 senda/#nf//
@@ -32987,7 +32990,7 @@ tamaral/#nm//
 tâmara/#nf/p/
 tamareira/#nf/p/
 também/#av//
-também/CAT=con//
+também/CAT=conj-c//
 tamborilada/#nf//
 tamborilar/#vi/XYL/
 tamborileiro/#hm//
@@ -33633,7 +33636,7 @@ to/CAT=cp,Ppes=te,Pind=o,G=m,N=s/fp/
 tocha/#nf/p/
 toco/#nm//
 todavia/#av//
-todavia/CAT=con//
+todavia/CAT=conj-c//
 todo/CAT=pind,G=m,N=s/pfh/
 todo-o-terreno/#nm//
 todo-poderoso/#a//
