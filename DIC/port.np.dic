@@ -464,6 +464,7 @@ Braga/#tc/
 Brahms/#np1/
 Brama/#mit/
 Branca/#npf/
+Branco/#np/
 Brandão/#np/
 Brandeburgo/#t/
 Brandt/#np1/
@@ -540,6 +541,7 @@ Camilo/#npm/t/
 Camões/#npm/
 Campanhã/#t/
 Campânia/#t/
+Campos/#np/
 Campus/#npm/
 Canaã/#t/
 Canadá/#la,#tp/
@@ -662,6 +664,7 @@ Cisjordânia/#npf/
 Citânia/#t/
 City/#t/
 Claire/#np1/
+Clara/#np/
 Clark/#np1/
 Claudel/#np1/
 Claude/#np1/
@@ -673,9 +676,11 @@ Cleópatra/#npf/
 Clinton/#np/
 Clotilde/#npf/
 Cluj/#tc/
+Coelho/#np/
 Cohen/#np1/
 Coimbra/#tc/
 Colegiada/CAT=np/
+Colen/#np1/
 College/CAT=np/
 Collins/#np1/
 Colômbia/#la,#tpf/
@@ -718,7 +723,9 @@ Corvino/CAT=np/
 Cosme/#np/
 Costa/#np/
 Couceiro/#np/
+Couto/#np/
 Coutinho/#np/
+Covas/#np/
 Covilhã/#tc/
 Cracóvia/#tc/
 Crato/#t/
@@ -788,6 +795,7 @@ Diabo/#mit,G=m/
 Diamantina/#npf/
 Diamantino/#npm/
 Diana/#npf/
+Dias/#np/
 Didier/#np1/
 Diego/#np1/
 Díli/#tc/
@@ -876,6 +884,7 @@ Engels/#np1/
 Engrácia/#npf/
 Entre-os-Rios/#t/
 Epicuro/#np/
+Equador/#tp/
 Erasmo/#np1/
 Erasmus/#nppm/
 Eratóstenes/#np/
@@ -961,6 +970,7 @@ Faso/$Burquina Faso$#tpf,#la/
 Fátima/#npf/
 Faustino/#np/
 Fausto/#npm/
+Fazenda/CAT=np,SEM=instituicao,G=f/
 Feijó/#t/
 Feio/#np/
 Feldspato/CAT=np/
