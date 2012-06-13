@@ -2542,6 +2542,7 @@ aportar/#v/XYP/
 aportuguesar/#vt/XYPLSM/
 apor/#vt/KPL/
 após/CAT=prep//
+aposentado/#hm/pf/
 aposentadoria/#nf/p/
 aposentar/#vt/XYPLcMD/
 aposento/#nm/p/
@@ -3132,6 +3133,7 @@ arruaceiro/#hm/pf/
 arruadeira/#nf/p/
 arruar/#vn/XYPLcM/
 arruçar/#vn/XYPL/
+arruda/#nf/p/
 arrudense/#hn/p/
 arruelado/#a//
 arrufada/#nf//
@@ -3525,6 +3527,7 @@ atear/#v/XYLn/
 ateatrado/#a//
 até/CAT=conj-s//
 até/CAT=prep//
+até/#av//
 atediar/#vt/XYPL/
 ateia/$ateu$#nm$G=f/p/
 ateísmo/#nm/pq/
@@ -4245,6 +4248,7 @@ baixinho/#av/pf/
 baixio/#nm/p/
 baixista/#nm//
 baixo/#hm/pfts/
+baixo/#av//
 baixo-relevo/#nm//
 baixos-relevos/#nm,N=p//
 baixote/#a//
@@ -4945,14 +4949,16 @@ bicórneo/#a//
 bicromia/#nf//
 bicudo/#a/fp/
 bidão/#nm/p/
-bidé/#nm/p/
+bidê/PREAO90=bidé,#nm/p/
 bidentado/#a//
 bidimensional/#an/p/
 bidireccional/AO90=bidirecional,#a/p/
 bidirecional/PREAO90=bidireccional,#a/p/
 biela/#nf/p/
+bienal/#hf2/p/
+biênio/PREAO90=biénio,#nm/p/
 bielorrusso/#hm/fp/
-bienal/#an/p/
+bienal/#hf2/p/
 biénio/#nm/p/
 bifacial/#an/p/
 bifana/#nf/p/
@@ -5168,8 +5174,8 @@ bloquear/#vt/ZYPLSMDn/
 bloqueio/#nm/pS/
 blusa/#nf/p/
 blusão/#nm/p/
-boa-fé/#nf//
 boa/#hf/pm/
+boa-fé/#nf//
 boa-noite/#nf//
 boa-nova/#nf//
 boas-entradas/#nfp//
