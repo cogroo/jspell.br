@@ -19482,7 +19482,7 @@ inflamador/#hm//
 inflamante/#an/p/
 inflamar/#vt/XYPLcDnv/
 inflamativo/#a//
-inflamatório/#a/fp/
+inflamatório/#a/fpAu/
 inflectir/AO90=infletir,#vt,I=3/YPL/
 infletir/PREAO90=inflectir,#vt,I=3/YPL/
 inflexão/#nf/p/
@@ -29345,6 +29345,7 @@ reclinar/#vt/XYPLc/
 reclinatório/#nm//
 reclusão/#nf/p/
 recluso/#a/fpx/
+reco-reco/#nm/p/
 recobrar/#vt/XYPLv/
 recognição/#nf//
 recognitivo/#a//
@@ -32448,7 +32449,6 @@ subgrupo/#nm/p/
 subida/#nf//
 subidouro/#nm//
 subinflamação/#nf//
-subinflamatório/#a//
 subinspector/AO90=subinspetor,#nm//
 subinspetor/PREAO90=subinspector,#nm//
 subintendência/#nf/p/
@@ -33034,7 +33034,7 @@ tangueiro/#a//
 tanguista/#nn//
 tânjara/#nf//
 tanoeiro/#nm/p/
-tanque/#nm/pA/
+tanque/#nm/p/		retirou-se o prefixo anti-, pois essa palavra possui seria 2g2n
 tanso/#hm/p/
 tântalo/#nm//
 tantíssimo/#a//
@@ -35581,7 +35581,7 @@ vomitar/#vt/XYPLD/
 vomitivo/#hm//
 vómito/#nm/p/
 vontade/#nf/p/
-voo/#nm/pR/
+voo/PREAO90=vôo,#nm/pR/
 voragem/#nf//
 voraz/#an/dp/
 vórtice/#nm//
@@ -35696,7 +35696,7 @@ zeloso/#a/fpm/
 zelote/#a/p/
 zé-ninguém/#nm//
 zenital/#an/p/
-zénite/#nm//
+zênite/PREAO90=zénite,#nm//
 zê/#nm/p/
 zepelim/#nm//
 zé-pereira/#nm//
