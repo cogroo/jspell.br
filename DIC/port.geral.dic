@@ -1024,7 +1024,9 @@ aguarelista/#nn//
 aguarrás/#nf//
 aguar/#vt,I=3/YPLM/
 águas-furtadas/$água-furtada$#nf$N=p//
+águas-vivas/$água-viva$#nfp//
 água-tinta/#nf//
+água-viva/#nf//
 aguçadeira/#nf/p/
 aguçador/#nm/p/
 aguçadura/#nf//
@@ -1563,7 +1565,7 @@ amável/#hn/pms/
 amazelar/#vt/XYL/
 amazona/#nf/p/
 amazonense/#hn/p/
-amazónico/#a/fp/
+amazônico/PREAO90=amazónico,#a/fp/
 âmbar/#nm//
 ambas/CAT=pind,G=f,N=p//
 ambição/#nf/p/
@@ -1806,7 +1808,7 @@ anaplasia/#nf//
 anaplastia/#nf//
 anaplástico/#a//
 anarmónico/#a/fp/
-anarquia/#nf/prti/
+anarquia/#nf/pti/
 anarquizar/#vt/XYPLc/
 anástrofe/#nf//
 anatar/#vn/XYPL/
@@ -2188,8 +2190,7 @@ anti-hemorrágico/#a//
 anti-hemorroidal/#an//
 anti-hepático/#a/fp/
 anti-hipnótico/#a//
-anti-infeccioso/AO90=anti-infecioso,#a//
-anti-infecioso/PREAO90=anti-infeccioso,#a//
+anti-infeccioso/#a//
 anti-inflamatório/#nm/p/
 antijurídico/#a//
 antiletárgico/#a//
@@ -2197,7 +2198,7 @@ antiliberal/#an//
 antilogaritmo/#nm//
 antilogismo/#nm/p/
 antílope/#nm/p/
-antimaçónico/#a/fp/
+antimaçônico/PREAO90=antimaçónico,#a/fp/
 antimagnético/#a//
 antimatéria/#nf//
 antimelancólico/#a/fp/
@@ -2222,7 +2223,7 @@ antinomismo/#nm/p/
 antinupcial/#an//
 antipapado/#nm//
 antipapa/#nm/tip/
-antiparalelas/#nf,N=p//
+antiparalelas/#nfp//
 antiparalelismo/#nm/p/
 antiparasita/#an//
 antiparlamentarismo/#nm/p/
@@ -2257,6 +2258,7 @@ antirrugas/PREAO90=anti-rugas,#an//
 anti-séptico/AO90=antissético+antisséptico,#hm/fp/
 antissético/PREAO90=anti-séptico,#hm/fp/
 antisséptico/PREAO90=anti-séptico,#hm/fp/
+antitanque/#an,N=_//
 antiteatro/#nm//
 antiteísmo/#nm/pq/
 antitérmico/#a/pf/
@@ -3874,7 +3876,7 @@ automático/#a/fpH/
 automatismo/#nm/p/
 automatização/#nf//
 automatizar/#vt/XYPLc/
-autómato/#nm/p/
+autômato/PREAO90=autómato,#nm/p/
 automobilismo/#nm/p/
 automobilista/#nn/p/
 automobilístico/#a/fp/
@@ -3888,7 +3890,7 @@ auto/#nm/pti/
 autonomamente/$autónomo$#a$#avm//
 autonomia/#nf/ptir/
 autonomizar/#vt/XYPLnc/
-autónomo/#a/fp/
+autônomo/PREAO90=autónomo,#a/fp/
 autopiano/#nm//
 autoplastia/#nf//
 autópsia/#nf/p/
@@ -5431,7 +5433,7 @@ bostar/#vn/XYPL/
 bosteira/#nf//
 bosteiro/#nm/f/
 bota-de-elástico/AO90=,#nn//
-bota-fora/#nm//
+bota-fora/CAT=nc,G=m,N=_//
 bota/#nf/p/
 botânica/#nf//
 botânico/#a/fp/
@@ -9583,7 +9585,7 @@ convés/#nm//
 convexão/#nf//
 convexidade/#nf/p/
 convexo/#a/fpd/
-convexo-côncavo/#a//
+convexo-côncavo/#a/p/
 convicção/#nf/p/
 convicto/#a/fpm/
 convidado/#hn//
@@ -9815,7 +9817,7 @@ correcção/AO90=correção,#nf/p/
 correção/PREAO90=correcção,#nf/p/
 correccional/AO90=correcional,#an/m/
 correcional/PREAO90=correccional,#an/m/
-corre-corre/#nm//
+corre-corre/#nm/p/
 correctivo/AO90=corretivo,#hm/fp/
 corretivo/PREAO90=correctivo,#hm/fp/
 correcto/AO90=correto,#a/pfmIs/
@@ -9888,13 +9890,13 @@ cortadela/#nf/p/
 cortador/#hm//
 cortadura/#nf//
 corta-fogo/#nm/p/
-corta-mar/#nm//
-corta-mato/#nm//
+corta-mar/#nm/p/
+corta-mato/#nm/p/
 corta/#nf//
 cortante/#an/p/
-corta-papel/#nm//
+corta-papel/#nm/p/
 cortar/#vn/XYPLMDn/
-corta-vento/#nm//
+corta-vento/#nm/p/
 cortejador/#hm//
 cortejar/#vt/XYPLD/
 cortejo/#nm/fp/
@@ -9969,7 +9971,7 @@ costada/#nf//
 costado/#hm/f/
 costal/#an//
 costa/#nf/p/
-costa-riquenho/#hn//
+costa-riquenho/#hn/p/
 costear/#vn/ZYPLM/
 costeiro/#a/fp/
 costela/#nf/p/
@@ -10409,6 +10411,7 @@ curtidura/#nf//
 curtir/#vt/XYPLMD/
 curto/#a/pfmsh/
 curto-circuito/#nm//
+curtos-circuitos/$curto-circuito$#nm$N=p//
 curto-prazo/#nm//
 curtume/#nm/p/
 curva/#nf//
@@ -17695,7 +17698,7 @@ guapo/#a/p/
 guarani/#nm//
 guarani/#nn//
 guarda-chuva/#nm/p/
-guarda-costas/#nm//
+guarda-costas/#n,G=m,N=_//
 guardadeira/#nf//
 guardador/#nm//
 guarda-fatos/#nm//
@@ -17707,7 +17710,7 @@ guarda-joias/PREAO90=guarda-jóias,#nm//
 guarda-lama/#nm/p/
 guarda-livros/#nm//
 guarda-loiça/#nm//
-guarda-louça/#nm//
+guarda-louça/#nm/p/
 guarda-marinha/#nm//
 guardanapo/#nm/p/
 guarda/#nf/p/
@@ -17716,12 +17719,11 @@ guarda-noturno/PREAO90=guarda-nocturno,#nm//
 guarda-redes/#nm//
 guarda-republicano/#nm//
 guarda-rios/#nm//
-guarda-roupa/#nm//
-guarda-roupa/#nn//
+guarda-roupa/#nm/p/
 guardar/#vt/XYPLD/
 guarda-sol/#nm/p/
-guarda-vento/#nm//
-guarda-vestidos/#nm//
+guarda-vento/#nm/p/
+guarda-vestidos/#nm,G=m,N=_//
 guardear/#vt/ZYPLM/
 guardense/#hn/p/
 guardião/#nm/bp/
@@ -18103,7 +18105,7 @@ hispânico/#a/fp/
 hispanismo/#nm/p/
 hispanista/#nn/p/
 hispanizar/#vt/XYPL/
-hispano-americano/#a//
+hispano-americano/#a/p/
 histerese/#nm//
 histeria/#nf/p/
 histericismo/#nm/p/
@@ -18294,7 +18296,7 @@ iate/#nm/p/
 ibérico/#hm/fp/
 ibério/#hm/fp/
 iberizar/#vt/XYPLc/
-ibero-americano/#a//
+ibero-americano/#a/p/
 ibero/#a/tipf/
 ícaro/#nm//
 içar/#vt/XYPLM/
@@ -19278,7 +19280,7 @@ indocilidade/#nf/p/
 indocilizar/#vt/XYPL/
 indocumentado/#a//
 indo-europeia/#a/p/
-indo-europeu/#a//
+indo-europeu/#a/p/
 indolência/#nf/p/
 índole/#nf/p/
 indolente/#an/m/
