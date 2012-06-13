@@ -22,7 +22,7 @@ all:
 	@ echo
 
 # disabled some because it takes too long
-dicts: jspell hunspell # wordlist ispell aspell5 aspell6
+dicts: jspell hunspell wordlist # ispell aspell5 aspell6
 
 tarballs: jspell-all hunspell-all # ispell-all wordlist-all aspell5-all aspell6-all
 

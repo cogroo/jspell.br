@@ -916,14 +916,30 @@ E R     >  ÍAMOS        ; "P=1,N=p,T=c"
 E R     >  ÍEIS         ; "P=2,N=p,T=c"
 E R     >  IAM          ; "P=3,N=p,T=c"
 E R     >  -R,NDO       ; "T=g"
-[^C] [^R] [^E] [^V] E R     >  -ER,IDO      ; "G=m,N=s,T=ppa"
-[^C] [^R] [^E] [^V] E R     >  -ER,IDA      ; "G=f,N=s,T=ppa"
-[^C] [^R] [^E] [^V] E R     >  -ER,IDOS     ; "G=m,N=p,T=ppa"
-[^C] [^R] [^E] [^V] E R     >  -ER,IDAS     ; "G=f,N=p,T=ppa"
-C R E V E R     >  -EVER,ITO      ; "G=m,N=s,T=ppa"	# escrever -> escrito
-C R E V E R     >  -EVER,ITA      ; "G=f,N=s,T=ppa"	# escrever -> escrita
-C R E V E R     >  -EVER,ITOS     ; "G=m,N=p,T=ppa" # escrever -> escritos
-C R E V E R     >  -EVER,ITAS     ; "G=f,N=p,T=ppa" # escrever -> escritas
+# E R           >    -ER,IDO      ; "G=m,N=s,T=ppa"
+[^V] E R        >    -ER,IDO      ; "G=m,N=s,T=ppa"
+[^E] V E R      >    -ER,IDO      ; "G=m,N=s,T=ppa"
+[^R] E V E R    >    -ER,IDO      ; "G=m,N=s,T=ppa"
+[^C] R E V E R  >    -ER,IDO      ; "G=m,N=s,T=ppa"
+# E R     >  -ER,IDA      ; "G=f,N=s,T=ppa"
+[^V] E R        >    -ER,IDA      ; "G=f,N=s,T=ppa"
+[^E] V E R      >    -ER,IDA      ; "G=f,N=s,T=ppa"
+[^R] E V E R    >    -ER,IDA      ; "G=f,N=s,T=ppa"
+[^C] R E V E R  >    -ER,IDA      ; "G=f,N=s,T=ppa"
+# E R     >  -ER,IDOS     ; "G=m,N=p,T=ppa"
+[^V] E R        >    -ER,IDOS     ; "G=m,N=p,T=ppa"
+[^E] V E R      >    -ER,IDOS     ; "G=m,N=p,T=ppa"
+[^R] E V E R    >    -ER,IDOS     ; "G=m,N=p,T=ppa"
+[^C] R E V E R  >    -ER,IDOS     ; "G=m,N=p,T=ppa"
+# E R     >  -ER,IDAS     ; "G=f,N=p,T=ppa"
+[^V] E R        >    -ER,IDAS     ; "G=f,N=s,T=ppa"
+[^E] V E R      >    -ER,IDAS     ; "G=f,N=s,T=ppa"
+[^R] E V E R    >    -ER,IDAS     ; "G=f,N=s,T=ppa"
+[^C] R E V E R  >    -ER,IDAS     ; "G=f,N=s,T=ppa"
+C R E V E R     >  -EVER,ITO      ; "G=m,N=s,T=ppa"
+C R E V E R     >  -EVER,ITA      ; "G=f,N=s,T=ppa"
+C R E V E R     >  -EVER,ITOS     ; "G=m,N=p,T=ppa"
+C R E V E R     >  -EVER,ITAS     ; "G=f,N=p,T=ppa"
 
 
 
@@ -964,11 +980,22 @@ I R     >  ÍAMOS        ; "P=1,N=p,T=c"
 I R     >  ÍEIS         ; "P=2,N=p,T=c"
 I R     >  IAM          ; "P=3,N=p,T=c"
 I R     >  -R,NDO       ; "T=g"
-[^B] [^R] I R     >  -R,DO        ; "G=m,N=s,T=ppa"
-[^B] [^R] I R     >  -R,DA        ; "G=f,N=s,T=ppa"
-[^B] [^R] I R     >  -R,DOS       ; "G=m,N=p,T=ppa"
-[^B] [^R] I R     >  -R,DAS       ; "G=f,N=p,T=ppa"
-B R I R 	> -RIR,ERTO	; "G=m,N=p,T=ppa"
+# I R     >  -R,DO        ; "G=m,N=s,T=ppa"
+[^R] I R       >  -R,DO        ; "G=m,N=s,T=ppa"
+[^B] R I R     >  -R,DO        ; "G=m,N=s,T=ppa"
+# I R     >  -R,DA        ; "G=f,N=s,T=ppa"
+[^R] I R       >  -R,DA        ; "G=f,N=s,T=ppa"
+[^B] R I R     >  -R,DA        ; "G=f,N=s,T=ppa"
+# I R     >  -R,DOS       ; "G=m,N=p,T=ppa"
+[^R] I R       >  -R,DOS       ; "G=m,N=p,T=ppa"
+[^B] R I R     >  -R,DOS       ; "G=m,N=p,T=ppa"
+# I R     >  -R,DAS       ; "G=f,N=p,T=ppa"
+[^R] I R       >  -R,DAS       ; "G=f,N=p,T=ppa"
+[^B] R I R     >  -R,DAS       ; "G=f,N=p,T=ppa"
+B R I R 	   > -RIR,ERTO	   ; "G=m,N=s,T=ppa" # aberto
+B R I R 	   > -RIR,ERTA	   ; "G=f,N=s,T=ppa" # aberta
+B R I R 	   > -RIR,ERTOS    ; "G=m,N=p,T=ppa" # abertos
+B R I R 	   > -RIR,ERTAS	   ; "G=m,N=p,T=ppa" # abertas
 #ispell A R > -AR,Á
 #ispell E R > -ER,Ê
 
