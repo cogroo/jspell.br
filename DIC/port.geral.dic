@@ -4,6 +4,7 @@
 #nf/CAT=nc,G=f,N=s//
 #nfp/CAT=nc,G=f,N=p//
 #nn/CAT=nc,G=_,N=s//
+#nm2/CAT=nc,G=2,N=s//
 #a/CAT=adj,N=s,G=m// na realidade N=?? G=??
 #af/CAT=adj,N=s,G=f//
 #am/CAT=adj,N=s,G=m//
@@ -2270,7 +2271,8 @@ antituberculoso/#a//
 antivariólico/#a/f/
 antiviril/#an//
 antivirulento/#a//
-antivírus/#nmp//
+antivírus/CAT=nc,G=f,N=2//
+antivírus/CAT=adj,G=2,N=2//
 antologia/#nf/pq/
 antológico/#a/fp/
 antoniano/#a//
@@ -5984,7 +5986,7 @@ cais/#nm//
 caixa-de-ar/AO90=,#nf//
 caixa-de-óculos/AO90=,#nn//
 caixa-dos-pirolitos/AO90=,#nf//
-caixa/#nf/pt/
+caixa/#nn/pt/
 caixão/#nm/p/
 caixaria/#nf/p/
 caixeirada/#nf//
@@ -6562,7 +6564,7 @@ cara-metade/#nf//
 caramujo/#nm/p/
 caramulano/#hm/fp/
 caramuleiro/#a/fp/
-cara/#nf/p/
+cara/#nn/p/
 caranguejeiro/#hm/fp/
 caranguejola/#nf/p/
 caranguejo/#nm/p/
@@ -6714,7 +6716,7 @@ carótide/#nf//
 carpa/#nf//
 carpela/#nf/p/
 carpelo/#nm/p/
-carpete/#nf/p/
+carpete/#nn/p/			# seria só s.f., mas alguns dic. apontam s.m.
 carpideira/#nf//
 carpido/#nm//
 carpidura/#nf//
@@ -6864,7 +6866,7 @@ cascarrão/#nm//
 cascar/#vt/XYPL/
 cascata/#nf/p/
 cascatear/#vi/ZYL/
-cascavel/#hm/p/
+cascavel/#hn/p/
 casco/#nm/p/
 cascoso/#a/p/
 cascudo/#hm/p/
@@ -7437,7 +7439,7 @@ chamejante/#an/p/
 chamejar/#vn/XYPLn/
 chaminé/#nf/p/
 champanha/#nm//
-champanhe/#nm/p/
+champanhe/#nn/p/
 champanhizar/#vt/XYPL/
 champô/#nm//
 chamuscada/#nf//
@@ -14151,7 +14153,7 @@ escovinha/#nf//
 escrava/#nf//
 escravaria/#nf/p/
 escravatura/#nf//
-escravidão/#nm//
+escravidão/#nf//
 escravizador/#hm//
 escravizar/#vt/XYPLcD/
 escravo/#nm/fp/
@@ -15565,7 +15567,7 @@ fanfarronada/#nf/p/
 fanfarronar/#vi/XYL/
 fanfarronice/#nf/p/
 fanfar/#vi/XYL/
-fã/#nf/p/
+fã/#nn/p/
 fanhoso/#a/p/
 fanicar/#vi/XYL/
 fanico/#nm/p/
@@ -23282,6 +23284,7 @@ modelar/#an/p/
 modelar/#vt/XYPLcDv/
 modelizar/#vt/XYPLnc/
 modelo/#nm/pitu/
+modelo/#nn,SEM=moda/p/
 moderador/#hm/p/
 moderante/#an/p/
 moderar/#vt/XYPLcDnvB/
@@ -25238,7 +25241,7 @@ pachorra/#nf//
 pachorrento/#a/m/
 paciência/#nf/p/
 paciente/#an/pmI/
-paciente/#nm/p/
+paciente/#nn/p/
 pacificador/#hm//
 pacificar/#vt/XYPLcD/
 pacificidade/#nf/p/
@@ -27137,6 +27140,7 @@ policelular/#an//
 policêntrico/#a//
 polichinelo/#nm/p/
 policial/#an//
+policial/#nm/p/
 polícia/#nf/p/
 polícia/#nm/px/
 policiar/#vt/XYPLM/
@@ -33596,6 +33600,7 @@ tiragem/#nf/p/
 tira-linhas/#nm//
 tirana/#nf//
 tira/#nf//
+tira/#nm2,SEM=policial/p/
 tirania/#nf//
 tirânico/#a/pf/
 tiranismo/#nm/p/
@@ -35407,7 +35412,7 @@ virtude/#nf/pS/
 virtuoso/#a/fpidS/
 virulência/#nf/p/
 virulento/#a/fpm/
-vírus/#nmp//
+vírus/CAT=nc,G=f,N=2//
 vir/#vi,I=3/L/
 visada/#nf//
 visão/#nf/p/
