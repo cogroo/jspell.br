@@ -33,17 +33,21 @@ my $msg = "Digite uma palavra: \n";
 print $msg;
 while(<>) {
 	chop;
-	
-	my @fea = $dict->fea($_);
+	my $usr = $_;
+	my @fea = $dict->fea($usr);
 	
 	print Lingua::Jspell::any2str ( [@fea] , 1) . "\n";
 	
-	my @der = $dict->der($_);
+	my @der = $dict->der($usr);
 	
 	foreach my $dword (@der) {
 		@fea = $dict->fea($dword);
+		foreach my $f (@fea) {
+			if($$f{'rad'} eq $usr) {
+				print "\t- " . $dword . Lingua::Jspell::any2str ( $f , "compact") . "\n";
+			}
+		}
 		
-		print "\t- " . $dword . Lingua::Jspell::any2str ( [@fea] , "compact") . "\n";
 	}
 	print $msg;
 }
