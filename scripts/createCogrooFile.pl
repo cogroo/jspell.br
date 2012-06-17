@@ -28,6 +28,7 @@ install();
 
 my $isCollectTags = 0;
 my $isCollectContractions = 0;
+my $isCollectVerbTransitivity = 1;
 
 # ptbr.dic for production, sample.dic for test
 
@@ -52,6 +53,11 @@ if($isCollectTags) {
 if($isCollectContractions) {
 	# the contractions
 	open (CON,		'>:encoding(UTF-8)', $out.'contractions.txt');
+}
+
+if($isCollectVerbTransitivity) {
+	# the contractions
+	open (TRAN,		'>:encoding(UTF-8)', $out.'trans.txt');
 }
 
 # hash to remove duplicates and sort... is it necessary for simple? maybe we should serialize it directly to make it faster
@@ -110,6 +116,7 @@ $dic->foreach_word(
 					my $analisis;
 					my $rad;
 					if(!($dword =~ m/\S-\S/ && ${$key}{'CAT'} eq 'v')) { #avoid amar-lhe, amo-lha-ei etc
+						my $trans;
 						while ( my ($k,$v) = each %$key ) {
 							if( $k eq "rad" ) {
 								$rad = $v;
@@ -120,9 +127,15 @@ $dic->foreach_word(
 							    	$tags{"$k:$v"} = 1; # enable to create a log of tags
 							    }
 							}
+							elsif( $k eq 'TR' ) {
+						    	$trans = $v;
+							}
 						}
 						$rad =~ s/ /_/g;
 						print SIMPLE "$dword $rad>$analisis\n";
+						if($trans) {
+							print TRAN "$dword\t$rad\t$trans\n";
+						}
 						#$simple{$dword}{"$rad>$analisis"} = 1;
 						if($isCollectContractions && ${$key}{'CAT'} eq 'cp') {
 							$con{$dword} = 1;
@@ -158,4 +171,6 @@ if($isCollectContractions) {
 	close CON or die "bad CON: $! $?";
 }
 
-
+if($isCollectVerbTransitivity) {
+	close TRAN or die "bad TRAN: $! $?";
+}
