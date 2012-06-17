@@ -38,6 +38,7 @@ cibersegurança/PREAO90=cibersegurança,#nf/
 ciberterrorista/PREAO90=ciberterrorista,#nf/p
 cibernauta/#nn/p
 Cobol/CAT=np//
+CoGrOO/CAT=np,G=m//
 copyright/#nm,ORIG=ing/a/
 CVS/#tsm//
 disquete/#nf/p/
@@ -65,6 +66,7 @@ Intel/CAT=np,G=f,N=s//
 Internet/CAT=nc,N=s//
 Java/CAT=np,G=m//
 LaTeX/#tsm//
+LibreOffice/CAT=np,G=m//
 link/#nm,ORIG=ing//
 links/$link$#nm,ORIG=ing$N=p//
 Linux/CAT=np,G=m//
@@ -114,6 +116,7 @@ Thunderbird/CAT=np,G=m,N=s//
 Unix/CAT=np,G=m//
 URL/#tsm//
 USB/#tsm//
+Vero/CAT=np,G=m//
 VDM/#tsm//
 virtualização/#nf/p/
 webmaster/#nm,ORIG=ing//
