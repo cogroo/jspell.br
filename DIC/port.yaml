@@ -122,6 +122,7 @@ SEM:
  instituicao: instituição
  servico: serviço
  proj: Projeto
+ clube: clube ou time
 
 CAT-TAG:
  np:   NP

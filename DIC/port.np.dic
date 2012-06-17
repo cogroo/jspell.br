@@ -4,6 +4,7 @@
 #npf/CAT=np,G=f,SEM=p
 #mit/CAT=np,SEM=mitol
 #la/LA=1
+#cm/CAT=np,SEM=clube,G=m,N=s
 #t/CAT=np,SEM=ter,G=m,N=s
 #tmp/CAT=np,SEM=ter,G=m,N=p
 #tms/CAT=np,SEM=ter,G=m,N=s
@@ -330,6 +331,7 @@ Baltazar/#npm/
 Báltico/#la,#t/
 Baltimore/#tc/
 Balzac/#np1/
+Bandeirantes/#tf/
 Bangladeche/#la,#tp/
 Baptista/AO90=Batista,#npm/
 Batista/PREAO90=Baptista,#npm/
@@ -1022,6 +1024,7 @@ Florença/#tc/
 Florêncio/#npm/
 Flórido/#npm/
 Florinda/#npf/
+Folha/#te/
 Fonseca/#np/
 Fontainhas/CAT=np/
 Ford/#np1/
@@ -1108,6 +1111,7 @@ Girão/CAT=np/
 Gisela/#npf/
 Glasgow/#tc/
 Glen/#np1/
+Globo/#te/
 Glória/#np/
 Goa/#t/
 Godard/#np1/
@@ -1301,6 +1305,7 @@ inverno/PREAO90=Inverno,#npm/p
 Iorque/#tc/
 Iowa/#t/
 Ipanema/#t/
+IRA/#npm,SEM=sigla/
 Irão/#la,#tp/
 Iraque/#la,#tp/
 Irene/#npf/
@@ -1552,6 +1557,7 @@ Luigi/#np1/
 Luísa/#npf/
 Luisiana/#t/
 Luís/#npm/
+Lula/#np/
 Lumen/CAT=np/
 Lumiar/#la,#t/
 Lumière/#np1/
@@ -1622,6 +1628,7 @@ Maomé/#npm/
 Mao/#npm/
 Maputo/#tc/
 Maquiavel/#npm/
+Maracanã/#t/
 Maranhão/#la,#t/
 Marão/#la,#t/
 Marcelino/#npm/
@@ -1884,6 +1891,7 @@ Nunes/#npm/
 Nuno/#npm/
 Nuremberga/#tc/
 Oakland/#t/
+Obama/#np1/
 Obélix/#npm/
 Óbidos/#t/
 Oceânia/#t,SEM=cont/
@@ -1965,6 +1973,7 @@ Paleolítico/CAT=np/
 Palermo/#tc/
 Palestina/CAT=np/
 Palmeira/#t/
+Palmeiras/#cm//
 Palmela/#t/
 Palmer/#np1/
 Palmira/#npf/
@@ -1977,6 +1986,7 @@ Papas/CAT=np/
 Papua-Nova/$Papua-Nova Guiné$#la,#tpf/
 Paquistão/CAT=np/
 Paraguai/#la,#tp/
+Parreira/#np/
 Paraíba/#t/
 Paraíso/CAT=np,G=m/
 Paraná/CAT=np/
@@ -2186,6 +2196,7 @@ Resende/#np/
 Ressurreição/#npf/
 Restelo/#t/
 Reynolds/#np1/
+Riachuelo/#te/
 Ribatejo/#la,#t/
 Ribeiro/#np/
 Ricardo/#npm/
@@ -2293,6 +2304,7 @@ Santana/#np/
 Santander/CAT=np/
 Santarém/#tc/
 Santiago/#t/
+Santos/#t/
 São/CAT=np/
 Saragoça/#tc/
 Sarah/#np1/
@@ -2575,6 +2587,7 @@ Trindade/$Trindade e Tobago$#tpf/
 Trinitá/#np/
 Tripoli/#tc/
 Tristão/#npm/
+Triunfo/#te/
 Trofa/#la,#t/
 Troia/#t/
 Trondheim/#tc/

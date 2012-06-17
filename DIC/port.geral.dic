@@ -5,6 +5,7 @@
 #nfp/CAT=nc,G=f,N=p//
 #nn/CAT=nc,G=_,N=s//
 #nm2/CAT=nc,G=2,N=s//
+#nn2/CAT=nc,G=_,N=_//
 #a/CAT=adj,N=s,G=m// na realidade N=?? G=??
 #af/CAT=adj,N=s,G=f//
 #am/CAT=adj,N=s,G=m//
@@ -4569,6 +4570,7 @@ basquetebol/#nm/t/
 basta/#i//
 basta/#nf//
 bastante/#avq/p/
+bastante/#an/p/
 bastão/#nm/p/
 bastardia/#nf//
 bastardo/#nm/fp/
@@ -11909,8 +11911,8 @@ dezena/#nf/p/
 dezoito/#ca//
 dez-réis/#nm//
 dia-a-dia/AO90=,#nm//
-diabete/#nf/p/
-diabetes/#nf//
+diabete/#nn/p/
+diabetes/#nn2//
 diabético/#hm/fp/
 diabólico/#a/fpH/
 diabolismo/#nm/p/
@@ -14296,6 +14298,7 @@ esmeralda/#nf/p/
 esmerar/#vt/XYPL/
 esmigalhar/#vt/XYPLM/
 esmiuçar/#vt,I=3/PLD/
+esmo/#nm//
 esmocadela/#nf/p/
 esmocar/#vt/XYPL/
 esmola/#nf/p/
@@ -16233,6 +16236,7 @@ focagem/#nf/p/
 focal/#an/p/
 focalizar/#vt/XYPLc/
 foca/#nf/p/
+foca/#nm2/p/
 focar/#vt/XYPL/
 focinhada/#nf//
 focinhar/#vn/XYPL/
@@ -17396,6 +17400,8 @@ goês/#hm/fp/
 goiabada/#nf//
 goiaba/#nf/p/
 goiabeira/#nf/p/
+gol/#nm//
+gols/$gol$#nm$N=p//
 golada/#nf/p/
 gola/#nf/p/
 golear/#vn/ZYPLMD/
@@ -17518,6 +17524,7 @@ gramada/#nf//
 gramadeira/#nf//
 gramado/#hm/p/
 grama/#nf/p/
+grama/#nn/p/
 gramar/#vn/XYPLD/
 gramatical/#an/pmi/
 gramaticalismo/#nm/p/
@@ -17715,7 +17722,7 @@ guarda-loiça/#nm//
 guarda-louça/#nm/p/
 guarda-marinha/#nm//
 guardanapo/#nm/p/
-guarda/#nf/p/
+guarda/#nn/p/
 guarda-nocturno/AO90=guarda-noturno,#nm//
 guarda-noturno/PREAO90=guarda-nocturno,#nm//
 guarda-redes/#nm//
@@ -20638,6 +20645,7 @@ juntada/#nf//
 junta/#nf/p/
 juntar/#vt/XYPL/
 junto/#a/pfmh/
+junto/#av//
 jupiteriano/#a//
 juramentar/#vt/XYPL/
 jura/#nf/p/
@@ -23998,7 +24006,7 @@ nascedoiro/#nm//
 nascedouro/#nm//
 nascença/#nf//
 nascente/#an//
-nascente/#nf/p/
+nascente/#nn/p/
 nascer/#vi/XYLRMnv/
 nascida/#nf//
 nascituro/#hm/p/
@@ -25134,7 +25142,7 @@ ostentativo/#a//
 ostentoso/#a/pm/
 osteoclasto/#nm//
 osteopatia/#nf/pqr/
-osteoporose/#nm//
+osteoporose/#nf//
 ostráceo/#a//
 ostracismo/#nm/p/
 ostracizar/#vt/XYPLn/
@@ -25279,6 +25287,8 @@ padrear/#vi/ZYLcD/
 padreca/#nm//
 padreco/#nm/f/
 padre/#nm/p/
+padre-diretor/#nm//
+padres-diretores/$padre-diretor$#nm$N=p//
 padrinho/#nm/p/
 padroado/#nm//
 padroeiro/#hm/f/
@@ -29804,6 +29814,7 @@ relação/#nf/p/
 relacionação/#nf//
 relacional/#an/p/
 relacionar/#vt/XYPLcMv/
+relações-públicas/#nn2//
 relamber/#vt/XYPL/
 relambório/#hm//
 relâmpago/#nm/p/
