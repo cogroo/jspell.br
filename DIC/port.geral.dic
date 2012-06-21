@@ -3246,7 +3246,7 @@ asiatismo/#nm/p/
 asilado/#nm//
 asilar/#vt/XYPL/
 asilo/#nm/p/
-asinha/#av/p/
+asinha/#av//
 asma/#nf//
 asmático/#a/fp/
 asnada/#nf//
@@ -4250,7 +4250,7 @@ baixela/#nf/p/
 baixel/#nm//
 baixeza/#nf//
 baixia/#nf/p/
-baixinho/#av/pf/
+baixinho/#av//
 baixio/#nm/p/
 baixista/#nm//
 baixo/#hm/pfts/
@@ -4569,7 +4569,7 @@ basquetebolista/#nn//
 basquetebol/#nm/t/
 basta/#i//
 basta/#nf//
-bastante/#avq/p/
+bastante/#avq//
 bastante/#an/p/
 bastão/#nm/p/
 bastardia/#nf//
@@ -6703,7 +6703,7 @@ carnosidade/#nf/p/
 carnoso/#a/fpd/
 carnudo/#a/fp/
 caro/#a/pf/
-caro/#av/pfs/
+caro/#av/s/
 caroçame/#nm//
 carocha/#nf//
 carochinha/#nf//
@@ -11871,7 +11871,6 @@ deuterão/#nm//
 deutérico/#a//
 deutério/#nm//
 devagar/#av/h/
-devagarinho/#av//
 devaneador/#hm//
 devanear/#vn/ZYPLcD/
 devaneio/#nm/p/
@@ -15111,10 +15110,10 @@ excluído/#a/fp/
 excluir/#vt/KPL/
 exclusão/#nf/p/
 exclusiva/#nf//
-exclusive/#av/i/
+exclusive/#av//
 exclusividade/#nf/p/
 exclusivismo/#nm/p/
-exclusivo/#hm/pfmid/
+exclusivo/#hm/pfmidt/
 excomungar/#vt/XYPLv/
 excomunhal/#an//
 excomunhão/#nf/p/
@@ -16751,7 +16750,7 @@ fundear/#vi/ZYL/
 fundiário/#a/fp/
 fundilho/CAT=a_nc,N=s/p/
 fundir/#vt/XYPLcDv/
-fundo/#avl/p/
+fundo/#avl//
 fundo/#hm/pmt/
 fundura/#nf//
 fúnebre/#an/p/
@@ -23754,7 +23753,7 @@ mudo/#hm/fpm/
 mugido/#nm/p/
 mugir/#vi,I=3/YLD/
 mui/#av//
-muito/#avq/s/
+muito/#avq//
 muito/CAT=pind,G=m,N=s/fp/
 muito/CAT=pind,G=_,N=_//
 mulada/#nf//
@@ -26605,7 +26604,8 @@ pertinácia/#nf//
 pertinaz/#an//
 pertinência/#nf/p/
 pertinente/#an/p/
-perto/#avl/hs/
+perto/#avl/s/
+perto/#an/h/
 perturbabilidade/#nf/p/
 perturbação/#nf//
 perturbador/#hm//
@@ -28580,7 +28580,7 @@ quantificar/#vt/XYPLcvD/
 quantioso/#a//
 quantíssimo/#a//
 quantitativo/#hm/pfm/
-quanto/#avq/pfs/
+quanto/#avq//
 quanto/CAT=pind,G=m,N=s/fp/
 quanto/CAT=pint/pfs/
 quanto/CAT=prel,G=m,N=s,C=a/fp/
@@ -33053,8 +33053,9 @@ tanque/#nm/p/		retirou-se o prefixo anti-, pois essa palavra possui seria 2g2n
 tanso/#hm/p/
 tântalo/#nm//
 tantíssimo/#a//
-tanto/#av/pfs/
+tanto/#av//
 tanto/CAT=pind,G=m,N=s/fp/
+tanto/#nm//
 tanzaniano/#a/fp/
 tão/#av//
 taoísta/AO90=taoista,#hn/p/
