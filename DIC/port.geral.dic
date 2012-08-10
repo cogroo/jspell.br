@@ -2025,7 +2025,7 @@ anorexia/#nf//
 anormal/#an/pmd/
 anormalidade/#nf/p/
 anortear/#vt/ZYPL/
-anos-luz/$ano-luz$N=p//
+anos-luz/$ano-luz$#nm,N=p//
 anoso/#a//
 anotação/#nf//
 anotador/#nm/p/
@@ -2277,7 +2277,7 @@ antituberculoso/#a//
 antivariólico/#a/f/
 antiviril/#an//
 antivirulento/#a//
-antivírus/CAT=nc,G=f,N=2//
+antivírus/CAT=nc,G=m,N=2//
 antivírus/CAT=adj,G=2,N=2//
 antologia/#nf/pq/
 antológico/#a/fp/
@@ -14988,7 +14988,7 @@ etnônimo/#nm/p/
 etrusco/#hm/fp/
 eucalipto/#nm/p/
 eucarístico/#a/fp/
-eu/CAT=ppes,N=s,P=1,C=n//
+eu/CAT=ppes,G=_,N=s,P=1,C=n//
 euclidiano/#a/fp/
 eufêmico/#a/fp/
 eufemismo/#nm/p/
@@ -21273,7 +21273,7 @@ lexicologia/#nf/qr/
 léxico/#nm/fp/
 lexiologia/#nf/r/
 lezíria/#nf//
-lhe/CAT=ppes,N=s,P=3,C=a/p/
+lhe/CAT=ppes,G=_,N=s,P=3,C=a/p/
 lho/CAT=cp,Ppes=lhe,Pind=o,G=m,N=s/fp/
 liamba/#nf//
 libação/#nm/p/
@@ -22514,7 +22514,7 @@ mecânico/#hm/pf/
 mecanismo/#nm/p/
 mecanizar/#vt/XYPLc/
 mecanografia/#nf/pqr/
-me/CAT=ppes,N=s,P=1,C=a//
+me/CAT=ppes,G=_,N=s,P=1,C=a//
 mecenas/#nm//
 mecenato/#nm/i/
 mecha/#nf//
@@ -23069,7 +23069,7 @@ mimalheiro/#a//
 mimalho/#hm/pfG/
 mimanço/#hm//
 mimar/#vt/XYPL/
-mim/CAT=ppes,N=s,P=1,C=d//
+mim/CAT=ppes,G=_,N=s,P=1,C=d//
 mimético/#a/pf/
 mimetismo/#nm/p/
 mimetizar/#vt/XYPLnc/
@@ -24411,8 +24411,8 @@ norte-coreano/#a/fp/
 nortenho/#a/fp/
 norte/#nm/tS/
 norueguês/#hm/fp/
-nos/CAT=ppes,N=p,P=1,C=a//
-nós/CAT=ppes,N=p,P=1,C=n//
+nos/CAT=ppes,G=_,N=p,P=1,C=a//
+nós/CAT=ppes,G=_,N=p,P=1,C=n//
 nosso/CAT=ppos,N=s,P=1,G=m/fp/
 nostalgia/#nf/p/
 nostálgico/#hm/fp/
@@ -31366,7 +31366,7 @@ secar/#vn/XYPLDn/
 se/CAT=conj-s//
 se/CAT=pind//
 se/CAT=pass//
-se/CAT=ppes,N=_,P=3,C=a/p/
+se/CAT=ppes,G=_,N=_,P=3,C=a/p/
 secção/#nf/p/
 seccional/#an//
 seccionar/#vt/XYPLM/
@@ -31840,7 +31840,7 @@ sibilância/#nf/p/
 sibilante/#an/p/
 sibilantizar/#vn/XYPL/
 sibilar/#vn/XYPLcn/
-si/CAT=ppes,P=3,N=s,C=d//
+si/CAT=ppes,G=_,P=3,N=s,C=d//
 siciliano/#hm/fp/
 sicrano/#nm/fp/
 sideral/#an//
@@ -33156,7 +33156,7 @@ teátrico/#a//
 teatro/#nm/pt/
 tebano/#hm2//
 teca/#nf//
-te/CAT=ppes,N=s,P=2,C=a//
+te/CAT=ppes,G=_,N=s,P=2,C=a//
 tecedeira/#nf//
 tecedor/#hm//
 tecedura/#nf//
@@ -33539,7 +33539,7 @@ tibetano/#hm/fp/
 tibial/#an//
 tíbia/#nf/p/
 tição/#nm//
-ti/CAT=ppes,N=s,P=2,C=d//
+ti/CAT=ppes,G=_,N=s,P=2,C=d//
 tiflite/#nf//
 tifóide/AO90=tifoide,#an//
 tifoide/PREAO90=tifóide,#an//
@@ -35427,7 +35427,7 @@ virtude/#nf/pS/
 virtuoso/#a/fpidS/
 virulência/#nf/p/
 virulento/#a/fpm/
-vírus/CAT=nc,G=f,N=2//
+vírus/CAT=nc,G=m,N=2//
 vir/#vi,I=3/L/
 visada/#nf//
 visão/#nf/p/
@@ -35548,7 +35548,7 @@ vocalista/#nn/p/
 vocalizador/#hm//
 vocalizar/#vt/XYPLcD/
 vocativo/#nm/p/
-você/CAT=ppes,P=3,N=s,C=n/p/
+você/CAT=ppes,G=_,P=3,N=s,C=n/p/
 vociferador/#hm//
 vociferante/#an/p/
 vociferar/#vn/XYPLcDn/
@@ -35605,8 +35605,8 @@ voo/PREAO90=vôo,#nm/pR/
 voragem/#nf//
 voraz/#an/dp/
 vórtice/#nm//
-vos/CAT=ppes,N=p,P=2,C=a//
-vós/CAT=ppes,N=p,P=2,C=n//
+vos/CAT=ppes,G=_,N=p,P=2,C=a//
+vós/CAT=ppes,G=_,N=p,P=2,C=n//
 vosmecê/CAT=ppes//
 vossemecê/CAT=ppes//
 vosso/CAT=ppos,P=2,N=s,G=m/fp/

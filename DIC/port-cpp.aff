@@ -470,21 +470,21 @@ Z           >     -Z,CÍSSIMAS  ; "GR=sup,G=f,N=p"   # feliz->felicíssimas
 #-----------------------------------------
 # idade
 flag +d:         ; "CAT=adj,N=s"       #idade
-[^ÇGI]O      >     -O,IDADE     ; "CAT=nc,G=f,FSEM=dd" # activo->actividade
-Ç O         >    -ÇO,CIDADE    ; "CAT=nc,G=f,FSEM=dd" # castiço->casticidade
-G O         >    -GO,GUIDADE   ; "CAT=nc,G=f,FSEM=dd" # antigo->antiguidade
-[^R] I O    >  -O,EDADE     ; "CAT=nc,G=f,FSEM=dd" # antigo->antiguidade
-[^ÁÓ] R I O  >  -O,EDADE     ; "CAT=nc,G=f,FSEM=dd" # antigo->antiguidade
-Á R I O     >  -ÁRIO,ARIEDADE  ; "CAT=nc,G=f,FSEM=dd" # antigo->antiguidade
-Ó R I O     >  -ÓRIO,ORIEDADE  ; "CAT=nc,G=f,FSEM=dd" # 
-E           >     -E,IDADE     ; "CAT=nc,G=f,FSEM=dd" # breve->brevidade
-R           >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # angular->angularidade
-[^V][^Q] L  >        IDADE     ; "CAT=nc,G=f,FSEM=dd" # amoral->amoralidade
-[^ÁÍÚ] V E L >   -VEL,BILIDADE  ; "CAT=nc,G=f,FSEM=dd" #
-Á V E L     >  -ÁVEL,ABILIDADE ; "CAT=nc,G=f,FSEM=dd" # amável->amabilidade
-Í V E L     >  -ÍVEL,IBILIDADE ; "CAT=nc,G=f,FSEM=dd" # amovível->amovibilidade
-Ú V E L	    >  -ÚVEL,UBILIDADE ; "CAT=nc,G=f,FSEM=dd" # volúvel->volubilidade
-Z           >     -Z,CIDADE    ; "CAT=nc,G=f,FSEM=dd" # feroz->ferocidade
+[^ÇGI]O      >     -O,IDADE     ; "CAT=nc,G=f,N=s,FSEM=dd" # activo->actividade
+Ç O         >    -ÇO,CIDADE    ; "CAT=nc,G=f,N=s,FSEM=dd" # castiço->casticidade
+G O         >    -GO,GUIDADE   ; "CAT=nc,G=f,N=s,FSEM=dd" # antigo->antiguidade
+[^R] I O    >  -O,EDADE     ; "CAT=nc,G=f,N=s,FSEM=dd" # antigo->antiguidade
+[^ÁÓ] R I O  >  -O,EDADE     ; "CAT=nc,G=f,N=s,FSEM=dd" # antigo->antiguidade
+Á R I O     >  -ÁRIO,ARIEDADE  ; "CAT=nc,G=f,N=s,FSEM=dd" # antigo->antiguidade
+Ó R I O     >  -ÓRIO,ORIEDADE  ; "CAT=nc,G=f,N=s,FSEM=dd" # 
+E           >     -E,IDADE     ; "CAT=nc,G=f,N=s,FSEM=dd" # breve->brevidade
+R           >        IDADE     ; "CAT=nc,G=f,N=s,FSEM=dd" # angular->angularidade
+[^V][^Q] L  >        IDADE     ; "CAT=nc,G=f,N=s,FSEM=dd" # amoral->amoralidade
+[^ÁÍÚ] V E L >   -VEL,BILIDADE  ; "CAT=nc,G=f,N=s,FSEM=dd" #
+Á V E L     >  -ÁVEL,ABILIDADE ; "CAT=nc,G=f,N=s,FSEM=dd" # amável->amabilidade
+Í V E L     >  -ÍVEL,IBILIDADE ; "CAT=nc,G=f,N=s,FSEM=dd" # amovível->amovibilidade
+Ú V E L	    >  -ÚVEL,UBILIDADE ; "CAT=nc,G=f,N=s,FSEM=dd" # volúvel->volubilidade
+Z           >     -Z,CIDADE    ; "CAT=nc,G=f,N=s,FSEM=dd" # feroz->ferocidade
 
 [^ÇGI]O      >     -O,IDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # activo->actividade 
 Ç O         >    -ÇO,CIDADES    ; "CAT=nc,G=f,N=p,FSEM=dd" # castiço->casticidade

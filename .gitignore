@@ -1,2 +1,6 @@
 out
 .DS_Store
+
+.settings/org.eclipse.core.resources.prefs
+
+.project
