@@ -14,7 +14,7 @@ bug/#nm,ORIG=ing/a/
 byte/#nm,ORIG=ing/p/
 CAD/#tsm//
 CAM/#tsm//
-CD-ROM/#tsm//
+CD-ROM/#nm,SEM=sigla//
 chip/#nm,ORIG=ing/a/
 ciber-ataque/AO90=ciberataque,#nm/p
 ciber-café/AO90=cibercafé,#nm/p
@@ -38,7 +38,7 @@ cibersegurança/PREAO90=cibersegurança,#nf/
 ciberterrorista/PREAO90=ciberterrorista,#nf/p
 cibernauta/#nn/p
 Cobol/CAT=np//
-CoGrOO/CAT=np,G=m//
+CoGrOO/#tsm//
 copyright/#nm,ORIG=ing/a/
 CVS/#tsm//
 disquete/#nf/p/

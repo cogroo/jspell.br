@@ -1321,6 +1321,7 @@ alho/#nm/p/
 alho-porro/#nm//
 alhos-porros/$alho-porro$#nm$N=p//
 aliança/#nf/p/
+aliado/#hm/fp/
 aliar/#vt/XYPLv/
 aliás/#av//
 ali/#avl//
@@ -1450,7 +1451,9 @@ altista/#nn/p/
 altitude/#nf/p/
 altivez/#nf//
 altivo/#a/fpm/
-alto/#a/pfms/
+alto/#hm/pf/
+alto/#av/mi/
+alto/#i//
 alto-falante/#nm/p/
 alto-relevo/#nm//
 altos-fornos/#nm,N=p//
@@ -1652,7 +1655,7 @@ amígdala/#nf/p/
 amigdalar/#an//
 amigdalina/#nf//
 amigdalite/#nf/p/
-amigo/#nm/fp/
+amigo/#hm/fp/
 amilóide/AO90=amiloide,#an//
 amiloide/PREAO90=amilóide,#an//
 amimar/#vt/XYPLD/
@@ -2090,6 +2093,7 @@ anteparar/#vn/XYPL/
 anteparo/#nm/fp/
 anteparto/#nm//
 antepassar/#vi/XYL/
+antepassado/#hm/fp/
 antepasto/#nm//
 antepenúltimo/#a/fp/
 anteportada/#nf//
@@ -3162,7 +3166,7 @@ arsenal/#nm/p/
 arsênico/#nm//
 arsênio/#nm//
 arsenioso/#nm//
-artefacto/#nm/p/
+artefato/PREAO90=artefacto,#nm/p/
 arte-maior/#nf//
 arte/#nf/pt/
 arterial/#an/pd/
@@ -3270,10 +3274,8 @@ as/$o$CAT=ppes,G=m,N=s,P=3,C=a$G=f,N=p//
 aso/#nm//
 aspa/#nf/p/
 aspectável/#an//
-aspecto/AO90=aspeto,#nm/p/
-aspeto/PREAO90=aspecto,#nm/p/
-aspectual/AO90=aspetual,#an/p/
-aspetual/PREAO90=aspectual,#an/p/
+aspecto/#nm/p/
+aspectual/#an/p/
 asperamente/$áspero$#a$#avm//
 aspereza/#nf//
 áspero/#a/fp/
@@ -5311,7 +5313,7 @@ bolsão/#nm/p/
 bolsar/#vt/XYPL/
 bolseiro/#hm/fp/
 bolso/#nm/p/
-bom/#a/hp/
+bom/#hm/hp/
 bombacho/#nm//
 bombada/#nf//
 bombagem/#nf//
@@ -9175,6 +9177,7 @@ consola/#nf/p/
 consolar/#vt/XYPLcDv/
 consolativo/#a/p/
 consolatório/#a/fp/
+console/#nm/p/
 consolidante/#an/p/
 consolidar/#vt/XYPLRcnv/
 consolidativo/#an//

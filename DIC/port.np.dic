@@ -36,7 +36,7 @@ Abrams/#np1/
 Abrantes/#t/
 Abreu/#npm/
 Abril/AO90=abril,#em/
-abril/PREAO90=Abril,#em/
+abril/PREAO90=Abril,#nm/
 Abu/#np/
 Acácio/#npm/
 Açores/#la,#tmp/
@@ -64,7 +64,7 @@ Afrodite/#npf/
 Agostinho/#npm/
 Agostinhos/#npm/
 Agosto/AO90=agosto,#em/
-agosto/PREAO90=Agosto,#em/
+agosto/PREAO90=Agosto,#nm/
 Agra/#t/
 Agraço/#t/
 Águas/#np/
@@ -792,7 +792,7 @@ Desidério/CAT=np/
 Detroit/#tc/
 Deus/#mit,G=m/
 Dezembro/AO90=dezembro,#em/
-dezembro/PREAO90=Dezembro,#em/
+dezembro/PREAO90=Dezembro,#nm/
 Diabo/#mit,G=m/
 Diamantina/#npf/
 Diamantino/#npm/
@@ -994,7 +994,7 @@ Ferrari/#np1/
 Ferraz/#np/
 Ferreira/#np/
 Fevereiro/AO90=fevereiro,#em/
-fevereiro/PREAO90=Fevereiro,#em/
+fevereiro/PREAO90=Fevereiro,#nm/
 Feynman/#np1/
 Fialho/#npm/
 Fibonacci/#np1/
@@ -1301,7 +1301,7 @@ Ingmar/#np1/
 Innsbruck/#tc/
 Inocêncio/#npm/
 Inverno/AO90=inverno,#npm/p
-inverno/PREAO90=Inverno,#npm/p
+inverno/PREAO90=Inverno,#nm/p
 Iorque/#tc/
 Iowa/#t/
 Ipanema/#t/
@@ -1347,7 +1347,7 @@ Jaime/#npm/
 Jamaica/#la,#tpf/
 James/#np1/
 Janeiro/#em,AO90=janeiro/
-janeiro/#em,PREAO90=Janeiro/
+janeiro/#nm,PREAO90=Janeiro/
 Jane/#np1/
 Janet/#np1/
 Jansenistas/CAT=np/
@@ -1402,7 +1402,7 @@ Judith/#np1/
 Jugoslávia/CAT=np/x/
 Jules/#np1/
 Julho/AO90=julho,#em/
-julho/PREAO90=Julho,#em/
+julho/PREAO90=Julho,#nm/
 Juliana/#npf/
 Julian/#np1/
 Juliano/CAT=np/
@@ -1414,7 +1414,7 @@ Júlio/#npm/
 Julius/#np1/
 Jung/#np1/
 Junho/AO90=junho,#em/
-junho/PREAO90=Junho,#em/
+junho/PREAO90=Junho,#nm/
 Juno/#npm/
 Junqueira/#np/
 Junqueiro/#np/
@@ -1596,7 +1596,7 @@ Magrebe/#la,#t/
 Maias/CAT=np,SEM=po/
 Maia/#tc/
 Maio/AO90=maio,#em/
-maio/PREAO90=Maio,#em/
+maio/PREAO90=Maio,#nm/
 Maiorca/#t/
 Malaca/#tc/
 Málaga/#tc/
@@ -1636,7 +1636,7 @@ Marcel/#np1/
 Marcelo/#npm/ti/
 Márcio/#npm/
 Março/AO90=março,#em/
-março/PREAO90=Março,#em/
+março/PREAO90=Março,#nm/
 Marconi/#np1/
 Marcos/#npm/
 Marcus/#np1/
@@ -1884,7 +1884,7 @@ Nôtre/#t/
 Nottingham/#t/
 Novais/#np/
 Novembro/AO90=novembro,#em/
-novembro/PREAO90=Novembro,#em/
+novembro/PREAO90=Novembro,#nm/
 Novgorod/#tc/
 Novossibirsk/#tc/
 Nunes/#npm/
@@ -1951,9 +1951,9 @@ Ourém/#t/
 Ourense/#t/
 Ourique/#t/
 Outono/AO90=outono,#npm/
-outono/PREAO90=Outuno,#npm/
+outono/PREAO90=Outuno,#nm/p
 Outubro/AO90=outubro,#em/
-outubro/PREAO90=Outubro,#em/
+outubro/PREAO90=Outubro,#nm/
 Ovar/#t/
 Ovídio/CAT=np/
 Ovídio/#np/
@@ -2120,7 +2120,7 @@ Prado/#t/
 Praga/#tc/
 Preciosa/#npf/
 Primavera/AO90=primavera,#npf//
-primavera/PREAO90=Primavera,#npf//
+primavera/PREAO90=Primavera,#nf/p/
 Prince/#np1/
 Proença-a-Nova/#t/
 Proença/#np/
@@ -2365,7 +2365,7 @@ Serpula/CAT=np/
 Sesimbra/#t/
 Sé/#la,#t/
 Setembro/AO90=setembro,#em/
-setembro/PREAO90=Setembro,#em/
+setembro/PREAO90=Setembro,#nm/
 Setúbal/#tc/
 Seul/#tc/
 Severino/#npm/
@@ -2663,7 +2663,7 @@ Vénus/CAT=np,SEM=pl/
 Venusino/CAT=np/
 Vera/#npf/
 Verão/AO90=verão,#npm/p/
-verão/PREAO90=Verão,#npm/p/
+verão/PREAO90=Verão,#nm/p/
 Verdi/#np1/
 Vergara/CAT=np/
 Veríssimo/CAT=np/
