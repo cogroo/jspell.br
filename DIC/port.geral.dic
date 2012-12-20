@@ -3600,6 +3600,8 @@ atlântico/#hm/fp/
 atlas/#nm//
 atleta/#nn/p/
 atlética/#nf//
+atleticano/#hm/fp/
+atleticismo/#nm//
 atlético/#a/f/
 atletismo/#nm/p/
 atmosfera/#nf/p/
@@ -3822,7 +3824,7 @@ autocolante/#hm2/p/
 autocombustão/#nf//
 autocondução/#nf/p/
 autoconfiança/#nf//
-autocontrolo/#nm/p/
+autocontrole/#nm/p/
 autocorrecção/AO90=autocorreção,#nf/p/
 autocorreção/PREAO90=autocorrecção,#nf/p/
 autocorrectivo/AO90=autocorretivo,#am/p/
@@ -9279,6 +9281,7 @@ conta-gotas/#nm//
 contaminabilidade/#nf/p/
 contaminação/#nf//
 contaminador/#hm//
+contaminante/#hm/p/
 contaminar/#vt/XYPLcDvSn/
 conta/#nf/p/
 contanto/#an//
@@ -9537,7 +9540,6 @@ contristar/#vt/XYPLcD/
 contrito/#a//
 controlar/#vt/XYPLSDvB/
 controle/#nm/pvS/
-controlo/#nm/p/
 controvérsia/#nf/p/
 controverso/#a/pft/
 controverter/#vt/XYPLv/
@@ -9821,7 +9823,8 @@ corpulência/#nf/p/
 corpulento/#a/pf/
 corpuscular/#an//
 corpúsculo/#nm/p/
-corpus/#nmp//
+corpus/#nm//
+corpora/#nmp//
 correcção/AO90=correção,#nf/p/
 correção/PREAO90=correcção,#nf/p/
 correccional/AO90=correcional,#an/m/
@@ -10411,8 +10414,9 @@ cursista/#nn//
 cursivo/#hm/fp/
 curso/#nm/pt/
 cursor/#hm//
-curta-metragem/#nf//
-curtas-metragens/$curta-metragem$#nf$N=p//
+curta/#nm/p/
+curta-metragem/#nm//
+curtas-metragens/$curta-metragem$#nm$N=p//
 curteza/#nf//
 curtidoiro/#nm//
 curtidouro/#nm//
@@ -17863,6 +17867,7 @@ hasta/#nf//
 hastário/#a//
 hastear/#vt/ZYPL/
 haste/#nf/p/
+haurir/#v//
 havaiano/#hm/fp/
 havanês/#hm//
 havano/#hm/p/
@@ -27385,6 +27390,7 @@ porta-moedas/#nm//
 porta/#nf/p/
 portanto/CAT=conj-c//
 portão/#nm/p/
+porta-retrato/#nm/p/
 portaria/#nf/p/
 portar/#vt/XYPLDn/
 portátil/#an/a/
