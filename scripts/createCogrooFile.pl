@@ -33,7 +33,7 @@ my $isCollectVerbTransitivity = 1;
 # ptbr.dic for production, sample.dic for test
 
 # this is to iterate the dictionaries
-my $dic = init("../out/jspell-ao/port.dic") or die "nao abriu port.dic";
+my $dic = Lingua::Jspell::DictManager::init("../out/jspell-ao/port.dic") or die "nao abriu port.dic";
 
 # this is to analyze
 my $pt_dict = Lingua::Jspell->new("teste") or die "nao abriu";
