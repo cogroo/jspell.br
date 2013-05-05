@@ -11,6 +11,18 @@
 	<packaging>pom</packaging>
 	<name>JSpell.BR Util</name>
 	<description>utilities to create pt_br dictionaries</description>
+	
+	
+
+	<repositories>
+		<repository>
+			<id>Cogroo Snapshot</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<dependencies>
 

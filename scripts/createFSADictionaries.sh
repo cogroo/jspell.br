@@ -22,15 +22,15 @@ fi
 export MAVEN_OPTS="-Xms512m -Xmx1100m -XX:PermSize=256m"
 
 cogrooCLI () {
-	mvn -f pom-util.xml -e -o -q exec:java "-Dexec.mainClass=org.cogroo.gc.cmdline.CLI" "-Dexec.args=$*"
+	mvn -f pom-util.xml -e -q exec:java "-Dexec.mainClass=org.cogroo.gc.cmdline.CLI" "-Dexec.args=$*"
 }
 
 opennlpCLI () {
-	mvn -f pom-util.xml -e -o -q exec:java "-Dexec.mainClass=opennlp.tools.cmdline.CLI" "-Dexec.args=$*"
+	mvn -f pom-util.xml -e -q exec:java "-Dexec.mainClass=opennlp.tools.cmdline.CLI" "-Dexec.args=$*"
 }
 
 morfologicCLI() {
-	mvn -f pom-util.xml -e -o -q exec:java "-Dexec.mainClass=morfologik.tools.Launcher" "-Dexec.args=$*"
+	mvn -f pom-util.xml -e -q exec:java "-Dexec.mainClass=morfologik.tools.Launcher" "-Dexec.args=$*"
 }
 
 # vars
