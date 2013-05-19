@@ -21,10 +21,7 @@ Note que é necessário permissão de SUDO porque é necessário instalar os dic
 
 Gerando arquivos para o Cogroo:
 
-	mvn clean
-	sudo perl createCogrooFile.pl
-	createFSADictionaries.sh
-	mvn install
+	mvn clean install
 	
 
 

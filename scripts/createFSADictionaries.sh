@@ -33,20 +33,23 @@ morfologicCLI() {
 	mvn -f pom-util.xml -e -q exec:java "-Dexec.mainClass=morfologik.tools.Launcher" "-Dexec.args=$*"
 }
 
+# create cogroo files
+perl createCogrooFile.pl
+
 # vars
 BASE_PARAM="-inputFile ../out/cogroo/tagdict.txt -corpus ${CORPUS_ROOT}/Bosque/Bosque_CF_8.0.ad.txt -encoding "UTF-8" -allowInvalidFeats false"
 
 TS="sh cogroo TabSeparatedPOSDictionaryBuilder"
 SYNTH="awk -f synthesis.awk"
 
-mkdir -p target/tmp
+mkdir -p ../target/tmp
 
 ## Features
 
-FOLDER=target/dict/fsa_dictionaries/featurizer
+FOLDER=../target/dict/fsa_dictionaries/featurizer
 mkdir -p ${FOLDER}
  
-OUT=target/tmp/feats
+OUT=../target/tmp/feats
 FINAL=${FOLDER}/pt_br_feats
  
 cogrooCLI TabSeparatedPOSDictionaryBuilder -isIncludeFeatures true -includeFromCorpus false -outputFile ${OUT}.txt $BASE_PARAM
@@ -60,10 +63,10 @@ morfologicCLI fsa_build -f CFSA2 -i ${OUT}-enc_synth.txt -o ${FINAL}_synth.dict
 
 ## POS - jspell
 
-FOLDER=target/dict/fsa_dictionaries/pos
+FOLDER=../target/dict/fsa_dictionaries/pos
 mkdir -p ${FOLDER}
 
-OUT=target/tmp/jspell
+OUT=../target/tmp/jspell
 FINAL=${FOLDER}/pt_br_jspell
 
 cogrooCLI TabSeparatedPOSDictionaryBuilder -isIncludeFeatures false -includeFromCorpus false -outputFile ${OUT}.txt $BASE_PARAM
@@ -77,8 +80,8 @@ morfologicCLI fsa_build -f CFSA2 -i ${OUT}-enc_synth.txt -o ${FINAL}_synth.dict
 
 ## POS - jspell + corpus
 
-OUT=target/tmp/jspell_corpus
-FINAL=target/dict/fsa_dictionaries/pos/pt_br_jspell_corpus
+OUT=../target/tmp/jspell_corpus
+FINAL=../target/dict/fsa_dictionaries/pos/pt_br_jspell_corpus
 
 cogrooCLI TabSeparatedPOSDictionaryBuilder -isIncludeFeatures false -includeFromCorpus true -outputFile ${OUT}.txt $BASE_PARAM
 
@@ -97,15 +100,15 @@ morfologicCLI fsa_build -f CFSA2 -i ${OUT}-enc_synth.txt -o ${FINAL}_synth.dict
 
 ## POS - jspell + corpus
 
-OUT=target/tmp/trans
-FINAL=target/dict/fsa_dictionaries/pos/pt_br_trans
+OUT=../target/tmp/trans
+FINAL=../target/dict/fsa_dictionaries/pos/pt_br_trans
 
 morfologicCLI tab2morph -inf -i ../out/cogroo/trans.txt -o ${OUT}-enc.txt
 morfologicCLI fsa_build -f CFSA2 -i ${OUT}-enc.txt -o ${FINAL}.dict
 
 ## XML
 
-FOLDER=target/dict/xml_dictionaries/pos
+FOLDER=../target/dict/xml_dictionaries/pos
 mkdir -p ${FOLDER}
 
 XML=${FOLDER}/tagdict.xml
@@ -114,7 +117,7 @@ cogrooCLI POSDictionaryBuilder -outputFile ${XML} $BASE_PARAM
 
 ## Abbreviation dictionary
 
-FOLDER=target/dict/xml_dictionaries/abbr
+FOLDER=../target/dict/xml_dictionaries/abbr
 mkdir -p ${FOLDER}
 
 ABB_TXT=../DIC/non.jspell.abbr.txt
