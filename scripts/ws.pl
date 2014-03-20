@@ -18,7 +18,7 @@ sub init {
   get '/query' => [format => [qw(json)]] => sub {
     my $self = shift;
     my $palavra = $self->param('palavra');
-    my $str = JspellExec::query_default("../out/jspell-ao/", "teste", "casa");
+    my $str = JspellExec::query_default("../out/jspell-ao/", "teste", $palavra);
     my $hash = $json->decode($str);
 
     return $self->render(json => $hash) if $self->stash('format') eq 'json';
