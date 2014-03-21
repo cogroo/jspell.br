@@ -25,15 +25,12 @@ sub init {
     $self->render(text => 'apenas suporta json');
   };
 
-  # GET /process.json?entrada=abismal%2F%23an%2Fp%2F&id=teste
+  # GET /process.json?entrada=abismal%2F%23an%2Fp%2F
   get '/process' => [format => [qw(json)]] => sub {
     my $self = shift;
 
     my $entrada = $self->param('entrada');
-    my $id = $self->param('id');
-    print $entrada . "\n";
-    print $id . "\n";
-    my $str = JspellExec::query_singleton("../out/jspell-ao/", $id, $entrada);
+    my $str = JspellExec::query_singleton("../out/jspell-ao/", $entrada);
     my $hash = $json->decode($str);
 
     return $self->render(json => $hash) if $self->stash('format') eq 'json';
