@@ -223,5 +223,5 @@ sub query_singleton {
 
 1;
 # query_default("../out/jspell-ao/", "teste", "casa");
-query_singleton("../out/jspell-ao/", "abismal/#an/p/");
+# query_singleton("../out/jspell-ao/", "abismal/#an/p/");
 
