@@ -15,21 +15,21 @@ use open ':encoding(utf8)';
 use open ':std';
 
 sub build {
-	local $CWD = "..";
-	$result = `make jspell`;
-	
-	#print $result;
+  local $CWD = "..";
+  $result = `make jspell`;
+  
+  #print $result;
 }
 
 sub install {
-	my ($path, $name) = @_;
-	local $CWD = $path;
-	install_dic({name=>$name, yaml=>'port.yaml', irr=>"port.irr"}, "port.aff", "port.dic");
+  my ($path, $name) = @_;
+  local $CWD = $path;
+  install_dic({name=>$name, yaml=>'port.yaml', irr=>"port.irr"}, "port.aff", "port.dic");
 }
 
 sub install_singleton {
-	my ($path, $name, $dicData) = @_;
-	local $CWD = $path;
+  my ($path, $name, $dicData) = @_;
+  local $CWD = $path;
 
 my $str = <<"AFFIX";
 #n/CAT=nc//
@@ -68,23 +68,25 @@ my $str = <<"AFFIX";
 
 AFFIX
 
-	my $filename = get_temp_filename();
-	open my $fh, ">", $filename or die "could not open $filename: $!";
-	print $fh $str;
- 	print $fh $dicData;
- 	close $fh; 
-	install_dic({name=>$name, yaml=>'port.yaml', irr=>"port.irr"}, "port.aff", $filename);
+  my $filename = $name . '.dic';
+  open my $fh, ">", $filename or die "could not open $filename: $!";
+  print $fh $str;
+  print $fh $dicData;
+  close $fh; 
+  install_dic({name=>$name, yaml=>'port.yaml', irr=>"port.irr"}, "port.aff", $filename);
 }
 
 sub get_temp_filename {
-	my ($path) = @_;
+  my ($path) = @_;
     my $fh = File::Temp->new(
         TEMPLATE => 'tempXXXXX',
         DIR      => $path,
         SUFFIX   => '.dic',
     );
+    my $fn = $fh->filename;
+    $fn =~ s/\.dic//;
 
-    return $fh->filename;
+    return $fn;
 }
 
 sub any2json {
@@ -109,7 +111,7 @@ sub any2json {
       return "$r"
     }
   } else {
-  	my $ind = ($i >= 0)? (" " x $i) : "";
+    my $ind = ($i >= 0)? (" " x $i) : "";
     if (ref($r) eq "HASH") {
       return $ind . " {". hash2json($r,abs($i)+3) . "},"
     } elsif (ref($r) eq "ARRAY") {
@@ -144,67 +146,82 @@ sub hash2json {
 our $dict;
 
 sub init_dict {
-	my ($name) = @_;
-	$dict = Lingua::Jspell->new( $name ) || die "could not open $name dict";   # select portuguese dictionary
-	$dict->setmode({flags => 1});    # show  feature "flag" in output
+  my ($name) = @_;
+  $dict = Lingua::Jspell->new( $name ) || die "could not open $name dict";   # select portuguese dictionary
+  $dict->setmode({flags => 1});    # show  feature "flag" in output
+}
+
+sub del_dict {
+  my ($path, $name) = @_;
+  # remover da pasta local
+  unlink $path . $name . ".dic";
+
+  # remover da pasta do sistema
+  unlink "/usr/local/lib/jspell/" . $name . ".hash";
+  unlink "/usr/local/lib/jspell/" . $name . ".aff";
+  unlink "/usr/local/lib/jspell/" . $name . ".yaml";
 }
 
 sub run {
-	my ($palavra) = @_;
+  my ($palavra) = @_;
 
 
-		my $usr = $palavra;
-		my @fea = $dict->fea($usr);
+    my $usr = $palavra;
+    my @fea = $dict->fea($usr);
 
-		my $flex = any2json ( [@fea] , 0) . "\n";
-		$flex =~ s/,}/}/g;
-		$flex =~ s/,]/]/g;
-		my $analise = '{"analise":' . $flex . "}";
+    my $flex = any2json ( [@fea] , 0) . "\n";
+    $flex =~ s/,}/}/g;
+    $flex =~ s/,]/]/g;
+    my $analise = '{"analise":' . $flex . "}";
 
-		my $derivadas;
-		
-		my @der = $dict->der($usr);
-		
-		foreach my $dword (@der) {
-			@fea = $dict->fea($dword);
-			foreach my $f (@fea) {
-				if($$f{'rad'} eq $usr) {
-					$derivadas .= '{"' . $dword . '":' . any2json ( $f , "compact") . "},";
-				}
-			}
-		}
+    my $derivadas;
+    
+    my @der = $dict->der($usr);
+    
+    foreach my $dword (@der) {
+      @fea = $dict->fea($dword);
+      foreach my $f (@fea) {
+        if($$f{'rad'} eq $usr) {
+          $derivadas .= '{"' . $dword . '":' . any2json ( $f , "compact") . "},";
+        }
+      }
+    }
 
-		$derivadas = '{"derivadas":[' . $derivadas . "]}";
+    $derivadas = '{"derivadas":[' . $derivadas . "]}";
 
         $derivadas =~ s/,\s*}/}/g;
-		$derivadas =~ s/,\s*]/]/g;
+    $derivadas =~ s/,\s*]/]/g;
 
-		my $json = '[' . $analise .",". $derivadas . ']';
+    my $json = '[' . $analise .",". $derivadas . ']';
 
-		$json =~ s/,\s*}/}/g;
-		$json =~ s/,\s*]/]/g;
+    $json =~ s/,\s*}/}/g;
+    $json =~ s/,\s*]/]/g;
 
-		return $json;
-	
+    return $json;
+  
 }
 
 sub query_default {
-	my ($path, $name, $query) = @_;
-	install($path, $name);
-	init_dict($name);
-	return run($query);
+  my ($path, $name, $query) = @_;
+  install($path, $name);
+  init_dict($name);
+  return run($query);
 }
 
 sub query_singleton {
-	my ($path, $name, $dicData) = @_;
-	install_singleton($path, $name, $dicData);
-	init_dict($name);
-	$dicData =~ /(.*?)\//;
-	$query = $1;
-	return run($query);
+  my ($path, $dicData) = @_;
+  my $name = get_temp_filename();
+
+  install_singleton($path, $name, $dicData);
+  init_dict($name);
+  $dicData =~ /(.*?)\//;
+  $query = $1;
+  my $res = run($query);
+  del_dict($path, $name);
+  return $res;
 }
 
 1;
 # query_default("../out/jspell-ao/", "teste", "casa");
-# query_singleton("../out/jspell-ao/", "teste", "abismal/#an/p/");
+query_singleton("../out/jspell-ao/", "abismal/#an/p/");
 
