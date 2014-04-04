@@ -155,4 +155,6 @@ sub serialize {
 #create('jurid', 'hertz/#nm//');
 #update('inf', 'bug/#nm,ORIG=ing/a/', 'bug/#nm,ORIG=ing/axyz/');
 #DELETE('geral', 'hertz/#nm//');
-print Dumper retrieve_lemma('águia-imperial');
+# print Dumper retrieve_lemma('águia-imperial');
+
+1;

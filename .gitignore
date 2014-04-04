@@ -5,4 +5,5 @@ out
 
 .project
 **/target
+**/DIC_X
 target
