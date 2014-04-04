@@ -6,18 +6,18 @@
 AAC/#tsf//#Associação Académica de Coimbra
 ABC/#tsm//#clube desportivo
 ACP/#tsm//#Automóvel Clube de Portugal
+AD/#tsf//#Aliança Democrática
 ADN/#tsm//#ácido desóxido-ribo-nucleico
 AFP/#tsf//#Agência France-Press
-AD/#tsf//#Aliança Democrática
 AML/#tsf//#Área Metropolitana de Lisboa
 AMP/#tsf//#Área Metropolitana do Porto
 ANACOM/#tsf//#Autoridade Nacional de Comunicações
 ANC/#tsm//#African National Congress (en)
 ANMP/#tsf//#Associação Nacional de Munícipios Portugueses
-APPACDM/#tsf//#Associação Portuguesa de Pais e Amigos do Cidação Deficiente Mental
 APEL/#tsf//#Associação Portuguesa de Editores e Livreiros
-APL/#tsf//#Administração do Porto de Lisboa
 API/#tsf//#Aplication Prog. interface
+APL/#tsf//#Administração do Porto de Lisboa
+APPACDM/#tsf//#Associação Portuguesa de Pais e Amigos do Cidação Deficiente Mental
 ARS/#tsf//#Administração Regional de Saúde
 ASAE/#tsf//#Autoridade de Segurança Alimentar e Económica
 AVC/#tsm//#Acidente Vascular Cerebral
@@ -36,9 +36,9 @@ BP/#tsm//#Banco de Portugal
 BPA/#tsm//#Banco Português do Atlântico
 BPI/#tsm//#Banco Português de Investimentos
 BPSM/#tsm//#Banco Pinto & Sotto Mayor
+BSE/#tsf//#BSE Doença Bovina
 BT/#tsf//#Brigada de Trânsito
 BVL/#tsf//#Bolsa de Valores de Lisboa
-BSE/#tsf//#BSE Doença Bovina
 CAP/#tsf//#Confederação dos Agricultores de Portugal
 CCB/#tsm//#Centro Cultural de Belém
 CCRN/#tsf//#Comissão de Coordenação Regional do Norte
@@ -81,8 +81,8 @@ FAP/#tsf//#Força Aérea Portuguesa
 FBI/#tsm//#Federal Bureau of Investigations (en)
 FC/#tsf//#Futebol Clube
 FCCN/#tsf//#Fundação para a Computação Científica Nacional
-FCUP/#tsf//#Faculdade de Ciências da Universidade do Porto
 FCP/#tsm//#Futebol Clube do Porto
+FCUP/#tsf//#Faculdade de Ciências da Universidade do Porto
 FIA/#tsf//#Federação Internacional do Automóvel, Fundo para Infância e Adolescência, Fundação Instituto de Administração
 FIFA/#tsf//#Federation Internationale de Football Association (fr)
 FIL/#tsf//#Feira Internacional de Lisboa
@@ -91,8 +91,8 @@ FPF/#tsf//#Federação Portuguesa de Futebol
 FRETILIN/#tsf//#Frente Timorense de Libertação Nacional
 FSF/#tsf//#Free Software Foundation
 GATT/#tsm//#General Agreement on Tariffs and Trade (en)
-GNU/#tsm//#GNU não é UNIX
 GNR/#tsf//#Guarda Nacional Republicana
+GNU/#tsm//#GNU não é UNIX
 GP/#tsm//#Grande Prémio
 GPL/#tsm//#General Public License
 GPS/#tsm//#Global Position Satelyte
@@ -109,9 +109,9 @@ IPPAR/#tsm//#Instituto Português do Património ARquitectónico
 IPPC/#tsm//#Instituto Português do Património Cultural
 IRC/#tsm//#Imposto sobre Rendimentos Colectivos
 IRS/#tsm//#Imposto sobre Rendimentos Singulares
+ISBN/#tsm//# ISBN
 ISO/#tsm//# ISO
 ISSN/#tsm//# ISSN
-ISBN/#tsm//# ISBN
 IVA/#tsm//#Imposto do Valor Acrescentado
 JS/#tsf//#Juventude Socialista
 JSD/#tsf//#Juventude Social-Democrata
@@ -175,13 +175,13 @@ SEC/#tsf//#Secretária de Estado da Cultura
 SEF/#tsm//#Serviço de Estrangeiros e Fronteiras
 SGPS/#tsf//#(sonae)
 SIC/#tsf//#Sociedade Independente de Comunicação
-SIS/#tsf//#Serviços de Informação e Segurança
 SIDA/#tsf//#Síndroma de imunodeficiência adquirida
+SIS/#tsf//#Serviços de Informação e Segurança
 SLB/#tsm//#Sport Lisboa e Benfica
 SMAS/#tsmp//#Serviços Municipalizados de Água e Saneamento
 SME/#tsm//#Sistema Monetário Europeu
-SNS/#tsm//#Serviço Nacional de Saúde
 SMS/#tsm//#mensagens escritas por tlm
+SNS/#tsm//#Serviço Nacional de Saúde
 SOS/#tsm// #Save Our Souls
 SPA/#tsf//#Sociedade Portuguesa de Autores
 STCP/#tsmp//#Sociedade de Transportes Colectivos do Porto
