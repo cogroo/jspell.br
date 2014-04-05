@@ -5,6 +5,7 @@
 
 package JspellExec;
 
+use strict;
 use Lingua::Jspell;
 use Lingua::Jspell::DictManager;
 use File::chdir;
@@ -13,13 +14,6 @@ use File::Temp;
 
 use open ':encoding(utf8)';
 use open ':std';
-
-sub build {
-  local $CWD = "..";
-  $result = `make jspell`;
-  
-  #print $result;
-}
 
 sub install {
   my ($path, $name) = @_;
@@ -143,12 +137,12 @@ sub hash2json {
   return $c;
 }
 
-our $dict;
-
 sub init_dict {
   my ($name) = @_;
-  $dict = Lingua::Jspell->new( $name ) || die "could not open $name dict";   # select portuguese dictionary
+  my $dict = Lingua::Jspell->new( $name ) || die "could not open $name dict";   # select portuguese dictionary
   $dict->setmode({flags => 1});    # show  feature "flag" in output
+
+  return $dict;
 }
 
 sub del_dict {
@@ -163,7 +157,7 @@ sub del_dict {
 }
 
 sub run {
-  my ($palavra) = @_;
+  my ($dict, $palavra) = @_;
 
 
     my $usr = $palavra;
@@ -203,9 +197,11 @@ sub run {
 
 sub query_default {
   my ($path, $name, $query) = @_;
-  install($path, $name);
-  init_dict($name);
-  return run($query);
+  # install($path, $name);
+  my $dic = init_dict($name);
+
+  my $res = run($dic, $query);
+  return $res;
 }
 
 sub query_singleton {
@@ -213,15 +209,15 @@ sub query_singleton {
   my $name = get_temp_filename();
 
   install_singleton($path, $name, $dicData);
-  init_dict($name);
+  my $dic = init_dict($name);
   $dicData =~ /(.*?)\//;
-  $query = $1;
-  my $res = run($query);
+  my $query = $1;
+  my $res = run($dic, $query);
   del_dict($path, $name);
   return $res;
 }
 
+# print query_default("../out/jspell-ao/", "teste", "casa");
+# print query_singleton("../out/jspell-ao/", "abismal/#an/p/");
 1;
-# query_default("../out/jspell-ao/", "teste", "casa");
-query_singleton("../out/jspell-ao/", "abismal/#an/p/");
 
