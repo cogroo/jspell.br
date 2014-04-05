@@ -4,6 +4,7 @@
 # CRUD of jspell dictionaries!
 
 # First we need to load the dictionaries into memory because we need things faaast
+package crud;
 
 use strict;
 use Data::Dumper;
