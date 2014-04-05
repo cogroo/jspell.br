@@ -21,6 +21,7 @@ sub get_branch_path {
 
 sub new_branch {
 	my ($name) = @_;
+	
 	if( -d "$PATH/$name" ) {
 		rmtree([ "$PATH/$name" ]);
 	}
@@ -35,30 +36,26 @@ sub new_branch {
 
 	# fazer git pull origin master para atualizar
 	my $r = Git::Repository->new( work_tree => $dir );
-	my @cmd = ('pull', 'origin', 'master');
-	my $output = $r->run( @cmd );
+	
+	my $cmd = $r->command( split(' ', "pull origin master") );
+    my $errput = join('\n', $cmd->stderr->getlines());
+    my $output = join('\n', $cmd->stdout->getlines());
+    $cmd->close;
+    my $exit = $cmd->exit;
 
-	my $pullOk;
-	if( $output =~ /Fast-forward/ || $output =~ /Already up-to-date/ ) {
-		$pullOk = 1;
-	} else {
-		print "Failed to pull Repository updates: \n $output \n";
-		$pullOk = 0;
+	if( $exit != 0 ) {
+		die "Failed to pull origin master: $errput ";
 	}
 
-	if( $pullOk ) {
-		# now we try to branch
-		@cmd = ('checkout', '-b', $name);
-		$output = $r->run( @cmd );
+	# now we try to branch
+	$cmd = $r->command( split(' ', "checkout -b $name") );
+	$errput = join('\n', $cmd->stderr->getlines());
+	$output = join('\n', $cmd->stdout->getlines());
+	$cmd->close;
+	$exit = $cmd->exit;
 
-		if( $output =~ /Switched/ ) {
-			return "OK";
-		} else {
-			print "Failed to checkout branch: \n $output \n";
-			return $output;
-		}
-	} else {
-		return $output;
+	if( $exit != 0 ) {
+		die "Failed to checkout -b $name: \n $output $errput \n";
 	}
 }
 
@@ -66,10 +63,20 @@ sub commit {
 	my ($name, $message) = @_;
 	my $dir = "$PATH/$name/jspell.br/";
 
+
 	my $r = Git::Repository->new( work_tree => $dir );
-	my @cmd = ('commit', '-am', $message);
-	my $output = $r->run( @cmd );
-	print $output . "\n";
+	
+	my @c = split(' ', "commit -a -m");
+	push(@c, $message);
+	my $cmd = $r->command( @c );
+    my $errput = join('\n', $cmd->stderr->getlines());
+    my $output = join('\n', $cmd->stdout->getlines());
+    $cmd->close;
+    my $exit = $cmd->exit;
+
+	if( $exit != 0 ) {
+		die "Failed to commit changes: $output $errput ";
+	}
 }
 
 sub push_to_git {
@@ -85,24 +92,52 @@ sub push_to_git {
 	# git branch -d mybranch
 	# - Deletes the "mybranch" branch
 	
-	my @cmd = ('checkout', 'master');
-	my $output = $r->run( @cmd );
-	print $output . "\n";
+	my $cmd = $r->command( split(' ', "checkout master") );
+    my $errput = join('\n', $cmd->stderr->getlines());
+    my $output = join('\n', $cmd->stdout->getlines());
+    $cmd->close;
+    my $exit = $cmd->exit;
 
-	@cmd = ('merge', $name);
-	$output = $r->run( @cmd );
-	print $output . "\n";
+	if( $exit != 0 ) {
+		die "Failed to checkout master: $output $errput ";
+	}
 
-	@cmd = ('branch', '-d', $name);
-	$output = $r->run( @cmd );
-	print $output . "\n";
+	##
+
+	$cmd = $r->command( split(' ', "merge $name") );
+    $errput = join('\n', $cmd->stderr->getlines());
+    $output = join('\n', $cmd->stdout->getlines());
+    $cmd->close;
+    $exit = $cmd->exit;
+
+	if( $exit != 0 ) {
+		die "Failed to merge $name into master: $errput ";
+	}
 
 	# git push origin master
 	# - Pushes commits to your remote repository stored on GitHub
 
-	@cmd = ('push', 'origin', 'master');
-	$output = $r->run( @cmd );
-	print $output . "\n";
+	$cmd = $r->command( split(' ', "push origin master") );
+    $errput = join('\n', $cmd->stderr->getlines());
+    $output = join('\n', $cmd->stdout->getlines());
+    $cmd->close;
+    $exit = $cmd->exit;
+
+	if( $exit != 0 ) {
+		die "Failed to push origin master: $errput ";
+	}
+
+	##
+
+	$cmd = $r->command( split(' ', "branch -d $name") );
+    $errput = join('\n', $cmd->stderr->getlines());
+    $output = join('\n', $cmd->stdout->getlines());
+    $cmd->close;
+    $exit = $cmd->exit;
+
+	if( $exit != 0 ) {
+		die "Failed to branch -d $name: $errput ";
+	}
 }
 
 sub make {
@@ -113,8 +148,8 @@ sub make {
 	}
 }
 
-# my $ret = new_branch("default");
-# commit("zuado", "a msg");
+# my $ret = new_branch("mybranch");
+# commit("mybranch", "a msg");
 # push_to_git("zuado");
 # make("zuado");
 1;

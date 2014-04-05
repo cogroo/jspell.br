@@ -17,12 +17,170 @@ sub init {
 }
 
 ######
+# Argumento obrigatório em todos: passwd (ainda não validado)
 #
-# Methods to lead with jquery 
+#
+# manager/ 
+#   load [id]: cria o repositório default ou um de nome 'id' e o prepara para consultas
+#   reload [id]: recarrega o dicionário padrão ou o do branch 'id', permitindo consultas
+#   commit id message:  faz commit das alterações em 'id' incluindo uma mensagem 'message'
+#   push id: envia as alterações em 'id' para o Github
+#
+# jspell/
+#   try [entry]: faz a analise e e flexoes da entrada
+#   analyse [id] lexeme: analisa o lexeme usando o repositório 'id'
+#
+# editor/
+#    create id category entry: cria a entrada "entry" na categoria "category" no repositório "id"
+#    update id category entry_before entry_after: altera a "entry_before" para "entry_before" na categoria especificada, no repositorio especificado
+#    delete id category entry: elimina a entrada "entry" da categoria "category" do repositorio "id"
+#    retrieve id lemma: busca as ocorrencias do lema "lemma" no repositorio "id", devolve as categorias e as entradas em cada categoria#   
 #
 ######
 
-  # GET /manager/load.json?id=default
+##
+# Editor
+##
+
+ #  GET /editor/create.json?id=mybranch&category=inf&entry=orkut%2F%23nm%2F%2F
+  get  '/editor/create' => [format => [qw(json)]] => sub {
+    my $self = shift;
+    my $id = $self->param('id');
+    my $category = $self->param('category');
+    my $entry = $self->param('entry');
+
+
+    if( $id eq 'default' || !defined $id ) {
+        return $self->render(json => {status => 'NOT OK', message => "Impossível editar repositório default."}) if $self->stash('format') eq 'json';
+    }
+
+    if( !defined $category || !defined $entry ) {
+        return $self->render(json => {status => 'NOT OK', message => "category e entry são obrigatórios."}) if $self->stash('format') eq 'json';
+    }
+
+    eval {
+      my $path = git::get_branch_path($id);
+      crud::create($path, $category, $entry);
+
+      git::make($id);
+      JspellExec::install($path . 'out/jspell-ao/', $id);
+    };
+
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
+
+    return $self->render(json => {status => 'OK', message => "Criou $entry na categoria $category no repositório $id. Pronto para consultas."}) if $self->stash('format') eq 'json';
+    $self->render(text => 'apenas suporta json');
+  };
+
+
+ #  GET /editor/update.json?id=mybranch&category=inf&entry_before=bug%2F%23nm%2CORIG%3Ding%2Fa%2F&entry_after=bug%2F%23nm%2CORIG%3Ding%2Fxyz%2F
+  get  '/editor/update' => [format => [qw(json)]] => sub {
+    my $self = shift;
+    my $id = $self->param('id');
+    my $category = $self->param('category');
+    my $entry_before = $self->param('entry_before');
+    my $entry_after = $self->param('entry_after');
+
+
+    if( $id eq 'default' || !defined $id ) {
+        return $self->render(json => {status => 'NOT OK', message => "Impossível editar repositório default."}) if $self->stash('format') eq 'json';
+    }
+
+    if( !defined $category || !defined $entry_before || !defined $entry_after) {
+        return $self->render(json => {status => 'NOT OK', message => "category, entry_before e entry_after são obrigatórios."}) if $self->stash('format') eq 'json';
+    }
+
+    eval {
+      my $path = git::get_branch_path($id);
+      crud::update($path, $category, $entry_before, $entry_after);
+
+      git::make($id);
+      JspellExec::install($path . 'out/jspell-ao/', $id);
+    };
+
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
+
+    return $self->render(json => {status => 'OK', message => "Atualizou $entry_before para $entry_after na categoria $category no repositório $id. Pronto para consultas."}) if $self->stash('format') eq 'json';
+    $self->render(text => 'apenas suporta json');
+  };
+
+
+ #  GET /editor/delete.json?id=mybranch&category=abrev&entry=etc%2FABR%3D1%2F%2F
+  get  '/editor/delete' => [format => [qw(json)]] => sub {
+    my $self = shift;
+    my $id = $self->param('id');
+    my $category = $self->param('category');
+    my $entry = $self->param('entry');
+
+
+    if( $id eq 'default' || !defined $id ) {
+        return $self->render(json => {status => 'NOT OK', message => "Impossível editar repositório default."}) if $self->stash('format') eq 'json';
+    }
+
+    if( !defined $category || !defined $entry ) {
+        return $self->render(json => {status => 'NOT OK', message => "category e entry são obrigatórios."}) if $self->stash('format') eq 'json';
+    }
+
+    eval {
+      my $path = git::get_branch_path($id);
+      crud::DELETE($path, $category, $entry);
+
+      git::make($id);
+      JspellExec::install($path . 'out/jspell-ao/', $id);
+    };
+
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
+
+    return $self->render(json => {status => 'OK', message => "Excluiu $entry na categoria $category no repositório $id. Pronto para consultas."}) if $self->stash('format') eq 'json';
+    $self->render(text => 'apenas suporta json');
+  };
+
+
+#  GET /editor/retrieve.json?id=mybranch&lemma=%C3%A1guia-imperial
+  get  '/editor/retrieve' => [format => [qw(json)]] => sub {
+    my $self = shift;
+    my $id = $self->param('id');
+    my $category = $self->param('category');
+    my $lemma = $self->param('lemma');
+
+
+    if( $id eq 'default' || !defined $id ) {
+        return $self->render(json => {status => 'NOT OK', message => "Impossível editar repositório default."}) if $self->stash('format') eq 'json';
+    }
+
+    if( !defined $lemma ) {
+        return $self->render(json => {status => 'NOT OK', message => "lemma é obrigatório."}) if $self->stash('format') eq 'json';
+    }
+
+    my %res;
+    eval {
+      my $path = git::get_branch_path($id);
+      %res = crud::retrieve_lemma($path, $lemma);
+    };
+
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
+
+    return $self->render(json => \%res) if $self->stash('format') eq 'json';
+    $self->render(text => 'apenas suporta json');
+  };
+
+##
+# Manager
+##
+
+  # GET /manager/load.json?id=mybranch
   get  '/manager/load' => [format => [qw(json)]] => sub {
     my $self = shift;
     my $id = $self->param('id');
@@ -35,18 +193,25 @@ sub init {
         $branch = $id;
     }
 
-    git::new_branch($branch);
-    git::make($branch);
+    eval {
+      git::new_branch($branch);
+      git::make($branch);
 
-    my $path = git::get_branch_path('default') . 'out/jspell-ao/';
-    JspellExec::install($path, $id);
+      my $path = git::get_branch_path('default') . 'out/jspell-ao/';
+      JspellExec::install($path, $id);
+    };
 
-    return $self->render(json => '1') if $self->stash('format') eq 'json';
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
+
+    return $self->render(json => {status => 'OK', message => "Repositório $branch criado e pronto para uso."}) if $self->stash('format') eq 'json';
     $self->render(text => 'apenas suporta json');
   };
 
-  # GET /manager/branch.json?id=mybranch
-  get  '/manager/branch' => [format => [qw(json)]] => sub {
+  # GET /manager/reload.json?id=mybranch
+  get  '/manager/reload' => [format => [qw(json)]] => sub {
     my $self = shift;
     my $id = $self->param('id');
 
@@ -57,14 +222,19 @@ sub init {
     } else {
         $branch = $id;
     }
+    eval {
+      git::make($branch);
 
-    git::new_branch($branch);
-    git::make($branch);
+      my $path = git::get_branch_path('default') . 'out/jspell-ao/';
+      JspellExec::install($path, $id);
+    };
 
-    my $path = git::get_branch_path('default') . 'out/jspell-ao/';
-    JspellExec::install($path, $id);
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
 
-    return $self->render(json => '1') if $self->stash('format') eq 'json';
+    return $self->render(json => {status => 'OK', message => "Repositório $branch recarregado e pronto para uso."}) if $self->stash('format') eq 'json';
     $self->render(text => 'apenas suporta json');
   };
 
@@ -82,7 +252,40 @@ sub init {
         $branch = $id;
     }
 
-    git::commit($branch, $message);
+    eval {
+      git::commit($branch, $message);
+    };
+
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
+
+    return $self->render(json => {status => 'OK', message => "Commit em $branch efetuado com sucesso."}) if $self->stash('format') eq 'json';
+    $self->render(text => 'apenas suporta json');
+  };
+
+  # GET /manager/push.json?id=mybranch
+  get  '/manager/push' => [format => [qw(json)]] => sub {
+    my $self = shift;
+    my $id = $self->param('id');
+
+    my $branch;
+
+    if( $id eq 'default' || !defined $id ) {
+        return $self->render(json => '0') if $self->stash('format') eq 'json';
+    } else {
+        $branch = $id;
+    }
+
+    eval {
+      git::push_to_git($branch);
+    };
+
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
 
     return $self->render(json => '1') if $self->stash('format') eq 'json';
     $self->render(text => 'apenas suporta json');
@@ -101,7 +304,14 @@ sub init {
         $branch = $id;
     }
 
-    git::push_to_git($branch);
+    eval {
+      git::status($branch);
+    };
+
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
 
     return $self->render(json => '1') if $self->stash('format') eq 'json';
     $self->render(text => 'apenas suporta json');
@@ -137,7 +347,7 @@ sub init {
         $branch = $id;
     }
     my $path = git::get_branch_path($id) . 'out/jspell-ao/';
-    print "Path: " . $path . "\n";
+
     my $str = JspellExec::query_default($path, $id, $palavra);
     my $hash = $json->decode($str);
 
