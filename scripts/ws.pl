@@ -189,7 +189,7 @@ sub init {
 
     my $branch;
 
-    if( $id eq 'default' || !defined $id ) {
+    if( !defined $id || $id eq 'default') {
         $branch = 'default';
     } else {
         $branch = $id;
@@ -289,7 +289,7 @@ sub init {
       return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
     };
 
-    return $self->render(json => '1') if $self->stash('format') eq 'json';
+    return $self->render(json => {status => 'OK', message => "Mudanças em $branch enviadas para o Github."}) if $self->stash('format') eq 'json';
     $self->render(text => 'apenas suporta json');
   };
 

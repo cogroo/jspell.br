@@ -99,6 +99,7 @@ sub push_to_git {
     my $exit = $cmd->exit;
 
 	if( $exit != 0 ) {
+		## safe to die here
 		die "Failed to checkout master: $output $errput ";
 	}
 
@@ -111,6 +112,22 @@ sub push_to_git {
     $exit = $cmd->exit;
 
 	if( $exit != 0 ) {
+		# unsafe die, need to checkout $name again
+
+		my $err = "Fatal: failed to checkout master: $output $errput";
+		
+		$cmd = $r->command( split(' ', "checkout $name") );
+	    $errput = join('\n', $cmd->stderr->getlines());
+	    $output = join('\n', $cmd->stdout->getlines());
+	    $cmd->close;
+	    $exit = $cmd->exit;
+
+		if( $exit != 0 ) {
+			## safe to die here
+			die "Failed to merge $name into master: $output $errput \n caused by \n    $err";
+		}
+
+
 		die "Failed to merge $name into master: $errput ";
 	}
 
