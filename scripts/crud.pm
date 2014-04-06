@@ -11,6 +11,7 @@ use Data::Dumper;
 use Tie::LLHash;
 use Tie::Autotie 'Tie::LLHash';
 use List::BinarySearch::XS qw( binsearch_pos );
+use JspellExec;
 
 tie my(%dictionaries), 'Tie::LLHash';
 
@@ -28,24 +29,21 @@ tie my(%dictionaries), 'Tie::LLHash';
 ####
 
 sub create {
-	my ($name, $entry) = @_;
-	initialize();
+	my ($path, $name, $entry) = @_;
+	initialize($path);
 
 	#find the insertion point
 	my $key_before = find_insert_point($entry, $name);
 	(tied %{$dictionaries{$name}})->insert($entry => '', $key_before);
 
-	closeup();
+	closeup($path);
 }
 
 sub retrieve_lemma {
-	my ($lemma) = @_;
-	initialize();
+	my ($path, $lemma) = @_;
+	initialize($path);
 	my %out;
 	foreach my $name (keys %dictionaries) {
-		if( $name eq 'zool') {
-			print "aqui \n";
-		}
 		my $key = (tied %{$dictionaries{$name}})->reset;
 		while (defined $key) {
 			if($key =~ /^$lemma\// || $key =~ /\$$lemma\$/) {
@@ -58,27 +56,30 @@ sub retrieve_lemma {
 			$key = (tied %{$dictionaries{$name}})->next;
 		}
 	}
-	closeup();
+	closeup($path);
+
+
+
 	return %out;
 }
 
 sub update {
-	my ($name, $entry_before, $entry_after) = @_;
-	initialize();
+	my ($path, $name, $entry_before, $entry_after) = @_;
+	initialize($path);
 
 	(tied %{$dictionaries{$name}})->insert($entry_after => '', $entry_before);
 	(tied %{$dictionaries{$name}})->DELETE($entry_before);
 
-	closeup();
+	closeup($path);
 }
 
 sub DELETE {
-	my ($name, $entry) = @_;
-	initialize();
+	my ($path, $name, $entry) = @_;
+	initialize($path);
 	
 	(tied %{$dictionaries{$name}})->DELETE($entry);
 
-	closeup();
+	closeup($path);
 }
 
 ###
@@ -88,20 +89,22 @@ sub DELETE {
 ##
 
 sub initialize {
+	my ($path) = @_;
 	(tied %dictionaries)->CLEAR;
-	load_dictionaries();
+	load_dictionaries($path);
 }
 
 sub closeup {
-	serialize_all();
+	my ($path) = @_;
+	serialize_all($path);
 }
 
 
 sub load_into_memory {
-	my ($file, $name) = @_;
+	my ($path, $file, $name) = @_;
 
 	# open file
-	open (FILE, "<:encoding(ISO-8859-1)", "../DIC/$file");
+	open (FILE, "<:encoding(ISO-8859-1)", "$path/DIC/$file");
 	while (<FILE>) {
 		 chomp;
 		 (tied %{$dictionaries{$name}})->last($_);
@@ -111,13 +114,14 @@ sub load_into_memory {
 
 # find the dictionary names
 sub load_dictionaries {
-	my $directory = '../DIC';
+	my ($path) = @_;
+	my $directory = $path . '/DIC';
 	opendir (DIR, $directory) or die $!;
 	while (my $file = readdir(DIR)) {
 		if( $file =~ /^port\.(.+)\.dic$/ ) {
 			my $key = $1;
 			(tied %dictionaries)->last($key);
-			load_into_memory($file, $key);
+			load_into_memory($path, $file, $key);
 
 			print "Loaded " . keys( $dictionaries{$key} ) . " into '" . $1 . "'\n";
 		}
@@ -132,17 +136,18 @@ sub find_insert_point {
 }
 
 sub serialize_all {
+	my ($path) = @_;
 	# foreach file, serialize it
 	foreach my $value (keys %dictionaries) {
 	     print "Serializing $value ...\n";
 
-	     serialize($value);
+	     serialize($path, $value);
 	}
 }
 
 sub serialize {
-	my ($name) = @_;
-	open (FILE, ">:encoding(ISO-8859-1)", "../DIC/port.$name.dic");
+	my ($path, $name) = @_;
+	open (FILE, ">:encoding(ISO-8859-1)", "$path/DIC/port.$name.dic");
 
  	my $key = (tied %{$dictionaries{$name}})->reset;
 	while (defined $key) {
@@ -153,9 +158,9 @@ sub serialize {
 	close (FILE);
 }
 
-#create('jurid', 'hertz/#nm//');
-#update('inf', 'bug/#nm,ORIG=ing/a/', 'bug/#nm,ORIG=ing/axyz/');
-#DELETE('geral', 'hertz/#nm//');
-# print Dumper retrieve_lemma('águia-imperial');
+# create('/Users/colen/git/lixo/mybranch/jspell.br', 'inf', 'hertz/#nm//');
+# update('/Users/colen/git/lixo/mybranch/jspell.br', 'inf', 'bug/#nm,ORIG=ing/a/', 'bug/#nm,ORIG=ing/axyz/');
+# DELETE('/Users/colen/git/lixo/mybranch/jspell.br', 'geral', 'hertz/#nm//');
+print Dumper retrieve_lemma('/Users/colen/git/lixo/mybranch/jspell.br','águia-imperial');
 
 1;
