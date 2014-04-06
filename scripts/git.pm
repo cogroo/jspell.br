@@ -10,7 +10,7 @@ use File::chdir;
 use File::Path 'rmtree';
 use Git::Repository;
 
-my $PATH = '/Users/colen/git/lixo';
+my $PATH = '/home/colen/jspell_repo';
 my $ARCHIVE = 'jspell.br.tar';
 
 sub get_branch_path {

@@ -161,6 +161,6 @@ sub serialize {
 # create('/Users/colen/git/lixo/mybranch/jspell.br', 'inf', 'hertz/#nm//');
 # update('/Users/colen/git/lixo/mybranch/jspell.br', 'inf', 'bug/#nm,ORIG=ing/a/', 'bug/#nm,ORIG=ing/axyz/');
 # DELETE('/Users/colen/git/lixo/mybranch/jspell.br', 'geral', 'hertz/#nm//');
-print Dumper retrieve_lemma('/Users/colen/git/lixo/mybranch/jspell.br','águia-imperial');
+# print Dumper retrieve_lemma('/Users/colen/git/lixo/mybranch/jspell.br','águia-imperial');
 
 1;
