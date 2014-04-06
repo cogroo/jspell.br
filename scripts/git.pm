@@ -140,6 +140,22 @@ sub push_to_git {
 	}
 }
 
+sub DELETE {
+	my ($name) = @_;
+
+	if( -d "$PATH/$name" ) {
+		rmtree([ "$PATH/$name" ]);
+	}
+}
+
+sub status {
+	my ($name) = @_;
+
+	if( !-d "$PATH/$name" ) {
+		die "Repositorio $name não encontrado.";
+	}
+}
+
 sub make {
 	my ($name) = @_;
 	{

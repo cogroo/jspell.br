@@ -24,7 +24,9 @@ sub init {
 #   load [id]: cria o repositório default ou um de nome 'id' e o prepara para consultas
 #   reload [id]: recarrega o dicionário padrão ou o do branch 'id', permitindo consultas
 #   commit id message:  faz commit das alterações em 'id' incluindo uma mensagem 'message'
-#   push id: envia as alterações em 'id' para o Github
+#   push id: envia as alterações em 'id' para o Github e deleta o repositório
+#   delete id: deleta o repositório com id
+#   
 #
 # jspell/
 #   try [entry]: faz a analise e e flexoes da entrada
@@ -291,8 +293,32 @@ sub init {
     $self->render(text => 'apenas suporta json');
   };
 
-  # GET /manager/push.json?id=mybranch
-  get  '/manager/push' => [format => [qw(json)]] => sub {
+  # GET /manager/delete.json?id=mybranch
+  get  '/manager/delete' => [format => [qw(json)]] => sub {
+    my $self = shift;
+    my $id = $self->param('id');
+
+    my $branch;
+
+    if( $id eq 'default' || !defined $id ) {
+        return $self->render(json => {status => 'NOT OK', message => "Impossível excluir repositório default."}) if $self->stash('format') eq 'json';
+    }
+
+    eval {
+      git::DELETE($branch);
+    };
+
+    if ($@) {
+      warn "NOT OK: $@";
+      return $self->render(json => {status => 'NOT OK', message => $@}) if $self->stash('format') eq 'json';
+    };
+
+    return $self->render(json => '1') if $self->stash('format') eq 'json';
+    $self->render(text => 'apenas suporta json');
+  };
+
+  # GET /manager/status.json?id=mybranch
+  get  '/manager/status' => [format => [qw(json)]] => sub {
     my $self = shift;
     my $id = $self->param('id');
 
