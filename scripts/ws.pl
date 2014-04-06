@@ -344,8 +344,8 @@ sub init {
   };
 
 
-  # GET /jspell/flex.json?entry=abismal%2F%23an%2Fp%2F
-  get  '/jspell/flex' => [format => [qw(json)]] => sub {
+  # GET /jspell/try.json?entry=abismal%2F%23an%2Fp%2F
+  get  '/jspell/try' => [format => [qw(json)]] => sub {
     my $self = shift;
     my $entrada = $self->param('entry');
 
