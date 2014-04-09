@@ -372,7 +372,7 @@ sub init {
     } else {
         $branch = $id;
     }
-    my $path = git::get_branch_path($id) . 'out/jspell-ao/';
+    my $path = git::get_branch_path($branch) . 'out/jspell-ao/';
 
     my $str = JspellExec::query_default($path, $branch, $palavra);
     my $hash = $json->decode($str);
