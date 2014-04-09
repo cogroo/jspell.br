@@ -374,7 +374,7 @@ sub init {
     }
     my $path = git::get_branch_path($id) . 'out/jspell-ao/';
 
-    my $str = JspellExec::query_default($path, $id, $palavra);
+    my $str = JspellExec::query_default($path, $branch, $palavra);
     my $hash = $json->decode($str);
 
     return $self->render(json => $hash) if $self->stash('format') eq 'json';
