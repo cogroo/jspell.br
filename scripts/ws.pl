@@ -6,6 +6,7 @@ use Mojo::JSON;
 use JspellExec;
 use crud;
 use git;
+use Data::Dumper;
 
 use Encode qw(decode encode);
 
@@ -351,11 +352,9 @@ sub init {
 
     # my $str = query_singleton("../out/jspell-ao/", $entrada);
     my $path = git::get_branch_path('default') . 'out/jspell-ao/';
-    my $str = JspellExec::query_singleton($path, $entrada);
+    my %res = JspellExec::query_singleton($path, $entrada);
 
-    my $hash = $json->decode($str);
-
-    return $self->render(json => $hash) if $self->stash('format') eq 'json';
+    return $self->render(json => \%res) if $self->stash('format') eq 'json';
     $self->render(text => 'apenas suporta json');
   };
 
@@ -374,17 +373,17 @@ sub init {
     }
 
     my $path = git::get_branch_path($branch) . 'out/jspell-ao/';
-    print "Executando analyse.json - \n";
-    print " Branch: $branch \n";
-    print " Path: $path \n";
-    print " Lexeme: $palavra \n";
+    # print "Executando analyse.json - \n";
+    # print " Branch: $branch \n";
+    # print " Path: $path \n";
+    # print " Lexeme: $palavra \n";
 
-    my $str = JspellExec::query_default($path, $branch, $palavra);
+    my %res = JspellExec::query_default($path, $branch, $palavra);
 
-    print " Json: $str \n";
-    my $hash = $json->decode($str);
+    # print " Json: " . Dumper(%res). "\n ";
+    
 
-    return $self->render(json => $hash) if $self->stash('format') eq 'json';
+    return $self->render(json => \%res) if $self->stash('format') eq 'json';
     $self->render(text => 'apenas suporta json');
   };
 

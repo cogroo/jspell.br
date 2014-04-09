@@ -11,6 +11,7 @@ use File::Path 'rmtree';
 use Git::Repository;
 
 my $PATH = '/home/colen/jspell_repo';
+# my $PATH = '/Users/colen/git/lixo';
 my $ARCHIVE = 'jspell.br.tar';
 
 sub get_branch_path {

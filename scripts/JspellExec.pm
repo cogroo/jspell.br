@@ -11,6 +11,7 @@ use Lingua::Jspell::DictManager;
 use File::chdir;
 use JSON;
 use File::Temp;
+use Data::Dumper;
 
 use open ':encoding(utf8)';
 use open ':std';
@@ -161,37 +162,28 @@ sub run {
 
 
     my $usr = $palavra;
-    my @fea = $dict->fea($usr);
+    my @fea_palavra = $dict->fea($usr);
 
-    my $flex = any2json ( [@fea] , 0) . "\n";
-    $flex =~ s/,}/}/g;
-    $flex =~ s/,]/]/g;
-    my $analise = '{"analise":' . $flex . "}";
+    my %resposta;
+    $resposta{'analise'} = \@fea_palavra;
 
-    my $derivadas;
     
     my @der = $dict->der($usr);
+
+    my %hashDerivadas;
     
     foreach my $dword (@der) {
-      @fea = $dict->fea($dword);
+      my @fea = $dict->fea($dword);
       foreach my $f (@fea) {
         if($$f{'rad'} eq $usr) {
-          $derivadas .= '{"' . $dword . '":' . any2json ( $f , "compact") . "},";
+          $hashDerivadas{$dword} = $f;
         }
       }
     }
 
-    $derivadas = '{"derivadas":[' . $derivadas . "]}";
+    $resposta{'derivadas'} = \%hashDerivadas;
 
-        $derivadas =~ s/,\s*}/}/g;
-    $derivadas =~ s/,\s*]/]/g;
-
-    my $json = '[' . $analise .",". $derivadas . ']';
-
-    $json =~ s/,\s*}/}/g;
-    $json =~ s/,\s*]/]/g;
-
-    return $json;
+    return %resposta;
   
 }
 
@@ -200,8 +192,8 @@ sub query_default {
   # install($path, $name);
   my $dic = init_dict($name);
 
-  my $res = run($dic, $query);
-  return $res;
+  my %res = run($dic, $query);
+  return %res;
 }
 
 sub query_singleton {
@@ -212,12 +204,12 @@ sub query_singleton {
   my $dic = init_dict($name);
   $dicData =~ /(.*?)\//;
   my $query = $1;
-  my $res = run($dic, $query);
+  my %res = run($dic, $query);
   del_dict($path, $name);
-  return $res;
+  return %res;
 }
 
-# print query_default("../out/jspell-ao/", "teste", "casa");
-# print query_singleton("../out/jspell-ao/", "abismal/#an/p/");
+# print Dumper query_default("../out/jspell-ao/", "teste", "menino");
+# print Dumper query_singleton("../out/jspell-ao/", "abismal/#an/p/");
 1;
 
