@@ -367,7 +367,7 @@ sub init {
     
     my $branch;
 
-    if( $id eq 'default' || !defined $id ) {
+    if( !defined $id || $id eq '') {
         $branch = 'default';
     } else {
         $branch = $id;
