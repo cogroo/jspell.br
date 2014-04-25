@@ -200,8 +200,8 @@ sub init {
       git::new_branch($branch);
       git::make($branch);
 
-      my $path = git::get_branch_path('default') . 'out/jspell-ao/';
-      JspellExec::install($path, $id);
+      my $path = git::get_branch_path($branch) . 'out/jspell-ao/';
+      JspellExec::install($path, $branch);
     };
 
     if ($@) {
@@ -228,8 +228,8 @@ sub init {
     eval {
       git::make($branch);
 
-      my $path = git::get_branch_path('default') . 'out/jspell-ao/';
-      JspellExec::install($path, $id);
+      my $path = git::get_branch_path($branch) . 'out/jspell-ao/';
+      JspellExec::install($path, $branch);
     };
 
     if ($@) {
