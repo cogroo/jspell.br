@@ -10,7 +10,6 @@ use Data::Dumper;
 
 use Encode qw(decode encode);
 
-$SIG{CHLD} = 'IGNORE';
 my $json;
 
 sub init {
