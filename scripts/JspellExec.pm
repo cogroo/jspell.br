@@ -16,8 +16,6 @@ use Data::Dumper;
 use open ':encoding(utf8)';
 use open ':std';
 
-local $SIG{CHLD} = 'IGNORE';
-
 sub install {
   my ($path, $name) = @_;
   local $CWD = $path;

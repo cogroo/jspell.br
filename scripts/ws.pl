@@ -347,6 +347,7 @@ sub init {
 
   # GET /jspell/try.json?entry=abismal%2F%23an%2Fp%2F
   get  '/jspell/try' => [format => [qw(json)]] => sub {
+    local$SIG{CHLD} = 'IGNORE';
     my $self = shift;
     my $entrada = $self->param('entry');
 
@@ -360,6 +361,7 @@ sub init {
 
   # GET /jspell/analyse.json?id=default&lexeme=casa
   get  '/jspell/analyse' => [format => [qw(json)]] => sub {
+    local$SIG{CHLD} = 'IGNORE';
     my $self = shift;
     my $palavra = $self->param('lexeme');
     my $id = $self->param('id');
